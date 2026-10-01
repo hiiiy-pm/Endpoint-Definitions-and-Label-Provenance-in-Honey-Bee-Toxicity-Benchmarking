@@ -1,0 +1,70 @@
+{
+  "protocol": "nested_training_fold_selector",
+  "seed": 20260829,
+  "alpha_grid": [
+    1e-05,
+    3e-05,
+    0.0001,
+    0.0003,
+    0.001,
+    0.003,
+    0.01
+  ],
+  "l1_grid": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "C_grid": [
+    0.03,
+    0.1,
+    0.3,
+    1,
+    3,
+    10
+  ],
+  "topk_grid": [
+    1,
+    2,
+    3,
+    5,
+    8,
+    12
+  ],
+  "stability_repeats": 500,
+  "n_inner_validation_folds": 5,
+  "n_selector_tuning_folds": 5,
+  "selectors_fitted": 54,
+  "all_topk_values_reported_without_test_selection": true,
+  "inner_cv_scores_are_selection_scores_not_unbiased_performance": true,
+  "fit_audit_events": 34668,
+  "forbidden_training_row_events": 0,
+  "convergence_warnings": 0,
+  "original_input_sha256": {
+    "data\\raw\\apistox.csv": "de4b160a23601a44ac5ec5b23aae95973acba060135630a6df8f73d128baea9e",
+    "results\\cache\\descriptors12.npy": "0adffb1d3bcf079c6669a81abc0a10d5d796020dc6aeb1174b42d8f7b068167c",
+    "results\\cache\\processed_data.csv": "fd84600e5d4101d220ce54412d8cec6cab523a35a4375447726da401449f8273",
+    "code\\_common.py": "f504cc337224bfa286caf1877b8a022db014cdbea04e7f91fdacc8c526c91980",
+    "data\\official_splits\\random_train.csv": "3c252f7f0d458de68b6fadb5caa8a8a322b559b1268c9eef86ea68d5334e5a5e",
+    "data\\official_splits\\random_test.csv": "2d901114d01536345b2ecc57c0e08225acce53fd9d16b0bab33eb9f5ccf84372",
+    "data\\official_splits\\maxmin_train.csv": "fc2711a77967ce66a39cb378e7b52858581d1333b5704b1cf026b6c5556edfd1",
+    "data\\official_splits\\maxmin_test.csv": "017f8242dc1d7d70a89a118d6c0c9cafd70304de2f88d8a80fd115ef5d767a70",
+    "data\\official_splits\\time_train.csv": "f46948b9a674efb8caebeea18a18c243b05c86c11b12bac6df5330d69a8c2e82",
+    "data\\official_splits\\time_test.csv": "ba528cab7e9882d2689bf5b2fbe8dd6355d42b804f5114b0be739229a1189397"
+  },
+  "original_inputs_unchanged": true,
+  "script_sha256": "a7f90aa865884958f5d7c3d82bbe325404698164e211fe5375c0773e2e1538e8",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "pandas": "3.0.1",
+    "scipy": "1.18.1",
+    "sklearn": "1.8.0"
+  },
+  "output_sha256": {
+    "01_elasticnet_stability_selection.csv": "ea9cd8df9be0fcef0a4b886fadb4eba2f389f0f5cce49e033776d5e4f3dff7bb",
+    "02_topk_descriptor_performance.csv": "39e52736617ae95980e86acba631a4044ca871fd0f099ec9913a8df11fbcba01",
+    "03_descriptor_consensus.csv": "70c5dff5e30abff81863aa1b2a9393d2f5283229b641481859ede3681f5cf5b4"
+  },
+  "elapsed_seconds": 84.94561460000023
+}

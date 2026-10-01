@@ -1,0 +1,15 @@
+{
+  "settings_total": 15,
+  "settings_with_auc100_below_both_severe_endpoints": 15,
+  "bootstrap_repetitions": 5000,
+  "primary_inference": "effect sizes with percentile and simultaneous centered-bootstrap confidence intervals",
+  "primary_representation": "ECFP",
+  "confirmatory_representations": [
+    "Avalon",
+    "MACCS",
+    "WL-HI",
+    "Descriptors12"
+  ],
+  "scaffold_cluster_primary_contrasts_total": 30,
+  "scaffold_cluster_primary_contrasts_ci_above_zero": 15
+}

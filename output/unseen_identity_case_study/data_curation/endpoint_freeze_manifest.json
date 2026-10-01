@@ -1,0 +1,12 @@
+{
+  "no_prediction_files_read": true,
+  "candidate_count": 16,
+  "primary_endpoint_rows": 11,
+  "files": {
+    "frozen_endpoint_ledger.csv": "e0fa7dd980d00421d52cb7faee511cba47f8f5e639dcca949eadeb7de83a0dfe",
+    "frozen_scoreable_48h_endpoints.csv": "b0854ec8135a8107955c5369f83301ec2da4ed454e521d3a5f1720752bb4ad18",
+    "frozen_primary_48h_contact.csv": "e292c0695fe6a419b78ae787b9e547cbacfb6055181daf4d9501a17e5c019b2d",
+    "frozen_secondary_48h_oral.csv": "b74b8cccd786eac3a8d74f4dd030ca8434bdfd92e7c0fdf01476edf52ec64d6f",
+    "frozen_added2_inference_structures.csv": "bf751a65630ff394fe5948c78a457bfb430c974b33c795e641229202ae207207"
+  }
+}

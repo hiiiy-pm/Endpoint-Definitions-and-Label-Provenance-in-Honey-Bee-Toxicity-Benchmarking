@@ -1,0 +1,42 @@
+[
+  {
+    "file": "OFT3.0 export repository.xlsx",
+    "bytes": 22595502,
+    "sha256": "5181661e921651d4087b544981e1e5a63b99532844eac0112732806a00a85eda"
+  },
+  {
+    "file": "dataset_final.csv",
+    "bytes": 135018,
+    "sha256": "de4b160a23601a44ac5ec5b23aae95973acba060135630a6df8f73d128baea9e"
+  },
+  {
+    "file": "excluded_data.csv",
+    "bytes": 176575,
+    "sha256": "a5826a0bf724e2e8db4f6edaa596689ff2282acbfb8bbe68b6b75d8827d2b788"
+  },
+  {
+    "file": "journal.pone.0265962.s001.xlsx",
+    "bytes": 31413,
+    "sha256": "dcee6401ef66ab914590cd7cb3a0dcfce8ccdc6e67792ee42f6a382f79a1ff2b"
+  },
+  {
+    "file": "journal.pone.0265962.s002.xlsx",
+    "bytes": 12850,
+    "sha256": "120b589e7222273b47e782087b43cfffe3bd3720e0210edaad494ede44d0af76"
+  },
+  {
+    "file": "journal.pone.0265962.s003.xlsx",
+    "bytes": 10270,
+    "sha256": "3d93ed8530f1ac7ad0d24d9bc0d0685483f0078e8fc36ec979451a5f0571c575"
+  },
+  {
+    "file": "journal.pone.0265962.s004.xlsx",
+    "bytes": 53114,
+    "sha256": "2f5db66bec655a7c13687435989b74d14909eabb6184ffe6a37b15f820656575"
+  },
+  {
+    "file": "journal.pone.0265962.s005.xlsx",
+    "bytes": 16586,
+    "sha256": "0e174323660cab9f1bbb1c59d2af3b819872f48c4e397f6c74718bafbbdd4f9a"
+  }
+]

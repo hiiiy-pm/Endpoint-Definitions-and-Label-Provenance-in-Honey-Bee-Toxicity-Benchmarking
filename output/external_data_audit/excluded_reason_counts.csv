@@ -1,0 +1,9 @@
+﻿reason,records
+Unspecifed toxicity level,745
+Invalid units,403
+No SMILES found,170
+Invalid SMILES,28
+Unknown observed response mean,26
+Ambiguous SMILES,11
+Only descriptive toxicity available,5
+CID not found,1

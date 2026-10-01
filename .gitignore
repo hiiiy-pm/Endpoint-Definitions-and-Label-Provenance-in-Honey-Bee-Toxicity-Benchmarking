@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+Thumbs.db
+*.aux
+*.log
+*.blg
+*.out
+*.synctex.gz
+*.zip
+verification/results/
+
+# Generated build products and local working copies
+*.pkl
+output/**/build/
+output/**/repeat_run/
+output/external_data_audit/cache/pubchem/
+output/figure_qa_scratch/

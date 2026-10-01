@@ -1,0 +1,12 @@
+﻿check,passed
+all16retained,True
+primary48h_only,True
+Apis_only,True
+none_in_training,True
+no_unknown_stage_primary,True
+positive_from_parent_notdegradate,True
+flux_contact_middle,True
+flupentio_limits_preserved,True
+inpyrfluxam_held,True
+dimpropyridaz_held,True
+unique_compound_route,True

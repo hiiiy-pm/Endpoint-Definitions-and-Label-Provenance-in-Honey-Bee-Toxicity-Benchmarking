@@ -1,0 +1,32 @@
+[
+  {
+    "file": "upstream_ecotox.py",
+    "url": "https://raw.githubusercontent.com/j-adamczyk/ApisTox_dataset/master/dataset_creation/ecotox.py",
+    "bytes": 10676
+  },
+  {
+    "file": "upstream_processing.py",
+    "url": "https://raw.githubusercontent.com/j-adamczyk/ApisTox_dataset/master/dataset_creation/processing.py",
+    "bytes": 2613
+  },
+  {
+    "file": "upstream_ppdb_and_bpdb.py",
+    "url": "https://raw.githubusercontent.com/j-adamczyk/ApisTox_dataset/master/dataset_creation/ppdb_and_bpdb.py",
+    "bytes": 7624
+  },
+  {
+    "file": "upstream_ecotox.csv",
+    "url": "https://zenodo.org/records/13350981/files/ecotox.csv?download=1",
+    "bytes": 1492907
+  },
+  {
+    "file": "upstream_ppdb.csv",
+    "url": "https://zenodo.org/records/13350981/files/ppdb.csv?download=1",
+    "bytes": 94389
+  },
+  {
+    "file": "oft_zenodo.json",
+    "url": "https://zenodo.org/api/records/19388272",
+    "bytes": 21876
+  }
+]

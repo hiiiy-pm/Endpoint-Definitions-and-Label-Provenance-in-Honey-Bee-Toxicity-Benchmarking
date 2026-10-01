@@ -1,0 +1,1040 @@
+
+=== PDF PAGE 1 ===
+Flupyrimin: A Novel Insecticide Acting at the Nicotinic Acetylcholine
+Receptors
+Yasumichi Onozaki, † Ryo Horikoshi, † Ikuya Ohno, † Shigeki Kitsuda, † Kathleen A. Durkin, ‡
+Tomonori Suzuki, § Chiaki Asahara, § Natsuko Hiroki, § Rena Komabashiri, § Rikako Shimizu, §
+Shogo Furutani, ¶ Makoto Ihara, ¶ Kazuhiko Matsuda, ¶ Masaaki Mitomi, † Shinzo Kagabu, ∥
+Katsuhito Uomoto, † and Motohiro Tomizawa *,§
+†Agricultural and Veterinary Research Laboratories, Agricultural and Veterinary Division, Meiji Seika Pharma Co., Ltd., Yokohama,
+Kanagawa 222-8567, Japan
+‡College of Chemistry, University of California, Berkeley, California 94720-1460, United States
+§Faculty of Life Sciences, Tokyo University of Agriculture, Setagaya, Tokyo 156-8502, Japan
+¶Faculty of Agriculture, Kindai University, Nara 631-8505, Japan
+∥Faculty of Education, Gifu University, Gifu 501-1193, Japan
+*S Supporting Information
+ABSTRACT: A novel chemotype insecticide ﬂupyrimin (FLP) [ N-[(E)-1-(6-chloro-3-pyridinylmethyl)pyridin-2(1H)-ylidene]-
+2,2,2-triﬂuoroacetamide], discovered by Meiji Seika Pharma, has unique biological properties, including outstanding potency to
+imidacloprid (IMI)-resistant rice pests together with superior safety toward pollinators. Intriguingly, FLP acts as a nicotinic
+antagonist in American cockroach neurons, and [
+3H]FLP binds to the multiple high-a ﬃ nity binding components in house ﬂy
+nicotinic acetylcholine (ACh) receptor (nAChR) preparation. One of the [ 3H]FLP receptors is identical to the IMI receptor, and
+the alternative is IMI-insensitive subtype. Furthermore, FLP is favorably safe to rats as predicted by the very low a ﬃ nity to the rat
+α4β2 nAChR. Structure −activity relationships of FLP analogues in terms of receptor potency, featuring the pyridinylidene and
+triﬂuoroacetyl pharmacophores, were examined, thereby establishing the FLP molecular recognition at the Aplysia californica
+ACh-binding protein, a suitable structural surrogate of the insect nAChR. These FLP pharmacophores account for the excellent
+receptor a ﬃ nity, accordingly revealing di ﬀerences in its binding mechanism from IMI.
+KEYWORDS: pyridinylidene and tri ﬂuoroacetyl pharmacophores, ﬂupyrimin, nicotinic acetylcholine receptor, nicotinic insecticide
+■ INTRODUCTION
+The nicotinic acetylcholine (ACh) receptor (nAChR) is the
+prototypical ligand-gated ion channel responsible for rapid
+excitatory neurotransmission and therefore is a crucial target for
+insecticide action.
+1−3 The binding site interactions of nicotinic
+insecticides and related analogous ligands have been de ﬁned
+with mollusk ACh binding protein (AChBP), which is an
+appropriate surrogate of the extracellular ligand-binding domain
+of the nAChR by chemical/structural biology approach with
+adequate resolution to understand the recognition properties of
+the drug-binding region.
+4−9 The de ﬁned three-dimensional
+binding site structure in the nicotinic ligand-bound state
+subsequently facilitates th e molecular design of novel
+insecticidal compounds with unique pharmacophores.
+10−17
+Nicotine (NIC) or anabasine ( Figure 1 ) in tobacco extract
+was, for centuries, the best available agent to control piercing-
+sucking insect pests: i.e., primary generation of nicotinic
+insecticides. On the other hand, the search for unusual
+structures and optimization successfully led to the discovery
+of second generation neonicotinoid insecticides represented
+here by imidacloprid (IMI), acetamiprid (ACE), clothianidin
+(CLO), and dinotefuran. Neonicotinoids are utilized through-
+out the world, accounting for more than one-fourth of the
+global insecticide market.
+1−3 Currently, novel nicotinic
+compounds ﬂupyradifurone (FPF), tri ﬂumezopyrim (TFM),
+and dicloromezotiaz , arbitrarily classi ﬁed here as new
+generation, are introduced into the market ( Figure 1 ).18−21
+Meanwhile, neonicotinoid-resistant insect pests are recently
+devastating rice ﬁelds in south, southeast, and east Asian
+countries.22,23 Furthermore, safety toward nontarget and/or
+beneﬁcial organisms is a key requirement to develop agro-
+chemicals. In the aforementioned circumstances, Meiji Seika
+Pharma discovered a novel chemotype insecticide ﬂupyrimin
+[FLP, N-[(E)-1-(6-chloro-3-pyridinylmethyl)pyridin-2(1H)-yli-
+dene]-2,2,2-triﬂuoroacetamide], providing important biological
+properties featuring outstanding insecticidal potency to the
+resistant rice pests as well as superior safety toward bene ﬁcial
+organisms, including pollinators.
+24
+The present investigation consists of three goals. The ﬁrst
+aim is to introduce insecticidal properties of FLP and reveal the
+physiological e ﬀects on insect neurons. Second, the present
+report characterizes the binding interactions of FLP with the
+insect nAChRs in comparison with those of the other nicotinic
+Received: June 25, 2017
+Revised: August 18, 2017
+Accepted: August 18, 2017
+Published: August 18, 2017
+Article
+pubs.acs.org/JAFC
+© 2017 American Chemical Society 7865 DOI: 10.1021/acs.jafc.7b02924
+J. Agric. Food Chem. 2017, 65, 7865 −7873
+
+=== PDF PAGE 2 ===
+insecticides. Finally, we predict the FLP molecular recognition
+at the insect nAChR homologue based on structure −activity
+relationships (SARs) of the FLP analogues focusing on the
+pharmacophoric pyridinylidene and tri ﬂuoroacetyl moieties.
+■ MATERIALS AND METHODS
+Chemicals. Radiosynthesis of [ 3H]FLP (90 Ci/mmol) was
+performed by IZOTOP (Budapest, Hungary), and [ 3H]IMI (17 Ci/
+mmol) was available from our previous report 14 (Figure 2 ). ( −)-[N-
+Methyl-3H]NIC ([ 3H]NIC) (80 Ci/mmol) was obtained from
+PerkinElmer (Boston, MA). ( −)-NIC tartrate, IMI, ACE, and CLO
+were purchased from Wako Pure Chemical (Osaka, Japan).
+(±)-Epibatidine (EPI) dihydrochloride was available from Sigma (St.
+Louis, MO). FPF and TFM were prepared by reported method-
+ologies.18−20 FLP ( 1) and the analogues considered here are listed in
+Figure 2 . Compounds 3−10 and 12−17 were available from our
+previous papers, 10,14,24 and compounds 11 and 19−21 were
+synthesized according to described procedures. 25−27
+N-[(E)-1-(6-Chloro-3-pyridinylm ethyl)piperidin-2(1H)-ylidene]-
+2,2,2-triﬂuoroacetamide ( 2). To a stirred solution of 1-[(6-chloro-3-
+pyridinyl)methyl]piperidine-2(1H)-imine28 (233 mg, 1.00 mmol) in
+CHCl3 (15 mL) was slowly added tri ﬂuoroacetic anhydrate (441 mg,
+2.10 mmol) followed by N,N-diisopropyl ethylamine (452 mg, 3.50
+mmol) on an ice −water bath. The mixture was stirred overnight at the
+ambient temperature. Water (30 mL) was added to the reaction
+mixture and extracted with CHCl
+3 (15 mL × 2); the combined organic
+phase was washed successively with 1% HCl aq., 10% Na 2CO3 aq., and
+ﬁnally with water and dried. The solvent was removed in vacuo and
+the product 2 was isolated as white solid by silica gel column
+chromatography (hexane:EtOAc 1:1): yield, 37 mg (6%); mp 65 −67
+°C; NMR (CDCl 3), δH 1.80 (2H, m), 1.85 (2H, m), 3.06 (2H, t, J =
+6.3 Hz), 3.44 (2H, t, J = 6.3 Hz), 4.82 (2H, s), 7.33 (1H, d, J = 8.0
+Hz), 7.75 (1H, dd, J = 8.0 Hz, J = 2.3 Hz), 8.35 (1H, d, J = 2.3 Hz); δC
+19.2, 22.2, 29.5, 48.8, 51.1, 115.5 ( q, JC−F = 288.8 Hz), 124.8, 130.2,
+139.6, 149.7, 151.7, 164.7 ( d, JC−F = 35.9 Hz), 172.1; δF −76.1. ESI-
+HRMS for C 13H13ClF3N3O: calcd (+H +), 320.0777; found, 320.0774.
+N-[(E)-1-(6-Chloro-3-pyridinylmethyl)pyridin-2(1H)-ylidene]-2-io-
+doacetamide ( 18). To a stirred solution of 1-[(6-chloro-3-pyridinyl)-
+methyl]pyridine-2(1H)-imine24 (100 mg, 0.45 mmol) in CH 3CN (10
+mL) was added 2-iodoacetyl chloride (102 mg, 0.50 mmol). The
+reaction mixture was stirred at room temperature for 2 h, and EtOAc
+(30 mL) was added, and then washed sequentially with 1 N HCl aq.
+(10 mL × 3) and 1N NaOH aq. (10 mL × 3). The organic phase was
+dried and evaporated in vacuo. The residue was applied onto silica gel
+column chromatography (EtOAc:MeOH 1:1) to obtain the product
+18 as brown solid: yield, 40 mg (23%); mp 116 −118 °C (decom.);
+NMR (CDCl
+3), δH 3.88 + 4.17 (2H, 2 s), 5.46 (2H, s), 6.64 (1H, t, J =
+13.5 Hz), 7.31 + 7.33 (1H, 2 d, J = 4.3 Hz, J = 4.3 Hz), 7.58 (2H, m),
+7.81 (1H, m), 8.25 + 8.33 (1H, 2 d, J = 8.9 Hz, J = 9.1 Hz), 8.46 (1H, t,
+J = 4.5 Hz); δC 47.2, 52.7, 112.5, 121.7, 124.6, 124.7, 130.1, 137.6,
+139.2, 140.5, 149.4, 149.5, 151.7. ESI-HRMS for C 13H11ClIN3O: calcd
+(+H+), 387.9713; found, 387.9716.
+N-[(E)-1-(6-Chloro-3-pyridinylm ethyl)pyridin-2(1H)-ylidene]-2-
+benzamide ( 22). Similar to the above ( 18), compound 22 (as yellow
+solid) was obtained using benzoyl chloride. Yield, 35 mg (20%); mp
+115−117 °C; NMR (CDCl
+3), δH 5.53 (2H, d, J = 4.1 Hz), 6.54 −6.55
+(1H, m), 7.28 −7.30 (1H, m), 7.38 −7.47 (3H, overlap m), 7.53 −7.63
+(2H, overlap m), 7.72 (1H, m), 8.16 (2H, d, J = 8.3 Hz), 8.36 (1H, dd,
+J = 8.3 Hz, J = 2.7 Hz), 8.45 (1H, broad s); δC 52.5, 111.4, 121.8,
+124.8, 128.0, 129.3, 130.7, 131.2, 137.7, 138.7, 138.8, 139.7, 149.2,
+151.6, 158.9, 174.4. EI-HRMS for C
+18H14ClIN3O: calcd, 323.0825;
+found, 323.0810.
+Insecticidal Activity. Insecticidal activities of test compounds
+against brown planthopper ( Nilaparvata lugens ), white-backed
+planthopper ( Sogatella f urcifera ), small brown planthopper ( Laodel-
+phax striatella ), rice green leafhopper ( Nephotettix cincticeps ), cotton
+aphid ( Aphis gossypii ), greenhouse white ﬂy( Trialeurodes vapor-
+ariorum), rice leaf bug ( Trigonotylus caelestialium ), western ﬂower
+thrips ( Frankliniella occidentalis ), diamondback moth ( Plutella
+xylostella), rice leaf beetle ( Oulema oryzae ), and house ﬂy( Musca
+Figure 1. Chemical structures of nicotinic insecticides competing with the endogenous agonist ACh at the insect nAChRs. The nicotinic agents are
+categorized under the following three groups: i.e., botanical NIC and anabasine as primary generation nicotinic insecticides; synthetic neonicot inoids
+(represented here by IMI, ACE, CLO, and dinotefuran) as second generation, and afterward, new generation compounds (FPF, TFM,
+dicloromezotiaz, and FLP) were discovered.
+Journal of Agricultural and Food Chemistry Article
+DOI: 10.1021/acs.jafc.7b02924
+J. Agric. Food Chem. 2017, 65, 7865 −7873
+7866
+
+=== PDF PAGE 3 ===
+demestica) were evaluated according to our laboratory procedures (see
+Supporting Information for details). 24 Acute toxicities toward
+honeybee ( Apis mellifera ), bumblebee ( Bombus terrestris ), and
+hornfaced bee ( Osmia cornif rons ) were examined by Eco-Science
+Corp. (Nagano, Japan).
+Electrophysiology. The abdominal nerve cord (from the terminal
+abdominal ganglion to the sixth ganglion) was removed from male
+adult American cockroaches ( Periplaneta americana ) and cultured as
+described earlier. 29 The action of ACh or FLP was recorded
+electrophysiologically using the whole-cell patch-clamp technique. 30
+Radioligand Binding. [3H]FLP or [ 3H]IMI binding to the native
+Musca brain nAChRs was performed according to Tomizawa et al. 31
+Mammalian α4β2 nAChR was expressed by baculovirus system. The
+rat α4o r β2 subunit cDNA from Origene Technologies (Rockville,
+MD) was inserted into pBacPAK8 at the XhoI/EcoRI site or BamHI/
+XhoI site, respectively. Transfection of Sf21 cells, plaque selection,
+recombinant virus ampli ﬁcation, and infection and harvesting of cells
+were carried out according to instruction manual for the BacPAK
+Baculovirus Expression System (Clontech Laboratories, Mountain
+View, CA). Monolayer cell culture was coinoculated with the α4 and
+β2 recombinant virus at each multiplicity of infection of 10. The Sf21
+cells were harvested 72 h after infection. Receptor preparation and
+[3H]NIC binding were performed as described by D ’Amour and
+Casida.32 IC50 values (molar concentrations of test chemicals necessary
+for 50% displacement of speci ﬁc radioligand binding) and binding
+parameters [dissociation constant ( KD); maximal binding capacity
+(Bmax); Hill coeﬃ cient (nH)] were calculated by SigmaPlot 13 software
+(SYSTAT Software, San Jose, CA).
+Calculations. Docking and molecular dynamics (MD) simulations
+of FLP were performed with the Aplysia californica AChBP structure in
+its IMI-bound state (PDB code 3C79) 7 as described in our previous
+papers.11,12,17 A single water molecule in the receptor (which is well-
+known to form bridging H-bonds between pyridine nitrogen of IMI
+and loop E amino acids) was included. The docking was made with a
+pair of (+)- and ( −)-face subunit chains. Then, AChBP-FLP was
+subject to MD simulations such that the active site region can fully
+explore conformational space. This required backbone constraints due
+to the structural limitations of a pair of (+)- and ( −)-chains model
+rather than a full pentameric system. Subsequently, a sample frame
+from the MD simulation was selected for detailed density function
+theory (DFT) calculations according to Cero ́n-Carraco et al.
+33 The
+relevant amino acids and a single water molecule within 4 Å of the
+docked FLP were individually calculated for an interaction energy at a
+higher DFT level [M06-2X/CC-P VTZ(-F)+ with counterpoise
+correction].
+■ RESULTS
+Biological Activities. Insecticidal activities of FLP, IMI,
+and other commercial standard insecticides against diverse
+target pests are given in Table 1 . FLP showed higher activities
+against Nilaparvata, Sogatella, Plutella, Oulema, and Musca than
+IMI and comparable activities to those of IMI against
+Laodelphax, Nephotettix , Trigonotylus, and Frankliniella (by
+foliar or topical application), although IMI and dinotefuran
+were more potent than FLP toward Aphis and Trialeurodes. FLP
+exhibited higher e ﬃ cacy against Sogatella than sulfoxa ﬂor,
+similar activity toward Nilaparbata to ﬁpronil and Musca to
+Figure 2. Chemical structures of FLP analogues and of two
+radiolabeled nicotinic insecticides [ 3H]FLP and [ 3H]IMI (asterisks
+indicate positions of tritium) considered in the present investigation.
+Table 1. Insecticidal Activities of FLP against Various Insect
+Species Compared with Those of IMI and Other Standard
+Insecticides
+LC90 or LD 90
+b
+target pests
+stage
+(application)a FLP IMI
+other
+standardc
+N. lugens d 2nd larva (f) 4.5 46 5.3 (F)
+S. f urciferad 2nd larva (f) 1.2 9.1 4.5 (SF)
+L. striatella d 2nd larva (f) 1.1 1.2
+N. cincticeps 2nd larva (f) 0.2 0.2
+A. gossypii 1st larva (f) 0.3 0.04
+T. vaporariorum adult (f) >100 1.0
+T. caelestialium 2nd larva (f) 0.6 1.0 0.1 (D)
+F. occidentalis 1st larva (f) 20 20 0.1 (E)
+P. xylostella 2nd larva (f) 0.9 41 0.01 (SP)
+O. oryzae d adult (t) 0.4 1.5
+M. domestica adult (t) 0.07 3.0 0.08 (P)
+aApplied via foliar (f) or topical (t). bUnit for foliar (f) or topical (t)
+given in ppm or μg/female, respectively. cOther standard insecticides
+used are ﬁpronil (F), sulfoxa ﬂor (SF), dinotefuran (D), emamectin
+benzoate (E), spinosad (SP), and permethrin (P). dNilaparvata,
+Sogatella, Laodelphax, and Oulema collected in Kumamoto (2010),
+Odawara (2011), Odawara (2001), and Gotemba (2012), respectively,
+in Japan.
+Journal of Agricultural and Food Chemistry Article
+DOI: 10.1021/acs.jafc.7b02924
+J. Agric. Food Chem. 2017, 65, 7865 −7873
+7867
+
+=== PDF PAGE 4 ===
+permethrin. FLP had lower potency against Trigonotylus,
+Franklinitella, and Plutella than dinotefuran, emamectin, and
+spinosad. Notably, FLP exhibited a 29- or 41-fold higher
+activity compared to those of IMI and 5- to 7-fold higher than
+ﬁpronil against other ﬁeld populations of Nilaparvata [collected
+in Kagoshima (2014 and 2015), Japan] (by foliar application)
+(Table 2 ). Furthermore, FLP showed e ﬃ cacies against
+planthoppers even by soil drenching application more stable
+than those of IMI and ﬁpronil. FLP had a potency 5- or 13-fold
+higher compared to that of IMI and similar to that of ﬁpronil
+against the same ﬁeld populations of Nilaparvata. Against
+Laodelphax [collected in Odawara (2001 and 2016), Oita
+(2013), and Ibaraki (2016), Japan], FLP was 2- to 31-fold more
+active than those of IMI and over 5- to 22-fold higher against
+the populations collected in the past few years than those of
+ﬁpronil, whereas ﬁpronil had high activity only against the
+Odawara 2001 population. In the ecotoxicological aspect, IMI
+was highly toxic to Apis and Bombus via oral and/or topical
+route administration,
+34−36 whereas FLP was harmless to the
+pollinators ( Table 3 ). FLP also showed low toxicity against
+Osmia.
+Electrophysiological Response. Inward current after
+application of 10 μM ACh was clearly evoked in the dissociated
+terminal abdominal ganglion neurons of Periplaneta (Figure 3).
+In contrast, 10 μM FLP [and even at 100 μM (data not
+shown)] produced no inward current, and subsequent washing
+with saline for 2 min gave a complete recovery in response to
+10 μM ACh. Surprisingly, a robust blocking activity was
+observed when 1 nM FLP was applied for 1 min prior to 10 μM
+ACh treatment. Moreover, the action was not recovered even
+by a 6 min successive wash with saline. IC
+50 value of FLP, for
+the inhibitory e ﬀect on the ACh-induced current amplitude,
+was 0.32 nM ( Figure 3 ).
+SARs. The present SAR study in terms of binding potency to
+the Musca nAChR and insecticidal activity against Laodelphax
+focused on the functions of diene π-electrons on the
+heterocyclic ring (compounds 1−10) and of halogen atom(s)
+(compounds 1 and 11−20)( Table 4 ). Relative to nAChR
+potency (indicated by IC 50 value), FLP ( 1) with diene π-
+electrons on the ring showed binding a ﬃ nity greater than that
+of the corresponding saturated analogue ( 2). Similarly,
+Table 2. Insecticidal Potencies of FLP in Comparison with
+Those of IMI and Fipronil against Field Populations of
+Nilaparvata and Laodelphax Collected in Japan
+LC90, ppm (foliar application)
+population FLP IMI ﬁpronil
+Nilaparvata
+Kumamoto 2010 4.5 46 5.3
+Kagoshima 2014 3.5 100 19
+Kagoshima 2015 3.0 124 20
+LD
+90, μg/seedling (soil drench application)
+FLP IMI ﬁpronil
+Nilaparvata
+Kumamoto 2010 26 117 46
+Kagoshima 2014 45 470 98
+Kagoshima 2015 40 510 36
+Laodelphax
+Odawara 2001 34 169 6
+Oita 2013 9 283 >200
+Odawara 2016 40 93 >200
+Ibaraki 2016 21 197 313
+Table 3. Comparative Acute Toxicity between FLP and IMI
+to Adult Pollinators
+LD50 or LC 50
+pollinator application unit FLP IMI c
+A. mellifera a oral μg/bee >53 0.04
+topical μg/bee >100 0.02
+B. terrestris a topical μg/bee >100 0.02
+O. cornif ronsb foliar ppm >100 unavailable
+aExamined according to guideline from the Japanese Ministry of
+Agriculture, Forestry, and Fisheries; lethality data was obtained four
+days after treatment. bDiluted solution of suspension concentrate
+formulation (10% FLP) was applied to strawberry pots, and adults
+were then released (lethality was observed three days after treatment).
+cData from refs 34−36.
+Figure 3. Typical electrophysiology responses (using whole-cell patch-
+clamp technique) produced by ACh and FLP (treated for 2 s) in the
+dissociated terminal ganglion neurons of P. americana (panel a).
+Responses to 10 μM ACh, 10 μM FLP, and then 10 μM ACh after a 2
+min wash with saline (left, middle, and right, respectively). In addition,
+no inward current was observed when 100 μM FLP was applied (data
+not shown). Blocking e ﬀect of FLP on the ACh-evoked response
+(panel b). Responses to 10 μM ACh alone, 10 μM ACh with 1 nM
+FLP pretreatment (for 1 min prior to ACh application), and then 10
+μM ACh after a 6 min wash with saline (left, middle, and right,
+respectively). Concentration −response curves for the blocking action
+of FLP [IC 50 0.32 ± 0.13 nM ( n = 3)] on the ACh-induced current
+amplitude of Periplaneta thoracic neurons (panel c).
+Journal of Agricultural and Food Chemistry Article
+DOI: 10.1021/acs.jafc.7b02924
+J. Agric. Food Chem. 2017, 65, 7865 −7873
+7868
+
+=== PDF PAGE 5 ===
+unsaturated thiazoline ( 3) or imidazoline ( 5) analogues had an
+enhanced a ﬃ nity relative to that of the equivalent saturated
+thiazolidine ( 4) or imidazolidine ( 6) analogues, respectively.
+Compounds with an extra nitrogen atom on the dihydropyr-
+idine ring: i.e., dihydropyridazine ( 7); dihydro-1,3-pyrimidine
+(8); dihydro-1,5-pyrimidine ( 9); and dihydropyrazine ( 10),
+which have the decreased ring electron density, were essentially
+inactive. N-Acetyl analogue (CH
+3)( 11) had a 240-fold lower
+aﬃ nity compared to that of the corresponding N-triﬂuoroacetyl
+(CF3) FLP ( 1). Interestingly, the other N-haloacetyl analogues
+providing CHF 2,C F 2Cl, CCl 3, CHCl 2,C H 2Cl, CH 2Br, and
+CH2I substituents ( 12−18) retained the a ﬃ nity of FLP ( 1). N-
+Nitro ( 19) and N-cyano ( 20) analogues were also very potent
+as Musca nAChR ligands. Regarding insecticidal activity against
+the Laodelphax (indicated by dose giving 90% lethality, LD 90),
+compounds with high binding a ﬃ nity to the insect nAChR
+were clearly insecticidal ( 1, 12, 13, 17, and 19), although some
+other high a ﬃ nity compounds unfortunately gave low
+insecticidal activity ( 3, 14, 15, 16, 18, and 20). Compounds
+with low receptor potency ( 2 and 4-11) were not insecticidal as
+predicted. Interestingly, 19 was insecticidal but 20 was
+somehow less toxic.
+Binding properties. Saturation isotherm of [ 3H]FLP
+binding to the Musca receptor was compared with that of
+[3H]IMI ( Figure 4 ). For [ 3H]FLP, multiple binding sites were
+revealed: i.e., KD values of 0.27 and 6.5 nM; Bmax values 170 and
+210 fmol/mg protein; nH 0.66. In contrast, a single binding
+component was detected for [ 3H]IMI: i.e., KD 2.2 nM; Bmax 220
+fmol/mg protein; nH 0.98.
+Actions of diverse nicotinic agents at the [ 3H]FLP receptor
+were considered in comparison with those at the [ 3H]IMI
+receptor. IC 50 values for all agents listed in Table 5 showed
+fundamentally the same relationship in both assay systems. As
+an index for binding property, nHs of FLP analogues with varied
+N-acyl moieties ( 1, 11, 21, and 22) assayed by [ 3H]FLP were
+consistent to those examined by [ 3H]IMI: i.e., nH around 1.0,
+indicating no cooperativity. Whereas, other agents (NIC, IMI,
+ACE, CLO, and FPF) assayed by [
+3H]FLP gave nH 0.53−0.78,
+suggesting negative cooperativity. The ﬁve ligands had nH
+around 1.0 in [ 3H]IMI binding. Noteworthy, TFM somehow
+showed negative cooperativity ( nH 0.64−0.65) in both assay
+systems.
+Simultaneous dual radioligand binding experiments ( Table
+6) were conducted in which the simultaneous binding or direct
+competition of two radioligands was examined in the same
+Musca brain receptor preparation. This method can provide
+direct evidence that two radioligands bind either to distinct
+sites (or receptor subtypes) or to the identical domain (or
+closely coupled sites).
+37−39 On the basis of saturation
+Table 4. SARs of FLP Analogues in Terms of Their
+Potencies as Displacers of [ 3H]FLP (1 nM) Binding to the
+Musca nAChR and Their Insecticidal Activities against the
+Laodelphax
+no.
+binding potency IC 50,n M ± SD
+(n =3 )
+insecticidal activity a LD90,
+μg/seedling
+1 (FLP) 4.1 ± 0.1 0.03
+2 92 ± 10 >20
+3 6.4 ± 0.9 >20
+4 48 ± 2 >20
+5 50 ± 2 >20
+6 80 ± 1 >20
+7 240 ± 30 >20
+8 120 ± 19 >20
+9 170 ± 17 20
+10 820 ± 120 >20
+11 980 ± 70 >20
+12 6.6 ± 0.5 0.25
+13 5.2 ± 1.8 0.25
+14 16 ± 2 >20
+15 6.0 ± 1.0 >20
+16 14 ± 1 >20
+17 35 ± 11 5
+18 7.1 ± 0.3 >20
+19b 2.1 ± 0.1 0.1
+20 1.1 ± 0.1 20
+aExamined by root-soaking application method (collected in Odawara,
+2001). bPotency of 19 with a nitroimine moiety against the ﬁeld
+Nilaparvata (Kumamoto, 2010) diminished, while tri ﬂuoroacetyl FLP
+retained the activity (data not shown).
+Figure 4. Saturation isotherm and Scatchard plot (insert) for speci ﬁc
+[3H]FLP (left) or [ 3H]IMI (right) binding to the native M. domestica
+brain nAChRs. The saturation curve has error bar for each data point
+(±SD, n = 3), and the Scatchard plot is displayed as representative
+data from three individual experiments. Speci ﬁc binding is the
+diﬀerence in radioactivity in the absence and presence of 20 μM
+FLP for [ 3H]FLP and 20 μM IMI for [ 3H]IMI. Nonspeci ﬁc bound
+was less than 10% of total bound for both radioligands, although
+nonspeciﬁc bound at higher [ 3H]FLP concentrations (22 and 58 nM)
+gave 15 and 27%, respectively, of total bound. For [ 3H]FLP, multiple
+binding components were detected: i.e., the binding parameters ( ±SD,
+n = 3) are KD values 0.27 ± 0.04 and 6.5 ± 1.9 nM; Bmax values 170 ±
+19 and 210 ± 10 fmol/mg protein; nH 0.66 ± 0.03. In contrast, a single
+binding site is revealed for [ 3H]IMI: i.e., the binding parameters
+(±SD, n = 3) are KD 2.2 ± 0.2 nM; Bmax 220 ± 4 fmol/mg protein; nH
+0.98 ± 0.04.
+Table 5. Potencies of Diverse Nicotinic Agents as Displacers
+of [ 3H]FLP (1 nM) or [ 3H]IMI (5 nM) Binding to the
+Musca nAChRs
+[3H]FLP binding [ 3H]IMI binding
+ligand IC 50 (nM ± SD, n =3 ) nH IC50 (nM ± SD, n =3 ) nH
+FLP analogues
+1 (FLP) 4.1 ± 0.1 0.99 1.0 ± 0.2 0.96
+11 980 ± 70 1.1 1000 ± 330 0.98
+21 1.6 ± 0.3 0.98 1.6 ± 0.5 0.96
+22 82 ± 5 0.92 77 ± 12 0.92
+others
+NIC 22 000 ± 4,100 0.75 6200 ± 440 0.94
+IMI 28 ± 4 0.78 8.4 ± 2.6 0.99
+ACE 39 ± 3 0.78 16 ± 3 0.98
+CLO 23 ± 2 0.60 8.4 ± 0.6 1.0
+FPF 33 ± 9 0.53 19 ± 12 0.93
+TFM 46 ± 3 0.65 37 ± 10 0.64
+Journal of Agricultural and Food Chemistry Article
+DOI: 10.1021/acs.jafc.7b02924
+J. Agric. Food Chem. 2017, 65, 7865 −7873
+7869
+
+=== PDF PAGE 6 ===
+experiments (as given in Figure 4 ), concentration of [ 3H]FLP
+(1 or 20 nM) is at or near saturation for the high a ﬃ nity site
+(KD 0.27 nM) or the low a ﬃ nity site ( KD 6.5 nM), respectively.
+Also, 20 nM [ 3H]IMI is a 9.1-fold higher than the KD value (2.2
+nM). [ 3H]FLP (1 nM) and [ 3H]IMI (20 nM) bindings were
+found to be 79.4 and 20.6%, respectively, of that for the
+theoretical total of 100%. The two radioligands together
+conferred only 44.6% of the expected value. Therefore, there is
+clear interference by one radioligand in the binding of the other
+one. [
+3H]FLP and [ 3H]IMI (both at 20 nM) bindings gave
+88.6 and 11.4%, respectively, of that for the theoretical total of
+100%. Interestingly, simultaneous use of the both radioligands
+at the above condition recovered 87.5% of the expected total
+value of 100%: i.e., the two radioligands mostly bind to distinct
+sites. Accordingly, high a ﬃ nity [
+3H]FLP binding site (saturable
+by 1 nM) overlaps with that for [ 3H]IMI, and they compete
+with each other at the same binding place. In contrast, low
+aﬃ nity [
+3H]FLP binding component (saturable by 20 nM) is
+an independent receptor from that of the aforementioned one.
+Further, IC
+50 value of α-bungarotoxin (α-BGT) as a displacer of
+[3H]FLP binding to the Musca receptor preparation was 860
+nM or of FLP in [ 125I]α-BGT binding was 300 nM, suggesting
+that FLP is essentially insensitive to the α-BGT receptor.
+Remarkably, [ 3H]FLP (100 nM) gave no speci ﬁc binding
+(2.4%) to the recombinant rat α4β2 nAChR, whereas [ 3H]NIC
+(5 nM) speci ﬁcally bound (97%) ( Table 7). Furthermore, FLP
+had quite low binding a ﬃ nity (1100 nM) to the α4β2 receptor
+(assayed by [ 3H]NIC as reporter molecule) compared with
+those of two representative nicotinic alkaloids ( −)-NIC and
+(±)-EPI (2.8 and 0.09 nM, respectively) ( Table 8 ). FLP was
+not highly toxic to rats via oral and dermal routes ( Table 8
+footnote).
+Binding Site Interactions. In silico FLP binding site
+interactions were established with Aplysia AChBP (as a suitable
+structural surrogate for the insect nAChR extracellular ligand-
+binding domain) based on the present SAR ﬁndings and
+previous chemical and structural biology investigations ( Figure
+5).
+4−8 The FLP chloropyridinyl chlorine contacts with loop E
+A107 and M116, and a water-mediated H-bonding is formed
+among the chloropyridine nitrogen, I106, and I118. The
+triﬂuoroacetyl three ﬂuorine atoms contact with C226 −227,
+S189, Y55, Q57, and I118 via H-bonding or hydrophobic
+interaction. The = NC(O) oxygen contacts Y55 OH or S189/
+C190 backbone NH. The two π-electron systems on the FLP
+pyridinylidene make π-stacks with W147 and Y188. The
+pairwise interaction energies between FLP and each of relevant
+amino acids con ﬁguring the FLP-binding pocket in Aplysia
+AChBP were calculated at higher DFT level ( Table 9). Loop B
+W174 and loop C C190 −191 show strong interactions. Loop E
+I118, loop C Y188, and a water are also substantial. Loop D
+Q57 or Y55 makes a certain contribution, while loop C S189 or
+loop E M116 takes a plausible interaction.
+■ DISCUSSION
+Exploration of novel chemotype nicotinic insecticide, under-
+going atypical interaction with the target and preventing from
+detoxiﬁcation, may confer unique biological properties such as
+substantial potency to the neonicotinoid-resistant
+pests
+22,23,40−43 and favorable safety toward pollinators. The
+present report introduces a new agent FLP, discovered by Meiji
+Seika Pharma, which has excellent insecticidal potency
+particularly against the rice insect pests, including the IMI-
+insensitive populations. Resistance to IMI and other neon-
+icotinoids in major target rice pests Nilaparvata and Laodelphax
+are primarily attributable to enhanced detoxi ﬁcation by
+cytochrome P450(s).
+22,23,40,41 Surprisingly, an IMI-resistant
+peach-potato aphid ( Myzus persicae ) (highly resistant FRC
+strain) with a R81T mutation (on Myzus β1 loop D) conserves
+a single high a ﬃ nity [ 3H]IMI binding site ( KD 4 nM and Bmax
+2000 fmol/mg protein). 43 It should be underscored that FLP is
+much less toxic to bees compared with IMI and other
+neonicotinoids in acute toxicity evaluation.
+44 Further, FLP
+shows a favorable mammalian safety as predicted, in part, by the
+low a ﬃ nity to the recombinant rat α4β2 receptor, a major
+nAChR subtype expressed in the vertebrate brain.
+Regarding binding properties, [ 3H]FLP binds to the multiple
+receptor subtypes with comparable Bmax values in Musca.
+Interestingly, one of these is conserved as the [ 3H]IMI-sensitive
+subtype. The alternative [ 3H]FLP site is possibly an extra
+Table 6. Simultaneous Dual Radioligand Bindings in Musca
+nAChRs
+radioligand
+assay level
+(nM)a
+speciﬁc binding (dpm/
+mg protein) b
+dual binding (% of
+expected)c
+[3H]FLP 1 50 000 ± 2400 79.4
+[3H]IMI 20 13 000 ± 450 20.6
+[3H]FLP +
+[3H]IMI
+1 + 20 28 100 ± 750 44.6
+[3H]FLP 20 96 000 ± 3100 88.6
+[3H]IMI 20 12 400 ± 610 11.4
+[3H]FLP +
+[3H]IMI
+20 + 20 94 800 ± 2500 87.5
+aConcentrations are at least 3.1-fold greater than that of the KD values
+of both radioligands, i.e., at or near saturation. bMean ± SD ( n =3 −
+6). Speciﬁc binding is the di ﬀerence in radioactivity in the absence and
+presence of 10 μM FLP for [ 3H]FLP and 10 μM IMI for [ 3H]IMI or
+an appropriate combination of two unlabeled ligands for simultaneous
+dual radioligand bindings. cExpected is the theoretical total of 100%
+deﬁned as the sum of the dpm/mg protein for each individual
+radioligand.
+Table 7. Radioligand Binding Pro ﬁles of Recombinant Rat
+α4β2 nAChR
+speciﬁc binding a
+radioligand assay level (nM) fmol/mg protein b %c
+[3H]FLP 100 69 ± 33 2
+[3H]NIC 5 1300 ± 50 97
+aSpeciﬁc binding was de ﬁned as the di ﬀerence in radioactivity in the
+absence and the presence of 100 μM FLP or 10 μM( −)-NIC for
+[3H]FLP or [ 3H]NIC, respectively. bMean ± SD (n =4 −6). cSpeciﬁc
+binding relative to total binding.
+Table 8. Potency of Nicotinic Ligands as Displacers of
+[3H]NIC (5 nM) Binding to the Recombinant Rat α4β2
+nAChR
+liganda IC50,n M ± SD ( n =3 )
+FLPb 1100 ± 50
+(−)-NIC 2.8 ± 0.5
+(±)-EPI 0.09 ± 0.02
+aAs with FLP, FPF and TFM were also inactive (IC 50s 2700 ± 590
+and 2400 ± 210 nM, respectively). bRelative to toxicity to rats, LD 50 of
+FLP via oral or dermal route was 300 < LD 50 ≤ 2000 or >2000 mg/kg,
+respectively.
+Journal of Agricultural and Food Chemistry Article
+DOI: 10.1021/acs.jafc.7b02924
+J. Agric. Food Chem. 2017, 65, 7865 −7873
+7870
+
+=== PDF PAGE 7 ===
+subtype (IMI-insensitive). Thus, FLP may act at diverse insect
+nAChR subtypes. NIC, three neonicotinoids (IMI, ACE, and
+CLO), and two new insecticides FPF and TFM act on the high
+aﬃ nity [
+3H]FLP site in a di ﬀerent way from that of FLP
+analogues with extended N-acylimine pharmacophore. In
+contrast, these six nicotinic agents and the FLP analogues
+competitively act at the [
+3H]IMI site. These observations
+suggest that a binding subsite or niche embracing the N-
+acylimine pharmacophore of FLP analogues is inconsistent with
+that for neonicotinoid N-nitro/cyanoimine moiety, yet a tiny
+part of the whole N-acyl niche serves as the interaction point
+with the N-nitro/cyano tip. FPF presumably shares the same
+cavity (or closely coupled subsites) for neonicotinoids. On the
+other hand, TFM may interact in a distinct way from that of
+neonicotinoid or FLP with Musca nAChRs, although TFM
+binds to the Myzus [
+3H]IMI site in a competitive manner. 19
+FPF shows agonistic action in fall armyworm Spodoptera
+f rugiperda neurons, 18 whereas TFM acts as a nicotinic
+antagonist in Periplaneta.19 In the present investigation, FLP
+also exhibits strong antagonist activity. However, CLO elicits
+agonist response in the Periplaneta neurons.
+45 Therefore, FLP is
+undoubtedly distinct in its physiological response from FPF
+and neonicotinoids.
+IMI and FLP are similar in providing a common 6-
+chloropyridin-3-ylmethyl moiety, whereas they are crucially
+diﬀerent in their pharmacophoric systems. The neonicotinoid is
+coplanar between the guanidine or amidine plane and the nitro
+or cyano substituent, thereby yielding electronic conjugation to
+facilitate partial negative charge ( δ
+−) ﬂow toward the tip oxygen
+or nitrogen atom. 10,46 The electronegatively charged oxygen or
+nitrogen forms H-bonding primarily to loop C amino acids
+(Figure 6 ).
+5−7,33 Thus, the conjugated electronic system serves
+as a critical neonicotinoid pharmacophore. In fact, nitro/
+cyanoimine neonicotinoid shows high a ﬃ nity to the hybrid
+nAChR(s) consisting of insect α (Myzus α2o r Drosophila α2)
+and mammalian β (rat β2) subunits. 38 Once Drosophila α2
+subunit of a hybrid receptor ( Drosophila α2/chicken β2) is
+replaced by chicken α4 subunit, response to IMI is completely
+wiped out. 47 Chimera hybrid receptor con ﬁgured by insect α
+and vertebrate β2 subunits, wherein insect loop D sequence is
+inserted, modestly enhances IMI-elicited agonist responses
+(EC
+50s a few fold better than that of the wild type). 47,48 In
+sharp contrast, FLP tri ﬂuoroacetyl ﬂuorine atoms variously
+interact with loops C, D, and E amino acids via H-bonding(s)
+and/or van der Waals contact(s). Thus, the long extended FLP
+triﬂuoroacetyl pharmacophore is anchored, in an adequate
+depth, to the interfacial cavity consisting of loops C, D, and E.
+Correspondingly, analogous N-acylimine (e.g., compound 21
+with a pyrazine ring) type pharmacophore is nestled in the
+aforementioned niche.
+11 Furthermore, diene π-electrons on the
+heterocyclic ring make π-stacking interactions with aromatic
+Figure 5. Structural model for FLP binding site interactions with the sea slug ( A. californica ) AChBP, a suitable structural surrogate for the insect
+nAChR ligand-binding domain. 1,2,5−7 FLP is embedded in the binding pocket localized at an interface between two subunits displayed in surface
+representation [pink and silver for AChBP (+)- and ( −)-face subunits, respectively] (left). The FLP binding site interactions are exhibited in three
+viewpoints: i.e., chloropyridine moiety and loop E region with a water molecule (second from left); tri ﬂuoroacetyl pharmacophore and diverse amino
+acids from loops C, D, and E (second from right); diene π-electrons of the ring and aromatic amino acids on loops B and C (right). Relevant amino
+acids in pink or silver are from (+)- or ( −)-face subunit, respectively.
+Table 9. Interaction Energies of FLP with Key Amino Acids
+Conﬁguring the Binding Cavity
+Aplysia AChBP amino acid interaction energy (kcal/mol)
+W147 −13.7
+Y188 −5.39
+S189 −1.78
+C190−191 −7.05
+Y55 −2.26
+Q57 −2.98
+I118 −5.63
+M116 −1.72
+water −4.14
+Figure 6. Schematic representation of the unique binding interaction
+of FLP C(O)CF 3 pharmacophore with the Aplysia AChBP loops C, D,
+and E amino acids (upper left), thereby emphasizing an obvious
+contrast to that of IMI NO 2 tip oxygen with the loop C amino acids
+(PDB 3C79) 7 (upper right). Aplysia AChBP is a suitable structural
+surrogate of the insect nAChR ligand-binding domain. 1,2,5,6 N-
+Acylimine pharmacophore (lower left) docks, in an adequate depth,
+with the interfacial niche between loops C, D, and E, whereas N-nitro-
+or N-cyanoimine electronegative tip (lower right) primarily interacts
+with the loop C region.
+5,7,11,17
+Journal of Agricultural and Food Chemistry Article
+DOI: 10.1021/acs.jafc.7b02924
+J. Agric. Food Chem. 2017, 65, 7865 −7873
+7871
+
+=== PDF PAGE 8 ===
+amino acids from loops B and C, conferring a su ﬃ cient
+stabilization energy. 49 Therefore, the above two unique FLP
+pharmacophores play individual and decisive role(s) on the
+molecular recognition at the binding surface. Further SAR
+investigations of FLP analogues based on electrophysiology
+response and radioligand binding would be warranted to fully
+explain FLP mode of insecticidal action.
+In summary, FLP, as a new chemotype nicotinic insecticide
+discovered by Meiji Seika Pharma, exhibits remarkable
+biological properties featuring outstanding potency to neon-
+icotinoid-insensitive rice insect pests and superior safety toward
+pollinators. Intriguingly, FLP acts on the insect nAChRs as an
+antagonist via a recognition manner di ﬀerent from those of the
+other nicotinic insecticides.
+■ ASSOCIATED CONTENT
+*S Supporting Information
+The Supporting Information is available free of charge on the
+ACS Publications website at DOI: 10.1021/acs.jafc.7b02924.
+Details on insecticidal activity evaluation: i.e., the origin
+and the stage of insect pests examined and data
+observation point after treatment and assay method-
+ologies (against Laodelphax by root dipping and against
+Nilaparvata and Laodelphax by foliar application and soil
+drenching) ( PDF)
+■ AUTHOR INFORMATION
+Corresponding Author
+*E-mail: mt204882@nodai.ac.jp; Phone +81-3-5477-2529; Fax
++81-3-5477-2655.
+ORCID
+Motohiro Tomizawa: 0000-0002-5579-4114
+Notes
+The authors declare no competing ﬁnancial interest.
+■ ABBREVIATIONS USED
+ACh, acetylcholine; AChBP, ACh binding protein; ACE,
+acetamiprid; α-BGT, α-bungarotoxin; CLO, clothianidin;
+DFT, density function theory; FLP, ﬂupyrimin; FPF,
+ﬂupyradifurone; IMI, imidacloprid; MD, molecular dynamics;
+NIC, nicotine; nAChR, nicotinic ACh receptor; SAR,
+structure−activity relationship; TFM, tri ﬂumezopyrim
+■ REFERENCES
+(1) Tomizawa, M.; Casida, J. E. Molecular recognition of
+neonicotinoid insecticides: the determinants of life or death. Acc.
+Chem. Res. 2009, 42, 260 −269.
+(2) Tomizawa, M. Chemical biology of the nicotinic insecticide
+receptor. Adv. Insect Physiol. 2013, 44,6 3 −99.
+(3) Casida, J. E.; Durkin, K. A. Neuroactive insecticides: targets,
+selectivity, resistance, and secondary effects. Annu. Rev. Entomol. 2013,
+58,9 9 −117.
+(4) Tomizawa, M.; Maltby, D.; Medzihradszky, K. F.; Zhang, N.;
+Durkin, K. A.; Presley, J.; Talley, T. T.; Taylor, P.; Burlingame, A. L.;
+Casida, J. E. Defining nicotinic agonist binding surfaces through
+photoaffinity labeling. Biochemistry 2007, 46, 8798 −8806.
+(5) Tomizawa, M.; Talley, T. T.; Maltby, D.; Durkin, K. A.;
+Medzihradszky, K. F.; Burlingame, A. L.; Taylor, P.; Casida, J. E.
+Mapping the elusive neonicotinoid binding site. Proc. Natl. Acad. Sci.
+U. S. A. 2007, 104, 9075 −9080.
+(6) Tomizawa, M.; Maltby, D.; Talley, T. T.; Durkin, K. A.;
+Medzihradszky, K. F.; Burlingame, A. L.; Taylor, P.; Casida, J. E.
+Atypical nicotinic agonist bound conformations conferring subtype
+selectivity. Proc. Natl. Acad. Sci. U. S. A. 2008, 105, 1728 −1732.
+(7) Talley, T. T.; Harel, M.; Hibbs, R. E.; Radic ́, Z.; Tomizawa, M.;
+Casida, J. E.; Taylor, P. Atomic interactions of neonicotinoid agonists
+with AChBP: molecular recognition of the distinctive electronegative
+pharmacophore. Proc. Natl. Acad. Sci. U. S. A. 2008, 105, 7606 −7611.
+(8) Tomizawa, M.; Talley, T. T.; Park, J. F.; Maltby, D.;
+Medzihradszky, K. F.; Durkin, K. A.; Cornejo-Bravo, J. M.;
+Burlingame, A. L.; Casida, J. E.; Taylor, P. Nicotinic agonist binding
+site mapped by methionine- and tyrosine-scanning coupled with
+azidochloropyridinyl photoaffinity labeling. J. Med. Chem. 2009, 52,
+3735−3741.
+(9) Ihara, M.; Okajima, T.; Yamashita, A.; Oda, T.; Hirata, K.;
+Nishiwaki, H.; Morimoto, T.; Akamatsu, M.; Ashikawa, Y.; Kuroda, S.;
+Mega, R.; Kuramitsu, S.; Sattelle, D. B.; Matsuda, K. Crystal structures
+of Lymanea stagnalis AChBP in complex with neonicotinoid
+insecticides imidacloprid and clothianidin. Invertebr. Neurosci. 2008,
+8,7 1 −81.
+(10) Tomizawa, M.; Zhang, N.; Durkin, K. A.; Olmstead, M. M.;
+Casida, J. E. The neonicotinoid electronegative pharmacophore plays
+the crucial role in the high affinity and selectivity for the Drosophila
+nicotinic receptor: an anomaly for the nicotinoid cation- π interaction
+model. Biochemistry 2003, 42, 7819 −7827.
+(11) Tomizawa, M.; Kagabu, S.; Ohno, I.; Durkin, K. A.; Casida, J. E.
+Potency and selectivity of trifluoroacetylimino and pyrazinoylimino
+nicotinic insecticides and their fit at a unique binding site niche. J. Med.
+Chem. 2008, 51, 4213 −4218.
+(12) Ohno, I.; Tomizawa, M.; Durkin, K. A.; Naruse, Y.; Casida, J. E.;
+Kagabu, S. Molecular features of neonicotinoid pharmacophore
+variants interacting with the insect nicotinic receptor. Chem. Res.
+Toxicol. 2009, 22, 476 −482.
+(13) Ohno, I.; Tomizawaa, M.; Durkin, K. A.; Casida, J. E.; Kagabu,
+S. Bis-neonicotinoid insecticides: observed and predicted binding
+interactions with the nicotinic receptor. Bioorg. Med. Chem. Lett. 2009,
+19, 3449 −3452.
+(14) Ohno, I.; Tomizawa, M.; Aoshima, A.; Kumazawa, S.; Kagabu, S.
+Trifluoroacetyl neonicotinoid insecticides with enhanced hydro-
+phobicity and effectiveness. J. Agric. Food Chem. 2010, 58, 4999−5003.
+(15) Ohno, I.; Tomizawa, M.; Miyazu, N.; Kushibiki, G.; Noda, K.;
+Hasebe, Y.; Durkin, K. A.; Miyake, T.; Kagabu, S. Structural features of
+phenoxycarbonylimino neonicotinoids acting at the insect nicotinic
+receptor. Bioorg. Med. Chem. Lett. 2010, 20, 5933 −5935.
+(16) Kagabu, S.; Ohno, I.; Tomizawa, M.; Durkin, K. A.; Matsuura,
+R.; Uchiyama, D.; Nagae, N.; Kumazawa, S. Furan-2,5-dimethylene-
+tethered bis-imidacloprid insecticide conferring high potency. J. Agric.
+Food Chem. 2010, 58, 11832 −11836.
+(17) Tomizawa, M.; Durkin, K. A.; Ohno, I.; Nagura, K.; Manabe,
+M.; Kumazawa, S.; Kagabu, S. N-Haloacetylimino neonicotinoids:
+potency and molecular recognition at the insect nicotinic receptor.
+Bioorg. Med. Chem. Lett. 2011, 21, 3583 −3586.
+(18) Nauen, R.; Jeschke, P.; Velten, R.; Beck, M. E.; Ebbinghaus-
+Kintscher, U.; Thielert, W.; Wo ̈lfel, K.; Haas, M.; Kunz, K.; Raupach,
+G. Flupyradifurone: a brief profile of a new butenolide insecticide. Pest
+Manage. Sci. 2015, 71, 850 −862.
+(19) Cordova, D.; Benner, E. A.; Schroeder, M. E.; Holyoke, C. W.;
+Zhang, W.; Pahutski, T. F.; Leighty, R. M.; Vincent, D. R.; Hamm, J.
+C. Mode of action of triflumezopyrim: a novel mesoionic insecticide
+which inhibits the nicotinic acetylcholine receptor. Insect Biochem. Mol.
+Biol. 2016, 74,3 2 −41.
+(20) Pahutski, T. F. Mesoionic pyrido[1,2-a]pyrimidine pesticides.
+PCT Int. Appl. WO 2012092115 A1, 2012.
+(21) Zhang, W.; Holyoke, C. W., Jr.; Barry, J.; Cordova, D.; Leighty,
+R. M.; Tong, M.-H. T.; Hughes, K. A.; Lahm, G. P.; Pahutski, T. F.;
+Xu, M.; Briddell, T. A.; McCann, S. F.; Henry, Y. T.; Chen, Y.
+Mesoionic pyrido[1,2a]pyrimidinones: Discovery of dicloromezotiaz
+as a lepidoptera insecticide acting on the nicotinic acetylcholine
+receptors. Bioorg. Med. Chem. Lett. 2017, 27, 911 −917.
+(22) Bass, C.; Carvalho, R. A.; Oliphant, L.; Puinean, A. M.; Field, L.
+M . ;N a u e n ,R . ;W i l l i a m s o n ,M .S . ;M o o r e s ,G . ;G o r m a n ,K .
+Journal of Agricultural and Food Chemistry Article
+DOI: 10.1021/acs.jafc.7b02924
+J. Agric. Food Chem. 2017, 65, 7865 −7873
+7872
+
+=== PDF PAGE 9 ===
+Overexpression of a cytochrome P450 monooxygenase, CYP6ER1,i s
+associated with resistance to imidacloprid in the brown planthopper,
+Nilaparvata lugens . Insect Mol. Biol. 2011, 20, 763 −773.
+(23) Elzaki, M. E. A.; Zhang, W.; Feng, A.; Qiou, X.; Zhao, W.; Han,
+Z. Constitutive overexpression of cytochrome P450 associated with
+imidacloprid resistance in Laodelphax striatellus (Fallén). Pest Manage.
+Sci. 2016, 72, 1051 −1058.
+(24) Kagabu, S.; Mitomi, M.; Kitsuda, S.; Horikoshi, R.; Nomura, M.;
+Onozaki, Y. Pest control agent. US 9073866B2, 2013.
+(25) Ishimitsu, K.; Kishimoto, T.; Yamada, Y.; Yamada, T.; Takakusa,
+N.; Yamamoto, A.; Mitsui, J. Novel heterocyclic compound. Jpn. Kokai
+Tokkyo Koho JP 1993078323, 1993.
+(26) Ishimitsu, K.; Kishimoto, T.; Yamada, Y.; Yamada, T.; Takakusa,
+N.; Yamamoto, A.; Mitsui, J. Novel heterocyclic compound. PCT Int.
+Appl. WO 1992015564 A1, 1992.
+(27) Shiokawa, K.; Tsuboi, S.; Sasaki, S.; Moriya, K.; Hattori, Y.;
+Shibuya, K. Heterocyclic compounds. European Patent EP259738,
+1987.
+(28) Latli, B.; D ’Amou, K.; Casida, J. E. Novel and potent 6-chloro-3-
+pyridinyl ligands for the α4β2 neuronal nicotinic acetylcholine
+receptor. J. Med. Chem. 1999, 42, 2227 −2234.
+(29) Zhao, X.; Salgado, V. L.; Yeh, J. Z.; Narahashi, T. Differential
+actions of fipronil and dieldrin insecticides on GABA-gated chloride
+channels in cockroach neurons. J. Pharmacol. Exp. Ther. 2003, 306,
+914−924.
+(30) Hamill, P. O.; Marty, A.; Neher, E.; Sakmann, B.; Sigworth, F. J.
+Improved patch-clamp techniques for high-resolution current record-
+ing from cells and cell-free membrane patches. Pfluegers Arch. 1981,
+391,8 5 −100.
+(31) Tomizawa, M.; Latli, B.; Casida, J. E. Novel neonicotinoid-
+agarose affinity column for Drosophila and Musca nicotinic acetylcho-
+line receptors. J. Neurochem. 1996, 67, 1669 −1676.
+(32) D’Amour, K. A.; Casida, J. E. Desnitroimidacloprid and nicotine
+binding site in rat recombinant α4β2 neuronal nicotinic acetylcholine
+receptor.
+Pestic. Biochem. Physiol. 1999, 64,5 5 −61.
+(33) Cero ́n-Carrasco, J. P.; Jacquemin, D.; Graton, J.; Thany, S.; Le
+Questel, J.-Y. New insights on the molecular recognition of
+imidacloprid with Aplysia californica AChBP: A computational study.
+J. Phys. Chem. B 2013, 117, 3944 −3953.
+(34) Suchail, S.; Guez, D.; Belzunces, L. P. Characteristics of
+imidacloprid toxicity in two Apis mellifera subspecies. Environ. Toxicol.
+Chem. 2000, 19, 1901 −1905.
+(35) Suchail, S.; Guez, D.; Belzunces, L. P. Discrepancy between
+acute and chronic toxicity induced by imidacloprid and its metabolites
+in Apis mellifera . Environ. Toxicol. Chem. 2001, 20, 2482 −2486.
+(36) Marletto, F.; Patetta, A.; Manino, A. Laboratory assessment of
+pesticide toxicity to bumblebees. Bull. Insectology 2003, 56, 155 −158.
+(37) Zhang, N.; Tomizawa, M.; Casida, J. E. Drosophila nicotinic
+receptors: evidence for imidacloprid insecticide and α-bungarotoxin
+binding to distinct sites. Neurosci. Lett. 2004, 371,5 6 −59.
+(38) Tomizawa, M.; Millar, N. S.; Casida, J. E. Pharmacological
+profiles of recombinant and native insect nicotinic acetylcholine
+receptors. Insect Biochem. Mol. Biol. 2005, 35, 1347 −1355.
+(39) Honda, H.; Tomizawa, M.; Casida, J. E. Insect nicotinic
+acetylcholine receptors: neonicotinoid binding site specificity is usually
+but not always conserved with varied substituents and species. J. Agric.
+Food Chem. 2006, 54, 3365 −3371.
+(40) Karunker, I.; Morou, E.; Nikou, D.; Nauen, R.; Sertchook, R.;
+Stevenson, B. J.; Paine, M. J. I.; Morin, S.; Vontas, J. Structural model
+and functional characterization of the Bemisia tabaci CYP6CM1vQ, a
+cytochrome P450 associated wi th high levels of imidacloprid
+resistance. Insect Biochem. Mol. Biol. 2009, 39, 697
+−706.
+(41) Puinean, A. M.; Foster, S. P.; Oliphant, L.; Denholm, I.; Field, L.
+M.; Millar, N. S.; Williamson, M. S.; Bass, C. Amplification of a
+cytochrome P450 gene is associated with resistance to neonicotinoid
+insecticides in the aphid Myzus persicae . PLoS Genet. 2010, 6,
+e1000999.
+(42) Liu, Z.; Williamson, M. S.; Lansdell, S. J.; Denholm, I.; Han, Z.;
+Millar, N. S. A nicotinic acetylcholine receptor mutation conferring
+target-site resistance to imidacloprid in Nilaparvata lugens (brown
+planthopper). Proc. Natl. Acad. Sci. U. S. A. 2005, 102, 8420 −8425.
+(43) Bass, C.; Puinean, A. M.; Andrews, M.; Cutler, P.; Daniels, M.;
+Elias, J.; Paul, V. L.; Crossthwaite, A. J.; Denholm, I.; Field, L. M.;
+Foster, S. P.; Lind, R.; Williamson, M. S.; Slater, R. (2011). Mutation
+of a nicotinic acetylcholine receptor β subunit is associated with
+resistance to neonicotinoid insecticides in the aphid Myzus persicae .
+BMC Neurosci. 2011, 12, 51.
+(44) MacBean, C. The pesticide manual , 17th ed.; British Crop
+Protection Council: Hampshire, UK, 2015; p 1357.
+(45) Ihara, M.; Brown, L. A.; Ishida, C.; Okuda, H.; Sattelle, D. B.;
+Matsuda, K. Actions of imidaclop rid, clothianidin and related
+neonicotinoids on nicotinic acetylcholine receptors of American
+cockroach neurons and their relationships with insecticidal potency.
+J. Pestic. Sci. 2006, 31,3 5 −40.
+(46) Kagabu, S.; Matsuno, H. Chloronicotinyl insecticide. 8. Crystal
+and molecular structures of imidacloprid and analogous compounds. J.
+Agric. Food Chem. 1997, 45, 276 −281.
+(47) Shimomura, M.; Yokota, M.; Ihara, M.; Akamatsu, M.; Sattelle,
+D. B.; Matsuda, K. Role in the selectivity of neonicotinoids of insect-
+specific basic residues in loop D of the nicotinic acetylcholine receptor
+agonist binding site. Mol. Pharmacol. 2006, 70, 1255 −1263.
+(48) Yao, X.; Song, F.; Chen, F.; Zhang, Y.; Gu, J.; Liu, S.; Liu, Z.
+Amino acids within loops D, E, and F of insect nicotinic acetylcholine
+receptor β subunits influence neonicotinoid selectivity. Insect Biochem.
+Mol. Biol. 2008, 38, 834 −840.
+(49) Bissantz, C.; Kuhn, B.; Stahl, M. A medicinal chemist ’s guide to
+molecular interactions. J. Med. Chem. 2010, 53, 5061 −5084.
+Journal of Agricultural and Food Chemistry Article
+DOI: 10.1021/acs.jafc.7b02924
+J. Agric. Food Chem. 2017, 65, 7865 −7873
+7873
+
+=== PDF PAGE 10 ===
+SI-1 
+Supporting Information for:   
+Flupyrimin: A novel insecticide acting at the nicotinic acetylcholine receptors  
+ 
+Yasumichi Onozaki,† Ryo Horikoshi,† Ikuya Ohno,† Shigeki Kitsuda,† Kathleen A. Durkin,‡ Tomonori Suzuki,§ Chiaki 
+Asahara,§ Natsuko Hiroki,§ Rena Komabashiri,§ Rikako Shimizu,§ Shogo Furutani,¶ Makoto Ihara,¶ Kazuhiko 
+Matsuda,¶ Masaaki Mitomi,† Shinzo Kagabu,ǁ Katsuhito Uomoto,† and Motohiro Tomizawa§, * 
+ 
+†Agricultural and Veterinary Research Labs, Agricultural and Veterinary Division, Meiji Seika Pharma Co., Ltd., Yokohama, 
+Kanagawa 222-8567, Japan 
+‡College of Chemistry, University of California, Berkeley, California 94720-1460, United States 
+§Faculty of Life Sciences, Tokyo University of Agriculture, Setagaya, Tokyo 156-8502, Japan 
+¶Faculty of Agriculture, Kindai University, Nara 631-8505, Japan 
+ǁFaculty of Education, Gifu University, Gifu 501-1193, Japan 
+ 
+Supporting Table 1. Summary for the origin and the stage of ins ect pests considered in this paper and data 
+observation point after treatment 
+ 
+ 
+ 
+pest 
+ 
+ 
+ 
+origin (Japan) 
+ 
+ 
+ 
+method 
+ 
+ 
+ 
+stage 
+observation 
+point 
+(day after 
+treatment) 
+Nilaparvata lugens field populations: Kumamoto 
+(2010), Kagoshima (2014 and 
+2015) 
+foliar 2
+nd instar 7 
+Sogatella furcifera Odawara (2011) foliar 2 nd instar 7 
+Laodelphax striatella Odawara (2001) foliar 2 nd instar 7 
+Nephotettix cincticeps susceptible * foliar 2 nd instar 7 
+Aphis gossypii susceptible * foliar 1 st instar 3 
+Trialeurodes vaporariorum Odawara (2002) foliar adult 3 
+Trigonotylus caelestialium Odawara (1995) foliar 1 st instar 3 
+Frankliniella occidentalis susceptible * foliar 1 st instar 3 
+Plutella xylostella Yokohama (1991) foliar 2 nd instar 3 
+Oulema oryzae Gotemba (2012) topical adult 2 
+Musca domestica Yumenoshima 3 rd topical adult 2 
+Nilaparvata lugens field populations: Kumamoto 
+(2010), Kagoshima (2014 and 
+2015) 
+soil drenching 2 nd instar 7 
+Laodelphax striatella field populations: Odawara 
+(2001 and 2016), Oita (2013),  
+Ibaraki (2016) 
+soil drenching 2
+nd instar 7 
+*Purchased from Sumika Technoservice Corp. (Takarazuka, Japan). 
+ 
+ 
+
+=== PDF PAGE 11 ===
+SI-2 
+Methodology for insecticidal activity evaluation 
+ 
+Laodelphax by root dipping 
+The Laodelphax, employed for the present SAR study, was collected in Odawara, Japan in 2001 and 
+reared in our laboratory without insecticide selection. Wheat seedlings with 2 days after seeding were dipped 
+with the roots into a solution of each test compound at a designed concentration of 10% acetone/water 
+solution. After dipped for 3 days, 10 second instar larvae were released onto each seedling. Thereafter, the 
+seedlings infested with Laodelphax were left to stand in a thermostatic chamber (16 h light and 8 h dark) at 
+25C. Four days after the release, the larvae were observed on survival or death.  
+ 
+Nilaparvata and Laodelphax by foliar application and soil drenching 
+The solution of FLP at a predetermined concentration prepared to 50% (for foliar) or 10% (for 
+soil drenching) acetone/water (containing 0.05% Tween 20) was applied to 3 weeks old rice 
+seedlings grown in pot. The treated seedlings were air dried for foliar tests or placed for 3 days for 
+soil drenching, following which 10 second-instar larvae were released onto each seedling. The 
+seedlings and larvae were then held in an incubation chamber at 25° C. (16 h period of light, 8 h dark 
+period). Seven days after released, the numbers of alive and dead insects were counted. 
+ 

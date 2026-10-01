@@ -1,0 +1,15 @@
+{
+  "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/benzpyrimoxan/property/InChIKey,InChI,IsomericSMILES/JSON",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 129054093,
+          "SMILES": "C1COC(OC1)C2=CN=CN=C2OCC3=CC=C(C=C3)C(F)(F)F",
+          "InChI": "InChI=1S/C16H15F3N2O3/c17-16(18,19)12-4-2-11(3-5-12)9-24-14-13(8-20-10-21-14)15-22-6-1-7-23-15/h2-5,8,10,15H,1,6-7,9H2",
+          "InChIKey": "ZYXYTGQFPZEUFX-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}

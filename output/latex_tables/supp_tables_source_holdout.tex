@@ -1,0 +1,26 @@
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S10. Recorded-source holdout sensitivity}
+The sources are record groups within the integrated benchmark and share its label mapping. ECFP models and the route-plus-use metadata comparator are fitted to the remaining groups. Cells report held-out AUROC; sample counts refer to compounds, not repeated predictions.
+\begingroup\small\setlength{\tabcolsep}{4pt}
+\begin{longtable}{llrccc}
+\toprule Source & Model & $n$ & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
+\toprule Source & Model & $n$ & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
+\bottomrule\endlastfoot
+ECOTOX & ECFP & 441 & 0.665 & 0.888 & 0.905 \\
+ECOTOX & Route + use & 441 & 0.566 & 0.867 & 0.876 \\
+PPDB & ECFP & 510 & 0.649 & 0.752 & 0.846 \\
+PPDB & Route + use & 510 & 0.527 & 0.770 & 0.873 \\
+BPDB & ECFP & 84 & 0.523 & 0.776 & 0.800 \\
+BPDB & Route + use & 84 & 0.514 & 0.728 & 0.756 \\
+\end{longtable}
+\Needspace{12\baselineskip}ECFP paired severe-minus-broad contrasts use scaffold-cluster simultaneous intervals for the two-contrast family.
+\begin{longtable}{llrcc}
+\toprule Source & Contrast & $\Delta$AUROC & 95\% lower & 95\% upper \\ \midrule\endfirsthead
+\toprule Source & Contrast & $\Delta$AUROC & 95\% lower & 95\% upper \\ \midrule\endhead
+\bottomrule\endlastfoot
+ECOTOX & 11-100 & 0.223 & 0.142 & 0.303 \\
+ECOTOX & 1-100 & 0.240 & 0.159 & 0.320 \\
+PPDB & 11-100 & 0.103 & -0.002 & 0.208 \\
+PPDB & 1-100 & 0.197 & 0.093 & 0.302 \\
+BPDB & 11-100 & 0.253 & -0.153 & 0.658 \\
+BPDB & 1-100 & 0.277 & -0.128 & 0.682 \\
+\end{longtable}\endgroup

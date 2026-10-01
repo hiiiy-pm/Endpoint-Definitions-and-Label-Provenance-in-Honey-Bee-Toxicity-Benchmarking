@@ -1,0 +1,17 @@
+Tier,Variable,Level,n,Tier_n,Proportion
+0,agrochemical_flag,herbicide,81,177,0.4576271186440678
+0,agrochemical_flag,fungicide,39,177,0.2203389830508474
+0,agrochemical_flag,insecticide,16,177,0.0903954802259887
+0,agrochemical_flag,other_agrochemical,30,177,0.1694915254237288
+1,agrochemical_flag,herbicide,245,562,0.4359430604982206
+1,agrochemical_flag,fungicide,133,562,0.2366548042704626
+1,agrochemical_flag,insecticide,46,562,0.0818505338078291
+1,agrochemical_flag,other_agrochemical,134,562,0.2384341637010676
+2,agrochemical_flag,herbicide,25,125,0.2
+2,agrochemical_flag,fungicide,21,125,0.168
+2,agrochemical_flag,insecticide,42,125,0.336
+2,agrochemical_flag,other_agrochemical,29,125,0.232
+3,agrochemical_flag,herbicide,3,171,0.0175438596491228
+3,agrochemical_flag,fungicide,4,171,0.023391812865497
+3,agrochemical_flag,insecticide,123,171,0.7192982456140351
+3,agrochemical_flag,other_agrochemical,23,171,0.1345029239766081

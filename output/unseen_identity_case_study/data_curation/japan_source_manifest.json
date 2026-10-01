@@ -1,0 +1,16 @@
+[
+  {
+    "file": "output\\unseen_identity_case_study\\data_curation\\sources\\fluxametamide_maff2019.pdf",
+    "url": "https://www.maff.go.jp/j/nouyaku/n_sinsa/attach/pdf/index-38.pdf",
+    "status": "downloaded",
+    "sha256": "af8c03722a3db70c968cc052ce704e224e79c54605e5680b4e55f1075d3e217e",
+    "pages": 152
+  },
+  {
+    "file": "output\\unseen_identity_case_study\\data_curation\\sources\\flupentiofenox_maff2025.pdf",
+    "url": "https://www.maff.go.jp/j/council/sizai/nouyaku/attach/pdf/mitubati_17-7.pdf",
+    "status": "downloaded",
+    "sha256": "123ffca9f13ef8dbfac581bd66a0d7f5f3069779b5cdf3b26b8db4c174f5502e",
+    "pages": 23
+  }
+]

@@ -1,0 +1,10 @@
+﻿split,threshold_ug_bee,n_test,max_abs_score_error,classification_disagreements,independent_feature_kernel_cache_exact
+Random,100,207,2.2204460492503131e-16,0,True
+Random,11,207,2.2204460492503131e-16,0,True
+Random,1,207,2.2204460492503131e-16,0,True
+MaxMin,100,207,2.2204460492503131e-16,0,True
+MaxMin,11,207,2.2204460492503131e-16,0,True
+MaxMin,1,207,2.2204460492503131e-16,0,True
+Time,100,207,2.2204460492503131e-16,0,True
+Time,11,207,2.2204460492503131e-16,0,True
+Time,1,207,2.2204460492503131e-16,0,True

@@ -1,0 +1,10 @@
+{
+  "question": "Sensitivity of saved-score endpoint contrasts to label source",
+  "archetype": "single quantitative paired-contrast panel",
+  "width_inches": 7.16,
+  "all_splits_and_primary_contrasts_retained": true,
+  "n_rows": 24,
+  "n_estimates": 48,
+  "uncertainty_exception": "Omit intervals when a constituent class has fewer than5 compounds; keep the estimates and full machine-readable intervals.",
+  "source": "output\\external_evaluation\\frozen_contrasts_ECFP.csv"
+}

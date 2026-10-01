@@ -1,0 +1,12 @@
+{
+  "frozen_before_prediction_review": true,
+  "n_compounds": 8,
+  "sha256": "644cf492c823911144926e7b9c7d0c1561b3c0ef431e93dfb0d20c142f6efa00",
+  "contains_endpoint_labels": false,
+  "fingerprint_verification": {
+    "radius": 2,
+    "fpSize": 1024,
+    "includeChirality": false
+  },
+  "policy": "Single chemical connectivity is the experimental unit for exploratory application of chirality-insensitive ECFP. Same-connectivity stereoisomer mixtures may be represented, with full material stereochemistry unconfirmed. Mixtures with different active chemical connectivities are excluded. Model output must not determine endpoint inclusion."
+}

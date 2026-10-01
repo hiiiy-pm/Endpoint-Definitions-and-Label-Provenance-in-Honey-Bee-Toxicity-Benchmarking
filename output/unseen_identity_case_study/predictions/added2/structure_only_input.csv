@@ -1,0 +1,3 @@
+﻿compound_id,SMILES,name,inchikey
+flupentiofenox,O=S(CC(F)(F)F)c1cc(OCCCCCSC(F)(F)F)c(F)cc1O,flupentiofenox,XCROCGNWBSWUCC-UHFFFAOYSA-N
+fluxametamide,CON=CNC(=O)c1ccc(C2=NOC(c3cc(Cl)cc(Cl)c3)(C(F)(F)F)C2)cc1C,fluxametamide,BPFUIWLQXNPZHI-UHFFFAOYSA-N

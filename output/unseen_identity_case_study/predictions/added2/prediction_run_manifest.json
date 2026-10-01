@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-09-22T17:22:28.387128+00:00",
+  "completed": true,
+  "source_path": "output\\unseen_identity_case_study\\data_curation\\frozen_added2_inference_structures.csv",
+  "source_sha256": "bf751a65630ff394fe5948c78a457bfb430c974b33c795e641229202ae207207",
+  "source_manifest_sha256": "057cff0f3c50a62be8140588ee6f1d4159c141c305200b2419d23db72d91689b",
+  "source_last_modified_utc": "2026-09-22T17:21:16.590350+00:00",
+  "structure_only_input_sha256": "af570a315aa3f30fc05ddd6b5a0b502ca0da919000a7ad6bc5a2a59f8b53db85",
+  "restoration_manifest_sha256": "b7d9dc337cfb4e5b19b1f87d3f6fbbd2bf7ba77fedc57a47f0446ea126387d33",
+  "runner_sha256": "51787c4cbebf319ef985a3ef0401324dc491226924b3d573f5ed5ebe16538a79",
+  "n_structures": 2,
+  "fit_calls_in_runner": 0,
+  "external_labels_read": false,
+  "require_new_structures": true,
+  "columns_passed_to_inference": [
+    "compound_id",
+    "SMILES",
+    "name",
+    "inchikey"
+  ],
+  "completed_utc": "2026-09-22T17:22:32.445972+00:00",
+  "n_prediction_rows": 18,
+  "prediction_sha256": "7bdcae0251459b9bb330d605b97e5eb954b373a749e0276384010ea103954e7d",
+  "source_unchanged_after_inference": true
+}

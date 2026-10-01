@@ -1,0 +1,15 @@
+{
+  "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/oxazosulfyl/property/InChIKey,InChI,IsomericSMILES/JSON",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 90258515,
+          "SMILES": "CCS(=O)(=O)C1=C(N=CC=C1)C2=NC3=C(O2)C=CC(=C3)S(=O)(=O)C(F)(F)F",
+          "InChI": "InChI=1S/C15H11F3N2O5S2/c1-2-26(21,22)12-4-3-7-19-13(12)14-20-10-8-9(5-6-11(10)25-14)27(23,24)15(16,17)18/h3-8H,2H2,1H3",
+          "InChIKey": "PTQBEFQWTBZMED-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}

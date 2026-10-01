@@ -1,0 +1,3 @@
+﻿route,n_compounds,tier_le1,tier_1_11,tier_11_100,tier_gt100,tier_unresolved,positive_1,negative_1,unresolved_1,positive_11,negative_11,unresolved_11,positive_100,negative_100,unresolved_100
+contact,5,0,1,0,4,0,0,5,0,1,4,0,1,4,0
+oral,6,2,0,0,2,2,2,4,0,2,4,0,2,2,2

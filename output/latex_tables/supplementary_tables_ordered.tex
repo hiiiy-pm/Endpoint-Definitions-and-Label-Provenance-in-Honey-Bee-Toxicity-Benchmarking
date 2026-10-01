@@ -1,0 +1,800 @@
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S1. Full test AUROC across representations, splits and endpoints}
+\begin{longtable}{llccc}
+\toprule Split & Representation & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
+\multicolumn{5}{l}{\textit{Supplementary Table S1 (continued)}} \\
+\toprule Split & Representation & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
+\midrule\multicolumn{5}{r}{Continued on next page}\\\endfoot
+\bottomrule\endlastfoot
+Random & ECFP & 0.718 & 0.848 & 0.917 \\
+Random & Avalon & 0.722 & 0.841 & 0.906 \\
+Random & MACCS & 0.663 & 0.830 & 0.894 \\
+Random & WL-HI & 0.744 & 0.863 & 0.927 \\
+Random & Descriptors12 & 0.596 & 0.687 & 0.770 \\
+\addlinespace
+MaxMin & ECFP & 0.592 & 0.792 & 0.795 \\
+MaxMin & Avalon & 0.661 & 0.769 & 0.757 \\
+MaxMin & MACCS & 0.601 & 0.780 & 0.763 \\
+MaxMin & WL-HI & 0.574 & 0.830 & 0.832 \\
+MaxMin & Descriptors12 & 0.525 & 0.671 & 0.705 \\
+\addlinespace
+Time & ECFP & 0.691 & 0.754 & 0.792 \\
+Time & Avalon & 0.645 & 0.754 & 0.753 \\
+Time & MACCS & 0.593 & 0.686 & 0.726 \\
+Time & WL-HI & 0.665 & 0.788 & 0.788 \\
+Time & Descriptors12 & 0.390 & 0.567 & 0.650 \\
+\addlinespace
+\end{longtable}
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S2. Scaffold-cluster paired endpoint contrasts for all representations}
+\begin{longtable}{llcccc}
+\toprule Split & Representation & Contrast & $\Delta$AUROC & 95\% CI low & 95\% CI high \\ \midrule\endfirsthead
+\multicolumn{6}{l}{\textit{Supplementary Table S2 (continued)}} \\
+\toprule Split & Representation & Contrast & $\Delta$AUROC & 95\% CI low & 95\% CI high \\ \midrule\endhead
+\midrule\multicolumn{6}{r}{Continued on next page}\\\endfoot
+\bottomrule\endlastfoot
+Random & ECFP & $\leq11-\leq100$ & 0.130 & -0.018 & 0.278 \\
+Random & ECFP & $\leq1-\leq100$ & 0.199 & 0.051 & 0.347 \\
+Random & Avalon & $\leq11-\leq100$ & 0.119 & -0.023 & 0.260 \\
+Random & Avalon & $\leq1-\leq100$ & 0.184 & 0.043 & 0.325 \\
+Random & MACCS & $\leq11-\leq100$ & 0.166 & 0.007 & 0.325 \\
+Random & MACCS & $\leq1-\leq100$ & 0.231 & 0.072 & 0.390 \\
+Random & WL--HI & $\leq11-\leq100$ & 0.119 & -0.019 & 0.257 \\
+Random & WL--HI & $\leq1-\leq100$ & 0.184 & 0.045 & 0.322 \\
+Random & Descriptors12 & $\leq11-\leq100$ & 0.091 & -0.070 & 0.252 \\
+Random & Descriptors12 & $\leq1-\leq100$ & 0.174 & 0.014 & 0.335 \\
+\addlinespace
+MaxMin & ECFP & $\leq11-\leq100$ & 0.200 & 0.056 & 0.345 \\
+MaxMin & ECFP & $\leq1-\leq100$ & 0.203 & 0.059 & 0.348 \\
+MaxMin & Avalon & $\leq11-\leq100$ & 0.108 & -0.056 & 0.271 \\
+MaxMin & Avalon & $\leq1-\leq100$ & 0.095 & -0.068 & 0.259 \\
+MaxMin & MACCS & $\leq11-\leq100$ & 0.179 & 0.018 & 0.340 \\
+MaxMin & MACCS & $\leq1-\leq100$ & 0.162 & 0.001 & 0.323 \\
+MaxMin & WL--HI & $\leq11-\leq100$ & 0.257 & 0.116 & 0.397 \\
+MaxMin & WL--HI & $\leq1-\leq100$ & 0.259 & 0.118 & 0.399 \\
+MaxMin & Descriptors12 & $\leq11-\leq100$ & 0.146 & -0.011 & 0.303 \\
+MaxMin & Descriptors12 & $\leq1-\leq100$ & 0.180 & 0.023 & 0.337 \\
+\addlinespace
+Time & ECFP & $\leq11-\leq100$ & 0.063 & -0.096 & 0.222 \\
+Time & ECFP & $\leq1-\leq100$ & 0.101 & -0.057 & 0.260 \\
+Time & Avalon & $\leq11-\leq100$ & 0.109 & -0.057 & 0.275 \\
+Time & Avalon & $\leq1-\leq100$ & 0.108 & -0.058 & 0.274 \\
+Time & MACCS & $\leq11-\leq100$ & 0.093 & -0.090 & 0.276 \\
+Time & MACCS & $\leq1-\leq100$ & 0.132 & -0.050 & 0.315 \\
+Time & WL--HI & $\leq11-\leq100$ & 0.123 & -0.041 & 0.286 \\
+Time & WL--HI & $\leq1-\leq100$ & 0.123 & -0.040 & 0.287 \\
+Time & Descriptors12 & $\leq11-\leq100$ & 0.178 & 0.022 & 0.334 \\
+Time & Descriptors12 & $\leq1-\leq100$ & 0.260 & 0.104 & 0.416 \\
+\addlinespace
+\end{longtable}
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S3. Scaffold-cluster simultaneous intervals over the ten contrasts within each split}
+\begin{longtable}{llccc}
+\toprule Split & Representation & Contrast & $\Delta$AUROC & 95\% CI \\ \midrule\endfirsthead
+\multicolumn{5}{l}{\textit{Supplementary Table S3 (continued)}} \\
+\toprule Split & Representation & Contrast & $\Delta$AUROC & 95\% CI \\ \midrule\endhead
+\midrule\multicolumn{5}{r}{Continued on next page}\\\endfoot
+\bottomrule\endlastfoot
+Random & ECFP & $\leq11-\leq100$ & 0.130 & -0.057 to 0.318 \\
+Random & ECFP & $\leq1-\leq100$ & 0.199 & 0.012 to 0.387 \\
+Random & Avalon & $\leq11-\leq100$ & 0.119 & -0.069 to 0.306 \\
+Random & Avalon & $\leq1-\leq100$ & 0.184 & -0.004 to 0.371 \\
+Random & MACCS & $\leq11-\leq100$ & 0.166 & -0.021 to 0.354 \\
+Random & MACCS & $\leq1-\leq100$ & 0.231 & 0.043 to 0.418 \\
+Random & WL--HI & $\leq11-\leq100$ & 0.119 & -0.068 to 0.307 \\
+Random & WL--HI & $\leq1-\leq100$ & 0.184 & -0.004 to 0.371 \\
+Random & Descriptors12 & $\leq11-\leq100$ & 0.091 & -0.097 to 0.278 \\
+Random & Descriptors12 & $\leq1-\leq100$ & 0.174 & -0.013 to 0.362 \\
+\addlinespace
+MaxMin & ECFP & $\leq11-\leq100$ & 0.200 & 0.006 to 0.394 \\
+MaxMin & ECFP & $\leq1-\leq100$ & 0.203 & 0.009 to 0.397 \\
+MaxMin & Avalon & $\leq11-\leq100$ & 0.108 & -0.086 to 0.302 \\
+MaxMin & Avalon & $\leq1-\leq100$ & 0.095 & -0.099 to 0.290 \\
+MaxMin & MACCS & $\leq11-\leq100$ & 0.179 & -0.015 to 0.373 \\
+MaxMin & MACCS & $\leq1-\leq100$ & 0.162 & -0.032 to 0.356 \\
+MaxMin & WL--HI & $\leq11-\leq100$ & 0.257 & 0.062 to 0.451 \\
+MaxMin & WL--HI & $\leq1-\leq100$ & 0.259 & 0.065 to 0.453 \\
+MaxMin & Descriptors12 & $\leq11-\leq100$ & 0.146 & -0.048 to 0.340 \\
+MaxMin & Descriptors12 & $\leq1-\leq100$ & 0.180 & -0.014 to 0.374 \\
+\addlinespace
+Time & ECFP & $\leq11-\leq100$ & 0.063 & -0.142 to 0.268 \\
+Time & ECFP & $\leq1-\leq100$ & 0.101 & -0.104 to 0.306 \\
+Time & Avalon & $\leq11-\leq100$ & 0.109 & -0.096 to 0.314 \\
+Time & Avalon & $\leq1-\leq100$ & 0.108 & -0.097 to 0.313 \\
+Time & MACCS & $\leq11-\leq100$ & 0.093 & -0.112 to 0.298 \\
+Time & MACCS & $\leq1-\leq100$ & 0.132 & -0.073 to 0.337 \\
+Time & WL--HI & $\leq11-\leq100$ & 0.123 & -0.082 to 0.327 \\
+Time & WL--HI & $\leq1-\leq100$ & 0.123 & -0.082 to 0.328 \\
+Time & Descriptors12 & $\leq11-\leq100$ & 0.178 & -0.027 to 0.383 \\
+Time & Descriptors12 & $\leq1-\leq100$ & 0.260 & 0.055 to 0.465 \\
+\addlinespace
+\end{longtable}
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S4. Test AUROC for additional learners on ECFP4 bits}
+\begin{longtable}{llccc}
+\toprule Split & Learner & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
+\multicolumn{5}{l}{\textit{Supplementary Table S4 (continued)}} \\
+\toprule Split & Learner & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
+\midrule\multicolumn{5}{r}{Continued on next page}\\\endfoot
+\bottomrule\endlastfoot
+Random & L2 logistic regression & 0.731 & 0.830 & 0.903 \\
+Random & Random forest & 0.735 & 0.840 & 0.914 \\
+\addlinespace
+MaxMin & L2 logistic regression & 0.553 & 0.748 & 0.748 \\
+MaxMin & Random forest & 0.589 & 0.749 & 0.779 \\
+\addlinespace
+Time & L2 logistic regression & 0.590 & 0.728 & 0.754 \\
+Time & Random forest & 0.719 & 0.750 & 0.819 \\
+\addlinespace
+\end{longtable}
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S5. Test AUROC for metadata, structure and fused models}
+\begin{longtable}{llccc}
+\toprule Split & Model & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
+\multicolumn{5}{l}{\textit{Supplementary Table S5 (continued)}} \\
+\toprule Split & Model & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
+\midrule\multicolumn{5}{r}{Continued on next page}\\\endfoot
+\bottomrule\endlastfoot
+Random & Agrochemical flags & 0.680 & 0.858 & 0.909 \\
+Random & All metadata & 0.654 & 0.874 & 0.913 \\
+Random & ECFP structure & 0.718 & 0.848 & 0.917 \\
+Random & Structure $+$ metadata & 0.732 & 0.891 & 0.958 \\
+\addlinespace
+MaxMin & Agrochemical flags & 0.626 & 0.784 & 0.884 \\
+MaxMin & All metadata & 0.586 & 0.811 & 0.865 \\
+MaxMin & ECFP structure & 0.592 & 0.792 & 0.795 \\
+MaxMin & Structure $+$ metadata & 0.638 & 0.858 & 0.929 \\
+\addlinespace
+Time & Agrochemical flags & 0.571 & 0.810 & 0.895 \\
+Time & All metadata & 0.560 & 0.805 & 0.894 \\
+Time & ECFP structure & 0.691 & 0.754 & 0.792 \\
+Time & Structure $+$ metadata & 0.667 & 0.847 & 0.943 \\
+\addlinespace
+\end{longtable}
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S6. Metadata-only, structure-only and fused models under identical standardization}
+\begin{longtable}{llcccc}
+\toprule Split & Endpoint & Metadata & Metadata without route & ECFP & Fused (all / without route) \\ \midrule\endfirsthead
+\multicolumn{6}{l}{\textit{Supplementary Table S6 (continued)}} \\
+\toprule Split & Endpoint & Metadata & Metadata without route & ECFP & Fused (all / without route) \\ \midrule\endhead
+\midrule\multicolumn{6}{r}{Continued on next page}\\\endfoot
+\bottomrule\endlastfoot
+Random & $\leq100$ & 0.657 & 0.678 & 0.718 & 0.732 / 0.743 \\
+Random & $\leq11$ & 0.875 & 0.866 & 0.848 & 0.891 / 0.883 \\
+Random & $\leq1$ & 0.913 & 0.916 & 0.917 & 0.958 / 0.958 \\
+\addlinespace
+MaxMin & $\leq100$ & 0.591 & 0.574 & 0.592 & 0.638 / 0.625 \\
+MaxMin & $\leq11$ & 0.806 & 0.791 & 0.792 & 0.858 / 0.851 \\
+MaxMin & $\leq1$ & 0.873 & 0.867 & 0.795 & 0.929 / 0.927 \\
+\addlinespace
+Time & $\leq100$ & 0.557 & 0.538 & 0.691 & 0.667 / 0.688 \\
+Time & $\leq11$ & 0.806 & 0.801 & 0.754 & 0.847 / 0.839 \\
+Time & $\leq1$ & 0.893 & 0.894 & 0.792 & 0.943 / 0.942 \\
+\addlinespace
+\end{longtable}
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S7. Leave-one-out scaffold-entropy contrasts}
+\begin{longtable}{llllcc}
+\toprule Minimum size & Weighting & Contrast & Estimate & 95\% CI low & 95\% CI high \\ \midrule\endfirsthead
+\multicolumn{6}{l}{\textit{Supplementary Table S7 (continued)}} \\
+\toprule Minimum size & Weighting & Contrast & Estimate & 95\% CI low & 95\% CI high \\ \midrule\endhead
+\midrule\multicolumn{6}{r}{Continued on next page}\\\endfoot
+\bottomrule\endlastfoot
+n$\geq$3 & Scaffold--equal & T2$-$T1 & -0.066 & -0.199 & 0.091 \\
+n$\geq$3 & Scaffold--equal & T2$-$T3 & -0.042 & -0.192 & 0.113 \\
+n$\geq$3 & Paired shared--scaffold & T2$-$T1 & -0.217 & -0.314 & -0.116 \\
+n$\geq$3 & Paired shared--scaffold & T2$-$T3 & -0.095 & -0.195 & -0.006 \\
+n$\geq$5 & Scaffold--equal & T2$-$T1 & -0.130 & -0.285 & 0.039 \\
+n$\geq$5 & Scaffold--equal & T2$-$T3 & -0.111 & -0.254 & 0.036 \\
+n$\geq$5 & Paired shared--scaffold & T2$-$T1 & -0.102 & -0.200 & -0.011 \\
+n$\geq$5 & Paired shared--scaffold & T2$-$T3 & -0.127 & -0.234 & -0.013 \\
+\end{longtable}
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S8. Nested descriptor sensitivity}
+
+Test AUROC for every prespecified subset size, with training-fold-specific scaling and stability selection. The official test set remains 207 compounds. Selected descriptors and training-selected penalties for all 54 fits are in \texttt{results\_v2/supplementary/02\_topk\_descriptor\_performance.csv}. This is a separate L2-logistic sensitivity analysis; its 12-descriptor fit is not the main descriptor SVM.
+
+\begingroup\small\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{lrccc}
+
+\toprule Split & $k$ & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
+
+\toprule Split & $k$ & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
+
+\midrule\multicolumn{5}{r}{Continued on next page}\endfoot\bottomrule\endlastfoot
+
+Random & 1 & 0.546 & 0.525 & 0.590 \\
+Random & 2 & 0.571 & 0.654 & 0.641 \\
+Random & 3 & 0.515 & 0.696 & 0.726 \\
+Random & 5 & 0.514 & 0.712 & 0.759 \\
+Random & 8 & 0.528 & 0.688 & 0.740 \\
+Random & 12 & 0.528 & 0.689 & 0.734 \\
+MaxMin & 1 & 0.546 & 0.475 & 0.532 \\
+MaxMin & 2 & 0.524 & 0.571 & 0.666 \\
+MaxMin & 3 & 0.478 & 0.588 & 0.619 \\
+MaxMin & 5 & 0.498 & 0.622 & 0.616 \\
+MaxMin & 8 & 0.500 & 0.648 & 0.605 \\
+MaxMin & 12 & 0.522 & 0.646 & 0.581 \\
+Time & 1 & 0.437 & 0.511 & 0.534 \\
+Time & 2 & 0.444 & 0.462 & 0.412 \\
+Time & 3 & 0.391 & 0.427 & 0.444 \\
+Time & 5 & 0.376 & 0.526 & 0.554 \\
+Time & 8 & 0.361 & 0.545 & 0.550 \\
+Time & 12 & 0.375 & 0.561 & 0.553 \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S9. Matched training sets at 125 compounds per class}
+\begin{tabularx}{\linewidth}{lCCC}
+\toprule Split & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule
+Random & 0.685 & 0.810 & 0.908 \\
+MaxMin & 0.554 & 0.715 & 0.747 \\
+Time & 0.604 & 0.705 & 0.771 \\
+\bottomrule\end{tabularx}
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S10. Recorded-source holdout sensitivity}
+The sources are record groups within the integrated benchmark and share its label mapping. ECFP models and the route-plus-use metadata comparator are fitted to the remaining groups. Cells report held-out AUROC; sample counts refer to compounds, not repeated predictions.
+\begingroup\small\setlength{\tabcolsep}{4pt}
+\begin{longtable}{llrccc}
+\toprule Source & Model & $n$ & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
+\toprule Source & Model & $n$ & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
+\bottomrule\endlastfoot
+ECOTOX & ECFP & 441 & 0.665 & 0.888 & 0.905 \\
+ECOTOX & Route + use & 441 & 0.566 & 0.867 & 0.876 \\
+PPDB & ECFP & 510 & 0.649 & 0.752 & 0.846 \\
+PPDB & Route + use & 510 & 0.527 & 0.770 & 0.873 \\
+BPDB & ECFP & 84 & 0.523 & 0.776 & 0.800 \\
+BPDB & Route + use & 84 & 0.514 & 0.728 & 0.756 \\
+\end{longtable}
+\Needspace{12\baselineskip}ECFP paired severe-minus-broad contrasts use scaffold-cluster simultaneous intervals for the two-contrast family.
+\begin{longtable}{llrcc}
+\toprule Source & Contrast & $\Delta$AUROC & 95\% lower & 95\% upper \\ \midrule\endfirsthead
+\toprule Source & Contrast & $\Delta$AUROC & 95\% lower & 95\% upper \\ \midrule\endhead
+\bottomrule\endlastfoot
+ECOTOX & 11-100 & 0.223 & 0.142 & 0.303 \\
+ECOTOX & 1-100 & 0.240 & 0.159 & 0.320 \\
+PPDB & 11-100 & 0.103 & -0.002 & 0.208 \\
+PPDB & 1-100 & 0.197 & 0.093 & 0.302 \\
+BPDB & 11-100 & 0.253 & -0.153 & 0.658 \\
+BPDB & 1-100 & 0.277 & -0.128 & 0.682 \\
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S11. Tier-pair AUROC of the saved held-out scores}
+
+Each cell is the probability that a test compound of the higher tier receives a higher score than one of the lower tier, with half credit for ties, computed from the saved scores of the model trained for the stated endpoint. The last column gives the scaffold-cluster 95\% percentile interval for the Tier1--Tier0 pair (5,000 draws identical to the primary analysis). Intervals for every pair and all five representations are in \texttt{results\_v2/tier\_boundary/01\_tier\_pair\_auroc.csv}.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{3pt}
+
+\begin{longtable}{lllccccccc}
+
+\toprule Split & Rep. & Model & T1$>$T0 & T2$>$T0 & T3$>$T0 & T2$>$T1 & T3$>$T1 & T3$>$T2 & T1$>$T0 95\% CI \\ \midrule\endfirsthead
+
+\toprule Split & Rep. & Model & T1$>$T0 & T2$>$T0 & T3$>$T0 & T2$>$T1 & T3$>$T1 & T3$>$T2 & T1$>$T0 95\% CI \\ \midrule\endhead
+
+\midrule\multicolumn{10}{r}{Continued on next page}\endfoot\bottomrule\endlastfoot
+
+Random & ECFP & $\leq100$ & 0.676 & 0.753 & 0.844 & 0.590 & 0.737 & 0.667 & 0.570 to 0.800 \\
+Random & ECFP & $\leq11$ & 0.642 & 0.808 & 0.956 & 0.730 & 0.923 & 0.768 & 0.485 to 0.756 \\
+Random & ECFP & $\leq1$ & 0.583 & 0.776 & 0.950 & 0.731 & 0.931 & 0.818 & 0.452 to 0.684 \\
+Random & WL-HI & $\leq100$ & 0.690 & 0.798 & 0.897 & 0.643 & 0.753 & 0.584 & 0.586 to 0.810 \\
+Random & WL-HI & $\leq11$ & 0.605 & 0.831 & 0.958 & 0.767 & 0.923 & 0.739 & 0.456 to 0.716 \\
+Random & WL-HI & $\leq1$ & 0.608 & 0.849 & 0.969 & 0.776 & 0.948 & 0.789 & 0.470 to 0.710 \\
+MaxMin & ECFP & $\leq100$ & 0.574 & 0.614 & 0.668 & 0.557 & 0.620 & 0.558 & 0.474 to 0.677 \\
+MaxMin & ECFP & $\leq11$ & 0.411 & 0.710 & 0.796 & 0.764 & 0.840 & 0.629 & 0.321 to 0.507 \\
+MaxMin & ECFP & $\leq1$ & 0.428 & 0.619 & 0.781 & 0.686 & 0.817 & 0.693 & 0.335 to 0.522 \\
+MaxMin & WL-HI & $\leq100$ & 0.539 & 0.630 & 0.709 & 0.607 & 0.709 & 0.636 & 0.438 to 0.647 \\
+MaxMin & WL-HI & $\leq11$ & 0.480 & 0.771 & 0.854 & 0.787 & 0.875 & 0.652 & 0.382 to 0.585 \\
+MaxMin & WL-HI & $\leq1$ & 0.467 & 0.625 & 0.826 & 0.680 & 0.856 & 0.700 & 0.364 to 0.579 \\
+Time & ECFP & $\leq100$ & 0.678 & 0.628 & 0.805 & 0.456 & 0.669 & 0.713 & 0.571 to 0.783 \\
+Time & ECFP & $\leq11$ & 0.492 & 0.568 & 0.895 & 0.572 & 0.880 & 0.765 & 0.395 to 0.587 \\
+Time & ECFP & $\leq1$ & 0.539 & 0.581 & 0.815 & 0.535 & 0.792 & 0.740 & 0.430 to 0.645 \\
+Time & WL-HI & $\leq100$ & 0.639 & 0.665 & 0.803 & 0.496 & 0.655 & 0.647 & 0.519 to 0.755 \\
+Time & WL-HI & $\leq11$ & 0.477 & 0.618 & 0.903 & 0.646 & 0.890 & 0.735 & 0.383 to 0.576 \\
+Time & WL-HI & $\leq1$ & 0.523 & 0.599 & 0.807 & 0.569 & 0.791 & 0.723 & 0.416 to 0.632 \\
+
+\end{longtable}\endgroup
+
+Composition weights $w_{r\ell}^{(b)}=n_rn_\ell/(n_b^+n_b^-)$ of each tier pair in each endpoint AUROC (Supplementary Eq.~S2); -- marks pairs that do not enter that endpoint.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{3pt}
+
+\begin{longtable}{llcccccc}
+
+\toprule Split & Endpoint & T1$>$T0 & T2$>$T0 & T3$>$T0 & T2$>$T1 & T3$>$T1 & T3$>$T2 \\ \midrule\endfirsthead
+
+\toprule Split & Endpoint & T1$>$T0 & T2$>$T0 & T3$>$T0 & T2$>$T1 & T3$>$T1 & T3$>$T2 \\ \midrule\endhead
+
+\bottomrule\endlastfoot
+
+Random & $\leq100$ & 0.670 & 0.145 & 0.184 & -- & -- & -- \\
+Random & $\leq11$ & -- & 0.083 & 0.106 & 0.357 & 0.454 & -- \\
+Random & $\leq1$ & -- & -- & 0.161 & -- & 0.690 & 0.149 \\
+MaxMin & $\leq100$ & 0.741 & 0.117 & 0.142 & -- & -- & -- \\
+MaxMin & $\leq11$ & -- & 0.123 & 0.149 & 0.329 & 0.398 & -- \\
+MaxMin & $\leq1$ & -- & -- & 0.245 & -- & 0.652 & 0.103 \\
+Time & $\leq100$ & 0.754 & 0.102 & 0.144 & -- & -- & -- \\
+Time & $\leq11$ & -- & 0.100 & 0.141 & 0.315 & 0.444 & -- \\
+Time & $\leq1$ & -- & -- & 0.219 & -- & 0.689 & 0.093 \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S12. Cross-endpoint evaluation (rows: endpoint the model was trained for; columns: endpoint whose labels were used for evaluation)}
+\begin{longtable}{lllccc}
+\toprule Split & Representation & Trained for & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
+\multicolumn{6}{l}{\textit{Supplementary Table S12 (continued)}} \\
+\toprule Split & Representation & Trained for & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
+\midrule\multicolumn{6}{r}{Continued on next page}\\\endfoot
+\bottomrule\endlastfoot
+Random & ECFP & $\leq100$ & 0.718 (0.62--0.83) & 0.697 (0.59--0.77) & 0.744 (0.64--0.81) \\
+Random & ECFP & $\leq11$ & 0.724 (0.59--0.82) & 0.848 (0.76--0.91) & 0.905 (0.83--0.96) \\
+Random & ECFP & $\leq1$ & 0.679 (0.56--0.77) & 0.849 (0.75--0.92) & 0.917 (0.83--0.97) \\
+\addlinespace
+Random & WL--HI & $\leq100$ & 0.744 (0.65--0.84) & 0.732 (0.64--0.81) & 0.751 (0.67--0.83) \\
+Random & WL--HI & $\leq11$ & 0.703 (0.58--0.79) & 0.863 (0.77--0.93) & 0.901 (0.81--0.95) \\
+Random & WL--HI & $\leq1$ & 0.709 (0.60--0.79) & 0.880 (0.80--0.94) & 0.927 (0.84--0.97) \\
+\addlinespace
+MaxMin & ECFP & $\leq100$ & 0.592 (0.50--0.69) & 0.605 (0.51--0.70) & 0.625 (0.51--0.74) \\
+MaxMin & ECFP & $\leq11$ & 0.501 (0.42--0.59) & 0.792 (0.72--0.86) & 0.807 (0.71--0.89) \\
+MaxMin & ECFP & $\leq1$ & 0.500 (0.42--0.59) & 0.744 (0.64--0.84) & 0.795 (0.67--0.90) \\
+\addlinespace
+MaxMin & WL--HI & $\leq100$ & 0.574 (0.47--0.68) & 0.666 (0.58--0.75) & 0.702 (0.59--0.81) \\
+MaxMin & WL--HI & $\leq11$ & 0.567 (0.48--0.66) & 0.830 (0.76--0.89) & 0.847 (0.76--0.92) \\
+MaxMin & WL--HI & $\leq1$ & 0.537 (0.44--0.64) & 0.765 (0.67--0.85) & 0.832 (0.72--0.93) \\
+\addlinespace
+Time & ECFP & $\leq100$ & 0.691 (0.59--0.79) & 0.617 (0.52--0.72) & 0.703 (0.58--0.81) \\
+Time & ECFP & $\leq11$ & 0.557 (0.47--0.65) & 0.754 (0.66--0.85) & 0.872 (0.80--0.94) \\
+Time & ECFP & $\leq1$ & 0.583 (0.48--0.68) & 0.693 (0.59--0.79) & 0.792 (0.67--0.90) \\
+\addlinespace
+Time & WL--HI & $\leq100$ & 0.665 (0.56--0.78) & 0.627 (0.54--0.71) & 0.687 (0.58--0.79) \\
+Time & WL--HI & $\leq11$ & 0.552 (0.46--0.65) & 0.788 (0.69--0.87) & 0.878 (0.81--0.95) \\
+Time & WL--HI & $\leq1$ & 0.572 (0.47--0.69) & 0.704 (0.60--0.80) & 0.788 (0.66--0.90) \\
+\addlinespace
+\end{longtable}
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S13. Brier score of calibrated ECFP forecasts against a constant training-prevalence forecast}
+\begin{longtable}{llcccc}
+\toprule Split & Endpoint & Training prevalence & Model Brier & Constant Brier & Brier skill \\ \midrule\endfirsthead
+\multicolumn{6}{l}{\textit{Supplementary Table S13 (continued)}} \\
+\toprule Split & Endpoint & Training prevalence & Model Brier & Constant Brier & Brier skill \\ \midrule\endhead
+\midrule\multicolumn{6}{r}{Continued on next page}\\\endfoot
+\bottomrule\endlastfoot
+Random & $\leq100$ & 0.820 & 0.1073 & 0.1190 & 0.098 \\
+Random & $\leq11$ & 0.286 & 0.1222 & 0.2038 & 0.401 \\
+Random & $\leq1$ & 0.167 & 0.0667 & 0.1341 & 0.503 \\
+\addlinespace
+MaxMin & $\leq100$ & 0.841 & 0.1715 & 0.1735 & 0.011 \\
+MaxMin & $\leq11$ & 0.307 & 0.1373 & 0.1725 & 0.204 \\
+MaxMin & $\leq1$ & 0.179 & 0.0707 & 0.1033 & 0.316 \\
+\addlinespace
+Time & $\leq100$ & 0.835 & 0.1451 & 0.1567 & 0.074 \\
+Time & $\leq11$ & 0.308 & 0.1254 & 0.1709 & 0.266 \\
+Time & $\leq1$ & 0.178 & 0.0732 & 0.1063 & 0.311 \\
+\addlinespace
+\end{longtable}
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S14. Tier1 exclusion for all representations}
+
+$\leq100$ and $\leq11$: original models on the full test set. No-T1 test: the $\leq100$ model evaluated after removing Tier1 test compounds (Tier0 versus Tier2 and Tier3). No-T1 refit: the same fixed learner refitted without Tier1 training compounds and evaluated on the Tier1-free test set. T1 comp.: No-T1 refit minus $\leq100$. Residual: $\leq11$ minus No-T1 refit. The two components add to the $\leq11$ minus $\leq100$ contrast. Intervals are scaffold-cluster 95\% percentile intervals over the primary bootstrap draws; molecule-level intervals and the separate evaluation and training components are in \texttt{results\_v2/tier\_boundary/03\_tier1\_exclusion\_decomposition.csv}.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{3pt}
+
+\begin{longtable}{llcccccccc}
+
+\toprule Split & Rep. & $\leq100$ & No-T1 test & No-T1 refit & $\leq11$ & T1 comp. & 95\% CI & Residual & 95\% CI \\ \midrule\endfirsthead
+
+\toprule Split & Rep. & $\leq100$ & No-T1 test & No-T1 refit & $\leq11$ & T1 comp. & 95\% CI & Residual & 95\% CI \\ \midrule\endhead
+
+\midrule\multicolumn{10}{r}{Continued on next page}\endfoot\bottomrule\endlastfoot
+
+Random & ECFP & 0.718 & 0.804 & 0.871 & 0.848 & 0.153 & 0.023 to 0.242 & $-$0.023 & $-$0.081 to 0.058 \\
+Random & Avalon & 0.722 & 0.834 & 0.861 & 0.841 & 0.139 & 0.010 to 0.234 & $-$0.021 & $-$0.076 to 0.039 \\
+Random & MACCS & 0.663 & 0.766 & 0.822 & 0.830 & 0.159 & 0.030 to 0.261 & 0.008 & $-$0.053 to 0.100 \\
+Random & WL-HI & 0.744 & 0.854 & 0.893 & 0.863 & 0.149 & 0.032 to 0.238 & $-$0.030 & $-$0.084 to 0.034 \\
+Random & Descriptors12 & 0.596 & 0.658 & 0.683 & 0.687 & 0.087 & $-$0.015 to 0.168 & 0.003 & $-$0.086 to 0.083 \\
+MaxMin & ECFP & 0.592 & 0.643 & 0.705 & 0.792 & 0.113 & 0.017 to 0.212 & 0.087 & 0.012 to 0.166 \\
+MaxMin & Avalon & 0.661 & 0.722 & 0.758 & 0.769 & 0.096 & $-$0.004 to 0.187 & 0.011 & $-$0.063 to 0.081 \\
+MaxMin & MACCS & 0.601 & 0.693 & 0.726 & 0.780 & 0.126 & 0.034 to 0.216 & 0.053 & $-$0.020 to 0.130 \\
+MaxMin & WL-HI & 0.574 & 0.674 & 0.740 & 0.830 & 0.167 & 0.085 to 0.248 & 0.090 & 0.014 to 0.171 \\
+MaxMin & Descriptors12 & 0.525 & 0.620 & 0.656 & 0.671 & 0.131 & 0.035 to 0.228 & 0.015 & $-$0.066 to 0.103 \\
+Time & ECFP & 0.691 & 0.732 & 0.758 & 0.754 & 0.067 & $-$0.048 to 0.183 & $-$0.004 & $-$0.083 to 0.078 \\
+Time & Avalon & 0.645 & 0.687 & 0.729 & 0.754 & 0.084 & $-$0.027 to 0.187 & 0.026 & $-$0.055 to 0.107 \\
+Time & MACCS & 0.593 & 0.598 & 0.614 & 0.686 & 0.021 & $-$0.077 to 0.115 & 0.072 & $-$0.048 to 0.193 \\
+Time & WL-HI & 0.665 & 0.746 & 0.760 & 0.788 & 0.095 & $-$0.009 to 0.193 & 0.027 & $-$0.062 to 0.122 \\
+Time & Descriptors12 & 0.390 & 0.408 & 0.408 & 0.567 & 0.018 & $-$0.080 to 0.122 & 0.160 & 0.059 to 0.256 \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S15. Route-matched source-label concordance}
+
+Counts are disagreements against the original ApisTox labels on the same compounds with all three source labels determined. The final column counts 100-cut-off discrepancies containing right-censored $>100$ evidence. These are source disagreements rather than adjudicated extraction errors. Threshold-specific cohorts, compound identities and underlying observations are retained in the concordance CSV files.
+
+\begingroup\small\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{lrcccc}
+
+\toprule Source & $n$ & At 1 & At 11 & At 100 & At 100, censored \\ \midrule\endfirsthead
+
+\toprule Source & $n$ & At 1 & At 11 & At 100 & At 100, censored \\ \midrule\endhead
+
+\midrule\multicolumn{6}{r}{Continued on next page}\endfoot\bottomrule\endlastfoot
+
+OFT & 149 & 2 & 1 & 82 & 70 \\
+OFT, 48 h & 72 & 2 & 1 & 37 & 30 \\
+EPA retrospective & 103 & 2 & 3 & 51 & 39 \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S16. Route-matched concordance at 100~\ugbee by benchmark tier and record source}
+
+All-three-determinate cohorts of Supplementary Table~S15. B+S$-$: benchmark label $\leq100$ and source label $>100$; B$-$S+: the reverse. Censored: disagreements whose source evidence includes a right-censored $>100$~\ugbee value. OFT: OpenFoodTox; OFT 48 h: 48-hour observations only; EPA: the 2022 retrospective.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{3pt}
+
+\begin{longtable}{llrrrrcrr}
+
+\toprule Source & Tier & $n$ & Agree & Disagree & Agree (\%) & Wilson 95\% CI (\%) & B+S$-$/B$-$S+ & Censored \\ \midrule\endfirsthead
+
+\toprule Source & Tier & $n$ & Agree & Disagree & Agree (\%) & Wilson 95\% CI (\%) & B+S$-$/B$-$S+ & Censored \\ \midrule\endhead
+
+\midrule\multicolumn{9}{r}{Continued on next page}\endfoot\bottomrule\endlastfoot
+
+OFT & Tier0 & 31 & 30 & 1 & 96.8 & 83.8 to 99.4 & 0/1 & 0 \\
+OFT & Tier1 & 89 & 9 & 80 & 10.1 & 5.4 to 18.1 & 80/0 & 70 \\
+OFT & Tier2 & 14 & 13 & 1 & 92.9 & 68.5 to 98.7 & 1/0 & 0 \\
+OFT & Tier3 & 15 & 15 & 0 & 100.0 & 79.6 to 100.0 & 0/0 & 0 \\
+OFT 48 h & Tier0 & 19 & 19 & 0 & 100.0 & 83.2 to 100.0 & 0/0 & 0 \\
+OFT 48 h & Tier1 & 38 & 2 & 36 & 5.3 & 1.5 to 17.3 & 36/0 & 30 \\
+OFT 48 h & Tier2 & 6 & 5 & 1 & 83.3 & 43.6 to 97.0 & 1/0 & 0 \\
+OFT 48 h & Tier3 & 9 & 9 & 0 & 100.0 & 70.1 to 100.0 & 0/0 & 0 \\
+EPA & Tier0 & 23 & 21 & 2 & 91.3 & 73.2 to 97.6 & 0/2 & 0 \\
+EPA & Tier1 & 58 & 9 & 49 & 15.5 & 8.4 to 26.9 & 49/0 & 39 \\
+EPA & Tier2 & 7 & 7 & 0 & 100.0 & 64.6 to 100.0 & 0/0 & 0 \\
+EPA & Tier3 & 15 & 15 & 0 & 100.0 & 79.6 to 100.0 & 0/0 & 0 \\
+
+\end{longtable}\endgroup
+
+Disagreements at 100~\ugbee by the benchmark record source (the database that supplied the ApisTox label).
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{llrrrr}
+
+\toprule Source & Benchmark record & $n$ & Disagree & Tier1 $n$ & Tier1 disagree \\ \midrule\endfirsthead
+
+\toprule Source & Benchmark record & $n$ & Disagree & Tier1 $n$ & Tier1 disagree \\ \midrule\endhead
+
+\bottomrule\endlastfoot
+
+OFT & ECOTOX & 77 & 43 & 46 & 43 \\
+OFT & PPDB & 72 & 39 & 43 & 37 \\
+OFT 48 h & ECOTOX & 38 & 21 & 22 & 21 \\
+OFT 48 h & PPDB & 34 & 16 & 16 & 15 \\
+EPA & ECOTOX & 83 & 43 & 50 & 42 \\
+EPA & PPDB & 20 & 8 & 8 & 7 \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S17. Inequality qualifiers in the label-determining ECOTOX records}
+
+The upstream ECOTOX labelling was replicated from the cached ApisTox ECOTOX export and reproduced the label and ternary level of all 441 ECOTOX-derived benchmark compounds. For each compound, the label-determining record group (the exposure route with the lowest median) was re-read with its operator column. Any $>$: group contains at least one right-censored record; $>$ at $\geq100$: a right-censored record at or above 100~\ugbee. The last three columns give the qualifier-aware label at 100~\ugbee, which requires every record of the group to fall determinately on one side of the cut-off. Compound-level rows are in \texttt{results\_v2/tier\_boundary/06\_ecotox\_qualifier\_propagation.csv}.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{lrrrrrrr}
+
+\toprule Tier & $n$ & Any $>$ & $>$ at $\geq100$ & Median $=100$ & $\leq100$ & Unresolved & $>100$ \\ \midrule\endfirsthead
+
+\toprule Tier & $n$ & Any $>$ & $>$ at $\geq100$ & Median $=100$ & $\leq100$ & Unresolved & $>100$ \\ \midrule\endhead
+
+\midrule\multicolumn{8}{r}{Continued on next page}\endfoot\bottomrule\endlastfoot
+
+Tier0 & 72 & 54 & 53 & 0 & 0 & 10 & 62 \\
+Tier1 & 212 & 180 & 97 & 69 & 32 & 113 & 67 \\
+Tier2 & 60 & 11 & 0 & 0 & 49 & 11 & 0 \\
+Tier3 & 97 & 6 & 0 & 0 & 91 & 6 & 0 \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S18a. Complete saved-score ECFP label reassessment}
+
+Cells report AUROC and (positive/negative) counts. An asterisk marks fewer than five compounds in a class; -- denotes undefined AUROC. Orig.: original benchmark labels; Source: regulatory-source labels. Broad: external contact, original route unrestricted; Route: original contact required; OFT48: 48-hour observations required; EPA Quality: structure-quality and MRID evidence required. All cohorts exclude the corresponding model\textquotesingle s training identities. The cohorts and sources overlap. Exact eligibility, AP, pointwise percentile intervals and degenerate bootstrap counts remain in the machine-readable tables.
+
+\begingroup\small\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{llllrccc}
+
+\toprule Source & Screen & Split & Labels & $n$ & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
+
+\toprule Source & Screen & Split & Labels & $n$ & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
+
+\midrule\multicolumn{8}{r}{Continued on next page}\endfoot\bottomrule\endlastfoot
+
+OFT & Broad & Random & Orig. & 24 & 0.130* (23/1) & 0.525* (4/20) & 0.870* (1/23) \\
+OFT & Broad & Random & Source & 24 & 0.600 (5/19) & 0.667* (3/21) & 0.870* (1/23) \\
+OFT & Route & Random & Orig. & 15 & 0.143* (14/1) & 0.615* (2/13) & --* (0/15) \\
+OFT & Route & Random & Source & 15 & 0.500* (3/12) & 0.615* (2/13) & --* (0/15) \\
+OFT & Broad & MaxMin & Orig. & 18 & 0.723 (13/5) & 0.906* (2/16) & 0.941* (1/17) \\
+OFT & Broad & MaxMin & Source & 18 & 0.661* (4/14) & 0.941* (1/17) & 0.941* (1/17) \\
+OFT & Route & MaxMin & Orig. & 13 & 0.650 (8/5) & 1.000* (1/12) & 1.000* (1/12) \\
+OFT & Route & MaxMin & Source & 13 & 0.545* (2/11) & 1.000* (1/12) & 1.000* (1/12) \\
+OFT & Broad & Time & Orig. & 28 & 0.583* (24/4) & 0.727 (6/22) & 0.635* (2/26) \\
+OFT & Broad & Time & Source & 28 & 0.497 (7/21) & 0.802* (4/24) & 0.635* (2/26) \\
+OFT & Route & Time & Orig. & 18 & 0.125* (16/2) & 0.765* (1/17) & --* (0/18) \\
+OFT & Route & Time & Source & 18 & 0.594* (2/16) & 0.765* (1/17) & --* (0/18) \\
+OFT48 & Broad & Random & Orig. & 8 & --* (8/0) & 0.333* (2/6) & --* (0/8) \\
+OFT48 & Broad & Random & Source & 8 & 0.750* (2/6) & 0.714* (1/7) & --* (0/8) \\
+OFT48 & Route & Random & Orig. & 5 & --* (5/0) & 0.750* (1/4) & --* (0/5) \\
+OFT48 & Route & Random & Source & 5 & 0.500* (1/4) & 0.750* (1/4) & --* (0/5) \\
+OFT48 & Broad & MaxMin & Orig. & 8 & 0.750* (6/2) & 0.857* (1/7) & 0.857* (1/7) \\
+OFT48 & Broad & MaxMin & Source & 8 & 0.833* (2/6) & 0.857* (1/7) & 0.857* (1/7) \\
+OFT48 & Route & MaxMin & Orig. & 6 & 0.625* (4/2) & 1.000* (1/5) & 1.000* (1/5) \\
+OFT48 & Route & MaxMin & Source & 6 & 0.800* (1/5) & 1.000* (1/5) & 1.000* (1/5) \\
+OFT48 & Broad & Time & Orig. & 9 & 0.875* (8/1) & 0.714* (2/7) & 1.000* (1/8) \\
+OFT48 & Broad & Time & Source & 9 & 0.429* (2/7) & 0.714* (2/7) & 1.000* (1/8) \\
+OFT48 & Route & Time & Orig. & 5 & --* (5/0) & 1.000* (1/4) & --* (0/5) \\
+OFT48 & Route & Time & Source & 5 & 0.250* (1/4) & 1.000* (1/4) & --* (0/5) \\
+EPA & Broad & Random & Orig. & 32 & 0.575* (29/3) & 0.840 (7/25) & 0.981 (6/26) \\
+EPA & Broad & Random & Source & 32 & 0.786 (10/22) & 0.891 (6/26) & 0.982* (4/28) \\
+EPA & Route & Random & Orig. & 18 & --* (18/0) & 0.985 (5/13) & 1.000 (5/13) \\
+EPA & Route & Random & Source & 18 & 0.896 (7/11) & 0.985 (5/13) & 0.982* (4/14) \\
+EPA & Quality & Random & Orig. & 24 & 0.571* (21/3) & 0.806 (6/18) & 0.968 (5/19) \\
+EPA & Quality & Random & Source & 24 & 0.820 (8/16) & 0.863 (5/19) & 0.988* (4/20) \\
+EPA & Route+quality & Random & Orig. & 13 & --* (13/0) & 0.972* (4/9) & 1.000* (4/9) \\
+EPA & Route+quality & Random & Source & 13 & 0.950 (5/8) & 0.972* (4/9) & 1.000* (4/9) \\
+EPA & Broad & MaxMin & Orig. & 24 & 0.750 (18/6) & 0.852 (6/18) & 0.850* (4/20) \\
+EPA & Broad & MaxMin & Source & 24 & 0.703 (8/16) & 0.875* (4/20) & 0.783* (1/23) \\
+EPA & Route & MaxMin & Orig. & 13 & 0.806* (9/4) & 0.864* (2/11) & 0.917* (1/12) \\
+EPA & Route & MaxMin & Source & 13 & 0.667* (4/9) & 0.864* (2/11) & 0.917* (1/12) \\
+EPA & Quality & MaxMin & Orig. & 21 & 0.756 (15/6) & 0.800 (5/16) & 0.778* (3/18) \\
+EPA & Quality & MaxMin & Source & 21 & 0.663 (7/14) & 0.815* (3/18) & 0.800* (1/20) \\
+EPA & Route+quality & MaxMin & Orig. & 13 & 0.806* (9/4) & 0.864* (2/11) & 0.917* (1/12) \\
+EPA & Route+quality & MaxMin & Source & 13 & 0.667* (4/9) & 0.864* (2/11) & 0.917* (1/12) \\
+EPA & Broad & Time & Orig. & 30 & 0.644* (26/4) & 0.750 (10/20) & 0.590 (7/23) \\
+EPA & Broad & Time & Source & 30 & 0.540 (8/22) & 0.778 (6/24) & 0.827* (4/26) \\
+EPA & Route & Time & Orig. & 13 & 0.273* (11/2) & 0.773* (2/11) & 0.773* (2/11) \\
+EPA & Route & Time & Source & 13 & 0.733* (3/10) & 0.773* (2/11) & 0.773* (2/11) \\
+EPA & Quality & Time & Orig. & 27 & 0.652* (23/4) & 0.747 (10/17) & 0.586 (7/20) \\
+EPA & Quality & Time & Source & 27 & 0.550 (7/20) & 0.770 (6/21) & 0.826* (4/23) \\
+EPA & Route+quality & Time & Orig. & 11 & 0.333* (9/2) & 0.778* (2/9) & 0.778* (2/9) \\
+EPA & Route+quality & Time & Source & 11 & 0.778* (2/9) & 0.778* (2/9) & 0.778* (2/9) \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S18b. Paired endpoint contrasts and label-source changes}
+
+Cells report paired AUROC differences with exploratory 95\% compound-bootstrap percentile intervals. Change is the source-label contrast minus the original-label contrast on identical compounds. Asterisks flag sparse classes. Conditional intervals after removing single-class bootstrap draws can be misleading, especially with one positive; they are retained for audit and do not establish replication. These intervals are not the original scaffold-cluster simultaneous intervals.
+
+\begingroup\small\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{llllcc}
+
+\toprule Source & Screen & Split & Labels & $11-100$ & $1-100$ \\ \midrule\endfirsthead
+
+\toprule Source & Screen & Split & Labels & $11-100$ & $1-100$ \\ \midrule\endhead
+
+\midrule\multicolumn{6}{r}{Continued on next page}\endfoot\bottomrule\endlastfoot
+
+OFT & Broad & Random & Orig. & 0.395* [-0.037, 0.783] & 0.739* [0.466, 0.957] \\
+OFT & Broad & Random & Source & 0.067* [-0.334, 0.435] & 0.270* [-0.024, 0.594] \\
+OFT & Broad & Random & Change & -0.328* [-0.664, 0.078] & -0.470* [-0.695, -0.149] \\
+OFT & Route & Random & Orig. & 0.473* [-0.077, 1.000] & --* [--, --] \\
+OFT & Route & Random & Source & 0.115* [-0.377, 0.545] & --* [--, --] \\
+OFT & Route & Random & Change & -0.357* [-0.703, 0.085] & --* [--, --] \\
+OFT & Broad & MaxMin & Orig. & 0.183* [-0.107, 0.501] & 0.218* [-0.067, 0.518] \\
+OFT & Broad & MaxMin & Source & 0.280* [-0.073, 0.622] & 0.280* [-0.073, 0.622] \\
+OFT & Broad & MaxMin & Change & 0.097* [-0.316, 0.459] & 0.062* [-0.321, 0.417] \\
+OFT & Route & MaxMin & Orig. & 0.350* [0.025, 0.650] & 0.350* [0.025, 0.650] \\
+OFT & Route & MaxMin & Source & 0.455* [0.000, 0.700] & 0.455* [0.000, 0.700] \\
+OFT & Route & MaxMin & Change & 0.105* [-0.488, 0.467] & 0.105* [-0.488, 0.467] \\
+OFT & Broad & Time & Orig. & 0.144* [-0.409, 0.724] & 0.051* [-0.638, 0.750] \\
+OFT & Broad & Time & Source & 0.305* [0.031, 0.588] & 0.138* [-0.405, 0.693] \\
+OFT & Broad & Time & Change & 0.162* [-0.521, 0.778] & 0.087* [-0.594, 0.687] \\
+OFT & Route & Time & Orig. & 0.640* [0.306, 0.913] & --* [--, --] \\
+OFT & Route & Time & Source & 0.171* [-0.079, 0.750] & --* [--, --] \\
+OFT & Route & Time & Change & -0.469* [-0.786, 0.273] & --* [--, --] \\
+OFT48 & Broad & Random & Orig. & --* [--, --] & --* [--, --] \\
+OFT48 & Broad & Random & Source & -0.036* [-0.446, 0.600] & --* [--, --] \\
+OFT48 & Broad & Random & Change & --* [--, --] & --* [--, --] \\
+OFT48 & Route & Random & Orig. & --* [--, --] & --* [--, --] \\
+OFT48 & Route & Random & Source & 0.250* [0.000, 0.750] & --* [--, --] \\
+OFT48 & Route & Random & Change & --* [--, --] & --* [--, --] \\
+OFT48 & Broad & MaxMin & Orig. & 0.107* [-0.400, 0.571] & 0.107* [-0.400, 0.571] \\
+OFT48 & Broad & MaxMin & Source & 0.024* [-0.367, 0.600] & 0.024* [-0.367, 0.600] \\
+OFT48 & Broad & MaxMin & Change & -0.083* [-0.500, 0.567] & -0.083* [-0.500, 0.567] \\
+OFT48 & Route & MaxMin & Orig. & 0.375* [0.000, 0.750] & 0.375* [0.000, 0.750] \\
+OFT48 & Route & MaxMin & Source & 0.200* [0.000, 0.600] & 0.200* [0.000, 0.600] \\
+OFT48 & Route & MaxMin & Change & -0.175* [-0.750, 0.500] & -0.175* [-0.750, 0.500] \\
+OFT48 & Broad & Time & Orig. & -0.161* [-0.571, 0.036] & 0.125* [0.000, 0.375] \\
+OFT48 & Broad & Time & Source & 0.286* [-0.375, 0.865] & 0.571* [0.167, 1.000] \\
+OFT48 & Broad & Time & Change & 0.446* [-0.143, 0.833] & 0.446* [-0.143, 0.833] \\
+OFT48 & Route & Time & Orig. & --* [--, --] & --* [--, --] \\
+OFT48 & Route & Time & Source & 0.750* [0.250, 1.000] & --* [--, --] \\
+OFT48 & Route & Time & Change & --* [--, --] & --* [--, --] \\
+EPA & Broad & Random & Orig. & 0.265* [-0.191, 0.864] & 0.406* [-0.021, 1.000] \\
+EPA & Broad & Random & Source & 0.105 [-0.101, 0.308] & 0.196* [0.051, 0.376] \\
+EPA & Broad & Random & Change & -0.161* [-0.733, 0.300] & -0.210* [-0.774, 0.234] \\
+EPA & Route & Random & Orig. & --* [--, --] & --* [--, --] \\
+EPA & Route & Random & Source & 0.089 [-0.039, 0.270] & 0.086* [-0.044, 0.262] \\
+EPA & Route & Random & Change & --* [--, --] & --* [--, --] \\
+EPA & Quality & Random & Orig. & 0.234* [-0.212, 0.831] & 0.397* [-0.032, 1.000] \\
+EPA & Quality & Random & Source & 0.043 [-0.188, 0.258] & 0.167* [0.021, 0.371] \\
+EPA & Quality & Random & Change & -0.191* [-0.726, 0.266] & -0.230* [-0.772, 0.209] \\
+EPA & Route+quality & Random & Orig. & --* [--, --] & --* [--, --] \\
+EPA & Route+quality & Random & Source & 0.022* [-0.111, 0.167] & 0.050* [0.000, 0.214] \\
+EPA & Route+quality & Random & Change & --* [--, --] & --* [--, --] \\
+EPA & Broad & MaxMin & Orig. & 0.102 [-0.141, 0.372] & 0.100* [-0.190, 0.398] \\
+EPA & Broad & MaxMin & Source & 0.172* [-0.068, 0.445] & 0.079* [-0.200, 0.387] \\
+EPA & Broad & MaxMin & Change & 0.070* [-0.241, 0.391] & -0.021* [-0.388, 0.420] \\
+EPA & Route & MaxMin & Orig. & 0.058* [-0.276, 0.400] & 0.111* [-0.200, 0.429] \\
+EPA & Route & MaxMin & Source & 0.197* [-0.100, 0.517] & 0.250* [0.000, 0.556] \\
+EPA & Route & MaxMin & Change & 0.139* [-0.310, 0.571] & 0.139* [-0.300, 0.571] \\
+EPA & Quality & MaxMin & Orig. & 0.044 [-0.237, 0.337] & 0.022* [-0.329, 0.373] \\
+EPA & Quality & MaxMin & Source & 0.152* [-0.158, 0.489] & 0.137* [-0.176, 0.438] \\
+EPA & Quality & MaxMin & Change & 0.107* [-0.237, 0.455] & 0.115* [-0.291, 0.556] \\
+EPA & Route+quality & MaxMin & Orig. & 0.058* [-0.293, 0.400] & 0.111* [-0.201, 0.444] \\
+EPA & Route+quality & MaxMin & Source & 0.197* [-0.101, 0.508] & 0.250* [0.000, 0.551] \\
+EPA & Route+quality & MaxMin & Change & 0.139* [-0.333, 0.571] & 0.139* [-0.333, 0.575] \\
+EPA & Broad & Time & Orig. & 0.106* [-0.284, 0.467] & -0.054* [-0.494, 0.355] \\
+EPA & Broad & Time & Source & 0.238 [-0.041, 0.530] & 0.287* [-0.033, 0.604] \\
+EPA & Broad & Time & Change & 0.132* [-0.344, 0.632] & 0.341* [-0.185, 0.893] \\
+EPA & Route & Time & Orig. & 0.500* [0.197, 0.833] & 0.500* [0.091, 0.833] \\
+EPA & Route & Time & Source & 0.039* [-0.436, 0.400] & 0.039* [-0.381, 0.364] \\
+EPA & Route & Time & Change & -0.461* [-0.818, 0.000] & -0.461* [-0.818, 0.000] \\
+EPA & Quality & Time & Orig. & 0.095* [-0.270, 0.450] & -0.066* [-0.503, 0.350] \\
+EPA & Quality & Time & Source & 0.220 [-0.055, 0.519] & 0.276* [-0.047, 0.622] \\
+EPA & Quality & Time & Change & 0.125* [-0.362, 0.639] & 0.343* [-0.196, 0.872] \\
+EPA & Route+quality & Time & Orig. & 0.444* [0.167, 0.778] & 0.444* [0.067, 0.800] \\
+EPA & Route+quality & Time & Source & 0.000* [-0.444, 0.444] & 0.000* [-0.400, 0.400] \\
+EPA & Route+quality & Time & Change & -0.444* [-0.800, 0.114] & -0.444* [-0.800, 0.114] \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S19a. Eligible unseen-identity 48-hour endpoints}
+
+Values retain their original qualifiers and are reported in $\mu$g per bee. Active-ingredient dose basis is indicated only where stated by the source; test-material and dose-basis limitations remain in the endpoint ledger. -- means no eligible endpoint, not no toxicity. Adult evidence is explicit in the source or inferred from regulatory separation of adult acute and larval studies. The latter cases are excluded from the explicit-adult sensitivity. For acynonapyr, $>98.8$ cannot determine the 100-cut-off label; for cyclobutrifluram, $>72.2$ cannot determine it. Same-connectivity stereoisomer mixtures are evaluated by the non-chiral model without asserting exact material-level stereochemical identity.
+
+\begingroup\small\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{lccc}
+
+\toprule Chemical identity & Contact LD$_{50}$ & Oral LD$_{50}$ & Adult evidence \\ \midrule\endfirsthead
+
+\toprule Chemical identity & Contact LD$_{50}$ & Oral LD$_{50}$ & Adult evidence \\ \midrule\endhead
+
+\midrule\multicolumn{4}{r}{Continued on next page}\endfoot\bottomrule\endlastfoot
+
+Acynonapyr & $>$100 & $>$98.8 & Explicit \\
+Spiropidion & $>$200 & $>$100 & Context \\
+Cyclobutrifluram & $>$200 & $>$72.2 & Context \\
+Isocycloseram & -- & =0.29 & Explicit \\
+Fluxametamide & =2.68 & =0.792 & Explicit \\
+Flupentiofenox & $>$100 & $>$500 & Explicit \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S19b. Source traceability and eligibility exclusions}
+
+\paragraph{Acynonapyr.}
+
+Contact: PMRA 3328790 (2016). Table 24 printed pp106-107/PDF112-113; reference printed p149/PDF155. \url{https://publications.gc.ca/collections/collection_2026/sc-hc/h113-9/H113-9-2026-3-eng.pdf}.
+
+Oral: PMRA 3328790 (2016). Table24 printed p106/PDF112. \url{https://publications.gc.ca/collections/collection_2026/sc-hc/h113-9/H113-9-2026-3-eng.pdf}.
+
+\paragraph{Spiropidion.}
+
+Contact: PMRA 3436778 (2018). Table19 printed p92/PDF98; reference printed p153/PDF159. \url{https://publications.gc.ca/collections/collection_2026/sc-hc/h113-9/H113-9-2026-9-eng.pdf}.
+
+Oral: PMRA 3436778 (2018). Table19 printed p92/PDF98. \url{https://publications.gc.ca/collections/collection_2026/sc-hc/h113-9/H113-9-2026-9-eng.pdf}.
+
+\paragraph{Cyclobutrifluram.}
+
+Contact: PMRA3273332 (2020); EPA MRID51459447 index-only. Table22 printed p126/PDF131; identity printed pp9-10/PDF14-15. \url{https://publications.gc.ca/collections/collection_2025/sc-hc/h113-9/H113-9-2025-6-eng.pdf}.
+
+Oral: PMRA3273332 (2020). Table22 printed p126/PDF131. \url{https://publications.gc.ca/collections/collection_2025/sc-hc/h113-9/H113-9-2025-6-eng.pdf}.
+
+\paragraph{Isocycloseram.}
+
+Oral: PMRA3246199;2016;SYN547407. Table17 printedp133/PDF138; source lines7283-7294;study reference printedp180/PDF185. \url{https://publications.gc.ca/collections/collection_2025/sc-hc/h113-9/H113-9-2025-11-eng.pdf}.
+
+\paragraph{Fluxametamide.}
+
+Contact: NC-515 Acute Toxicity to Honey Bees;2014;HuntingdonLifeSciencesONE0224(E0701). Table2.6-11 printedp106/PDF113; bibliography II.2.6.3.1. \url{https://www.maff.go.jp/j/nouyaku/n_sinsa/attach/pdf/index-38.pdf}.
+
+Oral: NC-515 Acute Toxicity to Honey Bees;2014;HuntingdonLifeSciencesONE0224(E0701). Table2.6-11 printedp106/PDF113; bibliography II.2.6.3.1. \url{https://www.maff.go.jp/j/nouyaku/n_sinsa/attach/pdf/index-38.pdf}.
+
+\paragraph{Flupentiofenox.}
+
+Contact: SmithersUSA;2020;Report13912.6119;KCI200136. Tables2-3 printedpp8-9/PDF11-12;references PDF23. \url{https://www.maff.go.jp/j/council/sizai/nouyaku/attach/pdf/mitubati_17-7.pdf}.
+
+Oral: SmithersUSA;2020;Report13912.6118;KCI200140. Tables2-3 printedpp8-9/PDF11-12;references PDF23. \url{https://www.maff.go.jp/j/council/sizai/nouyaku/attach/pdf/mitubati_17-7.pdf}.
+
+All 11 accepted endpoints are in \texttt{frozen\_scoreable\_48h\_endpoints.csv}, including source material, stage evidence, full key and connectivity. The complete \texttt{frozen\_endpoint\_ledger.csv} retains rejected observations and reasons. The ten predicted candidate structures include four identities without an accepted 48-hour endpoint; they were not removed according to prediction success. Inpyrfluxam lacks adequate stage confirmation. Longer-time observations are stored separately in \texttt{extended\_times\_not\_primary.csv}. Sources not downloaded locally remain identified as full-text checked or unavailable in the source manifests; their local availability is not overstated.
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S20. Complete exploratory unseen-identity evaluation}
+
+Stage All retains contextual adult evidence; Explicit requires explicit evidence. Each uses determinate labels at that cut-off; Common requires all three labels determined. Confusion counts use zero decision score as the positive boundary. All class configurations are sparse; single-class AUROC is --. The full CSV supplies AP, exact sensitivity/specificity intervals, exploratory bootstrap intervals and valid/degenerate draws. These are selected pilot cases, not population-level performance estimates. Contact labels at 11 and 100 are identical in the primary cohort; common oral labels are identical at all three cut-offs. Their AUROC contrasts compare trained-model rankings rather than a fresh threshold-relabeling effect.
+
+\begingroup\small\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{llllrrcc}
+
+\toprule Route & Stage & Cohort & Split & Cut-off & $n$/pos. & AUROC & TP/TN/FP/FN \\ \midrule\endfirsthead
+
+\toprule Route & Stage & Cohort & Split & Cut-off & $n$/pos. & AUROC & TP/TN/FP/FN \\ \midrule\endhead
+
+\midrule\multicolumn{8}{r}{Continued on next page}\endfoot\bottomrule\endlastfoot
+
+Contact & All & Each & Random & 1 & 5/0 & -- & 0/5/0/0 \\
+Contact & All & Each & Random & 11 & 5/1 & 0.750 & 0/4/0/1 \\
+Contact & All & Each & Random & 100 & 5/1 & 1.000 & 1/1/3/0 \\
+Contact & All & Each & MaxMin & 1 & 5/0 & -- & 0/5/0/0 \\
+Contact & All & Each & MaxMin & 11 & 5/1 & 1.000 & 0/4/0/1 \\
+Contact & All & Each & MaxMin & 100 & 5/1 & 0.750 & 1/0/4/0 \\
+Contact & All & Each & Time & 1 & 5/0 & -- & 0/5/0/0 \\
+Contact & All & Each & Time & 11 & 5/1 & 1.000 & 0/4/0/1 \\
+Contact & All & Each & Time & 100 & 5/1 & 0.750 & 1/2/2/0 \\
+Contact & All & Common & Random & 1 & 5/0 & -- & 0/5/0/0 \\
+Contact & All & Common & Random & 11 & 5/1 & 0.750 & 0/4/0/1 \\
+Contact & All & Common & Random & 100 & 5/1 & 1.000 & 1/1/3/0 \\
+Contact & All & Common & MaxMin & 1 & 5/0 & -- & 0/5/0/0 \\
+Contact & All & Common & MaxMin & 11 & 5/1 & 1.000 & 0/4/0/1 \\
+Contact & All & Common & MaxMin & 100 & 5/1 & 0.750 & 1/0/4/0 \\
+Contact & All & Common & Time & 1 & 5/0 & -- & 0/5/0/0 \\
+Contact & All & Common & Time & 11 & 5/1 & 1.000 & 0/4/0/1 \\
+Contact & All & Common & Time & 100 & 5/1 & 0.750 & 1/2/2/0 \\
+Contact & Explicit & Each & Random & 1 & 3/0 & -- & 0/3/0/0 \\
+Contact & Explicit & Each & Random & 11 & 3/1 & 0.500 & 0/2/0/1 \\
+Contact & Explicit & Each & Random & 100 & 3/1 & 1.000 & 1/0/2/0 \\
+Contact & Explicit & Each & MaxMin & 1 & 3/0 & -- & 0/3/0/0 \\
+Contact & Explicit & Each & MaxMin & 11 & 3/1 & 1.000 & 0/2/0/1 \\
+Contact & Explicit & Each & MaxMin & 100 & 3/1 & 0.500 & 1/0/2/0 \\
+Contact & Explicit & Each & Time & 1 & 3/0 & -- & 0/3/0/0 \\
+Contact & Explicit & Each & Time & 11 & 3/1 & 1.000 & 0/2/0/1 \\
+Contact & Explicit & Each & Time & 100 & 3/1 & 0.500 & 1/1/1/0 \\
+Contact & Explicit & Common & Random & 1 & 3/0 & -- & 0/3/0/0 \\
+Contact & Explicit & Common & Random & 11 & 3/1 & 0.500 & 0/2/0/1 \\
+Contact & Explicit & Common & Random & 100 & 3/1 & 1.000 & 1/0/2/0 \\
+Contact & Explicit & Common & MaxMin & 1 & 3/0 & -- & 0/3/0/0 \\
+Contact & Explicit & Common & MaxMin & 11 & 3/1 & 1.000 & 0/2/0/1 \\
+Contact & Explicit & Common & MaxMin & 100 & 3/1 & 0.500 & 1/0/2/0 \\
+Contact & Explicit & Common & Time & 1 & 3/0 & -- & 0/3/0/0 \\
+Contact & Explicit & Common & Time & 11 & 3/1 & 1.000 & 0/2/0/1 \\
+Contact & Explicit & Common & Time & 100 & 3/1 & 0.500 & 1/1/1/0 \\
+Oral & All & Each & Random & 1 & 6/2 & 0.875 & 0/4/0/2 \\
+Oral & All & Each & Random & 11 & 6/2 & 0.500 & 0/4/0/2 \\
+Oral & All & Each & Random & 100 & 4/2 & 1.000 & 2/1/1/0 \\
+Oral & All & Each & MaxMin & 1 & 6/2 & 0.875 & 0/4/0/2 \\
+Oral & All & Each & MaxMin & 11 & 6/2 & 0.750 & 0/4/0/2 \\
+Oral & All & Each & MaxMin & 100 & 4/2 & 1.000 & 2/0/2/0 \\
+Oral & All & Each & Time & 1 & 6/2 & 0.875 & 0/4/0/2 \\
+Oral & All & Each & Time & 11 & 6/2 & 0.750 & 0/4/0/2 \\
+Oral & All & Each & Time & 100 & 4/2 & 1.000 & 2/2/0/0 \\
+Oral & All & Common & Random & 1 & 4/2 & 0.750 & 0/2/0/2 \\
+Oral & All & Common & Random & 11 & 4/2 & 0.250 & 0/2/0/2 \\
+Oral & All & Common & Random & 100 & 4/2 & 1.000 & 2/1/1/0 \\
+Oral & All & Common & MaxMin & 1 & 4/2 & 0.750 & 0/2/0/2 \\
+Oral & All & Common & MaxMin & 11 & 4/2 & 0.500 & 0/2/0/2 \\
+Oral & All & Common & MaxMin & 100 & 4/2 & 1.000 & 2/0/2/0 \\
+Oral & All & Common & Time & 1 & 4/2 & 0.750 & 0/2/0/2 \\
+Oral & All & Common & Time & 11 & 4/2 & 0.500 & 0/2/0/2 \\
+Oral & All & Common & Time & 100 & 4/2 & 1.000 & 2/2/0/0 \\
+Oral & Explicit & Each & Random & 1 & 4/2 & 0.750 & 0/2/0/2 \\
+Oral & Explicit & Each & Random & 11 & 4/2 & 0.250 & 0/2/0/2 \\
+Oral & Explicit & Each & Random & 100 & 3/2 & 1.000 & 2/0/1/0 \\
+Oral & Explicit & Each & MaxMin & 1 & 4/2 & 0.750 & 0/2/0/2 \\
+Oral & Explicit & Each & MaxMin & 11 & 4/2 & 0.750 & 0/2/0/2 \\
+Oral & Explicit & Each & MaxMin & 100 & 3/2 & 1.000 & 2/0/1/0 \\
+Oral & Explicit & Each & Time & 1 & 4/2 & 0.750 & 0/2/0/2 \\
+Oral & Explicit & Each & Time & 11 & 4/2 & 0.750 & 0/2/0/2 \\
+Oral & Explicit & Each & Time & 100 & 3/2 & 1.000 & 2/1/0/0 \\
+Oral & Explicit & Common & Random & 1 & 3/2 & 0.500 & 0/1/0/2 \\
+Oral & Explicit & Common & Random & 11 & 3/2 & 0.000 & 0/1/0/2 \\
+Oral & Explicit & Common & Random & 100 & 3/2 & 1.000 & 2/0/1/0 \\
+Oral & Explicit & Common & MaxMin & 1 & 3/2 & 0.500 & 0/1/0/2 \\
+Oral & Explicit & Common & MaxMin & 11 & 3/2 & 0.500 & 0/1/0/2 \\
+Oral & Explicit & Common & MaxMin & 100 & 3/2 & 1.000 & 2/0/1/0 \\
+Oral & Explicit & Common & Time & 1 & 3/2 & 0.500 & 0/1/0/2 \\
+Oral & Explicit & Common & Time & 11 & 3/2 & 0.500 & 0/1/0/2 \\
+Oral & Explicit & Common & Time & 100 & 3/2 & 1.000 & 2/1/0/0 \\
+
+\end{longtable}\endgroup

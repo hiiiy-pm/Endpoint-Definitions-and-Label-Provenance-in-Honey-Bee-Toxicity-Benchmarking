@@ -1,0 +1,6 @@
+﻿file,url,status,error,sha256,pages
+output\unseen_identity_case_study\data_curation\sources\isocycloseram_pmra2025.pdf,https://publications.gc.ca/collections/collection_2025/sc-hc/h113-9/H113-9-2025-11-eng.pdf,unavailable,Not PDF or empty response,,
+output\unseen_identity_case_study\data_curation\sources\dimpropyridaz_apvma.pdf,https://www.apvma.gov.au/sites/default/files/publication/106036-public_release_summary_on_the_evaluation_of_the_new_active_constituent_dimpropyridaz_in_the_product_efficon_insecticide.pdf,unavailable,The read operation timed out,,
+output\unseen_identity_case_study\data_curation\sources\flupyrimin_frontiers2022.pdf,https://www.frontiersin.org/journals/chemistry/articles/10.3389/fchem.2022.1019573/pdf,downloaded,,fe6f10d7c17570e948d5e4ef613ea3f6cdb5e134e192a0bd82b53f3f30eebb9d,16.0
+output\unseen_identity_case_study\data_curation\sources\flupyrimin_jafc2017.pdf,https://irac-online.org/content/uploads/JAFC2017.pdf,downloaded,,685043616511cf6da80b59ee0e4582b80ee5f084778d46199b944f3489cb23e8,11.0
+output\unseen_identity_case_study\data_curation\sources\benzpyrimoxan_technical_guide.pdf,https://www.nichino.co.jp/contents/000014547.pdf,downloaded,,b17f4906709cff3af7aebb45feb7cc9a07937d7f74cb5499c62f11748737b21f,16.0

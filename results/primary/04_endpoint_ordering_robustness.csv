@@ -1,0 +1,16 @@
+Split,Representation,AUC100_lt_AUC11,AUC100_lt_AUC1,Both
+Random,ECFP,True,True,True
+Random,Avalon,True,True,True
+Random,MACCS,True,True,True
+Random,WL-HI,True,True,True
+Random,Descriptors12,True,True,True
+MaxMin,ECFP,True,True,True
+MaxMin,Avalon,True,True,True
+MaxMin,MACCS,True,True,True
+MaxMin,WL-HI,True,True,True
+MaxMin,Descriptors12,True,True,True
+Time,ECFP,True,True,True
+Time,Avalon,True,True,True
+Time,MACCS,True,True,True
+Time,WL-HI,True,True,True
+Time,Descriptors12,True,True,True

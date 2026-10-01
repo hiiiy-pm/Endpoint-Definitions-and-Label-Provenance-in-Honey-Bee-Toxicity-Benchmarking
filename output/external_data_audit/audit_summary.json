@@ -1,0 +1,180 @@
+{
+  "OpenFoodTox": {
+    "bee_export_rows": 1251,
+    "acute_export_rows": 790,
+    "unique_acute_results": 751,
+    "duplicate_result_export_rows": 39,
+    "bee_endpoint_categories": {
+      "toxicity to bees: acute oral": 412,
+      "toxicity to bees: acute contact": 378,
+      "toxicity to bees: chronic oral": 242,
+      "bee larval toxicity - chronic": 154,
+      "bee larval toxicity - acute": 57,
+      "toxicity to bees: sublethal effects (reproduction, homing flight activity)": 5,
+      "toxicity to bees, other": 3
+    },
+    "acute_unit_counts": {
+      "µg/piece": 691,
+      "µg/bee": 57,
+      "mg/bee": 1,
+      "mg/kg": 1,
+      "g/ha": 1
+    },
+    "acute_duration_hours": {
+      "missing": 422,
+      "48.0": 291,
+      "72.0": 19,
+      "24.0": 10,
+      "96.0": 6,
+      "1152.0": 1,
+      "168.0": 1,
+      "120.0": 1
+    },
+    "acute_reference_structure_conflict_substances": 22,
+    "novel_candidate_names": [
+      "Bromoxynil heptanoate"
+    ]
+  },
+  "PLOS2022": {
+    "S1_chemical_rows": 195,
+    "S1_adult_acute_chemicals": 173,
+    "adult_acute_unresolved_names": [
+      "Bicyclopyrone"
+    ],
+    "unparsed_values": [],
+    "S4_unique_MRID_citations": 429,
+    "adult_endpoints_missing_MRID": [
+      {
+        "name": "2,4-D",
+        "route": "Contact",
+        "source_cell": "F8"
+      },
+      {
+        "name": "Bixafen",
+        "route": "Contact",
+        "source_cell": "F21"
+      },
+      {
+        "name": "Carboxin",
+        "route": "Contact",
+        "source_cell": "F28"
+      },
+      {
+        "name": "Cycloate",
+        "route": "Contact",
+        "source_cell": "F36"
+      },
+      {
+        "name": "Fluometuron",
+        "route": "Contact",
+        "source_cell": "F81"
+      },
+      {
+        "name": "Flutriafol",
+        "route": "Contact",
+        "source_cell": "F87"
+      },
+      {
+        "name": "Imazethapyr",
+        "route": "Contact",
+        "source_cell": "F101"
+      },
+      {
+        "name": "Mefentrifluconazole",
+        "route": "Contact",
+        "source_cell": "F116"
+      },
+      {
+        "name": "Metaldehyde",
+        "route": "Contact",
+        "source_cell": "F120"
+      },
+      {
+        "name": "Orthosulfamuron",
+        "route": "Contact",
+        "source_cell": "F132"
+      },
+      {
+        "name": "Phenmedipham",
+        "route": "Contact",
+        "source_cell": "F141"
+      },
+      {
+        "name": "Pyriproxyfen",
+        "route": "Contact",
+        "source_cell": "F164"
+      },
+      {
+        "name": "Sodium 1-naphthaleneacetate",
+        "route": "Contact",
+        "source_cell": "F171"
+      },
+      {
+        "name": "Sodium 1-naphthaleneacetate",
+        "route": "Oral",
+        "source_cell": "G171"
+      },
+      {
+        "name": "Valifenalate",
+        "route": "Contact",
+        "source_cell": "F201"
+      }
+    ],
+    "novel_candidate_names": []
+  },
+  "excluded": {
+    "all_excluded_records": 1389,
+    "blocks": 23,
+    "uncertain_records": 745,
+    "uncertain_CAS": 72,
+    "uncertain_route_groups": 154,
+    "route_groups_actually_unspecified": 79,
+    "uncertain_log_route_groups_not_unspecified": 75,
+    "retained_by_CAS": 68,
+    "retained_sources": {
+      "ECOTOX": 45,
+      "PPDB": 22,
+      "BPDB": 1
+    },
+    "retained_tiers": {
+      "1.0": 31,
+      "3.0": 18,
+      "2.0": 12,
+      "0.0": 7
+    },
+    "unretained_CAS": [
+      {
+        "CAS": "93-65-2",
+        "name": "2-(4-Chloro-2-methylphenoxy)propanoic acid"
+      },
+      {
+        "CAS": "115-29-7",
+        "name": "6,7,8,9,10,10-Hexachloro-1,5,5a,6,9,9a-hexahydro-6,9-methano-2,4,3-benzodioxathiepin 3-oxide"
+      },
+      {
+        "CAS": "10124-65-9",
+        "name": "Potassium dodecanoate"
+      },
+      {
+        "CAS": "120868-66-8",
+        "name": "1-[(6-Chloro-3-pyridinyl)methyl]-2-imidazolidinone"
+      }
+    ],
+    "identity_resolved": 72,
+    "fullkey_overlap": 58,
+    "nearest_nonself_tiers": {
+      "1": 31,
+      "3": 18,
+      "2": 12,
+      "0": 11
+    },
+    "nearest_similarity_median": 0.43800682885189923,
+    "preconverted_values_with_non_ug_unit_strings": 128
+  },
+  "invariants": {
+    "source_files_unchanged": true,
+    "no_model_fitted": true,
+    "no_censored_value_imputed": true,
+    "no_unresolved_identity_counted_as_new": true
+  }
+}

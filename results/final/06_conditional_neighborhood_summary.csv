@@ -1,0 +1,4 @@
+PermutationScheme,Significant_q05,Total,Max_q,MedianObservedEffect
+Global,15,15,0.0294852573713143,0.0575572875999497
+Source×Insecticide,11,15,0.1564217891054472,0.0575572875999497
+Source×Route×Insecticide,11,15,0.1479260369815092,0.0575572875999497

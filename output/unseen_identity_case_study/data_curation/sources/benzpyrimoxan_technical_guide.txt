@@ -1,0 +1,402 @@
+
+=== PDF PAGE 1 ===
+Benzpyrimoxan  Technical  Guide
+
+=== PDF PAGE 2 ===
+Benzpyrimoxan  Technical  Guide
+Benzpyrimoxan
+    Benzpyrimoxan (BPX) is a novel insecticidal active ingredient invented by 
+NIHON NOHYAKU CO., LTD. BPX has excellent activity against planthop-
+pers, which are severe pests of rice in many countries.
+    The BPX logo is designed with a musical note and staff because BPX is 
+believed to harmonize every element of crop production such as nature, cul-
+tivation techniques and crop protection technologies.
+©
+
+=== PDF PAGE 3 ===
+Excellent efficacy against planthoppers in rice
+Novel mode of action (MoA)
+Soft on beneficials
+Excellent hopper control with novel power
+Nilaparvata lugens
+Brown planthopper
+(BPH)
+Sogatella furcifera
+Whitebacked planthopper
+(WBPH)
+BPX shows good performance against brown planthopper (BPH) and whitebacked 
+planthopper (WBPH).
+BPX is an ecdysone titer disruptor. This is a novel MoA which shows unique ecdysis disruption 
+symptoms and does not show cross resistance with existing molecules currently used in planthoppers. 
+Safe for spiders, mirid bugs, honeybees, etc. BPX has an excellent fit in integrated pest 
+management (IPM) programs by preserving natural enemies.
+Benzpyrimoxan  Technical  Guide
+©
+
+=== PDF PAGE 4 ===
+Benzpyrimoxan  Technical  Guide
+Name
+Chemical structure
+. 
+Physicochemical properties and Toxicology
+⾣Common name: Benzpyrimoxan (ISO)
+⾣Chemical name: 5-(1,3-dioxan-2-yl)-4-[4-(trifluoromethyl)benzyloxy]pyrimidine (IUPAC)
+Physicochemical properties
+⾣Appearance: Light brown to white colored crystalline powder
+⾣Solubility in water: 5.04 mg/L (19.9-20.2℃)
+⾣Partition coefficient: log POW = 3.42 (24.5℃)
+Toxicology
+⾣Acute oral: Rat Male LD50 ʼ2000 mg/kg
+⾣Acute dermal: Rat Male and Female LD50 ʼ2000 mg/kg
+⾣Aquatic organisms: Carp LC50 = 2.2 mg/L (96 hours)
+⾣Mutagenicity: Ames Negative
+⾣Primary eye irritation: Rabbit Slightly irritant
+⾣Primary skin irritation: Rabbit Slightly irritant
+⾣Skin sensitization: LLNA Non sensitizer
+                                  Maximization test: Sensitizer
+©
+
+=== PDF PAGE 5 ===
+Benzpyrimoxan  Technical  Guide
+Pest Activity*
+Insecticidal spectrum
+Hemiptera
+Lepidoptera
+Thysanoptera
+Diptera
+Coleoptera
+Brown planthopper
+White backed planthopper
+Small brown planthopper
+Green rice leafhopper
+Tea green leafhopper
+Sorghum plant bug
+Brown wing green bug
+Cotton aphid
+Green peach aphid
+Sweetpotato whiteflyBiotype Q
+Mulberry scale
+Diamond back moth
+Western flower thrips
+Tomato leaf miner
+Rice water weevil
+Orthoptera Rice grasshopper
+Acarina Two spotted spider mite
+++++
++++
++++
+++
++
++
+-
+++
++
++
+-
+-
+-
+-
+-
+-
+-
+Nilaparvata lugens
+Sogatella furcifera
+Laodelphax striatella
+Nephotettix cincticeps
+Jacobiasca formosana
+Stenotus rubrovittatus
+Plautia crossota
+Aphis gossypii
+Myzus persicae
+Bemisia tabaci
+Pseudaulacaspis pentagona
+Plutella xylostella
+Frankliniella occidentalis
+Liriomyza sativae
+Lissorhoptrus oryzophilus
+Oxya spp.
+Tetranychus urticae
+BPX selectively controls planthoppers and has low 
+activity on other pests.
+©
+
+=== PDF PAGE 6 ===
+Benzpyrimoxan  Technical  Guide
+Effect of BPX on beneficial organisms
+Beneficial organisms are highly tolerant to BPX, which makes BPX an excellent fit for IPM.
+Species Method Observation LC50[mg a.i./L]
+White butterfly parasite wasp
+Cotesia glomerata
+Silk moth
+Bombyx mori
+Phytoseiulus predatory mite
+Phytoseiulus persimilis
+Neoseiulus predatory mite
+Neoseiulus californicus
+Wolt spider
+Pardosa pseudoannulata
+Cyrtorhinus mirid bug
+Cyrtorhinus lividipennis
+Tytthus mirid bug
+Tytthus chunennsis
+Microvelia water strider
+Microvelia spp.
+Pupa
+Larva
+Egg
+Egg
+Adult
+Nymph
+Nymph
+Nymph
+> 200
+> 100
+> 200
+> 100
+> 100
+> 200
+> 100
+> 100
+After 5 days
+After 5 days
+After 4 days
+After 4 days
+After 4 days
+After 9 days
+After 7 days
+After 10 days
+Pupa dipping
+Leaf spray
+Egg and feed spray
+Egg and feed spray
+Crop spray
+Feed dipping
+Feed dipping
+Nymph and feed spray
+Species Method Observation LD50, LC50
+Western honey bee
+Apis mellifera
+Adult
+Hive
+> 100 μg a.i./bee
+> 100 μg a.i./bee
+No effect for larvae
+ʢ100 mg a.i./Lʣ
+After 48 hrs
+After 48 hrs
+After 19 days
+Acute oral
+Acute dermal
+Greenhouse
+Spray for crop
+©
+
+=== PDF PAGE 7 ===
+Benzpyrimoxan  Technical  Guide
+Mode of Action
+BPX interferes with ecdysone metabolism which causes ecdysone titers to remain higher than 
+normal during the molting process. As a result, ecdysis is disrupted leading to the planthopper’s death.
+Untreated control Benzpyrimoxan treatment
+Ecdysone* titer
+a instar a+1 instar (Time)
+a instar
+*Include 20-OH-ecdysone
+a+1 instar (Time)
+Ecdysone* titer
+Untreated control
+Increasing
+ecdysone titer
+Benzpyrimoxan treatment
+Peak of titer
+Decreasing ecdysone 
+titer by enzymes
+Delaying of decreasing
+ecdysone titer
+Peak of titer
+Titer is almost
+none
+Ecdysone titer
+disruption
+Disruption of
+molting mechanism
+Complete
+of molting
+Failure
+of molting
+Increasing
+ecdysone titer
+Decreasing ecdysone 
+titer by enzymes
+©
+
+=== PDF PAGE 8 ===
+Benzpyrimoxan  Technical  Guide
+Symptoms of BPX in BPH
+Nymph dies during molting.
+BPX applied to BPH 4th instar (25 ℃)
+Dorsal epidermis crark Appear the head of 5th instar Continual trying of molting
+Behavior become dull Behavior become dull more Stop molting behavior Dead
+Finish of molting
+by normal nymph
+Start of
+molting
+Atter
+3 min.
+Atter
+15 min.
+Atter
+30 min.
+Atter
+60 min.
+Atter
+180 min.
+Atter
+5 min.
+Atter
+10 min.
+©
+
+=== PDF PAGE 9 ===
+1st instar
+ 3rd instar
+ 5th instar
+ Adult
+Benzpyrimoxan  Technical  Guide
+Stage wise insecticidal activity for BPH
+High insecticidal activity against the nymphal stage.
+LC90 [mg a.i./L]
+1st instar 3rd instar 5th instar
+(0 days old)
+5th instar
+(1-2 days old) Adult
+0.3-1 0.3-1 0.3-1 > 3 > 100
+©
+
+=== PDF PAGE 10 ===
+Benzpyrimoxan  Technical  Guide
+Uptake pathway
+Both dermal and oral exposure contributes to the insecticidal activity of BPX.
+LC90 [mg a.i./L] against BPH 3rd instar
+Dermal + Oral Dermal Oral
+0.3-1 0.3-1 1
+©
+
+=== PDF PAGE 11 ===
+Benzpyrimoxan  Technical  Guide
+Speed of action
+Hours after treatment
+Mortality [%]
+against BPH 4th instar (25 ℃)
+BPX requires 3-4 days to induce BPH mortality 
+due to BPX’s MoA.
+˔BPX (100 mg a.i./L)
+˗Buprofezin (200 mg a.i./L)
+˛Dinotefuran (67 mg a.i./L)
+˙Etofenprox (100 mg a.i./L) ɹ 
+˗Buprofezin (200 mg a.i./L)
+˛Dinotefuran (67 mg a.i./L)
+˙Etofenprox (100 mg a.i./L) ɹ 
+©
+
+=== PDF PAGE 12 ===
+Benzpyrimoxan  Technical  Guide
+Rainfastness on rice
+No rain Rain
+20 mm/hour x 1 hour
+Mortality [%]
+Mortality [%]
+against BPH 3rd instar (23-29 ℃)
+BPX shows good rainfastness. Once the spray solution has dried, BPX treatments followed 
+by a rain-simulation have equal efficacy to treatments not followed by a rain-simulation.
+ BPX
+100 g a.i./ha
+Dinotefuran
+40 g a.i./ha
+BPX
+100 g a.i./ha
+Dinotefuran
+40 g a.i./ha
+Artificial rainfall was applied 2 days after treatment before BPH nymphs were released on rice. 
+Mortality was calculated at 7-9 days after releasing nymphs.
+©
+
+=== PDF PAGE 13 ===
+Benzpyrimoxan  Technical  Guide
+Insecticidal activity against wild populations of BPH
+BPX shows high activity against wild populations of BPH, 
+which is comparable to that of the susceptible population.
+LC90 [mg a.i./L]
+Year collectedPopulation
+Karnataka, India
+Andhra Pradesh, India
+Wakayama, Japan
+	4VTDFQUJCMFQPQVMBUJPO
+BPX Dinotefuran
+2018 0.1-0.3 1-3
+2019 0.1-0.3 1-3
+1983 0.3-1 0.03-0.1
+©
+
+=== PDF PAGE 14 ===
+Benzpyrimoxan  Technical  Guide
+Field trial
+Number of BPH/hill
+BPX controls BPH for at least 14 days.
+India (2021) Vietnam (2020)
+200
+0
+7DAT0DAT 14DAT 21DAT 28DAT
+600
+900
+1,200
+1,500
+˔BPX (100 g a.i./ha)
+˗Pymetrozine ʢ150 g a.i./ha ʣ
+˛Dinotefuran ʢ40 g a.i./ha ʣ
+˗Pymetrozine ʢ150 g a.i./ha ʣ
+˛Dinotefuran ʢ40 g a.i./ha ʣ
+Number of BPH/spm
+0
+7DAT1DBT 14DAT 21DAT 28DAT
+3,000
+2,000
+1,000
+4,000
+˔BPX (100 g a.i./ha)
+˗Pymetrozine ʢ150 g a.i./ha ʣ
+˙Triflumezopyrim ʢ25 g a.i./ha ʣ
+˗Pymetrozine ʢ150 g a.i./ha ʣ
+˙Triflumezopyrim ʢ25 g a.i./ha ʣ
+Place: West Godavari, Andhra Pradesh
+Date: 6th Jan., 2021(Planting), 26th Feb., 2021(Spray)
+Spray volume: 500 L/ha    Rainfall in trial period: None   Rice variety: Swarna
+Place: Thạnh Trị, Sóc Trăng
+Date: 1st Jun., 2020(Sowing), 8th Jul., 2020(Spray)
+Spray volume: 400 L/ha    Rainfall in trial period: None  Rice variety: ST24
+DAT = day after treatment     DBT = day before treatment
+©
+
+=== PDF PAGE 15 ===
+Benzpyrimoxan  Technical  Guide
+. 
+FAQ
+Q Does BPX have any efficacy against adult hoppers?
+A: BPX has not been shown to cause mortality in adults. There is also no evidence 
+of sub-lethal effects such as reduced life-span or reduced fecundity.
+Q Is there phytotoxicity risk by BPX treatment for rice?
+A: Phytotoxicity risk for rice is very low, so BPX is a crop friendly solution for hopper 
+control.
+Q Does BPX show systemic action?
+A: BPX has no or very low systemic action. Good spray coverage is required for 
+best efficacy.
+. 
+Q Does BPX show vapor action?
+A: No vapor action from BPX has been detected. 
+Q How many times can BPX be sprayed in one crop season?
+A: For resistance management purposes, no more than one application per 
+season is recommended. 
+©
+
+=== PDF PAGE 16 ===
+Benzpyrimoxan  Technical  Guide
+©

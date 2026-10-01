@@ -1,0 +1,3 @@
+﻿compound_id,name,SMILES,inchikey,connectivity,parent_connectivity,PubChem_CID
+flupentiofenox,flupentiofenox,O=S(CC(F)(F)F)c1cc(OCCCCCSC(F)(F)F)c(F)cc1O,XCROCGNWBSWUCC-UHFFFAOYSA-N,XCROCGNWBSWUCC,XCROCGNWBSWUCC,162368358
+fluxametamide,fluxametamide,CON=CNC(=O)c1ccc(C2=NOC(c3cc(Cl)cc(Cl)c3)(C(F)(F)F)C2)cc1C,BPFUIWLQXNPZHI-UHFFFAOYSA-N,BPFUIWLQXNPZHI,BPFUIWLQXNPZHI,137159471

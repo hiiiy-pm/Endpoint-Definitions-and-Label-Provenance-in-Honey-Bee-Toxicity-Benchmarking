@@ -1,0 +1,39 @@
+{
+  "analysis": "Frozen prediction external-source reassessment, designed after viewing labels",
+  "not_independent_new_compound_validation": true,
+  "fitting_calibration_tuning_or_score_transformation": false,
+  "primary_representation_prespecified": "ECFP",
+  "other_representations": "All four reported descriptively; none selected by performance.",
+  "sources": {
+    "OFT_single_structure_contact": "Audited OFT single_structure_screen AND route Contact",
+    "OFT_48h_contact": "Audited OFT 48h_no_material_flag_screen AND route Contact; missing test material text is not proof of pure active ingredient",
+    "PLOS_resolved_contact": "Audited PLOS resolved full InChIKey AND route Contact"
+  },
+  "cohorts": {
+    "all_external_contact": "Original mixed-route model reassessed against external contact endpoint",
+    "original_contact_only": "Fixed subset also labelled Contact in original ApisTox; other original study conditions can still differ",
+    "quality_screen": "PLOS only: no InChI/SMILES conflict in any selected record AND every selected record has an MRID; fixed before examining subgroup performance",
+    "original_contact_quality_screen": "PLOS only: intersection of original Contact and quality_screen"
+  },
+  "identity_exclusion": "All members matched to model training set by full key, connectivity, standardized parent connectivity, CAS or normalized name removed; exclude entire external key if any row matches.",
+  "identity_join": "One-to-one exact full InChIKey to audited ApisTox, one-to-one SMILES to original processed data, verified CID and global Index and official split membership.",
+  "external_labels": "Audited censored intervals; every selected record for a key must have the same known label at each threshold; common members across all three thresholds.",
+  "original_labels": "Processed original Tier >=1, >=2, >=3 for 100,11,1 respectively, each checked against stored Y.",
+  "contrasts": [
+    "AUROC11 - AUROC100",
+    "AUROC1 - AUROC100",
+    "external minus original for each metric and each contrast"
+  ],
+  "bootstrap": {
+    "unit": "compound",
+    "method": "ordinary multinomial paired",
+    "B": 5000,
+    "seed": 20260922,
+    "same_weights": "Across all thresholds and original/external labels within each source/split/cohort",
+    "CI": "Unadjusted percentile 95%; report valid and degenerate draws",
+    "single_class": "NA; exclude undefined draws separately for each metric or contrast",
+    "sparse_flag": "Any required positive or negative class count <5; no confirmatory interpretation"
+  },
+  "aggregation": "Do not pool sources, splits, or overlapping cohorts as independent samples.",
+  "quality_limitations": "External regulatory data may share underlying studies with ApisTox; OFT broad duration/unit/material heterogeneity remains; original toxicity endpoint conditions and routes may differ."
+}

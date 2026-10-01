@@ -1,0 +1,59 @@
+{
+  "ecotox_export_records": 2674,
+  "records_with_right_censoring_operator": 721,
+  "benchmark_ecotox_compounds": 441,
+  "replicated_compounds": 441,
+  "replication_label_and_level_match": 441,
+  "tier1": {
+    "Tier": 1,
+    "n_ecotox_compounds": 212,
+    "any_right_censored": 180,
+    "right_censored_ge100": 97,
+    "median_exactly_100": 69,
+    "interval_label_100_negative": 67,
+    "interval_label_100_unresolved": 113,
+    "interval_label_100_positive": 32
+  },
+  "by_tier": [
+    {
+      "Tier": 0,
+      "n_ecotox_compounds": 72,
+      "any_right_censored": 54,
+      "right_censored_ge100": 53,
+      "median_exactly_100": 0,
+      "interval_label_100_negative": 62,
+      "interval_label_100_unresolved": 10,
+      "interval_label_100_positive": 0
+    },
+    {
+      "Tier": 1,
+      "n_ecotox_compounds": 212,
+      "any_right_censored": 180,
+      "right_censored_ge100": 97,
+      "median_exactly_100": 69,
+      "interval_label_100_negative": 67,
+      "interval_label_100_unresolved": 113,
+      "interval_label_100_positive": 32
+    },
+    {
+      "Tier": 2,
+      "n_ecotox_compounds": 60,
+      "any_right_censored": 11,
+      "right_censored_ge100": 0,
+      "median_exactly_100": 0,
+      "interval_label_100_negative": 0,
+      "interval_label_100_unresolved": 11,
+      "interval_label_100_positive": 49
+    },
+    {
+      "Tier": 3,
+      "n_ecotox_compounds": 97,
+      "any_right_censored": 6,
+      "right_censored_ge100": 0,
+      "median_exactly_100": 0,
+      "interval_label_100_negative": 0,
+      "interval_label_100_unresolved": 6,
+      "interval_label_100_positive": 91
+    }
+  ]
+}

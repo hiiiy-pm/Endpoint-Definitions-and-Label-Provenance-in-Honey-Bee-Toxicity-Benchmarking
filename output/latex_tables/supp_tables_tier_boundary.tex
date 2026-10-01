@@ -1,0 +1,161 @@
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S11. Tier-pair AUROC of the saved held-out scores}
+
+Each cell is the probability that a test compound of the higher tier receives a higher score than one of the lower tier, with half credit for ties, computed from the saved scores of the model trained for the stated endpoint. The last column gives the scaffold-cluster 95\% percentile interval for the Tier1--Tier0 pair (5,000 draws identical to the primary analysis). Intervals for every pair and all five representations are in \texttt{results\_v2/tier\_boundary/01\_tier\_pair\_auroc.csv}.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{3pt}
+
+\begin{longtable}{lllccccccc}
+
+\toprule Split & Rep. & Model & T1$>$T0 & T2$>$T0 & T3$>$T0 & T2$>$T1 & T3$>$T1 & T3$>$T2 & T1$>$T0 95\% CI \\ \midrule\endfirsthead
+
+\toprule Split & Rep. & Model & T1$>$T0 & T2$>$T0 & T3$>$T0 & T2$>$T1 & T3$>$T1 & T3$>$T2 & T1$>$T0 95\% CI \\ \midrule\endhead
+
+\midrule\multicolumn{10}{r}{Continued on next page}\endfoot\bottomrule\endlastfoot
+
+Random & ECFP & $\leq100$ & 0.676 & 0.753 & 0.844 & 0.590 & 0.737 & 0.667 & 0.570 to 0.800 \\
+Random & ECFP & $\leq11$ & 0.642 & 0.808 & 0.956 & 0.730 & 0.923 & 0.768 & 0.485 to 0.756 \\
+Random & ECFP & $\leq1$ & 0.583 & 0.776 & 0.950 & 0.731 & 0.931 & 0.818 & 0.452 to 0.684 \\
+Random & WL-HI & $\leq100$ & 0.690 & 0.798 & 0.897 & 0.643 & 0.753 & 0.584 & 0.586 to 0.810 \\
+Random & WL-HI & $\leq11$ & 0.605 & 0.831 & 0.958 & 0.767 & 0.923 & 0.739 & 0.456 to 0.716 \\
+Random & WL-HI & $\leq1$ & 0.608 & 0.849 & 0.969 & 0.776 & 0.948 & 0.789 & 0.470 to 0.710 \\
+MaxMin & ECFP & $\leq100$ & 0.574 & 0.614 & 0.668 & 0.557 & 0.620 & 0.558 & 0.474 to 0.677 \\
+MaxMin & ECFP & $\leq11$ & 0.411 & 0.710 & 0.796 & 0.764 & 0.840 & 0.629 & 0.321 to 0.507 \\
+MaxMin & ECFP & $\leq1$ & 0.428 & 0.619 & 0.781 & 0.686 & 0.817 & 0.693 & 0.335 to 0.522 \\
+MaxMin & WL-HI & $\leq100$ & 0.539 & 0.630 & 0.709 & 0.607 & 0.709 & 0.636 & 0.438 to 0.647 \\
+MaxMin & WL-HI & $\leq11$ & 0.480 & 0.771 & 0.854 & 0.787 & 0.875 & 0.652 & 0.382 to 0.585 \\
+MaxMin & WL-HI & $\leq1$ & 0.467 & 0.625 & 0.826 & 0.680 & 0.856 & 0.700 & 0.364 to 0.579 \\
+Time & ECFP & $\leq100$ & 0.678 & 0.628 & 0.805 & 0.456 & 0.669 & 0.713 & 0.571 to 0.783 \\
+Time & ECFP & $\leq11$ & 0.492 & 0.568 & 0.895 & 0.572 & 0.880 & 0.765 & 0.395 to 0.587 \\
+Time & ECFP & $\leq1$ & 0.539 & 0.581 & 0.815 & 0.535 & 0.792 & 0.740 & 0.430 to 0.645 \\
+Time & WL-HI & $\leq100$ & 0.639 & 0.665 & 0.803 & 0.496 & 0.655 & 0.647 & 0.519 to 0.755 \\
+Time & WL-HI & $\leq11$ & 0.477 & 0.618 & 0.903 & 0.646 & 0.890 & 0.735 & 0.383 to 0.576 \\
+Time & WL-HI & $\leq1$ & 0.523 & 0.599 & 0.807 & 0.569 & 0.791 & 0.723 & 0.416 to 0.632 \\
+
+\end{longtable}\endgroup
+
+Composition weights $w_{r\ell}^{(b)}=n_rn_\ell/(n_b^+n_b^-)$ of each tier pair in each endpoint AUROC (Supplementary Eq.~S2); -- marks pairs that do not enter that endpoint.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{3pt}
+
+\begin{longtable}{llcccccc}
+
+\toprule Split & Endpoint & T1$>$T0 & T2$>$T0 & T3$>$T0 & T2$>$T1 & T3$>$T1 & T3$>$T2 \\ \midrule\endfirsthead
+
+\toprule Split & Endpoint & T1$>$T0 & T2$>$T0 & T3$>$T0 & T2$>$T1 & T3$>$T1 & T3$>$T2 \\ \midrule\endhead
+
+\bottomrule\endlastfoot
+
+Random & $\leq100$ & 0.670 & 0.145 & 0.184 & -- & -- & -- \\
+Random & $\leq11$ & -- & 0.083 & 0.106 & 0.357 & 0.454 & -- \\
+Random & $\leq1$ & -- & -- & 0.161 & -- & 0.690 & 0.149 \\
+MaxMin & $\leq100$ & 0.741 & 0.117 & 0.142 & -- & -- & -- \\
+MaxMin & $\leq11$ & -- & 0.123 & 0.149 & 0.329 & 0.398 & -- \\
+MaxMin & $\leq1$ & -- & -- & 0.245 & -- & 0.652 & 0.103 \\
+Time & $\leq100$ & 0.754 & 0.102 & 0.144 & -- & -- & -- \\
+Time & $\leq11$ & -- & 0.100 & 0.141 & 0.315 & 0.444 & -- \\
+Time & $\leq1$ & -- & -- & 0.219 & -- & 0.689 & 0.093 \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S14. Tier1 exclusion for all representations}
+
+$\leq100$ and $\leq11$: original models on the full test set. No-T1 test: the $\leq100$ model evaluated after removing Tier1 test compounds (Tier0 versus Tier2 and Tier3). No-T1 refit: the same fixed learner refitted without Tier1 training compounds and evaluated on the Tier1-free test set. T1 comp.: No-T1 refit minus $\leq100$. Residual: $\leq11$ minus No-T1 refit. The two components add to the $\leq11$ minus $\leq100$ contrast. Intervals are scaffold-cluster 95\% percentile intervals over the primary bootstrap draws; molecule-level intervals and the separate evaluation and training components are in \texttt{results\_v2/tier\_boundary/03\_tier1\_exclusion\_decomposition.csv}.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{3pt}
+
+\begin{longtable}{llcccccccc}
+
+\toprule Split & Rep. & $\leq100$ & No-T1 test & No-T1 refit & $\leq11$ & T1 comp. & 95\% CI & Residual & 95\% CI \\ \midrule\endfirsthead
+
+\toprule Split & Rep. & $\leq100$ & No-T1 test & No-T1 refit & $\leq11$ & T1 comp. & 95\% CI & Residual & 95\% CI \\ \midrule\endhead
+
+\midrule\multicolumn{10}{r}{Continued on next page}\endfoot\bottomrule\endlastfoot
+
+Random & ECFP & 0.718 & 0.804 & 0.871 & 0.848 & 0.153 & 0.023 to 0.242 & $-$0.023 & $-$0.081 to 0.058 \\
+Random & Avalon & 0.722 & 0.834 & 0.861 & 0.841 & 0.139 & 0.010 to 0.234 & $-$0.021 & $-$0.076 to 0.039 \\
+Random & MACCS & 0.663 & 0.766 & 0.822 & 0.830 & 0.159 & 0.030 to 0.261 & 0.008 & $-$0.053 to 0.100 \\
+Random & WL-HI & 0.744 & 0.854 & 0.893 & 0.863 & 0.149 & 0.032 to 0.238 & $-$0.030 & $-$0.084 to 0.034 \\
+Random & Descriptors12 & 0.596 & 0.658 & 0.683 & 0.687 & 0.087 & $-$0.015 to 0.168 & 0.003 & $-$0.086 to 0.083 \\
+MaxMin & ECFP & 0.592 & 0.643 & 0.705 & 0.792 & 0.113 & 0.017 to 0.212 & 0.087 & 0.012 to 0.166 \\
+MaxMin & Avalon & 0.661 & 0.722 & 0.758 & 0.769 & 0.096 & $-$0.004 to 0.187 & 0.011 & $-$0.063 to 0.081 \\
+MaxMin & MACCS & 0.601 & 0.693 & 0.726 & 0.780 & 0.126 & 0.034 to 0.216 & 0.053 & $-$0.020 to 0.130 \\
+MaxMin & WL-HI & 0.574 & 0.674 & 0.740 & 0.830 & 0.167 & 0.085 to 0.248 & 0.090 & 0.014 to 0.171 \\
+MaxMin & Descriptors12 & 0.525 & 0.620 & 0.656 & 0.671 & 0.131 & 0.035 to 0.228 & 0.015 & $-$0.066 to 0.103 \\
+Time & ECFP & 0.691 & 0.732 & 0.758 & 0.754 & 0.067 & $-$0.048 to 0.183 & $-$0.004 & $-$0.083 to 0.078 \\
+Time & Avalon & 0.645 & 0.687 & 0.729 & 0.754 & 0.084 & $-$0.027 to 0.187 & 0.026 & $-$0.055 to 0.107 \\
+Time & MACCS & 0.593 & 0.598 & 0.614 & 0.686 & 0.021 & $-$0.077 to 0.115 & 0.072 & $-$0.048 to 0.193 \\
+Time & WL-HI & 0.665 & 0.746 & 0.760 & 0.788 & 0.095 & $-$0.009 to 0.193 & 0.027 & $-$0.062 to 0.122 \\
+Time & Descriptors12 & 0.390 & 0.408 & 0.408 & 0.567 & 0.018 & $-$0.080 to 0.122 & 0.160 & 0.059 to 0.256 \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S16. Route-matched concordance at 100~\ugbee by benchmark tier and record source}
+
+All-three-determinate cohorts of Supplementary Table~S15. B+S$-$: benchmark label $\leq100$ and source label $>100$; B$-$S+: the reverse. Censored: disagreements whose source evidence includes a right-censored $>100$~\ugbee value. OFT: OpenFoodTox; OFT 48 h: 48-hour observations only; EPA: the 2022 retrospective.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{3pt}
+
+\begin{longtable}{llrrrrcrr}
+
+\toprule Source & Tier & $n$ & Agree & Disagree & Agree (\%) & Wilson 95\% CI (\%) & B+S$-$/B$-$S+ & Censored \\ \midrule\endfirsthead
+
+\toprule Source & Tier & $n$ & Agree & Disagree & Agree (\%) & Wilson 95\% CI (\%) & B+S$-$/B$-$S+ & Censored \\ \midrule\endhead
+
+\midrule\multicolumn{9}{r}{Continued on next page}\endfoot\bottomrule\endlastfoot
+
+OFT & Tier0 & 31 & 30 & 1 & 96.8 & 83.8 to 99.4 & 0/1 & 0 \\
+OFT & Tier1 & 89 & 9 & 80 & 10.1 & 5.4 to 18.1 & 80/0 & 70 \\
+OFT & Tier2 & 14 & 13 & 1 & 92.9 & 68.5 to 98.7 & 1/0 & 0 \\
+OFT & Tier3 & 15 & 15 & 0 & 100.0 & 79.6 to 100.0 & 0/0 & 0 \\
+OFT 48 h & Tier0 & 19 & 19 & 0 & 100.0 & 83.2 to 100.0 & 0/0 & 0 \\
+OFT 48 h & Tier1 & 38 & 2 & 36 & 5.3 & 1.5 to 17.3 & 36/0 & 30 \\
+OFT 48 h & Tier2 & 6 & 5 & 1 & 83.3 & 43.6 to 97.0 & 1/0 & 0 \\
+OFT 48 h & Tier3 & 9 & 9 & 0 & 100.0 & 70.1 to 100.0 & 0/0 & 0 \\
+EPA & Tier0 & 23 & 21 & 2 & 91.3 & 73.2 to 97.6 & 0/2 & 0 \\
+EPA & Tier1 & 58 & 9 & 49 & 15.5 & 8.4 to 26.9 & 49/0 & 39 \\
+EPA & Tier2 & 7 & 7 & 0 & 100.0 & 64.6 to 100.0 & 0/0 & 0 \\
+EPA & Tier3 & 15 & 15 & 0 & 100.0 & 79.6 to 100.0 & 0/0 & 0 \\
+
+\end{longtable}\endgroup
+
+Disagreements at 100~\ugbee by the benchmark record source (the database that supplied the ApisTox label).
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{llrrrr}
+
+\toprule Source & Benchmark record & $n$ & Disagree & Tier1 $n$ & Tier1 disagree \\ \midrule\endfirsthead
+
+\toprule Source & Benchmark record & $n$ & Disagree & Tier1 $n$ & Tier1 disagree \\ \midrule\endhead
+
+\bottomrule\endlastfoot
+
+OFT & ECOTOX & 77 & 43 & 46 & 43 \\
+OFT & PPDB & 72 & 39 & 43 & 37 \\
+OFT 48 h & ECOTOX & 38 & 21 & 22 & 21 \\
+OFT 48 h & PPDB & 34 & 16 & 16 & 15 \\
+EPA & ECOTOX & 83 & 43 & 50 & 42 \\
+EPA & PPDB & 20 & 8 & 8 & 7 \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S17. Inequality qualifiers in the label-determining ECOTOX records}
+
+The upstream ECOTOX labelling was replicated from the cached ApisTox ECOTOX export and reproduced the label and ternary level of all 441 ECOTOX-derived benchmark compounds. For each compound, the label-determining record group (the exposure route with the lowest median) was re-read with its operator column. Any $>$: group contains at least one right-censored record; $>$ at $\geq100$: a right-censored record at or above 100~\ugbee. The last three columns give the qualifier-aware label at 100~\ugbee, which requires every record of the group to fall determinately on one side of the cut-off. Compound-level rows are in \texttt{results\_v2/tier\_boundary/06\_ecotox\_qualifier\_propagation.csv}.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{lrrrrrrr}
+
+\toprule Tier & $n$ & Any $>$ & $>$ at $\geq100$ & Median $=100$ & $\leq100$ & Unresolved & $>100$ \\ \midrule\endfirsthead
+
+\toprule Tier & $n$ & Any $>$ & $>$ at $\geq100$ & Median $=100$ & $\leq100$ & Unresolved & $>100$ \\ \midrule\endhead
+
+\midrule\multicolumn{8}{r}{Continued on next page}\endfoot\bottomrule\endlastfoot
+
+Tier0 & 72 & 54 & 53 & 0 & 0 & 10 & 62 \\
+Tier1 & 212 & 180 & 97 & 69 & 32 & 113 & 67 \\
+Tier2 & 60 & 11 & 0 & 0 & 49 & 11 & 0 \\
+Tier3 & 97 & 6 & 0 & 0 & 91 & 6 & 0 \\
+
+\end{longtable}\endgroup

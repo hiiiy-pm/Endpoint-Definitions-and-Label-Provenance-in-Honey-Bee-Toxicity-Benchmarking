@@ -1,0 +1,27 @@
+{
+  "precision": "Exported values retain analysis precision; renderers may format to 3 decimal places.",
+  "endpoint": "Cumulative label threshold in ug/bee; these are frozen benchmark labels, not re-extracted continuous measurements.",
+  "figure_permutation_raw.csv": {
+    "null_q025": "2.5% quantile of permutation null; legacy column q contained this quantity",
+    "bh_q": "Within-permutation-scheme Benjamini-Hochberg adjusted p value"
+  },
+  "figure_composition_data.csv": {
+    "Tier": "Explicit row identifier replacing legacy unnamed index",
+    "OtherRoute": "toxicity_type=Other",
+    "OtherAgrochemical": "Separate binary use flag"
+  },
+  "figure_learning_curve_raw.csv": {
+    "n": "Training compounds per class",
+    "rows": "Repeat-level fits; original repeat order retained from analysis table"
+  },
+  "figure_bootstrap_data.csv": {
+    "low/high": "Simultaneous 95% interval for the two primary endpoint contrasts within split"
+  },
+  "figure_scaffold_corrected.csv": {
+    "low/high": "Saved percentile 95% scaffold-bootstrap interval"
+  },
+  "figure_novelty_raw.csv": {
+    "estimate": "Brier-loss slope per +0.1 novelty",
+    "low/high": "Unadjusted marginal 95% interval"
+  }
+}

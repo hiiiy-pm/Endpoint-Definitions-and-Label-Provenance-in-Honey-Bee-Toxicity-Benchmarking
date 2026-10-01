@@ -1,0 +1,11 @@
+﻿check,passed,detail
+fixed_candidate_ledger,True,8 candidates retained including no-data and rejected candidates.
+structure_keys_complete,True,"RDKit identities from cached PubChem; fullkey,connectivity,parent checked."
+training_exclusion_all_three,True,All8 connectivity structures absent from frozen1035; mixture caveat retained.
+isomers_not_claimed_equivalent,True,Cyclobutrifluram enantiomer mixture held despite no connectivity overlap.
+time_not_coerced,True,72/96h remain72/96h.
+limits_not_exact,True,Every eligible panel endpoint is right-censored; exact regression validation unavailable.
+98.8_at100_unresolved,True,No rounding across decision threshold.
+one_class_warning,True,"3 contact chemicals all negative at1/11/100; AUROC undefined, not a sufficient standalone set."
+WHO_original_unit_preserved,True,WHO printsug/bee; do not insert ai into original unit.
+inpyrfluxam_stage_not_invented,True,48h candidate retained; adult stage needs original study confirmation.

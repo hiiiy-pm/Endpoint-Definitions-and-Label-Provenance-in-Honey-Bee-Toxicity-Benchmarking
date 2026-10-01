@@ -1,0 +1,504 @@
+{
+  "generator": "code/09_export_submission_tables.py",
+  "model_fits": 0,
+  "reads_previous_exports": false,
+  "input_sha256": {
+    "results/primary/01_representation_performance.csv": "96320146f34af8f68a2ac3a88115ff79d03d4472389639a459939dc45423724b",
+    "results/primary/03_ecfp_paired_bootstrap.csv": "94c0c625848e78db2026b468dc94a58650bb9412ba8b71b2285f22080dc5afd6",
+    "results/primary/05_representation_paired_bootstrap.csv": "69afc66b6602f23f53d71ad878e0022737cdeff85beba8d8e28847947c81f624",
+    "results/decomposition/01_tier_composition_long.csv": "8790eb05b6f74e47fc66791ebea13b35fc5ce88f6059d92b6ea40a29724989c9",
+    "results/decomposition/03_tier_composition_association_tests.csv": "bc859667d857f10cd7370206d969df0a41b8baa0afbc7b381ba7ea02b7a25cc7",
+    "results/decomposition/04_model_decomposition_performance.csv": "51fa859c4927b9fd2d36afb21ee6bebcba266e6030201ecb4b2140396e5b931f",
+    "results/decomposition/06_model_decomposition_bootstrap.csv": "da02438d86e6f531f1d2bf6fa9c8a9ea7e04f541d53dac328382e00f6129f20c",
+    "results/learning_curves/01_matched_learning_curves_long.csv": "77d63d58f48b1d2ff2f075492b56a5dd985fb1f6b85ec0835e69f9294281b4a1",
+    "results/learning_curves/02_matched_learning_curves_summary.csv": "49dd2ea7344dbdd8f7c16d8c36fc41a88f05d2958f9651a35a9bb17e773bc778",
+    "results/learning_curves/03_matched_learning_curve_contrasts.csv": "dcf86d902c2d7052f278724f6bcb9d6ec93209103e76fc9b1ae10c89e5d4851a",
+    "results/geometry/02_conditional_neighborhood_permutation.csv": "530145e1d698b4a01be80f86ade89abdd502b26f6ceadf302f3d57a567c9b700",
+    "results/geometry/08_scaffold_sensitivity_bootstrap.csv": "8d3d15248aa824b48f97d79254ca3d97ec298f330d05d3dd01168feef10cd5b3",
+    "results/applicability/03_boundary_specific_brier_slopes.csv": "54b12168156363a2e483866ede818f2a6313d0899ee945424f6c35e99cab7ec3",
+    "results/applicability/02_boundary_novelty_interactions.csv": "01f2f780bcb5f6cd131e8dd0075e17fedd89de9b11c6327a13e8f4c4dd794488",
+    "results/applicability/04_joint_interaction_tests.csv": "580b2f5281bc0160bdd3dcbc447886d849de987fe95e5989dc5b4aab3f70a931",
+    "results/supplementary/02_topk_descriptor_performance.csv": "a24a5b276abe422d12d5cf3621e4506d9480037f0b2e6dba48cb1281020707d6",
+    "data/raw/apistox.csv": "de4b160a23601a44ac5ec5b23aae95973acba060135630a6df8f73d128baea9e",
+    "data/official_splits/random_train.csv": "3c252f7f0d458de68b6fadb5caa8a8a322b559b1268c9eef86ea68d5334e5a5e",
+    "data/official_splits/random_test.csv": "2d901114d01536345b2ecc57c0e08225acce53fd9d16b0bab33eb9f5ccf84372",
+    "data/official_splits/maxmin_train.csv": "fc2711a77967ce66a39cb378e7b52858581d1333b5704b1cf026b6c5556edfd1",
+    "data/official_splits/maxmin_test.csv": "017f8242dc1d7d70a89a118d6c0c9cafd70304de2f88d8a80fd115ef5d767a70",
+    "data/official_splits/time_train.csv": "f46948b9a674efb8caebeea18a18c243b05c86c11b12bac6df5330d69a8c2e82",
+    "data/official_splits/time_test.csv": "ba528cab7e9882d2689bf5b2fbe8dd6355d42b804f5114b0be739229a1189397"
+  },
+  "outputs": {
+    "results/final/00_data_validation.json": {
+      "inputs": [
+        "data/raw/apistox.csv",
+        "data/official_splits/random_train.csv",
+        "data/official_splits/random_test.csv",
+        "data/official_splits/maxmin_train.csv",
+        "data/official_splits/maxmin_test.csv",
+        "data/official_splits/time_train.csv",
+        "data/official_splits/time_test.csv"
+      ],
+      "operation": "Validate raw label mapping and official split membership",
+      "sha256": "eced203f65cbcab85297d971c075ebdc73b6806b59dc80c47b1476c15d6e5808"
+    },
+    "results/final/01_representation_summary.csv": {
+      "rows": 9,
+      "columns": [
+        "Split",
+        "Threshold",
+        "MeanAUROC",
+        "MinAUROC",
+        "MaxAUROC"
+      ],
+      "inputs": [
+        "results/primary/01_representation_performance.csv"
+      ],
+      "operation": "Group AUROC by split and threshold",
+      "sha256": "f57656737881bb823ba08a4f13427fd1bf06cbebfa4abb099c6aa9fc1faea168"
+    },
+    "results/final/02_primary_bootstrap_table.csv": {
+      "rows": 12,
+      "columns": [
+        "Split",
+        "Bootstrap",
+        "Comparison",
+        "PrimaryComparison",
+        "B_valid",
+        "ObservedDeltaAUROC",
+        "BootstrapMean",
+        "PercentileCI_low",
+        "PercentileCI_high",
+        "SimultaneousCI_low",
+        "SimultaneousCI_high",
+        "ProbDelta_gt0"
+      ],
+      "inputs": [
+        "results/primary/03_ecfp_paired_bootstrap.csv"
+      ],
+      "operation": "Select PrimaryComparison=True; preserve inferential columns",
+      "sha256": "d9d1d2b16fd9189ba469a88cdabf8079ccc7b99d75fe7fd003f8b8433d4caaf3"
+    },
+    "results/final/03_key_tier_composition.csv": {
+      "rows": 16,
+      "columns": [
+        "Tier",
+        "Variable",
+        "Level",
+        "n",
+        "Tier_n",
+        "Proportion"
+      ],
+      "inputs": [
+        "results/decomposition/01_tier_composition_long.csv"
+      ],
+      "operation": "Select four separate agrochemical flags",
+      "sha256": "5b14720994072f0eb3c90b4a6f376fa96d879a398069407c7d3cf61a447072a4"
+    },
+    "results/final/04_model_decomposition_table.csv": {
+      "rows": 45,
+      "columns": [
+        "Split",
+        "Threshold",
+        "Model",
+        "AUROC",
+        "AUPRC",
+        "n_test",
+        "n_pos"
+      ],
+      "inputs": [
+        "results/decomposition/04_model_decomposition_performance.csv"
+      ],
+      "operation": "Preserve original decomposition estimates; preprocessing sensitivity remains separate",
+      "sha256": "9be3f19bd8112645715e922c4e5b896b538baf818d4e1e091b2e3cfa924a114b"
+    },
+    "results/final/05_matched_n125_table.csv": {
+      "rows": 9,
+      "columns": [
+        "Split",
+        "Threshold",
+        "n_per_class",
+        "Train_n",
+        "Repeats",
+        "MeanAUROC",
+        "SDAUROC",
+        "AUROC_Q025",
+        "AUROC_Q975",
+        "MeanAUPRC",
+        "AUPRC_Q025",
+        "AUPRC_Q975"
+      ],
+      "inputs": [
+        "results/learning_curves/02_matched_learning_curves_summary.csv"
+      ],
+      "operation": "Select n_per_class=125; intervals describe repeated fits",
+      "sha256": "2e7c2289998397da50223db5b6edf3bd2192203a1f5d2771d14531fbb2114b40"
+    },
+    "results/final/06_conditional_neighborhood_summary.csv": {
+      "rows": 3,
+      "columns": [
+        "PermutationScheme",
+        "Significant_q05",
+        "Total",
+        "Max_q",
+        "MedianObservedEffect"
+      ],
+      "inputs": [
+        "results/geometry/02_conditional_neighborhood_permutation.csv"
+      ],
+      "operation": "Summarize saved within-scheme BH decisions",
+      "sha256": "e2699779d4f1d85de8e67f9d67b84c17cdb4bd2f443db2be2e4d531618599cb0"
+    },
+    "results/final/07_scaffold_sensitivity_table.csv": {
+      "rows": 18,
+      "columns": [
+        "MinScaffoldN",
+        "Analysis",
+        "Comparison",
+        "ObservedDifference",
+        "BootstrapMean",
+        "CI_low",
+        "CI_high",
+        "ProbDifference_gt0",
+        "B_valid",
+        "ScaffoldsResampled"
+      ],
+      "inputs": [
+        "results/geometry/08_scaffold_sensitivity_bootstrap.csv"
+      ],
+      "operation": "Preserve all saved scaffold sensitivity contrasts",
+      "sha256": "bba53e29a40e0c03e21b176c1417ca0e73afba2fc4bb3937ef1e25084bb1a0ec"
+    },
+    "results/final/08_novelty_slope_table.csv": {
+      "rows": 9,
+      "columns": [
+        "Split",
+        "Boundary",
+        "Slope_per_0.1_novelty",
+        "SE_per_0.1",
+        "CI_low",
+        "CI_high",
+        "P_slope"
+      ],
+      "inputs": [
+        "results/applicability/03_boundary_specific_brier_slopes.csv"
+      ],
+      "operation": "Preserve endpoint-specific Brier slopes and unadjusted marginal intervals",
+      "sha256": "e398b7ff264c3c87a990a0a0b73c7a06822ce21b51b898e53975160051647d4c"
+    },
+    "results/final/01_key_numbers.json": {
+      "inputs": [
+        "results/primary/01_representation_performance.csv",
+        "results/primary/03_ecfp_paired_bootstrap.csv",
+        "results/primary/05_representation_paired_bootstrap.csv",
+        "results/decomposition/01_tier_composition_long.csv",
+        "results/decomposition/03_tier_composition_association_tests.csv",
+        "results/decomposition/04_model_decomposition_performance.csv",
+        "results/decomposition/06_model_decomposition_bootstrap.csv",
+        "results/learning_curves/01_matched_learning_curves_long.csv",
+        "results/learning_curves/02_matched_learning_curves_summary.csv",
+        "results/learning_curves/03_matched_learning_curve_contrasts.csv",
+        "results/geometry/02_conditional_neighborhood_permutation.csv",
+        "results/geometry/08_scaffold_sensitivity_bootstrap.csv",
+        "results/applicability/03_boundary_specific_brier_slopes.csv",
+        "results/applicability/02_boundary_novelty_interactions.csv",
+        "results/applicability/04_joint_interaction_tests.csv",
+        "results/supplementary/02_topk_descriptor_performance.csv"
+      ],
+      "operation": "Calculate counts and select reported estimates; no frozen-number input",
+      "sha256": "758400ba973eda22e29b172ab6d997a8fbcf9cfbe0ac61ea79253201a8782664"
+    },
+    "results/final/02_revised_claims_evidence_matrix_english.csv": {
+      "rows": 10,
+      "columns": [
+        "Claim",
+        "Verdict",
+        "Evidence"
+      ],
+      "inputs": [
+        "results/primary/01_representation_performance.csv",
+        "results/primary/03_ecfp_paired_bootstrap.csv",
+        "results/primary/05_representation_paired_bootstrap.csv",
+        "results/decomposition/01_tier_composition_long.csv",
+        "results/decomposition/03_tier_composition_association_tests.csv",
+        "results/decomposition/04_model_decomposition_performance.csv",
+        "results/decomposition/06_model_decomposition_bootstrap.csv",
+        "results/learning_curves/01_matched_learning_curves_long.csv",
+        "results/learning_curves/02_matched_learning_curves_summary.csv",
+        "results/learning_curves/03_matched_learning_curve_contrasts.csv",
+        "results/geometry/02_conditional_neighborhood_permutation.csv",
+        "results/geometry/08_scaffold_sensitivity_bootstrap.csv",
+        "results/applicability/03_boundary_specific_brier_slopes.csv",
+        "results/applicability/02_boundary_novelty_interactions.csv",
+        "results/applicability/04_joint_interaction_tests.csv",
+        "results/supplementary/02_topk_descriptor_performance.csv"
+      ],
+      "operation": "Predefined claim wording with evidence and support counts calculated from saved analyses",
+      "sha256": "fbc40d5a49922960885de41d6ec16bcfad952549d29c25dbae3508c9234256a2"
+    },
+    "results/final/09_final_evidence_matrix_english.csv": {
+      "rows": 10,
+      "columns": [
+        "Claim",
+        "Verdict",
+        "Evidence"
+      ],
+      "inputs": [
+        "results/primary/01_representation_performance.csv",
+        "results/primary/03_ecfp_paired_bootstrap.csv",
+        "results/primary/05_representation_paired_bootstrap.csv",
+        "results/decomposition/01_tier_composition_long.csv",
+        "results/decomposition/03_tier_composition_association_tests.csv",
+        "results/decomposition/04_model_decomposition_performance.csv",
+        "results/decomposition/06_model_decomposition_bootstrap.csv",
+        "results/learning_curves/01_matched_learning_curves_long.csv",
+        "results/learning_curves/02_matched_learning_curves_summary.csv",
+        "results/learning_curves/03_matched_learning_curve_contrasts.csv",
+        "results/geometry/02_conditional_neighborhood_permutation.csv",
+        "results/geometry/08_scaffold_sensitivity_bootstrap.csv",
+        "results/applicability/03_boundary_specific_brier_slopes.csv",
+        "results/applicability/02_boundary_novelty_interactions.csv",
+        "results/applicability/04_joint_interaction_tests.csv",
+        "results/supplementary/02_topk_descriptor_performance.csv"
+      ],
+      "operation": "Predefined claim wording with evidence and support counts calculated from saved analyses",
+      "sha256": "fbc40d5a49922960885de41d6ec16bcfad952549d29c25dbae3508c9234256a2"
+    },
+    "source_data/final_evidence_matrix.csv": {
+      "rows": 10,
+      "columns": [
+        "Claim",
+        "Verdict",
+        "Evidence"
+      ],
+      "inputs": [
+        "results/primary/01_representation_performance.csv",
+        "results/primary/03_ecfp_paired_bootstrap.csv",
+        "results/primary/05_representation_paired_bootstrap.csv",
+        "results/decomposition/01_tier_composition_long.csv",
+        "results/decomposition/03_tier_composition_association_tests.csv",
+        "results/decomposition/04_model_decomposition_performance.csv",
+        "results/decomposition/06_model_decomposition_bootstrap.csv",
+        "results/learning_curves/01_matched_learning_curves_long.csv",
+        "results/learning_curves/02_matched_learning_curves_summary.csv",
+        "results/learning_curves/03_matched_learning_curve_contrasts.csv",
+        "results/geometry/02_conditional_neighborhood_permutation.csv",
+        "results/geometry/08_scaffold_sensitivity_bootstrap.csv",
+        "results/applicability/03_boundary_specific_brier_slopes.csv",
+        "results/applicability/02_boundary_novelty_interactions.csv",
+        "results/applicability/04_joint_interaction_tests.csv",
+        "results/supplementary/02_topk_descriptor_performance.csv"
+      ],
+      "operation": "Same regenerated claims matrix as final tables",
+      "sha256": "fbc40d5a49922960885de41d6ec16bcfad952549d29c25dbae3508c9234256a2"
+    },
+    "source_data/figure_primary_data.csv": {
+      "rows": 45,
+      "columns": [
+        "split",
+        "representation",
+        "endpoint",
+        "auroc"
+      ],
+      "inputs": [
+        "results/primary/01_representation_performance.csv"
+      ],
+      "operation": "Rename four plotting columns; retain full precision",
+      "sha256": "2a288265ce93b64213373bb8796fe631a7e40e8c811368da1efbe9b1cdd56674"
+    },
+    "source_data/figure_bootstrap_data.csv": {
+      "rows": 12,
+      "columns": [
+        "split",
+        "level",
+        "contrast",
+        "estimate",
+        "low",
+        "high"
+      ],
+      "inputs": [
+        "results/primary/03_ecfp_paired_bootstrap.csv"
+      ],
+      "operation": "Primary ECFP contrasts with simultaneous intervals",
+      "sha256": "f4840775d59f39c4e0108c9f306e760224d01b682ff42771e828c7a24cc4df9a"
+    },
+    "source_data/figure_composition_data.csv": {
+      "rows": 4,
+      "columns": [
+        "Tier",
+        "PPDB",
+        "ECOTOX",
+        "Contact",
+        "Herbicide",
+        "Fungicide",
+        "Insecticide",
+        "BPDB",
+        "Oral",
+        "OtherRoute",
+        "OtherAgrochemical"
+      ],
+      "inputs": [
+        "results/decomposition/01_tier_composition_long.csv"
+      ],
+      "operation": "Pivot all source/route/use groups shown in current Figure3; flags are not exclusive",
+      "sha256": "6f23060067351c15cff1a5761a621c855c099ec7fa22cc8dbbca51f76abf989a"
+    },
+    "source_data/figure_model_decomposition.csv": {
+      "rows": 45,
+      "columns": [
+        "split",
+        "model",
+        "endpoint",
+        "auroc"
+      ],
+      "inputs": [
+        "results/decomposition/04_model_decomposition_performance.csv"
+      ],
+      "operation": "All five prespecified model baselines, including source+route",
+      "sha256": "c1d5181d4a39bad520c0e5ce6a4e6f6f6f995fd3d162ad5dc265c4bd2bfed0d5"
+    },
+    "source_data/figure_learning_curve_raw.csv": {
+      "rows": 9000,
+      "columns": [
+        "split",
+        "endpoint",
+        "n",
+        "auroc"
+      ],
+      "inputs": [
+        "results/learning_curves/01_matched_learning_curves_long.csv"
+      ],
+      "operation": "All repeat-level AUROC rows in original order; n is compounds per class",
+      "sha256": "bb8574a3b18dcf66f29c562fbda5e1d841e0efad32f47605de1bb6daa7c940d2"
+    },
+    "source_data/figure_matched_n125.csv": {
+      "rows": 9,
+      "columns": [
+        "split",
+        "endpoint",
+        "auroc"
+      ],
+      "inputs": [
+        "results/learning_curves/02_matched_learning_curves_summary.csv"
+      ],
+      "operation": "Mean AUROC at n_per_class=125",
+      "sha256": "46064acc33ded92fc8a4a364eac44be30e0a077d7a68638d8dbaa029776a4a8a"
+    },
+    "source_data/figure_novelty_raw.csv": {
+      "rows": 9,
+      "columns": [
+        "split",
+        "endpoint",
+        "estimate",
+        "low",
+        "high"
+      ],
+      "inputs": [
+        "results/applicability/03_boundary_specific_brier_slopes.csv"
+      ],
+      "operation": "Brier-loss slopes per 0.1 novelty with marginal intervals",
+      "sha256": "2516cfaaa6806c52639a45f26a8eb9f5ad9bdd2f2ea6ebffb2fc50e8495ee1ef"
+    },
+    "source_data/figure_permutation_raw.csv": {
+      "rows": 45,
+      "columns": [
+        "representation",
+        "k",
+        "scheme",
+        "observed_effect",
+        "null_mean",
+        "null_q025",
+        "null_q975",
+        "bh_q",
+        "significant_q05"
+      ],
+      "inputs": [
+        "results/geometry/02_conditional_neighborhood_permutation.csv"
+      ],
+      "operation": "Explicit null quantiles and BH q; replaces misleading legacy q=NullQ025 column",
+      "sha256": "3d89f9db670808b1085adbbaec501d72d46d92b980ca914245494b093b1b432b"
+    },
+    "source_data/figure_representation_bootstrap.csv": {
+      "rows": 30,
+      "columns": [
+        "Representation",
+        "Split",
+        "Bootstrap",
+        "Comparison",
+        "PrimaryComparison",
+        "B_valid",
+        "ObservedDeltaAUROC",
+        "BootstrapMean",
+        "PercentileCI_low",
+        "PercentileCI_high",
+        "SimultaneousCI_low",
+        "SimultaneousCI_high",
+        "ProbDelta_gt0"
+      ],
+      "inputs": [
+        "results/primary/05_representation_paired_bootstrap.csv"
+      ],
+      "operation": "All representation primary scaffold contrasts",
+      "sha256": "7b1b856872c32753fe6e206e89cd9f15fd6071b7db4097f7ca15bea717c7c0c4"
+    },
+    "source_data/figure_scaffold_corrected.csv": {
+      "rows": 8,
+      "columns": [
+        "minimum",
+        "analysis",
+        "contrast",
+        "estimate",
+        "low",
+        "high"
+      ],
+      "inputs": [
+        "results/geometry/08_scaffold_sensitivity_bootstrap.csv"
+      ],
+      "operation": "Figure5 scaffold-equal/shared-scaffold T2-T1 and T2-T3 contrasts",
+      "sha256": "9fd818710eac86dc9c695ed060252c05f12cc78a80cb03a30d98d8060cbabb89"
+    },
+    "source_data/SOURCE_DATA_DICTIONARY.json": {
+      "inputs": [
+        "results/primary/01_representation_performance.csv",
+        "results/primary/03_ecfp_paired_bootstrap.csv",
+        "results/primary/05_representation_paired_bootstrap.csv",
+        "results/decomposition/01_tier_composition_long.csv",
+        "results/decomposition/03_tier_composition_association_tests.csv",
+        "results/decomposition/04_model_decomposition_performance.csv",
+        "results/decomposition/06_model_decomposition_bootstrap.csv",
+        "results/learning_curves/01_matched_learning_curves_long.csv",
+        "results/learning_curves/02_matched_learning_curves_summary.csv",
+        "results/learning_curves/03_matched_learning_curve_contrasts.csv",
+        "results/geometry/02_conditional_neighborhood_permutation.csv",
+        "results/geometry/08_scaffold_sensitivity_bootstrap.csv",
+        "results/applicability/03_boundary_specific_brier_slopes.csv",
+        "results/applicability/02_boundary_novelty_interactions.csv",
+        "results/applicability/04_joint_interaction_tests.csv",
+        "results/supplementary/02_topk_descriptor_performance.csv"
+      ],
+      "operation": "Column definitions and precision policy",
+      "sha256": "ba7869383ab7e09d8441e0ae10a504cae05fc79f4e63f652684bf06b95bae48c"
+    },
+    "results/final/FINAL_RESULTS_SUMMARY_ENGLISH.md": {
+      "inputs": [
+        "results/primary/01_representation_performance.csv",
+        "results/primary/03_ecfp_paired_bootstrap.csv",
+        "results/primary/05_representation_paired_bootstrap.csv",
+        "results/decomposition/01_tier_composition_long.csv",
+        "results/decomposition/03_tier_composition_association_tests.csv",
+        "results/decomposition/04_model_decomposition_performance.csv",
+        "results/decomposition/06_model_decomposition_bootstrap.csv",
+        "results/learning_curves/01_matched_learning_curves_long.csv",
+        "results/learning_curves/02_matched_learning_curves_summary.csv",
+        "results/learning_curves/03_matched_learning_curve_contrasts.csv",
+        "results/geometry/02_conditional_neighborhood_permutation.csv",
+        "results/geometry/08_scaffold_sensitivity_bootstrap.csv",
+        "results/applicability/03_boundary_specific_brier_slopes.csv",
+        "results/applicability/02_boundary_novelty_interactions.csv",
+        "results/applicability/04_joint_interaction_tests.csv",
+        "results/supplementary/02_topk_descriptor_performance.csv"
+      ],
+      "operation": "Render regenerated claims and evidence",
+      "sha256": "ca9e9a3db19d670daa44f7754c1785f414020016c1cd0b8508a9613e4a94614a"
+    }
+  }
+}

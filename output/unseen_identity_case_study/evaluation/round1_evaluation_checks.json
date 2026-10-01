@@ -1,0 +1,21 @@
+{
+  "evaluation_started_utc": "2026-09-22T17:33:19.680050+00:00",
+  "completed_utc": "2026-09-22T17:33:20.038207+00:00",
+  "endpoint_freeze_manifest_sha256": "a823d54afdcd118797aded331f8a39305148c98dee4409d4f563ed62d486dd9b",
+  "prediction_sha256": {
+    "predictions\\initial8\\new_compound_predictions.csv": "17d641a1bfcf0093fe411543bc41de1bd95509f0d57c25fccbe531ff51f6b102",
+    "predictions\\added2\\new_compound_predictions.csv": "7bdcae0251459b9bb330d605b97e5eb954b373a749e0276384010ea103954e7d"
+  },
+  "n_predicted_structures": 10,
+  "n_model_predictions": 90,
+  "n_scoreable_endpoints": 11,
+  "n_case_model_rows": 99,
+  "external_structures_used_in_fit": 0,
+  "fit_calls_in_evaluation": 0,
+  "all_endpoint_qualifier_labels_recalculated_and_equal": true,
+  "no_single_class_AUROC_or_AP": true,
+  "all_cases_retained_without_score_selection": true,
+  "script_sha256": "f065c14528228398ef8911545cd72858dc3da54a0cd035bc41164f8b9c60631c",
+  "bootstrap_seed": 20260923,
+  "bootstrap_repetitions": 5000
+}

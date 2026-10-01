@@ -1,0 +1,8 @@
+{
+  "rdkit": "2025.09.4",
+  "pandas": "3.0.1",
+  "download_matches_frozen_table": true,
+  "primary_key": "standard full InChIKey computed from supplied SMILES, falling back to supplied InChI",
+  "parent_sensitivity": "RDKit FragmentParent, Uncharger, remove stereochemistry; first InChIKey block",
+  "unresolved_policy": "Excluded from identity-overlap denominators; never called novel"
+}

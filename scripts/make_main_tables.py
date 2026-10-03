@@ -52,11 +52,12 @@ def table4_rows():
 
 def table5_rows():
     m = pd.read_csv(ROOT / 'output' / 'external_evaluation' / 'frozen_metrics_ECFP.csv')
-    m = m[(m.cohort == 'all_external_contact') & (m.metric == 'AUROC')]
+    m = m[m.metric == 'AUROC']
     rows = []
-    for src, name in [('OFT_single_structure_contact', 'OFT'), ('PLOS_resolved_contact', 'EPA')]:
+    for src, cohort, name in [('OFT_48h_contact', 'original_contact_only', 'OFT48'),
+                              ('PLOS_resolved_contact', 'original_contact_quality_screen', 'EPA')]:
         for sp in ['random', 'maxmin', 'time']:
-            q = m[(m.source == src) & (m.split == sp)]
+            q = m[(m.source == src) & (m.cohort == cohort) & (m.split == sp)]
             cells = [name, {'random': 'Random', 'maxmin': 'MaxMin', 'time': 'Time'}[sp],
                      str(int(q.n_compounds.iloc[0]))]
             for thr in (100, 11, 1):

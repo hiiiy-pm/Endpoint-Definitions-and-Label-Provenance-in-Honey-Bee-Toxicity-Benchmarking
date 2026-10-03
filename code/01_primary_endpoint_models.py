@@ -111,7 +111,7 @@ predictions = pd.DataFrame(pred_rows)
 predictions.to_csv(OUT / "02_test_predictions.csv", index=False)
 
 # ---------- Paired molecule/scaffold-cluster bootstrap for every representation ----------
-# ECFP is the prespecified primary structural probe. The identical resampling weights are
+# ECFP is the designated primary structural probe. The identical resampling weights are
 # reused across representations so that the confirmatory analyses are paired with the
 # primary one and ECFP estimates remain numerically unchanged.
 B = 5000

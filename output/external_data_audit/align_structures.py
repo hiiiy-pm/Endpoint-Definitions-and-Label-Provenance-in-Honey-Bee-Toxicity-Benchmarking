@@ -5,6 +5,7 @@ parent connectivity are conservative sensitivity keys, not identity assertions.
 Name/CAS are used only to locate structure records, never as the overlap key.
 """
 from pathlib import Path
+import argparse
 import hashlib
 import json
 import re
@@ -67,7 +68,7 @@ def structure(smiles='', inchi='', supplied_key=''):
                   fragments=len(Chem.GetMolFrags(mol)), structure_status='resolved')
     return result
 
-def fetch_pubchem(query):
+def fetch_pubchem(query, *, offline=False):
     path = NET/(hashlib.sha256(query.encode()).hexdigest()+'.json')
     bundled = CACHE / 'pubchem_records.json'
     if path.exists():
@@ -78,6 +79,8 @@ def fetch_pubchem(query):
         previous = {}
     if previous and '503' not in previous.get('error',''):
         return previous
+    if offline:
+        raise RuntimeError(f"Offline reconstruction requires a complete, non-retryable bundled PubChem response for {query!r}; no request was sent")
     url = ('https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/'
            + urllib.parse.quote(query, safe='') + '/property/InChIKey,InChI,IsomericSMILES/JSON')
     record = {'query': query, 'url':url, 'retrieved_utc':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())}
@@ -101,13 +104,17 @@ def fetch_pubchem(query):
     return record
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--offline', action='store_true', help='Require existing PubChem responses; never query the network')
+    parser.add_argument('--rebuild-structures', action='store_true', help='Recompute OFT reference structures from the extracted source workbook')
+    args = parser.parse_args()
     a = pd.read_csv(BASE/'dataset_final.csv')
     a = pd.concat([a,pd.DataFrame([structure(x) for x in a.SMILES])],axis=1)
     a['tier'] = [0 if p==0 else 3 if p==2 else 2 if l==1 else 1 for p,l in zip(a.ppdb_level,a.label)]
     a.to_csv(OUT/'apistox_structures.csv',index=False,encoding='utf-8-sig')
     print('ApisTox',len(a),a.inchikey.nunique(),flush=True)
     path = CACHE/'oft_reference_structures.pkl'
-    if path.exists():
+    if path.exists() and not args.rebuild_structures:
         refs = pd.read_pickle(path)
     else:
         refs = pd.read_pickle(CACHE/'REF_SUB.pkl')
@@ -146,7 +153,7 @@ def main():
             return {**{k:chosen[k] for k in key_fields},'mapping_method':'OFT exact '+mode,
                     'mapping_reference':'|'.join(hit['Document UUID']), 'mapping_query':query,
                     'mapping_CAS':s(chosen['Inventory.CASNumber'])}
-        fetched = fetch_pubchem(query)
+        fetched = fetch_pubchem(query, offline=args.offline)
         props = fetched.get('response',{}).get('PropertyTable',{}).get('Properties',[])
         if props and len({x.get('InChIKey') for x in props})==1:
             p = props[0]
@@ -186,6 +193,7 @@ def main():
           'primary_key':'standard full InChIKey computed from supplied SMILES, falling back to supplied InChI',
           'parent_sensitivity':'RDKit FragmentParent, Uncharger, remove stereochemistry; first InChIKey block',
           'unresolved_policy':'Excluded from identity-overlap denominators; never called novel'}
+    assert meta['download_matches_frozen_table'], 'External benchmark copy differs from the frozen raw benchmark'
     (OUT/'structure_methods.json').write_text(json.dumps(meta,indent=2),encoding='utf-8')
 
 if __name__=='__main__':

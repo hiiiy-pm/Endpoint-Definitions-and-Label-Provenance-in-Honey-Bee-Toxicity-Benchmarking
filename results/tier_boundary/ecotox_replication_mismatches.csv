@@ -1,0 +1,1 @@
+name,CID,CAS,SMILES,source,year,toxicity_type,herbicide,fungicide,insecticide,other_agrochemical,label,ppdb_level,Tier,route,n_records,median,label_replicated,ppdb_level_replicated,n_right_censored,n_right_censored_ge100,interval_label_100,route_order,replicated_label_matches,replicated_level_matches,replicated_route_matches

@@ -1,0 +1,46 @@
+    Scenario Unresolved  Split  n_test  OriginalLabel_nonnested  CorrectedLabel_nonnested
+     adult48    exclude MaxMin     177                        0                         0
+     adult48    exclude Random     175                        0                         0
+     adult48    exclude   Time     172                        0                         0
+     adult48       keep MaxMin     207                        0                         0
+     adult48       keep Random     207                        0                         0
+     adult48       keep   Time     207                        0                         0
+     adult48   negative MaxMin     207                        0                         9
+     adult48   negative Random     207                        0                        11
+     adult48   negative   Time     207                        0                         9
+    combined    exclude MaxMin     174                        0                         0
+    combined    exclude Random     173                        0                         0
+    combined    exclude   Time     173                        0                         0
+    combined       keep MaxMin     207                        0                         0
+    combined       keep Random     207                        0                         0
+    combined       keep   Time     207                        0                         0
+    combined   negative MaxMin     207                        0                         4
+    combined   negative Random     207                        0                         7
+    combined   negative   Time     207                        0                         4
+conservative    exclude MaxMin     178                        0                         0
+conservative    exclude Random     175                        0                         0
+conservative    exclude   Time     173                        0                         0
+conservative       keep MaxMin     207                        0                         0
+conservative       keep Random     207                        0                         0
+conservative       keep   Time     207                        0                         0
+conservative   negative MaxMin     207                        0                         3
+conservative   negative Random     207                        0                         4
+conservative   negative   Time     207                        0                         5
+     primary    exclude MaxMin     186                        0                         0
+     primary    exclude Random     185                        0                         0
+     primary    exclude   Time     179                        0                         0
+     primary       keep MaxMin     207                        0                         0
+     primary       keep Random     207                        0                         0
+     primary       keep   Time     207                        0                         0
+     primary   negative MaxMin     207                        0                         3
+     primary   negative Random     207                        0                         4
+     primary   negative   Time     207                        0                         3
+  regulatory    exclude MaxMin     188                        0                         0
+  regulatory    exclude Random     191                        0                         0
+  regulatory    exclude   Time     194                        0                         0
+  regulatory       keep MaxMin     207                        0                         0
+  regulatory       keep Random     207                        0                         0
+  regulatory       keep   Time     207                        0                         0
+  regulatory   negative MaxMin     207                        0                         3
+  regulatory   negative Random     207                        0                         5
+  regulatory   negative   Time     207                        0                         3

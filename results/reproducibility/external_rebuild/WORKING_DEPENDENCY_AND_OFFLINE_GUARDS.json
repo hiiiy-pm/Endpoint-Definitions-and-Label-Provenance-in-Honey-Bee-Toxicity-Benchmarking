@@ -1,0 +1,6 @@
+{
+  "membership_inputs_match_working_bytes": true,
+  "membership_outputs_match_working_bytes": true,
+  "generator_matches": true,
+  "missing_response_rejected_without_fetch": true
+}

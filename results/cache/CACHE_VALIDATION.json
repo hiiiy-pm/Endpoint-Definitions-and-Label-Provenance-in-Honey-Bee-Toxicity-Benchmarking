@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "basis": "fresh_raw_smiles_recomputation",
+  "validated_at_utc": "2026-10-02T15:58:04.544537+00:00",
+  "scope": "Current numerical agreement with the documented implementation; not independent algorithm validation",
+  "legacy_generation_environment": "not_recorded",
+  "legacy_metadata_sha256": "8d0871f5bf86a5305e34e19be27ec3dbf90af4e5eded937abe68d6d6a656e5fe",
+  "input_sha256": {
+    "data/raw/apistox.csv": "de4b160a23601a44ac5ec5b23aae95973acba060135630a6df8f73d128baea9e",
+    "data/official_splits/random_train.csv": "3c252f7f0d458de68b6fadb5caa8a8a322b559b1268c9eef86ea68d5334e5a5e",
+    "data/official_splits/random_test.csv": "2d901114d01536345b2ecc57c0e08225acce53fd9d16b0bab33eb9f5ccf84372",
+    "data/official_splits/maxmin_train.csv": "fc2711a77967ce66a39cb378e7b52858581d1333b5704b1cf026b6c5556edfd1",
+    "data/official_splits/maxmin_test.csv": "017f8242dc1d7d70a89a118d6c0c9cafd70304de2f88d8a80fd115ef5d767a70",
+    "data/official_splits/time_train.csv": "f46948b9a674efb8caebeea18a18c243b05c86c11b12bac6df5330d69a8c2e82",
+    "data/official_splits/time_test.csv": "ba528cab7e9882d2689bf5b2fbe8dd6355d42b804f5114b0be739229a1189397"
+  },
+  "ordered_smiles_sha256": "3cd08ddc75fec70bfa427577ca77e7e3c694011aa3ff9e8467adfe5c66c5b48c",
+  "ordered_identity_sha256": "928f10a76a7de24d08c9eeca39b7facea6aab2ecb4aebfbd0c15e9d4dd2f3267",
+  "n_molecules": 1035,
+  "parameters": {
+    "ECFP": {
+      "radius": 2,
+      "bits": 1024,
+      "chirality": false,
+      "kernel": "Tanimoto"
+    },
+    "Avalon": {
+      "bits": 1024,
+      "kernel": "Tanimoto"
+    },
+    "MACCS": {
+      "bits": 167,
+      "kernel": "Tanimoto"
+    },
+    "WL-HI": {
+      "iterations": 3,
+      "normalization": "self-diagonal",
+      "dtype": "float32"
+    },
+    "Descriptors12": [
+      "MolWt",
+      "MolLogP",
+      "TPSA",
+      "HDonors",
+      "HAcceptors",
+      "RotBonds",
+      "RingCount",
+      "AromaticRings",
+      "FractionCSP3",
+      "HeavyAtoms",
+      "MolMR",
+      "FormalCharge"
+    ],
+    "Scaffolds": "Murcko without chirality; canonical full SMILES for acyclic molecules"
+  },
+  "representation_implementation_sha256": "24fee303e7daed8527f4ddbb642598d4a428569108650f5fa60a3b7bf46565d3",
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.3",
+    "pandas": "3.0.1",
+    "scipy": "1.18.1",
+    "rdkit": "2025.9.4",
+    "scikit-learn": "1.8.0"
+  },
+  "artifact_sha256": {
+    "kernel_ecfp.npy": "2b8aab46312d086832f403e1e1ebb3708cd8b557f8988b2c3454a69c0e0f77c5",
+    "kernel_avalon.npy": "77a5632ceb821b45d3acc44a27868493e80954ca8f4e3f366aa5bacbf8db9aa1",
+    "kernel_maccs.npy": "fe84b34d82dde84821a692377818ca0b3282feff8512b4eb5fae205d30c0aeea",
+    "kernel_wlhi.npy": "93fac33d3eb6ff7f6f744337963ae9823e0d4896df5a434ef7d822a20cf6de06",
+    "descriptors12.npy": "0adffb1d3bcf079c6669a81abc0a10d5d796020dc6aeb1174b42d8f7b068167c",
+    "scaffolds.csv": "4f8f221867fa23d131e724d19f5454e1ab206c4a3a87a950d63f9213961daec5",
+    "processed_data.csv": "fd84600e5d4101d220ce54412d8cec6cab523a35a4375447726da401449f8273"
+  },
+  "comparisons": {
+    "ECFP": {
+      "shape": [
+        1035,
+        1035
+      ],
+      "allclose": true,
+      "exact_equal": true,
+      "max_absolute_difference": 0.0,
+      "atol": 1e-07,
+      "rtol": 1e-07
+    },
+    "Avalon": {
+      "shape": [
+        1035,
+        1035
+      ],
+      "allclose": true,
+      "exact_equal": true,
+      "max_absolute_difference": 0.0,
+      "atol": 1e-07,
+      "rtol": 1e-07
+    },
+    "MACCS": {
+      "shape": [
+        1035,
+        1035
+      ],
+      "allclose": true,
+      "exact_equal": true,
+      "max_absolute_difference": 0.0,
+      "atol": 1e-07,
+      "rtol": 1e-07
+    },
+    "WL-HI": {
+      "shape": [
+        1035,
+        1035
+      ],
+      "allclose": true,
+      "exact_equal": true,
+      "max_absolute_difference": 0.0,
+      "atol": 1e-07,
+      "rtol": 1e-07
+    },
+    "Descriptors12": {
+      "shape": [
+        1035,
+        12
+      ],
+      "allclose": true,
+      "exact_equal": true,
+      "max_absolute_difference": 0.0,
+      "atol": 1e-10,
+      "rtol": 1e-12
+    }
+  },
+  "scaffolds_exact_match": true
+}

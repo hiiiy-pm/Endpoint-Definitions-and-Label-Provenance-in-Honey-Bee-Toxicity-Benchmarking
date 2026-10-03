@@ -1,0 +1,109 @@
+{
+  "ecotox_determining_records": 828,
+  "ecotox_compounds": 441,
+  "exact_rational_interval_vs_code12_comparisons": 2646,
+  "mismatches": 0,
+  "selected_ecotox_cases": 7,
+  "source_overlap": {
+    "OpenFoodTox_compounds": 216,
+    "EPA_compounds": 133,
+    "both_sources_compounds": 71,
+    "union_compounds": 278,
+    "same_physical_study_established_across_sources": 0,
+    "interpretation": "zero established means unverifiable with supplied trial identifiers, not proven absence of shared studies"
+  },
+  "ecotox_export_identifier_limits": "Reference Number only; no test/result ID or MRID columns. References may identify databases, not individual experiments.",
+  "OFT_MRID_keyword_hits_in_bee_export": 0,
+  "OFT_MRID_keyword_hits_in_literature_export": 0,
+  "ecotox_exactly_gt100_records": 106,
+  "ecotox_other_right_limit_records": 234,
+  "ecotox_exact_duplicate_rows_beyond_first": 4,
+  "duplicate_handling": "retained for exact replay of upstream aggregation; not asserted to be distinct experiments",
+  "metadata_missingness": [
+    {
+      "source": "EPA",
+      "records": 134,
+      "compounds": 133,
+      "stage_not_reported": 0,
+      "duration_missing": 134,
+      "duration_48h": 0,
+      "material_field_missing": 134,
+      "dose_basis_missing": 134,
+      "dose_basis_test_material": 0,
+      "dose_basis_active_ingredient": 0,
+      "MRID_missing": 6,
+      "same_study_as_benchmark_established": 0
+    },
+    {
+      "source": "OpenFoodTox",
+      "records": 263,
+      "compounds": 216,
+      "stage_not_reported": 263,
+      "duration_missing": 125,
+      "duration_48h": 126,
+      "material_field_missing": 215,
+      "dose_basis_missing": 251,
+      "dose_basis_test_material": 0,
+      "dose_basis_active_ingredient": 11,
+      "MRID_missing": 263,
+      "same_study_as_benchmark_established": 0
+    }
+  ],
+  "selection": [
+    {
+      "case_id": "E01",
+      "stratum": "Tier1 determinate negative; includes >100",
+      "candidate_count": 69,
+      "selection_rule": "all adult48 first; fewest records; ascending numeric CAS; benchmark Index"
+    },
+    {
+      "case_id": "E02",
+      "stratum": "Tier1 determinate negative; other right limit, no >100",
+      "candidate_count": 0,
+      "selection_rule": "all adult48 first; fewest records; ascending numeric CAS; benchmark Index"
+    },
+    {
+      "case_id": "E03",
+      "stratum": "Tier1 unresolved",
+      "candidate_count": 106,
+      "selection_rule": "all adult48 first; fewest records; ascending numeric CAS; benchmark Index"
+    },
+    {
+      "case_id": "E04",
+      "stratum": "Tier1 determinate positive; point records",
+      "candidate_count": 32,
+      "selection_rule": "all adult48 first; fewest records; ascending numeric CAS; benchmark Index"
+    },
+    {
+      "case_id": "E05",
+      "stratum": "Tier0 determinate negative control",
+      "candidate_count": 72,
+      "selection_rule": "all adult48 first; fewest records; ascending numeric CAS; benchmark Index"
+    },
+    {
+      "case_id": "E06",
+      "stratum": "Tier3 changes to negative at 1",
+      "candidate_count": 1,
+      "selection_rule": "all adult48 first; fewest records; ascending numeric CAS; benchmark Index"
+    },
+    {
+      "case_id": "E07",
+      "stratum": "Tier3 unresolved at 1",
+      "candidate_count": 2,
+      "selection_rule": "all adult48 first; fewest records; ascending numeric CAS; benchmark Index"
+    },
+    {
+      "case_id": "E08",
+      "stratum": "Tier2 originally positive at 11; unanimous-aware unresolved",
+      "candidate_count": 11,
+      "selection_rule": "all adult48 first; fewest records; ascending numeric CAS; benchmark Index"
+    }
+  ],
+  "row_hash_encoding": "SHA256 of UTF-8 compact JSON [column,value] pairs in original column order; missing fields empty strings",
+  "source_data_row_0based": "parsed source data-record ordinal, header excluded; not a physical text line number",
+  "labels": {
+    "1": "LD50 <= cutoff",
+    "0": "LD50 > cutoff",
+    "-1": "unresolved"
+  }
+}

@@ -1,0 +1,935 @@
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S21a. Reproducible learner and calibration settings}
+
+Settings are taken from \path{code/_common.py}, \path{code/01_primary_endpoint_models.py}, \path{code/02_metadata_decomposition.py}, \path{code/06_novelty_calibration.py} and \path{code/08_sensitivity_diagnostics.py}. Fixed learner specifications do not imply identical class weights across endpoints. Environment versions are retained in the repository environment lock and validation records.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{p{0.19\linewidth}p{0.72\linewidth}}
+
+\toprule Component & Implemented settings \\ \midrule\endfirsthead
+
+\multicolumn{2}{l}{\textit{Supplementary Table S21a (continued)}} \\
+
+\toprule Component & Implemented settings \\ \midrule\endhead
+
+\midrule\multicolumn{2}{r}{Continued on next page}\\\endfoot\bottomrule\endlastfoot
+
+ECFP4 & Morgan radius 2; 1,024 bits; chirality disabled; Tanimoto kernel. \\
+
+Avalon / MACCS & Avalon 1,024 bits; RDKit MACCS 167-bit vector (bit zero unused); Tanimoto kernels. \\
+
+WL-HI & Two refinement iterations; element, charge, aromaticity and bond types; normalized histogram intersection (Eq.~\eqref{eq:si-wl-kernel}). \\
+
+Primary SVM & $C=1$; \texttt{class\_weight=balanced}; precomputed kernels; default SVC tolerance $10^{-3}$ and no probability fit. \\
+
+Descriptor SVM & 12 descriptors; training-fitted \texttt{RobustScaler}; RBF kernel; \texttt{gamma=scale}; $C=1$, balanced class weights. \\
+
+Metadata / fusion & L2 logistic, $C=1$, \texttt{lbfgs}, balanced class weights, 5,000 iterations; categorical one-hot encoding. Fusion standardizes its structural score and metadata inputs. \\
+
+Calibration & Unweighted logistic sigmoid on five-fold out-of-fold SVM scores; $C=10^6$, \texttt{lbfgs}, 5,000 iterations. Apply that sigmoid to the final full-training model score. \\
+
+Additional logistic & ECFP bits; L2, \texttt{lbfgs}, balanced weights, 5,000 iterations; $C\in\{0.01,0.1,1,10\}$ selected by five-fold training AUROC. \\
+
+Random forest & 500 trees; \texttt{balanced\_subsample}; Gini criterion; bootstrap enabled; \texttt{max\_features=sqrt}; unlimited depth; minimum split/leaf sizes 2/1. \\
+
+Seeds and folds & Base seed 20260829; all five-fold partitions are stratified and shuffled. Calibration uses base+$100s+e$, fusion base+$100s+t$, additional-learner CV base+$s$; $s=0,1,2$ for Random/MaxMin/Time, $e=0,1,2$ for thresholds $100,11,1$, and $t$ is the numeric threshold. \\
+
+Pinned environment & numpy 2.5.3; pandas 3.0.1; scipy 1.18.1; scikit-learn 1.8.0; rdkit 2025.9.4; statsmodels 0.14.6. Exact pins are in \path{requirements-analysis.txt}; execution validation is recorded separately. \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S21b. The six tier--metadata association tests}
+
+All six association tests form one Benjamini--Hochberg family. The four use flags can overlap. These associations do not identify causal effects of use or data source.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{lrrrrr}
+
+\toprule Variable & $\chi^2$ & df & $p$ & Cram\'er\textquotesingle s $V$ & BH $q$ \\ \midrule\endfirsthead
+
+\multicolumn{6}{l}{\textit{Supplementary Table S21b (continued)}} \\
+
+\toprule Variable & $\chi^2$ & df & $p$ & Cram\'er\textquotesingle s $V$ & BH $q$ \\ \midrule\endhead
+
+\midrule\multicolumn{6}{r}{Continued on next page}\\\endfoot\bottomrule\endlastfoot
+
+Source & 38.983 & 6 & 7.21e-07 & 0.137 & 1.08e-06 \\
+
+Exposure route & 9.069 & 6 & 0.17 & 0.066 & 0.17 \\
+
+Herbicide & 123.745 & 3 & 1.2e-26 & 0.346 & 3.61e-26 \\
+
+Fungicide & 40.187 & 3 & 9.72e-09 & 0.197 & 1.94e-08 \\
+
+Insecticide & 338.806 & 3 & 3.96e-73 & 0.572 & 2.37e-72 \\
+
+Other agrochemical & 10.768 & 3 & 0.013 & 0.102 & 0.0157 \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S21c. Formal endpoint-by-novelty interactions}
+
+Coefficients and Wald intervals are per one-unit novelty increase; divide by ten to obtain the 0.1-unit scale used for marginal slopes in Fig.~S3c. Classification-error interactions use a logit link. Holm adjustment covers the two interactions within each split and outcome; each joint Wald test has two degrees of freedom. Nonsignificance does not establish absence of an effect.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{lllccccc}
+
+\toprule Split & Outcome & Contrast & Coefficient & 95\% CI & Holm $p$ & Joint $\chi^2$ & Joint $p$ \\ \midrule\endfirsthead
+
+\multicolumn{8}{l}{\textit{Supplementary Table S21c (continued)}} \\
+
+\toprule Split & Outcome & Contrast & Coefficient & 95\% CI & Holm $p$ & Joint $\chi^2$ & Joint $p$ \\ \midrule\endhead
+
+\midrule\multicolumn{8}{r}{Continued on next page}\\\endfoot\bottomrule\endlastfoot
+
+Random & Brier & 1 vs 100 & -0.044 & -0.229 to 0.140 & 1.000 & 0.248 & 0.883 \\
+
+Random & Brier & 11 vs 100 & -0.025 & -0.257 to 0.207 & 1.000 & 0.248 & 0.883 \\
+
+Random & Error logit & 1 vs 100 & -1.814 & -4.309 to 0.681 & 0.308 & 2.072 & 0.355 \\
+
+Random & Error logit & 11 vs 100 & -0.924 & -3.757 to 1.909 & 0.523 & 2.072 & 0.355 \\
+
+MaxMin & Brier & 1 vs 100 & -0.182 & -0.372 to 0.008 & 0.122 & 3.718 & 0.156 \\
+
+MaxMin & Brier & 11 vs 100 & -0.140 & -0.335 to 0.056 & 0.161 & 3.718 & 0.156 \\
+
+MaxMin & Error logit & 1 vs 100 & -0.770 & -3.401 to 1.862 & 1.000 & 0.342 & 0.843 \\
+
+MaxMin & Error logit & 11 vs 100 & -0.616 & -3.053 to 1.820 & 1.000 & 0.342 & 0.843 \\
+
+Time & Brier & 1 vs 100 & -0.130 & -0.331 to 0.070 & 0.405 & 1.657 & 0.437 \\
+
+Time & Brier & 11 vs 100 & -0.110 & -0.322 to 0.102 & 0.405 & 1.657 & 0.437 \\
+
+Time & Error logit & 1 vs 100 & -0.973 & -3.870 to 1.923 & 0.976 & 0.544 & 0.762 \\
+
+Time & Error logit & 11 vs 100 & -0.876 & -3.352 to 1.600 & 0.976 & 0.544 & 0.762 \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S21d. Held-out scaffold-cluster sizes and permutation strata}
+
+Bootstrap clusters are the stored Bemis--Murcko scaffold identifiers, with acyclic compounds assigned normalized-structure clusters. Singletons are retained.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{lrrrrrr}
+
+\toprule Split & Compounds & Clusters & Singletons & Minimum & Median & Maximum \\ \midrule\endfirsthead
+
+\multicolumn{7}{l}{\textit{Supplementary Table S21d (continued)}} \\
+
+\toprule Split & Compounds & Clusters & Singletons & Minimum & Median & Maximum \\ \midrule\endhead
+
+\midrule\multicolumn{7}{r}{Continued on next page}\\\endfoot\bottomrule\endlastfoot
+
+Random & 207 & 144 & 130 & 1 & 1.0 & 43 \\
+
+MaxMin & 207 & 189 & 184 & 1 & 1.0 & 14 \\
+
+Time & 207 & 163 & 145 & 1 & 1.0 & 21 \\
+
+\end{longtable}\endgroup
+
+\begin{longtable}{lrrrrr}
+
+\toprule Permutation scheme & Strata & Min. size & Max. size & Singleton & Single-tier \\ \midrule\endfirsthead
+
+\multicolumn{6}{l}{\textit{Supplementary Table S21d (continued)}} \\
+
+\toprule Permutation scheme & Strata & Min. size & Max. size & Singleton & Single-tier \\ \midrule\endhead
+
+\bottomrule\endlastfoot
+
+Global & 1 & 1035 & 1035 & 0 & 0 \\
+
+Source + insecticide & 6 & 13 & 410 & 0 & 0 \\
+
+Source + route + insecticide & 17 & 2 & 235 & 0 & 1 \\
+
+\end{longtable}
+
+No strata are merged. Singleton strata remain unchanged; other strata are permuted internally (a single-tier stratum has no effective label exchange). Fifteen representation-by-neighbourhood tests are BH-adjusted separately under each of the three null schemes.
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S22a. Qualifier handling and aggregation on the historical determining route}
+
+A: numerical median, operators ignored; B: numerical unanimous-record rule, operators ignored; C: qualifier-aware unanimous-record rule; D: interval median. Each cell is positive/negative/unresolved/no eligible record, in that order, at the stated cut-off in $\mu$g/bee. The denominator is fixed at the distributed ECOTOX-derived identities; absence after a strict screen is kept distinct from an interval that crosses the threshold. A and D differ only in qualifier handling; A and B differ only in aggregation. At 11, rule B uses strict $>11$ for negative records; the original code also accepted groups containing exactly 11 and larger values as negative. All compound-level definitions and transitions are in \path{results/label_audit/02_compound_labels_by_rule.csv} and \path{results/label_audit/03_rule_transition_counts.csv}.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{llrccc}
+
+\toprule Tier & Rule & $n$ & $\leq100$: P/N/U/none & $\leq11$: P/N/U/none & $\leq1$: P/N/U/none \\ \midrule\endfirsthead
+
+\multicolumn{6}{l}{\textit{Supplementary Table S22a (continued)}} \\
+
+\toprule Tier & Rule & $n$ & $\leq100$: P/N/U/none & $\leq11$: P/N/U/none & $\leq1$: P/N/U/none \\ \midrule\endhead
+
+\midrule\multicolumn{6}{r}{Continued on next page}\\\endfoot\bottomrule\endlastfoot
+
+Tier0 & A & 72 & 0/72/0/0 & 0/72/0/0 & 0/72/0/0 \\
+
+Tier0 & B & 72 & 0/55/17/0 & 0/72/0/0 & 0/72/0/0 \\
+
+Tier0 & C & 72 & 0/62/10/0 & 0/72/0/0 & 0/72/0/0 \\
+
+Tier0 & D & 72 & 0/72/0/0 & 0/72/0/0 & 0/72/0/0 \\
+
+Tier1 & A & 212 & 212/0/0/0 & 0/212/0/0 & 0/212/0/0 \\
+
+Tier1 & B & 212 & 195/0/17/0 & 0/209/3/0 & 0/212/0/0 \\
+
+Tier1 & C & 212 & 32/67/113/0 & 0/212/0/0 & 0/212/0/0 \\
+
+Tier1 & D & 212 & 37/69/106/0 & 0/212/0/0 & 0/212/0/0 \\
+
+Tier2 & A & 60 & 60/0/0/0 & 60/0/0/0 & 0/60/0/0 \\
+
+Tier2 & B & 60 & 60/0/0/0 & 60/0/0/0 & 0/56/4/0 \\
+
+Tier2 & C & 60 & 49/0/11/0 & 49/0/11/0 & 0/55/5/0 \\
+
+Tier2 & D & 60 & 49/0/11/0 & 49/0/11/0 & 0/59/1/0 \\
+
+Tier3 & A & 97 & 97/0/0/0 & 97/0/0/0 & 97/0/0/0 \\
+
+Tier3 & B & 97 & 97/0/0/0 & 97/0/0/0 & 85/0/12/0 \\
+
+Tier3 & C & 97 & 91/0/6/0 & 91/0/6/0 & 79/1/17/0 \\
+
+Tier3 & D & 97 & 94/0/3/0 & 94/0/3/0 & 94/1/2/0 \\
+
+All & A & 441 & 369/72/0/0 & 157/284/0/0 & 97/344/0/0 \\
+
+All & B & 441 & 352/55/34/0 & 157/281/3/0 & 85/340/16/0 \\
+
+All & C & 441 & 172/129/140/0 & 140/284/17/0 & 79/340/22/0 \\
+
+All & D & 441 & 180/141/120/0 & 143/284/14/0 & 94/344/3/0 \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S22b. Record-filter and route-selection sensitivity at all three cut-offs}
+
+Cell order and rules follow S22a. Adult48 retains explicitly adult, exactly two-day observations without per-day dose units. Adult48+AI additionally requires an active-ingredient concentration-type field; it does not independently establish purity. Fixed retains the historical determining route. Eligible combines only routes retained by the upstream numerical 11-cut-off filter; All also restores routes removed by that filter. Records are screened before route-level aggregation. A compound is positive if any eligible route is positive, negative only if every eligible route is negative, and otherwise unresolved. This evaluates threshold labels for the minimum over routes; it does not identify a unique corrected route when interval order is ambiguous. All and Tier1 rows have original denominators 441 and 212, respectively.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{llllccc}
+
+\toprule Record filter & Routes & Rule & Tier & $\leq100$: P/N/U/none & $\leq11$: P/N/U/none & $\leq1$: P/N/U/none \\ \midrule\endfirsthead
+
+\multicolumn{7}{l}{\textit{Supplementary Table S22b (continued)}} \\
+
+\toprule Record filter & Routes & Rule & Tier & $\leq100$: P/N/U/none & $\leq11$: P/N/U/none & $\leq1$: P/N/U/none \\ \midrule\endhead
+
+\midrule\multicolumn{7}{r}{Continued on next page}\\\endfoot\bottomrule\endlastfoot
+
+All records & Fixed & A & All & 369/72/0/0 & 157/284/0/0 & 97/344/0/0 \\
+
+All records & Fixed & A & Tier1 & 212/0/0/0 & 0/212/0/0 & 0/212/0/0 \\
+
+All records & Fixed & B & All & 352/55/34/0 & 157/281/3/0 & 85/340/16/0 \\
+
+All records & Fixed & B & Tier1 & 195/0/17/0 & 0/209/3/0 & 0/212/0/0 \\
+
+All records & Fixed & C & All & 172/129/140/0 & 140/284/17/0 & 79/340/22/0 \\
+
+All records & Fixed & C & Tier1 & 32/67/113/0 & 0/212/0/0 & 0/212/0/0 \\
+
+All records & Fixed & D & All & 180/141/120/0 & 143/284/14/0 & 94/344/3/0 \\
+
+All records & Fixed & D & Tier1 & 37/69/106/0 & 0/212/0/0 & 0/212/0/0 \\
+
+All records & Eligible & A & All & 369/72/0/0 & 157/284/0/0 & 97/344/0/0 \\
+
+All records & Eligible & A & Tier1 & 212/0/0/0 & 0/212/0/0 & 0/212/0/0 \\
+
+All records & Eligible & B & All & 359/55/27/0 & 157/281/3/0 & 87/338/16/0 \\
+
+All records & Eligible & B & Tier1 & 202/0/10/0 & 0/209/3/0 & 0/212/0/0 \\
+
+All records & Eligible & C & All & 174/123/144/0 & 141/284/16/0 & 82/338/21/0 \\
+
+All records & Eligible & C & Tier1 & 33/62/117/0 & 0/212/0/0 & 0/212/0/0 \\
+
+All records & Eligible & D & All & 181/141/119/0 & 143/284/14/0 & 94/344/3/0 \\
+
+All records & Eligible & D & Tier1 & 38/69/105/0 & 0/212/0/0 & 0/212/0/0 \\
+
+All records & All & A & All & 374/67/0/0 & 163/278/0/0 & 99/342/0/0 \\
+
+All records & All & A & Tier1 & 212/0/0/0 & 4/208/0/0 & 1/211/0/0 \\
+
+All records & All & B & All & 361/50/30/0 & 157/251/33/0 & 87/330/24/0 \\
+
+All records & All & B & Tier1 & 203/0/9/0 & 0/186/26/0 & 0/208/4/0 \\
+
+All records & All & C & All & 177/108/156/0 & 141/254/46/0 & 82/332/27/0 \\
+
+All records & All & C & Tier1 & 35/54/123/0 & 0/189/23/0 & 0/209/3/0 \\
+
+All records & All & D & All & 185/127/129/0 & 144/278/19/0 & 94/342/5/0 \\
+
+All records & All & D & Tier1 & 41/59/112/0 & 1/208/3/0 & 0/211/1/0 \\
+
+Adult48 & Fixed & A & All & 271/70/0/100 & 105/236/0/100 & 59/282/0/100 \\
+
+Adult48 & Fixed & A & Tier1 & 163/11/0/38 & 0/174/0/38 & 0/174/0/38 \\
+
+Adult48 & Fixed & B & All & 266/58/17/100 & 105/235/1/100 & 58/279/4/100 \\
+
+Adult48 & Fixed & B & Tier1 & 158/9/7/38 & 0/173/1/38 & 0/174/0/38 \\
+
+Adult48 & Fixed & C & All & 112/131/98/100 & 94/236/11/100 & 53/279/9/100 \\
+
+Adult48 & Fixed & C & Tier1 & 18/76/80/38 & 0/174/0/38 & 0/174/0/38 \\
+
+Adult48 & Fixed & D & All & 112/139/90/100 & 94/236/11/100 & 54/282/5/100 \\
+
+Adult48 & Fixed & D & Tier1 & 18/79/77/38 & 0/174/0/38 & 0/174/0/38 \\
+
+Adult48 & Eligible & A & All & 298/67/0/76 & 118/247/0/76 & 69/296/0/76 \\
+
+Adult48 & Eligible & A & Tier1 & 174/7/0/31 & 0/181/0/31 & 0/181/0/31 \\
+
+Adult48 & Eligible & B & All & 294/54/17/76 & 118/246/1/76 & 68/292/5/76 \\
+
+Adult48 & Eligible & B & Tier1 & 170/4/7/31 & 0/180/1/31 & 0/181/0/31 \\
+
+Adult48 & Eligible & C & All & 125/137/103/76 & 106/247/12/76 & 62/292/11/76 \\
+
+Adult48 & Eligible & C & Tier1 & 19/81/81/31 & 0/181/0/31 & 0/181/0/31 \\
+
+Adult48 & Eligible & D & All & 126/147/92/76 & 107/247/11/76 & 63/296/6/76 \\
+
+Adult48 & Eligible & D & Tier1 & 19/85/77/31 & 0/181/0/31 & 0/181/0/31 \\
+
+Adult48 & All & A & All & 302/69/0/70 & 120/251/0/70 & 69/302/0/70 \\
+
+Adult48 & All & A & Tier1 & 174/8/0/30 & 0/182/0/30 & 0/182/0/30 \\
+
+Adult48 & All & B & All & 299/54/18/70 & 120/249/2/70 & 68/298/5/70 \\
+
+Adult48 & All & B & Tier1 & 171/5/6/30 & 0/180/2/30 & 0/182/0/30 \\
+
+Adult48 & All & C & All & 129/134/108/70 & 108/250/13/70 & 62/298/11/70 \\
+
+Adult48 & All & C & Tier1 & 19/79/84/30 & 0/181/1/30 & 0/182/0/30 \\
+
+Adult48 & All & D & All & 130/146/95/70 & 109/251/11/70 & 63/302/6/70 \\
+
+Adult48 & All & D & Tier1 & 19/83/80/30 & 0/182/0/30 & 0/182/0/30 \\
+
+Adult48+AI & Fixed & A & All & 156/38/0/247 & 39/155/0/247 & 29/165/0/247 \\
+
+Adult48+AI & Fixed & A & Tier1 & 112/10/0/90 & 0/122/0/90 & 0/122/0/90 \\
+
+Adult48+AI & Fixed & B & All & 154/36/4/247 & 39/154/1/247 & 29/164/1/247 \\
+
+Adult48+AI & Fixed & B & Tier1 & 111/10/1/90 & 0/121/1/90 & 0/122/0/90 \\
+
+Adult48+AI & Fixed & C & All & 39/99/56/247 & 32/155/7/247 & 25/164/5/247 \\
+
+Adult48+AI & Fixed & C & Tier1 & 7/69/46/90 & 0/122/0/90 & 0/122/0/90 \\
+
+Adult48+AI & Fixed & D & All & 39/101/54/247 & 32/155/7/247 & 25/165/4/247 \\
+
+Adult48+AI & Fixed & D & Tier1 & 7/69/46/90 & 0/122/0/90 & 0/122/0/90 \\
+
+Adult48+AI & Eligible & A & All & 175/34/0/232 & 45/164/0/232 & 35/174/0/232 \\
+
+Adult48+AI & Eligible & A & Tier1 & 124/6/0/82 & 0/130/0/82 & 0/130/0/82 \\
+
+Adult48+AI & Eligible & B & All & 173/31/5/232 & 45/163/1/232 & 35/173/1/232 \\
+
+Adult48+AI & Eligible & B & Tier1 & 123/6/1/82 & 0/129/1/82 & 0/130/0/82 \\
+
+Adult48+AI & Eligible & C & All & 46/106/57/232 & 38/164/7/232 & 31/173/5/232 \\
+
+Adult48+AI & Eligible & C & Tier1 & 8/76/46/82 & 0/130/0/82 & 0/130/0/82 \\
+
+Adult48+AI & Eligible & D & All & 46/109/54/232 & 38/164/7/232 & 31/174/4/232 \\
+
+Adult48+AI & Eligible & D & Tier1 & 8/76/46/82 & 0/130/0/82 & 0/130/0/82 \\
+
+Adult48+AI & All & A & All & 181/34/0/226 & 47/168/0/226 & 35/180/0/226 \\
+
+Adult48+AI & All & A & Tier1 & 126/7/0/79 & 0/133/0/79 & 0/133/0/79 \\
+
+Adult48+AI & All & B & All & 179/31/5/226 & 47/166/2/226 & 35/179/1/226 \\
+
+Adult48+AI & All & B & Tier1 & 125/7/1/79 & 0/131/2/79 & 0/133/0/79 \\
+
+Adult48+AI & All & C & All & 49/102/64/226 & 40/167/8/226 & 31/179/5/226 \\
+
+Adult48+AI & All & C & Tier1 & 8/73/52/79 & 0/132/1/79 & 0/133/0/79 \\
+
+Adult48+AI & All & D & All & 49/105/61/226 & 40/168/7/226 & 31/180/4/226 \\
+
+Adult48+AI & All & D & Tier1 & 8/73/52/79 & 0/133/0/79 & 0/133/0/79 \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S22c. Historical record-group heterogeneity and upstream selection}
+
+Counts describe the original label-determining ECOTOX groups before stricter record filtering. These benchmark annotations are not harmonized adult 48-hour toxicity measurements. All Adult48 requires every record to satisfy adulthood, exactly two days and non-daily dose basis simultaneously.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{lrrrrrrr}
+
+\toprule Tier & Groups & Records & All adult & All 2 d & Any /d & All Adult48 & Any Adult48 \\ \midrule\endfirsthead
+
+\multicolumn{8}{l}{\textit{Supplementary Table S22c (continued)}} \\
+
+\toprule Tier & Groups & Records & All adult & All 2 d & Any /d & All Adult48 & Any Adult48 \\ \midrule\endhead
+
+\midrule\multicolumn{8}{r}{Continued on next page}\\\endfoot\bottomrule\endlastfoot
+
+Tier0 & 72 & 117 & 63 & 51 & 2 & 51 & 62 \\
+
+Tier1 & 212 & 309 & 162 & 148 & 30 & 146 & 174 \\
+
+Tier2 & 60 & 89 & 41 & 37 & 6 & 36 & 43 \\
+
+Tier3 & 97 & 313 & 50 & 40 & 5 & 37 & 62 \\
+
+All & 441 & 828 & 316 & 276 & 43 & 270 & 341 \\
+
+\end{longtable}\endgroup
+
+The 2,674-record cached export yields 2,245 records after the upstream value, unit and route filters, in 885 CAS--route groups. The original 11-cut-off rule removes 79 groups across 72 CAS identities; 58 of those identities have another eligible ECOTOX route. These are export-level counts, not counts of the 441 retained benchmark identities. All 441 original binary labels, ternary levels and determining routes are reproduced.
+
+The historical determining groups include 34 numerical threshold-straddlers at 100, three at 11 and 16 at 1. The three 11 cases contain an exact numerical value of 11 and larger values, which the upstream implementation accepts as negative. Qualifier-aware conclusions therefore cannot be inferred from the native binary filter alone.
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S23a. Fixed-membership primary label crossover for every representation}
+
+Each cell is AUROC. Before/after the slash denotes training/evaluation labels: O, distributed benchmark; C, partially revised labels. The primary scenario uses qualifier-aware interval medians at 100 and 1, and unanimity at 11, combining the upstream-eligible routes. Unresolved labels retain their distributed values; PPDB/BPDB labels are unchanged. Each split retains its original 828 training and 207 test identities, and no external cohort is introduced. Endpoint class counts and 2,000-draw scaffold percentile intervals for all four cells are in \path{results/label_audit/06_crossover_auroc.csv}. Revised labels are an auditable sensitivity definition, not established ground truth.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{llrccccc}
+
+\toprule Split & Representation & Cut-off & O/O & O/C & C/O & C/C & Positive O/C \\ \midrule\endfirsthead
+
+\multicolumn{8}{l}{\textit{Supplementary Table S23a (continued)}} \\
+
+\toprule Split & Representation & Cut-off & O/O & O/C & C/O & C/C & Positive O/C \\ \midrule\endhead
+
+\midrule\multicolumn{8}{r}{Continued on next page}\\\endfoot\bottomrule\endlastfoot
+
+Random & ECFP & 100 & 0.718 & 0.678 & 0.734 & 0.696 & 179/164 \\
+
+Random & ECFP & 11 & 0.848 & 0.848 & 0.848 & 0.848 & 59/59 \\
+
+Random & ECFP & 1 & 0.917 & 0.917 & 0.917 & 0.917 & 33/32 \\
+
+Random & Avalon & 100 & 0.722 & 0.634 & 0.709 & 0.642 & 179/164 \\
+
+Random & Avalon & 11 & 0.841 & 0.841 & 0.841 & 0.841 & 59/59 \\
+
+Random & Avalon & 1 & 0.906 & 0.905 & 0.906 & 0.905 & 33/32 \\
+
+Random & MACCS & 100 & 0.663 & 0.650 & 0.711 & 0.694 & 179/164 \\
+
+Random & MACCS & 11 & 0.830 & 0.830 & 0.830 & 0.830 & 59/59 \\
+
+Random & MACCS & 1 & 0.894 & 0.900 & 0.894 & 0.900 & 33/32 \\
+
+Random & WL-HI & 100 & 0.744 & 0.684 & 0.733 & 0.701 & 179/164 \\
+
+Random & WL-HI & 11 & 0.863 & 0.863 & 0.863 & 0.863 & 59/59 \\
+
+Random & WL-HI & 1 & 0.927 & 0.928 & 0.927 & 0.928 & 33/32 \\
+
+Random & Descriptors12 & 100 & 0.596 & 0.602 & 0.610 & 0.626 & 179/164 \\
+
+Random & Descriptors12 & 11 & 0.687 & 0.687 & 0.687 & 0.687 & 59/59 \\
+
+Random & Descriptors12 & 1 & 0.770 & 0.779 & 0.770 & 0.779 & 33/32 \\
+
+MaxMin & ECFP & 100 & 0.592 & 0.568 & 0.554 & 0.558 & 162/150 \\
+
+MaxMin & ECFP & 11 & 0.792 & 0.792 & 0.792 & 0.792 & 42/42 \\
+
+MaxMin & ECFP & 1 & 0.795 & 0.795 & 0.796 & 0.796 & 23/23 \\
+
+MaxMin & Avalon & 100 & 0.661 & 0.637 & 0.581 & 0.573 & 162/150 \\
+
+MaxMin & Avalon & 11 & 0.769 & 0.769 & 0.769 & 0.769 & 42/42 \\
+
+MaxMin & Avalon & 1 & 0.757 & 0.757 & 0.758 & 0.758 & 23/23 \\
+
+MaxMin & MACCS & 100 & 0.601 & 0.580 & 0.565 & 0.560 & 162/150 \\
+
+MaxMin & MACCS & 11 & 0.780 & 0.780 & 0.780 & 0.780 & 42/42 \\
+
+MaxMin & MACCS & 1 & 0.763 & 0.763 & 0.761 & 0.761 & 23/23 \\
+
+MaxMin & WL-HI & 100 & 0.574 & 0.529 & 0.544 & 0.510 & 162/150 \\
+
+MaxMin & WL-HI & 11 & 0.830 & 0.830 & 0.830 & 0.830 & 42/42 \\
+
+MaxMin & WL-HI & 1 & 0.832 & 0.832 & 0.832 & 0.832 & 23/23 \\
+
+MaxMin & Descriptors12 & 100 & 0.525 & 0.524 & 0.524 & 0.518 & 162/150 \\
+
+MaxMin & Descriptors12 & 11 & 0.671 & 0.671 & 0.671 & 0.671 & 42/42 \\
+
+MaxMin & Descriptors12 & 1 & 0.705 & 0.705 & 0.712 & 0.712 & 23/23 \\
+
+Time & ECFP & 100 & 0.691 & 0.681 & 0.650 & 0.668 & 167/148 \\
+
+Time & ECFP & 11 & 0.754 & 0.754 & 0.754 & 0.754 & 41/41 \\
+
+Time & ECFP & 1 & 0.792 & 0.792 & 0.799 & 0.799 & 24/24 \\
+
+Time & Avalon & 100 & 0.645 & 0.595 & 0.626 & 0.600 & 167/148 \\
+
+Time & Avalon & 11 & 0.754 & 0.754 & 0.754 & 0.754 & 41/41 \\
+
+Time & Avalon & 1 & 0.753 & 0.753 & 0.756 & 0.756 & 24/24 \\
+
+Time & MACCS & 100 & 0.593 & 0.570 & 0.609 & 0.589 & 167/148 \\
+
+Time & MACCS & 11 & 0.686 & 0.686 & 0.686 & 0.686 & 41/41 \\
+
+Time & MACCS & 1 & 0.726 & 0.726 & 0.731 & 0.731 & 24/24 \\
+
+Time & WL-HI & 100 & 0.665 & 0.608 & 0.640 & 0.647 & 167/148 \\
+
+Time & WL-HI & 11 & 0.788 & 0.788 & 0.788 & 0.788 & 41/41 \\
+
+Time & WL-HI & 1 & 0.788 & 0.788 & 0.791 & 0.791 & 24/24 \\
+
+Time & Descriptors12 & 100 & 0.390 & 0.442 & 0.403 & 0.469 & 167/148 \\
+
+Time & Descriptors12 & 11 & 0.567 & 0.567 & 0.567 & 0.567 & 41/41 \\
+
+Time & Descriptors12 & 1 & 0.650 & 0.650 & 0.646 & 0.646 & 24/24 \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S23b. ECFP 11-minus-100 crossover contrasts and uncertainty across every sensitivity scenario}
+
+Scenario and unresolved-label rules are defined in Supplementary Methods: Cons., conservative; Reg., regulatory; Comb., combined; K, keep; E, exclude; N, negative. O/C notation follows S23a. Both training-label arms use the same retained training and test members, including refitting the original-label arm after exclusion. Intervals are paired scaffold-cluster percentiles from 2,000 draws conditional on fitted models; they are not simultaneous and do not include uncertainty in label adjudication. Negative can create severe-positive/broad-negative labels: it is a nonnested extreme stress test, excluded from substantive correction inference and not a feasible corrected nested benchmark. The complete two-contrast results for all five representations and all four cells, including evaluation-only changes, are in \path{results/label_audit/07_crossover_gap.csv}. Label-change and class counts are in \path{results/label_audit/08_crossover_label_changes.csv}.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{llllccccc}
+
+\toprule Scenario & Unresolved & Split & Train/test & O/O & O/C & C/O & C/C & C/C minus O/O [95\% CI] \\ \midrule\endfirsthead
+
+\multicolumn{9}{l}{\textit{Supplementary Table S23b (continued)}} \\
+
+\toprule Scenario & Unresolved & Split & Train/test & O/O & O/C & C/O & C/C & C/C minus O/O [95\% CI] \\ \midrule\endhead
+
+\midrule\multicolumn{9}{r}{Continued on next page}\\\endfoot\bottomrule\endlastfoot
+
+Primary & K & Random & 828/207 & 0.130 & 0.170 & 0.114 & 0.152 & 0.021 [-0.059, 0.109] \\
+
+Primary & K & MaxMin & 828/207 & 0.200 & 0.224 & 0.238 & 0.234 & 0.034 [-0.040, 0.113] \\
+
+Primary & K & Time & 828/207 & 0.063 & 0.073 & 0.104 & 0.086 & 0.023 [-0.065, 0.105] \\
+
+Primary & E & Random & 728/185 & 0.132 & 0.172 & 0.108 & 0.142 & 0.009 [-0.073, 0.096] \\
+
+Primary & E & MaxMin & 727/186 & 0.214 & 0.231 & 0.233 & 0.222 & 0.008 [-0.067, 0.091] \\
+
+Primary & E & Time & 734/179 & 0.058 & 0.064 & 0.088 & 0.050 & -0.008 [-0.098, 0.084] \\
+
+Primary & N & Random & 828/207 & 0.130 & 0.210 & 0.116 & 0.116 & -0.014 [-0.114, 0.095] \\
+
+Primary & N & MaxMin & 828/207 & 0.200 & 0.208 & 0.222 & 0.150 & -0.050 [-0.149, 0.051] \\
+
+Primary & N & Time & 828/207 & 0.063 & 0.113 & 0.189 & 0.088 & 0.025 [-0.075, 0.124] \\
+
+Cons. & K & Random & 828/207 & 0.130 & 0.174 & 0.110 & 0.156 & 0.026 [-0.050, 0.111] \\
+
+Cons. & K & MaxMin & 828/207 & 0.200 & 0.220 & 0.220 & 0.226 & 0.026 [-0.049, 0.106] \\
+
+Cons. & K & Time & 828/207 & 0.063 & 0.068 & 0.090 & 0.089 & 0.026 [-0.061, 0.113] \\
+
+Cons. & E & Random & 701/175 & 0.105 & 0.157 & 0.082 & 0.133 & 0.029 [-0.049, 0.110] \\
+
+Cons. & E & MaxMin & 698/178 & 0.205 & 0.210 & 0.220 & 0.209 & 0.004 [-0.080, 0.092] \\
+
+Cons. & E & Time & 703/173 & 0.047 & 0.043 & 0.078 & 0.050 & 0.003 [-0.083, 0.090] \\
+
+Cons. & N & Random & 828/207 & 0.130 & 0.214 & 0.120 & 0.118 & -0.012 [-0.112, 0.095] \\
+
+Cons. & N & MaxMin & 828/207 & 0.200 & 0.220 & 0.228 & 0.142 & -0.058 [-0.158, 0.039] \\
+
+Cons. & N & Time & 828/207 & 0.063 & 0.119 & 0.196 & 0.091 & 0.028 [-0.075, 0.128] \\
+
+Adult48 & K & Random & 828/207 & 0.130 & 0.158 & 0.140 & 0.150 & 0.020 [-0.048, 0.100] \\
+
+Adult48 & K & MaxMin & 828/207 & 0.200 & 0.210 & 0.240 & 0.210 & 0.009 [-0.073, 0.095] \\
+
+Adult48 & K & Time & 828/207 & 0.063 & 0.097 & 0.121 & 0.110 & 0.047 [-0.044, 0.125] \\
+
+Adult48 & E & Random & 691/175 & 0.147 & 0.178 & 0.141 & 0.159 & 0.012 [-0.062, 0.096] \\
+
+Adult48 & E & MaxMin & 689/177 & 0.204 & 0.197 & 0.225 & 0.183 & -0.022 [-0.120, 0.069] \\
+
+Adult48 & E & Time & 694/172 & 0.015 & 0.062 & 0.063 & 0.044 & 0.029 [-0.063, 0.115] \\
+
+Adult48 & N & Random & 828/207 & 0.130 & 0.269 & 0.137 & 0.161 & 0.031 [-0.083, 0.138] \\
+
+Adult48 & N & MaxMin & 828/207 & 0.200 & 0.257 & 0.223 & 0.177 & -0.023 [-0.130, 0.093] \\
+
+Adult48 & N & Time & 828/207 & 0.063 & 0.133 & 0.207 & 0.127 & 0.064 [-0.048, 0.178] \\
+
+Reg. & K & Random & 828/207 & 0.130 & 0.187 & 0.165 & 0.179 & 0.049 [-0.034, 0.147] \\
+
+Reg. & K & MaxMin & 828/207 & 0.200 & 0.229 & 0.241 & 0.238 & 0.038 [-0.042, 0.113] \\
+
+Reg. & K & Time & 828/207 & 0.063 & 0.086 & 0.167 & 0.146 & 0.083 [-0.020, 0.186] \\
+
+Reg. & E & Random & 755/191 & 0.100 & 0.153 & 0.137 & 0.141 & 0.041 [-0.038, 0.134] \\
+
+Reg. & E & MaxMin & 758/188 & 0.180 & 0.215 & 0.220 & 0.220 & 0.040 [-0.041, 0.118] \\
+
+Reg. & E & Time & 752/194 & 0.128 & 0.117 & 0.213 & 0.159 & 0.031 [-0.068, 0.133] \\
+
+Reg. & N & Random & 828/207 & 0.130 & 0.212 & 0.168 & 0.138 & 0.008 [-0.096, 0.132] \\
+
+Reg. & N & MaxMin & 828/207 & 0.200 & 0.249 & 0.247 & 0.217 & 0.017 [-0.081, 0.110] \\
+
+Reg. & N & Time & 828/207 & 0.063 & 0.153 & 0.176 & 0.138 & 0.076 [-0.028, 0.186] \\
+
+Comb. & K & Random & 828/207 & 0.130 & 0.192 & 0.142 & 0.172 & 0.042 [-0.046, 0.146] \\
+
+Comb. & K & MaxMin & 828/207 & 0.200 & 0.207 & 0.244 & 0.223 & 0.023 [-0.063, 0.109] \\
+
+Comb. & K & Time & 828/207 & 0.063 & 0.080 & 0.136 & 0.102 & 0.039 [-0.065, 0.144] \\
+
+Comb. & E & Random & 679/173 & 0.113 & 0.166 & 0.128 & 0.136 & 0.023 [-0.067, 0.120] \\
+
+Comb. & E & MaxMin & 678/174 & 0.196 & 0.196 & 0.225 & 0.186 & -0.009 [-0.099, 0.075] \\
+
+Comb. & E & Time & 679/173 & 0.109 & 0.084 & 0.167 & 0.080 & -0.029 [-0.134, 0.075] \\
+
+Comb. & N & Random & 828/207 & 0.130 & 0.227 & 0.180 & 0.133 & 0.003 [-0.110, 0.125] \\
+
+Comb. & N & MaxMin & 828/207 & 0.200 & 0.214 & 0.230 & 0.153 & -0.047 [-0.151, 0.056] \\
+
+Comb. & N & Time & 828/207 & 0.063 & 0.122 & 0.215 & 0.115 & 0.052 [-0.065, 0.175] \\
+
+\end{longtable}\endgroup
+
+Independent verification of exported test labels found no nesting violations under keep or exclude. All 15 negative-policy test cohorts contained violations (3--11 of 207 identities). The per-cohort counts and offending indices are in \path{results/label_audit/LABEL_NESTING_CHECK.csv}. This check concerns exported test labels; the prediction artifact does not contain training-label vectors.
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S19c. Candidate flow, prediction stages and endpoint eligibility}
+
+Sixteen candidates yielded 14 identities absent by connectivity, ten predicted structures and six identities with 11 accepted route endpoints. This is a retrospective, evidence-limited pilot. Batch 1 structures were frozen before prediction; the two added batch 2 structures were selected using endpoint availability. The prediction manifests record 2026-09-23 01:21:07 and 01:22:28 (UTC+8) for the two runs. No endpoint file was read by either prediction runner. This sequencing does not make candidate selection prospective or establish an independent population sample.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{lccccp{0.28\linewidth}}
+
+\toprule Candidate & Batch & Overlap & Predicted & Evaluated & Status \\ \midrule\endfirsthead
+
+\multicolumn{6}{l}{\textit{Supplementary Table S19c (continued)}} \\
+
+\toprule Candidate & Batch & Overlap & Predicted & Evaluated & Status \\ \midrule\endhead
+
+\midrule\multicolumn{6}{r}{Continued on next page}\\\endfoot\bottomrule\endlastfoot
+
+Cyclobutrifluram & 1 & No & Yes & Yes & Eligible 48-hour endpoint \\
+
+Isocycloseram & 1 & No & Yes & Yes & Eligible 48-hour endpoint \\
+
+Dimpropyridaz & 1 & No & Yes & No & Observation time unverified \\
+
+Acynonapyr & 1 & No & Yes & Yes & Eligible 48-hour endpoint \\
+
+Oxazosulfyl & 1 & No & Yes & No & Only 72/96-hour observations \\
+
+Fluhexafon & 1 & No & Yes & No & No eligible endpoint \\
+
+Inpyrfluxam & 1 & No & Yes & No & Adult-stage evidence inadequate \\
+
+Spiropidion & 1 & No & Yes & Yes & Eligible 48-hour endpoint \\
+
+Flupyrimin & 2 & Yes & No & No & Benchmark connectivity overlap \\
+
+Tyclopyrazoflor & 2 & No & No & No & No verified primary endpoint \\
+
+Fluchlordiniliprole & 2 & No & No & No & No verified primary endpoint \\
+
+Benzpyrimoxan & 2 & No & No & No & Unresolved test-material identity \\
+
+Flupentiofenox & 2 & No & Yes & Yes & Eligible 48-hour endpoint \\
+
+Fluxametamide & 2 & No & Yes & Yes & Eligible 48-hour endpoint \\
+
+Broflanilide & 2 & Yes & No & No & Benchmark connectivity overlap \\
+
+Cyclopyrimorate & 2 & No & No & No & No verified primary endpoint \\
+
+\end{longtable}\endgroup
+
+The structure and prediction hashes are in \path{output/unseen_identity_case_study/predictions/initial8/prediction_run_manifest.json} and \path{output/unseen_identity_case_study/predictions/added2/prediction_run_manifest.json}. The endpoint-file hashes and the curation no-prediction-file check are in \path{output/unseen_identity_case_study/data_curation/endpoint_freeze_manifest.json}; that manifest has no embedded timestamp, so a separate endpoint-freeze time is not claimed.
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S19d. Individual new-structure scores, default decisions and nearest-training similarity}
+
+Continuous values are uncalibrated ECFP SVM decision scores, not probabilities. Class uses the saved zero decision threshold of the balanced SVC; it was not chosen for a regulatory decision, an external calibration target or an error-cost function. Similarity is the largest training-set ECFP Tanimoto for the corresponding split. Scores are recorded for all ten predicted identities, including the four without eligible outcomes. Source-linked outcomes and correctness at each determinate threshold are in \path{output/unseen_identity_case_study/evaluation/new_compound_case_predictions.csv}; full nearest-neighbour identities and model hashes are in the two prediction CSVs.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{llcccc}
+
+\toprule Identity & Split & Nearest Tanimoto & $\leq100$ score (class) & $\leq11$ score (class) & $\leq1$ score (class) \\ \midrule\endfirsthead
+
+\multicolumn{6}{l}{\textit{Supplementary Table S19d (continued)}} \\
+
+\toprule Identity & Split & Nearest Tanimoto & $\leq100$ score (class) & $\leq11$ score (class) & $\leq1$ score (class) \\ \midrule\endhead
+
+\midrule\multicolumn{6}{r}{Continued on next page}\\\endfoot\bottomrule\endlastfoot
+
+Cyclobutrifluram & Random & 0.310 & 0.439 (1) & -0.851 (0) & -0.797 (0) \\
+
+Isocycloseram & Random & 0.233 & 0.732 (1) & -0.847 (0) & -0.583 (0) \\
+
+Dimpropyridaz & Random & 0.246 & 0.477 (1) & -0.168 (0) & -0.293 (0) \\
+
+Acynonapyr & Random & 0.320 & 1.017 (1) & -0.704 (0) & -1.038 (0) \\
+
+Oxazosulfyl & Random & 0.253 & 0.520 (1) & -0.836 (0) & -1.031 (0) \\
+
+Fluhexafon & Random & 0.197 & 0.762 (1) & -0.078 (0) & -0.146 (0) \\
+
+Inpyrfluxam & Random & 0.594 & 0.344 (1) & -1.418 (0) & -1.271 (0) \\
+
+Spiropidion & Random & 0.366 & -0.123 (0) & -0.650 (0) & -0.766 (0) \\
+
+Cyclobutrifluram & MaxMin & 0.313 & 0.301 (1) & -0.889 (0) & -0.965 (0) \\
+
+Isocycloseram & MaxMin & 0.233 & 0.567 (1) & -0.807 (0) & -0.673 (0) \\
+
+Dimpropyridaz & MaxMin & 0.246 & 0.714 (1) & 0.008 (1) & -0.194 (0) \\
+
+Acynonapyr & MaxMin & 0.320 & 0.932 (1) & -1.031 (0) & -1.243 (0) \\
+
+Oxazosulfyl & MaxMin & 0.319 & 0.698 (1) & -0.857 (0) & -1.013 (0) \\
+
+Fluhexafon & MaxMin & 0.188 & 0.869 (1) & -0.100 (0) & -0.040 (0) \\
+
+Inpyrfluxam & MaxMin & 0.594 & 0.195 (1) & -1.104 (0) & -1.164 (0) \\
+
+Spiropidion & MaxMin & 0.366 & 0.056 (1) & -0.600 (0) & -0.783 (0) \\
+
+Cyclobutrifluram & Time & 0.310 & 0.724 (1) & -0.840 (0) & -1.039 (0) \\
+
+Isocycloseram & Time & 0.233 & 0.711 (1) & -0.820 (0) & -0.638 (0) \\
+
+Dimpropyridaz & Time & 0.246 & 0.746 (1) & -0.297 (0) & -0.474 (0) \\
+
+Acynonapyr & Time & 0.320 & 0.935 (1) & -0.850 (0) & -0.953 (0) \\
+
+Oxazosulfyl & Time & 0.319 & 0.784 (1) & -0.759 (0) & -1.034 (0) \\
+
+Fluhexafon & Time & 0.197 & 0.767 (1) & -0.127 (0) & -0.238 (0) \\
+
+Inpyrfluxam & Time & 0.266 & 0.348 (1) & -1.260 (0) & -1.356 (0) \\
+
+Spiropidion & Time & 0.323 & -0.219 (0) & -0.489 (0) & -0.787 (0) \\
+
+Flupentiofenox & Random & 0.246 & 0.077 (1) & -0.252 (0) & -0.256 (0) \\
+
+Fluxametamide & Random & 0.228 & 1.072 (1) & -0.260 (0) & -0.107 (0) \\
+
+Flupentiofenox & MaxMin & 0.246 & 0.309 (1) & -0.451 (0) & -0.537 (0) \\
+
+Fluxametamide & MaxMin & 0.228 & 0.723 (1) & -0.130 (0) & -0.267 (0) \\
+
+Flupentiofenox & Time & 0.246 & -0.029 (0) & -0.349 (0) & -0.274 (0) \\
+
+Fluxametamide & Time & 0.228 & 0.802 (1) & -0.216 (0) & -0.271 (0) \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S24a. Illustrative same-record ECOTOX operator replays}
+
+Label vectors are ordered 100/11/1, with U unresolved. Raw rows are zero-based data-row ordinals in the unchanged cached export. Each replay compares the same retained source row(s) with and without its operator; it is not an independent validation study. Selection used documented strata with deterministic tie handling and retains the empty E02 stratum in the selection ledger. Rule C equals D for these displayed examples; broader disagreements between the two rules are retained in S22. For E06, three $>1000$ ng/organism observations convert to $>1$ $\mu$g/bee, but stage is unreported and durations are two, three and four days. AI denotes the reported active-ingredient dose field, not independently verified purity.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{lllp{0.21\linewidth}cccl}
+
+\toprule Case & CAS & Route & Original value and unit & Adult48/AI & Original & Rule D & Raw rows \\ \midrule\endfirsthead
+
+\multicolumn{8}{l}{\textit{Supplementary Table S24a (continued)}} \\
+
+\toprule Case & CAS & Route & Original value and unit & Adult48/AI & Original & Rule D & Raw rows \\ \midrule\endhead
+
+\midrule\multicolumn{8}{r}{Continued on next page}\\\endfoot\bottomrule\endlastfoot
+
+E01 & 76-06-2 & Contact & $>$100 AI ug/org & Yes/Yes & 1/0/0 & 0/0/0 & 302 \\
+
+E03 & 61-31-4 & Contact & $>$96.7 AI ug/org & Yes/Yes & 1/0/0 & U/0/0 & 211 \\
+
+E04 & 78-34-2 & Contact & 21.27 ug/bee & Yes/No & 1/0/0 & 1/0/0 & 306 \\
+
+E05 & 66-81-9 & Contact & $>$241.72 ug/bee & Yes/No & 0/0/0 & 0/0/0 & 282 \\
+
+E06 & 115970-17-7 & Oral & $>$1000 ng/org; $>$1000 ng/org; $>$1000 ng/org & No/No & 1/1/1 & U/U/0 & 1832|1833|1834 \\
+
+E07 & 119-64-2 & Contact & $>$0.336 ug/bee & Yes/No & 1/1/1 & U/U/U & 456 \\
+
+E08 & 4685-14-7 & Contact & $>$6.04 ug/bee & Yes/No & 1/1/0 & U/U/0 & 1018 \\
+
+\end{longtable}\endgroup
+
+Full study metadata, original units, purity fields, source-file and source-row hashes, and exact replay values are in \path{results/record_audit/05_selected_ecotox_records.csv}. The cached export does not supply ECOTOX test/result IDs or MRIDs; its reference number identifies a cited source, not necessarily an individual experiment. Cases therefore establish record-level processing differences without claiming matched underlying experiments across databases.
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S24b. Illustrative regulatory-source disagreements kept separate from parser replays}
+
+Values are in $\mu$g/bee. All four identities are benchmark-positive and source-negative at 100 on the matched route. The same underlying experiment as the benchmark is not established for any displayed case; missing duration or material information remains missing. They illustrate source disagreement and are not counted as adjudicated extraction errors. Exact identity keys, study/document fields, material and dose-basis evidence, row hashes and selection reasons are in \path{results/record_audit/08_selected_cross_source_cases.csv}.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{lllllcrc}
+
+\toprule Case & Source & Identity & CAS & Route & Value & Hours & MRID \\ \midrule\endfirsthead
+
+\multicolumn{8}{l}{\textit{Supplementary Table S24b (continued)}} \\
+
+\toprule Case & Source & Identity & CAS & Route & Value & Hours & MRID \\ \midrule\endhead
+
+\midrule\multicolumn{8}{r}{Continued on next page}\\\endfoot\bottomrule\endlastfoot
+
+X01 & OFT & Pyraflufen-ethyl & 129630-19-9 & Contact & $>$100.0 & 48 & -- \\
+
+X02 & OFT & Quinmerac & 90717-03-6 & Contact & $>$100.0 & 48 & -- \\
+
+X03 & EPA & Metrafenone & 220899-03-6 & Oral & $>$114.0 & -- & 47267508 \\
+
+X04 & EPA & Cyflufenamid & 180409-60-3 & Contact & $>$100.0 & -- & 47620707 \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S24c. Benchmark-wide concordance cohort flow and source-metadata coverage}
+
+Counts are unique benchmark identities at each sequential stage, not the split-specific saved-score cohorts in S18. Retaining a common three-cut-off cohort introduces selection by source availability, route and threshold determinacy. Source screens and matching exclusions are recorded in \path{results/record_audit/13_concordance_cohort_flow.csv}.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{lrrr}
+
+\toprule Source screen & Full-key matched & Same route & Three cut-offs determinate \\ \midrule\endfirsthead
+
+\multicolumn{4}{l}{\textit{Supplementary Table S24c (continued)}} \\
+
+\toprule Source screen & Full-key matched & Same route & Three cut-offs determinate \\ \midrule\endhead
+
+\midrule\multicolumn{4}{r}{Continued on next page}\\\endfoot\bottomrule\endlastfoot
+
+OFT & 250 & 216 & 149 \\
+
+OFT48 & 130 & 96 & 72 \\
+
+EPA & 149 & 133 & 103 \\
+
+\end{longtable}\endgroup
+
+\begin{longtable}{lrrrrrr}
+
+\toprule Source & Records & Time missing & 48 h & Material missing & Dose basis missing & MRID missing \\ \midrule
+
+EPA & 134 & 134 & 0 & 134 & 134 & 6 \\
+
+OFT & 263 & 125 & 126 & 215 & 251 & 263 \\
+
+\bottomrule\end{longtable}
+
+OFT has 12 further records at non-48-hour durations; all 263 matched-route records lack explicit life-stage fields, and 11 state an active-ingredient dose basis. EPA records belong to the source\textquotesingle s adult category, but individual study duration, material and dose-basis fields are not supplied in these tables. Its 128 nonmissing MRIDs are distinct. Missing metadata are not evidence that two studies match. The 216 OFT and 133 EPA same-route identities overlap in 71 identities (278 in their union); these are neither disjoint samples nor independent replications.
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S24d. Composition of included and excluded benchmark identities}
+
+Cells give counts and percentages within membership groups. Included means same-route and all-three-determinate; excluded includes every other benchmark identity. Denominators are OFT 149/886, OFT48 72/963 and EPA 103/932 (included/excluded). Use flags overlap. These distributions describe selection and do not establish representativeness; no structural-selection test is inferred from them. Machine-readable counts are in \path{results/record_audit/14_included_excluded_composition.csv}.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{llcccccc}
+
+\toprule Field & Value & OFT in & OFT out & OFT48 in & OFT48 out & EPA in & EPA out \\ \midrule\endfirsthead
+
+\multicolumn{8}{l}{\textit{Supplementary Table S24d (continued)}} \\
+
+\toprule Field & Value & OFT in & OFT out & OFT48 in & OFT48 out & EPA in & EPA out \\ \midrule\endhead
+
+\midrule\multicolumn{8}{r}{Continued on next page}\\\endfoot\bottomrule\endlastfoot
+
+Source & BPDB & 0 (0.0) & 84 (9.5) & 0 (0.0) & 84 (8.7) & 0 (0.0) & 84 (9.0) \\
+
+Source & ECOTOX & 77 (51.7) & 364 (41.1) & 38 (52.8) & 403 (41.8) & 83 (80.6) & 358 (38.4) \\
+
+Source & PPDB & 72 (48.3) & 438 (49.4) & 34 (47.2) & 476 (49.4) & 20 (19.4) & 490 (52.6) \\
+
+Route & Contact & 98 (65.8) & 527 (59.5) & 44 (61.1) & 581 (60.3) & 67 (65.0) & 558 (59.9) \\
+
+Route & Oral & 51 (34.2) & 240 (27.1) & 28 (38.9) & 263 (27.3) & 36 (35.0) & 255 (27.4) \\
+
+Route & Other & 0 (0.0) & 119 (13.4) & 0 (0.0) & 119 (12.4) & 0 (0.0) & 119 (12.8) \\
+
+Tier & 0 & 31 (20.8) & 146 (16.5) & 19 (26.4) & 158 (16.4) & 23 (22.3) & 154 (16.5) \\
+
+Tier & 1 & 89 (59.7) & 473 (53.4) & 38 (52.8) & 524 (54.4) & 58 (56.3) & 504 (54.1) \\
+
+Tier & 2 & 14 (9.4) & 111 (12.5) & 6 (8.3) & 119 (12.4) & 7 (6.8) & 118 (12.7) \\
+
+Tier & 3 & 15 (10.1) & 156 (17.6) & 9 (12.5) & 162 (16.8) & 15 (14.6) & 156 (16.7) \\
+
+Insecticide & 0 & 111 (74.5) & 697 (78.7) & 49 (68.1) & 759 (78.8) & 73 (70.9) & 735 (78.9) \\
+
+Insecticide & 1 & 38 (25.5) & 189 (21.3) & 23 (31.9) & 204 (21.2) & 30 (29.1) & 197 (21.1) \\
+
+Herbicide & 0 & 88 (59.1) & 593 (66.9) & 46 (63.9) & 635 (65.9) & 70 (68.0) & 611 (65.6) \\
+
+Herbicide & 1 & 61 (40.9) & 293 (33.1) & 26 (36.1) & 328 (34.1) & 33 (32.0) & 321 (34.4) \\
+
+Fungicide & 0 & 108 (72.5) & 730 (82.4) & 48 (66.7) & 790 (82.0) & 69 (67.0) & 769 (82.5) \\
+
+Fungicide & 1 & 41 (27.5) & 156 (17.6) & 24 (33.3) & 173 (18.0) & 34 (33.0) & 163 (17.5) \\
+
+Other use & 0 & 138 (92.6) & 681 (76.9) & 72 (100.0) & 747 (77.6) & 98 (95.1) & 721 (77.4) \\
+
+Other use & 1 & 11 (7.4) & 205 (23.1) & 0 (0.0) & 216 (22.4) & 5 (4.9) & 211 (22.6) \\
+
+\end{longtable}\endgroup
+
+\Needspace{12\baselineskip}\subsection*{Supplementary Table S24e. Structural proximity to the selected concordance cohorts}
+
+For every benchmark molecule, the descriptive statistic is its largest ECFP4 Tanimoto similarity to the corresponding same-route, all-three-determinate selected cohort. An included molecule is compared with the other selected molecules, excluding its own identity; an excluded molecule is compared with the entire selected set. The table reports medians and interquartile ranges across query molecules, not confidence intervals. The reference-set size is shown because nearest-neighbour similarity depends on that size; the three screens are not directly comparable standardized coverage measures. These summaries quantify proximity to each selected chemical pool and do not prove representativeness or identify a causal selection effect. The saved kernel is reused without model fitting or cohort changes. Per-molecule values and cohort summaries are supplied with \path{results/record_audit/16_selection_structure_summary.csv}.
+
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{llrrrrc}
+
+\toprule Source & Membership & $n$ & Selected set & References/query & Median & Q1--Q3 \\ \midrule\endfirsthead
+
+\multicolumn{7}{l}{\textit{Supplementary Table S24e (continued)}} \\
+
+\toprule Source & Membership & $n$ & Selected set & References/query & Median & Q1--Q3 \\ \midrule\endhead
+
+\midrule\multicolumn{7}{r}{Continued on next page}\\\endfoot\bottomrule\endlastfoot
+
+OFT & Included & 149 & 149 & 148 & 0.356 & 0.258 to 0.468 \\
+
+OFT & Excluded & 886 & 149 & 149 & 0.284 & 0.212 to 0.422 \\
+
+OFT48 & Included & 72 & 72 & 71 & 0.328 & 0.226 to 0.435 \\
+
+OFT48 & Excluded & 963 & 72 & 72 & 0.250 & 0.182 to 0.341 \\
+
+EPA & Included & 103 & 103 & 102 & 0.271 & 0.224 to 0.398 \\
+
+EPA & Excluded & 932 & 103 & 103 & 0.262 & 0.194 to 0.381 \\
+
+\end{longtable}\endgroup

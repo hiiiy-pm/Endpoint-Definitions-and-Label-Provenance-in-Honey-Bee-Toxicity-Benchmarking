@@ -28,6 +28,9 @@ SCRIPTS = [
     "09_export_submission_tables.py",
     "10_tier_boundary_diagnostics.py",
     "11_qualifier_propagation_audit.py",
+    "12_label_rule_audit.py",
+    "13_corrected_label_crossover.py",
+    "14_record_case_audit.py",
 ]
 
 
@@ -36,12 +39,20 @@ def main() -> None:
     parser.add_argument("--clean", action="store_true", help="Remove results before running.")
     args = parser.parse_args()
     if args.clean and RESULTS.exists():
+        if RESULTS.resolve() != ROOT.resolve() / "results":
+            raise ValueError("Refusing to clean results outside this checkout")
         shutil.rmtree(RESULTS)
     RESULTS.mkdir(parents=True, exist_ok=True)
     for script in SCRIPTS:
         path = CODE / script
         print(f"\n=== {script} ===", flush=True)
         subprocess.run([sys.executable, str(path)], cwd=ROOT, check=True)
+    subprocess.run([sys.executable, str(ROOT / "verification" / "verify_revision.py")],
+                   cwd=ROOT, check=True)
+    subprocess.run([sys.executable, str(ROOT / "verification" / "check_crossover_nesting.py")],
+                   cwd=ROOT, check=True)
+    subprocess.run([sys.executable, str(ROOT / "verification" / "describe_cohort_selection.py")],
+                   cwd=ROOT, check=True)
     print("\nAll final numerical analyses completed.")
 
 

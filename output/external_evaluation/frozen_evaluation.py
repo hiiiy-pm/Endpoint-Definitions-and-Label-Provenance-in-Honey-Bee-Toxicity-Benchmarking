@@ -195,7 +195,7 @@ def main():
         'analysis': 'Frozen prediction external-source reassessment, designed after viewing labels',
         'not_independent_new_compound_validation': True,
         'fitting_calibration_tuning_or_score_transformation': False,
-        'primary_representation_prespecified': 'ECFP',
+        'primary_representation_designated': 'ECFP',
         'other_representations': 'All four reported descriptively; none selected by performance.',
         'sources': {
             SOURCE_NAMES[0]: 'Audited OFT single_structure_screen AND route Contact',
@@ -204,7 +204,7 @@ def main():
         'cohorts': {
             'all_external_contact': 'Original mixed-route model reassessed against external contact endpoint',
             'original_contact_only': 'Fixed subset also labelled Contact in original ApisTox; other original study conditions can still differ',
-            'quality_screen': 'PLOS only: no InChI/SMILES conflict in any selected record AND every selected record has an MRID; fixed before examining subgroup performance',
+            'quality_screen': 'PLOS only: no InChI/SMILES conflict in any selected record AND every selected record has an MRID; the implemented eligibility rule uses no prediction scores',
             'original_contact_quality_screen': 'PLOS only: intersection of original Contact and quality_screen'},
         'identity_exclusion': 'All members matched to model training set by full key, connectivity, standardized parent connectivity, CAS or normalized name removed; exclude entire external key if any row matches.',
         'identity_join': 'One-to-one exact full InChIKey to audited ApisTox, one-to-one SMILES to original processed data, verified CID and global Index and official split membership.',
@@ -225,7 +225,15 @@ def main():
               ROOT / 'results/primary/02_test_predictions.csv', ROOT / 'results/primary/01_representation_performance.csv',
               ROOT / 'results/cache/processed_data.csv']
     inputs += [ROOT / f'data/official_splits/{s}_{part}.csv' for s in SPLITS for part in ('train', 'test')]
+    inputs.append(FEAS / 'REBUILD_MANIFEST.json')
     initial_hashes = {str(p.relative_to(ROOT)): sha(p) for p in inputs}
+    member_manifest = json.loads((FEAS / 'REBUILD_MANIFEST.json').read_text(encoding='utf-8'))
+    check('membership_rebuild_manifest_passed', member_manifest['status'] == 'passed')
+    check('membership_generator_hash', sha(ROOT / member_manifest['generator']) == member_manifest['generator_sha256'])
+    for relative, expected_hash in member_manifest['input_sha256'].items():
+        check(f'membership_input_hash_{relative}', sha(ROOT / relative) == expected_hash)
+    for relative, expected_hash in member_manifest['output_sha256'].items():
+        check(f'membership_output_hash_{relative}', sha(ROOT / relative) == expected_hash)
     a = pd.read_csv(inputs[0]).fillna('')
     oft = pd.read_csv(inputs[1]).fillna('')
     plos = pd.read_csv(inputs[2]).fillna('')

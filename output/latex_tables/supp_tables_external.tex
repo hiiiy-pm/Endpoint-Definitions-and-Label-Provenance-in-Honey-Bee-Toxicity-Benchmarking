@@ -1,12 +1,14 @@
 \Needspace{12\baselineskip}\subsection*{Supplementary Table S8. Nested descriptor sensitivity}
 
-Test AUROC for every prespecified subset size, with training-fold-specific scaling and stability selection. The official test set remains 207 compounds. Selected descriptors and training-selected penalties for all 54 fits are in \texttt{results\_v2/supplementary/02\_topk\_descriptor\_performance.csv}. This is a separate L2-logistic sensitivity analysis; its 12-descriptor fit is not the main descriptor SVM.
+Test AUROC for every fixed subset size (all reported), with training-fold-specific scaling and stability selection. The official test set remains 207 compounds. Selected descriptors and training-selected penalties for all 54 fits are in \path{results/supplementary/02_topk_descriptor_performance.csv}. This is a separate L2-logistic sensitivity analysis; its 12-descriptor fit is not the main descriptor SVM.
 
 \begingroup\small\setlength{\tabcolsep}{4pt}
 
 \begin{longtable}{lrccc}
 
 \toprule Split & $k$ & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
+
+\multicolumn{5}{l}{\textit{Supplementary Table S8 (continued)}} \\
 
 \toprule Split & $k$ & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
 
@@ -43,6 +45,8 @@ Counts are disagreements against the original ApisTox labels on the same compoun
 
 \toprule Source & $n$ & At 1 & At 11 & At 100 & At 100, censored \\ \midrule\endfirsthead
 
+\multicolumn{6}{l}{\textit{Supplementary Table S15 (continued)}} \\
+
 \toprule Source & $n$ & At 1 & At 11 & At 100 & At 100, censored \\ \midrule\endhead
 
 \midrule\multicolumn{6}{r}{Continued on next page}\endfoot\bottomrule\endlastfoot
@@ -55,7 +59,7 @@ EPA retrospective & 103 & 2 & 3 & 51 & 39 \\
 
 \Needspace{12\baselineskip}\subsection*{Supplementary Table S18a. Complete saved-score ECFP label reassessment}
 
-Cells report AUROC and (positive/negative) counts. An asterisk marks fewer than five compounds in a class; -- denotes undefined AUROC. Orig.: original benchmark labels; Source: regulatory-source labels. Broad: external contact, original route unrestricted; Route: original contact required; OFT48: 48-hour observations required; EPA Quality: structure-quality and MRID evidence required. All cohorts exclude the corresponding model\textquotesingle s training identities. The cohorts and sources overlap. Exact eligibility, AP, pointwise percentile intervals and degenerate bootstrap counts remain in the machine-readable tables.
+Cells report AUROC and (positive/negative) counts. An asterisk marks fewer than five compounds in a class; -- denotes undefined AUROC. Orig.: original benchmark labels; Source: regulatory-source labels. Broad: external contact, original route unrestricted; Route: original contact required; OFT48: 48-hour observations and no recorded material flag (missing material text does not establish pure active ingredient); EPA Quality: no InChI/SMILES conflict and an MRID for every selected record, not a matched-duration or assay-quality guarantee. All cohorts exclude the corresponding model\textquotesingle s training identities. The cohorts and sources overlap. Exact eligibility, AP, pointwise percentile intervals and valid/degenerate counts are in \path{output/external_evaluation/frozen_metrics_ECFP.csv}.
 
 \begingroup\small\setlength{\tabcolsep}{4pt}
 
@@ -63,64 +67,66 @@ Cells report AUROC and (positive/negative) counts. An asterisk marks fewer than 
 
 \toprule Source & Screen & Split & Labels & $n$ & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
 
+\multicolumn{8}{l}{\textit{Supplementary Table S18a (continued)}} \\
+
 \toprule Source & Screen & Split & Labels & $n$ & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
 
 \midrule\multicolumn{8}{r}{Continued on next page}\endfoot\bottomrule\endlastfoot
 
-OFT & Broad & Random & Orig. & 24 & 0.130* (23/1) & 0.525* (4/20) & 0.870* (1/23) \\
-OFT & Broad & Random & Source & 24 & 0.600 (5/19) & 0.667* (3/21) & 0.870* (1/23) \\
-OFT & Route & Random & Orig. & 15 & 0.143* (14/1) & 0.615* (2/13) & --* (0/15) \\
-OFT & Route & Random & Source & 15 & 0.500* (3/12) & 0.615* (2/13) & --* (0/15) \\
-OFT & Broad & MaxMin & Orig. & 18 & 0.723 (13/5) & 0.906* (2/16) & 0.941* (1/17) \\
-OFT & Broad & MaxMin & Source & 18 & 0.661* (4/14) & 0.941* (1/17) & 0.941* (1/17) \\
-OFT & Route & MaxMin & Orig. & 13 & 0.650 (8/5) & 1.000* (1/12) & 1.000* (1/12) \\
-OFT & Route & MaxMin & Source & 13 & 0.545* (2/11) & 1.000* (1/12) & 1.000* (1/12) \\
-OFT & Broad & Time & Orig. & 28 & 0.583* (24/4) & 0.727 (6/22) & 0.635* (2/26) \\
-OFT & Broad & Time & Source & 28 & 0.497 (7/21) & 0.802* (4/24) & 0.635* (2/26) \\
-OFT & Route & Time & Orig. & 18 & 0.125* (16/2) & 0.765* (1/17) & --* (0/18) \\
-OFT & Route & Time & Source & 18 & 0.594* (2/16) & 0.765* (1/17) & --* (0/18) \\
-OFT48 & Broad & Random & Orig. & 8 & --* (8/0) & 0.333* (2/6) & --* (0/8) \\
-OFT48 & Broad & Random & Source & 8 & 0.750* (2/6) & 0.714* (1/7) & --* (0/8) \\
-OFT48 & Route & Random & Orig. & 5 & --* (5/0) & 0.750* (1/4) & --* (0/5) \\
-OFT48 & Route & Random & Source & 5 & 0.500* (1/4) & 0.750* (1/4) & --* (0/5) \\
-OFT48 & Broad & MaxMin & Orig. & 8 & 0.750* (6/2) & 0.857* (1/7) & 0.857* (1/7) \\
-OFT48 & Broad & MaxMin & Source & 8 & 0.833* (2/6) & 0.857* (1/7) & 0.857* (1/7) \\
-OFT48 & Route & MaxMin & Orig. & 6 & 0.625* (4/2) & 1.000* (1/5) & 1.000* (1/5) \\
-OFT48 & Route & MaxMin & Source & 6 & 0.800* (1/5) & 1.000* (1/5) & 1.000* (1/5) \\
-OFT48 & Broad & Time & Orig. & 9 & 0.875* (8/1) & 0.714* (2/7) & 1.000* (1/8) \\
-OFT48 & Broad & Time & Source & 9 & 0.429* (2/7) & 0.714* (2/7) & 1.000* (1/8) \\
-OFT48 & Route & Time & Orig. & 5 & --* (5/0) & 1.000* (1/4) & --* (0/5) \\
-OFT48 & Route & Time & Source & 5 & 0.250* (1/4) & 1.000* (1/4) & --* (0/5) \\
-EPA & Broad & Random & Orig. & 32 & 0.575* (29/3) & 0.840 (7/25) & 0.981 (6/26) \\
-EPA & Broad & Random & Source & 32 & 0.786 (10/22) & 0.891 (6/26) & 0.982* (4/28) \\
-EPA & Route & Random & Orig. & 18 & --* (18/0) & 0.985 (5/13) & 1.000 (5/13) \\
-EPA & Route & Random & Source & 18 & 0.896 (7/11) & 0.985 (5/13) & 0.982* (4/14) \\
-EPA & Quality & Random & Orig. & 24 & 0.571* (21/3) & 0.806 (6/18) & 0.968 (5/19) \\
-EPA & Quality & Random & Source & 24 & 0.820 (8/16) & 0.863 (5/19) & 0.988* (4/20) \\
-EPA & Route+quality & Random & Orig. & 13 & --* (13/0) & 0.972* (4/9) & 1.000* (4/9) \\
-EPA & Route+quality & Random & Source & 13 & 0.950 (5/8) & 0.972* (4/9) & 1.000* (4/9) \\
-EPA & Broad & MaxMin & Orig. & 24 & 0.750 (18/6) & 0.852 (6/18) & 0.850* (4/20) \\
-EPA & Broad & MaxMin & Source & 24 & 0.703 (8/16) & 0.875* (4/20) & 0.783* (1/23) \\
-EPA & Route & MaxMin & Orig. & 13 & 0.806* (9/4) & 0.864* (2/11) & 0.917* (1/12) \\
-EPA & Route & MaxMin & Source & 13 & 0.667* (4/9) & 0.864* (2/11) & 0.917* (1/12) \\
-EPA & Quality & MaxMin & Orig. & 21 & 0.756 (15/6) & 0.800 (5/16) & 0.778* (3/18) \\
-EPA & Quality & MaxMin & Source & 21 & 0.663 (7/14) & 0.815* (3/18) & 0.800* (1/20) \\
-EPA & Route+quality & MaxMin & Orig. & 13 & 0.806* (9/4) & 0.864* (2/11) & 0.917* (1/12) \\
 EPA & Route+quality & MaxMin & Source & 13 & 0.667* (4/9) & 0.864* (2/11) & 0.917* (1/12) \\
-EPA & Broad & Time & Orig. & 30 & 0.644* (26/4) & 0.750 (10/20) & 0.590 (7/23) \\
-EPA & Broad & Time & Source & 30 & 0.540 (8/22) & 0.778 (6/24) & 0.827* (4/26) \\
-EPA & Route & Time & Orig. & 13 & 0.273* (11/2) & 0.773* (2/11) & 0.773* (2/11) \\
-EPA & Route & Time & Source & 13 & 0.733* (3/10) & 0.773* (2/11) & 0.773* (2/11) \\
-EPA & Quality & Time & Orig. & 27 & 0.652* (23/4) & 0.747 (10/17) & 0.586 (7/20) \\
-EPA & Quality & Time & Source & 27 & 0.550 (7/20) & 0.770 (6/21) & 0.826* (4/23) \\
-EPA & Route+quality & Time & Orig. & 11 & 0.333* (9/2) & 0.778* (2/9) & 0.778* (2/9) \\
+EPA & Route+quality & MaxMin & Orig. & 13 & 0.806* (9/4) & 0.864* (2/11) & 0.917* (1/12) \\
+EPA & Route+quality & Random & Source & 13 & 0.950 (5/8) & 0.972* (4/9) & 1.000* (4/9) \\
+EPA & Route+quality & Random & Orig. & 13 & --* (13/0) & 0.972* (4/9) & 1.000* (4/9) \\
 EPA & Route+quality & Time & Source & 11 & 0.778* (2/9) & 0.778* (2/9) & 0.778* (2/9) \\
+EPA & Route+quality & Time & Orig. & 11 & 0.333* (9/2) & 0.778* (2/9) & 0.778* (2/9) \\
+OFT48 & Route & MaxMin & Source & 6 & 0.800* (1/5) & 1.000* (1/5) & 1.000* (1/5) \\
+OFT48 & Route & MaxMin & Orig. & 6 & 0.625* (4/2) & 1.000* (1/5) & 1.000* (1/5) \\
+OFT48 & Route & Random & Source & 5 & 0.500* (1/4) & 0.750* (1/4) & --* (0/5) \\
+OFT48 & Route & Random & Orig. & 5 & --* (5/0) & 0.750* (1/4) & --* (0/5) \\
+OFT48 & Route & Time & Source & 5 & 0.250* (1/4) & 1.000* (1/4) & --* (0/5) \\
+OFT48 & Route & Time & Orig. & 5 & --* (5/0) & 1.000* (1/4) & --* (0/5) \\
+OFT & Route & MaxMin & Source & 13 & 0.545* (2/11) & 1.000* (1/12) & 1.000* (1/12) \\
+OFT & Route & MaxMin & Orig. & 13 & 0.650 (8/5) & 1.000* (1/12) & 1.000* (1/12) \\
+OFT & Route & Random & Source & 15 & 0.500* (3/12) & 0.615* (2/13) & --* (0/15) \\
+OFT & Route & Random & Orig. & 15 & 0.143* (14/1) & 0.615* (2/13) & --* (0/15) \\
+OFT & Route & Time & Source & 18 & 0.594* (2/16) & 0.765* (1/17) & --* (0/18) \\
+OFT & Route & Time & Orig. & 18 & 0.125* (16/2) & 0.765* (1/17) & --* (0/18) \\
+EPA & Route & MaxMin & Source & 13 & 0.667* (4/9) & 0.864* (2/11) & 0.917* (1/12) \\
+EPA & Route & MaxMin & Orig. & 13 & 0.806* (9/4) & 0.864* (2/11) & 0.917* (1/12) \\
+EPA & Route & Random & Source & 18 & 0.896 (7/11) & 0.985 (5/13) & 0.982* (4/14) \\
+EPA & Route & Random & Orig. & 18 & --* (18/0) & 0.985 (5/13) & 1.000 (5/13) \\
+EPA & Route & Time & Source & 13 & 0.733* (3/10) & 0.773* (2/11) & 0.773* (2/11) \\
+EPA & Route & Time & Orig. & 13 & 0.273* (11/2) & 0.773* (2/11) & 0.773* (2/11) \\
+EPA & Quality & MaxMin & Source & 21 & 0.663 (7/14) & 0.815* (3/18) & 0.800* (1/20) \\
+EPA & Quality & MaxMin & Orig. & 21 & 0.756 (15/6) & 0.800 (5/16) & 0.778* (3/18) \\
+EPA & Quality & Random & Source & 24 & 0.820 (8/16) & 0.863 (5/19) & 0.988* (4/20) \\
+EPA & Quality & Random & Orig. & 24 & 0.571* (21/3) & 0.806 (6/18) & 0.968 (5/19) \\
+EPA & Quality & Time & Source & 27 & 0.550 (7/20) & 0.770 (6/21) & 0.826* (4/23) \\
+EPA & Quality & Time & Orig. & 27 & 0.652* (23/4) & 0.747 (10/17) & 0.586 (7/20) \\
+OFT48 & Broad & MaxMin & Source & 8 & 0.833* (2/6) & 0.857* (1/7) & 0.857* (1/7) \\
+OFT48 & Broad & MaxMin & Orig. & 8 & 0.750* (6/2) & 0.857* (1/7) & 0.857* (1/7) \\
+OFT48 & Broad & Random & Source & 8 & 0.750* (2/6) & 0.714* (1/7) & --* (0/8) \\
+OFT48 & Broad & Random & Orig. & 8 & --* (8/0) & 0.333* (2/6) & --* (0/8) \\
+OFT48 & Broad & Time & Source & 9 & 0.429* (2/7) & 0.714* (2/7) & 1.000* (1/8) \\
+OFT48 & Broad & Time & Orig. & 9 & 0.875* (8/1) & 0.714* (2/7) & 1.000* (1/8) \\
+OFT & Broad & MaxMin & Source & 18 & 0.661* (4/14) & 0.941* (1/17) & 0.941* (1/17) \\
+OFT & Broad & MaxMin & Orig. & 18 & 0.723 (13/5) & 0.906* (2/16) & 0.941* (1/17) \\
+OFT & Broad & Random & Source & 24 & 0.600 (5/19) & 0.667* (3/21) & 0.870* (1/23) \\
+OFT & Broad & Random & Orig. & 24 & 0.130* (23/1) & 0.525* (4/20) & 0.870* (1/23) \\
+OFT & Broad & Time & Source & 28 & 0.497 (7/21) & 0.802* (4/24) & 0.635* (2/26) \\
+OFT & Broad & Time & Orig. & 28 & 0.583* (24/4) & 0.727 (6/22) & 0.635* (2/26) \\
+EPA & Broad & MaxMin & Source & 24 & 0.703 (8/16) & 0.875* (4/20) & 0.783* (1/23) \\
+EPA & Broad & MaxMin & Orig. & 24 & 0.750 (18/6) & 0.852 (6/18) & 0.850* (4/20) \\
+EPA & Broad & Random & Source & 32 & 0.786 (10/22) & 0.891 (6/26) & 0.982* (4/28) \\
+EPA & Broad & Random & Orig. & 32 & 0.575* (29/3) & 0.840 (7/25) & 0.981 (6/26) \\
+EPA & Broad & Time & Source & 30 & 0.540 (8/22) & 0.778 (6/24) & 0.827* (4/26) \\
+EPA & Broad & Time & Orig. & 30 & 0.644* (26/4) & 0.750 (10/20) & 0.590 (7/23) \\
 
 \end{longtable}\endgroup
 
 \Needspace{12\baselineskip}\subsection*{Supplementary Table S18b. Paired endpoint contrasts and label-source changes}
 
-Cells report paired AUROC differences with exploratory 95\% compound-bootstrap percentile intervals. Change is the source-label contrast minus the original-label contrast on identical compounds. Asterisks flag sparse classes. Conditional intervals after removing single-class bootstrap draws can be misleading, especially with one positive; they are retained for audit and do not establish replication. These intervals are not the original scaffold-cluster simultaneous intervals.
+Cells report paired AUROC differences with exploratory 95\% compound-bootstrap percentile intervals, using only draws for which every constituent AUROC is defined. Change is the source-label contrast minus the original-label contrast on identical compounds. Asterisks flag sparse classes. Conditional intervals after removing single-class bootstrap draws can be misleading, especially with one positive; they are retained for audit and do not establish replication. These intervals are not the original scaffold-cluster simultaneous intervals. Valid and degenerate counts are in \path{output/external_evaluation/frozen_contrasts_ECFP.csv}.
 
 \begingroup\small\setlength{\tabcolsep}{4pt}
 
@@ -128,82 +134,84 @@ Cells report paired AUROC differences with exploratory 95\% compound-bootstrap p
 
 \toprule Source & Screen & Split & Labels & $11-100$ & $1-100$ \\ \midrule\endfirsthead
 
+\multicolumn{6}{l}{\textit{Supplementary Table S18b (continued)}} \\
+
 \toprule Source & Screen & Split & Labels & $11-100$ & $1-100$ \\ \midrule\endhead
 
 \midrule\multicolumn{6}{r}{Continued on next page}\endfoot\bottomrule\endlastfoot
 
-OFT & Broad & Random & Orig. & 0.395* [-0.037, 0.783] & 0.739* [0.466, 0.957] \\
-OFT & Broad & Random & Source & 0.067* [-0.334, 0.435] & 0.270* [-0.024, 0.594] \\
-OFT & Broad & Random & Change & -0.328* [-0.664, 0.078] & -0.470* [-0.695, -0.149] \\
-OFT & Route & Random & Orig. & 0.473* [-0.077, 1.000] & --* [--, --] \\
-OFT & Route & Random & Source & 0.115* [-0.377, 0.545] & --* [--, --] \\
-OFT & Route & Random & Change & -0.357* [-0.703, 0.085] & --* [--, --] \\
-OFT & Broad & MaxMin & Orig. & 0.183* [-0.107, 0.501] & 0.218* [-0.067, 0.518] \\
-OFT & Broad & MaxMin & Source & 0.280* [-0.073, 0.622] & 0.280* [-0.073, 0.622] \\
-OFT & Broad & MaxMin & Change & 0.097* [-0.316, 0.459] & 0.062* [-0.321, 0.417] \\
-OFT & Route & MaxMin & Orig. & 0.350* [0.025, 0.650] & 0.350* [0.025, 0.650] \\
-OFT & Route & MaxMin & Source & 0.455* [0.000, 0.700] & 0.455* [0.000, 0.700] \\
-OFT & Route & MaxMin & Change & 0.105* [-0.488, 0.467] & 0.105* [-0.488, 0.467] \\
-OFT & Broad & Time & Orig. & 0.144* [-0.409, 0.724] & 0.051* [-0.638, 0.750] \\
-OFT & Broad & Time & Source & 0.305* [0.031, 0.588] & 0.138* [-0.405, 0.693] \\
-OFT & Broad & Time & Change & 0.162* [-0.521, 0.778] & 0.087* [-0.594, 0.687] \\
-OFT & Route & Time & Orig. & 0.640* [0.306, 0.913] & --* [--, --] \\
-OFT & Route & Time & Source & 0.171* [-0.079, 0.750] & --* [--, --] \\
-OFT & Route & Time & Change & -0.469* [-0.786, 0.273] & --* [--, --] \\
-OFT48 & Broad & Random & Orig. & --* [--, --] & --* [--, --] \\
-OFT48 & Broad & Random & Source & -0.036* [-0.446, 0.600] & --* [--, --] \\
-OFT48 & Broad & Random & Change & --* [--, --] & --* [--, --] \\
-OFT48 & Route & Random & Orig. & --* [--, --] & --* [--, --] \\
-OFT48 & Route & Random & Source & 0.250* [0.000, 0.750] & --* [--, --] \\
-OFT48 & Route & Random & Change & --* [--, --] & --* [--, --] \\
-OFT48 & Broad & MaxMin & Orig. & 0.107* [-0.400, 0.571] & 0.107* [-0.400, 0.571] \\
-OFT48 & Broad & MaxMin & Source & 0.024* [-0.367, 0.600] & 0.024* [-0.367, 0.600] \\
-OFT48 & Broad & MaxMin & Change & -0.083* [-0.500, 0.567] & -0.083* [-0.500, 0.567] \\
-OFT48 & Route & MaxMin & Orig. & 0.375* [0.000, 0.750] & 0.375* [0.000, 0.750] \\
-OFT48 & Route & MaxMin & Source & 0.200* [0.000, 0.600] & 0.200* [0.000, 0.600] \\
-OFT48 & Route & MaxMin & Change & -0.175* [-0.750, 0.500] & -0.175* [-0.750, 0.500] \\
-OFT48 & Broad & Time & Orig. & -0.161* [-0.571, 0.036] & 0.125* [0.000, 0.375] \\
-OFT48 & Broad & Time & Source & 0.286* [-0.375, 0.865] & 0.571* [0.167, 1.000] \\
-OFT48 & Broad & Time & Change & 0.446* [-0.143, 0.833] & 0.446* [-0.143, 0.833] \\
-OFT48 & Route & Time & Orig. & --* [--, --] & --* [--, --] \\
-OFT48 & Route & Time & Source & 0.750* [0.250, 1.000] & --* [--, --] \\
-OFT48 & Route & Time & Change & --* [--, --] & --* [--, --] \\
-EPA & Broad & Random & Orig. & 0.265* [-0.191, 0.864] & 0.406* [-0.021, 1.000] \\
-EPA & Broad & Random & Source & 0.105 [-0.101, 0.308] & 0.196* [0.051, 0.376] \\
-EPA & Broad & Random & Change & -0.161* [-0.733, 0.300] & -0.210* [-0.774, 0.234] \\
-EPA & Route & Random & Orig. & --* [--, --] & --* [--, --] \\
-EPA & Route & Random & Source & 0.089 [-0.039, 0.270] & 0.086* [-0.044, 0.262] \\
-EPA & Route & Random & Change & --* [--, --] & --* [--, --] \\
-EPA & Quality & Random & Orig. & 0.234* [-0.212, 0.831] & 0.397* [-0.032, 1.000] \\
-EPA & Quality & Random & Source & 0.043 [-0.188, 0.258] & 0.167* [0.021, 0.371] \\
-EPA & Quality & Random & Change & -0.191* [-0.726, 0.266] & -0.230* [-0.772, 0.209] \\
-EPA & Route+quality & Random & Orig. & --* [--, --] & --* [--, --] \\
-EPA & Route+quality & Random & Source & 0.022* [-0.111, 0.167] & 0.050* [0.000, 0.214] \\
-EPA & Route+quality & Random & Change & --* [--, --] & --* [--, --] \\
-EPA & Broad & MaxMin & Orig. & 0.102 [-0.141, 0.372] & 0.100* [-0.190, 0.398] \\
-EPA & Broad & MaxMin & Source & 0.172* [-0.068, 0.445] & 0.079* [-0.200, 0.387] \\
-EPA & Broad & MaxMin & Change & 0.070* [-0.241, 0.391] & -0.021* [-0.388, 0.420] \\
-EPA & Route & MaxMin & Orig. & 0.058* [-0.276, 0.400] & 0.111* [-0.200, 0.429] \\
-EPA & Route & MaxMin & Source & 0.197* [-0.100, 0.517] & 0.250* [0.000, 0.556] \\
-EPA & Route & MaxMin & Change & 0.139* [-0.310, 0.571] & 0.139* [-0.300, 0.571] \\
-EPA & Quality & MaxMin & Orig. & 0.044 [-0.237, 0.337] & 0.022* [-0.329, 0.373] \\
-EPA & Quality & MaxMin & Source & 0.152* [-0.158, 0.489] & 0.137* [-0.176, 0.438] \\
-EPA & Quality & MaxMin & Change & 0.107* [-0.237, 0.455] & 0.115* [-0.291, 0.556] \\
-EPA & Route+quality & MaxMin & Orig. & 0.058* [-0.293, 0.400] & 0.111* [-0.201, 0.444] \\
 EPA & Route+quality & MaxMin & Source & 0.197* [-0.101, 0.508] & 0.250* [0.000, 0.551] \\
 EPA & Route+quality & MaxMin & Change & 0.139* [-0.333, 0.571] & 0.139* [-0.333, 0.575] \\
-EPA & Broad & Time & Orig. & 0.106* [-0.284, 0.467] & -0.054* [-0.494, 0.355] \\
-EPA & Broad & Time & Source & 0.238 [-0.041, 0.530] & 0.287* [-0.033, 0.604] \\
-EPA & Broad & Time & Change & 0.132* [-0.344, 0.632] & 0.341* [-0.185, 0.893] \\
-EPA & Route & Time & Orig. & 0.500* [0.197, 0.833] & 0.500* [0.091, 0.833] \\
-EPA & Route & Time & Source & 0.039* [-0.436, 0.400] & 0.039* [-0.381, 0.364] \\
-EPA & Route & Time & Change & -0.461* [-0.818, 0.000] & -0.461* [-0.818, 0.000] \\
-EPA & Quality & Time & Orig. & 0.095* [-0.270, 0.450] & -0.066* [-0.503, 0.350] \\
-EPA & Quality & Time & Source & 0.220 [-0.055, 0.519] & 0.276* [-0.047, 0.622] \\
-EPA & Quality & Time & Change & 0.125* [-0.362, 0.639] & 0.343* [-0.196, 0.872] \\
-EPA & Route+quality & Time & Orig. & 0.444* [0.167, 0.778] & 0.444* [0.067, 0.800] \\
+EPA & Route+quality & MaxMin & Orig. & 0.058* [-0.293, 0.400] & 0.111* [-0.201, 0.444] \\
+EPA & Route+quality & Random & Source & 0.022* [-0.111, 0.167] & 0.050* [0.000, 0.214] \\
+EPA & Route+quality & Random & Change & --* [--, --] & --* [--, --] \\
+EPA & Route+quality & Random & Orig. & --* [--, --] & --* [--, --] \\
 EPA & Route+quality & Time & Source & 0.000* [-0.444, 0.444] & 0.000* [-0.400, 0.400] \\
 EPA & Route+quality & Time & Change & -0.444* [-0.800, 0.114] & -0.444* [-0.800, 0.114] \\
+EPA & Route+quality & Time & Orig. & 0.444* [0.167, 0.778] & 0.444* [0.067, 0.800] \\
+OFT48 & Route & MaxMin & Source & 0.200* [0.000, 0.600] & 0.200* [0.000, 0.600] \\
+OFT48 & Route & MaxMin & Change & -0.175* [-0.750, 0.500] & -0.175* [-0.750, 0.500] \\
+OFT48 & Route & MaxMin & Orig. & 0.375* [0.000, 0.750] & 0.375* [0.000, 0.750] \\
+OFT48 & Route & Random & Source & 0.250* [0.000, 0.750] & --* [--, --] \\
+OFT48 & Route & Random & Change & --* [--, --] & --* [--, --] \\
+OFT48 & Route & Random & Orig. & --* [--, --] & --* [--, --] \\
+OFT48 & Route & Time & Source & 0.750* [0.250, 1.000] & --* [--, --] \\
+OFT48 & Route & Time & Change & --* [--, --] & --* [--, --] \\
+OFT48 & Route & Time & Orig. & --* [--, --] & --* [--, --] \\
+OFT & Route & MaxMin & Source & 0.455* [0.000, 0.700] & 0.455* [0.000, 0.700] \\
+OFT & Route & MaxMin & Change & 0.105* [-0.488, 0.467] & 0.105* [-0.488, 0.467] \\
+OFT & Route & MaxMin & Orig. & 0.350* [0.025, 0.650] & 0.350* [0.025, 0.650] \\
+OFT & Route & Random & Source & 0.115* [-0.377, 0.545] & --* [--, --] \\
+OFT & Route & Random & Change & -0.357* [-0.703, 0.085] & --* [--, --] \\
+OFT & Route & Random & Orig. & 0.473* [-0.077, 1.000] & --* [--, --] \\
+OFT & Route & Time & Source & 0.171* [-0.079, 0.750] & --* [--, --] \\
+OFT & Route & Time & Change & -0.469* [-0.786, 0.273] & --* [--, --] \\
+OFT & Route & Time & Orig. & 0.640* [0.306, 0.913] & --* [--, --] \\
+EPA & Route & MaxMin & Source & 0.197* [-0.100, 0.517] & 0.250* [0.000, 0.556] \\
+EPA & Route & MaxMin & Change & 0.139* [-0.310, 0.571] & 0.139* [-0.300, 0.571] \\
+EPA & Route & MaxMin & Orig. & 0.058* [-0.276, 0.400] & 0.111* [-0.200, 0.429] \\
+EPA & Route & Random & Source & 0.089 [-0.039, 0.270] & 0.086* [-0.044, 0.262] \\
+EPA & Route & Random & Change & --* [--, --] & --* [--, --] \\
+EPA & Route & Random & Orig. & --* [--, --] & --* [--, --] \\
+EPA & Route & Time & Source & 0.039* [-0.436, 0.400] & 0.039* [-0.381, 0.364] \\
+EPA & Route & Time & Change & -0.461* [-0.818, 0.000] & -0.461* [-0.818, 0.000] \\
+EPA & Route & Time & Orig. & 0.500* [0.197, 0.833] & 0.500* [0.091, 0.833] \\
+EPA & Quality & MaxMin & Source & 0.152* [-0.158, 0.489] & 0.137* [-0.176, 0.438] \\
+EPA & Quality & MaxMin & Change & 0.107* [-0.237, 0.455] & 0.115* [-0.291, 0.556] \\
+EPA & Quality & MaxMin & Orig. & 0.044 [-0.237, 0.337] & 0.022* [-0.329, 0.373] \\
+EPA & Quality & Random & Source & 0.043 [-0.188, 0.258] & 0.167* [0.021, 0.371] \\
+EPA & Quality & Random & Change & -0.191* [-0.726, 0.266] & -0.230* [-0.772, 0.209] \\
+EPA & Quality & Random & Orig. & 0.234* [-0.212, 0.831] & 0.397* [-0.032, 1.000] \\
+EPA & Quality & Time & Source & 0.220 [-0.055, 0.519] & 0.276* [-0.047, 0.622] \\
+EPA & Quality & Time & Change & 0.125* [-0.362, 0.639] & 0.343* [-0.196, 0.872] \\
+EPA & Quality & Time & Orig. & 0.095* [-0.270, 0.450] & -0.066* [-0.503, 0.350] \\
+OFT48 & Broad & MaxMin & Source & 0.024* [-0.367, 0.600] & 0.024* [-0.367, 0.600] \\
+OFT48 & Broad & MaxMin & Change & -0.083* [-0.500, 0.567] & -0.083* [-0.500, 0.567] \\
+OFT48 & Broad & MaxMin & Orig. & 0.107* [-0.400, 0.571] & 0.107* [-0.400, 0.571] \\
+OFT48 & Broad & Random & Source & -0.036* [-0.446, 0.600] & --* [--, --] \\
+OFT48 & Broad & Random & Change & --* [--, --] & --* [--, --] \\
+OFT48 & Broad & Random & Orig. & --* [--, --] & --* [--, --] \\
+OFT48 & Broad & Time & Source & 0.286* [-0.375, 0.865] & 0.571* [0.167, 1.000] \\
+OFT48 & Broad & Time & Change & 0.446* [-0.143, 0.833] & 0.446* [-0.143, 0.833] \\
+OFT48 & Broad & Time & Orig. & -0.161* [-0.571, 0.036] & 0.125* [0.000, 0.375] \\
+OFT & Broad & MaxMin & Source & 0.280* [-0.073, 0.622] & 0.280* [-0.073, 0.622] \\
+OFT & Broad & MaxMin & Change & 0.097* [-0.316, 0.459] & 0.062* [-0.321, 0.417] \\
+OFT & Broad & MaxMin & Orig. & 0.183* [-0.107, 0.501] & 0.218* [-0.067, 0.518] \\
+OFT & Broad & Random & Source & 0.067* [-0.334, 0.435] & 0.270* [-0.024, 0.594] \\
+OFT & Broad & Random & Change & -0.328* [-0.664, 0.078] & -0.470* [-0.695, -0.149] \\
+OFT & Broad & Random & Orig. & 0.395* [-0.037, 0.783] & 0.739* [0.466, 0.957] \\
+OFT & Broad & Time & Source & 0.305* [0.031, 0.588] & 0.138* [-0.405, 0.693] \\
+OFT & Broad & Time & Change & 0.162* [-0.521, 0.778] & 0.087* [-0.594, 0.687] \\
+OFT & Broad & Time & Orig. & 0.144* [-0.409, 0.724] & 0.051* [-0.638, 0.750] \\
+EPA & Broad & MaxMin & Source & 0.172* [-0.068, 0.445] & 0.079* [-0.200, 0.387] \\
+EPA & Broad & MaxMin & Change & 0.070* [-0.241, 0.391] & -0.021* [-0.388, 0.420] \\
+EPA & Broad & MaxMin & Orig. & 0.102 [-0.141, 0.372] & 0.100* [-0.190, 0.398] \\
+EPA & Broad & Random & Source & 0.105 [-0.101, 0.308] & 0.196* [0.051, 0.376] \\
+EPA & Broad & Random & Change & -0.161* [-0.733, 0.300] & -0.210* [-0.774, 0.234] \\
+EPA & Broad & Random & Orig. & 0.265* [-0.191, 0.864] & 0.406* [-0.021, 1.000] \\
+EPA & Broad & Time & Source & 0.238 [-0.041, 0.530] & 0.287* [-0.033, 0.604] \\
+EPA & Broad & Time & Change & 0.132* [-0.344, 0.632] & 0.341* [-0.185, 0.893] \\
+EPA & Broad & Time & Orig. & 0.106* [-0.284, 0.467] & -0.054* [-0.494, 0.355] \\
 
 \end{longtable}\endgroup
 
@@ -216,6 +224,8 @@ Values retain their original qualifiers and are reported in $\mu$g per bee. Acti
 \begin{longtable}{lccc}
 
 \toprule Chemical identity & Contact LD$_{50}$ & Oral LD$_{50}$ & Adult evidence \\ \midrule\endfirsthead
+
+\multicolumn{4}{l}{\textit{Supplementary Table S19a (continued)}} \\
 
 \toprule Chemical identity & Contact LD$_{50}$ & Oral LD$_{50}$ & Adult evidence \\ \midrule\endhead
 
@@ -266,7 +276,7 @@ Contact: SmithersUSA;2020;Report13912.6119;KCI200136. Tables2-3 printedpp8-9/PDF
 
 Oral: SmithersUSA;2020;Report13912.6118;KCI200140. Tables2-3 printedpp8-9/PDF11-12;references PDF23. \url{https://www.maff.go.jp/j/council/sizai/nouyaku/attach/pdf/mitubati_17-7.pdf}.
 
-All 11 accepted endpoints are in \texttt{frozen\_scoreable\_48h\_endpoints.csv}, including source material, stage evidence, full key and connectivity. The complete \texttt{frozen\_endpoint\_ledger.csv} retains rejected observations and reasons. The ten predicted candidate structures include four identities without an accepted 48-hour endpoint; they were not removed according to prediction success. Inpyrfluxam lacks adequate stage confirmation. Longer-time observations are stored separately in \texttt{extended\_times\_not\_primary.csv}. Sources not downloaded locally remain identified as full-text checked or unavailable in the source manifests; their local availability is not overstated.
+All 11 accepted endpoints are in \path{output/unseen_identity_case_study/data_curation/frozen_scoreable_48h_endpoints.csv}, including source material, stage evidence, full key and connectivity. The complete \path{output/unseen_identity_case_study/data_curation/frozen_endpoint_ledger.csv} retains rejected observations and reasons. The ten predicted candidate structures include four identities without an accepted 48-hour endpoint; they were not removed according to prediction success. Inpyrfluxam lacks adequate stage confirmation. Longer-time observations are stored separately in \path{output/unseen_identity_case_study/data_curation/extended_times_not_primary.csv}. Sources not downloaded locally remain identified as full-text checked or unavailable in the source manifests; their local availability is not overstated. Study years refer to the individual experiments, whereas the linked assessment reports may have later publication years.
 
 \Needspace{12\baselineskip}\subsection*{Supplementary Table S20. Complete exploratory unseen-identity evaluation}
 
@@ -277,6 +287,8 @@ Stage All retains contextual adult evidence; Explicit requires explicit evidence
 \begin{longtable}{llllrrcc}
 
 \toprule Route & Stage & Cohort & Split & Cut-off & $n$/pos. & AUROC & TP/TN/FP/FN \\ \midrule\endfirsthead
+
+\multicolumn{8}{l}{\textit{Supplementary Table S20 (continued)}} \\
 
 \toprule Route & Stage & Cohort & Split & Cut-off & $n$/pos. & AUROC & TP/TN/FP/FN \\ \midrule\endhead
 

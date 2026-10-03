@@ -83,8 +83,8 @@ def derive_tier(df: pd.DataFrame) -> np.ndarray:
     return tier
 
 
-def load_study_data() -> StudyData:
-    data_path = RAW_CSV
+def load_study_data(raw_csv: Path = RAW_CSV, split_dir: Path = SPLIT_DIR) -> StudyData:
+    data_path = raw_csv
     df = pd.read_csv(data_path)
     required = {
         "name", "CID", "CAS", "SMILES", "source", "year", "toxicity_type",
@@ -94,6 +94,8 @@ def load_study_data() -> StudyData:
     missing = sorted(required.difference(df.columns))
     if missing:
         raise ValueError(f"Missing required columns: {missing}")
+    if len(df) != 1035 or df[["CID", "CAS", "SMILES"]].isna().any().any():
+        raise ValueError("The frozen analysis expects 1,035 rows with complete compound identities.")
     if df["SMILES"].duplicated().any():
         raise ValueError("The frozen analysis expects unique SMILES rows.")
 
@@ -109,8 +111,8 @@ def load_study_data() -> StudyData:
     sm2idx = {s: i for i, s in enumerate(df["SMILES"])}
     splits: Dict[str, Tuple[np.ndarray, np.ndarray]] = {}
     for key in SPLIT_KEYS:
-        trf = pd.read_csv(SPLIT_DIR / f"{key}_train.csv")
-        tef = pd.read_csv(SPLIT_DIR / f"{key}_test.csv")
+        trf = pd.read_csv(split_dir / f"{key}_train.csv")
+        tef = pd.read_csv(split_dir / f"{key}_test.csv")
         try:
             tr = np.array([sm2idx[s] for s in trf["SMILES"]], dtype=np.int32)
             te = np.array([sm2idx[s] for s in tef["SMILES"]], dtype=np.int32)
@@ -118,6 +120,10 @@ def load_study_data() -> StudyData:
             raise ValueError(f"Split {key} contains an unknown SMILES: {e}") from e
         if len(tr) != 828 or len(te) != 207 or len(set(tr).intersection(te)):
             raise AssertionError(f"Unexpected official split geometry for {key}")
+        if len(np.unique(tr)) != len(tr) or len(np.unique(te)) != len(te):
+            raise AssertionError(f"Duplicate compound within official split {key}")
+        if set(tr).union(te) != set(range(len(df))):
+            raise AssertionError(f"Official split {key} does not cover the complete raw cohort")
         splits[SPLIT_NAMES[key]] = (tr, te)
 
     return StudyData(df=df, tier=tier, y=y, splits=splits)
@@ -185,35 +191,8 @@ def _wlhi_kernel(mols: Sequence[Chem.Mol]) -> np.ndarray:
     return k
 
 
-def build_or_load_cache(force: bool = False) -> Mapping[str, object]:
-    """Build and cache deterministic molecular representations.
-
-    The cache is an acceleration artifact only. All files are regenerated from the
-    frozen CSV and are covered by the final manifest.
-    """
-    study = load_study_data()
-    expected = {
-        "ECFP": CACHE / "kernel_ecfp.npy",
-        "Avalon": CACHE / "kernel_avalon.npy",
-        "MACCS": CACHE / "kernel_maccs.npy",
-        "WL-HI": CACHE / "kernel_wlhi.npy",
-        "Descriptors12": CACHE / "descriptors12.npy",
-        "Scaffolds": CACHE / "scaffolds.csv",
-        "Processed": CACHE / "processed_data.csv",
-    }
-    if not force and all(p.exists() for p in expected.values()):
-        return {
-            "study": study,
-            "kernels": {
-                "ECFP": np.load(expected["ECFP"], mmap_mode="r"),
-                "Avalon": np.load(expected["Avalon"], mmap_mode="r"),
-                "MACCS": np.load(expected["MACCS"], mmap_mode="r"),
-                "WL-HI": np.load(expected["WL-HI"], mmap_mode="r"),
-            },
-            "descriptors": np.load(expected["Descriptors12"], mmap_mode="r"),
-            "scaffolds": pd.read_csv(expected["Scaffolds"])["Scaffold"].astype(str).to_numpy(),
-        }
-
+def compute_representations(study: StudyData) -> Mapping[str, object]:
+    """Recompute every representation from raw ordered SMILES, without cache reads."""
     mols = [Chem.MolFromSmiles(s) for s in study.df["SMILES"]]
     if not all(mols):
         raise ValueError("At least one SMILES could not be parsed by RDKit.")
@@ -229,11 +208,6 @@ def build_or_load_cache(force: bool = False) -> Mapping[str, object]:
         "MACCS": _tanimoto_matrix(maccs),
         "WL-HI": _wlhi_kernel(mols),
     }
-    np.save(expected["ECFP"], kernels["ECFP"])
-    np.save(expected["Avalon"], kernels["Avalon"])
-    np.save(expected["MACCS"], kernels["MACCS"])
-    np.save(expected["WL-HI"], kernels["WL-HI"])
-
     funcs = [
         Descriptors.MolWt,
         Descriptors.MolLogP,
@@ -249,9 +223,35 @@ def build_or_load_cache(force: bool = False) -> Mapping[str, object]:
         lambda m: Chem.GetFormalCharge(m),
     ]
     descriptors = np.array([[f(m) for f in funcs] for m in mols], dtype=np.float64)
-    np.save(expected["Descriptors12"], descriptors)
-
     scaffolds = np.array([scaffold_key(m) for m in mols], dtype=object)
+    return {"study": study, "kernels": kernels, "descriptors": descriptors, "scaffolds": scaffolds}
+
+
+def build_or_load_cache(force: bool = False, cache_dir: Path = CACHE) -> Mapping[str, object]:
+    """Load a validated cache, or explicitly regenerate it with recorded provenance.
+
+    Existing partial, stale or unverifiable caches fail rather than silently changing
+    the analysis. Legacy caches require a separate current raw-SMILES validation
+    record; their unknown original generation environment is never backfilled.
+    """
+    from _cache_validation import cache_paths, validate_cache, write_generation_metadata
+
+    study = load_study_data()
+    expected = cache_paths(cache_dir)
+    if not force and (any(p.exists() for p in expected.values())
+                      or (cache_dir / "CACHE_METADATA.json").exists()
+                      or (cache_dir / "CACHE_VALIDATION.json").exists()):
+        return validate_cache(study, cache_dir)
+
+    arrays = compute_representations(study)
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    # An interrupted rebuild must not leave an old attestation applicable to new files.
+    for name in ("CACHE_METADATA.json", "CACHE_VALIDATION.json"):
+        (cache_dir / name).unlink(missing_ok=True)
+    for rep, kernel in arrays["kernels"].items():
+        np.save(expected[rep], kernel)
+    np.save(expected["Descriptors12"], arrays["descriptors"])
+    scaffolds = arrays["scaffolds"]
     pd.DataFrame({"Index": np.arange(len(scaffolds)), "Scaffold": scaffolds}).to_csv(
         expected["Scaffolds"], index=False
     )
@@ -262,22 +262,8 @@ def build_or_load_cache(force: bool = False) -> Mapping[str, object]:
         processed[f"Y{thr}"] = study.y[thr]
     processed.to_csv(expected["Processed"], index=False)
 
-    cache_meta = {
-        "seed": SEED,
-        "n_molecules": len(study.df),
-        "source_sha256": sha256_file(RAW_CSV),
-        "files": {k: str(v.relative_to(ROOT)) for k, v in expected.items()},
-    }
-    (CACHE / "CACHE_METADATA.json").write_text(
-        json.dumps(cache_meta, indent=2, ensure_ascii=False), encoding="utf-8"
-    )
-
-    return {
-        "study": study,
-        "kernels": kernels,
-        "descriptors": descriptors,
-        "scaffolds": scaffolds,
-    }
+    write_generation_metadata(study, cache_dir)
+    return validate_cache(study, cache_dir)
 
 
 def tie_aware_weighted_auc(y: np.ndarray, score: np.ndarray, weights: np.ndarray) -> np.ndarray:

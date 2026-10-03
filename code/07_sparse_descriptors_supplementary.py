@@ -1,6 +1,6 @@
 """Supplementary sparse descriptors with training-fold-only preprocessing.
 
-Five validation folds select logistic C separately for each prespecified k.
+Five validation folds select logistic C separately for each designated k.
 Every fold fits its scaler and supervised stability ranking on that fold's
 training rows. Elastic-net parameters use another five-fold CV within those
 training rows. One fold's selector is cached for all C/k candidates. The final

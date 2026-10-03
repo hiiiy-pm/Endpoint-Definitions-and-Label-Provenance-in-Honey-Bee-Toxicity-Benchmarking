@@ -1,0 +1,18 @@
+ApisTox 1035 1035
+OFT structures 1000
+OFT structures 2000
+OFT structures 3000
+OFT structures 4000
+OFT structures 5000
+OFT structures 6000
+OFT structures 7000
+OFT 7890 {'resolved': 5952, 'unresolved': 1938}
+PLOS identities 25
+PLOS identities 50
+PLOS identities 75
+PLOS identities 100
+PLOS identities 125
+PLOS identities 150
+PLOS identities 175
+PLOS {'resolved': 194, 'unresolved': 1} {'OFT exact name': 138, 'PubChem name': 56, 'unresolved/ambiguous': 1}
+UNCERTAIN {'resolved': 72}

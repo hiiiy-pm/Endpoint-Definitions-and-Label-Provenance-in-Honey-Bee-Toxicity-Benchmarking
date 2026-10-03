@@ -1,0 +1,100 @@
+{
+  "status": "passed",
+  "provenance": "Reconstructed during the 2026-10-03 revision; not a recovered historical preregistration or freeze",
+  "generator": "output/external_evaluation/build_frozen_members.py",
+  "generator_sha256": "bf85190ca44d5306b7f4c069ac0b354e602fa8ce9f5a04240d9bf8a1826aae21",
+  "input_sha256": {
+    "output/external_data_audit/apistox_structures.csv": "9f87a916fa57755dcc19bc9cff8e2e38d1a079e1a0fdeda2b1ef7067011802a1",
+    "output/external_data_audit/oft_acute_endpoints_aligned.csv": "ede2c6499e711854371249c4f69374fe978c0b729dbfadc6e91727048ae83ffc",
+    "output/external_data_audit/plos_adult_acute_endpoints_aligned.csv": "af8c38c358f82295da0402381f5d21da899bdba61a2a66eea4a6eb3243436d87",
+    "data/official_splits/random_train.csv": "3c252f7f0d458de68b6fadb5caa8a8a322b559b1268c9eef86ea68d5334e5a5e",
+    "data/official_splits/random_test.csv": "2d901114d01536345b2ecc57c0e08225acce53fd9d16b0bab33eb9f5ccf84372",
+    "data/official_splits/maxmin_train.csv": "fc2711a77967ce66a39cb378e7b52858581d1333b5704b1cf026b6c5556edfd1",
+    "data/official_splits/maxmin_test.csv": "017f8242dc1d7d70a89a118d6c0c9cafd70304de2f88d8a80fd115ef5d767a70",
+    "data/official_splits/time_train.csv": "f46948b9a674efb8caebeea18a18c243b05c86c11b12bac6df5330d69a8c2e82",
+    "data/official_splits/time_test.csv": "ba528cab7e9882d2689bf5b2fbe8dd6355d42b804f5114b0be739229a1189397"
+  },
+  "output_sha256": {
+    "output/frozen_external_feasibility/frozen_split_external_members.csv": "d0ff62a5d112e94d83994ea428d83ba90ab84095a2a15456bfb3ff1372e97de1"
+  },
+  "cohorts": 9,
+  "member_rows": 264,
+  "flow": [
+    {
+      "source": "OFT_single_structure_contact",
+      "split": "random",
+      "source_records": 282,
+      "training_identity_matching_records": 243,
+      "eligible_records": 39,
+      "eligible_keys": 35
+    },
+    {
+      "source": "OFT_48h_contact",
+      "split": "random",
+      "source_records": 97,
+      "training_identity_matching_records": 87,
+      "eligible_records": 10,
+      "eligible_keys": 10
+    },
+    {
+      "source": "PLOS_resolved_contact",
+      "split": "random",
+      "source_records": 166,
+      "training_identity_matching_records": 128,
+      "eligible_records": 38,
+      "eligible_keys": 38
+    },
+    {
+      "source": "OFT_single_structure_contact",
+      "split": "maxmin",
+      "source_records": 282,
+      "training_identity_matching_records": 236,
+      "eligible_records": 46,
+      "eligible_keys": 38
+    },
+    {
+      "source": "OFT_48h_contact",
+      "split": "maxmin",
+      "source_records": 97,
+      "training_identity_matching_records": 80,
+      "eligible_records": 17,
+      "eligible_keys": 14
+    },
+    {
+      "source": "PLOS_resolved_contact",
+      "split": "maxmin",
+      "source_records": 166,
+      "training_identity_matching_records": 134,
+      "eligible_records": 32,
+      "eligible_keys": 32
+    },
+    {
+      "source": "OFT_single_structure_contact",
+      "split": "time",
+      "source_records": 282,
+      "training_identity_matching_records": 237,
+      "eligible_records": 45,
+      "eligible_keys": 40
+    },
+    {
+      "source": "OFT_48h_contact",
+      "split": "time",
+      "source_records": 97,
+      "training_identity_matching_records": 85,
+      "eligible_records": 12,
+      "eligible_keys": 12
+    },
+    {
+      "source": "PLOS_resolved_contact",
+      "split": "time",
+      "source_records": 166,
+      "training_identity_matching_records": 121,
+      "eligible_records": 45,
+      "eligible_keys": 45
+    }
+  ],
+  "models_fitted": 0,
+  "prediction_files_read": 0,
+  "identity_exclusion": "Exclude the entire external full key if any source record matches a training full key, connectivity, parent connectivity, CAS or normalized name",
+  "labels": "All source rows within a retained key must agree on a determinate label at each cutoff"
+}

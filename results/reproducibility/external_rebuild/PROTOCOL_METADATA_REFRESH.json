@@ -1,0 +1,11 @@
+{
+  "status": "metadata_only_refresh",
+  "old_protocol_sha256": "bbd15a39c514ab600da3f8afc94c607e8fbd3c6838d4ce1dcf97f7c1facff99d",
+  "new_protocol_sha256": "bfd1256bfe79544ae4615456a9e129f349332937d97e2b239f5d020b0f218565",
+  "changes": [
+    "primary_representation_prespecified renamed to primary_representation_designated",
+    "quality-screen description states score-free construction without an unsupported historical timing assertion"
+  ],
+  "scientific_outputs_replaced": false,
+  "basis": "All 37 regenerated existing external scientific outputs compared with maximum difference 0 before this refresh"
+}

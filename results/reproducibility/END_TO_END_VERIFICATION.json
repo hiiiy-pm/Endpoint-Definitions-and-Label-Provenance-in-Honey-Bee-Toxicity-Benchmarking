@@ -1,0 +1,126 @@
+{
+  "status": "PASS",
+  "execution": {
+    "started_at": "2026-10-03T00:00:38.5030372+08:00",
+    "finished_at": "2026-10-03T00:04:43.4604241+08:00",
+    "elapsed_seconds": 244.9573869,
+    "exit_code": 0,
+    "python": "C:\\Users\\hiy\\.venvs\\apistox\\Scripts\\python.exe",
+    "command": "python -u code/run_all_analysis.py --clean"
+  },
+  "supplemental_nesting_execution": {
+    "started_at": "2026-10-03T00:06:34.5206680+08:00",
+    "finished_at": "2026-10-03T00:06:35.7170127+08:00",
+    "elapsed_seconds": 1.1963447,
+    "exit_code": 0,
+    "command": "python verification/check_crossover_nesting.py",
+    "entrypoint_note": "Appended to run_all after the completed numerical run; executed separately against its fresh predictions"
+  },
+  "supplemental_structure_execution": {
+    "started_at": "2026-10-03T00:11:59.4778898+08:00",
+    "finished_at": "2026-10-03T00:12:00.5592323+08:00",
+    "elapsed_seconds": 1.0813425,
+    "exit_code": 0,
+    "command": "python verification/describe_cohort_selection.py",
+    "entrypoint_note": "Appended to run_all after the completed numerical run; executed separately against its freshly generated cache and record cohorts"
+  },
+  "working_repository": "D:\\hiy132\u7248\u672csci\\\u65b0\u5efa\u6587\u4ef6\u5939\\ApisTox_Complete_English_Submission_Support_Package\\ApisTox_Complete_English_Submission_Support_Package\\revision_20261001\\repo",
+  "isolated_rerun": "D:\\ApisTox_revision_e2e_20261002",
+  "scripts_completed": [
+    "00",
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "09",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14"
+  ],
+  "revision_verifier_completed": true,
+  "crossover_nesting_verifier_completed": true,
+  "cohort_structure_verifier_completed": true,
+  "cohort_structure_independent_raw_smiles_maxima_checked": 3105,
+  "entrypoint_update_after_numerical_run": "check_crossover_nesting.py and describe_cohort_selection.py were appended to run_all after the 00-14 run and executed separately on its fresh outputs; numerical scripts were unchanged",
+  "initial_numerical_entrypoint_sha256": "746a7a830fed0fb04bee2712100e41ca166e169c1a0cf44eaec6fcf76113e4c3",
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.3",
+    "pandas": "3.0.1",
+    "scipy": "1.18.1",
+    "rdkit": "2025.9.4",
+    "scikit-learn": "1.8.0"
+  },
+  "comparison_policy": {
+    "numeric_absolute_tolerance": 1e-12,
+    "numeric_relative_tolerance": 0,
+    "CSV": "same shapes, columns, row order, text and missing-value pattern",
+    "arrays": "same shapes/keys and missing-value patterns; all stored bootstrap arrays included"
+  },
+  "compared_file_count": 144,
+  "regenerated_file_count": 140,
+  "status_counts": {
+    "byte_identical": 97,
+    "metadata_only": 6,
+    "numeric_tolerance": 14,
+    "value_identical": 24,
+    "not_regenerated": 2,
+    "metadata_with_numeric_roundoff": 1
+  },
+  "regenerated_status_counts": {
+    "byte_identical": 95,
+    "metadata_only": 6,
+    "numeric_tolerance": 14,
+    "value_identical": 24,
+    "metadata_with_numeric_roundoff": 1
+  },
+  "max_absolute_scientific_difference": 4.159450561758149e-13,
+  "failures": [],
+  "analysis_code_changed_since_copy": [],
+  "analysis_code_sha256": {
+    "code/00_validate_and_describe.py": "1bfe4ed4888b01883bb1420b5198ff6b380c7730cb108197c81b8e13f13066c9",
+    "code/01_primary_endpoint_models.py": "e0e6f4a94f544399b73f7af42c10c5abd6948863e5001a61dd12cf58d31f954a",
+    "code/02_metadata_decomposition.py": "03b7641cd318e151042d888ffd44e141a90670145c1233ce962b1d1676a632be",
+    "code/03_matched_learning_curves.py": "f10d56996633524e12ff41b5c7a39fb42496fd3c82404b7f4c53bcb3788e0db3",
+    "code/04_conditional_neighborhood.py": "04248949e22c6cf3d7a94a2b200f6382a26712f8cf9148b5ed39bcc7125a54c2",
+    "code/05_scaffold_sensitivity.py": "2b44878de9a4e115d54050528b8b3d521669be2fe9db18972c4166a945638a48",
+    "code/06_novelty_calibration.py": "7dc86328a7315d6efe008755bc14cdcb6de0cd9a68d34bd48072ae1c07da4a53",
+    "code/07_sparse_descriptors_supplementary.py": "fb5ced8865a71e66f4201cb498382f53adbc0cded1b1eae228f00745fcdce75f",
+    "code/08_sensitivity_diagnostics.py": "5f017e89800d027d86e8bcb9c163adb5db9db023ff6b7ac3de7a561ead2538d6",
+    "code/09_export_submission_tables.py": "c69fd3f90ee0bd27e750f1d9f1c3fcaaf74aea8724515c266bc0e1788aa32aae",
+    "code/10_tier_boundary_diagnostics.py": "2818216f9c5fab3cba5e69f889d35f0025cc44ac77d7e0af5b1756e51b3d31c6",
+    "code/11_qualifier_propagation_audit.py": "5c0eca36a35930f2857dc30d3570cc0b5acd9a7cdffd55897075cb0c1f71d98f",
+    "code/12_label_rule_audit.py": "08ed65467008b175ea43ff3ec686badbf448d18dd4712f85b0d8527ea91b9882",
+    "code/13_corrected_label_crossover.py": "4c37a46577d121087c42784cee6ceefa1c7d2e578fe3e7615324dd2fd6a76d27",
+    "code/14_record_case_audit.py": "71ff6f41697883969af1163c06834794df57a8dd5d3d5d0e70530c3de45f5124",
+    "code/_cache_validation.py": "db837897d765f28c08037a17a5243ffaf8ed6f73f8979d1d1ce475c6aa680bc4",
+    "code/_common.py": "13ba3d68ba313a20f3b0eaeeffb992a5bcbb904f31dd81c1470f204f6d16a3a8",
+    "code/run_all_analysis.py": "d8e24acc41c4374c81e0570247b3e11bb1c9e46c0712a3fa23383e394efb0dca",
+    "verification/verify_revision.py": "cdcdaa0b8c0e9d57c8821745be6a6404a158cb3bc915b96ac39cbd974d3a2141",
+    "verification/check_crossover_nesting.py": "74ddda07663678b57443d382d61bcf4d599d9265ae1adfb863303c7500f28d44",
+    "verification/describe_cohort_selection.py": "d197f9730460d8fc705ddce3c311b88a45fe4e13a213893bf9cb0c8d3cf411a0",
+    "requirements-analysis.txt": "2f160cd888abac356b74e03db1de9173af31590b74e3a646ef9edcc64bda98c8"
+  },
+  "separate_not_regenerated": [
+    "results/record_audit/INDEPENDENT_VALIDATION.json",
+    "results/record_audit/UPSTREAM_PIN_CHECK.json",
+    "source_data/figure_external_reassessment.csv",
+    "source_data/figure_label_rule_comparison.csv"
+  ],
+  "log_sha256": "841273e2d5d93490309e3950bc802ccc40e21e5c6bbf73d8ae2a7e83dde4b2e5",
+  "nesting_log_sha256": "bf6225a4d41be6135ecd3be48b150e41fc5b80edb9f4ca3e25a6ab6f620daaac",
+  "structure_log_sha256": "9e25565045e114a2ed6192193179f9e48d7317c44617a72f2043f475939cf564",
+  "historical_descriptor_python": "3.12.14",
+  "current_descriptor_python": "3.12.13",
+  "limits": [
+    "The optional upstream network pin check and separate record-workbook validation are not rerun by the offline numerical entry point.",
+    "Separate figure/external source_data artifacts retained during copying are not counted as regenerated.",
+    "Manuscript compilation, figure rendering and external study acquisition are outside this numerical rerun."
+  ]
+}

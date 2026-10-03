@@ -4,6 +4,7 @@ Inputs are the saved CSV files written by code/10_tier_boundary_diagnostics.py
 and code/11_qualifier_propagation_audit.py. No model is fitted here.
 """
 from pathlib import Path
+import re
 
 import pandas as pd
 
@@ -36,6 +37,8 @@ def longtable(title, spec, head, rows, note, size=r'\small', sep='4pt'):
     add(r'\begingroup' + size + r'\setlength{\tabcolsep}{' + sep + '}')
     add(r'\begin{longtable}{' + spec + '}')
     add(r'\toprule ' + head + r' \\ \midrule\endfirsthead')
+    number = re.search(r'Supplementary Table (S\d+[a-z]?)', title).group(1)
+    add(r'\multicolumn{' + str(head.count('&') + 1) + r'}{l}{\textit{Supplementary Table ' + number + r' (continued)}} \\')
     add(r'\toprule ' + head + r' \\ \midrule\endhead')
     add(r'\midrule\multicolumn{' + str(head.count('&') + 1) +
         r'}{r}{Continued on next page}\endfoot\bottomrule\endlastfoot')
@@ -56,7 +59,7 @@ for sp in SPLITS:
                 cells.append(f3(r.AUROC))
             key = q[(q.HigherTier == 1) & (q.LowerTier == 0)].iloc[0]
             rows.append([sp, rep, rf'$\leq{t}$'] + cells + [interval(key.ScaffoldCI_low, key.ScaffoldCI_high)])
-longtable('Supplementary Table S11. Tier-pair AUROC of the saved held-out scores',
+longtable('Supplementary Table S11. Tier-pair AUROC of the saved ECFP and WL-HI held-out scores',
           'lllccccccc',
           r'Split & Rep. & Model & T1$>$T0 & T2$>$T0 & T3$>$T0 & T2$>$T1 & T3$>$T1 & T3$>$T2 & T1$>$T0 95\% CI',
           rows,
@@ -64,7 +67,7 @@ longtable('Supplementary Table S11. Tier-pair AUROC of the saved held-out scores
           r'lower tier, with half credit for ties, computed from the saved scores of the model trained for the stated '
           r'endpoint. The last column gives the scaffold-cluster 95\% percentile interval for the Tier1--Tier0 pair '
           r'(5,000 draws identical to the primary analysis). Intervals for every pair and all five representations are in '
-          r'\texttt{results\_v2/tier\_boundary/01\_tier\_pair\_auroc.csv}.',
+          r'\path{results/tier_boundary/01_tier_pair_auroc.csv}.',
           size=r'\footnotesize', sep='3pt')
 weight_rows = []
 ecfp = pairs[(pairs.Representation == 'ECFP') & (pairs.TrainedFor == 100)]
@@ -77,10 +80,11 @@ for sp in SPLITS:
             cells.append(f3(w) if w > 0 else '--')
         weight_rows.append([sp, rf'$\leq{t}$'] + cells)
 add(r'Composition weights $w_{r\ell}^{(b)}=n_rn_\ell/(n_b^+n_b^-)$ of each tier pair in each endpoint AUROC '
-    r'(Supplementary Eq.~S2); -- marks pairs that do not enter that endpoint.')
+    r'(Supplementary Eq.~S2); -- marks pairs that do not enter that endpoint. Rounded weights need not sum to exactly one.')
 add(r'\begingroup\footnotesize\setlength{\tabcolsep}{3pt}')
 add(r'\begin{longtable}{llcccccc}')
 add(r'\toprule Split & Endpoint & T1$>$T0 & T2$>$T0 & T3$>$T0 & T2$>$T1 & T3$>$T1 & T3$>$T2 \\ \midrule\endfirsthead')
+add(r'\multicolumn{8}{l}{\textit{Supplementary Table S11 (continued)}} \\')
 add(r'\toprule Split & Endpoint & T1$>$T0 & T2$>$T0 & T3$>$T0 & T2$>$T1 & T3$>$T1 & T3$>$T2 \\ \midrule\endhead')
 add(r'\bottomrule\endlastfoot')
 add('\n'.join(' & '.join(r) + r' \\' for r in weight_rows))
@@ -110,9 +114,21 @@ longtable('Supplementary Table S14. Tier1 exclusion for all representations',
           r'without Tier1 training compounds and evaluated on the Tier1-free test set. T1 comp.: No-T1 refit minus '
           r'$\leq100$. Residual: $\leq11$ minus No-T1 refit. The two components add to the $\leq11$ minus $\leq100$ '
           r'contrast. Intervals are scaffold-cluster 95\% percentile intervals over the primary bootstrap draws; '
-          r'molecule-level intervals and the separate evaluation and training components are in '
-          r'\texttt{results\_v2/tier\_boundary/03\_tier1\_exclusion\_decomposition.csv}.',
+          r'This is a descriptive sensitivity decomposition, not a causal effect or a formal bound. Molecule-level intervals are in '
+          r'\path{results/tier_boundary/03_tier1_exclusion_decomposition.csv}.',
           size=r'\footnotesize', sep='3pt')
+add(r'\paragraph{Separate evaluation and refit increments.} Evaluation-only is No-T1 test minus the full-test broad AUROC; refit is No-T1 refit minus No-T1 test. Both use the same primary scaffold draws, generated on original test indices and then filtered to the relevant tiers.')
+add(r'\begingroup\footnotesize\setlength{\tabcolsep}{4pt}\begin{longtable}{llcc}')
+head = r'\toprule Split & Representation & Evaluation-only [95\% CI] & Refit [95\% CI] \\ \midrule'
+add(head + r'\endfirsthead')
+add(r'\multicolumn{4}{l}{\textit{Supplementary Table S14 (continued)}} \\' + head + r'\endhead')
+add(r'\bottomrule\endlastfoot')
+for sp in SPLITS:
+    for rep in REPS:
+        q = comp[(comp.Split == sp) & (comp.Representation == rep) & (comp.Bootstrap == 'ScaffoldCluster')].set_index('Contrast')
+        vals = [f'{f3(q.loc[key,"Estimate"])} [{interval(q.loc[key,"CI_low"], q.loc[key,"CI_high"])}]' for key in ['Evaluation_component','Training_component']]
+        add(' & '.join([sp,rep]+vals)+r' \\')
+add(r'\end{longtable}\endgroup')
 
 # ---------------- S16: concordance by benchmark tier and record source --------
 tier = pd.read_csv(RES / '04_concordance_by_tier.csv')
@@ -129,13 +145,14 @@ longtable('Supplementary Table S16. Route-matched concordance at 100~\\ugbee by 
           rows,
           r'All-three-determinate cohorts of Supplementary Table~S15. B+S$-$: benchmark label $\leq100$ and source '
           r'label $>100$; B$-$S+: the reverse. Censored: disagreements whose source evidence includes a right-censored '
-          r'$>100$~\ugbee value. OFT: OpenFoodTox; OFT 48 h: 48-hour observations only; EPA: the 2022 retrospective.',
+          r'$>100$~\ugbee value. OFT: OpenFoodTox; OFT 48 h: 48-hour observations without material-review flags or explicit test-material dose reports; EPA: the 2022 retrospective. Missing material fields do not establish pure active-ingredient dosing.',
           size=r'\footnotesize', sep='3pt')
 src = pd.read_csv(RES / '05_concordance_by_record_source.csv')
 add(r'Disagreements at 100~\ugbee by the benchmark record source (the database that supplied the ApisTox label).')
 add(r'\begingroup\footnotesize\setlength{\tabcolsep}{4pt}')
 add(r'\begin{longtable}{llrrrr}')
 add(r'\toprule Source & Benchmark record & $n$ & Disagree & Tier1 $n$ & Tier1 disagree \\ \midrule\endfirsthead')
+add(r'\multicolumn{6}{l}{\textit{Supplementary Table S16 (continued)}} \\')
 add(r'\toprule Source & Benchmark record & $n$ & Disagree & Tier1 $n$ & Tier1 disagree \\ \midrule\endhead')
 add(r'\bottomrule\endlastfoot')
 add('\n'.join(' & '.join([r.Source, r.Benchmark_record_source, str(r.n), str(r.Disagree_100), str(r.n_Tier1),
@@ -156,11 +173,11 @@ longtable('Supplementary Table S17. Inequality qualifiers in the label-determini
           rows,
           r'The upstream ECOTOX labelling was replicated from the cached ApisTox ECOTOX export and reproduced the label '
           r'and ternary level of all 441 ECOTOX-derived benchmark compounds. For each compound, the label-determining '
-          r'record group (the exposure route with the lowest median) was re-read with its operator column. Any $>$: '
+          r'historical record group (the exposure route originally selected by the lowest numerical median) was re-read with its operator column. Any $>$: '
           r'group contains at least one right-censored record; $>$ at $\geq100$: a right-censored record at or above '
-          r'100~\ugbee. The last three columns give the qualifier-aware label at 100~\ugbee, which requires every record '
-          r'of the group to fall determinately on one side of the cut-off. Compound-level rows are in '
-          r'\texttt{results\_v2/tier\_boundary/06\_ecotox\_qualifier\_propagation.csv}.',
+          r'100~\ugbee. The last three columns use the conservative qualifier-aware unanimous-record rule (rule C), which requires every record '
+          r'of the group to fall determinately on the same side of the cut-off. This changes both qualifier handling and the original median aggregation; it does not reselect a corrected route. Rules A--D and all three cut-offs are separated in Supplementary Tables~S22a--b. Compound-level rows are in '
+          r'\path{results/tier_boundary/06_ecotox_qualifier_propagation.csv}.',
           size=r'\footnotesize', sep='4pt')
 
 OUT.write_text('\n\n'.join(lines) + '\n', encoding='utf-8')

@@ -163,7 +163,7 @@ def save(fig, stem, align=None, tick_gap_axis=None):
 # --------------------------------------------------------------------------
 perf = pd.read_csv(DATA / 'figure_primary_data.csv', dtype={'endpoint': str})
 # Model decomposition is read from the frozen analysis output so that every
-# prespecified baseline, including the source-and-route model, is shown.
+# designated baseline, including the source-and-route model, is shown.
 _mdl = pd.read_csv(RES / 'decomposition' / '04_model_decomposition_performance.csv')
 _MDL_NAME = {'OriginRoute': 'Source + route',
              'AgrochemicalFlags': 'Agrochemical flags',
@@ -230,8 +230,8 @@ ax_fig1a = ax  # its panel label is placed once panel b fixes the shared offset
 ax.set_xlim(-14, N_TOT + 14)
 ax.set_ylim(-2.28, 1.30)
 ax.axis('off')
-header(ax, 'Nested endpoints are cut from one fixed compound set',
-       f'{N_TOT:,} ApisTox compounds ordered by regulatory severity tier',
+header(ax, 'Nested endpoint labels on one fixed compound set',
+       f'{N_TOT:,} ApisTox compounds ordered by benchmark annotation tier',
        y_main=1.10, y_sub=1.00)
 
 # insecticide share strip
@@ -315,7 +315,7 @@ panel(ax, 'c', x=-0.07, y=1.24)
 ax.set_xlim(0, 1)
 ax.set_ylim(0, 1)
 ax.axis('off')
-header(ax, 'Audit workflow', 'same compounds, splits and learners throughout',
+header(ax, 'Audit workflow', 'paired baseline; defined diagnostic subsets',
        y_main=1.14, y_sub=1.03)
 steps = [
     ('1', 'Endpoint contrasts', 'five representations; paired scaffold bootstrap',
@@ -324,7 +324,7 @@ steps = [
      '#B8860B'),
     ('3', 'Tier-boundary localization', 'tier-pair AUROC; Tier1 exclusion',
      '#009E73'),
-    ('4', 'Label provenance', 'regulatory concordance; qualifier-aware relabelling',
+    ('4', 'Label provenance and correction', 'record rules; matched-label correction tests',
      C_EP['1']),
     ('5', 'Unseen identities', 'structure-only predictions; default decisions',
      '#6B6B6B'),
@@ -731,12 +731,17 @@ save(fig, 'FigS3_structural_diagnostics', align={'require_panel_labels': False},
 # Figure 5 - label provenance at the 100 ug/bee cut-off
 # --------------------------------------------------------------------------
 conc = pd.read_csv(DATA / 'figure_concordance_by_tier.csv')
-qual = pd.read_csv(DATA / 'figure_qualifier_propagation.csv')
+rules = pd.read_csv(RES / 'label_audit/03_rule_transition_counts.csv')
+qual = rules[(rules['filter'] == 'all') & (rules.routes == 'fixed')
+             & (rules.threshold == 100) & (rules.Tier.astype(str) == '1')].copy()
+assert set(qual.rule) == {'A', 'B', 'C', 'D'} and (qual.n == 212).all()
+assert (qual[['positive', 'unresolved', 'negative']].sum(axis=1) == qual.n).all()
+qual.to_csv(DATA / 'figure_label_rule_comparison.csv', index=False)
 SOURCES = [('OFT', 'OpenFoodTox', '#0072B2', 'o'),
            ('OFT 48 h', 'OpenFoodTox, 48 h', '#56B4E9', 's'),
            ('EPA', 'EPA review', '#E69F00', 'D')]
 fig = plt.figure(figsize=(W2, 3.05))
-gs5 = fig.add_gridspec(1, 2, width_ratios=[1.0, 1.06], wspace=0.40)
+gs5 = fig.add_gridspec(1, 2, width_ratios=[1.0, 1.06], wspace=0.66)
 
 ax = fig.add_subplot(gs5[0, 0])
 panel(ax, 'a', x=-0.20, y=1.22)
@@ -753,8 +758,8 @@ for key, _lab, col, mk in SOURCES:
                    edgecolor='white', linewidth=0.5, zorder=3)
 n_by = {(k, t): int(conc[(conc.Source == k) & (conc.Tier == t)].n.iloc[0])
         for k, *_ in SOURCES for t in range(4)}
-ax.set_xticks(range(4), [f'Tier{t}\n' + ' · '.join(str(n_by[(k, t)]) for k, *_ in SOURCES)
-                         for t in range(4)], fontsize=7.0)
+ax.set_xticks(range(4), [f'Tier{t}\n' + '/'.join(str(n_by[(k, t)]) for k, *_ in SOURCES)
+                         for t in range(4)], fontsize=6.8)
 ax.set_xlim(-0.6, 3.6)
 ax.set_ylim(0, 106)
 ax.set_yticks([0, 25, 50, 75, 100])
@@ -772,31 +777,30 @@ ax.legend(handles=[Line2D([0], [0], marker=mk, lw=0, color=col, markersize=4.6,
 
 ax = fig.add_subplot(gs5[0, 1])
 panel(ax, 'b', x=-0.30, y=1.22)
-CATS = [('interval_label_100_positive', '≤100 µg/bee', '#4D4D4D', 'white'),
-        ('interval_label_100_unresolved', 'Unresolved', '#CFCFCF', INK),
-        ('interval_label_100_negative', '>100 µg/bee', C_EP['1'], 'white')]
+CATS = [('positive', 'Positive', '#4D4D4D', 'white'),
+        ('unresolved', 'Unresolved', '#CFCFCF', INK),
+        ('negative', 'Negative', C_EP['1'], 'white')]
 ys = np.arange(4)[::-1]
-for y0, t in zip(ys, range(4)):
-    r = qual[qual.Tier == t].iloc[0]
-    n = int(r.n_ecotox_compounds)
+for y0, rule in zip(ys, ['A', 'B', 'C', 'D']):
+    r = qual[qual.rule == rule].iloc[0]
+    n = int(r.n)
     left = 0.0
     for col_name, _lab, col, txt in CATS:
         v = 100 * r[col_name] / n
         ax.barh(y0, v, left=left, height=0.62, color=col, edgecolor='white', lw=0.6)
-        if v >= 9:
+        if v >= 6:
             ax.text(left + v / 2, y0, str(int(r[col_name])), ha='center', va='center',
                     fontsize=6.6, color=txt)
         left += v
-ax.set_yticks(ys, [f'Tier{t}  (n = {int(qual[qual.Tier == t].n_ecotox_compounds.iloc[0])})'
-                   for t in range(4)], fontsize=7.0)
-ax.get_yticklabels()[1].set_fontweight('bold')
+ax.set_yticks(ys, ['A: Numeric median', 'B: Numeric consensus',
+                  'C: Interval consensus', 'D: Interval median'], fontsize=7.0)
 ax.set_xlim(0, 100)
 ax.set_xticks([0, 25, 50, 75, 100])
-ax.set_xlabel('ECOTOX-derived benchmark compounds (%)')
+ax.set_xlabel('Tier1 compounds (%)')
 ax.tick_params(axis='y', length=0)
 trim(ax, keep_left=False)
-header(ax, 'Labels at ≤100 µg/bee with qualifiers kept',
-       'label-determining ECOTOX records; counts in bars', y_main=1.13, y_sub=1.035)
+header(ax, 'Qualifier and aggregation effects',
+       'Same 212 Tier1 groups; counts in bars', y_main=1.13, y_sub=1.035)
 ax.legend(handles=[plt.Rectangle((0, 0), 1, 1, color=col, label=lab)
                    for _c, lab, col, _t in CATS],
           frameon=False, ncol=3, loc='upper center', bbox_to_anchor=(0.45, -0.24),

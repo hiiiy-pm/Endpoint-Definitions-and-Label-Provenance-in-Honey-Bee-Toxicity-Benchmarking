@@ -211,7 +211,7 @@ def export(input_results: Path, baseline_dir: Path, output_results: Path,
     cm["model"] = cm.model.map(MODEL_NAMES)
     if cm.model.isna().any():
         raise ValueError("Unknown decomposition model name")
-    csv(cm, "figure_model_decomposition.csv", [paths["model"]], "All five prespecified model baselines, including source+route", True)
+    csv(cm, "figure_model_decomposition.csv", [paths["model"]], "All five designated model baselines, including source+route", True)
     curve = data["curve"][["Split", "Threshold", "n_per_class", "AUROC"]].copy()
     curve.columns = ["split", "endpoint", "n", "auroc"]
     csv(curve, "figure_learning_curve_raw.csv", [paths["curve"]], "All repeat-level AUROC rows in original order; n is compounds per class", True)

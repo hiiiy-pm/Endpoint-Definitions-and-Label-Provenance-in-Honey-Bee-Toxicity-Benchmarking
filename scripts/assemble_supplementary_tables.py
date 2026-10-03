@@ -1,7 +1,7 @@
 """Assemble all supplementary tables in numerical order (first-citation order).
 
 The table generators write their tables into four files. This script splits the
-files into single-table blocks, checks that S1-S20 are each present exactly
+files into single-table blocks, checks that S1-S24 are each present exactly
 once, and writes them in numerical order to supplementary_tables_ordered.tex,
 which the Supplementary Information source inputs.
 """
@@ -11,8 +11,8 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 TABLES = ROOT / 'output' / 'latex_tables'
 SOURCES = ['supp_tables.tex', 'supp_tables_external.tex', 'supp_tables_source_holdout.tex',
-           'supp_tables_tier_boundary.tex']
-HEADER = re.compile(r'(?:\\Needspace\{[^}]*\})?(?:\\clearpage)?\\subsection\*\{Supplementary Table S(\d+)([ab]?)\.')
+           'supp_tables_tier_boundary.tex', 'supp_tables_revision.tex']
+HEADER = re.compile(r'(?:\\Needspace\{[^}]*\})?(?:\\clearpage)?\\subsection\*\{Supplementary Table S(\d+)([a-z]?)\.')
 
 blocks = {}
 for name in SOURCES:
@@ -34,8 +34,8 @@ for name in SOURCES:
         blocks[key] = block
 
 numbers = sorted({k[0] for k in blocks})
-if numbers != list(range(1, 21)):
-    raise SystemExit(f'Supplementary tables must be S1-S20 without gaps; found {numbers}')
+if numbers != list(range(1, 25)):
+    raise SystemExit(f'Supplementary tables must be S1-S24 without gaps; found {numbers}')
 ordered = [blocks[k] for k in sorted(blocks)]
 (TABLES / 'supplementary_tables_ordered.tex').write_text('\n\n'.join(ordered) + '\n', encoding='utf-8')
 print('Assembled', len(ordered), 'supplementary table blocks:',

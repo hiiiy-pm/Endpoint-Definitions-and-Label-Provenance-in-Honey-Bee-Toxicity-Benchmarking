@@ -32,45 +32,103 @@ Time & Descriptors12 & 0.390 & 0.567 & 0.650 \\
 \midrule\multicolumn{5}{r}{Continued on next page}\\\endfoot
 \bottomrule\endlastfoot
 Random & Agrochemical flags & 0.680 & 0.858 & 0.909 \\
+Random & Source $+$ route & 0.538 & 0.554 & 0.594 \\
 Random & All metadata & 0.654 & 0.874 & 0.913 \\
 Random & ECFP structure & 0.718 & 0.848 & 0.917 \\
 Random & Structure $+$ metadata & 0.732 & 0.891 & 0.958 \\
 \addlinespace
 MaxMin & Agrochemical flags & 0.626 & 0.784 & 0.884 \\
+MaxMin & Source $+$ route & 0.525 & 0.562 & 0.473 \\
 MaxMin & All metadata & 0.586 & 0.811 & 0.865 \\
 MaxMin & ECFP structure & 0.592 & 0.792 & 0.795 \\
 MaxMin & Structure $+$ metadata & 0.638 & 0.858 & 0.929 \\
 \addlinespace
 Time & Agrochemical flags & 0.571 & 0.810 & 0.895 \\
+Time & Source $+$ route & 0.451 & 0.602 & 0.569 \\
 Time & All metadata & 0.560 & 0.805 & 0.894 \\
 Time & ECFP structure & 0.691 & 0.754 & 0.792 \\
 Time & Structure $+$ metadata & 0.667 & 0.847 & 0.943 \\
 \addlinespace
 \end{longtable}
-\subsection*{Supplementary Table S9. Matched training sets at 125 compounds per class}
-\begin{tabularx}{\linewidth}{lCCC}
-\toprule Split & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule
-Random & 0.685 & 0.810 & 0.908 \\
-MaxMin & 0.554 & 0.715 & 0.747 \\
-Time & 0.604 & 0.705 & 0.771 \\
-\bottomrule\end{tabularx}
-\subsection*{Supplementary Table S7. Leave-one-out scaffold-entropy contrasts}
-\begin{longtable}{llllcc}
-\toprule Minimum size & Weighting & Contrast & Estimate & 95\% CI low & 95\% CI high \\ \midrule\endfirsthead
-\multicolumn{6}{l}{\textit{Supplementary Table S7 (continued)}} \\
-\toprule Minimum size & Weighting & Contrast & Estimate & 95\% CI low & 95\% CI high \\ \midrule\endhead
-\midrule\multicolumn{6}{r}{Continued on next page}\\\endfoot
+Fusion contrasts below use scaffold-cluster 95\% simultaneous intervals within each split and endpoint. The family contains structure minus metadata, fusion minus metadata and fusion minus structure; it is separate from the endpoint-contrast family. All 5,000 draws are valid for these contrasts.
+\begin{longtable}{llccc}
+\toprule Split & Endpoint & Contrast & $\Delta$AUROC & 95\% simultaneous CI \\ \midrule\endfirsthead
+\multicolumn{5}{l}{\textit{Supplementary Table S5 (continued)}} \\
+\toprule Split & Endpoint & Contrast & $\Delta$AUROC & 95\% simultaneous CI \\ \midrule\endhead
+\midrule\multicolumn{5}{r}{Continued on next page}\\\endfoot
 \bottomrule\endlastfoot
-n$\geq$3 & Scaffold--equal & T2$-$T1 & -0.066 & -0.199 & 0.091 \\
-n$\geq$3 & Scaffold--equal & T2$-$T3 & -0.042 & -0.192 & 0.113 \\
-n$\geq$3 & Paired shared--scaffold & T2$-$T1 & -0.217 & -0.314 & -0.116 \\
-n$\geq$3 & Paired shared--scaffold & T2$-$T3 & -0.095 & -0.195 & -0.006 \\
-n$\geq$5 & Scaffold--equal & T2$-$T1 & -0.130 & -0.285 & 0.039 \\
-n$\geq$5 & Scaffold--equal & T2$-$T3 & -0.111 & -0.254 & 0.036 \\
-n$\geq$5 & Paired shared--scaffold & T2$-$T1 & -0.102 & -0.200 & -0.011 \\
-n$\geq$5 & Paired shared--scaffold & T2$-$T3 & -0.127 & -0.234 & -0.013 \\
+Random & 100 & Structure--metadata & 0.063 & -0.056 to 0.183 \\
+Random & 100 & Fusion--metadata & 0.078 & -0.042 to 0.198 \\
+Random & 100 & Fusion--structure & 0.015 & -0.105 to 0.134 \\
+Random & 11 & Structure--metadata & -0.026 & -0.085 to 0.033 \\
+Random & 11 & Fusion--metadata & 0.017 & -0.042 to 0.076 \\
+Random & 11 & Fusion--structure & 0.043 & -0.016 to 0.102 \\
+Random & 1 & Structure--metadata & 0.004 & -0.067 to 0.076 \\
+Random & 1 & Fusion--metadata & 0.045 & -0.027 to 0.116 \\
+Random & 1 & Fusion--structure & 0.041 & -0.031 to 0.112 \\
+MaxMin & 100 & Structure--metadata & 0.006 & -0.124 to 0.137 \\
+MaxMin & 100 & Fusion--metadata & 0.053 & -0.078 to 0.183 \\
+MaxMin & 100 & Fusion--structure & 0.046 & -0.084 to 0.176 \\
+MaxMin & 11 & Structure--metadata & -0.019 & -0.117 to 0.079 \\
+MaxMin & 11 & Fusion--metadata & 0.047 & -0.052 to 0.145 \\
+MaxMin & 11 & Fusion--structure & 0.066 & -0.033 to 0.164 \\
+MaxMin & 1 & Structure--metadata & -0.070 & -0.210 to 0.071 \\
+MaxMin & 1 & Fusion--metadata & 0.064 & -0.077 to 0.205 \\
+MaxMin & 1 & Fusion--structure & 0.134 & -0.007 to 0.274 \\
+Time & 100 & Structure--metadata & 0.131 & -0.020 to 0.282 \\
+Time & 100 & Fusion--metadata & 0.107 & -0.044 to 0.258 \\
+Time & 100 & Fusion--structure & -0.024 & -0.175 to 0.127 \\
+Time & 11 & Structure--metadata & -0.051 & -0.184 to 0.082 \\
+Time & 11 & Fusion--metadata & 0.042 & -0.091 to 0.176 \\
+Time & 11 & Fusion--structure & 0.093 & -0.040 to 0.227 \\
+Time & 1 & Structure--metadata & -0.101 & -0.231 to 0.028 \\
+Time & 1 & Fusion--metadata & 0.050 & -0.080 to 0.179 \\
+Time & 1 & Fusion--structure & 0.151 & 0.021 to 0.281 \\
 \end{longtable}
-\subsection*{Supplementary Table S2. Scaffold-cluster paired endpoint contrasts for all representations}
+\subsection*{Supplementary Table S9. Mean AUROC and training-subsample ranges at 125 compounds per class}
+Cells give means and 2.5th--97.5th percentile ranges across 200 repeated balanced training subsamples. The test identities are fixed. These ranges describe training-subsample variability and are not independent-test confidence intervals; Figure~4a uses medians.
+\begin{longtable}{lccc}
+\toprule Split & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
+\multicolumn{4}{l}{\textit{Supplementary Table S9 (continued)}} \\
+\toprule Split & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
+\midrule\multicolumn{4}{r}{Continued on next page}\\\endfoot
+\bottomrule\endlastfoot
+Random & 0.685 [0.620, 0.746] & 0.810 [0.765, 0.847] & 0.908 [0.892, 0.927] \\
+MaxMin & 0.554 [0.505, 0.604] & 0.715 [0.669, 0.760] & 0.747 [0.691, 0.793] \\
+Time & 0.604 [0.542, 0.663] & 0.705 [0.632, 0.761] & 0.771 [0.715, 0.820] \\
+\end{longtable}
+\begin{longtable}{llccc}
+\toprule Split & Contrast & Mean $\Delta$AUROC & 2.5th percentile & 97.5th percentile \\ \midrule\endfirsthead
+\multicolumn{5}{l}{\textit{Supplementary Table S9 (continued)}} \\
+\toprule Split & Contrast & Mean $\Delta$AUROC & 2.5th percentile & 97.5th percentile \\ \midrule\endhead
+\midrule\multicolumn{5}{r}{Continued on next page}\\\endfoot
+\bottomrule\endlastfoot
+MaxMin & 11-100 & 0.161 & 0.097 & 0.227 \\
+MaxMin & 1-100 & 0.194 & 0.107 & 0.266 \\
+Random & 11-100 & 0.126 & 0.056 & 0.205 \\
+Random & 1-100 & 0.224 & 0.153 & 0.295 \\
+Time & 11-100 & 0.101 & 0.007 & 0.186 \\
+Time & 1-100 & 0.167 & 0.078 & 0.256 \\
+\end{longtable}
+\subsection*{Supplementary Table S7. Leave-one-out scaffold-entropy contrasts}
+Scaffold-equal and shared-scaffold paired analyses estimate different summaries. The paired analysis restricts to scaffolds containing both compared tiers; its negative contrasts should not be interpreted as confirmation of the scaffold-equal estimand.
+\begin{longtable}{llllccc}
+\toprule Min. size & Weighting & Contrast & Estimate & 95\% CI low & 95\% CI high & Scaffolds \\ \midrule\endfirsthead
+\multicolumn{7}{l}{\textit{Supplementary Table S7 (continued)}} \\
+\toprule Min. size & Weighting & Contrast & Estimate & 95\% CI low & 95\% CI high & Scaffolds \\ \midrule\endhead
+\midrule\multicolumn{7}{r}{Continued on next page}\\\endfoot
+\bottomrule\endlastfoot
+n$\geq$3 & Equal & T2$-$T1 & -0.066 & -0.199 & 0.091 & 42 \\
+n$\geq$3 & Equal & T2$-$T3 & -0.042 & -0.192 & 0.113 & 42 \\
+n$\geq$3 & Paired & T2$-$T1 & -0.217 & -0.314 & -0.116 & 17 \\
+n$\geq$3 & Paired & T2$-$T3 & -0.095 & -0.195 & -0.006 & 8 \\
+n$\geq$5 & Equal & T2$-$T1 & -0.130 & -0.285 & 0.039 & 16 \\
+n$\geq$5 & Equal & T2$-$T3 & -0.111 & -0.254 & 0.036 & 16 \\
+n$\geq$5 & Paired & T2$-$T1 & -0.102 & -0.200 & -0.011 & 10 \\
+n$\geq$5 & Paired & T2$-$T3 & -0.127 & -0.234 & -0.013 & 6 \\
+\end{longtable}
+\subsection*{Supplementary Table S2. Scaffold-cluster simultaneous intervals for the two-contrast family within each representation and split}
+All 5,000 bootstrap draws are valid for every reported contrast (zero single-class draws). Intervals are simultaneous only within the two stated contrasts for each representation and split.
 \begin{longtable}{llcccc}
 \toprule Split & Representation & Contrast & $\Delta$AUROC & 95\% CI low & 95\% CI high \\ \midrule\endfirsthead
 \multicolumn{6}{l}{\textit{Supplementary Table S2 (continued)}} \\
@@ -153,6 +211,7 @@ Time & Descriptors12 & $\leq1-\leq100$ & 0.260 & 0.055 to 0.465 \\
 \addlinespace
 \end{longtable}
 \subsection*{Supplementary Table S4. Test AUROC for additional learners on ECFP4 bits}
+Point-estimate sensitivity. Logistic regression selects $C$ by five-fold training-only AUROC; the selected values at 100/11/1 are 0.10/0.10/0.10 for Random and 0.01/0.10/0.10 for MaxMin and Time. Random forest uses 500 trees and \texttt{balanced\_subsample} weights; details are in Supplementary Table~S21a.
 \begin{longtable}{llccc}
 \toprule Split & Learner & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
 \multicolumn{5}{l}{\textit{Supplementary Table S4 (continued)}} \\
@@ -170,6 +229,7 @@ Time & Random forest & 0.719 & 0.750 & 0.819 \\
 \addlinespace
 \end{longtable}
 \subsection*{Supplementary Table S12. Cross-endpoint evaluation (rows: endpoint the model was trained for; columns: endpoint whose labels were used for evaluation)}
+Cells give AUROC and 95\% scaffold-cluster percentile intervals from 2,000 draws. Each off-diagonal entry reuses the row model\textquotesingle s score vector; no model is refitted for the column labels.
 \begin{longtable}{lllccc}
 \toprule Split & Representation & Trained for & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
 \multicolumn{6}{l}{\textit{Supplementary Table S12 (continued)}} \\

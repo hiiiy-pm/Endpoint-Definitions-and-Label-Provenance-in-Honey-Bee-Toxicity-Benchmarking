@@ -92,11 +92,19 @@ check('all10_candidates_90scores',len(allpred)==90 and allpred.compound_id.nuniq
 check('external_inputs_are_structure_only',all(set(pd.read_csv(f/f'predictions/{d}/structure_only_input.csv').columns)<= {'compound_id','SMILES','name','inchikey','CAS','source'} for d in ['initial8','added2']))
 check('default_contact_11_all_missed',case[(case.route=='contact')&(case.threshold==11)&(case.experimental_label==1)].predicted_label.eq(0).all())
 check('default_oral_severe_all_missed',case[(case.route=='oral')&case.threshold.isin([1,11])&(case.experimental_label==1)].predicted_label.eq(0).all())
-# Supplementary tables S1-S20 appear once each, in citation order.
+# Independently specified revision inventory: 38 table blocks, S1-S24.
+# Match subsection titles only, so citations and continuation headers do not
+# masquerade as additional table blocks. Do not infer expectations from the
+# generated file or its assembly script.
 ordered=(ROOT/'output/latex_tables/supplementary_tables_ordered.tex').read_text(encoding='utf-8')
-found=re.findall(r'Supplementary Table S(\d+[ab]?)\.',ordered)
-expected=[str(i) for i in range(1,18)]+['18a','18b','19a','19b','20']
-check('supp_tables_complete_and_ordered',found==expected)
+found=re.findall(r'\\subsection\*\{Supplementary Table S(\d+[a-z]*)\.',ordered)
+expected=[str(i) for i in range(1,18)]+[
+ '18a','18b','19a','19b','19c','19d','20',
+ '21a','21b','21c','21d','22a','22b','22c','23a','23b',
+ '24a','24b','24c','24d','24e',
+]
+check('supp_tables_complete_and_ordered',
+      len(found)==38 and len(set(found))==38 and found==expected)
 # Figure source data and figure QA reports.
 csv=pd.read_csv(ROOT/'source_data/figure_external_reassessment.csv')
 check('all_24_paired_figure_rows',len(csv)==48 and csv.groupby(['block','split','comparison']).size().eq(2).all())

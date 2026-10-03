@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "input_file_hashes_checked": 12,
+  "ecotox_raw_ordinals_hashes_operators_checked": 828,
+  "external_source_ordinals_hashes_identity_routes_checked": 1070,
+  "OFT_original_workbook_UUID_operator_document_checks": 751,
+  "EPA_original_S1_value_operator_cell_checks": 319,
+  "manual_selected_three_threshold_cases": 7,
+  "method": "Separate read-only validation command: direct source-row hashes and original workbook cells, independently specified case labels. Code14 separately compares 2646 C/D labels with exact rational open/closed interval arithmetic.",
+  "deterministic_offline_rerun_files_unchanged": 19
+}

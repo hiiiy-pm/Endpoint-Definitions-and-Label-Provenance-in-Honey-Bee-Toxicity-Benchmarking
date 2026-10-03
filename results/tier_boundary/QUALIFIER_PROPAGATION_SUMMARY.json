@@ -4,6 +4,8 @@
   "benchmark_ecotox_compounds": 441,
   "replicated_compounds": 441,
   "replication_label_and_level_match": 441,
+  "replication_route_match": 441,
+  "historical_exact_11_boundary": "min=11,max>11 is negative; a singleton/all-exact-11 group is positive; not the corrected interval rule",
   "tier1": {
     "Tier": 1,
     "n_ecotox_compounds": 212,

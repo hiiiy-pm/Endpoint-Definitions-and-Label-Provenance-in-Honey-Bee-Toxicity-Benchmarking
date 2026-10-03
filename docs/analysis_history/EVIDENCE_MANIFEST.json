@@ -1,0 +1,98 @@
+[
+  {
+    "archive": "ApisTox_第二轮优化完整包.zip",
+    "archive_sha256": "5a4922c0b63400db99029a7232772ecd06adfdad33db696b18abd9c41d1dbf71",
+    "member": "ApisTox_第二轮优化完整包/03_报告/optimization_report.md",
+    "zip_stored_datetime": [
+      2026,
+      8,
+      28,
+      5,
+      1,
+      2
+    ],
+    "timestamp_scope": "ZIP local timestamp; timezone and immutable creation time not independently established",
+    "sha256": "d18aff590af64653fdd62ab3888bb843bbf4fd32c2ff41793817f284d1eef6de",
+    "extracted": "early_optimization_report.md"
+  },
+  {
+    "archive": "ApisTox_第二轮优化完整包.zip",
+    "archive_sha256": "5a4922c0b63400db99029a7232772ecd06adfdad33db696b18abd9c41d1dbf71",
+    "member": "ApisTox_第二轮优化完整包/02_结果/latest_model_comparison.csv",
+    "zip_stored_datetime": [
+      2026,
+      8,
+      28,
+      5,
+      1,
+      2
+    ],
+    "timestamp_scope": "ZIP local timestamp; timezone and immutable creation time not independently established",
+    "sha256": "00bc8c786e597780f7ca41e25be7c0432b4619dcb6e4640c5d9987da25c39091",
+    "extracted": "early_latest_model_comparison.csv"
+  },
+  {
+    "archive": "ApisTox_Final_Paper_Package_v1.zip",
+    "archive_sha256": "beb2a22b4ef4f5db016ae57891ed8d9a92086ac6d98ef274090da02fb4e47543",
+    "member": "ApisTox_Final_Paper_Package_v1/README.md",
+    "zip_stored_datetime": [
+      2026,
+      8,
+      28,
+      17,
+      29,
+      14
+    ],
+    "timestamp_scope": "ZIP local timestamp; timezone and immutable creation time not independently established",
+    "sha256": "8326a579cbd57969bb88f64a88eba8b8249121ec67bf92deac891345494b8719",
+    "extracted": "freeze_README.md"
+  },
+  {
+    "archive": "ApisTox_Final_Paper_Package_v1.zip",
+    "archive_sha256": "beb2a22b4ef4f5db016ae57891ed8d9a92086ac6d98ef274090da02fb4e47543",
+    "member": "ApisTox_Final_Paper_Package_v1/docs/PAPER_WRITING_MASTER.md",
+    "zip_stored_datetime": [
+      2026,
+      8,
+      28,
+      17,
+      29,
+      14
+    ],
+    "timestamp_scope": "ZIP local timestamp; timezone and immutable creation time not independently established",
+    "sha256": "6f86d0e381917066ce108a692ba6d8d28bb3c0e48818b072112f758184acf58c",
+    "extracted": "freeze_PAPER_WRITING_MASTER.md"
+  },
+  {
+    "archive": "ApisTox_Final_Paper_Package_v1.zip",
+    "archive_sha256": "beb2a22b4ef4f5db016ae57891ed8d9a92086ac6d98ef274090da02fb4e47543",
+    "member": "ApisTox_Final_Paper_Package_v1/results/stage2/01_representation_robustness.csv",
+    "zip_stored_datetime": [
+      2026,
+      8,
+      28,
+      16,
+      36,
+      48
+    ],
+    "timestamp_scope": "ZIP local timestamp; timezone and immutable creation time not independently established",
+    "sha256": "a6ebca2db1dcca1263010155407d0f19be17160b4717b0692584e839d404c640",
+    "extracted": "freeze_01_representation_robustness.csv"
+  },
+  {
+    "archive": "ApisTox_Final_Paper_Package_v1.zip",
+    "archive_sha256": "beb2a22b4ef4f5db016ae57891ed8d9a92086ac6d98ef274090da02fb4e47543",
+    "member": "ApisTox_Final_Paper_Package_v1/results/mechanism/01_formal_5000_paired_bootstrap.csv",
+    "zip_stored_datetime": [
+      2026,
+      8,
+      28,
+      16,
+      54,
+      38
+    ],
+    "timestamp_scope": "ZIP local timestamp; timezone and immutable creation time not independently established",
+    "sha256": "2c9f38c7e2f785ebefd147424d7b9a4ca8edbe6e8a0c4da21fa726e43d70bc47",
+    "extracted": "freeze_01_formal_5000_paired_bootstrap.csv"
+  }
+]

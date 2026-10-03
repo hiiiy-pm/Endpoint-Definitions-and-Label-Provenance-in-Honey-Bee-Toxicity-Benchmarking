@@ -1,0 +1,5 @@
+filter,routes,threshold,rule,Tier,n,positive,negative,unresolved,no_eligible_record,original_positive,positive_to_negative,negative_to_positive,to_unresolved
+all,fixed,100,A,1,212,212,0,0,0,212,0,0,0
+all,fixed,100,B,1,212,195,0,17,0,212,0,0,17
+all,fixed,100,C,1,212,32,67,113,0,212,67,0,113
+all,fixed,100,D,1,212,37,69,106,0,212,69,0,106

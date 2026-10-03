@@ -1,0 +1,21 @@
+{
+  "interval_boundary_cases": 9,
+  "source_hashes_verified": 8,
+  "source_and_endpoint_count_invariants": true,
+  "overlap_denominators_reconcile": true,
+  "nested_labels_and_unresolved_identity_policy": true,
+  "S1_source_cells_verified": 6,
+  "S4_spot_checks": 2,
+  "OFT_source_rows_verified": 12,
+  "excluded_blocks_and_groups_reconcile": true,
+  "fixed_cohort_disagreement_denominators_reconcile": true,
+  "environment": {
+    "python": "3.12.13 (main, Jul 18 2026, 17:08:38) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\hiy\\.venvs\\apistox\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "pandas": "3.0.1",
+    "numpy": "2.5.3",
+    "openpyxl": "3.1.5",
+    "rdkit": "2025.9.4"
+  }
+}

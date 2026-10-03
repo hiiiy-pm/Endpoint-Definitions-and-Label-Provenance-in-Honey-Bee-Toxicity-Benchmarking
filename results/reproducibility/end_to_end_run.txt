@@ -1,0 +1,1686 @@
+
+=== 00_validate_and_describe.py ===
+{
+  "seed": 20260829,
+  "n_rows": 1035,
+  "n_unique_smiles": 1035,
+  "tier_counts": {
+    "0": 177,
+    "1": 562,
+    "2": 125,
+    "3": 171
+  },
+  "source_counts": {
+    "PPDB": 510,
+    "ECOTOX": 441,
+    "BPDB": 84
+  },
+  "nested_endpoint_invariant": true,
+  "source_csv_sha256": "de4b160a23601a44ac5ec5b23aae95973acba060135630a6df8f73d128baea9e",
+  "cache_validation": {
+    "status": "passed",
+    "provenance": "generation_metadata_v2",
+    "legacy_generation_environment": null
+  },
+  "split_Random": {
+    "train_n": 828,
+    "test_n": 207,
+    "overlap_n": 0,
+    "train_unique_n": 828,
+    "test_unique_n": 207,
+    "union_n": 1035
+  },
+  "split_MaxMin": {
+    "train_n": 828,
+    "test_n": 207,
+    "overlap_n": 0,
+    "train_unique_n": 828,
+    "test_unique_n": 207,
+    "union_n": 1035
+  },
+  "split_Time": {
+    "train_n": 828,
+    "test_n": 207,
+    "overlap_n": 0,
+    "train_unique_n": 828,
+    "test_unique_n": 207,
+    "union_n": 1035
+  }
+}
+
+Tier composition (proportions):
+      agrochemical_flag:fungicide  agrochemical_flag:herbicide  agrochemical_flag:insecticide  agrochemical_flag:other_agrochemical  source:BPDB  source:ECOTOX  source:PPDB  toxicity_type:Contact  toxicity_type:Oral  toxicity_type:Other
+Tier                                                                                                                                                                                                                                        
+0                           0.220                        0.458                          0.090                                 0.169        0.040          0.407        0.554                  0.616               0.254                0.130
+1                           0.237                        0.436                          0.082                                 0.238        0.109          0.377        0.514                  0.623               0.270                0.107
+2                           0.168                        0.200                          0.336                                 0.232        0.008          0.480        0.512                  0.488               0.376                0.136
+3                           0.023                        0.018                          0.719                                 0.135        0.088          0.567        0.345                  0.614               0.275                0.111
+
+Association tests:
+          Variable       Chi2  df        P  CramerV     BH_q
+            source  38.982594   6 0.000001 0.137230 0.000001
+     toxicity_type   9.068510   6 0.169762 0.066189 0.169762
+         herbicide 123.745018   3 0.000000 0.345775 0.000000
+         fungicide  40.187375   3 0.000000 0.197049 0.000000
+       insecticide 338.806170   3 0.000000 0.572144 0.000000
+other_agrochemical  10.767900   3 0.013049 0.101999 0.015659
+
+=== 01_primary_endpoint_models.py ===
+Threshold                1      11     100
+Split  Representation                     
+MaxMin Avalon          0.757  0.769  0.661
+       Descriptors12   0.705  0.671  0.525
+       ECFP            0.795  0.792  0.592
+       MACCS           0.763  0.780  0.601
+       WL-HI           0.832  0.830  0.574
+Random Avalon          0.906  0.841  0.722
+       Descriptors12   0.770  0.687  0.596
+       ECFP            0.917  0.848  0.718
+       MACCS           0.894  0.830  0.663
+       WL-HI           0.927  0.863  0.744
+Time   Avalon          0.753  0.754  0.645
+       Descriptors12   0.650  0.567  0.390
+       ECFP            0.792  0.754  0.691
+       MACCS           0.726  0.686  0.593
+       WL-HI           0.788  0.788  0.665
+
+Primary ECFP bootstrap:
+ Split       Bootstrap Comparison  ObservedDeltaAUROC  PercentileCI_low  PercentileCI_high  SimultaneousCI_low  SimultaneousCI_high  ProbDelta_gt0
+Random        Molecule     11-100              0.1302            0.0082             0.2559             -0.0071               0.2674         0.9824
+Random        Molecule      1-100              0.1991            0.0707             0.3294              0.0618               0.3363         0.9984
+Random ScaffoldCluster     11-100              0.1302           -0.0175             0.2458             -0.0177               0.2780         0.9556
+Random ScaffoldCluster      1-100              0.1991            0.0537             0.3165              0.0512               0.3469         0.9956
+MaxMin        Molecule     11-100              0.2002            0.0858             0.3131              0.0532               0.3471         0.9998
+MaxMin        Molecule      1-100              0.2031            0.0559             0.3434              0.0561               0.3500         0.9964
+MaxMin ScaffoldCluster     11-100              0.2002            0.0914             0.3108              0.0557               0.3447         0.9992
+MaxMin ScaffoldCluster      1-100              0.2031            0.0565             0.3387              0.0586               0.3476         0.9962
+  Time        Molecule     11-100              0.0629           -0.0647             0.1905             -0.0865               0.2123         0.8322
+  Time        Molecule      1-100              0.1013           -0.0355             0.2374             -0.0481               0.2507         0.9222
+  Time ScaffoldCluster     11-100              0.0629           -0.0731             0.1964             -0.0958               0.2215         0.8202
+  Time ScaffoldCluster      1-100              0.1013           -0.0481             0.2395             -0.0573               0.2600         0.9122
+
+Scaffold-cluster primary contrasts, all representations:
+Representation  Split Comparison  ObservedDeltaAUROC  SimultaneousCI_low  SimultaneousCI_high
+          ECFP Random     11-100              0.1302             -0.0177               0.2780
+          ECFP Random      1-100              0.1991              0.0512               0.3469
+        Avalon Random     11-100              0.1187             -0.0225               0.2600
+        Avalon Random      1-100              0.1839              0.0426               0.3252
+         MACCS Random     11-100              0.1662              0.0070               0.3254
+         MACCS Random      1-100              0.2310              0.0718               0.3902
+         WL-HI Random     11-100              0.1193             -0.0188               0.2575
+         WL-HI Random      1-100              0.1836              0.0454               0.3217
+ Descriptors12 Random     11-100              0.0907             -0.0701               0.2515
+ Descriptors12 Random      1-100              0.1745              0.0137               0.3353
+          ECFP MaxMin     11-100              0.2002              0.0557               0.3447
+          ECFP MaxMin      1-100              0.2031              0.0586               0.3476
+        Avalon MaxMin     11-100              0.1077             -0.0561               0.2715
+        Avalon MaxMin      1-100              0.0954             -0.0684               0.2592
+         MACCS MaxMin     11-100              0.1792              0.0180               0.3404
+         MACCS MaxMin      1-100              0.1621              0.0009               0.3233
+         WL-HI MaxMin     11-100              0.2566              0.1163               0.3970
+         WL-HI MaxMin      1-100              0.2589              0.1185               0.3993
+ Descriptors12 MaxMin     11-100              0.1459             -0.0114               0.3032
+ Descriptors12 MaxMin      1-100              0.1800              0.0227               0.3372
+          ECFP   Time     11-100              0.0629             -0.0958               0.2215
+          ECFP   Time      1-100              0.1013             -0.0573               0.2600
+        Avalon   Time     11-100              0.1093             -0.0567               0.2753
+        Avalon   Time      1-100              0.1083             -0.0577               0.2743
+         MACCS   Time     11-100              0.0928             -0.0901               0.2757
+         MACCS   Time      1-100              0.1324             -0.0505               0.3152
+         WL-HI   Time     11-100              0.1226             -0.0413               0.2864
+         WL-HI   Time      1-100              0.1234             -0.0405               0.2872
+ Descriptors12   Time     11-100              0.1778              0.0216               0.3339
+ Descriptors12   Time      1-100              0.2599              0.1038               0.4161
+
+=== 02_metadata_decomposition.py ===
+Model decomposition performance:
+Threshold                   1      11     100
+Split  Model                                 
+MaxMin AgrochemicalFlags  0.884  0.784  0.626
+       AllMetadata        0.865  0.811  0.586
+       ECFP+AllMetadata   0.929  0.858  0.638
+       ECFPStructure      0.795  0.792  0.592
+       OriginRoute        0.473  0.562  0.525
+Random AgrochemicalFlags  0.909  0.858  0.680
+       AllMetadata        0.913  0.874  0.654
+       ECFP+AllMetadata   0.958  0.891  0.732
+       ECFPStructure      0.917  0.848  0.718
+       OriginRoute        0.594  0.554  0.538
+Time   AgrochemicalFlags  0.895  0.810  0.571
+       AllMetadata        0.894  0.805  0.560
+       ECFP+AllMetadata   0.943  0.847  0.667
+       ECFPStructure      0.792  0.754  0.691
+       OriginRoute        0.569  0.602  0.451
+
+Primary decomposition contrasts (molecule bootstrap):
+ Split  Threshold                     Comparison  ObservedDeltaAUROC  PercentileCI_low  PercentileCI_high  SimultaneousCI_low  SimultaneousCI_high  ProbDelta_gt0
+Random        100      ECFPStructure-AllMetadata              0.0634           -0.0650             0.1933             -0.0657               0.1926         0.8394
+Random        100   ECFP+AllMetadata-AllMetadata              0.0780           -0.0059             0.1638             -0.0511               0.2072         0.9658
+Random        100 ECFP+AllMetadata-ECFPStructure              0.0146           -0.0405             0.0665             -0.1146               0.1437         0.7078
+Random         11      ECFPStructure-AllMetadata             -0.0263           -0.0896             0.0366             -0.0894               0.0367         0.2142
+Random         11   ECFP+AllMetadata-AllMetadata              0.0168           -0.0224             0.0574             -0.0462               0.0799         0.7882
+Random         11 ECFP+AllMetadata-ECFPStructure              0.0432            0.0141             0.0737             -0.0199               0.1062         0.9980
+Random          1      ECFPStructure-AllMetadata              0.0042           -0.0660             0.0646             -0.0618               0.0701         0.5670
+Random          1   ECFP+AllMetadata-AllMetadata              0.0449            0.0165             0.0766             -0.0210               0.1109         0.9988
+Random          1 ECFP+AllMetadata-ECFPStructure              0.0408            0.0008             0.0916             -0.0252               0.1067         0.9784
+MaxMin        100      ECFPStructure-AllMetadata              0.0064           -0.1263             0.1406             -0.1272               0.1399         0.5390
+MaxMin        100   ECFP+AllMetadata-AllMetadata              0.0526           -0.0169             0.1208             -0.0809               0.1862         0.9336
+MaxMin        100 ECFP+AllMetadata-ECFPStructure              0.0462           -0.0392             0.1293             -0.0873               0.1798         0.8600
+MaxMin         11      ECFPStructure-AllMetadata             -0.0190           -0.1189             0.0769             -0.1172               0.0791         0.3594
+MaxMin         11   ECFP+AllMetadata-AllMetadata              0.0468            0.0040             0.0926             -0.0514               0.1449         0.9838
+MaxMin         11 ECFP+AllMetadata-ECFPStructure              0.0658           -0.0006             0.1342             -0.0324               0.1640         0.9742
+MaxMin          1      ECFPStructure-AllMetadata             -0.0696           -0.2096             0.0654             -0.2082               0.0690         0.1706
+MaxMin          1   ECFP+AllMetadata-AllMetadata              0.0639            0.0148             0.1221             -0.0747               0.2025         0.9960
+MaxMin          1 ECFP+AllMetadata-ECFPStructure              0.1335            0.0389             0.2356             -0.0051               0.2721         0.9984
+  Time        100      ECFPStructure-AllMetadata              0.1310           -0.0113             0.2742             -0.0121               0.2741         0.9620
+  Time        100   ECFP+AllMetadata-AllMetadata              0.1073            0.0080             0.2108             -0.0358               0.2504         0.9818
+  Time        100 ECFP+AllMetadata-ECFPStructure             -0.0237           -0.0872             0.0389             -0.1668               0.1194         0.2330
+  Time         11      ECFPStructure-AllMetadata             -0.0511           -0.1674             0.0726             -0.1721               0.0699         0.1978
+  Time         11   ECFP+AllMetadata-AllMetadata              0.0424           -0.0317             0.1276             -0.0786               0.1634         0.8514
+  Time         11 ECFP+AllMetadata-ECFPStructure              0.0934            0.0410             0.1509             -0.0276               0.2145         0.9998
+  Time          1      ECFPStructure-AllMetadata             -0.1014           -0.2359             0.0313             -0.2352               0.0323         0.0650
+  Time          1   ECFP+AllMetadata-AllMetadata              0.0495            0.0077             0.0962             -0.0843               0.1833         0.9912
+  Time          1 ECFP+AllMetadata-ECFPStructure              0.1510            0.0564             0.2577              0.0172               0.2847         1.0000
+
+=== 03_matched_learning_curves.py ===
+Matched learning-curve mean AUROC:
+Threshold             1      11     100
+Split  n_per_class                     
+MaxMin 25           0.632  0.630  0.518
+       50           0.675  0.660  0.525
+       75           0.705  0.685  0.533
+       100          0.723  0.703  0.546
+       125          0.747  0.715  0.554
+Random 25           0.840  0.733  0.583
+       50           0.877  0.764  0.622
+       75           0.892  0.787  0.642
+       100          0.902  0.803  0.660
+       125          0.908  0.810  0.685
+Time   25           0.691  0.619  0.534
+       50           0.720  0.656  0.547
+       75           0.745  0.683  0.573
+       100          0.758  0.695  0.588
+       125          0.771  0.705  0.604
+
+At n=125 per class:
+ Split  n_per_class Comparison  MeanDeltaAUROC    Q025   Q975  ProbDelta_gt0  Repeats
+MaxMin          125     11-100          0.1611  0.0968 0.2270          1.000      200
+MaxMin          125      1-100          0.1937  0.1069 0.2663          1.000      200
+MaxMin          125       1-11          0.0326 -0.0462 0.1001          0.785      200
+Random          125     11-100          0.1257  0.0560 0.2054          0.995      200
+Random          125      1-100          0.2236  0.1528 0.2950          1.000      200
+Random          125       1-11          0.0979  0.0593 0.1446          1.000      200
+  Time          125     11-100          0.1008  0.0073 0.1864          0.990      200
+  Time          125      1-100          0.1667  0.0777 0.2557          1.000      200
+  Time          125       1-11          0.0659 -0.0101 0.1504          0.950      200
+
+=== 04_conditional_neighborhood.py ===
+Observed neighborhood summary at k=10:
+Representation  k  Tier   n  MeanNormEntropy  MedianNormEntropy  MeanSameTierNeighborFraction
+          ECFP 10     0 177           0.6060             0.6477                        0.2345
+          ECFP 10     1 562           0.5409             0.5784                        0.6489
+          ECFP 10     2 125           0.6141             0.6805                        0.2120
+          ECFP 10     3 171           0.5393             0.5784                        0.5216
+        Avalon 10     0 177           0.5975             0.6477                        0.2384
+        Avalon 10     1 562           0.5431             0.5784                        0.6463
+        Avalon 10     2 125           0.5924             0.6477                        0.2184
+        Avalon 10     3 171           0.5530             0.5784                        0.5193
+         MACCS 10     0 177           0.6055             0.6477                        0.2350
+         MACCS 10     1 562           0.5611             0.5784                        0.6349
+         MACCS 10     2 125           0.6264             0.6805                        0.2080
+         MACCS 10     3 171           0.5942             0.6477                        0.4959
+         WL-HI 10     0 177           0.5921             0.6477                        0.2333
+         WL-HI 10     1 562           0.5456             0.5784                        0.6416
+         WL-HI 10     2 125           0.6284             0.6784                        0.2272
+         WL-HI 10     3 171           0.5363             0.5784                        0.5439
+ Descriptors12 10     0 177           0.6418             0.6784                        0.1927
+ Descriptors12 10     1 562           0.6002             0.6477                        0.6094
+ Descriptors12 10     2 125           0.6630             0.6805                        0.1632
+ Descriptors12 10     3 171           0.6381             0.6784                        0.4427
+
+Permutation evidence by conditioning scheme:
+                          Significant  Total   Max_q  Median_effect
+PermutationScheme                                                  
+Global                             15     15  0.0295         0.0576
+Source��Insecticide                 11     15  0.1564         0.0576
+Source��Route��Insecticide           11     15  0.1479         0.0576
+
+=== 05_scaffold_sensitivity.py ===
+Leave-one-out scaffold context summary:
+ MinScaffoldN  Tier  Molecule_n  Scaffold_n  MoleculeWeightedMeanLOOEntropy  ScaffoldEqualMeanLOOEntropy  MoleculeWeightedMixedFraction
+            3     0          65          18                          0.6821                       0.4177                         0.9538
+            3     1         222          36                          0.5992                       0.4087                         0.8784
+            3     2          50          19                          0.6549                       0.3424                         1.0000
+            3     3          74          16                          0.5464                       0.3847                         0.8784
+            5     0          50           9                          0.7874                       0.5343                         1.0000
+            5     1         174          14                          0.6873                       0.5535                         0.9598
+            5     2          43          12                          0.7285                       0.4240                         1.0000
+            5     3          58           8                          0.6490                       0.5348                         1.0000
+
+Scaffold-aware contrasts:
+ MinScaffoldN                           Analysis Comparison  ObservedDifference  BootstrapMean  CI_low  CI_high  ProbDifference_gt0  B_valid  ScaffoldsResampled
+            3                   MoleculeWeighted      T2-T0             -0.0272        -0.0283 -0.1674   0.1044              0.3200     5000                  42
+            3                   MoleculeWeighted      T2-T1              0.0557         0.0378 -0.1357   0.1715              0.7636     5000                  42
+            3                   MoleculeWeighted      T2-T3              0.1085         0.0917 -0.0635   0.2386              0.9018     5000                  42
+            3              ScaffoldEqualWeighted      T2-T0             -0.0753        -0.0749 -0.2309   0.0839              0.1780     5000                  42
+            3              ScaffoldEqualWeighted      T2-T1             -0.0662        -0.0647 -0.1993   0.0911              0.1802     5000                  42
+            3              ScaffoldEqualWeighted      T2-T3             -0.0423        -0.0426 -0.1923   0.1132              0.2804     5000                  42
+            3 PairedScaffoldsContainingBothTiers      T2-T0              0.0326         0.0328 -0.0371   0.1168              0.7772     5000                   7
+            3 PairedScaffoldsContainingBothTiers      T2-T1             -0.2168        -0.2176 -0.3139  -0.1164              0.0000     5000                  17
+            3 PairedScaffoldsContainingBothTiers      T2-T3             -0.0952        -0.0948 -0.1950  -0.0056              0.0194     5000                   8
+            5                   MoleculeWeighted      T2-T0             -0.0589        -0.0575 -0.2008   0.0606              0.1432     5000                  16
+            5                   MoleculeWeighted      T2-T1              0.0412         0.0246 -0.1601   0.1702              0.7104     5000                  16
+            5                   MoleculeWeighted      T2-T3              0.0796         0.0630 -0.0913   0.2103              0.8108     5000                  16
+            5              ScaffoldEqualWeighted      T2-T0             -0.1103        -0.1101 -0.3244   0.0907              0.1428     5000                  16
+            5              ScaffoldEqualWeighted      T2-T1             -0.1295        -0.1300 -0.2848   0.0394              0.0620     5000                  16
+            5              ScaffoldEqualWeighted      T2-T3             -0.1108        -0.1101 -0.2536   0.0361              0.0676     5000                  16
+            5 PairedScaffoldsContainingBothTiers      T2-T0              0.0381         0.0383 -0.0468   0.1393              0.7840     5000                   6
+            5 PairedScaffoldsContainingBothTiers      T2-T1             -0.1018        -0.1018 -0.2004  -0.0106              0.0136     5000                  10
+            5 PairedScaffoldsContainingBothTiers      T2-T3             -0.1270        -0.1274 -0.2340  -0.0126              0.0128     5000                   6
+
+=== 06_novelty_calibration.py ===
+Boundary-specific Brier slopes per +0.1 novelty:
+ Split  Boundary  Slope_per_0.1_novelty  SE_per_0.1   CI_low  CI_high  P_slope
+Random       100                0.01062     0.00651 -0.00213  0.02337  0.10259
+Random        11                0.00807     0.00905 -0.00967  0.02581  0.37240
+Random         1                0.00619     0.00617 -0.00591  0.01828  0.31598
+MaxMin       100                0.02708     0.00765  0.01209  0.04207  0.00040
+MaxMin        11                0.01312     0.00526  0.00280  0.02343  0.01271
+MaxMin         1                0.00889     0.00464 -0.00022  0.01799  0.05572
+  Time       100                0.01961     0.00630  0.00727  0.03195  0.00185
+  Time        11                0.00857     0.00779 -0.00671  0.02385  0.27147
+  Time         1                0.00658     0.00694 -0.00703  0.02019  0.34335
+
+Interaction terms:
+ Split             Outcome                Contrast  SlopeDifference      SE   CI_low  CI_high    RawP   HolmP
+Random           BrierLoss  1 vs 100 novelty slope         -0.04432 0.09404 -0.22864  0.13999 0.63740 1.00000
+Random           BrierLoss 11 vs 100 novelty slope         -0.02547 0.11838 -0.25748  0.20655 0.82967 1.00000
+Random ClassificationError  1 vs 100 novelty slope         -1.81406 1.27301 -4.30915  0.68104 0.15415 0.30830
+Random ClassificationError 11 vs 100 novelty slope         -0.92418 1.44537 -3.75710  1.90874 0.52256 0.52256
+MaxMin           BrierLoss  1 vs 100 novelty slope         -0.18191 0.09711 -0.37224  0.00842 0.06103 0.12206
+MaxMin           BrierLoss 11 vs 100 novelty slope         -0.13961 0.09967 -0.33496  0.05575 0.16131 0.16131
+MaxMin ClassificationError  1 vs 100 novelty slope         -0.76981 1.34259 -3.40129  1.86167 0.56639 1.00000
+MaxMin ClassificationError 11 vs 100 novelty slope         -0.61636 1.24318 -3.05300  1.82027 0.62004 1.00000
+  Time           BrierLoss  1 vs 100 novelty slope         -0.13029 0.10225 -0.33069  0.07012 0.20260 0.40520
+  Time           BrierLoss 11 vs 100 novelty slope         -0.11037 0.10810 -0.32225  0.10151 0.30726 0.40520
+  Time ClassificationError  1 vs 100 novelty slope         -0.97340 1.47789 -3.87007  1.92327 0.51012 0.97600
+  Time ClassificationError 11 vs 100 novelty slope         -0.87613 1.26335 -3.35230  1.60004 0.48800 0.97600
+
+Joint interaction tests:
+ Split             Outcome  JointInteractionChi2  df       P
+Random           BrierLoss               0.24802   2 0.88337
+Random ClassificationError               2.07219   2 0.35484
+MaxMin           BrierLoss               3.71835   2 0.15580
+MaxMin ClassificationError               0.34183   2 0.84289
+  Time           BrierLoss               1.65697   2 0.43671
+  Time ClassificationError               0.54421   2 0.76177
+
+=== 07_sparse_descriptors_supplementary.py ===
+Random threshold=100: preparing five training-fold selectors
+Random threshold=100: completed all six k values
+Random threshold=11: preparing five training-fold selectors
+Random threshold=11: completed all six k values
+Random threshold=1: preparing five training-fold selectors
+Random threshold=1: completed all six k values
+MaxMin threshold=100: preparing five training-fold selectors
+MaxMin threshold=100: completed all six k values
+MaxMin threshold=11: preparing five training-fold selectors
+MaxMin threshold=11: completed all six k values
+MaxMin threshold=1: preparing five training-fold selectors
+MaxMin threshold=1: completed all six k values
+Time threshold=100: preparing five training-fold selectors
+Time threshold=100: completed all six k values
+Time threshold=11: preparing five training-fold selectors
+Time threshold=11: completed all six k values
+Time threshold=1: preparing five training-fold selectors
+Time threshold=1: completed all six k values
+ Split  Threshold  TopK  TestAUROC  BestC
+Random        100     1   0.546189   0.03
+Random        100     2   0.570730   0.03
+Random        100     3   0.515263   0.10
+Random        100     5   0.513667   0.03
+Random        100     8   0.527833   0.03
+Random        100    12   0.528332   0.03
+Random         11     1   0.524565   0.03
+Random         11     2   0.653573  10.00
+Random         11     3   0.696175   1.00
+Random         11     5   0.711750  10.00
+Random         11     8   0.688158   0.30
+Random         11    12   0.689304   0.10
+Random          1     1   0.589690   0.03
+Random          1     2   0.641414   0.10
+Random          1     3   0.725705  10.00
+Random          1     5   0.759317   0.10
+Random          1     8   0.740160   0.30
+Random          1    12   0.733891   1.00
+MaxMin        100     1   0.546228   0.03
+MaxMin        100     2   0.523594   0.03
+MaxMin        100     3   0.477572  10.00
+MaxMin        100     5   0.498148   0.03
+MaxMin        100     8   0.499726   0.10
+MaxMin        100    12   0.522085   3.00
+MaxMin         11     1   0.475180   0.03
+MaxMin         11     2   0.571212   0.03
+MaxMin         11     3   0.587879   0.30
+MaxMin         11     5   0.621861   3.00
+MaxMin         11     8   0.647908   0.30
+MaxMin         11    12   0.646465   0.30
+MaxMin          1     1   0.531545   0.03
+MaxMin          1     2   0.665879   3.00
+MaxMin          1     3   0.618620   0.30
+MaxMin          1     5   0.616257   0.30
+MaxMin          1     8   0.605388   1.00
+MaxMin          1    12   0.581049   1.00
+  Time        100     1   0.437126   0.03
+  Time        100     2   0.444162  10.00
+  Time        100     3   0.391467   0.30
+  Time        100     5   0.376347   0.03
+  Time        100     8   0.361228  10.00
+  Time        100    12   0.374551   0.10
+  Time         11     1   0.510873   0.03
+  Time         11     2   0.462239   0.03
+  Time         11     3   0.426535  10.00
+  Time         11     5   0.526447   1.00
+  Time         11     8   0.544813   0.30
+  Time         11    12   0.560535   0.30
+  Time          1     1   0.533925   0.03
+  Time          1     2   0.412341  10.00
+  Time          1     3   0.443989  10.00
+  Time          1     5   0.553506   1.00
+  Time          1     8   0.550319   0.30
+  Time          1    12   0.552823   0.30
+
+=== 08_sensitivity_diagnostics.py ===
+== cross-endpoint (ECFP) ==
+EvalEndpoint            1      11     100
+Split  TrainEndpoint                     
+MaxMin 1              0.795  0.744  0.500
+       11             0.807  0.792  0.501
+       100            0.625  0.605  0.592
+Random 1              0.917  0.849  0.679
+       11             0.905  0.848  0.724
+       100            0.744  0.697  0.718
+Time   1              0.792  0.693  0.583
+       11             0.872  0.754  0.557
+       100            0.703  0.617  0.691
+
+== Brier skill ==
+ Split  Endpoint  ModelBrier  TrainingPrevalence  ConstantBrier  BrierSkill
+MaxMin         1      0.0707              0.1787         0.1033      0.3156
+MaxMin        11      0.1373              0.3068         0.1725      0.2039
+MaxMin       100      0.1715              0.8406         0.1735      0.0114
+Random         1      0.0667              0.1667         0.1341      0.5027
+Random        11      0.1222              0.2862         0.2038      0.4005
+Random       100      0.1073              0.8200         0.1190      0.0983
+  Time         1      0.0732              0.1775         0.1063      0.3113
+  Time        11      0.1254              0.3080         0.1709      0.2662
+  Time       100      0.1451              0.8345         0.1567      0.0741
+
+== matched preprocessing ==
+ Split  Endpoint     MetadataSet  MetadataAUROC  StructureAUROC  FusedAUROC
+Random       100     AllMetadata          0.657           0.718       0.732
+Random       100 MetadataNoRoute          0.678           0.718       0.743
+Random        11     AllMetadata          0.875           0.848       0.891
+Random        11 MetadataNoRoute          0.866           0.848       0.883
+Random         1     AllMetadata          0.913           0.917       0.958
+Random         1 MetadataNoRoute          0.916           0.917       0.958
+MaxMin       100     AllMetadata          0.591           0.592       0.638
+MaxMin       100 MetadataNoRoute          0.574           0.592       0.625
+MaxMin        11     AllMetadata          0.806           0.792       0.858
+MaxMin        11 MetadataNoRoute          0.791           0.792       0.851
+MaxMin         1     AllMetadata          0.873           0.795       0.929
+MaxMin         1 MetadataNoRoute          0.867           0.795       0.927
+  Time       100     AllMetadata          0.557           0.691       0.667
+  Time       100 MetadataNoRoute          0.538           0.691       0.688
+  Time        11     AllMetadata          0.806           0.754       0.847
+  Time        11 MetadataNoRoute          0.801           0.754       0.839
+  Time         1     AllMetadata          0.893           0.792       0.943
+  Time         1 MetadataNoRoute          0.894           0.792       0.942
+
+== learners ==
+Endpoint               1      11     100
+Split  Learner                          
+MaxMin LogisticL2    0.748  0.748  0.553
+       RandomForest  0.779  0.749  0.589
+Random LogisticL2    0.903  0.830  0.731
+       RandomForest  0.914  0.840  0.735
+Time   LogisticL2    0.754  0.728  0.590
+       RandomForest  0.819  0.750  0.719
+
+ {
+  "wider_family_scaffold_ci_above_zero": 7,
+  "wider_family_by_split": {
+    "MaxMin": 4,
+    "Random": 2,
+    "Time": 1
+  },
+  "learner_settings_with_100_lowest": 6,
+  "learner_settings_total": 6
+}
+
+=== 09_export_submission_tables.py ===
+Exported 25 submission artifacts from 23 raw/analysis inputs; no model fits.
+
+=== 10_tier_boundary_diagnostics.py ===
+{
+ "bootstrap_draws": 5000,
+ "resampling": "scaffold-cluster draws identical to the primary analysis",
+ "new_model_fits": 15,
+ "splits": {
+  "Random": {
+   "A100_full": 0.717877094972067,
+   "A100_noT1_eval": 0.8038740920096853,
+   "Aclean_noT1_train_eval": 0.8710653753026635,
+   "A11_full": 0.8480302336234539,
+   "A1_full": 0.9169278996865203,
+   "gap_11_minus_100": 0.1301531386513869,
+   "evaluation_component": [
+    0.08599699703761832,
+    0.025520266664431406,
+    0.12837071552828275
+   ],
+   "training_component": [
+    0.06719128329297819,
+    -0.031018095549908267,
+    0.13889355742296908
+   ],
+   "tier1_total_component": [
+    0.1531882803305965,
+    0.022555966941742788,
+    0.24246040786020887
+   ],
+   "residual_11": [
+    -0.023035141679209614,
+    -0.08112021982706119,
+    0.05757738911179206
+   ],
+   "tier1_share_of_gap_11": 1.1769849111430872,
+   "T1_vs_T0_model100": [
+    0.6755952380952381,
+    0.5697471419123205,
+    0.8004004468718967
+   ],
+   "T3_vs_T0_model100": 0.8441558441558442,
+   "T1_vs_T0_weight_le100": 0.6703910614525139,
+   "T1_vs_T0_model11": 0.6422619047619048,
+   "T1_vs_T0_model1": 0.5830357142857143,
+   "T2_vs_T1_model11": 0.730448717948718
+  },
+  "MaxMin": {
+   "A100_full": 0.5920438957475994,
+   "A100_noT1_eval": 0.6433862433862434,
+   "Aclean_noT1_train_eval": 0.7052910052910053,
+   "A11_full": 0.7922077922077921,
+   "A1_full": 0.7951323251417769,
+   "gap_11_minus_100": 0.20016389646019273,
+   "evaluation_component": [
+    0.05134234763864398,
+    -0.01496645680674038,
+    0.11902828530049893
+   ],
+   "training_component": [
+    0.06190476190476191,
+    -0.010405147741032551,
+    0.13636670761670755
+   ],
+   "tier1_total_component": [
+    0.11324710954340589,
+    0.017062272980526524,
+    0.21203262424520194
+   ],
+   "residual_11": [
+    0.08691678691678684,
+    0.011968148848943561,
+    0.16635518559398946
+   ],
+   "tier1_share_of_gap_11": 0.5657719076523259,
+   "T1_vs_T0_model100": [
+    0.5740740740740741,
+    0.47385842820121066,
+    0.6772271818027462
+   ],
+   "T3_vs_T0_model100": 0.667632850241546,
+   "T1_vs_T0_weight_le100": 0.7407407407407407,
+   "T1_vs_T0_model11": 0.4111111111111111,
+   "T1_vs_T0_model1": 0.4277777777777778,
+   "T2_vs_T1_model11": 0.7635964912280702
+  },
+  "Time": {
+   "A100_full": 0.6910179640718563,
+   "A100_noT1_eval": 0.7317073170731708,
+   "Aclean_noT1_train_eval": 0.7579268292682927,
+   "A11_full": 0.7538936232735822,
+   "A1_full": 0.7923497267759563,
+   "gap_11_minus_100": 0.06287565920172589,
+   "evaluation_component": [
+    0.04068935300131449,
+    -0.030442137320044343,
+    0.10710370672616029
+   ],
+   "training_component": [
+    0.026219512195121863,
+    -0.06710552635310316,
+    0.12547429954913508
+   ],
+   "tier1_total_component": [
+    0.06690886519643635,
+    -0.04812284228904658,
+    0.1827131549677484
+   ],
+   "residual_11": [
+    -0.004033205994710465,
+    -0.08276786952171987,
+    0.07785735866500489
+   ],
+   "tier1_share_of_gap_11": 1.0641457448862779,
+   "T1_vs_T0_model100": [
+    0.6777777777777778,
+    0.5712917887559619,
+    0.7825621174727241
+   ],
+   "T3_vs_T0_model100": 0.8052083333333333,
+   "T1_vs_T0_weight_le100": 0.7544910179640718,
+   "T1_vs_T0_model11": 0.4916666666666667,
+   "T1_vs_T0_model1": 0.5386904761904763,
+   "T2_vs_T1_model11": 0.5718954248366013
+  }
+ },
+ "concordance_tier1": {
+  "OFT": {
+   "n": 89,
+   "agree": 9,
+   "rate": 0.10112359550561797,
+   "wilson": [
+    0.054118546891964145,
+    0.1811368993077429
+   ]
+  },
+  "OFT 48 h": {
+   "n": 38,
+   "agree": 2,
+   "rate": 0.05263157894736842,
+   "wilson": [
+    0.014554208147292413,
+    0.17285462131770377
+   ]
+  },
+  "EPA": {
+   "n": 58,
+   "agree": 9,
+   "rate": 0.15517241379310345,
+   "wilson": [
+    0.0838449195301804,
+    0.2693398085989251
+   ]
+  }
+ },
+ "disagreements_by_record_source": {
+  "EPA": {
+   "ECOTOX": 43,
+   "PPDB": 8
+  },
+  "OFT": {
+   "ECOTOX": 43,
+   "PPDB": 39
+  },
+  "OFT 48 h": {
+   "ECOTOX": 21,
+   "PPDB": 16
+  }
+ }
+}
+  Source  Tier  n  Cohort_share  Benchmark_share  Agree_100  Disagree_100  Agreement_rate_100  Agreement_Wilson_low  Agreement_Wilson_high  Disagree_benchmark_pos_source_neg  Disagree_benchmark_neg_source_pos  Disagree_with_right_censored
+     OFT     0 31         0.208            0.171         30             1               0.968                 0.838                  0.994                                  0                                  1                             0
+     OFT     1 89         0.597            0.543          9            80               0.101                 0.054                  0.181                                 80                                  0                            70
+     OFT     2 14         0.094            0.121         13             1               0.929                 0.685                  0.987                                  1                                  0                             0
+     OFT     3 15         0.101            0.165         15             0               1.000                 0.796                  1.000                                  0                                  0                             0
+OFT 48 h     0 19         0.264            0.171         19             0               1.000                 0.832                  1.000                                  0                                  0                             0
+OFT 48 h     1 38         0.528            0.543          2            36               0.053                 0.015                  0.173                                 36                                  0                            30
+OFT 48 h     2  6         0.083            0.121          5             1               0.833                 0.436                  0.970                                  1                                  0                             0
+OFT 48 h     3  9         0.125            0.165          9             0               1.000                 0.701                  1.000                                  0                                  0                             0
+     EPA     0 23         0.223            0.171         21             2               0.913                 0.732                  0.976                                  0                                  2                             0
+     EPA     1 58         0.563            0.543          9            49               0.155                 0.084                  0.269                                 49                                  0                            39
+     EPA     2  7         0.068            0.121          7             0               1.000                 0.646                  1.000                                  0                                  0                             0
+     EPA     3 15         0.146            0.165         15             0               1.000                 0.796                  1.000                                  0                                  0                             0
+  Source Benchmark_record_source  n  Disagree_100  Disagree_100_Tier1  n_Tier1
+     OFT                  ECOTOX 77            43                  43       46
+     OFT                    PPDB 72            39                  37       43
+OFT 48 h                  ECOTOX 38            21                  21       22
+OFT 48 h                    PPDB 34            16                  15       16
+     EPA                  ECOTOX 83            43                  42       50
+     EPA                    PPDB 20             8                   7        8
+
+=== 11_qualifier_propagation_audit.py ===
+{
+ "ecotox_export_records": 2674,
+ "records_with_right_censoring_operator": 721,
+ "benchmark_ecotox_compounds": 441,
+ "replicated_compounds": 441,
+ "replication_label_and_level_match": 441,
+ "replication_route_match": 441,
+ "historical_exact_11_boundary": "min=11,max>11 is negative; a singleton/all-exact-11 group is positive; not the corrected interval rule",
+ "tier1": {
+  "Tier": 1,
+  "n_ecotox_compounds": 212,
+  "any_right_censored": 180,
+  "right_censored_ge100": 97,
+  "median_exactly_100": 69,
+  "interval_label_100_negative": 67,
+  "interval_label_100_unresolved": 113,
+  "interval_label_100_positive": 32
+ },
+ "by_tier": [
+  {
+   "Tier": 0,
+   "n_ecotox_compounds": 72,
+   "any_right_censored": 54,
+   "right_censored_ge100": 53,
+   "median_exactly_100": 0,
+   "interval_label_100_negative": 62,
+   "interval_label_100_unresolved": 10,
+   "interval_label_100_positive": 0
+  },
+  {
+   "Tier": 1,
+   "n_ecotox_compounds": 212,
+   "any_right_censored": 180,
+   "right_censored_ge100": 97,
+   "median_exactly_100": 69,
+   "interval_label_100_negative": 67,
+   "interval_label_100_unresolved": 113,
+   "interval_label_100_positive": 32
+  },
+  {
+   "Tier": 2,
+   "n_ecotox_compounds": 60,
+   "any_right_censored": 11,
+   "right_censored_ge100": 0,
+   "median_exactly_100": 0,
+   "interval_label_100_negative": 0,
+   "interval_label_100_unresolved": 11,
+   "interval_label_100_positive": 49
+  },
+  {
+   "Tier": 3,
+   "n_ecotox_compounds": 97,
+   "any_right_censored": 6,
+   "right_censored_ge100": 0,
+   "median_exactly_100": 0,
+   "interval_label_100_negative": 0,
+   "interval_label_100_unresolved": 6,
+   "interval_label_100_positive": 91
+  }
+ ]
+}
+
+=== 12_label_rule_audit.py ===
+
+== filter=all routes=fixed
+ threshold rule Tier   n  positive  negative  unresolved  no_eligible_record  positive_to_negative  negative_to_positive
+         1    A    1 212         0       212           0                   0                     0                     0
+         1    B    1 212         0       212           0                   0                     0                     0
+         1    C    1 212         0       212           0                   0                     0                     0
+         1    D    1 212         0       212           0                   0                     0                     0
+        11    A    1 212         0       212           0                   0                     0                     0
+        11    B    1 212         0       209           3                   0                     0                     0
+        11    C    1 212         0       212           0                   0                     0                     0
+        11    D    1 212         0       212           0                   0                     0                     0
+       100    A    1 212       212         0           0                   0                     0                     0
+       100    B    1 212       195         0          17                   0                     0                     0
+       100    C    1 212        32        67         113                   0                    67                     0
+       100    D    1 212        37        69         106                   0                    69                     0
+         1    A  all 441        97       344           0                   0                     0                     0
+         1    B  all 441        85       340          16                   0                     0                     0
+         1    C  all 441        79       340          22                   0                     1                     0
+         1    D  all 441        94       344           3                   0                     1                     0
+        11    A  all 441       157       284           0                   0                     0                     0
+        11    B  all 441       157       281           3                   0                     0                     0
+        11    C  all 441       140       284          17                   0                     0                     0
+        11    D  all 441       143       284          14                   0                     0                     0
+       100    A  all 441       369        72           0                   0                     0                     0
+       100    B  all 441       352        55          34                   0                     0                     0
+       100    C  all 441       172       129         140                   0                    67                     0
+       100    D  all 441       180       141         120                   0                    69                     0
+
+== filter=all routes=eligible
+ threshold rule Tier   n  positive  negative  unresolved  no_eligible_record  positive_to_negative  negative_to_positive
+         1    A    1 212         0       212           0                   0                     0                     0
+         1    B    1 212         0       212           0                   0                     0                     0
+         1    C    1 212         0       212           0                   0                     0                     0
+         1    D    1 212         0       212           0                   0                     0                     0
+        11    A    1 212         0       212           0                   0                     0                     0
+        11    B    1 212         0       209           3                   0                     0                     0
+        11    C    1 212         0       212           0                   0                     0                     0
+        11    D    1 212         0       212           0                   0                     0                     0
+       100    A    1 212       212         0           0                   0                     0                     0
+       100    B    1 212       202         0          10                   0                     0                     0
+       100    C    1 212        33        62         117                   0                    62                     0
+       100    D    1 212        38        69         105                   0                    69                     0
+         1    A  all 441        97       344           0                   0                     0                     0
+         1    B  all 441        87       338          16                   0                     0                     0
+         1    C  all 441        82       338          21                   0                     1                     0
+         1    D  all 441        94       344           3                   0                     1                     0
+        11    A  all 441       157       284           0                   0                     0                     0
+        11    B  all 441       157       281           3                   0                     0                     0
+        11    C  all 441       141       284          16                   0                     0                     0
+        11    D  all 441       143       284          14                   0                     0                     0
+       100    A  all 441       369        72           0                   0                     0                     0
+       100    B  all 441       359        55          27                   0                     0                     0
+       100    C  all 441       174       123         144                   0                    62                     0
+       100    D  all 441       181       141         119                   0                    69                     0
+
+== filter=all routes=all
+ threshold rule Tier   n  positive  negative  unresolved  no_eligible_record  positive_to_negative  negative_to_positive
+         1    A    1 212         1       211           0                   0                     0                     1
+         1    B    1 212         0       208           4                   0                     0                     0
+         1    C    1 212         0       209           3                   0                     0                     0
+         1    D    1 212         0       211           1                   0                     0                     0
+        11    A    1 212         4       208           0                   0                     0                     4
+        11    B    1 212         0       186          26                   0                     0                     0
+        11    C    1 212         0       189          23                   0                     0                     0
+        11    D    1 212         1       208           3                   0                     0                     1
+       100    A    1 212       212         0           0                   0                     0                     0
+       100    B    1 212       203         0           9                   0                     0                     0
+       100    C    1 212        35        54         123                   0                    54                     0
+       100    D    1 212        41        59         112                   0                    59                     0
+         1    A  all 441        99       342           0                   0                     0                     2
+         1    B  all 441        87       330          24                   0                     0                     0
+         1    C  all 441        82       332          27                   0                     1                     0
+         1    D  all 441        94       342           5                   0                     1                     0
+        11    A  all 441       163       278           0                   0                     0                     6
+        11    B  all 441       157       251          33                   0                     0                     0
+        11    C  all 441       141       254          46                   0                     0                     0
+        11    D  all 441       144       278          19                   0                     0                     1
+       100    A  all 441       374        67           0                   0                     0                     5
+       100    B  all 441       361        50          30                   0                     0                     1
+       100    C  all 441       177       108         156                   0                    54                     1
+       100    D  all 441       185       127         129                   0                    59                     1
+
+== filter=adult48 routes=fixed
+ threshold rule Tier   n  positive  negative  unresolved  no_eligible_record  positive_to_negative  negative_to_positive
+         1    A    1 212         0       174           0                  38                     0                     0
+         1    B    1 212         0       174           0                  38                     0                     0
+         1    C    1 212         0       174           0                  38                     0                     0
+         1    D    1 212         0       174           0                  38                     0                     0
+        11    A    1 212         0       174           0                  38                     0                     0
+        11    B    1 212         0       173           1                  38                     0                     0
+        11    C    1 212         0       174           0                  38                     0                     0
+        11    D    1 212         0       174           0                  38                     0                     0
+       100    A    1 212       163        11           0                  38                    11                     0
+       100    B    1 212       158         9           7                  38                     9                     0
+       100    C    1 212        18        76          80                  38                    76                     0
+       100    D    1 212        18        79          77                  38                    79                     0
+         1    A  all 441        59       282           0                 100                     4                     1
+         1    B  all 441        58       279           4                 100                     2                     1
+         1    C  all 441        53       279           9                 100                     2                     0
+         1    D  all 441        54       282           5                 100                     4                     0
+        11    A  all 441       105       236           0                 100                     0                     0
+        11    B  all 441       105       235           1                 100                     0                     0
+        11    C  all 441        94       236          11                 100                     0                     0
+        11    D  all 441        94       236          11                 100                     0                     0
+       100    A  all 441       271        70           0                 100                    11                     3
+       100    B  all 441       266        58          17                 100                     9                     3
+       100    C  all 441       112       131          98                 100                    76                     0
+       100    D  all 441       112       139          90                 100                    79                     0
+
+== filter=adult48 routes=eligible
+ threshold rule Tier   n  positive  negative  unresolved  no_eligible_record  positive_to_negative  negative_to_positive
+         1    A    1 212         0       181           0                  31                     0                     0
+         1    B    1 212         0       181           0                  31                     0                     0
+         1    C    1 212         0       181           0                  31                     0                     0
+         1    D    1 212         0       181           0                  31                     0                     0
+        11    A    1 212         0       181           0                  31                     0                     0
+        11    B    1 212         0       180           1                  31                     0                     0
+        11    C    1 212         0       181           0                  31                     0                     0
+        11    D    1 212         0       181           0                  31                     0                     0
+       100    A    1 212       174         7           0                  31                     7                     0
+       100    B    1 212       170         4           7                  31                     4                     0
+       100    C    1 212        19        81          81                  31                    81                     0
+       100    D    1 212        19        85          77                  31                    85                     0
+         1    A  all 441        69       296           0                  76                     7                     1
+         1    B  all 441        68       292           5                  76                     4                     1
+         1    C  all 441        62       292          11                  76                     4                     0
+         1    D  all 441        63       296           6                  76                     7                     0
+        11    A  all 441       118       247           0                  76                     4                     0
+        11    B  all 441       118       246           1                  76                     4                     0
+        11    C  all 441       106       247          12                  76                     4                     0
+        11    D  all 441       107       247          11                  76                     4                     0
+       100    A  all 441       298        67           0                  76                     8                     3
+       100    B  all 441       294        54          17                  76                     5                     3
+       100    C  all 441       125       137         103                  76                    83                     0
+       100    D  all 441       126       147          92                  76                    87                     0
+
+== filter=adult48 routes=all
+ threshold rule Tier   n  positive  negative  unresolved  no_eligible_record  positive_to_negative  negative_to_positive
+         1    A    1 212         0       182           0                  30                     0                     0
+         1    B    1 212         0       182           0                  30                     0                     0
+         1    C    1 212         0       182           0                  30                     0                     0
+         1    D    1 212         0       182           0                  30                     0                     0
+        11    A    1 212         0       182           0                  30                     0                     0
+        11    B    1 212         0       180           2                  30                     0                     0
+        11    C    1 212         0       181           1                  30                     0                     0
+        11    D    1 212         0       182           0                  30                     0                     0
+       100    A    1 212       174         8           0                  30                     8                     0
+       100    B    1 212       171         5           6                  30                     5                     0
+       100    C    1 212        19        79          84                  30                    79                     0
+       100    D    1 212        19        83          80                  30                    83                     0
+         1    A  all 441        69       302           0                  70                    10                     1
+         1    B  all 441        68       298           5                  70                     7                     1
+         1    C  all 441        62       298          11                  70                     7                     0
+         1    D  all 441        63       302           6                  70                    10                     0
+        11    A  all 441       120       251           0                  70                     7                     0
+        11    B  all 441       120       249           2                  70                     7                     0
+        11    C  all 441       108       250          13                  70                     7                     0
+        11    D  all 441       109       251          11                  70                     7                     0
+       100    A  all 441       302        69           0                  70                    11                     4
+       100    B  all 441       299        54          18                  70                     8                     4
+       100    C  all 441       129       134         108                  70                    83                     1
+       100    D  all 441       130       146          95                  70                    87                     1
+
+== filter=adult48ai routes=fixed
+ threshold rule Tier   n  positive  negative  unresolved  no_eligible_record  positive_to_negative  negative_to_positive
+         1    A    1 212         0       122           0                  90                     0                     0
+         1    B    1 212         0       122           0                  90                     0                     0
+         1    C    1 212         0       122           0                  90                     0                     0
+         1    D    1 212         0       122           0                  90                     0                     0
+        11    A    1 212         0       122           0                  90                     0                     0
+        11    B    1 212         0       121           1                  90                     0                     0
+        11    C    1 212         0       122           0                  90                     0                     0
+        11    D    1 212         0       122           0                  90                     0                     0
+       100    A    1 212       112        10           0                  90                    10                     0
+       100    B    1 212       111        10           1                  90                    10                     0
+       100    C    1 212         7        69          46                  90                    69                     0
+       100    D    1 212         7        69          46                  90                    69                     0
+         1    A  all 441        29       165           0                 247                     1                     1
+         1    B  all 441        29       164           1                 247                     1                     1
+         1    C  all 441        25       164           5                 247                     1                     0
+         1    D  all 441        25       165           4                 247                     1                     0
+        11    A  all 441        39       155           0                 247                     0                     0
+        11    B  all 441        39       154           1                 247                     0                     0
+        11    C  all 441        32       155           7                 247                     0                     0
+        11    D  all 441        32       155           7                 247                     0                     0
+       100    A  all 441       156        38           0                 247                    10                     5
+       100    B  all 441       154        36           4                 247                    10                     4
+       100    C  all 441        39        99          56                 247                    69                     0
+       100    D  all 441        39       101          54                 247                    69                     0
+
+== filter=adult48ai routes=eligible
+ threshold rule Tier   n  positive  negative  unresolved  no_eligible_record  positive_to_negative  negative_to_positive
+         1    A    1 212         0       130           0                  82                     0                     0
+         1    B    1 212         0       130           0                  82                     0                     0
+         1    C    1 212         0       130           0                  82                     0                     0
+         1    D    1 212         0       130           0                  82                     0                     0
+        11    A    1 212         0       130           0                  82                     0                     0
+        11    B    1 212         0       129           1                  82                     0                     0
+        11    C    1 212         0       130           0                  82                     0                     0
+        11    D    1 212         0       130           0                  82                     0                     0
+       100    A    1 212       124         6           0                  82                     6                     0
+       100    B    1 212       123         6           1                  82                     6                     0
+       100    C    1 212         8        76          46                  82                    76                     0
+       100    D    1 212         8        76          46                  82                    76                     0
+         1    A  all 441        35       174           0                 232                     1                     1
+         1    B  all 441        35       173           1                 232                     1                     1
+         1    C  all 441        31       173           5                 232                     1                     0
+         1    D  all 441        31       174           4                 232                     1                     0
+        11    A  all 441        45       164           0                 232                     1                     0
+        11    B  all 441        45       163           1                 232                     1                     0
+        11    C  all 441        38       164           7                 232                     1                     0
+        11    D  all 441        38       164           7                 232                     1                     0
+       100    A  all 441       175        34           0                 232                     6                     5
+       100    B  all 441       173        31           5                 232                     6                     4
+       100    C  all 441        46       106          57                 232                    77                     0
+       100    D  all 441        46       109          54                 232                    77                     0
+
+== filter=adult48ai routes=all
+ threshold rule Tier   n  positive  negative  unresolved  no_eligible_record  positive_to_negative  negative_to_positive
+         1    A    1 212         0       133           0                  79                     0                     0
+         1    B    1 212         0       133           0                  79                     0                     0
+         1    C    1 212         0       133           0                  79                     0                     0
+         1    D    1 212         0       133           0                  79                     0                     0
+        11    A    1 212         0       133           0                  79                     0                     0
+        11    B    1 212         0       131           2                  79                     0                     0
+        11    C    1 212         0       132           1                  79                     0                     0
+        11    D    1 212         0       133           0                  79                     0                     0
+       100    A    1 212       126         7           0                  79                     7                     0
+       100    B    1 212       125         7           1                  79                     7                     0
+       100    C    1 212         8        73          52                  79                    73                     0
+       100    D    1 212         8        73          52                  79                    73                     0
+         1    A  all 441        35       180           0                 226                     3                     1
+         1    B  all 441        35       179           1                 226                     3                     1
+         1    C  all 441        31       179           5                 226                     3                     0
+         1    D  all 441        31       180           4                 226                     3                     0
+        11    A  all 441        47       168           0                 226                     2                     0
+        11    B  all 441        47       166           2                 226                     2                     0
+        11    C  all 441        40       167           8                 226                     2                     0
+        11    D  all 441        40       168           7                 226                     2                     0
+       100    A  all 441       181        34           0                 226                     8                     7
+       100    B  all 441       179        31           5                 226                     8                     6
+       100    C  all 441        49       102          64                 226                    75                     1
+       100    D  all 441        49       105          61                 226                    75                     1
+{
+ "ecotox_export_records": 2674,
+ "records_after_upstream_filters": 2245,
+ "cas_route_groups": 885,
+ "groups_removed_by_upstream_11_filter": 79,
+ "cas_with_removed_route": 72,
+ "cas_with_removed_route_retained_by_another_route": 58,
+ "benchmark_ecotox_compounds": 441,
+ "replication_label_level_route_match": 441,
+ "groups_with_exact_11_and_values_above_only": [
+  {
+   "CAS": "62924-70-3",
+   "route": "Contact",
+   "values": ">11;>105.3;>17.1"
+  },
+  {
+   "CAS": "188425-85-6",
+   "route": "Oral",
+   "values": ">166;>11"
+  },
+  {
+   "CAS": "1417782-03-6",
+   "route": "Oral",
+   "values": ">11;52;>100;47.6;>100"
+  }
+ ],
+ "records_with_range_operator_fields": 0,
+ "upstream_cutoff_rules": [
+  {
+   "threshold": 100,
+   "rule_in_upstream": "group median; straddling route groups kept",
+   "determining_groups": 441,
+   "determining_groups_straddling_cutoff_numerically": 34
+  },
+  {
+   "threshold": 11,
+   "rule_in_upstream": "all records agree; straddling route groups removed",
+   "determining_groups": 441,
+   "determining_groups_straddling_cutoff_numerically": 3
+  },
+  {
+   "threshold": 1,
+   "rule_in_upstream": "group median; straddling route groups kept",
+   "determining_groups": 441,
+   "determining_groups_straddling_cutoff_numerically": 16
+  }
+ ]
+}
+Tier  groups  all_adult  any_larva_or_pupa  stage_not_reported_only  all_duration_2d  any_daily_unit  all_adult48  any_adult48  any_right_censored  records
+   0      72         63                  5                        4               51               2           51           62                  54      117
+   1     212        162                 36                       10              148              30          146          174                 180      309
+   2      60         41                  9                        7               37               6           36           43                  11       89
+   3      97         50                 11                       23               40               5           37           62                   6      313
+ all     441        316                 61                       44              276              43          270          341                 251      828
+
+=== 13_corrected_label_crossover.py ===
+    Scenario Unresolved  Split  n_train  n_test                                               train_index_sha256                                                test_index_sha256  train_changed_le100  train_changed_le11  train_changed_le1  test_changed_le100  test_changed_le11  test_changed_le1  test_pos_orig_le100  test_pos_orig_le11  test_pos_orig_le1  test_pos_corr_le100  test_pos_corr_le11  test_pos_corr_le1
+     primary       keep Random      828     207 3f75b28e7a6d3a04520f0c45214a49d759397f8f4df788f0644acd0427e0d408 0876988f6d9952a2332b9cf30722ae505b53fca1baabb4b57e2e0d6a8623528c                   54                   0                  0                  15                  0                 1                  179                  59                 33                  164                  59                 32
+     primary       keep MaxMin      828     207 48aa71b03e64fd3949c6880c5e4cfbf6ff71ab3e494cbf747145590ef42fac07 f6e30c7e473ee04c0d01358248fd9ca669cf7c797109f99809c5ecda881c0a7e                   57                   0                  1                  12                  0                 0                  162                  42                 23                  150                  42                 23
+     primary       keep   Time      828     207 651baaa517e04fe42c67d107387d4e4a9a4ef24f30c1c912b1a13427bb66a132 27e52be349ffa75b44b9b04dab0bfaea37c42b48341354d9cba31ca13cbd7744                   50                   0                  1                  19                  0                 0                  167                  41                 24                  148                  41                 24
+     primary    exclude Random      728     185 cfe95461f23e875ac2cf5a3bed8e64695dd8c28699fe9ca51812e5a793050cf4 72ef766199bc0376bed45bfabee5931c3e7e59564678e8b05f56544315dd759b                   54                   0                  0                  15                  0                 0                  157                  54                 32                  142                  54                 32
+     primary    exclude MaxMin      727     186 371b54034229367a10a6f84d77f76d31e5eff913200e45eaf38bece77dc12f45 a0e051d7f87dfb4689a1b5ff7d11584775678a5ba6eab1a656fd7d165cfcc37a                   57                   0                  0                  12                  0                 0                  141                  39                 22                  129                  39                 22
+     primary    exclude   Time      734     179 75efab946ddcc6b8040824a3f33a2d7e88ae3fc30dd1966d3c2272d87f1ae1e1 ec9b08f0f42fbb4dcef0ec393037d142ad541a235b2725ada7166483f0c81abb                   50                   0                  0                  19                  0                 0                  139                  36                 21                  120                  36                 21
+     primary   negative Random      828     207 3f75b28e7a6d3a04520f0c45214a49d759397f8f4df788f0644acd0427e0d408 0876988f6d9952a2332b9cf30722ae505b53fca1baabb4b57e2e0d6a8623528c                  152                   0                  0                  36                  0                 1                  179                  59                 33                  143                  59                 32
+     primary   negative MaxMin      828     207 48aa71b03e64fd3949c6880c5e4cfbf6ff71ab3e494cbf747145590ef42fac07 f6e30c7e473ee04c0d01358248fd9ca669cf7c797109f99809c5ecda881c0a7e                  155                   0                  1                  33                  0                 0                  162                  42                 23                  129                  42                 23
+     primary   negative   Time      828     207 651baaa517e04fe42c67d107387d4e4a9a4ef24f30c1c912b1a13427bb66a132 27e52be349ffa75b44b9b04dab0bfaea37c42b48341354d9cba31ca13cbd7744                  143                   0                  1                  45                  0                 0                  167                  41                 24                  122                  41                 24
+conservative       keep Random      828     207 3f75b28e7a6d3a04520f0c45214a49d759397f8f4df788f0644acd0427e0d408 0876988f6d9952a2332b9cf30722ae505b53fca1baabb4b57e2e0d6a8623528c                   50                   0                  0                  12                  0                 1                  179                  59                 33                  167                  59                 32
+conservative       keep MaxMin      828     207 48aa71b03e64fd3949c6880c5e4cfbf6ff71ab3e494cbf747145590ef42fac07 f6e30c7e473ee04c0d01358248fd9ca669cf7c797109f99809c5ecda881c0a7e                   51                   0                  1                  11                  0                 0                  162                  42                 23                  151                  42                 23
+conservative       keep   Time      828     207 651baaa517e04fe42c67d107387d4e4a9a4ef24f30c1c912b1a13427bb66a132 27e52be349ffa75b44b9b04dab0bfaea37c42b48341354d9cba31ca13cbd7744                   44                   0                  1                  18                  0                 0                  167                  41                 24                  149                  41                 24
+conservative    exclude Random      701     175 95e0589d445c787f8c447202cc3a20f24e2f786df5c5f0f61a7710e798b16901 d762680c4256d1b6ee9ff47708c6d22296fe710f6671dc69025af1023f4082cf                   50                   0                  0                  12                  0                 0                  150                  52                 31                  138                  52                 31
+conservative    exclude MaxMin      698     178 d91a5489ec2109d995d1b6fded1c85af885d2f6ce7494bf9416d6f0b4df23add efd0d26ea02cef6b19ab0e2189ee3838bf020f991d54ad8f9818f969e86b5b70                   51                   0                  0                  11                  0                 0                  136                  37                 20                  125                  37                 20
+conservative    exclude   Time      703     173 7d25195f052e592c91b23ce82d471bda35fee2d0b911383ee92362321d660569 9701b440f91e03cea6de0424fddbd8ce9c17abed8092de515fce77b698d41051                   44                   0                  0                  18                  0                 0                  135                  35                 21                  117                  35                 21
+conservative   negative Random      828     207 3f75b28e7a6d3a04520f0c45214a49d759397f8f4df788f0644acd0427e0d408 0876988f6d9952a2332b9cf30722ae505b53fca1baabb4b57e2e0d6a8623528c                  157                   0                  0                  38                  0                 1                  179                  59                 33                  141                  59                 32
+conservative   negative MaxMin      828     207 48aa71b03e64fd3949c6880c5e4cfbf6ff71ab3e494cbf747145590ef42fac07 f6e30c7e473ee04c0d01358248fd9ca669cf7c797109f99809c5ecda881c0a7e                  160                   0                  1                  35                  0                 0                  162                  42                 23                  127                  42                 23
+conservative   negative   Time      828     207 651baaa517e04fe42c67d107387d4e4a9a4ef24f30c1c912b1a13427bb66a132 27e52be349ffa75b44b9b04dab0bfaea37c42b48341354d9cba31ca13cbd7744                  146                   0                  1                  49                  0                 0                  167                  41                 24                  118                  41                 24
+     adult48       keep Random      828     207 3f75b28e7a6d3a04520f0c45214a49d759397f8f4df788f0644acd0427e0d408 0876988f6d9952a2332b9cf30722ae505b53fca1baabb4b57e2e0d6a8623528c                   66                   4                  6                  21                  0                 1                  179                  59                 33                  158                  59                 32
+     adult48       keep MaxMin      828     207 48aa71b03e64fd3949c6880c5e4cfbf6ff71ab3e494cbf747145590ef42fac07 f6e30c7e473ee04c0d01358248fd9ca669cf7c797109f99809c5ecda881c0a7e                   72                   4                  6                  15                  0                 1                  162                  42                 23                  147                  42                 22
+     adult48       keep   Time      828     207 651baaa517e04fe42c67d107387d4e4a9a4ef24f30c1c912b1a13427bb66a132 27e52be349ffa75b44b9b04dab0bfaea37c42b48341354d9cba31ca13cbd7744                   62                   3                  7                  25                  1                 0                  167                  41                 24                  142                  40                 24
+     adult48    exclude Random      691     175 cd54b3d2732cc5bd092b6a5ad8509ad64057aa6c44377f93db0846e284de9156 3363e705068cb0ae2c8380bb2d190b32fc5f7d153a9d5a2454b385c4fe5fb023                   66                   2                  6                  21                  0                 1                  150                  48                 29                  129                  48                 28
+     adult48    exclude MaxMin      689     177 0baf1ea04ed46647dce354e984490186bc58bb56d7bc2a5bada832924a10d774 0ec0f61746e4503391d2e7f89bb0bf075032124a22b7935124bc1a54fd50e82b                   72                   2                  6                  15                  0                 1                  134                  33                 19                  119                  33                 18
+     adult48    exclude   Time      694     172 81bc92530b561bef4193f896893d77498eb0b6e3c3198013b5c6630fe72e6f7b 3f80056023bb2247056ef2a1201f94a19303909f0a820f39b7196c8d32627111                   62                   1                  7                  25                  1                 0                  133                  31                 18                  108                  30                 18
+     adult48   negative Random      828     207 3f75b28e7a6d3a04520f0c45214a49d759397f8f4df788f0644acd0427e0d408 0876988f6d9952a2332b9cf30722ae505b53fca1baabb4b57e2e0d6a8623528c                  193                   4                  6                  50                  0                 1                  179                  59                 33                  129                  59                 32
+     adult48   negative MaxMin      828     207 48aa71b03e64fd3949c6880c5e4cfbf6ff71ab3e494cbf747145590ef42fac07 f6e30c7e473ee04c0d01358248fd9ca669cf7c797109f99809c5ecda881c0a7e                  200                   4                  6                  43                  0                 1                  162                  42                 23                  119                  42                 22
+     adult48   negative   Time      828     207 651baaa517e04fe42c67d107387d4e4a9a4ef24f30c1c912b1a13427bb66a132 27e52be349ffa75b44b9b04dab0bfaea37c42b48341354d9cba31ca13cbd7744                  185                   3                  7                  58                  1                 0                  167                  41                 24                  109                  40                 24
+  regulatory       keep Random      828     207 3f75b28e7a6d3a04520f0c45214a49d759397f8f4df788f0644acd0427e0d408 0876988f6d9952a2332b9cf30722ae505b53fca1baabb4b57e2e0d6a8623528c                   73                   2                  2                  27                  1                 0                  179                  59                 33                  152                  58                 33
+  regulatory       keep MaxMin      828     207 48aa71b03e64fd3949c6880c5e4cfbf6ff71ab3e494cbf747145590ef42fac07 f6e30c7e473ee04c0d01358248fd9ca669cf7c797109f99809c5ecda881c0a7e                   85                   3                  2                  15                  0                 0                  162                  42                 23                  147                  42                 23
+  regulatory       keep   Time      828     207 651baaa517e04fe42c67d107387d4e4a9a4ef24f30c1c912b1a13427bb66a132 27e52be349ffa75b44b9b04dab0bfaea37c42b48341354d9cba31ca13cbd7744                   73                   2                  2                  27                  1                 0                  167                  41                 24                  142                  40                 24
+  regulatory    exclude Random      755     191 018c0a7d1ee5ea0b050e960152a8173a920c483d1c0b1b9c13614fc44f283cd9 4d1a5c085628095b60cc87f388f708799afd9095be61828507b2ace51428f06f                   73                   1                  2                  27                  1                 0                  164                  54                 32                  137                  53                 32
+  regulatory    exclude MaxMin      758     188 2217d3b61945533212489bcff9f4a7a401702564925585c0eb8e6750758bffb3 8bccad83afb9b9f91a62e3bf8a6f385cb4dbd7052f92e1863809fcb751702180                   85                   2                  2                  15                  0                 0                  145                  39                 21                  130                  39                 21
+  regulatory    exclude   Time      752     194 5ff749fda1a589cf02122873ee17b6861a5b14726d6c2dc8f6a39ffdd3b1a539 b8d04143e45932ae895f67d2ecd0840275984ee70c35e30ed0cc4a0019bde473                   73                   2                  2                  27                  0                 0                  155                  37                 22                  130                  37                 22
+  regulatory   negative Random      828     207 3f75b28e7a6d3a04520f0c45214a49d759397f8f4df788f0644acd0427e0d408 0876988f6d9952a2332b9cf30722ae505b53fca1baabb4b57e2e0d6a8623528c                  140                   2                  2                  42                  1                 0                  179                  59                 33                  137                  58                 33
+  regulatory   negative MaxMin      828     207 48aa71b03e64fd3949c6880c5e4cfbf6ff71ab3e494cbf747145590ef42fac07 f6e30c7e473ee04c0d01358248fd9ca669cf7c797109f99809c5ecda881c0a7e                  150                   3                  2                  32                  0                 0                  162                  42                 23                  130                  42                 23
+  regulatory   negative   Time      828     207 651baaa517e04fe42c67d107387d4e4a9a4ef24f30c1c912b1a13427bb66a132 27e52be349ffa75b44b9b04dab0bfaea37c42b48341354d9cba31ca13cbd7744                  143                   2                  2                  39                  1                 0                  167                  41                 24                  130                  40                 24
+    combined       keep Random      828     207 3f75b28e7a6d3a04520f0c45214a49d759397f8f4df788f0644acd0427e0d408 0876988f6d9952a2332b9cf30722ae505b53fca1baabb4b57e2e0d6a8623528c                   85                   1                  0                  22                  1                 1                  179                  59                 33                  157                  58                 32
+    combined       keep MaxMin      828     207 48aa71b03e64fd3949c6880c5e4cfbf6ff71ab3e494cbf747145590ef42fac07 f6e30c7e473ee04c0d01358248fd9ca669cf7c797109f99809c5ecda881c0a7e                   89                   2                  1                  18                  0                 0                  162                  42                 23                  144                  42                 23
+    combined       keep   Time      828     207 651baaa517e04fe42c67d107387d4e4a9a4ef24f30c1c912b1a13427bb66a132 27e52be349ffa75b44b9b04dab0bfaea37c42b48341354d9cba31ca13cbd7744                   75                   1                  1                  32                  1                 0                  167                  41                 24                  137                  40                 24
+    combined    exclude Random      679     173 c5f131822486ca7bc97694ceadba28783ae6e5c0bcdd1ea2724a5fe0b6142d8f aa83d9036a255561ab4e1f10119dafab5c6029e97766a9e09ae79c94b1618477                   85                   0                  0                  22                  1                 0                  146                  51                 31                  124                  50                 31
+    combined    exclude MaxMin      678     174 a0c1c14a21a31dd9615acefa91a8533180ad0acf18a64b7f3e19a5d137ef3dfe 80370676fccc9dafb59fcae9cd0878add743ca6dc300d765d2cd891ed61b7c55                   89                   1                  0                  18                  0                 0                  131                  38                 21                  113                  38                 21
+    combined    exclude   Time      679     173 5fbe6473ac0a3f7639288c0911a2da384a913c7f9496a238ab498460cb432461 ecc8aed8c9b62b41e78c5065e49a680d2d1165598804e0733c5b15284dfa46cd                   75                   1                  0                  32                  0                 0                  134                  35                 21                  104                  35                 21
+    combined   negative Random      828     207 3f75b28e7a6d3a04520f0c45214a49d759397f8f4df788f0644acd0427e0d408 0876988f6d9952a2332b9cf30722ae505b53fca1baabb4b57e2e0d6a8623528c                  225                   1                  0                  54                  1                 1                  179                  59                 33                  125                  58                 32
+    combined   negative MaxMin      828     207 48aa71b03e64fd3949c6880c5e4cfbf6ff71ab3e494cbf747145590ef42fac07 f6e30c7e473ee04c0d01358248fd9ca669cf7c797109f99809c5ecda881c0a7e                  230                   2                  1                  49                  0                 0                  162                  42                 23                  113                  42                 23
+    combined   negative   Time      828     207 651baaa517e04fe42c67d107387d4e4a9a4ef24f30c1c912b1a13427bb66a132 27e52be349ffa75b44b9b04dab0bfaea37c42b48341354d9cba31ca13cbd7744                  215                   1                  1                  64                  1                 0                  167                  41                 24                  105                  40                 24
+{
+ "adult48/exclude/MaxMin": {
+  "gap_original": 0.2043,
+  "gap_eval_corrected": 0.1973,
+  "gap_train_eval_corrected": 0.1826,
+  "change_full": [
+   -0.0217,
+   -0.1195,
+   0.0691
+  ]
+ },
+ "adult48/exclude/Random": {
+  "gap_original": 0.1472,
+  "gap_eval_corrected": 0.1777,
+  "gap_train_eval_corrected": 0.1594,
+  "change_full": [
+   0.0122,
+   -0.0618,
+   0.0962
+  ]
+ },
+ "adult48/exclude/Time": {
+  "gap_original": 0.0151,
+  "gap_eval_corrected": 0.0621,
+  "gap_train_eval_corrected": 0.0445,
+  "change_full": [
+   0.0294,
+   -0.0629,
+   0.1152
+  ]
+ },
+ "adult48/keep/MaxMin": {
+  "gap_original": 0.2002,
+  "gap_eval_corrected": 0.2101,
+  "gap_train_eval_corrected": 0.2096,
+  "change_full": [
+   0.0095,
+   -0.0734,
+   0.0949
+  ]
+ },
+ "adult48/keep/Random": {
+  "gap_original": 0.1302,
+  "gap_eval_corrected": 0.1583,
+  "gap_train_eval_corrected": 0.1503,
+  "change_full": [
+   0.0201,
+   -0.0483,
+   0.0997
+  ]
+ },
+ "adult48/keep/Time": {
+  "gap_original": 0.0629,
+  "gap_eval_corrected": 0.0969,
+  "gap_train_eval_corrected": 0.1098,
+  "change_full": [
+   0.0469,
+   -0.0439,
+   0.1247
+  ]
+ },
+ "adult48/negative/MaxMin": {
+  "gap_original": 0.2002,
+  "gap_eval_corrected": 0.2569,
+  "gap_train_eval_corrected": 0.1769,
+  "change_full": [
+   -0.0233,
+   -0.1304,
+   0.0934
+  ]
+ },
+ "adult48/negative/Random": {
+  "gap_original": 0.1302,
+  "gap_eval_corrected": 0.269,
+  "gap_train_eval_corrected": 0.1614,
+  "change_full": [
+   0.0313,
+   -0.0826,
+   0.1377
+  ]
+ },
+ "adult48/negative/Time": {
+  "gap_original": 0.0629,
+  "gap_eval_corrected": 0.1326,
+  "gap_train_eval_corrected": 0.1269,
+  "change_full": [
+   0.064,
+   -0.048,
+   0.178
+  ]
+ },
+ "combined/exclude/MaxMin": {
+  "gap_original": 0.1955,
+  "gap_eval_corrected": 0.1964,
+  "gap_train_eval_corrected": 0.1864,
+  "change_full": [
+   -0.0091,
+   -0.0986,
+   0.0749
+  ]
+ },
+ "combined/exclude/Random": {
+  "gap_original": 0.1128,
+  "gap_eval_corrected": 0.1658,
+  "gap_train_eval_corrected": 0.1363,
+  "change_full": [
+   0.0235,
+   -0.0674,
+   0.1204
+  ]
+ },
+ "combined/exclude/Time": {
+  "gap_original": 0.1087,
+  "gap_eval_corrected": 0.0836,
+  "gap_train_eval_corrected": 0.0799,
+  "change_full": [
+   -0.0288,
+   -0.134,
+   0.0754
+  ]
+ },
+ "combined/keep/MaxMin": {
+  "gap_original": 0.2002,
+  "gap_eval_corrected": 0.2069,
+  "gap_train_eval_corrected": 0.2232,
+  "change_full": [
+   0.023,
+   -0.0629,
+   0.1093
+  ]
+ },
+ "combined/keep/Random": {
+  "gap_original": 0.1302,
+  "gap_eval_corrected": 0.1915,
+  "gap_train_eval_corrected": 0.1722,
+  "change_full": [
+   0.042,
+   -0.0459,
+   0.1461
+  ]
+ },
+ "combined/keep/Time": {
+  "gap_original": 0.0629,
+  "gap_eval_corrected": 0.0798,
+  "gap_train_eval_corrected": 0.1022,
+  "change_full": [
+   0.0393,
+   -0.065,
+   0.1437
+  ]
+ },
+ "combined/negative/MaxMin": {
+  "gap_original": 0.2002,
+  "gap_eval_corrected": 0.2137,
+  "gap_train_eval_corrected": 0.1532,
+  "change_full": [
+   -0.047,
+   -0.1511,
+   0.0561
+  ]
+ },
+ "combined/negative/Random": {
+  "gap_original": 0.1302,
+  "gap_eval_corrected": 0.2273,
+  "gap_train_eval_corrected": 0.1331,
+  "change_full": [
+   0.0029,
+   -0.1098,
+   0.1251
+  ]
+ },
+ "combined/negative/Time": {
+  "gap_original": 0.0629,
+  "gap_eval_corrected": 0.122,
+  "gap_train_eval_corrected": 0.1147,
+  "change_full": [
+   0.0518,
+   -0.0646,
+   0.1749
+  ]
+ },
+ "conservative/exclude/MaxMin": {
+  "gap_original": 0.2048,
+  "gap_eval_corrected": 0.2097,
+  "gap_train_eval_corrected": 0.2088,
+  "change_full": [
+   0.004,
+   -0.0797,
+   0.0924
+  ]
+ },
+ "conservative/exclude/Random": {
+  "gap_original": 0.1048,
+  "gap_eval_corrected": 0.1571,
+  "gap_train_eval_corrected": 0.1334,
+  "change_full": [
+   0.0286,
+   -0.0485,
+   0.1099
+  ]
+ },
+ "conservative/exclude/Time": {
+  "gap_original": 0.0472,
+  "gap_eval_corrected": 0.0427,
+  "gap_train_eval_corrected": 0.0499,
+  "change_full": [
+   0.0027,
+   -0.0832,
+   0.0902
+  ]
+ },
+ "conservative/keep/MaxMin": {
+  "gap_original": 0.2002,
+  "gap_eval_corrected": 0.2201,
+  "gap_train_eval_corrected": 0.226,
+  "change_full": [
+   0.0258,
+   -0.0494,
+   0.1055
+  ]
+ },
+ "conservative/keep/Random": {
+  "gap_original": 0.1302,
+  "gap_eval_corrected": 0.1739,
+  "gap_train_eval_corrected": 0.1558,
+  "change_full": [
+   0.0257,
+   -0.0502,
+   0.1112
+  ]
+ },
+ "conservative/keep/Time": {
+  "gap_original": 0.0629,
+  "gap_eval_corrected": 0.0678,
+  "gap_train_eval_corrected": 0.089,
+  "change_full": [
+   0.0261,
+   -0.0612,
+   0.1132
+  ]
+ },
+ "conservative/negative/MaxMin": {
+  "gap_original": 0.2002,
+  "gap_eval_corrected": 0.2202,
+  "gap_train_eval_corrected": 0.1423,
+  "change_full": [
+   -0.0579,
+   -0.1578,
+   0.0395
+  ]
+ },
+ "conservative/negative/Random": {
+  "gap_original": 0.1302,
+  "gap_eval_corrected": 0.214,
+  "gap_train_eval_corrected": 0.1183,
+  "change_full": [
+   -0.0119,
+   -0.112,
+   0.0953
+  ]
+ },
+ "conservative/negative/Time": {
+  "gap_original": 0.0629,
+  "gap_eval_corrected": 0.119,
+  "gap_train_eval_corrected": 0.091,
+  "change_full": [
+   0.0281,
+   -0.075,
+   0.1284
+  ]
+ },
+ "primary/exclude/MaxMin": {
+  "gap_original": 0.214,
+  "gap_eval_corrected": 0.2307,
+  "gap_train_eval_corrected": 0.2222,
+  "change_full": [
+   0.0083,
+   -0.0672,
+   0.0907
+  ]
+ },
+ "primary/exclude/Random": {
+  "gap_original": 0.1322,
+  "gap_eval_corrected": 0.1722,
+  "gap_train_eval_corrected": 0.1416,
+  "change_full": [
+   0.0094,
+   -0.0729,
+   0.0961
+  ]
+ },
+ "primary/exclude/Time": {
+  "gap_original": 0.0581,
+  "gap_eval_corrected": 0.0639,
+  "gap_train_eval_corrected": 0.0501,
+  "change_full": [
+   -0.008,
+   -0.098,
+   0.0836
+  ]
+ },
+ "primary/keep/MaxMin": {
+  "gap_original": 0.2002,
+  "gap_eval_corrected": 0.2244,
+  "gap_train_eval_corrected": 0.2337,
+  "change_full": [
+   0.0336,
+   -0.0396,
+   0.1126
+  ]
+ },
+ "primary/keep/Random": {
+  "gap_original": 0.1302,
+  "gap_eval_corrected": 0.1699,
+  "gap_train_eval_corrected": 0.1516,
+  "change_full": [
+   0.0215,
+   -0.0589,
+   0.1088
+  ]
+ },
+ "primary/keep/Time": {
+  "gap_original": 0.0629,
+  "gap_eval_corrected": 0.0728,
+  "gap_train_eval_corrected": 0.0858,
+  "change_full": [
+   0.0229,
+   -0.0654,
+   0.1046
+  ]
+ },
+ "primary/negative/MaxMin": {
+  "gap_original": 0.2002,
+  "gap_eval_corrected": 0.2077,
+  "gap_train_eval_corrected": 0.15,
+  "change_full": [
+   -0.0502,
+   -0.1486,
+   0.0512
+  ]
+ },
+ "primary/negative/Random": {
+  "gap_original": 0.1302,
+  "gap_eval_corrected": 0.2105,
+  "gap_train_eval_corrected": 0.1159,
+  "change_full": [
+   -0.0142,
+   -0.1139,
+   0.095
+  ]
+ },
+ "primary/negative/Time": {
+  "gap_original": 0.0629,
+  "gap_eval_corrected": 0.1131,
+  "gap_train_eval_corrected": 0.0876,
+  "change_full": [
+   0.0248,
+   -0.0749,
+   0.1239
+  ]
+ },
+ "regulatory/exclude/MaxMin": {
+  "gap_original": 0.18,
+  "gap_eval_corrected": 0.2149,
+  "gap_train_eval_corrected": 0.2204,
+  "change_full": [
+   0.0404,
+   -0.0412,
+   0.1182
+  ]
+ },
+ "regulatory/exclude/Random": {
+  "gap_original": 0.0999,
+  "gap_eval_corrected": 0.1531,
+  "gap_train_eval_corrected": 0.1414,
+  "change_full": [
+   0.0414,
+   -0.038,
+   0.1338
+  ]
+ },
+ "regulatory/exclude/Time": {
+  "gap_original": 0.1284,
+  "gap_eval_corrected": 0.1168,
+  "gap_train_eval_corrected": 0.159,
+  "change_full": [
+   0.0306,
+   -0.0685,
+   0.1328
+  ]
+ },
+ "regulatory/keep/MaxMin": {
+  "gap_original": 0.2002,
+  "gap_eval_corrected": 0.2294,
+  "gap_train_eval_corrected": 0.2385,
+  "change_full": [
+   0.0383,
+   -0.0416,
+   0.1126
+  ]
+ },
+ "regulatory/keep/Random": {
+  "gap_original": 0.1302,
+  "gap_eval_corrected": 0.1871,
+  "gap_train_eval_corrected": 0.1788,
+  "change_full": [
+   0.0487,
+   -0.0337,
+   0.1475
+  ]
+ },
+ "regulatory/keep/Time": {
+  "gap_original": 0.0629,
+  "gap_eval_corrected": 0.0864,
+  "gap_train_eval_corrected": 0.1456,
+  "change_full": [
+   0.0827,
+   -0.0198,
+   0.1861
+  ]
+ },
+ "regulatory/negative/MaxMin": {
+  "gap_original": 0.2002,
+  "gap_eval_corrected": 0.2489,
+  "gap_train_eval_corrected": 0.2172,
+  "change_full": [
+   0.017,
+   -0.0805,
+   0.1104
+  ]
+ },
+ "regulatory/negative/Random": {
+  "gap_original": 0.1302,
+  "gap_eval_corrected": 0.2117,
+  "gap_train_eval_corrected": 0.1385,
+  "change_full": [
+   0.0083,
+   -0.0961,
+   0.1316
+  ]
+ },
+ "regulatory/negative/Time": {
+  "gap_original": 0.0629,
+  "gap_eval_corrected": 0.153,
+  "gap_train_eval_corrected": 0.1384,
+  "change_full": [
+   0.0756,
+   -0.0279,
+   0.1863
+  ]
+ }
+}
+
+=== 14_record_case_audit.py ===
+{
+  "ecotox_determining_records": 828,
+  "ecotox_compounds": 441,
+  "exact_rational_interval_vs_code12_comparisons": 2646,
+  "mismatches": 0,
+  "selected_ecotox_cases": 7,
+  "source_overlap": {
+    "OpenFoodTox_compounds": 216,
+    "EPA_compounds": 133,
+    "both_sources_compounds": 71,
+    "union_compounds": 278,
+    "same_physical_study_established_across_sources": 0,
+    "interpretation": "zero established means unverifiable with supplied trial identifiers, not proven absence of shared studies"
+  },
+  "ecotox_export_identifier_limits": "Reference Number only; no test/result ID or MRID columns. References may identify databases, not individual experiments.",
+  "OFT_MRID_keyword_hits_in_bee_export": 0,
+  "OFT_MRID_keyword_hits_in_literature_export": 0,
+  "ecotox_exactly_gt100_records": 106,
+  "ecotox_other_right_limit_records": 234,
+  "ecotox_exact_duplicate_rows_beyond_first": 4,
+  "duplicate_handling": "retained for exact replay of upstream aggregation; not asserted to be distinct experiments",
+  "metadata_missingness": [
+    {
+      "source": "EPA",
+      "records": 134,
+      "compounds": 133,
+      "stage_not_reported": 0,
+      "duration_missing": 134,
+      "duration_48h": 0,
+      "material_field_missing": 134,
+      "dose_basis_missing": 134,
+      "dose_basis_test_material": 0,
+      "dose_basis_active_ingredient": 0,
+      "MRID_missing": 6,
+      "same_study_as_benchmark_established": 0
+    },
+    {
+      "source": "OpenFoodTox",
+      "records": 263,
+      "compounds": 216,
+      "stage_not_reported": 263,
+      "duration_missing": 125,
+      "duration_48h": 126,
+      "material_field_missing": 215,
+      "dose_basis_missing": 251,
+      "dose_basis_test_material": 0,
+      "dose_basis_active_ingredient": 11,
+      "MRID_missing": 263,
+      "same_study_as_benchmark_established": 0
+    }
+  ],
+  "row_hash_encoding": "SHA256 of UTF-8 compact JSON [column,value] pairs in original column order; missing fields empty strings",
+  "source_data_row_0based": "parsed source data-record ordinal, header excluded; not a physical text line number",
+  "labels": {
+    "1": "LD50 <= cutoff",
+    "0": "LD50 > cutoff",
+    "-1": "unresolved"
+  }
+}
+[{"case_id":"E01","CAS":"76-06-2","name":"Trichloronitromethane","source_values":">100 AI ug\/org","benchmark_y_1":0,"median_aware_y_1":0,"benchmark_y_11":0,"unanimous_aware_y_11":0,"benchmark_y_100":1,"median_aware_y_100":0},{"case_id":"E03","CAS":"61-31-4","name":"1-Naphthaleneacetic acid, Sodium salt","source_values":">96.7 AI ug\/org","benchmark_y_1":0,"median_aware_y_1":0,"benchmark_y_11":0,"unanimous_aware_y_11":0,"benchmark_y_100":1,"median_aware_y_100":-1},{"case_id":"E04","CAS":"78-34-2","name":"Delnav","source_values":"21.27 ug\/bee","benchmark_y_1":0,"median_aware_y_1":0,"benchmark_y_11":0,"unanimous_aware_y_11":0,"benchmark_y_100":1,"median_aware_y_100":1},{"case_id":"E05","CAS":"66-81-9","name":"4-[(2R)-2-[(1S,3S,5S)-3,5-Dimethyl-2-oxocyclohexyl]-2-hydroxyethyl]-2,6-piperidinedione","source_values":">241.72 ug\/bee","benchmark_y_1":0,"median_aware_y_1":0,"benchmark_y_11":0,"unanimous_aware_y_11":0,"benchmark_y_100":0,"median_aware_y_100":0},{"case_id":"E06","CAS":"115970-17-7","name":"1-[(6-Chloro-3-pyridinyl)methyl]-4,5-dihydro-1H-imidazol-2-amine","source_values":">1000 ng\/org; >1000 ng\/org; >1000 ng\/org","benchmark_y_1":1,"median_aware_y_1":0,"benchmark_y_11":1,"unanimous_aware_y_11":-1,"benchmark_y_100":1,"median_aware_y_100":-1},{"case_id":"E07","CAS":"119-64-2","name":"1,2,3,4-Tetrahydronaphthalene","source_values":">0.336 ug\/bee","benchmark_y_1":1,"median_aware_y_1":-1,"benchmark_y_11":1,"unanimous_aware_y_11":-1,"benchmark_y_100":1,"median_aware_y_100":-1},{"case_id":"E08","CAS":"4685-14-7","name":"1,1'-Dimethyl-4,4'-bipyridinium","source_values":">6.04 ug\/bee","benchmark_y_1":0,"median_aware_y_1":0,"benchmark_y_11":1,"unanimous_aware_y_11":-1,"benchmark_y_100":1,"median_aware_y_100":-1}]
+Raw-SMILES cache comparison passed
+Cache guards and 45 primary-model refits passed
+{
+  "status": "passed",
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.3",
+    "pandas": "3.0.1",
+    "scipy": "1.18.1",
+    "rdkit": "2025.9.4",
+    "scikit-learn": "1.8.0"
+  },
+  "negative_paths": [
+    {
+      "case": "source_hash",
+      "status": "rejected",
+      "reason": "Cache raw source SHA-256 differs from the current raw CSV"
+    },
+    {
+      "case": "compound_row_order",
+      "status": "rejected",
+      "reason": "Cached processed compound identities, row order or labels differ from raw inputs"
+    },
+    {
+      "case": "nonfinite_kernel",
+      "status": "rejected",
+      "reason": "Kernel ECFP has invalid shape or nonfinite values"
+    },
+    {
+      "case": "asymmetric_kernel",
+      "status": "rejected",
+      "reason": "Kernel ECFP fails symmetry, range or self-similarity checks"
+    },
+    {
+      "case": "reordered_symmetric_kernel",
+      "status": "rejected",
+      "reason": "Cache artifact SHA-256 mismatch"
+    },
+    {
+      "case": "kernel_shape",
+      "status": "rejected",
+      "reason": "Kernel ECFP has invalid shape or nonfinite values"
+    },
+    {
+      "case": "partial_cache",
+      "status": "rejected",
+      "reason": "Incomplete cache: ['kernel_maccs.npy']; explicitly rebuild with force=True."
+    },
+    {
+      "case": "new_cache_v2_round_trip",
+      "status": "passed"
+    },
+    {
+      "case": "v2_ordered_smiles_sha256",
+      "status": "rejected",
+      "reason": "Cache validation context changed: ordered_smiles_sha256"
+    },
+    {
+      "case": "v2_ordered_identity_sha256",
+      "status": "rejected",
+      "reason": "Cache validation context changed: ordered_identity_sha256"
+    },
+    {
+      "case": "v2_input_sha256",
+      "status": "rejected",
+      "reason": "Cache validation context changed: input_sha256"
+    },
+    {
+      "case": "v2_environment",
+      "status": "rejected",
+      "reason": "Cache validation context changed: environment"
+    },
+    {
+      "case": "v2_parameters",
+      "status": "rejected",
+      "reason": "Cache validation context changed: parameters"
+    },
+    {
+      "case": "duplicate_split_compound",
+      "status": "rejected",
+      "reason": "Duplicate compound within official split random"
+    }
+  ],
+  "boundary_rules": {
+    "historical_rule_cases": 2,
+    "corrected_rule_cases": 6,
+    "status": "passed"
+  },
+  "primary_refits": {
+    "models": 45,
+    "scores": 9315,
+    "max_score_abs_difference": 0.0
+  },
+  "ecotox_replication": {
+    "compounds": 441,
+    "label_level_route_matches": 441,
+    "raw_export_sha256": "426b4be8ab8b265404a75efa75fc892bf3074a4352efcdab6af9cd736d4f7c5a"
+  },
+  "crossover": {
+    "prediction_rows": 133545,
+    "AUROC_cells": 2700,
+    "gap_cells": 2700,
+    "max_AUROC_abs_difference": 0.0,
+    "exclude_model_cells": 225,
+    "exclude_models_refitted": 450,
+    "exclude_refit_max_score_abs_difference": 0.0,
+    "scope": "Correction ledgers, cohort identities, all metric/gap algebra, bootstrap accounting, and both training-label models in all exclude cells"
+  }
+}
+
+All final numerical analyses completed.

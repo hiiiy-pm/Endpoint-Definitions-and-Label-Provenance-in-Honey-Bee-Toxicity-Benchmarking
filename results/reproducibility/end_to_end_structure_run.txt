@@ -1,0 +1,7 @@
+         source_screen membership  n_compounds   median       q1       q3  minimum  maximum
+           OpenFoodTox   excluded          886 0.284367 0.212216 0.422222 0.023810 0.972973
+           OpenFoodTox   included          149 0.356164 0.258065 0.468085 0.105263 0.744186
+OpenFoodTox_48h_screen   excluded          963 0.250000 0.181818 0.340667 0.020000 0.972973
+OpenFoodTox_48h_screen   included           72 0.327654 0.225605 0.435484 0.066667 0.733333
+                   EPA   excluded          932 0.261917 0.194444 0.380666 0.000000 0.972973
+                   EPA   included          103 0.271186 0.224490 0.398113 0.128205 0.760000

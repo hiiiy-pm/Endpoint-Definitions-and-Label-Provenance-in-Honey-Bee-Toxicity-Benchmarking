@@ -1,0 +1,113 @@
+All input files unchanged; no models fitted. Checks: 694
+                      source  split  threshold   labels  n_compounds  n_pos  estimate   ci_low  ci_high  bootstrap_valid
+OFT_single_structure_contact random        100 original           24     23  0.130435 0.000000 0.285714             3201
+OFT_single_structure_contact random        100 external           24      5  0.600000 0.325888 0.873684             4988
+OFT_single_structure_contact random         11 original           24      4  0.525000 0.159091 0.885179             4943
+OFT_single_structure_contact random         11 external           24      3  0.666667 0.347826 0.954545             4798
+OFT_single_structure_contact random          1 original           24      1  0.869565 0.727273 1.000000             3237
+OFT_single_structure_contact random          1 external           24      1  0.869565 0.727273 1.000000             3237
+OFT_single_structure_contact maxmin        100 original           18     13  0.723077 0.441558 0.955556             4980
+OFT_single_structure_contact maxmin        100 external           18      4  0.660714 0.250000 1.000000             4946
+OFT_single_structure_contact maxmin         11 original           18      2  0.906250 0.750000 1.000000             4391
+OFT_single_structure_contact maxmin         11 external           18      1  0.941176 0.812500 1.000000             3200
+OFT_single_structure_contact maxmin          1 original           18      1  0.941176 0.812500 1.000000             3200
+OFT_single_structure_contact maxmin          1 external           18      1  0.941176 0.812500 1.000000             3200
+OFT_single_structure_contact   time        100 original           28     24  0.583333 0.000000 1.000000             4937
+OFT_single_structure_contact   time        100 external           28      7  0.496599 0.217687 0.782609             5000
+OFT_single_structure_contact   time         11 original           28      6  0.727273 0.408629 0.962500             4996
+OFT_single_structure_contact   time         11 external           28      4  0.802083 0.576923 0.962963             4926
+OFT_single_structure_contact   time          1 original           28      2  0.634615 0.185185 1.000000             4397
+OFT_single_structure_contact   time          1 external           28      2  0.634615 0.185185 1.000000             4397
+             OFT_48h_contact random        100 original            8      8       NaN      NaN      NaN                0
+             OFT_48h_contact random        100 external            8      2  0.750000 0.250000 1.000000             4513
+             OFT_48h_contact random         11 original            8      2  0.333333 0.000000 0.857143             4481
+             OFT_48h_contact random         11 external            8      1  0.714286 0.333333 1.000000             3288
+             OFT_48h_contact random          1 original            8      0       NaN      NaN      NaN                0
+             OFT_48h_contact random          1 external            8      0       NaN      NaN      NaN                0
+             OFT_48h_contact maxmin        100 original            8      6  0.750000 0.333333 1.000000             4518
+             OFT_48h_contact maxmin        100 external            8      2  0.833333 0.428571 1.000000             4508
+             OFT_48h_contact maxmin         11 original            8      1  0.857143 0.571429 1.000000             3325
+             OFT_48h_contact maxmin         11 external            8      1  0.857143 0.571429 1.000000             3325
+             OFT_48h_contact maxmin          1 original            8      1  0.857143 0.571429 1.000000             3325
+             OFT_48h_contact maxmin          1 external            8      1  0.857143 0.571429 1.000000             3325
+             OFT_48h_contact   time        100 original            9      8  0.875000 0.600000 1.000000             3224
+             OFT_48h_contact   time        100 external            9      2  0.428571 0.000000 0.833333             4503
+             OFT_48h_contact   time         11 original            9      2  0.714286 0.285714 1.000000             4503
+             OFT_48h_contact   time         11 external            9      2  0.714286 0.285714 1.000000             4503
+             OFT_48h_contact   time          1 original            9      1  1.000000 1.000000 1.000000             3297
+             OFT_48h_contact   time          1 external            9      1  1.000000 1.000000 1.000000             3297
+       PLOS_resolved_contact random        100 original           32     29  0.574713 0.000000 1.000000             4763
+       PLOS_resolved_contact random        100 external           32     10  0.786364 0.608687 0.928586             5000
+       PLOS_resolved_contact random         11 original           32      7  0.840000 0.650990 0.983333             4999
+       PLOS_resolved_contact random         11 external           32      6  0.891026 0.716667 1.000000             4996
+       PLOS_resolved_contact random          1 original           32      6  0.980769 0.926939 1.000000             4996
+       PLOS_resolved_contact random          1 external           32      4  0.982143 0.916667 1.000000             4941
+       PLOS_resolved_contact maxmin        100 original           24     18  0.750000 0.523810 0.928977             4996
+       PLOS_resolved_contact maxmin        100 external           24      8  0.703125 0.452632 0.894737             5000
+       PLOS_resolved_contact maxmin         11 original           24      6  0.851852 0.671416 0.983193             4996
+       PLOS_resolved_contact maxmin         11 external           24      4  0.875000 0.695652 1.000000             4943
+       PLOS_resolved_contact maxmin          1 original           24      4  0.850000 0.610526 1.000000             4931
+       PLOS_resolved_contact maxmin          1 external           24      1  0.782609 0.608696 0.950000             3143
+       PLOS_resolved_contact   time        100 original           30     26  0.644231 0.357143 1.000000             4928
+       PLOS_resolved_contact   time        100 external           30      8  0.539773 0.279503 0.798611             5000
+       PLOS_resolved_contact   time         11 original           30     10  0.750000 0.497321 0.950006             5000
+       PLOS_resolved_contact   time         11 external           30      6  0.777778 0.506944 0.986111             4986
+       PLOS_resolved_contact   time          1 original           30      7  0.590062 0.298576 0.865433             4998
+       PLOS_resolved_contact   time          1 external           30      4  0.826923 0.488775 1.000000             4934
+
+SAME ORIGINAL CONTACT SENSITIVITY:
+                      source  split  threshold   labels  n_compounds  n_pos  estimate   ci_low  ci_high
+OFT_single_structure_contact random        100 original           15     14  0.142857 0.000000 0.357143
+OFT_single_structure_contact random        100 external           15      3  0.500000 0.220056 0.777778
+OFT_single_structure_contact random         11 original           15      2  0.615385 0.142857 1.000000
+OFT_single_structure_contact random         11 external           15      2  0.615385 0.142857 1.000000
+OFT_single_structure_contact random          1 original           15      0       NaN      NaN      NaN
+OFT_single_structure_contact random          1 external           15      0       NaN      NaN      NaN
+OFT_single_structure_contact maxmin        100 original           13      8  0.650000 0.300000 0.952381
+OFT_single_structure_contact maxmin        100 external           13      2  0.545455 0.090909 1.000000
+OFT_single_structure_contact maxmin         11 original           13      1  1.000000 1.000000 1.000000
+OFT_single_structure_contact maxmin         11 external           13      1  1.000000 1.000000 1.000000
+OFT_single_structure_contact maxmin          1 original           13      1  1.000000 1.000000 1.000000
+OFT_single_structure_contact maxmin          1 external           13      1  1.000000 1.000000 1.000000
+OFT_single_structure_contact   time        100 original           18     16  0.125000 0.000000 0.400000
+OFT_single_structure_contact   time        100 external           18      2  0.593750 0.062500 1.000000
+OFT_single_structure_contact   time         11 original           18      1  0.764706 0.529412 0.941176
+OFT_single_structure_contact   time         11 external           18      1  0.764706 0.529412 0.941176
+OFT_single_structure_contact   time          1 original           18      0       NaN      NaN      NaN
+OFT_single_structure_contact   time          1 external           18      0       NaN      NaN      NaN
+             OFT_48h_contact random        100 original            5      5       NaN      NaN      NaN
+             OFT_48h_contact random        100 external            5      1  0.500000 0.000000 1.000000
+             OFT_48h_contact random         11 original            5      1  0.750000 0.250000 1.000000
+             OFT_48h_contact random         11 external            5      1  0.750000 0.250000 1.000000
+             OFT_48h_contact random          1 original            5      0       NaN      NaN      NaN
+             OFT_48h_contact random          1 external            5      0       NaN      NaN      NaN
+             OFT_48h_contact maxmin        100 original            6      4  0.625000 0.000000 1.000000
+             OFT_48h_contact maxmin        100 external            6      1  0.800000 0.400000 1.000000
+             OFT_48h_contact maxmin         11 original            6      1  1.000000 1.000000 1.000000
+             OFT_48h_contact maxmin         11 external            6      1  1.000000 1.000000 1.000000
+             OFT_48h_contact maxmin          1 original            6      1  1.000000 1.000000 1.000000
+             OFT_48h_contact maxmin          1 external            6      1  1.000000 1.000000 1.000000
+             OFT_48h_contact   time        100 original            5      5       NaN      NaN      NaN
+             OFT_48h_contact   time        100 external            5      1  0.250000 0.000000 0.750000
+             OFT_48h_contact   time         11 original            5      1  1.000000 1.000000 1.000000
+             OFT_48h_contact   time         11 external            5      1  1.000000 1.000000 1.000000
+             OFT_48h_contact   time          1 original            5      0       NaN      NaN      NaN
+             OFT_48h_contact   time          1 external            5      0       NaN      NaN      NaN
+       PLOS_resolved_contact random        100 original           18     18       NaN      NaN      NaN
+       PLOS_resolved_contact random        100 external           18      7  0.896104 0.703704 1.000000
+       PLOS_resolved_contact random         11 original           18      5  0.984615 0.911111 1.000000
+       PLOS_resolved_contact random         11 external           18      5  0.984615 0.911111 1.000000
+       PLOS_resolved_contact random          1 original           18      5  1.000000 1.000000 1.000000
+       PLOS_resolved_contact random          1 external           18      4  0.982143 0.907692 1.000000
+       PLOS_resolved_contact maxmin        100 original           13      9  0.805556 0.500000 1.000000
+       PLOS_resolved_contact maxmin        100 external           13      4  0.666667 0.333333 0.950000
+       PLOS_resolved_contact maxmin         11 original           13      2  0.863636 0.636364 1.000000
+       PLOS_resolved_contact maxmin         11 external           13      2  0.863636 0.636364 1.000000
+       PLOS_resolved_contact maxmin          1 original           13      1  0.916667 0.727273 1.000000
+       PLOS_resolved_contact maxmin          1 external           13      1  0.916667 0.727273 1.000000
+       PLOS_resolved_contact   time        100 original           13     11  0.272727 0.000000 0.545455
+       PLOS_resolved_contact   time        100 external           13      3  0.733333 0.363636 1.000000
+       PLOS_resolved_contact   time         11 original           13      2  0.772727 0.333333 1.000000
+       PLOS_resolved_contact   time         11 external           13      2  0.772727 0.333333 1.000000
+       PLOS_resolved_contact   time          1 original           13      2  0.772727 0.333333 1.000000
+       PLOS_resolved_contact   time          1 external           13      2  0.772727 0.333333 1.000000

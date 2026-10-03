@@ -1,0 +1,6 @@
+Tier,groups,all_adult,any_larva_or_pupa,stage_not_reported_only,all_duration_2d,any_daily_unit,all_adult48,any_adult48,any_right_censored,records
+0,72,63,5,4,51,2,51,62,54,117
+1,212,162,36,10,148,30,146,174,180,309
+2,60,41,9,7,37,6,36,43,11,89
+3,97,50,11,23,40,5,37,62,6,313
+all,441,316,61,44,276,43,270,341,251,828

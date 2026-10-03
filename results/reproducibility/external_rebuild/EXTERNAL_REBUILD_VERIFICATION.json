@@ -1,0 +1,140 @@
+{
+  "status": "passed",
+  "started_at_utc": "2026-10-02T16:53:50.776111+00:00",
+  "root": "D:\\ApisTox_external_recheck_20261003",
+  "network_policy": "urlopen is blocked in every subprocess; alignment also explicitly requires bundled responses",
+  "input_sha256": {
+    "data/external_raw/dataset_final.csv": "de4b160a23601a44ac5ec5b23aae95973acba060135630a6df8f73d128baea9e",
+    "data/external_raw/excluded_data.csv": "a5826a0bf724e2e8db4f6edaa596689ff2282acbfb8bbe68b6b75d8827d2b788",
+    "data/external_raw/INPUT_MANIFEST.json": "311f63bb9ebdfed0c47753d0861e08814c382d134a69f401241d602a1fb0b362",
+    "data/external_raw/journal.pone.0265962.s001.xlsx": "dcee6401ef66ab914590cd7cb3a0dcfce8ccdc6e67792ee42f6a382f79a1ff2b",
+    "data/external_raw/journal.pone.0265962.s002.xlsx": "120b589e7222273b47e782087b43cfffe3bd3720e0210edaad494ede44d0af76",
+    "data/external_raw/journal.pone.0265962.s003.xlsx": "3d93ed8530f1ac7ad0d24d9bc0d0685483f0078e8fc36ec979451a5f0571c575",
+    "data/external_raw/journal.pone.0265962.s004.xlsx": "2f5db66bec655a7c13687435989b74d14909eabb6184ffe6a37b15f820656575",
+    "data/external_raw/journal.pone.0265962.s005.xlsx": "0e174323660cab9f1bbb1c59d2af3b819872f48c4e397f6c74718bafbbdd4f9a",
+    "data/external_raw/OFT3.0 export repository.xlsx": "5181661e921651d4087b544981e1e5a63b99532844eac0112732806a00a85eda",
+    "output/external_data_audit/cache/pubchem_records.json": "5832638328682a1fb6dfbb383df46ec94d9bc404606cd03a3bab8d2ad227204e",
+    "results/primary/02_test_predictions.csv": "ceb8a3885ccc0633c5f7035a9949917a562005b931729d5218543b7afb3ee6f4",
+    "results/primary/01_representation_performance.csv": "96320146f34af8f68a2ac3a88115ff79d03d4472389639a459939dc45423724b"
+  },
+  "models_fitted": 0,
+  "predictions_recomputed": 0,
+  "stages": [
+    {
+      "script": "output/external_data_audit/extract_tables.py",
+      "arguments": [],
+      "script_sha256": "d1d0b789d06e29a7024f49b9978ac01664ac12bbfc7fd404a801f9f4ecaf343b",
+      "exit_code": 0,
+      "elapsed_seconds": 8.774961499999336,
+      "log": "results/reproducibility/external_rebuild/01_extract_tables.txt"
+    },
+    {
+      "script": "output/external_data_audit/align_structures.py",
+      "arguments": [
+        "--offline",
+        "--rebuild-structures"
+      ],
+      "script_sha256": "d0386577b2e50c6716607bb41ed2a53eb82df2a3fe745d96bc9f5caf31bbd50f",
+      "exit_code": 0,
+      "elapsed_seconds": 15.225411800001893,
+      "log": "results/reproducibility/external_rebuild/02_align_structures.txt"
+    },
+    {
+      "script": "output/external_data_audit/audit_external_data.py",
+      "arguments": [],
+      "script_sha256": "4aa724188db27b60dae4730ed69fde8093a013ebe0a4b5ddb62da4ae601a4d67",
+      "exit_code": 0,
+      "elapsed_seconds": 3.274619800002256,
+      "log": "results/reproducibility/external_rebuild/03_audit_external_data.txt"
+    },
+    {
+      "script": "output/external_data_audit/verify_audit.py",
+      "arguments": [],
+      "script_sha256": "5a42dce27a3fa7d39a930ac96506d7d84bbc0ce91b49e5fc6e29ebb19967febb",
+      "exit_code": 0,
+      "elapsed_seconds": 1.2594603999968967,
+      "log": "results/reproducibility/external_rebuild/04_verify_audit.txt"
+    },
+    {
+      "script": "output/external_evaluation/build_frozen_members.py",
+      "arguments": [],
+      "script_sha256": "bf85190ca44d5306b7f4c069ac0b354e602fa8ce9f5a04240d9bf8a1826aae21",
+      "exit_code": 0,
+      "elapsed_seconds": 0.8949085000022023,
+      "log": "results/reproducibility/external_rebuild/05_build_frozen_members.txt"
+    },
+    {
+      "script": "output/external_evaluation/frozen_evaluation.py",
+      "arguments": [],
+      "script_sha256": "789d672e3ca786c22a15bddfcbcf5b48f3782eb319d9f99ec70a1e558f291624",
+      "exit_code": 0,
+      "elapsed_seconds": 4.956720900001528,
+      "log": "results/reproducibility/external_rebuild/06_frozen_evaluation.txt"
+    }
+  ],
+  "input_hashes_unchanged": true,
+  "regenerated_outputs": [
+    "output/external_data_audit/apistox_structures.csv",
+    "output/external_data_audit/audit_summary.json",
+    "output/external_data_audit/excluded_all_parsed.csv",
+    "output/external_data_audit/excluded_reason_counts.csv",
+    "output/external_data_audit/excluded_structure_neighbours.csv",
+    "output/external_data_audit/excluded_uncertain_compound_summary.csv",
+    "output/external_data_audit/excluded_uncertain_identity_alignment.csv",
+    "output/external_data_audit/excluded_uncertain_route_groups.csv",
+    "output/external_data_audit/label_concordance_summary.csv",
+    "output/external_data_audit/label_disagreement_review.csv",
+    "output/external_data_audit/oft_acute_endpoints_aligned.csv",
+    "output/external_data_audit/oft_bee_source_rows.csv",
+    "output/external_data_audit/oft_conservative_candidates.csv",
+    "output/external_data_audit/oft_fullkey_unmatched_review.csv",
+    "output/external_data_audit/overlap_summary.csv",
+    "output/external_data_audit/plos_adult_acute_endpoints_aligned.csv",
+    "output/external_data_audit/plos_conservative_candidates.csv",
+    "output/external_data_audit/plos_identity_alignment.csv",
+    "output/external_data_audit/plos_mrid_citations.csv",
+    "output/external_data_audit/same_route_label_concordance.csv",
+    "output/external_data_audit/source_identity_quarantine.csv",
+    "output/external_data_audit/structure_methods.json",
+    "output/external_data_audit/threshold_label_feasibility.csv",
+    "output/external_data_audit/verification.json",
+    "output/frozen_external_feasibility/frozen_split_external_members.csv",
+    "output/frozen_external_feasibility/REBUILD_MANIFEST.json",
+    "output/external_evaluation/frozen_all_cohort_counts.csv",
+    "output/external_evaluation/frozen_cohort_flow.csv",
+    "output/external_evaluation/frozen_cohort_overlap.csv",
+    "output/external_evaluation/frozen_compound_members.csv",
+    "output/external_evaluation/frozen_contrasts_all_representations.csv",
+    "output/external_evaluation/frozen_contrasts_ECFP.csv",
+    "output/external_evaluation/frozen_ECFP_paired_bootstrap_distributions.npz",
+    "output/external_evaluation/frozen_external_minus_original_metrics.csv",
+    "output/external_evaluation/frozen_metrics_all_representations.csv",
+    "output/external_evaluation/frozen_metrics_ECFP.csv",
+    "output/external_evaluation/frozen_original_full_test_performance_context.csv",
+    "output/external_evaluation/frozen_protocol.json",
+    "output/external_evaluation/frozen_scores_and_labels.csv",
+    "output/external_evaluation/frozen_underlying_endpoint_rows.csv",
+    "output/external_evaluation/round1_verification.json",
+    "output/external_evaluation/verification.json"
+  ],
+  "comparison_policy": {
+    "absolute_tolerance": 1e-12,
+    "relative_tolerance": 0,
+    "CSV": "identical shape, columns, row order, text and missingness",
+    "NPZ": "identical keys/shapes/missingness, every stored bootstrap draw compared"
+  },
+  "baseline_repository": "D:\\hiy132\u7248\u672csci\\\u65b0\u5efa\u6587\u4ef6\u5939\\ApisTox_Complete_English_Submission_Support_Package\\ApisTox_Complete_English_Submission_Support_Package\\revision_20261001\\repo",
+  "compared_existing_outputs": 37,
+  "new_reconstructed_dependencies": [
+    "output/frozen_external_feasibility/frozen_split_external_members.csv",
+    "output/frozen_external_feasibility/REBUILD_MANIFEST.json"
+  ],
+  "new_verification_records": [
+    "output/external_data_audit/verification.json",
+    "output/external_evaluation/round1_verification.json",
+    "output/external_evaluation/verification.json"
+  ],
+  "failures": [],
+  "max_absolute_scientific_difference": 0.0,
+  "finished_at_utc": "2026-10-02T16:54:26.279688+00:00"
+}

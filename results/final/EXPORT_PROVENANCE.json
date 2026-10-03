@@ -6,8 +6,8 @@
     "results/primary/01_representation_performance.csv": "96320146f34af8f68a2ac3a88115ff79d03d4472389639a459939dc45423724b",
     "results/primary/03_ecfp_paired_bootstrap.csv": "94c0c625848e78db2026b468dc94a58650bb9412ba8b71b2285f22080dc5afd6",
     "results/primary/05_representation_paired_bootstrap.csv": "69afc66b6602f23f53d71ad878e0022737cdeff85beba8d8e28847947c81f624",
-    "results/decomposition/01_tier_composition_long.csv": "8790eb05b6f74e47fc66791ebea13b35fc5ce88f6059d92b6ea40a29724989c9",
-    "results/decomposition/03_tier_composition_association_tests.csv": "bc859667d857f10cd7370206d969df0a41b8baa0afbc7b381ba7ea02b7a25cc7",
+    "results/decomposition/01_tier_composition_long.csv": "47c30da678cbc80d5c26efb68edb058aabd881c9a9ae23164b99c90717a4f552",
+    "results/decomposition/03_tier_composition_association_tests.csv": "5d60d363ca07154c5c9ebd6cdb9e0a2c8ed724aa097e5301fa7d272fd984e688",
     "results/decomposition/04_model_decomposition_performance.csv": "51fa859c4927b9fd2d36afb21ee6bebcba266e6030201ecb4b2140396e5b931f",
     "results/decomposition/06_model_decomposition_bootstrap.csv": "da02438d86e6f531f1d2bf6fa9c8a9ea7e04f541d53dac328382e00f6129f20c",
     "results/learning_curves/01_matched_learning_curves_long.csv": "77d63d58f48b1d2ff2f075492b56a5dd985fb1f6b85ec0835e69f9294281b4a1",
@@ -353,7 +353,7 @@
       "inputs": [
         "results/decomposition/04_model_decomposition_performance.csv"
       ],
-      "operation": "All five prespecified model baselines, including source+route",
+      "operation": "All five designated model baselines, including source+route",
       "sha256": "c1d5181d4a39bad520c0e5ce6a4e6f6f6f995fd3d162ad5dc265c4bd2bfed0d5"
     },
     "source_data/figure_learning_curve_raw.csv": {

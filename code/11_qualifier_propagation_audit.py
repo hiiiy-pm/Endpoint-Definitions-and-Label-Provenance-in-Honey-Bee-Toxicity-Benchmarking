@@ -56,6 +56,12 @@ def ppdb_level(median: float) -> int:
 
 
 def binary_label(values: np.ndarray):
+    """Historical upstream rule, including its overlapping numerical =11 boundary.
+
+    Exact [11, 12] is historically negative; [11] is positive because the first
+    branch wins. This reproduces the distributed labels, not corrected unanimity.
+    Script 12 separately distinguishes exact 11, >11 and >=11 with interval bounds.
+    """
     if values.min() <= 11 and values.max() <= 11:
         return 1
     if values.min() >= 11 and values.max() >= 11:
@@ -123,10 +129,18 @@ determining = (groups.sort_values(["CAS", "median", "route_order"])
 study = load_study_data()
 bench = study.df.assign(Tier=study.tier)
 eco = bench[bench.source == "ECOTOX"].merge(determining, on="CAS", how="left",
-                                           suffixes=("", "_replicated"))
+                                           suffixes=("", "_replicated"), validate="one_to_one")
+eco["replicated_label_matches"] = eco.label == eco.label_replicated
+eco["replicated_level_matches"] = eco.ppdb_level == eco.ppdb_level_replicated
+eco["replicated_route_matches"] = eco.toxicity_type == eco.route
+valid = (eco["median"].notna() & eco.replicated_label_matches
+         & eco.replicated_level_matches & eco.replicated_route_matches)
+mismatch_path = OUT / "ecotox_replication_mismatches.csv"
+eco.loc[~valid].to_csv(mismatch_path, index=False)
+if len(eco) != 441 or not valid.all():
+    raise ValueError(f"ECOTOX reproduction failed: {int(valid.sum())}/{len(eco)}, "
+                     f"expected 441/441 labels, levels and routes; see {mismatch_path}")
 matched = eco.dropna(subset=["median"]).copy()
-matched["replicated_label_matches"] = matched.label == matched.label_replicated
-matched["replicated_level_matches"] = matched.ppdb_level == matched.ppdb_level_replicated
 matched["median_exactly_100"] = np.isclose(matched["median"], 100.0)
 matched.to_csv(OUT / "06_ecotox_qualifier_propagation.csv", index=False,
                columns=["name", "CAS", "Tier", "label", "ppdb_level", "route", "n_records", "median",
@@ -156,6 +170,8 @@ summary = {
     "benchmark_ecotox_compounds": int(len(eco)),
     "replicated_compounds": int(len(matched)),
     "replication_label_and_level_match": int(len(consistent)),
+    "replication_route_match": int(eco.replicated_route_matches.sum()),
+    "historical_exact_11_boundary": "min=11,max>11 is negative; a singleton/all-exact-11 group is positive; not the corrected interval rule",
     "tier1": by_tier[by_tier.Tier == 1].iloc[0].to_dict(),
     "by_tier": by_tier.to_dict(orient="records"),
 }

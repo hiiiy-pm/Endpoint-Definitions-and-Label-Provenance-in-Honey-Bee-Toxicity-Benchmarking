@@ -2,7 +2,7 @@
   "analysis": "Frozen prediction external-source reassessment, designed after viewing labels",
   "not_independent_new_compound_validation": true,
   "fitting_calibration_tuning_or_score_transformation": false,
-  "primary_representation_prespecified": "ECFP",
+  "primary_representation_designated": "ECFP",
   "other_representations": "All four reported descriptively; none selected by performance.",
   "sources": {
     "OFT_single_structure_contact": "Audited OFT single_structure_screen AND route Contact",
@@ -12,7 +12,7 @@
   "cohorts": {
     "all_external_contact": "Original mixed-route model reassessed against external contact endpoint",
     "original_contact_only": "Fixed subset also labelled Contact in original ApisTox; other original study conditions can still differ",
-    "quality_screen": "PLOS only: no InChI/SMILES conflict in any selected record AND every selected record has an MRID; fixed before examining subgroup performance",
+    "quality_screen": "PLOS only: no InChI/SMILES conflict in any selected record AND every selected record has an MRID; the implemented eligibility rule uses no prediction scores",
     "original_contact_quality_screen": "PLOS only: intersection of original Contact and quality_screen"
   },
   "identity_exclusion": "All members matched to model training set by full key, connectivity, standardized parent connectivity, CAS or normalized name removed; exclude entire external key if any row matches.",

@@ -37,12 +37,16 @@ validation = {
         np.all(study.y[1] <= study.y[11]) and np.all(study.y[11] <= study.y[100])
     ),
     "source_csv_sha256": sha256_file(RAW_CSV),
+    "cache_validation": cache["validation"],
 }
 for split, (tr, te) in study.splits.items():
     validation[f"split_{split}"] = {
         "train_n": int(len(tr)),
         "test_n": int(len(te)),
         "overlap_n": int(len(set(tr).intersection(te))),
+        "train_unique_n": int(len(np.unique(tr))),
+        "test_unique_n": int(len(np.unique(te))),
+        "union_n": int(len(set(tr).union(te))),
     }
 (RESULTS / "final").mkdir(parents=True, exist_ok=True)
 (RESULTS / "final" / "00_data_validation.json").write_text(

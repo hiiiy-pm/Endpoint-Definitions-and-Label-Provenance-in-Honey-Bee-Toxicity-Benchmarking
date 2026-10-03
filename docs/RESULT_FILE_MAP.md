@@ -4,7 +4,7 @@
 |---|---|
 | Dataset, Tier and split validation | `results/final/00_data_validation.json`; `results/decomposition/00_split_endpoint_counts.csv` |
 | Tier composition table/heatmap | `results/decomposition/01_tier_composition_long.csv`; `02_tier_composition_wide.csv`; `03_tier_composition_association_tests.csv` |
-| Five-representation AUROC/AUPRC | `results/primary/01_representation_performance.csv` |
+| Five-representation AUROC/AP (legacy column `AUPRC`) | `results/primary/01_representation_performance.csv` |
 | Primary endpoint scores | `results/primary/02_test_predictions.csv` |
 | Molecule/scaffold paired endpoint bootstrap | `results/primary/03_ecfp_paired_bootstrap.csv`; distributions in `.npz` |
 | Same bootstrap for all five representations | `results/primary/05_representation_paired_bootstrap.csv`; distributions in `.npz` |
@@ -38,8 +38,15 @@
 | Tier-pair AUROC (Fig. 4b; Supplementary Table S11) | `results/tier_boundary/01_tier_pair_auroc.csv`; `source_data/figure_tier_pair_auroc.csv` |
 | Tier1 exclusion (Fig. 4c; Table 3; Supplementary Table S14) | `results/tier_boundary/02_tier1_exclusion_auroc.csv`; `02b_tier1_refit_test_predictions.csv`; `03_tier1_exclusion_decomposition.csv`; `source_data/figure_tier1_exclusion.csv` |
 | Concordance by tier and record source (Table 4; Fig. 5a; Supplementary Table S16) | `results/tier_boundary/04_concordance_by_tier.csv`; `05_concordance_by_record_source.csv`; `source_data/figure_concordance_by_tier.csv` |
-| Qualifier tracing of the ECOTOX labelling (Fig. 5b; Supplementary Table S17) | `results/tier_boundary/06_ecotox_qualifier_propagation.csv`; `07_ecotox_qualifier_by_tier.csv`; `QUALIFIER_PROPAGATION_SUMMARY.json`; `source_data/figure_qualifier_propagation.csv` |
+| Original consensus qualifier tracing (Supplementary Table S17) | `results/tier_boundary/06_ecotox_qualifier_propagation.csv`; `07_ecotox_qualifier_by_tier.csv`; `QUALIFIER_PROPAGATION_SUMMARY.json` |
+| Factorial rule comparison (Fig. 5b; Supplementary Table S22) | `results/label_audit/03_rule_transition_counts.csv`; `source_data/figure_label_rule_comparison.csv` |
 | Key numbers of the tier-boundary analyses | `results/tier_boundary/TIER_BOUNDARY_SUMMARY.json` |
 | Main-text Tables 3-5 rows | `scripts/make_main_tables.py` (writes `output/main_tables/`) |
 | Figure QA | `output/figure_qa/` (alignment and collision reports for Fig1-Fig6 and FigS1-FigS4) |
 | Supplementary tables (LaTeX) | `output/latex_tables/supplementary_tables_ordered.tex`, assembled by `scripts/assemble_supplementary_tables.py` |
+| Complete rule labels / heterogeneity / upstream cut-off selection | `results/label_audit/02_compound_labels_by_rule.csv`; `04_determining_group_heterogeneity.csv`; `05_upstream_cutoff_rules.csv` |
+| Correction crossover (main Table 6; Supplementary Table S23) | `results/label_audit/06_crossover_auroc.csv`; `07_crossover_gap.csv`; `08_crossover_label_changes.csv`; `09_crossover_predictions.csv.gz`; `CROSSOVER_SUMMARY.json` |
+| Non-nested extreme stress test | `results/label_audit/LABEL_NESTING_CHECK.csv`; `LABEL_NESTING_CHECK.json` |
+| Record cases, source flow, overlap and metadata limits (Supplementary Table S24) | `results/record_audit/`; `docs/RECORD_CASE_AUDIT.md` |
+| Independent revision and full-pipeline verification | `results/reproducibility/`; `docs/CACHE_VALIDATION.md`; `docs/END_TO_END_RERUN.md` |
+| Analysis-history evidence | `docs/ANALYSIS_HISTORY.md`; `docs/analysis_history/EVIDENCE_MANIFEST.json` |

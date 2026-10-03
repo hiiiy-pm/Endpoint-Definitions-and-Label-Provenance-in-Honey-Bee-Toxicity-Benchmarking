@@ -135,6 +135,14 @@ def save(fig, stem, align=None, tick_gap_axis=None):
     if _SELECTED and stem not in _SELECTED:
         plt.close(fig)
         return
+    if stem.startswith(('Fig1_', 'Fig3_', 'Fig4_', 'Fig6_')):
+        from matplotlib.text import Text
+        fig.canvas.draw()  # Materialize automatically generated tick labels.
+        for axis in fig.axes:
+            axis.tick_params(axis='both', labelsize=9.2)
+        for label in fig.findobj(Text):
+            if label.get_text():
+                label.set_fontsize(max(label.get_fontsize(), 9.2))
     fig.canvas.draw()
     if align is not None and require_matplotlib_panel_alignment is not None:
         require_matplotlib_panel_alignment(
@@ -149,11 +157,12 @@ def save(fig, stem, align=None, tick_gap_axis=None):
         (_QA / f'{stem}_tick_spacing.json').write_text(json.dumps({'gaps_pt': gaps,
             'labels': [x.get_text() for x in labels], 'minimum_required_pt': 4}, indent=2),
             encoding='utf-8')
-    fig.savefig(OUT / f'{stem}.pdf')
-    fig.savefig(OUT / f'{stem}.png', dpi=600)
+    export = {'bbox_inches': matplotlib.transforms.Bbox.from_bounds(0, 0, *fig.get_size_inches())} if stem.startswith(('Fig1_', 'Fig3_', 'Fig4_', 'Fig6_')) else {}
+    fig.savefig(OUT / f'{stem}.pdf', **export)
+    fig.savefig(OUT / f'{stem}.png', dpi=600, **export)
     if stem.startswith(MAIN_STEMS):
-        fig.savefig(OUT / f'{stem}.svg')
-        fig.savefig(OUT / f'{stem}.tiff', dpi=600, pil_kwargs={'compression': 'tiff_lzw'})
+        fig.savefig(OUT / f'{stem}.svg', **export)
+        fig.savefig(OUT / f'{stem}.tiff', dpi=600, pil_kwargs={'compression': 'tiff_lzw'}, **export)
     plt.close(fig)
     print('  wrote', stem)
 
@@ -220,128 +229,82 @@ for sp in SPLITS:
     test_pos[sp] = {'100': int((tier >= 1).sum()), '11': int((tier >= 2).sum()),
                     '1': int((tier >= 3).sum()), 'n': len(te)}
 
-fig = plt.figure(figsize=(W2, 4.75))
-gs = fig.add_gridspec(2, 2, height_ratios=[1.0, 1.12], width_ratios=[1.0, 1.02],
-                      hspace=0.44, wspace=0.22)
+fig = plt.figure(figsize=(W2, 6.65))
+gs = fig.add_gridspec(2, 2, height_ratios=[1.0, 1.50], width_ratios=[0.94, 1.06],
+                      hspace=0.42, wspace=0.27, left=0.13, right=0.98,
+                      bottom=0.07, top=0.90)
 
-# ---- a: endpoint construction on the real tier scale -------------------
+# a: The horizontal scale remains proportional to the original tier counts.
 ax = fig.add_subplot(gs[0, :])
-ax_fig1a = ax  # its panel label is placed once panel b fixes the shared offset
 ax.set_xlim(-14, N_TOT + 14)
-ax.set_ylim(-2.28, 1.30)
+ax.set_ylim(-2.58, 1.30)
 ax.axis('off')
-header(ax, 'Nested endpoint labels on one fixed compound set',
-       f'{N_TOT:,} ApisTox compounds ordered by benchmark annotation tier',
-       y_main=1.10, y_sub=1.00)
-
-# insecticide share strip
+panel(ax, 'a', x=-0.116, y=1.26)
+header(ax, f'Nested labels on {N_TOT:,} compounds',
+       'Annotation ranges in µg/bee; tier widths follow compound counts',
+       y_main=1.20, y_sub=1.08)
 for t in range(4):
     w = TIER_N[t]
     ax.add_patch(plt.Rectangle((edges[t], 0.30), w, 0.62, facecolor='#F2F2F2',
                                edgecolor='white', lw=1.0))
     ax.add_patch(plt.Rectangle((edges[t], 0.30), w, 0.62 * ins_share[t] / 100,
                                facecolor=C_EP['1'], edgecolor='white', lw=1.0, alpha=0.85))
-    ax.text(edges[t] + w / 2, 1.00, f'{ins_share[t]:.0f}%', ha='center', va='bottom',
-            fontsize=7.1, color=C_EP['1'], fontweight='bold')
-ax.text(-20, 0.61, 'Insecticide\nshare', ha='right', va='center', fontsize=7.0,
-        color=MUTED, linespacing=1.3)
-
-# tier bar, with the toxicity range set inside each block
+    ax.text(edges[t]+w/2, 1.00, f'{ins_share[t]:.0f}%', ha='center', va='bottom',
+            color=C_EP['1'], fontweight='bold')
+ax.text(-20, 0.61, 'Insecticide\nshare', ha='right', va='center', color=MUTED)
 for t in range(4):
     w = TIER_N[t]
     ax.add_patch(plt.Rectangle((edges[t], -0.86), w, 0.96, facecolor=TIER_COL[t],
                                edgecolor='white', lw=1.2))
-    ax.text(edges[t] + w / 2, -0.16, f'Tier{t}', ha='center', va='center',
-            fontsize=8.1, fontweight='bold', color=TIER_TXT[t])
-    ax.text(edges[t] + w / 2, -0.44, f'n = {TIER_N[t]}', ha='center', va='center',
-            fontsize=7.0, color=TIER_TXT[t])
-    ax.text(edges[t] + w / 2, -0.70, f'{TIER_RANGE[t]} µg/bee', ha='center', va='center',
-            fontsize=7.0, color=TIER_TXT[t], alpha=0.85)
-ax.text(-20, -0.38, 'Severity\ntier', ha='right', va='center', fontsize=7.0,
-        color=MUTED, linespacing=1.3)
-
-# nested endpoint spans
-spans = [('100', 1, '≤ 100 µg/bee'), ('11', 2, '≤ 11 µg/bee'), ('1', 3, '≤ 1 µg/bee')]
-for i, (ep, first, lab) in enumerate(spans):
-    y0 = -1.34 - i * 0.40
-    x0 = edges[first]
-    npos = N_TOT - x0
-    ax.add_patch(plt.Rectangle((x0, y0), N_TOT - x0, 0.28,
-                               facecolor=C_EP[ep], edgecolor='none', alpha=0.9))
-    # Span starts align with the tier boundaries; no connector overlays cross labels.
-    txt = f'{npos} positive  ({npos / N_TOT * 100:.1f}%)'
-    if npos / N_TOT > 0.24:
-        ax.text(x0 + npos / 2, y0 + 0.14, txt, ha='center', va='center',
-                fontsize=7.2, color='white', fontweight='bold')
+    for yy, txt, bold in [(-0.13, f'Tier{t}', True),
+                          (-0.44, f'n = {TIER_N[t]}', False),
+                          (-0.73, TIER_RANGE[t], False)]:
+        ax.text(edges[t]+w/2, yy, txt, ha='center', va='center',
+                fontweight='bold' if bold else 'normal', color=TIER_TXT[t])
+ax.text(-20, -0.38, 'Tier', ha='right', va='center', color=MUTED)
+for i, (ep, first) in enumerate([('100', 1), ('11', 2), ('1', 3)]):
+    y0=-1.40-i*0.48; x0=edges[first]; npos=N_TOT-x0
+    ax.add_patch(plt.Rectangle((x0,y0), npos, 0.34, facecolor=C_EP[ep], edgecolor='none', alpha=0.9))
+    txt=f'{npos} positive ({npos/N_TOT*100:.1f}%)'
+    if ep=='100':
+        ax.text(x0+npos/2,y0+0.17,txt,ha='center',va='center',color='white',fontweight='bold')
     else:
-        ax.text(x0 - 14, y0 + 0.14, txt, ha='right', va='center',
-                fontsize=7.2, color=C_EP[ep], fontweight='bold')
-    ax.text(-20, y0 + 0.14, lab, ha='right', va='center', fontsize=7.6, color=C_EP[ep],
-            fontweight='bold')
-    if ep == '11':
-        ax.text(N_TOT + 12, y0 + 0.14, 'native benchmark task', ha='left', va='center',
-                fontsize=7.0, color=MUTED)
+        ax.text(x0-18,y0+0.17,txt,ha='right',va='center',color=C_EP[ep],fontweight='bold')
+    ax.text(-20,y0+0.17,f'≤{ep}',ha='right',va='center',color=C_EP[ep],fontweight='bold')
 
-# ---- b: evaluation design ---------------------------------------------
-ax = fig.add_subplot(gs[1, 0])
-panel(ax, 'b', x=-0.22, y=1.24)
-# Same physical offset from the shared left edge for panel labels a and b.
-panel(ax_fig1a, 'a', x=-0.22 * ax.get_position().width / ax_fig1a.get_position().width,
-      y=1.16)
-header(ax, 'Official evaluation splits', '828 training and 207 test compounds each',
-       y_main=1.14, y_sub=1.03)
-xs = np.arange(len(SPLITS))
-wd = 0.26
-for i, ep in enumerate(EPS):
-    vals = [test_pos[sp][ep] for sp in SPLITS]
-    ax.bar(xs + (i - 1) * wd, vals, width=wd, color=C_EP[ep], edgecolor='white', lw=0.5)
-    for x0, v in zip(xs + (i - 1) * wd, vals):
-        ax.text(x0, v + 4, str(v), ha='center', va='bottom', fontsize=7.0, color=INK)
-ax.set_xticks(xs, SPLITS)
-ax.set_ylabel('Positive test compounds')
-ax.set_ylim(0, 262)
-ax.legend(ncol=3,handles=[plt.Rectangle((0, 0), 1, 1, color=C_EP[e], label=f'≤ {e} µg/bee')
-                   for e in EPS],
-          frameon=False, loc='upper right', fontsize=7.0, handlelength=1.0,
-          handletextpad=0.4, borderaxespad=0.1)
-ax.set_yticks([0, 50, 100, 150, 200])
-ax.set_axisbelow(True)
-ax.grid(False)  # Avoid gridlines through shortbar value labels.
+# b: Official splits, unchanged endpoint counts.
+ax = fig.add_subplot(gs[1,0])
+panel(ax,'b',x=-0.28,y=1.16)
+header(ax,'Official evaluation splits','828 train / 207 test per split',y_main=1.10,y_sub=1.03)
+xs=np.arange(len(SPLITS)); wd=0.26
+for i,ep in enumerate(EPS):
+    vals=[test_pos[sp][ep] for sp in SPLITS]
+    ax.bar(xs+(i-1)*wd,vals,width=wd,color=C_EP[ep],edgecolor='white',lw=0.5)
+    for x0,v in zip(xs+(i-1)*wd,vals):
+        ax.text(x0,v+4,str(v),ha='center',va='bottom')
+ax.set_xticks(xs,SPLITS); ax.set_ylabel('Positive test compounds')
+ax.set_ylim(0,270);ax.set_yticks([0,50,100,150,200])
+ax.legend(ncol=3,handles=[plt.Rectangle((0,0),1,1,color=C_EP[e],label=f'≤{e}') for e in EPS],
+          frameon=False,loc='upper center',handlelength=0.9,handletextpad=0.3,columnspacing=0.8)
 trim(ax)
 
-# ---- c: analysis workflow ---------------------------------------------
-ax = fig.add_subplot(gs[1, 1])
-panel(ax, 'c', x=-0.07, y=1.24)
-ax.set_xlim(0, 1)
-ax.set_ylim(0, 1)
-ax.axis('off')
-header(ax, 'Audit workflow', 'paired baseline; defined diagnostic subsets',
-       y_main=1.14, y_sub=1.03)
-steps = [
-    ('1', 'Endpoint contrasts', 'five representations; paired scaffold bootstrap',
-     C_EP['11']),
-    ('2', 'Composition and controls', 'metadata models; matched classes; source holdouts',
-     '#B8860B'),
-    ('3', 'Tier-boundary localization', 'tier-pair AUROC; Tier1 exclusion',
-     '#009E73'),
-    ('4', 'Label provenance and correction', 'record rules; matched-label correction tests',
-     C_EP['1']),
-    ('5', 'Unseen identities', 'structure-only predictions; default decisions',
-     '#6B6B6B'),
-]
-for i, (num, head_t, body_t, col) in enumerate(steps):
-    y0 = 0.985 - i * 0.199
-    ax.add_patch(FancyBboxPatch((0.005, y0 - 0.180), 0.99, 0.180,
-                                boxstyle='round,pad=0,rounding_size=0.025',
-                                facecolor=col, edgecolor='none', alpha=0.08))
-    # scatter markers are sized in points, so the badge stays circular
-    ax.scatter(0.050, y0 - 0.090, s=95, color=col, edgecolor='none', zorder=3)
-    ax.text(0.050, y0 - 0.090, num, ha='center', va='center', fontsize=6.9,
-            color='white', fontweight='bold', zorder=4)
-    ax.text(0.098, y0 - 0.052, head_t, ha='left', va='center', fontsize=7.4,
-            fontweight='bold', color=col)
-    ax.text(0.098, y0 - 0.128, body_t, ha='left', va='center', fontsize=6.5,
-            color=INK)
+# c: Two-line details retain the five original analysis stages.
+ax=fig.add_subplot(gs[1,1]);ax.set_xlim(0,1);ax.set_ylim(0,1);ax.axis('off')
+panel(ax,'c',x=-0.10,y=1.16)
+header(ax,'Audit workflow','Paired baseline; diagnostic subsets',y_main=1.10,y_sub=1.03)
+steps=[('1','Endpoint contrasts','Five representations; paired\nscaffold bootstrap',C_EP['11']),
+       ('2','Composition and controls','Metadata; matched classes;\nsource holdouts','#B8860B'),
+       ('3','Tier-boundary localization','Tier-pair AUROC;\nTier1 exclusion','#009E73'),
+       ('4','Label provenance','Record rules; matched-label\ncorrection tests',C_EP['1']),
+       ('5','Unseen identities','Structure-only predictions;\ndefault decisions','#6B6B6B')]
+for i,(num,head_t,body_t,col) in enumerate(steps):
+    y0=0.985-i*0.199
+    ax.add_patch(FancyBboxPatch((0.005,y0-0.185),0.99,0.185,
+        boxstyle='round,pad=0,rounding_size=0.015',facecolor=col,edgecolor='none',alpha=0.08))
+    ax.scatter(0.055,y0-0.070,s=110,color=col,edgecolor='none',zorder=3)
+    ax.text(0.055,y0-0.070,num,ha='center',va='center',color='white',fontweight='bold',zorder=4)
+    ax.text(0.115,y0-0.037,head_t,ha='left',va='center',fontweight='bold',color=col)
+    ax.text(0.115,y0-0.116,body_t,ha='left',va='center',color=INK,linespacing=1.2)
 
 save(fig, 'Fig1_study_design', align={'require_panel_labels': False})
 
@@ -429,16 +392,18 @@ save(fig, 'Fig2_endpoint_discriminability', align={'require_panel_labels': False
 # --------------------------------------------------------------------------
 # Figure 3 - composition and model decomposition
 # --------------------------------------------------------------------------
-fig = plt.figure(figsize=(W2, 5.25))
-gs = fig.add_gridspec(2, 3, height_ratios=[1.12, 1.0], hspace=0.60, wspace=0.16)
+fig = plt.figure(figsize=(W2, 5.65))
+gs = fig.add_gridspec(2, 3, height_ratios=[1.12, 1.0], hspace=0.83, wspace=0.18,
+                         left=0.23, right=0.93, top=0.86, bottom=0.11)
 
 ax = fig.add_subplot(gs[0, :])
-panel(ax, 'a', x=-0.075, y=1.20)
+panel(ax, 'a', x=-0.28, y=1.23)
 arr = np.array([[comp.loc[t, k] for k, _, _ in COMP_COLS] for t in range(4)])
 im = ax.imshow(arr, aspect='auto', vmin=0, vmax=0.75, cmap='Blues')
-ax.set_xticks(np.arange(len(COMP_COLS)), [lab for _, lab, _ in COMP_COLS])
+ax.set_xticks(np.arange(len(COMP_COLS)), [{'Herbicide':'Herb.', 'Fungicide':'Fung.', 'Insecticide':'Insect.'}.get(lab,lab)
+               for _, lab, _ in COMP_COLS])
 ax.set_yticks(np.arange(4),
-              [f'Tier{t}:  {TIER_RANGE[t]} µg/bee,  n = {TIER_N[t]}' for t in range(4)])
+              [f'Tier{t}  (n = {TIER_N[t]})' for t in range(4)])
 for i in range(arr.shape[0]):
     for j in range(arr.shape[1]):
         ax.text(j, i, f'{arr[i, j] * 100:.1f}', ha='center', va='center',
@@ -459,6 +424,7 @@ for a0, b0, name in bounds:
     ax.text((a0 + b0) / 2, -0.85, name, ha='center', va='bottom',
             fontsize=7.7, fontweight='bold', color=MUTED)
 ax.set_ylim(3.5, -1.0)
+ax.patch.set_visible(False)  # Group headings occupy the white band above the matrix.
 # highlight the insecticide gradient
 ins = [lab for _, lab, _ in COMP_COLS].index('Insecticide')
 ax.add_patch(plt.Rectangle((ins - 0.5, -0.5), 1, 4, fill=False,
@@ -469,7 +435,7 @@ cb.set_ticks([0, 0.25, 0.50, 0.75])
 cb.set_ticklabels(['0', '25', '50', '75'])
 cb.outline.set_linewidth(0.5)
 cb.ax.tick_params(length=2, labelsize=6.6)
-ax.set_title('Tier composition by source, exposure route and agrochemical class',
+ax.set_title('Tier composition',
              loc='left', pad=16, fontweight='bold', color=INK)
 
 MODELS = ['Source + route', 'Agrochemical flags', 'All metadata',
@@ -478,7 +444,7 @@ avail = [m for m in MODELS if m in set(model.model)]
 for j, sp in enumerate(SPLITS):
     ax = fig.add_subplot(gs[1, j])
     if j == 0:
-        panel(ax, 'b', x=-0.30, y=1.30)
+        panel(ax, 'b', x=-0.96, y=1.22)
     d = model[model.split == sp]
     ys = np.arange(len(avail))[::-1]
     for y0, m in zip(ys, avail):
@@ -503,7 +469,7 @@ for j, sp in enumerate(SPLITS):
     ax.set_title(sp, loc='left', fontweight='bold', pad=6, color=INK)
 
 fig.legend(handles=h, frameon=False, ncol=3, loc='upper center',
-           bbox_to_anchor=(0.5, 0.495), handletextpad=0.35, columnspacing=1.6)
+           bbox_to_anchor=(0.59, 0.49), handletextpad=0.35, columnspacing=1.6)
 save(fig, 'Fig3_composition_and_models', align={'require_panel_labels': False})
 
 # --------------------------------------------------------------------------
@@ -520,15 +486,16 @@ OWN_PAIRS = {100: {(1, 0), (2, 0), (3, 0)},
 AUC_DIVERGING = matplotlib.colors.LinearSegmentedColormap.from_list(
     'auc_diverging', ['#B3440E', '#F2D3BE', '#F7F7F7', '#C6DBEC', '#0B5C91'])
 
-fig = plt.figure(figsize=(W2, 6.45))
-outer = fig.add_gridspec(2, 1, height_ratios=[1.0, 1.45], hspace=0.66)
+fig = plt.figure(figsize=(W2, 8.1))
+outer = fig.add_gridspec(3, 1, height_ratios=[1.0, 1.40, 1.0], hspace=0.74,
+                            left=0.23, right=0.95, top=0.90, bottom=0.15)
 gsa = outer[0].subgridspec(1, 3, wspace=0.16)
-gsb = outer[1].subgridspec(1, 2, width_ratios=[1.10, 1.0], wspace=0.66)
+# Panels b and c use the complete width; only panel a has three comparable axes.
 
 for j, sp in enumerate(SPLITS):
     ax = fig.add_subplot(gsa[0, j])
     if j == 0:
-        panel(ax, 'a', x=-0.30, y=1.30)
+        panel(ax, 'a', x=-0.95, y=1.30)
     d = curve[curve.split == sp]
     for ep in EPS:
         q = d[d.endpoint == ep].groupby('n').auroc.quantile([.025, .5, .975]).unstack()
@@ -543,23 +510,23 @@ for j, sp in enumerate(SPLITS):
         ax.set_ylabel('Test AUROC')
     else:
         ax.set_yticklabels([])
-    ax.set_xlabel('Training compounds per class')
+    ax.set_xlabel('Compounds per class')
     ax.set_axisbelow(True)
     ax.grid(color=GRID, lw=0.55)
     trim(ax)
     ax.set_title(sp, loc='left', fontweight='bold', pad=6, color=INK)
-fig.text(0.5, 1.012, 'Class-count-matched learning curves', ha='center',
+fig.text(0.59, 0.985, 'Class-count-matched learning curves', ha='center',
          va='top', fontsize=9.0, fontweight='bold', color=INK)
 hc = [Line2D([0], [0], color=C_EP[e], lw=1.4, marker='o', ms=3.2,
              markeredgecolor='white', markeredgewidth=0.5, label=f'≤ {e} µg/bee')
       for e in EPS]
 fig.legend(handles=hc, frameon=False, ncol=3, loc='upper center',
-           bbox_to_anchor=(0.5, 0.993), handletextpad=0.35, columnspacing=1.8,
+           bbox_to_anchor=(0.59, 0.968), handletextpad=0.35, columnspacing=1.8,
            handlelength=1.6)
 
 # b: tier-pair ranking probabilities of the saved ECFP scores
-ax_b = fig.add_subplot(gsb[0, 0])
-panel(ax_b, 'b', x=-0.42, y=1.19)
+ax_b = fig.add_subplot(outer[1])
+panel(ax_b, 'b', x=-0.27, y=1.15)
 rows_b = [(sp, t) for sp in SPLITS for t in (100, 11, 1)]
 M = np.array([[float(tpair[(tpair.Split == sp) & (tpair.TrainedFor == t) &
                            (tpair.HigherTier == hi) & (tpair.LowerTier == lo)].AUROC.iloc[0])
@@ -569,7 +536,7 @@ im = ax_b.imshow(M, aspect='auto', cmap=AUC_DIVERGING,
 for i, (sp, t) in enumerate(rows_b):
     for j, (hi, lo) in enumerate(PAIRS):
         v = M[i, j]
-        ax_b.text(j, i, f'{v:.2f}', ha='center', va='center', fontsize=6.5,
+        ax_b.text(j, i, f'{v:.2f}', ha='center', va='center', fontsize=9.2,
                   color='white' if (v > 0.86 or v < 0.36) else INK)
         if (hi, lo) in OWN_PAIRS[t]:
             ax_b.add_patch(plt.Rectangle((j - 0.47, i - 0.47), 0.94, 0.94, fill=False,
@@ -579,7 +546,7 @@ for k in (3, 6):
 ax_b.set_xticks(range(len(PAIRS)), [f'T{hi}>T{lo}' for hi, lo in PAIRS], fontsize=7.0)
 ax_b.get_xticklabels()[0].set_color(C_EP['1'])
 ax_b.get_xticklabels()[0].set_fontweight('bold')
-ax_b.set_yticks(range(len(rows_b)), [f'{sp} · model ≤{t}' for sp, t in rows_b], fontsize=7.0)
+ax_b.set_yticks(range(len(rows_b)), [f'{sp} · ≤{t}' for sp, t in rows_b], fontsize=7.0)
 for s in ax_b.spines.values():
     s.set_visible(False)
 ax_b.tick_params(length=0)
@@ -587,15 +554,15 @@ ax_b.set_title('Tier-pair AUROC of saved ECFP scores', loc='left', fontweight='b
                pad=7, color=INK, fontsize=8.5)
 cb = fig.colorbar(im, ax=ax_b, fraction=0.045, pad=0.025)
 cb.set_ticks([0.3, 0.5, 0.75, 1.0])
-cb.set_label('P(higher tier ranked above lower tier)', fontsize=6.8)
+cb.set_label('Pairwise AUROC', fontsize=9.2)
 cb.outline.set_linewidth(0.5)
 cb.ax.tick_params(length=2, labelsize=6.6)
 
 # c: Tier1 exclusion from evaluation, then from training
-ax_c = fig.add_subplot(gsb[0, 1])
-panel(ax_c, 'c', x=-0.30, y=1.19)
+ax_c = fig.add_subplot(outer[2])
+panel(ax_c, 'c', x=-0.27, y=1.20)
 QUANT = [('A100_full', '≤100, all tiers', C_EP['100'], 'o', True),
-         ('A100_noT1_eval', '≤100 model, Tier1 removed from test', C_EP['100'], 'o', False),
+         ('A100_noT1_eval', '≤100, Tier1 removed from test', C_EP['100'], 'o', False),
          ('Aclean_noT1_train_eval', 'Refit and tested without Tier1', '#009E73', 'D', True),
          ('A11_full', '≤11 reference', C_EP['11'], 's', True)]
 GAP = 5.4
@@ -622,8 +589,14 @@ ax_c.set_title('Tier1 exclusion', loc='left', fontweight='bold', pad=7, color=IN
 hq = [Line2D([0], [0], marker=mk, lw=0, color=col, markersize=4.4,
              markerfacecolor=col if filled else 'white', markeredgecolor=col,
              markeredgewidth=0.9, label=lab) for _q, lab, col, mk, filled in QUANT]
-ax_c.legend(handles=hq, frameon=False, loc='upper left', bbox_to_anchor=(-0.02, -0.20),
+ax_c.legend(handles=hq, frameon=False, loc='upper left', bbox_to_anchor=(-0.22, -0.39),
             ncol=2, fontsize=6.6, handletextpad=0.3, columnspacing=1.0)
+
+# Align panel letters in figure coordinates after the colorbar fixes plot widths.
+for axis in fig.axes:
+    for label in axis.texts:
+        if label.get_text() in {'a', 'b', 'c'}:
+            label.set_x((0.025 - axis.get_position().x0) / axis.get_position().width)
 
 save(fig, 'Fig4_class_count_and_tier_boundary', align={'require_panel_labels': False})
 
@@ -913,15 +886,22 @@ if _HAVE_RDKIT:
 
     _SS = 4  # supersampling factor for crisp embedded structures
 
-    def _draw(smi, w=430, h=300):
-        """Render one molecule at a fixed bond length so every panel shares a scale."""
+    def _draw(smi, display_width_pt, w=430, h=300):
+        """Size atom labels and strokes for the final physical panel width.
+
+        Bond length is a preferred maximum: RDKit can reduce it to fit a complex
+        molecule, so the figure does not claim a common physical bond length.
+        """
         m = Chem.MolFromSmiles(smi)
         d2d = rdMolDraw2D.MolDraw2DCairo(w * _SS, h * _SS)
         o = d2d.drawOptions()
-        o.bondLineWidth = 1.5 * _SS
-        o.minFontSize = 12 * _SS
-        o.maxFontSize = 14 * _SS
-        o.fixedBondLength = 27 * _SS
+        pixels_per_point = w * _SS / display_width_pt
+        o.bondLineWidth = 0.60 * pixels_per_point
+        o.scaleBondWidth = False
+        o.fixedFontSize = int(round(6.2 * pixels_per_point))
+        o.minFontSize = o.fixedFontSize
+        o.maxFontSize = o.fixedFontSize
+        o.fixedBondLength = 8.5 * pixels_per_point
         o.padding = 0.05
         o.clearBackground = True
         o.setBackgroundColour((1.0, 1.0, 1.0, 1.0))
@@ -966,19 +946,20 @@ if _HAVE_RDKIT:
         if len(pairs) == 3:
             break
 
-    fig = plt.figure(figsize=(W2, 4.35))
-    gs = fig.add_gridspec(2, 12, height_ratios=[1.0, 0.92], hspace=0.92, wspace=0.05,
-                          top=0.86, bottom=0.06, left=0.015, right=0.985)
+    fig = plt.figure(figsize=(W2, 5.1))
+    gs = fig.add_gridspec(2, 12, height_ratios=[1.0, 0.92], hspace=1.12, wspace=0.05,
+                          top=0.82, bottom=0.12, left=0.025, right=0.975)
     fig.text(0.5, 0.965, 'Moving the cut-off reassigns the same compound',
              ha='center', va='baseline', fontsize=8.6, fontweight='bold', color=INK)
 
     # ---- a: one representative compound per tier, with its class at each endpoint
     for _k, _bi in enumerate(medoids):
         ax = fig.add_subplot(gs[0, _k * 3:_k * 3 + 3])
-        ax.imshow(_draw(mol_df.loc[_bi, 'SMILES']), interpolation='none')
+        ax.imshow(_draw(mol_df.loc[_bi, 'SMILES'],
+                        ax.get_position().width * fig.get_figwidth() * 72), interpolation='none')
         ax.axis('off')
         if _k == 0:
-            panel(ax, 'a', x=-0.02, y=1.44)
+            panel(ax, 'a', x=-0.02, y=1.63)
         _t = int(mol_df.loc[_bi, 'Tier'])
         ax.text(0.5, 1.20, f'Tier{_t}', transform=ax.transAxes, ha='center', va='baseline',
                 fontsize=8.2, fontweight='bold', color=TIER_TXT[_t],
@@ -992,7 +973,7 @@ if _HAVE_RDKIT:
                        color=C_EP[_ep] if _pos else 'white', edgecolor=C_EP[_ep], linewidth=1.1)
             ax.text(_x, -0.17, f'\u2264{_ep}', transform=ax.transAxes, ha='center',
                     va='top', fontsize=6.8, color=INK)
-    fig.text(0.5, 0.475, 'filled marker, compound is positive at that endpoint;  '
+    fig.text(0.5, 0.485, 'filled marker, compound is positive at that endpoint;  '
                          'open marker, negative',
              ha='center', va='bottom', fontsize=7.2, color=MUTED)
     fig.text(0.5, 0.415, 'Similar structures carry opposite database labels '
@@ -1007,13 +988,15 @@ if _HAVE_RDKIT:
             c0 = _k * 4 + _side * 2
             ax = fig.add_subplot(gs[1, c0:c0 + 2])
             _row.append(ax)
-            ax.imshow(_draw(mol_df.loc[_i, 'SMILES'], 380, 300), interpolation='none')
+            ax.imshow(_draw(mol_df.loc[_i, 'SMILES'],
+                            ax.get_position().width * fig.get_figwidth() * 72, 380, 300),
+                      interpolation='none')
             ax.axis('off')
             _t = int(mol_df.loc[_i, 'Tier'])
             ax.text(0.5, 1.04, f'Tier{_t}', transform=ax.transAxes, ha='center', va='baseline',
                     fontsize=7.4, fontweight='bold', color=TIER_TXT[_t],
                     bbox=dict(boxstyle='round,pad=0.26', facecolor=TIER_COL[_t], edgecolor='none'))
-            ax.text(0.5, -0.02, _short(mol_df.loc[_i, 'name'], 24), transform=ax.transAxes,
+            ax.text(0.5, -0.02, textwrap.fill(_short(mol_df.loc[_i, 'name'], 24), width=14, break_long_words=False), transform=ax.transAxes,
                     ha='center', va='top', fontsize=6.4, color=MUTED)
             if _side == 0 and _k == 0:
                 panel(ax, 'b', x=-0.04, y=1.46)
@@ -1023,7 +1006,7 @@ if _HAVE_RDKIT:
     for _axL, _axR, _s in _pair_axes:
         _pL, _pR = _axL.get_position(), _axR.get_position()
         _x = (_pL.x0 + _pR.x1) / 2
-        fig.text(_x, _pL.y0 - 0.075, f'Tanimoto $T_c$ = {_s:.2f}', ha='center',
+        fig.text(_x, 0.035, f'Tanimoto $T_c$ = {_s:.2f}', ha='center',
                  va='baseline', fontsize=7.2, color=INK)
     save(fig, 'Fig6_chemical_structures', align={'require_panel_labels': False})
 

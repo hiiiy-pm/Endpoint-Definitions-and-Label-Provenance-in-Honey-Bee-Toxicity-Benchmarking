@@ -287,23 +287,23 @@
     },
     {
       "path": "figures/Fig1_study_design.pdf",
-      "bytes": 60946,
-      "sha256": "469afc72e8fbe300f582a1e06b23ac9c3804c0fe15b63fed0f2758568f3a85f8"
+      "bytes": 60268,
+      "sha256": "0a986fbb1504a800620a2eefd7749d637ed37ee4e25f4ee7430c5c18d2c03a1b"
     },
     {
       "path": "figures/Fig1_study_design.png",
-      "bytes": 602127,
-      "sha256": "2839232914d4ecc6ee0f9051a5ceebdf35a685a6ef14f66a6815d1d9d6471105"
+      "bytes": 699008,
+      "sha256": "d0a63c8b3574c4e130e15f226dcdc203c5197fd1fa472f608e4bab152cd1ca23"
     },
     {
       "path": "figures/Fig1_study_design.svg",
-      "bytes": 36949,
-      "sha256": "298574ae0a6d44d88ea4222a70a9c92237f88a5e4fd40fb0d61354e3a51a7111"
+      "bytes": 36987,
+      "sha256": "a941f6dc952a15eb8c0f7a3bb7a0bd56cba31417d8f899f3d5863871f54c493b"
     },
     {
       "path": "figures/Fig1_study_design.tiff",
-      "bytes": 1295514,
-      "sha256": "0de8a8483326779553d8c1866b45dcc965dc4b857764b7f18cfd5da75493843b"
+      "bytes": 1902462,
+      "sha256": "fe113e1274605fdcfe24d9bbd2facea6c33ca0c356db2dde3ce6df545e62e05b"
     },
     {
       "path": "figures/Fig2_endpoint_discriminability.pdf",
@@ -327,43 +327,43 @@
     },
     {
       "path": "figures/Fig3_composition_and_models.pdf",
-      "bytes": 61644,
-      "sha256": "c407ed14b35541806d69dab6ecbaf9306d1da66c92e248a69187ed2ec0857aa5"
+      "bytes": 60199,
+      "sha256": "8d0f9a3a5ccea1b3cbd2b93715e5f9ccd8a95df45982a9867dd7e53cb9abedb6"
     },
     {
       "path": "figures/Fig3_composition_and_models.png",
-      "bytes": 492512,
-      "sha256": "b32591f0e4e6c8094de59e2d8da10556371026dcb01342b364c6660ffd452bea"
+      "bytes": 519355,
+      "sha256": "7064d5be05eb41e645b6a03fd4773c3e53b32c0e9c9872deb293e630f8b16c61"
     },
     {
       "path": "figures/Fig3_composition_and_models.svg",
-      "bytes": 58295,
-      "sha256": "3485e85318de9a77a95f559f0de76eaaf10bcb51954fc2a3b81ef70d817934f9"
+      "bytes": 57404,
+      "sha256": "2de4a976c96f224e9cd87f8de56eb0e8b3c8246574af10c90dc97b5bf7a58dbf"
     },
     {
       "path": "figures/Fig3_composition_and_models.tiff",
-      "bytes": 1847274,
-      "sha256": "47b6ecbdcef7a81237e1c1709bd8c104a9e5f54dd750194411a540e56182e71f"
+      "bytes": 1829780,
+      "sha256": "6f8b0bc3cc75237f7f41e6e71a1a34bdce190775cce191633839c4ffb897d22f"
     },
     {
       "path": "figures/Fig4_class_count_and_tier_boundary.pdf",
-      "bytes": 64046,
-      "sha256": "47b8573f41cf87a4f648aceeee4450ef026f805c0bb23e938d26320c9888573a"
+      "bytes": 63254,
+      "sha256": "bdbaef7e51fa21e234d2cdeb82369d0036e2c695cfbcd8eb0f5b50db5fa6a85d"
     },
     {
       "path": "figures/Fig4_class_count_and_tier_boundary.png",
-      "bytes": 756369,
-      "sha256": "08629821c9f8b47fe884fa7b80ffae2c33320cd7fea676fb32be93944e678c39"
+      "bytes": 842188,
+      "sha256": "7a2559a057738ca79df08eaed225d5f83688164c621fcc634db9badc45262488"
     },
     {
       "path": "figures/Fig4_class_count_and_tier_boundary.svg",
-      "bytes": 93051,
-      "sha256": "e86c46dcaec63adafb0e2a8afec134752f2b99ba47e3de2a79fd1b3eb5068d28"
+      "bytes": 92327,
+      "sha256": "60148c1fcf0e8b30b8ca9d8a3cce0960550994ecd8619f96e7e94460e1452835"
     },
     {
       "path": "figures/Fig4_class_count_and_tier_boundary.tiff",
-      "bytes": 2268186,
-      "sha256": "e5ca110c6a59cb8e4f56477683b25601f43c9b790b58816cc00d4fd079c97346"
+      "bytes": 2379684,
+      "sha256": "d3d57afecf9b1d392740c40f8c3930ed60ed1d5aaa0722db6341ef5ddc77c9b1"
     },
     {
       "path": "figures/Fig5_label_provenance.pdf",
@@ -387,23 +387,23 @@
     },
     {
       "path": "figures/Fig6_chemical_structures.pdf",
-      "bytes": 687264,
-      "sha256": "ceafa0956f617ee408cdd754f5767bc367d64c4cbfc6243502d62175e9b8ffbb"
+      "bytes": 804359,
+      "sha256": "064ccad1b1f13d3f8ef1edcf631cce41d1cce2784bb46b53cbaf18304d2b2ca6"
     },
     {
       "path": "figures/Fig6_chemical_structures.png",
-      "bytes": 419600,
-      "sha256": "924b7719018ae44572dabd674aa41bb0fa9944b54db4d291575da8eaca76aff0"
+      "bytes": 504583,
+      "sha256": "da11b30cc90f0e1ea863ed57b9c48f146ea087566e4e1792064b5be2e67a4a20"
     },
     {
       "path": "figures/Fig6_chemical_structures.svg",
-      "bytes": 839088,
-      "sha256": "3068511e3861ec5cec4f12e57e75e813ccd93d4181877d7aabe553eefff54941"
+      "bytes": 986978,
+      "sha256": "a9182827c6f65813c2091d1a44eba9efab268267c9dba296b75efa46a668d70d"
     },
     {
       "path": "figures/Fig6_chemical_structures.tiff",
-      "bytes": 744284,
-      "sha256": "aa0185f9842dc7ffab9bb098775800a48ed020d7f79d0a8ea0cde5643df689f1"
+      "bytes": 919458,
+      "sha256": "9f4aaa22683de83895704c3627a2c54182af949bc1b7557412844b07865d5054"
     },
     {
       "path": "figures/FigS1_full_performance.pdf",
@@ -922,13 +922,13 @@
     },
     {
       "path": "output/figure_qa/Fig1_study_design.alignment.json",
-      "bytes": 2375,
-      "sha256": "e9d69ac29ca8a2cd274133766ec0861056f27d144e5ba85416bdf52ae71a0799"
+      "bytes": 2395,
+      "sha256": "a2c9446681aadb6fae1f7ca9f783eb136b21def850a5143b7e9bdb1cef4de2fa"
     },
     {
       "path": "output/figure_qa/Fig1_study_design.alignment.svg",
       "bytes": 910,
-      "sha256": "efabaeeca23265bb62dddcc9469dce0b3319368dc787588b47d958e290d28bb2"
+      "sha256": "e4cebcdc88be78834c4507be9a677c1424521d27c65b1e81c0637f35ea51c02a"
     },
     {
       "path": "output/figure_qa/Fig1_study_design.collisions.json",
@@ -957,13 +957,13 @@
     },
     {
       "path": "output/figure_qa/Fig3_composition_and_models.alignment.json",
-      "bytes": 2255,
-      "sha256": "d7b377c38b36f1506dc60060eb1000d66cac0b854d72b4d764a8782755b2cfc6"
+      "bytes": 2097,
+      "sha256": "d687680988c0b7d593ea1a8d6f85223ee2af80ed0bc93546a95b68c5a0f7f0ff"
     },
     {
       "path": "output/figure_qa/Fig3_composition_and_models.alignment.svg",
-      "bytes": 1125,
-      "sha256": "81ff3e1526d6a88a1935886d1540d2da72ccc8a8cc708d7b4cf745da19e6bd32"
+      "bytes": 1129,
+      "sha256": "3f5c2844f4e8747931b04d62ee493b28c11794da6c4bc9189409df413e0b91ea"
     },
     {
       "path": "output/figure_qa/Fig3_composition_and_models.collisions.json",
@@ -972,13 +972,13 @@
     },
     {
       "path": "output/figure_qa/Fig4_class_count_and_tier_boundary.alignment.json",
-      "bytes": 2626,
-      "sha256": "e6455e3da28d54777ee6a966a5c9893f3c02d610fc0c045311e85dd280aa2b5c"
+      "bytes": 2610,
+      "sha256": "fef728dc2b8118ae54bdcdccb0859f99114286f7c3b5569501a236dbe2c9b07e"
     },
     {
       "path": "output/figure_qa/Fig4_class_count_and_tier_boundary.alignment.svg",
-      "bytes": 1362,
-      "sha256": "1055ea235ab53b6b256406665d07a99f9ea69426404bd7a7451829513dcfdd4b"
+      "bytes": 1360,
+      "sha256": "7c1c4c7186041aae1ed78e4df48191f84d8d16b7ed6f5ddd157513fb5faddd64"
     },
     {
       "path": "output/figure_qa/Fig4_class_count_and_tier_boundary.collisions.json",
@@ -1007,13 +1007,13 @@
     },
     {
       "path": "output/figure_qa/Fig6_chemical_structures.alignment.json",
-      "bytes": 4847,
-      "sha256": "c69e27b097f913b73a35c9b75519918085c0333575349aed7f2747e2cc6fb189"
+      "bytes": 4838,
+      "sha256": "5c49c49bedfa62a985961852ea635bc06489aca647462a85de57fd8462468084"
     },
     {
       "path": "output/figure_qa/Fig6_chemical_structures.alignment.svg",
-      "bytes": 2387,
-      "sha256": "d00f5d3a2b1c3f668d207ef1938a1e2cd5faaef81fbe067a5a3e42785c69528d"
+      "bytes": 2391,
+      "sha256": "c1259c238757d9082025c9819a6a88dff88d0b8b70437a22e417ca32e2be2f19"
     },
     {
       "path": "output/figure_qa/Fig6_chemical_structures.collisions.json",
@@ -2327,8 +2327,8 @@
     },
     {
       "path": "scripts/generate_manuscript_figures.py",
-      "bytes": 48606,
-      "sha256": "c6f7bf06df44aed38520941570119f9a8136c7060fa820bea231e1e7f1d49fe3"
+      "bytes": 48706,
+      "sha256": "306d6116448283f5b25b9566efc1e0df5bb201020d2c8e25d2c234d3003d7cdd"
     },
     {
       "path": "scripts/make_external_tables.py",

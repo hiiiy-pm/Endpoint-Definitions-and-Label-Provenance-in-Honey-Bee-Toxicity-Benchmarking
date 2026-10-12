@@ -1,0 +1,9 @@
+Final research materials accompanying the IEEE Access submission of "Endpoint Definitions and Label Provenance in Honey-Bee Toxicity Benchmarking".
+
+This release extends the historical base commit 27f63e1c3cfc63e95c60f6c3cce3edaec05af623 and supplies the final identifier/source audits, sensitivity analyses, Figure 7 and SI S25-S26 materials. It includes the clarified label-reconstruction description and current main/SI table mapping. Existing primary-analysis algorithms and scientific results are retained. No new training or experimental run was performed for this publication operation.
+
+Download all four Research ZIP attachments and extract them into the same destination. Their 806 files form one Research/ directory. The research contents match the final submission attachments byte for byte; FILE_MANIFEST.json covers 804 files, excluding itself and SHA256SUMS.txt. Verify the download hashes using RESEARCH_ARCHIVE_SHA256SUMS.txt.
+
+Read RELEASE_README.txt for purpose, file sizes, platform, dependencies, installation, commands, expected outputs and the corresponding author's contact. The complete documentation is in Research/README.md and Research/docs/REPRODUCIBILITY.md (or README.md and docs/REPRODUCIBILITY.md in a repository checkout). Preserve LICENSE and NOTICE.md, including third-party terms.
+
+This is a submission-materials release, not a claim of acceptance, publication or an IEEE reproducibility badge. The four ZIPs remain intended for submission as journal supplementary materials; this GitHub release complements that route.

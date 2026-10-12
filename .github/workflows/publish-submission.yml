@@ -1,0 +1,41 @@
+name: Publish verified IEEE Access submission materials
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-submission.yml'
+      - '.github/release/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ieee-access-submission-2026-10-12
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.repository == 'hiiiy-pm/Endpoint-Definitions-and-Label-Provenance-in-Honey-Bee-Toxicity-Benchmarking' && github.ref == 'refs/heads/main'
+    runs-on: windows-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - name: Check out this exact commit
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Install Python for packaging only
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - name: Verify research file manifest
+        run: python verification/verify_files.py
+      - name: Rebuild and verify exact submission ZIPs
+        run: python .github/release/rebuild_submission_archives.py --research-root . --output-dir release_assets
+      - name: Upload verified assets and publish Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python .github/release/publish_submission_release.py

@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 89881183,
+        "MolecularFormula": "C19H17ClN6O2",
+        "SMILES": "CC1=C(C(=CC=C1)N2C(=O)N(N=N2)C)COC3=NN(C=C3)C4=CC=C(C=C4)Cl",
+        "InChIKey": "XUQQRGKFXLAPNV-UHFFFAOYSA-N",
+        "IUPACName": "1-[2-[[1-(4-chlorophenyl)pyrazol-3-yl]oxymethyl]-3-methylphenyl]-4-methyltetrazol-5-one"
+      }
+    ]
+  }
+}

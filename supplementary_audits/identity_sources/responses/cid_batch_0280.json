@@ -1,0 +1,32 @@
+{
+  "request_started_utc": "2026-10-03T14:37:04.479795+00:00",
+  "response_completed_utc": "2026-10-03T14:37:05.923156+00:00",
+  "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/22206,22311,22544,23421,23715,23973,24014,24261,24424,24456,24462,24501,24572,24580,24598,24685,24694,24721,24722,24723,24726,24743,24744,24781,24826,24861,24874,24877,24930,24947,25146,25429,25572,25670,25912,26033,26049,26124,26229,26576/property/InChIKey,IsomericSMILES,MolecularFormula,IUPACName/JSON",
+  "status": 200,
+  "response_headers": {
+    "Date": "Sat, 03 Oct 2026 14:37:10 GMT",
+    "Server": "Apache",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "Referrer-Policy": "origin-when-cross-origin",
+    "Content-Security-Policy": "upgrade-insecure-requests",
+    "Cache-Control": "private",
+    "Expires": "Sat, 03 Oct 2026 15:37:11 GMT",
+    "Ncbi-Phid": "90C63F6DAC1131610000000000000001.m_1",
+    "Ncbi-Sid": "90C63F6DAC113161_0000SID",
+    "X-Throttling-Control": "Request Count status: Green (1%), Request Time status: Green (0%), Service status: Green (17%)",
+    "Content-Type": "application/json",
+    "Set-Cookie": "ncbi_sid=90C63F6DAC113161_0000SID; domain=.nih.gov; path=/; expires=Sun, 03 Oct 2027 14:37:10 GMT",
+    "Vary": "Accept-Encoding",
+    "Content-Encoding": "gzip",
+    "X-Ua-Compatible": "IE=Edge",
+    "X-Xss-Protection": "1; mode=block",
+    "Access-Control-Allow-Origin": "*",
+    "Via": "1.1 google",
+    "Alt-Svc": "clear",
+    "Transfer-Encoding": "chunked"
+  },
+  "sha256": "f5091265514053e16c6a90c27dce4eac0904b53d820fd72de8b3552c3e228ac4",
+  "bytes": 10129,
+  "attempt": 1,
+  "scope": "current_public_response_not_a_2024_snapshot"
+}

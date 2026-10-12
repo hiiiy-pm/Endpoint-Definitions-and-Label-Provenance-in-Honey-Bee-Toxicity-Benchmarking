@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 16315,
+        "MolecularFormula": "C6H10S3",
+        "SMILES": "C=CCSSSCC=C",
+        "InChIKey": "UBAXRAHSPKWNCX-UHFFFAOYSA-N",
+        "IUPACName": "3-(prop-2-enyltrisulfanyl)prop-1-ene"
+      }
+    ]
+  }
+}

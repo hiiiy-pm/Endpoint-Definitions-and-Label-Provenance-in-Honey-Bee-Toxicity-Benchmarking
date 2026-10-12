@@ -43,7 +43,7 @@ Evidence is written to:
 
 - `results/cache/CACHE_VALIDATION.json`: input/artifact hashes, versions,
   parameters, ordered identity hashes, and full-array comparisons.
-- `results/reproducibility/revision_verification.json`: all checks and their scope.
+- `results/reproducibility/analysis_integrity_verification.json`: all checks and their scope.
 - `results/reproducibility/primary_raw_smiles_refit.csv`: all 45 primary models.
 - `results/reproducibility/ecotox_independent_reproduction.csv`: all 441 compounds.
 
@@ -65,13 +65,13 @@ silently reused or replaced. A legacy cache without valid present-day evidence
 can be checked without modifying its numerical files:
 
 ```shell
-python verification/verify_revision.py --cache-only
+python verification/verify_analysis_integrity.py --cache-only
 ```
 
 Run the full revision verification after the analysis outputs exist:
 
 ```shell
-python verification/verify_revision.py
+python verification/verify_analysis_integrity.py
 ```
 
 New caches record schema-v2 generation metadata, including timestamp, raw/split
@@ -85,7 +85,7 @@ separate checkout/copy:
 python code/run_all_analysis.py --clean
 ```
 
-The entry point runs scripts 00 through 14, `verify_revision.py`, and the
+The entry point runs scripts 00 through 14, `verify_analysis_integrity.py`, and the
 exported-test-label check `check_crossover_nesting.py`, followed by the descriptive
 cohort-structure check `describe_cohort_selection.py`.
 `--clean` removes the checkout's `results` directory; the upstream ECOTOX and

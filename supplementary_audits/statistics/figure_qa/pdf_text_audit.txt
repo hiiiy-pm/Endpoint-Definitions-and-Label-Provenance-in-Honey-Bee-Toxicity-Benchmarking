@@ -1,0 +1,8 @@
+Nature Figure PDF Text Audit
+pdf: D:\ApisTox_Final_Revision_20261003\research\figures\Fig7_label_crossover.pdf
+minimum required: 10 pt
+minimum found: 10 pt
+text runs: 51
+below minimum: 0
+verdict: PASS
+note: Tf scanning does not replace final-size visual inspection or account for every PDF transform

@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 93341,
+        "MolecularFormula": "C11H8Cl2N2O",
+        "SMILES": "CC1=C(C=C(C=C1Cl)C2=NNC(=O)C=C2)Cl",
+        "InChIKey": "UWQMKVBQKFHLCE-UHFFFAOYSA-N",
+        "IUPACName": "3-(3,5-dichloro-4-methylphenyl)-1H-pyridazin-6-one"
+      }
+    ]
+  }
+}

@@ -33,7 +33,7 @@
 | Supplementary Fig. S4 | `source_data/figure_external_reassessment.csv`; `scripts/make_label_source_figure.py` |
 | Unseen identities (Supplementary Tables S19a-b) | `output/unseen_identity_case_study/data_curation/frozen_scoreable_48h_endpoints.csv`; complete endpoint ledger |
 | Case-study results (Supplementary Table S20) | `output/unseen_identity_case_study/evaluation/pilot_performance.csv`; case scores and contrasts |
-| Independent numerical checks | `verification/verify_round1.py`; `verification/verify_round2.py` |
+| Independent numerical checks | `verification/verify_metrics.py`; `verification/verify_rank_statistics.py` |
 | Final export chain | `code/09_export_submission_tables.py`; `results/final/EXPORT_PROVENANCE.json` |
 | Tier-pair AUROC (Fig. 4b; Supplementary Table S11) | `results/tier_boundary/01_tier_pair_auroc.csv`; `source_data/figure_tier_pair_auroc.csv` |
 | Tier1 exclusion (Fig. 4c; Table 3; Supplementary Table S14) | `results/tier_boundary/02_tier1_exclusion_auroc.csv`; `02b_tier1_refit_test_predictions.csv`; `03_tier1_exclusion_decomposition.csv`; `source_data/figure_tier1_exclusion.csv` |

@@ -47,7 +47,7 @@ def main() -> None:
         path = CODE / script
         print(f"\n=== {script} ===", flush=True)
         subprocess.run([sys.executable, str(path)], cwd=ROOT, check=True)
-    subprocess.run([sys.executable, str(ROOT / "verification" / "verify_revision.py")],
+    subprocess.run([sys.executable, str(ROOT / "verification" / "verify_analysis_integrity.py")],
                    cwd=ROOT, check=True)
     subprocess.run([sys.executable, str(ROOT / "verification" / "check_crossover_nesting.py")],
                    cwd=ROOT, check=True)

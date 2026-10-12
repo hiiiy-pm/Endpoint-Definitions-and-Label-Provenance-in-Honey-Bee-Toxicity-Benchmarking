@@ -1,0 +1,18 @@
+Reference-layout restoration complete
+
+Scope: Fig1, Fig3, Fig4 and Fig6; generator main-figure layout/export paths only.
+The selected reference is the user-confirmed 13-page submission package.
+
+Fig3/Fig4/Fig6: regenerated PNG files are byte-for-byte identical to the reference package; dimensions and rendered pixels are identical. This verifies the transplanted generator, beyond copying archived PDFs.
+Fig1: reference layout/dimensions and original per-element typography retained. Wording now says annotation tier and Paired baseline; diagnostic subsets. The label-provenance workflow describes record rules and matched-label correction tests. No regulatory-severity or same-members-throughout assertion was restored.
+
+No figure-wide minimum-font enlargement is applied. Each panel retains the font sizes and visual hierarchy of the reference script. Figure 4 restores the upper learning-curve row and lower side-by-side decomposition/deletion panels.
+
+Fig5 retains the current A-D factorial audit content. Fig2 and Fig7 were not modified. Supplementary figures were not re-exported. All 112 previously hashed source-data/result CSV inputs remain unchanged.
+
+Reproduction: python scripts/generate_manuscript_figures.py --layout-13page --only Fig1_study_design Fig3_composition_and_models Fig4_class_count_and_tier_boundary Fig6_chemical_structures
+The older --compact-main spelling remains only as a command-line alias; it no longer selects the discarded enlarged/stacked alternative.
+
+Checks: fresh panel-alignment PASS for all four regenerated figures; fresh collision audits have zero FAIL and zero WARN; PDF text-size audits at a 5-point floor pass; plotting-source validation passes. Original chemical raster drawings were preserved by exact regeneration, as requested by the reference-layout choice.
+
+Formal LaTeX and manuscript PDFs were not changed by this figure-restoration task.

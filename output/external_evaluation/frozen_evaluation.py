@@ -454,7 +454,7 @@ def main():
                     'unique_original_compounds_across_all_sources_and_splits': int(members.inchikey.nunique()),
                     'important_limitation': 'Post hoc external-label reassessment; data provenance may overlap and no new-compound independent external validation is claimed.'}
     verification['verification_round'] = 1
-    (OUT / 'round1_verification.json').write_text(json.dumps(verification, ensure_ascii=False, indent=2), encoding='utf-8')
+    (OUT / 'evaluation_verification.json').write_text(json.dumps(verification, ensure_ascii=False, indent=2), encoding='utf-8')
     (OUT / 'verification.json').write_text(json.dumps(verification, ensure_ascii=False, indent=2), encoding='utf-8')
     print('All input files unchanged; no models fitted. Checks:', len(CHECKS))
     main_auc = metrics[(metrics.Representation == 'ECFP') & (metrics.metric == 'AUROC') & (metrics.cohort == 'all_external_contact')]

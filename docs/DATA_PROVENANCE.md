@@ -8,7 +8,9 @@
 - Official Random, MaxMin and Time train/test files are included under
   `data/official_splits/`. Their compound membership matches the Zenodo release
   exactly; row order differs from the release for Random and Time, because the
-  files were reconstructed rather than copied byte for byte.
+  files were reconstructed rather than copied byte for byte. All analyses use
+  the fixed row order of these archived files; FILE_MANIFEST.json records their
+  hashes. Official membership and archived row order are distinct guarantees.
 
 ## External sources
 

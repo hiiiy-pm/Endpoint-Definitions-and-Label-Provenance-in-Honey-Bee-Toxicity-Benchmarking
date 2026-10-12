@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 516902,
+        "MolecularFormula": "ClNaO3",
+        "SMILES": "[O-]Cl(=O)=O.[Na+]",
+        "InChIKey": "YZHUMGUJCQRKBT-UHFFFAOYSA-M",
+        "IUPACName": "sodium chlorate"
+      }
+    ]
+  }
+}

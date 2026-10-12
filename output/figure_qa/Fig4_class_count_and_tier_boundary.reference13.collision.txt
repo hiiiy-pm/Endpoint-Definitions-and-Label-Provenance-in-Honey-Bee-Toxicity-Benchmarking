@@ -1,0 +1,10 @@
+Nature Figure Rendered Collision Audit
+pdf: D:\ApisTox_Final_Revision_20261003\research\figures\Fig4_class_count_and_tier_boundary.pdf
+pages: 1
+visible text boxes: 115
+stroke paths: 188
+
+
+summary: 0 fail, 0 warn, 54 contained fill overlays, 54 contained image overlays
+verdict: PASS
+note: contained overlays can be intentional; WARN findings need final-size visual review

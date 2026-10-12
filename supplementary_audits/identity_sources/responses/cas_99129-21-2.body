@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 136469009,
+        "MolecularFormula": "C17H26ClNO3S",
+        "SMILES": "CCC(=NOC/C=C/Cl)C1=C(CC(CC1=O)CC(C)SCC)O",
+        "InChIKey": "SILSDTWXNBZOGF-JWGBMQLESA-N",
+        "IUPACName": "2-[N-[(E)-3-chloroprop-2-enoxy]-C-ethylcarbonimidoyl]-5-(2-ethylsulfanylpropyl)-3-hydroxycyclohex-2-en-1-one"
+      }
+    ]
+  }
+}

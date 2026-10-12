@@ -101,6 +101,6 @@ checks={
  'dimpropyridaz_held':not P.candidate.eq('dimpropyridaz').any(),
  'unique_compound_route':not P.duplicated(['candidate','route']).any(),
 }
-pd.DataFrame([dict(check=k,passed=v) for k,v in checks.items()]).to_csv(OUT/'round1_data_checks.csv',index=False,encoding='utf-8-sig')
+pd.DataFrame([dict(check=k,passed=v) for k,v in checks.items()]).to_csv(OUT/'curation_checks.csv',index=False,encoding='utf-8-sig')
 assert all(checks.values()),checks
 print(pd.DataFrame(cov).to_string(index=False));print('checks',checks)

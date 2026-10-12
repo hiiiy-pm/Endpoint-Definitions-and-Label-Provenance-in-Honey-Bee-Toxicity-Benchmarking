@@ -83,7 +83,7 @@ check('98.8_at100_unresolved',E.loc[E.candidate.eq('acynonapyr')&E.route.eq('ora
 check('one_class_warning',(E.loc[E.candidate_48h_panel&E.route.eq('contact'),'label_le_100']=='0').all(),'3 contact chemicals all negative at1/11/100; AUROC undefined, not a sufficient standalone set.')
 check('WHO_original_unit_preserved',E.loc[E.candidate.eq('isocycloseram'),'original_unit'].eq('ug/bee').all(),'WHO printsug/bee; do not insert ai into original unit.')
 check('inpyrfluxam_stage_not_invented',E.loc[E.candidate.eq('inpyrfluxam'),'life_stage'].eq('not_explicit_in_source').all(),'48h candidate retained; adult stage needs original study confirmation.')
-pd.DataFrame(checks).to_csv(OUT/'first_round_checks.csv',index=False,encoding='utf-8-sig')
+pd.DataFrame(checks).to_csv(OUT/'screening_checks.csv',index=False,encoding='utf-8-sig')
 assert all(c['passed'] for c in checks)
 print(E[['candidate','route','observation_h','qualifier','LD50_value','candidate_48h_panel']].to_string(index=False))
 print('First-round automated checks:',len(checks),'passed')

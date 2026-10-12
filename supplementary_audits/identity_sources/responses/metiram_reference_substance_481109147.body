@@ -1,0 +1,361 @@
+{
+  "Record": {
+    "RecordType": "SID",
+    "RecordNumber": 481109147,
+    "RecordTitle": "Metiram",
+    "Section": [
+      {
+        "TOCHeading": "Identity",
+        "Description": "Information describing the identity of this substance, including the data source, external identifier, deposit/modify dates, and source category.",
+        "Section": [
+          {
+            "TOCHeading": "Source",
+            "Description": "Data contributor who submitted this substance record to PubChem.",
+            "DisplayControls": {
+              "MoveToTop": true
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "PubChem Reference Collection"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "External ID",
+            "Description": "The identifier used by the organization providing this record.",
+            "DisplayControls": {
+              "MoveToTop": true
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "7808"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Source Category",
+            "Description": "The category of the data source for this substance record (e.g., government organizations, chemical vendors, research and development, curation efforts, NIH initiatives, etc.).",
+            "DisplayControls": {
+              "MoveToTop": true
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Governmental Organizations"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Version",
+            "Description": "Version number of this substance record.  By default, the most recent version of this record is displayed on this webpage.",
+            "DisplayControls": {
+              "HideThisSection": true,
+              "MoveToTop": true
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Value": {
+                  "Number": [
+                    4
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Record Description",
+            "Description": "Record Description",
+            "DisplayControls": {
+              "HideThisSection": true,
+              "MoveToTop": true
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "This is part of a special collection of substances within PubChem that have synonyms collected from authoritative sources. For a more complete annotated record, see Metiram.",
+                      "Markup": [
+                        {
+                          "Start": 165,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Metiram"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Depositor-Supplied Synonyms",
+            "Description": "Chemical names and identifiers as provided by the substance data contributor.",
+            "DisplayControls": {
+              "ListType": "Columns"
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Metiram"
+                    },
+                    {
+                      "String": "Amarex"
+                    },
+                    {
+                      "String": "CHEBI:81539"
+                    },
+                    {
+                      "String": "Carbatene"
+                    },
+                    {
+                      "String": "DTXSID9034737"
+                    },
+                    {
+                      "String": "Metirame zinc"
+                    },
+                    {
+                      "String": "NIA 9102"
+                    },
+                    {
+                      "String": "Polikarbatsin"
+                    },
+                    {
+                      "String": "Polycarbacine"
+                    },
+                    {
+                      "String": "Polycarbazin"
+                    },
+                    {
+                      "String": "Polycarbazine"
+                    },
+                    {
+                      "String": "Polymarcin"
+                    },
+                    {
+                      "String": "Polymarcine"
+                    },
+                    {
+                      "String": "Polymarsin"
+                    },
+                    {
+                      "String": "Polymarzin"
+                    },
+                    {
+                      "String": "Polymarzine"
+                    },
+                    {
+                      "String": "Polymat"
+                    },
+                    {
+                      "String": "Polyram 80"
+                    },
+                    {
+                      "String": "Polyram 80WP"
+                    },
+                    {
+                      "String": "Polyram DF"
+                    },
+                    {
+                      "String": "Polyram combi"
+                    },
+                    {
+                      "String": "RefChem:7808"
+                    },
+                    {
+                      "String": "Zinc ammoniate ethylenebis(dithiocarbamate)-poly(ethylenethiuram disulfide)"
+                    },
+                    {
+                      "String": "Zinc metiram"
+                    },
+                    {
+                      "String": "Zineb-ethylene thiuram disulfide adduct"
+                    },
+                    {
+                      "String": "9006-42-2"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Deposit Date",
+            "Description": "Date when the substance record was deposited by the data contributor. For more information on various dates for PubChem records, visit the PubChem Record Dates help page.",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/record-dates",
+            "DisplayControls": {
+              "MoveToTop": true
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Value": {
+                  "DateISO8601": [
+                    "2023-05-10"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Modify Date",
+            "Description": "Date when the substance record was modified by the data contributor. A substance record may be modified multiple times.  For more information on various dates for PubChem records, visit the PubChem Record Dates help page.",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/record-dates",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 2,
+                "ColumnContents": [
+                  "Name",
+                  "Value"
+                ]
+              },
+              "MoveToTop": true
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Name": "Version 1",
+                "Value": {
+                  "DateISO8601": [
+                    "2023-05-10"
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 1,
+                "Name": "Version 2",
+                "Value": {
+                  "DateISO8601": [
+                    "2025-02-10"
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 1,
+                "Name": "Version 3",
+                "Value": {
+                  "DateISO8601": [
+                    "2025-07-14"
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 1,
+                "Name": "Version 4",
+                "Value": {
+                  "DateISO8601": [
+                    "2025-08-26"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Available Date",
+            "Description": "Date when the substance record was queued up to go live, either after submission approval or on-hold release. Note that there will be a lag up to a day or more beyond this date before data is publicly accessible.  In addition, the findability of a record may lag even further as some search systems are updated on a weekly basis.  For more information on various dates for PubChem records, visit the PubChem Record Dates help page.",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/record-dates",
+            "DisplayControls": {
+              "MoveToTop": true
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Value": {
+                  "DateISO8601": [
+                    "2023-05-10"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Status",
+            "Description": "Status of this substance record (e.g., live, on hold, revoked).",
+            "DisplayControls": {
+              "MoveToTop": true
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Live"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "TOCHeading": "Related Records",
+        "Description": "Records related to this substance.  This includes the compounds standardized from this substance.",
+        "Section": [
+          {
+            "TOCHeading": "Annotated Record",
+            "Description": "Annotated Record",
+            "DisplayControls": {
+              "MoveToTop": true
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 1,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Metiram",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 7,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Metiram"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 1,
+        "SourceName": "PubChem",
+        "SourceID": "PubChem",
+        "Description": "Data deposited in or computed by PubChem",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov"
+      }
+    ]
+  }
+}

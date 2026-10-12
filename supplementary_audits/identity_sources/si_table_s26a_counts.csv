@@ -1,0 +1,6 @@
+﻿Comparison,n
+full_InChIKey_match,875
+connectivity_match_full_key_difference,127
+fragment_parent_connectivity_match,2
+fragment_parent_match_full_structure_difference,4
+structure_mismatch_requires_adjudication,27

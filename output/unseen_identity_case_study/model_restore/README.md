@@ -24,7 +24,7 @@ feasibility probe fitted the same nine original configurations once.
   difference of 2.220446049250313e-16. Fixed-threshold classifications agree.
 - The public prediction interface independently reloads models, regenerates
   fingerprints from the old test SMILES, and reproduces those same scores.
-- First-round self-tests: 135 passed. See `round1_restoration_verification.json`.
+- First-round self-tests: 135 passed. See `restoration_verification.json`.
   Current independent checks are in the repository-root `verification/` directory.
 
 ## Structure-only input
@@ -79,7 +79,7 @@ results, manuscript files and original code are unchanged.
 - `restored_vs_original_test_scores.csv`: all 1,863 paired original/restored scores.
 - `restoration_metric_summary.csv`: nine per-model maximum score errors.
 - `public_interface_validation.csv`: independent end-to-end inference recovery.
-- `round1_restoration_verification.json`: first-round checks and original hashes.
+- `restoration_verification.json`: first-round checks and original hashes.
 - `restoration_manifest.json`: exact model settings, original training indices,
   versions, artifact hashes, fingerprint definition and provenance.
 - `ordered_training_*.csv`: ordered training structures and original labels.

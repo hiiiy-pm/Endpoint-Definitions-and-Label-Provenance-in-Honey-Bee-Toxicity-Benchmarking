@@ -112,7 +112,7 @@ predictions.to_csv(OUT / "02_test_predictions.csv", index=False)
 
 # ---------- Paired molecule/scaffold-cluster bootstrap for every representation ----------
 # ECFP is the designated primary structural probe. The identical resampling weights are
-# reused across representations so that the confirmatory analyses are paired with the
+# reused across representations so that the representation robustness analyses are paired with the
 # primary one and ECFP estimates remain numerically unchanged.
 B = 5000
 contrasts = [(11, 100), (1, 100), (1, 11)]
@@ -216,7 +216,7 @@ for (split, rep), g in metrics.groupby(["Split", "Representation"], sort=False):
 ordering_df = pd.DataFrame(ordering)
 ordering_df.to_csv(OUT / "04_endpoint_ordering_robustness.csv", index=False)
 
-# Confirmatory cross-representation support for the two primary contrasts.
+# Cross-representation robustness for the two primary reporting contrasts.
 primary_rows = bootstrap_all[bootstrap_all["PrimaryComparison"]].copy()
 primary_rows["CI_excludes_zero"] = primary_rows["SimultaneousCI_low"] > 0
 support = (
@@ -233,7 +233,7 @@ summary = {
     "bootstrap_repetitions": B,
     "primary_inference": "effect sizes with percentile and simultaneous centered-bootstrap confidence intervals",
     "primary_representation": PRIMARY_REPRESENTATION,
-    "confirmatory_representations": [r for r in REPRESENTATIONS if r != PRIMARY_REPRESENTATION],
+    "robustness_representations": [r for r in REPRESENTATIONS if r != PRIMARY_REPRESENTATION],
     "scaffold_cluster_primary_contrasts_total": int(len(scaffold_support)),
     "scaffold_cluster_primary_contrasts_ci_above_zero": int(
         (scaffold_support["SimultaneousCI_low"] > 0).sum()

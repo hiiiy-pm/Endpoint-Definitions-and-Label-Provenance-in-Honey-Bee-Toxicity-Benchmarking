@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 13837,
+        "MolecularFormula": "C5H13ClN+",
+        "SMILES": "C[N+](C)(C)CCCl",
+        "InChIKey": "JUZXDNPBRPUIOR-UHFFFAOYSA-N",
+        "IUPACName": "2-chloroethyl(trimethyl)azanium"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 15390131,
+        "MolecularFormula": "C15H16ClF2N3O",
+        "SMILES": "CCC(C1=CC=C(C=C1)OC(F)F)NC2=NC=NC(=C2Cl)C",
+        "InChIKey": "NEKULYKCZPJMMJ-UHFFFAOYSA-N",
+        "IUPACName": "5-chloro-N-[1-[4-(difluoromethoxy)phenyl]propyl]-6-methylpyrimidin-4-amine"
+      }
+    ]
+  }
+}

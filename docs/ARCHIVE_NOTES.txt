@@ -1,0 +1,22 @@
+Archive packaging and provenance
+
+Current executable paths use descriptive filenames. Supplementary audits are
+under supplementary_audits/. The archive-wide FILE_MANIFEST.json identifies
+every delivered file, including the current scripts and explanatory documents.
+
+Raw inputs, official split membership and saved model predictions have not
+been changed by the manuscript corrections. The S24a display now explicitly
+reports Adult48 and Adult48+AI screening results; its underlying classifications
+are unchanged. Current analysis metadata uses robustness_representations.
+
+Preserved historical run reports, analysis-history documents and original
+source-response metadata remain evidence of their original executions. Their
+timestamps, upstream versions and scientific source identifiers are not new
+claims about this packaging operation. Original run-specific code hashes must
+not be interpreted as hashes of the currently edited script text; use the
+archive-wide manifest for the delivered files. Current directory-level integrity
+lists for the supplementary audits are refreshed after intentional edits.
+
+The metrics and rank-statistics verification scripts were run again using the
+saved results. No complete model-training rerun is claimed. The human-readable
+delivery checks in Author_Notes document the build and packaging validation.

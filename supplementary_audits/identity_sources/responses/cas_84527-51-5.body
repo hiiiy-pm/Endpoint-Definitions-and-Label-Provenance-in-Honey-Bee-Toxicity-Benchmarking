@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 13455941,
+        "MolecularFormula": "C11H11ClN2O2",
+        "SMILES": "CCOC(C#N)NC(=O)C1=CC=C(C=C1)Cl",
+        "InChIKey": "NNPRCLUGHFXSOU-UHFFFAOYSA-N",
+        "IUPACName": "4-chloro-N-[cyano(ethoxy)methyl]benzamide"
+      }
+    ]
+  }
+}

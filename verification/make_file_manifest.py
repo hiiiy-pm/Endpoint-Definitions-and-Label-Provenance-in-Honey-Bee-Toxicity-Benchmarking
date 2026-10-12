@@ -1,22 +1,20 @@
-"""Write FILE_MANIFEST.json and SHA256SUMS.txt for the files of this repository.
+"""Refresh the authored archive manifest without requiring a Git checkout.
 
-The file list is taken from git (tracked files plus new files that are not
-ignored), so build products and local template assets are excluded. The
-checksum file uses LF line endings so that ``sha256sum -c SHA256SUMS.txt`` works
-on Linux and macOS as well as with verification/verify_files.py.
+Run after intentional edits and verification, not to conceal unexpected changes.
+Historical run manifests are evidence of those runs and are not rewritten here.
 """
 from pathlib import Path
 import hashlib
 import json
-import subprocess
-import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 EXCLUDE = {'FILE_MANIFEST.json', 'SHA256SUMS.txt'}
 
-listed = subprocess.run(['git', 'ls-files', '--cached', '--others', '--exclude-standard', '-z'],
-                        cwd=ROOT, check=True, stdout=subprocess.PIPE).stdout.decode('utf-8')
-paths = sorted({p for p in listed.split('\0') if p and p not in EXCLUDE and (ROOT / p).is_file()})
+SKIP_DIRS = {'.git', '.venv', 'venv', '__pycache__', '.pytest_cache'}
+paths = sorted(p.relative_to(ROOT).as_posix() for p in ROOT.rglob('*')
+               if p.is_file() and p.relative_to(ROOT).as_posix() not in EXCLUDE
+               and not any(part in SKIP_DIRS for part in p.relative_to(ROOT).parts)
+               and p.suffix not in {'.pyc', '.pyo'})
 files = []
 for rel in paths:
     data = (ROOT / rel).read_bytes()

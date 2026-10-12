@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-10-03T14:46:26.188633+00:00",
+  "known_CID_groups": 5,
+  "known_rows": 10,
+  "known_noncorresponding_distinct_current_structures": [
+    413,
+    672,
+    832
+  ],
+  "salt_form_case": [
+    290
+  ],
+  "non_discrete_metiram_case": [
+    323
+  ],
+  "oxime_geometry_case": [
+    824
+  ],
+  "year_errors_proven": 0,
+  "time_membership_changes_proven": 0,
+  "use_errors_proven_from_CID": 0,
+  "zero_proven_errors_note": "Zero established downstream errors means unresolved evidence, not demonstrated correctness.",
+  "frozen_inputs_changed": false,
+  "model_fitting_performed_by_this_script": false,
+  "exclusion_log": {
+    "log_rows": 745,
+    "log_CAS": 72,
+    "actual_rejected_groups": 79,
+    "actual_rejected_records": 536,
+    "retained_group_rows_also_logged": 209,
+    "retained_groups_also_logged": 75,
+    "ecotox_snapshot_sha256": "426b4be8ab8b265404a75efa75fc892bf3074a4352efcdab6af9cd736d4f7c5a",
+    "evidence": "upstream/dataset_creation_ecotox.py:175-186;log masks by CAS while filtering masks route statistics",
+    "model_impact": "The log defect does not change the route-level filtering executed by the original code."
+  }
+}

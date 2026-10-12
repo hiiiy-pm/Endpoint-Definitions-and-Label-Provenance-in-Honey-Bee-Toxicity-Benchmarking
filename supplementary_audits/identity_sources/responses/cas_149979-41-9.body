@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 135585373,
+        "MolecularFormula": "C17H24ClNO4",
+        "SMILES": "CC/C(=N\\OC/C=C/Cl)/C1=C(CC(CC1=O)C2CCOCC2)O",
+        "InChIKey": "IOYNQIMAUDJVEI-BMVIKAAMSA-N",
+        "IUPACName": "2-[(E)-N-[(E)-3-chloroprop-2-enoxy]-C-ethylcarbonimidoyl]-3-hydroxy-5-(oxan-4-yl)cyclohex-2-en-1-one"
+      }
+    ]
+  }
+}

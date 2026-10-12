@@ -1,0 +1,45 @@
+The screening set was fixed before the new model fits and contained 33 current identifier-consistency flags, comprising six fragment-parent-related differences and 27 remaining differences requiring adjudication. These are not 33 confirmed historical errors. We removed these identities from both partitions of each official split, retaining the distributed labels and frozen molecular representations for every remaining compound. No SMILES, year or chemical-use flag was replaced. The retained training/test counts were 804/198 (Random), 811/191 (MaxMin) and 808/194 (Time).
+
+The ECFP/Tanimoto SVM used $C=1$ and balanced class weights recalculated within each retained training set. Nine original-model fits first reproduced saved scores with maximum absolute difference $2.22\times10^{-16}$. We then evaluated three stages: the original saved scores on all test identities (Original/all); the same saved scores on retained test identities (Frozen/reduced); and nine refitted models on those retained test identities (Refit/reduced). Thus the evaluation-only and refitting changes remain separately inspectable.
+
+For all stages and endpoints, 5,000 shared draws resampled scaffold clusters on each original test cohort; reduced stages retained only their eligible observations within each draw. Intervals for the two severe-minus-broad contrasts are simultaneous centred-bootstrap intervals within a split and stage. They condition on the fitted models, fixed screening set and labels. All 5,000 draws were jointly valid in each family. Intervals on original points were regenerated under this shared sensitivity resampling and do not replace the primary-analysis intervals.
+
+\begin{center}
+\footnotesize
+\begin{tabularx}{\linewidth}{llcXXX}
+\toprule
+Split & Stage & Train/test $n$ & AUROC, 100 & AUROC, 11 & AUROC, 1 \\
+\midrule
+Random & Original/all & 828/207 & 0.718 (179/28) & 0.848 (59/148) & 0.917 (33/174) \\
+Random & Frozen/reduced & 828/198 & 0.710 (171/27) & 0.855 (56/142) & 0.918 (33/165) \\
+Random & Refit/reduced & 804/198 & 0.716 (171/27) & 0.856 (56/142) & 0.921 (33/165) \\
+MaxMin & Original/all & 828/207 & 0.592 (162/45) & 0.792 (42/165) & 0.795 (23/184) \\
+MaxMin & Frozen/reduced & 828/191 & 0.590 (154/37) & 0.795 (41/150) & 0.793 (23/168) \\
+MaxMin & Refit/reduced & 811/191 & 0.587 (154/37) & 0.799 (41/150) & 0.796 (23/168) \\
+Time & Original/all & 828/207 & 0.691 (167/40) & 0.754 (41/166) & 0.792 (24/183) \\
+Time & Frozen/reduced & 828/194 & 0.691 (159/35) & 0.760 (39/155) & 0.787 (23/171) \\
+Time & Refit/reduced & 808/194 & 0.674 (159/35) & 0.766 (39/155) & 0.786 (23/171) \\
+\bottomrule
+\end{tabularx}
+\end{center}
+Numbers in parentheses are positive/negative test counts at the indicated cut-off in $\mu$g per bee. Original and Frozen refer to the same saved score vectors, with different evaluation membership.
+
+\begin{center}
+\footnotesize
+\begin{tabularx}{\linewidth}{llXX}
+\toprule
+Split & Stage & 11 minus 100 (simultaneous 95\% CI) & 1 minus 100 (simultaneous 95\% CI) \\
+\midrule
+Random & Original/all & 0.130 (-0.015 to 0.276) & 0.199 (0.053 to 0.345) \\
+Random & Frozen/reduced & 0.145 (-0.002 to 0.293) & 0.208 (0.060 to 0.356) \\
+Random & Refit/reduced & 0.140 (-0.005 to 0.284) & 0.205 (0.061 to 0.350) \\
+MaxMin & Original/all & 0.200 (0.053 to 0.347) & 0.203 (0.056 to 0.350) \\
+MaxMin & Frozen/reduced & 0.205 (0.057 to 0.354) & 0.203 (0.055 to 0.352) \\
+MaxMin & Refit/reduced & 0.212 (0.062 to 0.362) & 0.209 (0.060 to 0.359) \\
+Time & Original/all & 0.063 (-0.097 to 0.223) & 0.101 (-0.059 to 0.262) \\
+Time & Frozen/reduced & 0.069 (-0.098 to 0.235) & 0.096 (-0.070 to 0.263) \\
+Time & Refit/reduced & 0.093 (-0.077 to 0.263) & 0.112 (-0.057 to 0.282) \\
+\bottomrule
+\end{tabularx}
+\end{center}
+The broad endpoint remained lowest in all three refitted ECFP evaluations. The MaxMin refit contrasts were 0.212 (simultaneous 95\% CI 0.062--0.362) and 0.209 (0.060--0.359). All paired intervals for total changes in the endpoint gaps included zero. These selected-cohort deletion results do not adjudicate individual structures or establish prospective performance. Complete per-compound scores, class counts, pointwise AUROC intervals and paired evaluation/refit components are in the \path{supplementary_audits/statistics/current_identifier_flagged_exclusion_*} files.

@@ -1,0 +1,10 @@
+Nature Figure Rendered Collision Audit
+pdf: D:\ApisTox_Final_Revision_20261003\research\figures\Fig3_composition_and_models.pdf
+pages: 1
+visible text boxes: 90
+stroke paths: 98
+
+
+summary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays
+verdict: PASS
+note: contained overlays can be intentional; WARN findings need final-size visual review

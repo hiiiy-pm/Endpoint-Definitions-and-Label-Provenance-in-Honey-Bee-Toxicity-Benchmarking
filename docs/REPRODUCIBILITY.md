@@ -5,18 +5,25 @@ Run commands from the repository root using the recorded dependencies
 
 1. `python verification/verify_files.py` checks every file against
    `FILE_MANIFEST.json`.
-2. `python verification/verify_round1.py` recomputes saved point metrics,
+2. `python verification/verify_metrics.py` recomputes saved point metrics,
    tier-pair AUROCs and the Eq. (4) identity, the Tier1-exclusion AUROCs and the
    exact decomposition, source-label disagreement counts by tier, the qualifier
-   tracing totals, and regenerates the rows of the main-text Tables 3-5 and the
-   compact descriptor table from the saved results.
-3. `python verification/verify_round2.py` independently computes rank-based
+   tracing totals, and regenerates the retained base-release table rows
+   (historical main-text Tables 3-5) and the compact descriptor table from the
+   saved results. See the current table mapping below.
+3. `python verification/verify_rank_statistics.py` independently computes rank-based
    metrics (including the Tier1-excluded refits), bootstrap quantiles, censored
    endpoint labels, identity exclusion and case-study confusion matrices. It
    also checks that Supplementary Tables S1-S24 are complete and in numerical
    order, and reads the figure alignment and collision reports.
 
-`docs/RESULT_FILE_MAP.md` connects the reported results to their files.
+The current manuscript contains Tables 1-4: endpoint construction, primary
+MaxMin contrasts, Tier1 exclusion and route-matched source agreement,
+respectively. The former external-AUROC Table 5 is now represented in
+Supplementary Tables S18a-b. Retained base-release exporters may generate
+historical tables; see `supplementary_audits/FINAL_MANUSCRIPT_MAP.txt` for the
+current main/SI mapping. `docs/RESULT_FILE_MAP.md` retains the base-release
+result-to-file map.
 `results/final/EXPORT_PROVENANCE.json` records inputs and transformations for
 the regenerated tables and figure data. The descriptor fitting ledger is
 `output/descriptor_audit/training_fit_audit.csv`.
@@ -33,7 +40,7 @@ recorded in `docs/END_TO_END_RERUN.md`.
 
 ## Revision verification and source reconstruction
 
-`python verification/verify_revision.py` checks cache lineage and negative
+`python verification/verify_analysis_integrity.py` checks cache lineage and negative
 failure paths, rebuilds all molecular representations from raw SMILES, refits
 all 45 primary models and both training-label models in the 225 retained-cohort
 (`exclude`) crossover cells. It checks all exported crossover labels, AUROCs and

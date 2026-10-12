@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 9881821,
+        "MolecularFormula": "C13H21NOSSi",
+        "SMILES": "CC1=C(SC(=C1C(=O)NCC=C)[Si](C)(C)C)C",
+        "InChIKey": "MXMXHPPIGKYTAR-UHFFFAOYSA-N",
+        "IUPACName": "4,5-dimethyl-N-prop-2-enyl-2-trimethylsilylthiophene-3-carboxamide"
+      }
+    ]
+  }
+}

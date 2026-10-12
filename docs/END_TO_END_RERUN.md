@@ -4,7 +4,7 @@ The current revision was rerun from raw SMILES and frozen source exports in a ne
 isolated repository copy at `D:\ApisTox_revision_e2e_20261002`. The directory name
 retains the revision date; the actual run was **3 October 2026, 00:00:38–00:04:43
 Asia/Shanghai**, taking 244.96 seconds. All scripts **00–14** and
-`verification/verify_revision.py` completed with exit code zero.
+`verification/verify_analysis_integrity.py` completed with exit code zero.
 
 The exported crossover-label nesting check was then appended to the entry point
 and executed separately against the fresh predictions at 00:06:34–00:06:35
@@ -96,7 +96,7 @@ the cache validator's identity, hash, shape and environment checks remain strict
 - `results/reproducibility/end_to_end_run.txt`: complete clean numerical-run log.
 - `results/reproducibility/end_to_end_nesting_run.txt`: additional nesting-check log.
 - `results/reproducibility/end_to_end_structure_run.txt`: additional cohort-structure-check log.
-- `results/reproducibility/revision_verification.json`: working-cache verification;
+- `results/reproducibility/analysis_integrity_verification.json`: working-cache verification;
   the isolated copy contains the corresponding freshly generated-cache report.
 
 To repeat the comparison against this retained isolated run:

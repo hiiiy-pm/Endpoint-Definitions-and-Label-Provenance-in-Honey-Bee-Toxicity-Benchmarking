@@ -97,7 +97,7 @@ def normalize_metadata(path, value):
         for output in value["outputs"].values():
             output.pop("sha256", None)
         excluded = ["input/output byte hashes (scientific values compared separately)"]
-    elif path == "results/reproducibility/revision_verification.json":
+    elif path == "results/reproducibility/analysis_integrity_verification.json":
         value["cache"], ignored = normalize_metadata("results/cache/CACHE_VALIDATION.json", value["cache"])
         value["negative_paths"] = [case for case in value["negative_paths"] if case["case"] != "legacy_without_validation"]
         excluded = ["legacy-only negative test absent for schema-v2 cache", *ignored]
@@ -187,7 +187,7 @@ def main():
     pd.DataFrame(rows).to_csv(output / "end_to_end_comparison.csv", index=False)
     failures = [row for row in rows if row["status"] == "FAIL"]
     generated = [row for row in rows if row["scope"] == "regenerated"]
-    code_inputs = [*sorted((rerun / "code").glob("*.py")), rerun / "verification/verify_revision.py",
+    code_inputs = [*sorted((rerun / "code").glob("*.py")), rerun / "verification/verify_analysis_integrity.py",
                    rerun / "verification/check_crossover_nesting.py",
                    rerun / "verification/describe_cohort_selection.py",
                    rerun / "requirements-analysis.txt"]
@@ -203,7 +203,7 @@ def main():
               "cohort_structure_independent_raw_smiles_maxima_checked": 3105,
               "entrypoint_update_after_numerical_run": "check_crossover_nesting.py and describe_cohort_selection.py were appended to run_all after the 00-14 run and executed separately on its fresh outputs; numerical scripts were unchanged",
               "initial_numerical_entrypoint_sha256": sha(rerun / "run_all_executed_initial.py"),
-              "environment": json.loads((rerun / "results/reproducibility/revision_verification.json").read_text())["environment"],
+              "environment": json.loads((rerun / "results/reproducibility/analysis_integrity_verification.json").read_text())["environment"],
               "comparison_policy": {"numeric_absolute_tolerance": ATOL, "numeric_relative_tolerance": 0,
                                     "CSV": "same shapes, columns, row order, text and missing-value pattern",
                                     "arrays": "same shapes/keys and missing-value patterns; all stored bootstrap arrays included"},

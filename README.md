@@ -4,13 +4,16 @@ Data, analysis code and results for the study by Yongye Huang, Runqing Liao and
 Zhining Wang (corresponding author), Hanshan Normal University.
 
 The study compares three nested toxicity endpoints (100, 11 and 1 micrograms
-per bee) on the same 1,035 ApisTox compounds, official splits and learners. The
-broad 100-microgram endpoint is the least discriminable endpoint (ECFP MaxMin
-AUROC 0.592, 0.792 and 0.795). Tier-pair decomposition and Tier1 exclusion
+per bee) on the same 1,035 ApisTox compounds, official splits and learners. Across the five primary representations and three official splits, the
+broad 100-microgram endpoint had the lowest AUROC under the specified SVM
+protocols (ECFP MaxMin AUROCs 0.592, 0.792 and 0.795). Tier-pair decomposition and Tier1 exclusion
 locate most of this deficit at the boundary between compounds annotated at
-(11, 100] and above 100 micrograms per bee. Route-matched regulatory records
-contradict most (11, 100] annotations at 100 micrograms per bee, and a
-replication of the upstream ApisTox ECOTOX labelling shows that inequality
+(11, 100] and above 100 micrograms per bee. The selected route-matched source
+cohorts with determinate labels at all three thresholds showed substantial
+disagreement with the released Tier1 annotations at 100 micrograms per bee.
+These selected comparisons do not establish a benchmark-wide error rate; see
+main Table 4 and Supplementary Tables S15-S16 and S24c-d for the cohort scope.
+A replication of the upstream ApisTox ECOTOX labelling shows that inequality
 qualifiers of limit-test results (for example `>100`) were dropped, so these
 values entered the labels as exactly 100. A factorial audit separates qualifier
 handling from aggregation. Correcting identifiable labels in a matched-member
@@ -24,9 +27,45 @@ splits and is not a preregistered confirmatory study. See
 `docs/ANALYSIS_HISTORY.md` for preserved historical evidence and its limits.
 
 This archive supplies the analyses and evidence supporting the accompanying
-article. It is the reference copy for the reported results. The associated
-public project repository is linked in the article; the supplied archive does
-not depend on that repository having been updated to the same contents.
+article. The earlier public commit anchors the frozen study. The supplementary audit section
+below identifies the additional material included in this archive.
+
+## Supplementary audits
+
+This copy extends the frozen research release at commit
+`27f63e1c3cfc63e95c60f6c3cce3edaec05af623`. The historical benchmark inputs,
+official split files and reported primary outputs are retained. New analyses
+are under `supplementary_audits/`; they do not replace the released labels.
+
+The extension includes a current PubChem identifier-consistency screen,
+record-level checks of the upstream exclusion log, a qualifier-direction
+counterfactual, uniform-aggregation label checks and ECFP sensitivity analyses.
+Current database responses are dated snapshots and are not assumed to reproduce
+the original data-collection responses. A flagged identity is a review candidate,
+not automatically a mislabeled compound.
+
+The additional scripts and outputs are supplied in this revision archive.
+They are not claimed to be present at the earlier public commit. The accompanying
+manuscript source includes the new audit supplement and crossover figure.
+Instructions for the added analyses are in `supplementary_audits/README.txt`.
+
+## Research Materials attachments
+
+This is the complete research archive accompanying the submitted manuscript.
+The four ZIP attachments extract into the same `Research/` directory, with
+non-overlapping files. Extract all four into one destination.
+
+| Attachment | Contents |
+|---|---|
+| `Research_Code_and_Data.zip` | Code, source inputs, documentation, supplementary audits and verification tools |
+| `Research_Model_Outputs.zip` | Molecular representations, predictions, metrics and model-analysis outputs |
+| `Research_Source_Audits.zip` | External-source reconstruction, external evaluation and unseen-identity case materials |
+| `Research_Figures_and_Tables.zip` | Figures, figure source data, tables and figure-quality records |
+
+`FILE_MANIFEST.json` and `SHA256SUMS.txt` identify this exact archive by file
+content rather than a version suffix. Upstream identifiers and recorded
+analysis history retain their original scientific meaning. The earlier public
+commit is a base release, not a claim that all materials here are already public.
 
 ## Repository structure
 
@@ -38,13 +77,13 @@ not depend on that repository having been updated to the same contents.
 | `code/` | Numerical analyses `00`-`14` and `run_all_analysis.py` |
 | `results/` | Predictions, metrics, bootstrap resamples and molecular representations |
 | `source_data/` | Data behind every figure |
-| `figures/` | Main figures (Fig1-Fig6) and supplementary figures (FigS1-FigS4) |
+| `figures/` | Main figures (Fig1-Fig7) and supplementary figures (FigS1-FigS4) |
 | `output/external_data_audit/` | Regulatory observations, identity alignment, label concordance and cached upstream ApisTox files |
 | `output/external_evaluation/` | Saved-score evaluation against regulatory labels |
 | `output/unseen_identity_case_study/` | Curated unseen compounds, restored models, predictions and evaluation |
 | `output/descriptor_audit/` | Fitting ledger of the nested descriptor analysis |
-| `output/main_tables/` | Data rows of the main-text Tables 3-5 |
-| `output/latex_tables/` | Supplementary Tables S1-S20 generated from the results |
+| `output/main_tables/` | Retained base-release table rows; see the current main/SI mapping below |
+| `output/latex_tables/` | Supplementary Tables S1-S24 and the added S25-S26 audit tables |
 | `output/figure_qa/` | Panel-alignment and text-collision reports for all figures |
 | `scripts/` | Table and figure generation |
 | `verification/` | File checksums and independent numerical checks |
@@ -69,9 +108,9 @@ Run from the repository root:
 
 ```sh
 python verification/verify_files.py
-python verification/verify_round1.py
-python verification/verify_round2.py
-python verification/verify_revision.py
+python verification/verify_metrics.py
+python verification/verify_rank_statistics.py
+python verification/verify_analysis_integrity.py
 python verification/check_crossover_nesting.py
 ```
 
@@ -124,14 +163,20 @@ python scripts/make_supp_tables.py
 python scripts/make_external_tables.py
 python scripts/make_source_holdout_table.py
 python scripts/make_tier_boundary_tables.py
-python scripts/make_revision_tables.py
+python scripts/make_audit_tables.py
 python scripts/assemble_supplementary_tables.py
 python scripts/make_main_tables.py
 python scripts/generate_manuscript_figures.py
 python scripts/make_label_source_figure.py
 ```
 
-`docs/RESULT_FILE_MAP.md` lists the file behind each reported result.
+The current manuscript contains Tables 1-4: endpoint construction, primary
+MaxMin contrasts, Tier1 exclusion and route-matched source agreement,
+respectively. The former external-AUROC Table 5 is now represented in
+Supplementary Tables S18a-b. Retained base-release exporters may generate
+historical tables; see `supplementary_audits/FINAL_MANUSCRIPT_MAP.txt` for the
+current main/SI mapping. `docs/RESULT_FILE_MAP.md` retains the base-release
+result map.
 
 ## External sources and manuscript compilation
 

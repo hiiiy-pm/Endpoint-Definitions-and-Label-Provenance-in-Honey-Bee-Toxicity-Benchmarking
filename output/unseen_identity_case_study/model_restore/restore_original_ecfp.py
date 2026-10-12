@@ -191,7 +191,7 @@ def main():
                     'max_score_abs_error': float(max(row['max_abs_score_error'] for row in metrics)),
                     'versions': manifest['versions'], 'input_sha256': original_hashes,
                     'manifest_sha256': sha256(OUT / 'restoration_manifest.json')}
-    (OUT / 'round1_restoration_verification.json').write_text(json.dumps(verification, ensure_ascii=False, indent=2), encoding='utf-8')
+    (OUT / 'restoration_verification.json').write_text(json.dumps(verification, ensure_ascii=False, indent=2), encoding='utf-8')
     print(json.dumps({k: v for k, v in verification.items() if k not in ('checks', 'input_sha256')}, indent=2))
 
 

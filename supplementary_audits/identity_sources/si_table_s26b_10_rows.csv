@@ -1,0 +1,11 @@
+﻿Index,Compound,Source,Recorded_CID,CAS_supported_candidate_CID,Correspondence,Frozen_year,Time_set
+290,Chlormequat cation,PPDB,13836,13837,Cation/salt difference,1961,train
+295,Chlormequat chloride,ECOTOX,13836,13836,Full key agrees,1961,train
+323,Metiram,PPDB,5284484,unresolved/non-discrete,Metiram/zineb distinct; no discrete CID,1964,train
+328,Zineb,PPDB,5284484,5284484,Full key agrees,1964,train
+413,Silthiofam,PPDB,16116,9881821,Different current named structure,1971,train
+416,Siduron,ECOTOX,16116,16116,Full key agrees,1971,train
+670,Diclomezine,PPDB,93341,93341,Full key agrees,1990,train
+672,Diflumetorim,PPDB,93341,15390131,Different current named structure,1990,train
+824,Metominostrobin,PPDB,5483872,5483872,Connectivity agrees; oxime geometry differs,2000,test
+832,Phthalide,PPDB,5483872,33791,Different current named structure,2000,train

@@ -188,7 +188,7 @@ def main():
         'no_single_class_AUROC_or_AP':bool(pd.DataFrame(rows).loc[lambda d:d.single_class,['AUROC','average_precision']].isna().all().all()),
         'all_cases_retained_without_score_selection':True,'script_sha256':sha(__file__),
         'bootstrap_seed':SEED,'bootstrap_repetitions':B}
-    (RESULTS/'round1_evaluation_checks.json').write_text(json.dumps(verify,indent=2),encoding='utf-8')
+    (RESULTS/'evaluation_checks.json').write_text(json.dumps(verify,indent=2),encoding='utf-8')
     print('New-compound pilot evaluated. Candidate counts and all outcomes retained. No fits performed.')
     print(pd.DataFrame(rows).query("quality_screen=='regulatory_context' and cohort=='threshold_specific'")[['route','split','threshold','n_compounds','n_positive','n_negative','TP','TN','FP','FN','AUROC','average_precision']].to_string(index=False))
 

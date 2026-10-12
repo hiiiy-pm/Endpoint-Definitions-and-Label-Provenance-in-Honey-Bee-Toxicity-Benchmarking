@@ -1,0 +1,8 @@
+﻿raw_row_0based,CAS,route,value_raw,unit_raw,value_converted,operator,upstream_eligible_route,source_discrepancy_target,proposed_operator_if_original_table_mapping_accepted,acceptance_status
+1250,17804-35-2,Contact,10,ug/bee,10.0,>,False,False,>,not_expert_adjudicated;original_trial_identity_not_fully_established
+1251,17804-35-2,Oral,10,ug/bee,10.0,<,True,True,>,not_expert_adjudicated;original_trial_identity_not_fully_established
+1252,17804-35-2,Other,3757,ug/org,3757.0,,True,False,,not_expert_adjudicated;original_trial_identity_not_fully_established
+1253,17804-35-2,Other,853000,ug/org,853000.0,,True,False,,not_expert_adjudicated;original_trial_identity_not_fully_established
+1254,17804-35-2,Other,1020000000,ug/org,1020000000.0,,True,False,,not_expert_adjudicated;original_trial_identity_not_fully_established
+1255,17804-35-2,Contact,120.86,ug/bee,120.86,>,False,False,>,not_expert_adjudicated;original_trial_identity_not_fully_established
+1256,17804-35-2,Other,1050000,ug/org,1050000.0,,True,False,,not_expert_adjudicated;original_trial_identity_not_fully_established

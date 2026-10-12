@@ -16,7 +16,7 @@ training identities. Every cell therefore uses the same training and test
 members within a scenario/handling/split. Label definitions (scenarios):
 
   primary       operators kept; interval median at 1 and 100 ug/bee, all records
-                agree at 11 ug/bee (each the upstream rule with operators kept);
+                agree at 11 ug/bee;
                 minimum over the upstream-eligible routes; all records
   conservative  operators kept; all records agree at every cut-off
   adult48       primary rule on adult, 48 h, non-daily-dose records only
@@ -25,6 +25,10 @@ members within a scenario/handling/split. Label definitions (scenarios):
                 This scenario also covers PPDB- and BPDB-derived compounds.
   combined      primary ECOTOX labels and regulatory labels; disagreement between
                 them is unresolved
+
+The primary scenario is a reconstruction sensitivity following the historical
+median/agreement distinction; the equality convention at 11 ug/bee and
+aggregation over eligible routes also distinguish it from a parser-only change.
 
 Unresolved corrected labels are handled three ways: ``keep`` (distributed label),
 ``exclude`` (compound removed from training and evaluation at every cut-off)

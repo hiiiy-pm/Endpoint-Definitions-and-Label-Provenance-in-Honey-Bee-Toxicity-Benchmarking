@@ -1,0 +1,286 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 22206,
+        "MolecularFormula": "C9H16ClN5",
+        "SMILES": "CCNC1=NC(=NC(=N1)Cl)NC(C)(C)C",
+        "InChIKey": "FZXISNSWEXTPMF-UHFFFAOYSA-N",
+        "IUPACName": "2-N-tert-butyl-6-chloro-4-N-ethyl-1,3,5-triazine-2,4-diamine"
+      },
+      {
+        "CID": 22311,
+        "MolecularFormula": "C10H16",
+        "SMILES": "CC1=CCC(CC1)C(=C)C",
+        "InChIKey": "XMGQYMWWDOXHJM-UHFFFAOYSA-N",
+        "IUPACName": "1-methyl-4-prop-1-en-2-ylcyclohexene"
+      },
+      {
+        "CID": 22544,
+        "MolecularFormula": "C10H13ClN2",
+        "SMILES": "CC1=C(C=CC(=C1)Cl)N=CN(C)C",
+        "InChIKey": "STUSTWKEFDQFFZ-UHFFFAOYSA-N",
+        "IUPACName": "N'-(4-chloro-2-methylphenyl)-N,N-dimethylmethanimidamide"
+      },
+      {
+        "CID": 23421,
+        "MolecularFormula": "C11H13NO4",
+        "SMILES": "CNC(=O)OC1=CC=CC=C1C2OCCO2",
+        "InChIKey": "SDKQRNRRDYRQKY-UHFFFAOYSA-N",
+        "IUPACName": "[2-(1,3-dioxolan-2-yl)phenyl] N-methylcarbamate"
+      },
+      {
+        "CID": 23715,
+        "MolecularFormula": "C13H18ClNO",
+        "SMILES": "CCCC(C)(C)C(=O)NC1=CC=C(C=C1)Cl",
+        "InChIKey": "KXGYBSNVFXBPNO-UHFFFAOYSA-N",
+        "IUPACName": "N-(4-chlorophenyl)-2,2-dimethylpentanamide"
+      },
+      {
+        "CID": 23973,
+        "MolecularFormula": "Cd",
+        "SMILES": "[Cd]",
+        "InChIKey": "BDOSMKKIYDKNTQ-UHFFFAOYSA-N",
+        "IUPACName": "cadmium"
+      },
+      {
+        "CID": 24014,
+        "MolecularFormula": "Cl2Cu",
+        "SMILES": "Cl[Cu]Cl",
+        "InChIKey": "ORTQZVOHEJQUHG-UHFFFAOYSA-L",
+        "IUPACName": "dichlorocopper"
+      },
+      {
+        "CID": 24261,
+        "MolecularFormula": "O2Si",
+        "SMILES": "O=[Si]=O",
+        "InChIKey": "VYPSYNLAJGMNEJ-UHFFFAOYSA-N",
+        "IUPACName": "dioxosilane"
+      },
+      {
+        "CID": 24424,
+        "MolecularFormula": "O4SZn",
+        "SMILES": "[O-]S(=O)(=O)[O-].[Zn+2]",
+        "InChIKey": "NWONKYPBYAMBJT-UHFFFAOYSA-L",
+        "IUPACName": "zinc sulfate"
+      },
+      {
+        "CID": 24456,
+        "MolecularFormula": "Ca3O8P2",
+        "SMILES": "[O-]P(=O)([O-])[O-].[O-]P(=O)([O-])[O-].[Ca+2].[Ca+2].[Ca+2]",
+        "InChIKey": "QORWJWZARLRLPR-UHFFFAOYSA-H",
+        "IUPACName": "tricalcium diphosphate"
+      },
+      {
+        "CID": 24462,
+        "MolecularFormula": "CuO4S",
+        "SMILES": "[O-]S(=O)(=O)[O-].[Cu+2]",
+        "InChIKey": "ARUVKPQLZAKDPS-UHFFFAOYSA-L",
+        "IUPACName": "copper sulfate"
+      },
+      {
+        "CID": 24501,
+        "MolecularFormula": "As2Ca3O8",
+        "SMILES": "[O-][As](=O)([O-])[O-].[O-][As](=O)([O-])[O-].[Ca+2].[Ca+2].[Ca+2]",
+        "InChIKey": "RMBBSOLAGVEUSI-UHFFFAOYSA-H",
+        "IUPACName": "tricalcium diarsorate"
+      },
+      {
+        "CID": 24572,
+        "MolecularFormula": "AsHO4Pb",
+        "SMILES": "O[As](=O)([O-])[O-].[Pb+2]",
+        "InChIKey": "UWRBYRMOUPAKLM-UHFFFAOYSA-L",
+        "IUPACName": "hydrogen arsorate;lead(2+)"
+      },
+      {
+        "CID": 24580,
+        "MolecularFormula": "MnO4S",
+        "SMILES": "[O-]S(=O)(=O)[O-].[Mn+2]",
+        "InChIKey": "SQQMAOCOWKFBNP-UHFFFAOYSA-L",
+        "IUPACName": "manganese(2+) sulfate"
+      },
+      {
+        "CID": 24598,
+        "MolecularFormula": "CrN3O9",
+        "SMILES": "[N+](=O)([O-])[O-].[N+](=O)([O-])[O-].[N+](=O)([O-])[O-].[Cr+3]",
+        "InChIKey": "PHFQLYPOURZARY-UHFFFAOYSA-N",
+        "IUPACName": "chromium(3+) trinitrate"
+      },
+      {
+        "CID": 24685,
+        "MolecularFormula": "C10H13NO2",
+        "SMILES": "CC(C)OC(=O)NC1=CC=CC=C1",
+        "InChIKey": "VXPLXMJHHKHSOA-UHFFFAOYSA-N",
+        "IUPACName": "propan-2-yl N-phenylcarbamate"
+      },
+      {
+        "CID": 24694,
+        "MolecularFormula": "C31H28Cl4N2O4",
+        "SMILES": "CCC(C(C1=CC=C(C=C1)Cl)C2=CC=C(C=C2)Cl)[N+](=O)[O-].CC(C(C1=CC=C(C=C1)Cl)C2=CC=C(C=C2)Cl)[N+](=O)[O-]",
+        "InChIKey": "MMYDYCZGYQOGRJ-UHFFFAOYSA-N",
+        "IUPACName": "1-chloro-4-[1-(4-chlorophenyl)-2-nitrobutyl]benzene;1-chloro-4-[1-(4-chlorophenyl)-2-nitropropyl]benzene"
+      },
+      {
+        "CID": 24721,
+        "MolecularFormula": "C26H38N2O4",
+        "SMILES": "CCCC(C)C1=CC(=CC=C1)OC(=O)NC.CCC(CC)C1=CC(=CC=C1)OC(=O)NC",
+        "InChIKey": "MYTVVMGUDBRCDJ-UHFFFAOYSA-N",
+        "IUPACName": "(3-pentan-2-ylphenyl) N-methylcarbamate;(3-pentan-3-ylphenyl) N-methylcarbamate"
+      },
+      {
+        "CID": 24722,
+        "MolecularFormula": "C16H38O6P2S4",
+        "SMILES": "CCOP(=O)(OCC)SCCSCC.CCOP(=S)(OCC)OCCSCC",
+        "InChIKey": "FAXIJTUDSBIMHY-UHFFFAOYSA-N",
+        "IUPACName": "diethoxy-(2-ethylsulfanylethoxy)-sulfanylidene-lambda5-phosphane;1-diethoxyphosphorylsulfanyl-2-ethylsulfanylethane"
+      },
+      {
+        "CID": 24723,
+        "MolecularFormula": "C8H19O3PS2",
+        "SMILES": "CCOP(=O)(OCC)SCCSCC",
+        "InChIKey": "GRPRVIYRYGLIJU-UHFFFAOYSA-N",
+        "IUPACName": "1-diethoxyphosphorylsulfanyl-2-ethylsulfanylethane"
+      },
+      {
+        "CID": 24726,
+        "MolecularFormula": "C3H4Cl2",
+        "SMILES": "C(/C=C/Cl)Cl",
+        "InChIKey": "UOORRWUZONOOLO-OWOJBTEDSA-N",
+        "IUPACName": "(E)-1,3-dichloroprop-1-ene"
+      },
+      {
+        "CID": 24743,
+        "MolecularFormula": "C16H16N2O4",
+        "SMILES": "CCOC(=O)NC1=CC(=CC=C1)OC(=O)NC2=CC=CC=C2",
+        "InChIKey": "WZJZMXBKUWKXTQ-UHFFFAOYSA-N",
+        "IUPACName": "[3-(ethoxycarbonylamino)phenyl] N-phenylcarbamate"
+      },
+      {
+        "CID": 24744,
+        "MolecularFormula": "C16H16N2O4",
+        "SMILES": "CC1=CC(=CC=C1)NC(=O)OC2=CC=CC(=C2)NC(=O)OC",
+        "InChIKey": "IDOWTHOLJBTAFI-UHFFFAOYSA-N",
+        "IUPACName": "[3-(methoxycarbonylamino)phenyl] N-(3-methylphenyl)carbamate"
+      },
+      {
+        "CID": 24781,
+        "MolecularFormula": "C4H5NO2",
+        "SMILES": "CC1=CC(=O)NO1",
+        "InChIKey": "KGVPNLBXJKTABS-UHFFFAOYSA-N",
+        "IUPACName": "5-methyl-1,2-oxazol-3-one"
+      },
+      {
+        "CID": 24826,
+        "MolecularFormula": "Fe2O12S3",
+        "SMILES": "[O-]S(=O)(=O)[O-].[O-]S(=O)(=O)[O-].[O-]S(=O)(=O)[O-].[Fe+3].[Fe+3]",
+        "InChIKey": "RUTXIHLAWFEWGM-UHFFFAOYSA-H",
+        "IUPACName": "bis(iron(3+));trisulfate"
+      },
+      {
+        "CID": 24861,
+        "MolecularFormula": "FeO4P",
+        "SMILES": "[O-]P(=O)([O-])[O-].[Fe+3]",
+        "InChIKey": "WBJZTOZJJYAKHQ-UHFFFAOYSA-K",
+        "IUPACName": "iron(3+) phosphate"
+      },
+      {
+        "CID": 24874,
+        "MolecularFormula": "C4H11N",
+        "SMILES": "CCC(C)N",
+        "InChIKey": "BHRZNVHARXXAHW-UHFFFAOYSA-N",
+        "IUPACName": "butan-2-amine"
+      },
+      {
+        "CID": 24877,
+        "MolecularFormula": "Fe4O21P6",
+        "SMILES": "[O-]P(=O)([O-])OP(=O)([O-])[O-].[O-]P(=O)([O-])OP(=O)([O-])[O-].[O-]P(=O)([O-])OP(=O)([O-])[O-].[Fe+3].[Fe+3].[Fe+3].[Fe+3]",
+        "InChIKey": "CADNYOZXMIKYPR-UHFFFAOYSA-B",
+        "IUPACName": "tetrakis(iron(3+));phosphonato phosphate"
+      },
+      {
+        "CID": 24930,
+        "MolecularFormula": "Cr2O12S3",
+        "SMILES": "[O-]S(=O)(=O)[O-].[O-]S(=O)(=O)[O-].[O-]S(=O)(=O)[O-].[Cr+3].[Cr+3]",
+        "InChIKey": "GRWVQDDAKZFPFI-UHFFFAOYSA-H",
+        "IUPACName": "bis(chromium(3+));trisulfate"
+      },
+      {
+        "CID": 24947,
+        "MolecularFormula": "CdCl2",
+        "SMILES": "Cl[Cd]Cl",
+        "InChIKey": "YKYOUMDCQGMQQO-UHFFFAOYSA-L",
+        "IUPACName": "dichlorocadmium"
+      },
+      {
+        "CID": 25146,
+        "MolecularFormula": "C14H17ClNO4PS2",
+        "SMILES": "CCOP(=S)(OCC)SC(CCl)N1C(=O)C2=CC=CC=C2C1=O",
+        "InChIKey": "MUMQYXACQUZOFP-UHFFFAOYSA-N",
+        "IUPACName": "2-(2-chloro-1-diethoxyphosphinothioylsulfanylethyl)isoindole-1,3-dione"
+      },
+      {
+        "CID": 25429,
+        "MolecularFormula": "C9H9N3O2",
+        "SMILES": "COC(=O)NC1=NC2=CC=CC=C2N1",
+        "InChIKey": "TWFZGCMQGLPBSX-UHFFFAOYSA-N",
+        "IUPACName": "methyl N-(1H-benzimidazol-2-yl)carbamate"
+      },
+      {
+        "CID": 25572,
+        "MolecularFormula": "C15H16N2O2",
+        "SMILES": "COC1=CC=C(C=C1)C(C2CC2)(C3=CN=CN=C3)O",
+        "InChIKey": "HUTDUHSNJYTCAR-UHFFFAOYSA-N",
+        "IUPACName": "cyclopropyl-(4-methoxyphenyl)-pyrimidin-5-ylmethanol"
+      },
+      {
+        "CID": 25670,
+        "MolecularFormula": "C9H21O2PS3",
+        "SMILES": "CCOP(=S)(OCC)SCSC(C)(C)C",
+        "InChIKey": "XLNZEKHULJKQBA-UHFFFAOYSA-N",
+        "IUPACName": "tert-butylsulfanylmethylsulfanyl-diethoxy-sulfanylidene-lambda5-phosphane"
+      },
+      {
+        "CID": 25912,
+        "MolecularFormula": "C9H10BrClN2O2",
+        "SMILES": "CN(C(=O)NC1=CC(=C(C=C1)Br)Cl)OC",
+        "InChIKey": "NLYNUTMZTCLNOO-UHFFFAOYSA-N",
+        "IUPACName": "3-(4-bromo-3-chlorophenyl)-1-methoxy-1-methylurea"
+      },
+      {
+        "CID": 26033,
+        "MolecularFormula": "C14H20N3O5PS",
+        "SMILES": "CCOC(=O)C1=CN2C(=CC(=N2)OP(=S)(OCC)OCC)N=C1C",
+        "InChIKey": "JOOMJVFZQRQWKR-UHFFFAOYSA-N",
+        "IUPACName": "ethyl 2-diethoxyphosphinothioyloxy-5-methylpyrazolo[1,5-a]pyrimidine-6-carboxylate"
+      },
+      {
+        "CID": 26049,
+        "MolecularFormula": "C10H16",
+        "SMILES": "CC1=CCC2C(C1)C2(C)C",
+        "InChIKey": "BQOFWKZOCNGFEC-UHFFFAOYSA-N",
+        "IUPACName": "3,7,7-trimethylbicyclo[4.1.0]hept-3-ene"
+      },
+      {
+        "CID": 26124,
+        "MolecularFormula": "C12H15N2O3PS",
+        "SMILES": "CCOP(=S)(OCC)OC1=NC2=CC=CC=C2N=C1",
+        "InChIKey": "JYQUHIFYBATCCY-UHFFFAOYSA-N",
+        "IUPACName": "diethoxy-quinoxalin-2-yloxy-sulfanylidene-lambda5-phosphane"
+      },
+      {
+        "CID": 26229,
+        "MolecularFormula": "C8H7ClO3",
+        "SMILES": "C1=CC(=CC=C1OCC(=O)O)Cl",
+        "InChIKey": "SODPIMGUZLOIPE-UHFFFAOYSA-N",
+        "IUPACName": "2-(4-chlorophenoxy)acetic acid"
+      },
+      {
+        "CID": 26576,
+        "MolecularFormula": "C16H18N2O3",
+        "SMILES": "CN(C)C(=O)NC1=CC=C(C=C1)OC2=CC=C(C=C2)OC",
+        "InChIKey": "AMVYOVYGIJXTQB-UHFFFAOYSA-N",
+        "IUPACName": "3-[4-(4-methoxyphenoxy)phenyl]-1,1-dimethylurea"
+      }
+    ]
+  }
+}

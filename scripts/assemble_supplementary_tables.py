@@ -11,7 +11,7 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 TABLES = ROOT / 'output' / 'latex_tables'
 SOURCES = ['supp_tables.tex', 'supp_tables_external.tex', 'supp_tables_source_holdout.tex',
-           'supp_tables_tier_boundary.tex', 'supp_tables_revision.tex']
+           'supp_tables_tier_boundary.tex', 'supp_tables_audit.tex']
 HEADER = re.compile(r'(?:\\Needspace\{[^}]*\})?(?:\\clearpage)?\\subsection\*\{Supplementary Table S(\d+)([a-z]?)\.')
 
 blocks = {}

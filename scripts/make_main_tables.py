@@ -1,7 +1,7 @@
 """Generate the data rows of main-text Tables 3-5 from saved outputs.
 
 The rows are written to output/main_tables/ and appear verbatim in the paper;
-verification/verify_round1.py regenerates them and compares them with the
+verification/verify_metrics.py regenerates them and compares them with the
 written files.
 """
 from pathlib import Path

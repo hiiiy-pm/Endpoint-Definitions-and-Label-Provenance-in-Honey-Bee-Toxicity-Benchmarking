@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 5284484,
+        "MolecularFormula": "C4H6N2S4Zn",
+        "SMILES": "C(CNC(=S)[S-])NC(=S)[S-].[Zn+2]",
+        "InChIKey": "AMHNZOICSMBGDH-UHFFFAOYSA-L",
+        "IUPACName": "zinc N-[2-(sulfidocarbothioylamino)ethyl]carbamodithioate"
+      }
+    ]
+  }
+}

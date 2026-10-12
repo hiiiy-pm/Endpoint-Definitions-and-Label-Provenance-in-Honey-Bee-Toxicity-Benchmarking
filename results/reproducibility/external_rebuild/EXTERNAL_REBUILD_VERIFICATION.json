@@ -114,7 +114,7 @@
     "output/external_evaluation/frozen_protocol.json",
     "output/external_evaluation/frozen_scores_and_labels.csv",
     "output/external_evaluation/frozen_underlying_endpoint_rows.csv",
-    "output/external_evaluation/round1_verification.json",
+    "output/external_evaluation/evaluation_verification.json",
     "output/external_evaluation/verification.json"
   ],
   "comparison_policy": {
@@ -131,7 +131,7 @@
   ],
   "new_verification_records": [
     "output/external_data_audit/verification.json",
-    "output/external_evaluation/round1_verification.json",
+    "output/external_evaluation/evaluation_verification.json",
     "output/external_evaluation/verification.json"
   ],
   "failures": [],

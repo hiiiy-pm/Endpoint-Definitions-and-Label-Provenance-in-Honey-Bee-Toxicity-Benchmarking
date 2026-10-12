@@ -1,0 +1,4 @@
+﻿threshold,primary_rule,historical_eligible_route_label,proposed_eligible_route_label,keep_old,keep_proposed,CAS,Index,exclude_membership_old,exclude_membership_proposed,status
+100,D,1,-1,1,1,17804-35-2,111,excluded_due_to_unresolved_at_1,excluded_due_to_unresolved_at_11_and_100,conditional_rule_propagation_only;not_approved_label_replacement
+11,C,1,-1,1,1,17804-35-2,111,excluded_due_to_unresolved_at_1,excluded_due_to_unresolved_at_11_and_100,conditional_rule_propagation_only;not_approved_label_replacement
+1,D,-1,0,0,0,17804-35-2,111,excluded_due_to_unresolved_at_1,excluded_due_to_unresolved_at_11_and_100,conditional_rule_propagation_only;not_approved_label_replacement

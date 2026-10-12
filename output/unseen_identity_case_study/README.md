@@ -19,7 +19,7 @@ Recompute the evaluation from the frozen predictions and endpoints:
 
 ```sh
 python output/unseen_identity_case_study/evaluate_new_compound_pilot.py
-python output/unseen_identity_case_study/verify_evaluation_round1.py
+python output/unseen_identity_case_study/verify_case_metrics.py
 ```
 
 The evaluator checks the endpoint and prediction manifests before joining

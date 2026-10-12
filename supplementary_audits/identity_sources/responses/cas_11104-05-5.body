@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 20056424,
+        "MolecularFormula": "C30H52O3",
+        "SMILES": "CC(=C)[C@@H]1CC[C@]1(C)CCO.CC1(CCC/C(=C/CO)/C1)C.CC1(CCCC(=CC=O)C1)C",
+        "InChIKey": "KNLVVBOPLNECGY-IQDPVBADSA-N",
+        "IUPACName": "2-(3,3-dimethylcyclohexylidene)acetaldehyde;(2Z)-2-(3,3-dimethylcyclohexylidene)ethanol;2-[(1R,2S)-1-methyl-2-prop-1-en-2-ylcyclobutyl]ethanol"
+      }
+    ]
+  }
+}

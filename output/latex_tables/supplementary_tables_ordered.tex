@@ -836,7 +836,7 @@ All 11 accepted endpoints are in \path{output/unseen_identity_case_study/data_cu
 
 \Needspace{12\baselineskip}\subsection*{Supplementary Table S19c. Candidate flow, prediction stages and endpoint eligibility}
 
-Sixteen candidates yielded 14 identities absent by connectivity, ten predicted structures and six identities with 11 accepted route endpoints. This is a retrospective, evidence-limited pilot. Batch 1 structures were frozen before prediction; the two added batch 2 structures were selected using endpoint availability. The prediction manifests record 2026-09-23 01:21:07 and 01:22:28 (UTC+8) for the two runs. No endpoint file was read by either prediction runner. This sequencing does not make candidate selection prospective or establish an independent population sample.
+Sixteen candidates yielded 14 identities absent by connectivity, ten predicted structures and six identities with 11 accepted route endpoints. This is a retrospective, evidence-limited pilot. Batch 1 structures were frozen before inference. The two added batch 2 structures were frozen after their numerical toxicity endpoints and threshold labels had been curated. The prediction manifests record 2026-09-23 01:21:07 and 01:22:28 (UTC+8) for the two runs. No endpoint file was read by either prediction runner. This sequencing does not establish outcome-blind selection, prospective selection or an independent population sample. Whether outcomes were known at first nomination cannot be determined from the retained records.
 
 \begingroup\footnotesize\setlength{\tabcolsep}{4pt}
 
@@ -1683,17 +1683,17 @@ Independent verification of exported test labels found no nesting violations und
 
 \Needspace{12\baselineskip}\subsection*{Supplementary Table S24a. Illustrative same-record ECOTOX operator replays}
 
-Label vectors are ordered 100/11/1, with U unresolved. Raw rows are zero-based data-row ordinals in the unchanged cached export. Each replay compares the same retained source row(s) with and without its operator; it is not an independent validation study. Selection used documented strata with deterministic tie handling and retains the empty E02 stratum in the selection ledger. Rule C equals D for these displayed examples; broader disagreements between the two rules are retained in S22. For E06, three $>1000$ ng/organism observations convert to $>1$ $\mu$g/bee, but stage is unreported and durations are two, three and four days. AI denotes the reported active-ingredient dose field, not independently verified purity.
+Label vectors are ordered 100/11/1, with U unresolved. Raw rows are zero-based data-row ordinals in the unchanged cached export. Each replay compares the same retained source row(s) with and without its operator; it is not an independent validation study. Selection used documented strata with deterministic tie handling and retains the empty E02 stratum in the selection ledger. Rule C equals D for these displayed examples; broader disagreements between the two rules are retained in S22. For E06, three $>1000$ ng/organism observations convert to $>1$ $\mu$g/bee, but stage is unreported and durations are two, three and four days. The Adult48/Adult48+AI column reports two screening results. Adult48+AI additionally requires a reported active-ingredient dose field; it does not independently verify purity. E06 reports this field but fails Adult48, so both screening results are No.
 
 \begingroup\footnotesize\setlength{\tabcolsep}{4pt}
 
 \begin{longtable}{lllp{0.21\linewidth}cccl}
 
-\toprule Case & CAS & Route & Original value and unit & Adult48/AI & Original & Rule D & Raw rows \\ \midrule\endfirsthead
+\toprule Case & CAS & Route & Original value and unit & \shortstack{Adult48/\\Adult48+AI} & Original & Rule D & Raw rows \\ \midrule\endfirsthead
 
 \multicolumn{8}{l}{\textit{Supplementary Table S24a (continued)}} \\
 
-\toprule Case & CAS & Route & Original value and unit & Adult48/AI & Original & Rule D & Raw rows \\ \midrule\endhead
+\toprule Case & CAS & Route & Original value and unit & \shortstack{Adult48/\\Adult48+AI} & Original & Rule D & Raw rows \\ \midrule\endhead
 
 \midrule\multicolumn{8}{r}{Continued on next page}\\\endfoot\bottomrule\endlastfoot
 

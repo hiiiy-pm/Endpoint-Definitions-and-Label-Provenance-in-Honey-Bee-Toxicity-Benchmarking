@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 135405255,
+        "MolecularFormula": "C24H33NO4",
+        "SMILES": "CCCC(=O)C1=C(C=C(C(=C1C)C2CC(=C(C(=O)C2)/C(=N/OCC)/CC)O)C)C",
+        "InChIKey": "ZOGDSYNXUXQGHF-XIEYBQDHSA-N",
+        "IUPACName": "5-(3-butanoyl-2,4,6-trimethylphenyl)-2-[(E)-N-ethoxy-C-ethylcarbonimidoyl]-3-hydroxycyclohex-2-en-1-one"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 12767955,
+        "MolecularFormula": "C17H19NO4",
+        "SMILES": "CC1=C(C(=CC=C1)C)N([C@H](C)C(=O)OC)C(=O)C2=CC=CO2",
+        "InChIKey": "CIEXPHRYOLIQQD-CYBMUJFWSA-N",
+        "IUPACName": "methyl (2R)-2-[N-(furan-2-carbonyl)-2,6-dimethylanilino]propanoate"
+      }
+    ]
+  }
+}

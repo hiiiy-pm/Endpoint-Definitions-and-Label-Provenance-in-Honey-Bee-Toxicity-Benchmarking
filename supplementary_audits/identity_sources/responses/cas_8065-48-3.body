@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 24722,
+        "MolecularFormula": "C16H38O6P2S4",
+        "SMILES": "CCOP(=O)(OCC)SCCSCC.CCOP(=S)(OCC)OCCSCC",
+        "InChIKey": "FAXIJTUDSBIMHY-UHFFFAOYSA-N",
+        "IUPACName": "diethoxy-(2-ethylsulfanylethoxy)-sulfanylidene-lambda5-phosphane;1-diethoxyphosphorylsulfanyl-2-ethylsulfanylethane"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+Final manuscript map, 4 October 2026
+
+Main Figures 1-6 use the frozen study values. The layout of Figures 1, 3, 4 and 6
+follows the October 1 delivered manuscript, with corrected Figure 1 wording.
+Figure 5 retains the updated A-D qualifier/aggregation comparison.
+Figure 7 is the primary/keep ECFP four-cell crossover and all six paired changes;
+its source is source_data/figure_label_crossover.csv.
+
+Main Tables 1-4: endpoint construction; primary MaxMin contrasts; Tier1 exclusion;
+route-matched source agreement. The former main external-AUROC table is represented
+in SI S18a-b. The crossover is shown in Figure 7 and SI S23, with exact values in
+the saved CSVs. Base-release exporters are retained and may also generate historical
+tables no longer included in the current main article.
+
+SI S1-S24: retained base-release tables and their original source mappings.
+SI S25a-d: exclusion-log scope; uniform-D keep/exclude checks; all-D exclude
+crossover; Benomyl qualifier counterfactual. Sources: supplementary_audits/statistics/.
+SI S26a-c: current CID screen; five shared-CID groups; screening-set exclusion
+sensitivity. Sources: supplementary_audits/identity_sources/ and statistics/.
+SI Figures S1-S4 remain the original supplementary figures.
+
+Regenerate reference-layout main figures:
+  python scripts/generate_manuscript_figures.py --layout-13page
+Regenerate the crossover figure and added SI tables:
+  python scripts/make_crossover_figure.py
+  python scripts/assemble_audit_supplement.py

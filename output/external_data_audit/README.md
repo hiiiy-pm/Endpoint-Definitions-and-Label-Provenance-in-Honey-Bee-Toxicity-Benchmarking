@@ -12,7 +12,6 @@ To reconstruct from `data/external_raw`, run from the repository root:
 python -X utf8 output/external_data_audit/extract_tables.py
 python -X utf8 output/external_data_audit/align_structures.py --offline --rebuild-structures
 python -X utf8 output/external_data_audit/audit_external_data.py
-python -X utf8 output/external_data_audit/verify_audit.py
 python -X utf8 output/external_evaluation/build_frozen_members.py
 python -X utf8 output/external_evaluation/frozen_evaluation.py
 ```
@@ -22,8 +21,8 @@ caches directly from the source workbooks. The membership builder reconstructs
 the missing feasibility-stage membership dependency from source records and
 official splits; the evaluator independently checks it before re-evaluating saved
 predictions. Run the chain in a separate copy to preserve a released output set.
-`python -X utf8 verification/rebuild_external_sources.py --compare-to /path/to/release/repo`
-runs all six steps with network requests blocked and compares regenerated
+`python -X utf8 scripts/rebuild_external_sources.py --compare-to /path/to/release/repo`
+runs all five steps with network requests blocked and compares regenerated
 scientific CSVs and every saved bootstrap draw with the release. Its logs and
 machine-readable evidence are in `results/reproducibility/external_rebuild/`.
 

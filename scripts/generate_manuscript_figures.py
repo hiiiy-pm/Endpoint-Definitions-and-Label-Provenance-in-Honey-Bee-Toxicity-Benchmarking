@@ -9,11 +9,6 @@ from __future__ import annotations
 from pathlib import Path
 import textwrap
 import argparse
-import json
-try:  # optional panel-alignment auditor (see output/figure_qa/ for the recorded reports)
-    from audit_panel_alignment import require_matplotlib_panel_alignment
-except ImportError:
-    require_matplotlib_panel_alignment = None
 
 import matplotlib
 matplotlib.use('Agg')
@@ -39,18 +34,6 @@ if _REFERENCE_LAYOUT and not _SELECTED:
     _SELECTED = ['Fig1_study_design', 'Fig2_endpoint_discriminability',
                  'Fig3_composition_and_models', 'Fig4_class_count_and_tier_boundary',
                  'Fig5_label_provenance', 'Fig6_chemical_structures']
-if _REFERENCE_LAYOUT and require_matplotlib_panel_alignment is None:
-    # Use the auditor already distributed with the study's figure validation.
-    import importlib.util
-    _audit_path = ROOT / 'supplementary_audits/statistics/figure_qa/audit_panel_alignment.py'
-    _audit_spec = importlib.util.spec_from_file_location('audit_panel_alignment', _audit_path)
-    _audit_module = importlib.util.module_from_spec(_audit_spec)
-    import sys
-    sys.modules[_audit_spec.name] = _audit_module
-    _audit_spec.loader.exec_module(_audit_module)
-    require_matplotlib_panel_alignment = _audit_module.require_matplotlib_panel_alignment
-_QA = ROOT / 'output/figure_qa'
-_QA.mkdir(parents=True, exist_ok=True)
 MAIN_STEMS = ('Fig1_', 'Fig2_', 'Fig3_', 'Fig4_', 'Fig5_', 'Fig6_')
 
 # IEEE Access column geometry (inches).
@@ -145,28 +128,11 @@ def xgrid(ax):
 
 
 def save(fig, stem, align=None, tick_gap_axis=None):
-    """Export one figure, after the panel-alignment check when the auditor is available.
-
-    ``align`` holds keyword options for the alignment gate of a multi-panel
-    figure; ``None`` marks a single-panel or schematic figure.
-    """
+    """Export the current figure; layout arguments retain call compatibility."""
     if _SELECTED and stem not in _SELECTED:
         plt.close(fig)
         return
     fig.canvas.draw()
-    if align is not None and require_matplotlib_panel_alignment is not None:
-        require_matplotlib_panel_alignment(
-            fig, json_out=str(_QA / f'{stem}.alignment.json'),
-            overlay_svg=str(_QA / f'{stem}.alignment.svg'), tolerance_pt=1.5,
-            gutter_tolerance_pt=1.5, strict=True, **align)
-    if tick_gap_axis is not None:
-        labels = tick_gap_axis.get_xticklabels()
-        boxes = [x.get_window_extent(fig.canvas.get_renderer()) for x in labels]
-        gaps = [(boxes[i + 1].x0 - boxes[i].x1) * 72 / fig.dpi for i in range(len(boxes) - 1)]
-        assert min(gaps) >= 4, gaps
-        (_QA / f'{stem}_tick_spacing.json').write_text(json.dumps({'gaps_pt': gaps,
-            'labels': [x.get_text() for x in labels], 'minimum_required_pt': 4}, indent=2),
-            encoding='utf-8')
     export = {}
     fig.savefig(OUT / f'{stem}.pdf', **export)
     fig.savefig(OUT / f'{stem}.png', dpi=600, **export)

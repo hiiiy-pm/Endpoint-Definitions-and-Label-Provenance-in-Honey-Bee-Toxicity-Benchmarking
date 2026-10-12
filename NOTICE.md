@@ -1,9 +1,9 @@
 # Notice: scope of the MIT License
 
-The MIT License covers the analysis, table, figure and verification code written
-for this study (code/, scripts/, verification/ and the analysis scripts under
-output/). It does not cover third-party material, which keeps its original
-terms and attribution:
+The MIT License covers the analysis, table and figure code written for this
+study (code/, scripts/ and the analysis scripts under output/ and
+supplementary_audits/). Third-party material keeps its original terms and
+attribution:
 
 - ApisTox data and dataset-creation code (https://doi.org/10.5281/zenodo.13350981;
   https://github.com/j-adamczyk/ApisTox_dataset), including the cached copies

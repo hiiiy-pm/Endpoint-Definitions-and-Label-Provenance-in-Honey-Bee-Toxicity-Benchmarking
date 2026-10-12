@@ -1,10 +1,10 @@
-# Clean end-to-end numerical rerun
+# Recorded end-to-end numerical rerun
 
-The current revision was rerun from raw SMILES and frozen source exports in a new
-isolated repository copy at `D:\ApisTox_revision_e2e_20261002`. The directory name
+The historical numerical revision was rerun from raw SMILES and frozen source
+exports in a new isolated repository copy at `D:\ApisTox_revision_e2e_20261002`. The directory name
 retains the revision date; the actual run was **3 October 2026, 00:00:38–00:04:43
-Asia/Shanghai**, taking 244.96 seconds. All scripts **00–14** and
-`verification/verify_analysis_integrity.py` completed with exit code zero.
+Asia/Shanghai**, taking 244.96 seconds. All scripts **00–14** and the
+contemporaneous analysis-integrity checks completed with exit code zero.
 
 The exported crossover-label nesting check was then appended to the entry point
 and executed separately against the fresh predictions at 00:06:34–00:06:35
@@ -14,8 +14,9 @@ history are retained in the machine-readable report. The subsequent descriptive
 cohort-structure check was also appended to the entry point and executed against
 the fresh cache and record cohorts at 00:11:59–00:12:00 (1.08 seconds, exit zero).
 It independently checked 3,105 raw-SMILES similarity maxima and regenerated its
-two CSVs and metadata. Future invocations run all three verification programs
-automatically. Neither additional check required repeating model training.
+two CSVs and metadata. Neither additional check required repeating model
+training. These are records of that historical execution. Current reproduction
+commands and their scope are given in `docs/REPRODUCIBILITY.md`.
 
 ## Environment and command
 
@@ -29,7 +30,7 @@ python -u code/run_all_analysis.py --clean
 ```
 
 The isolated copy retained the external source inputs but excluded `.git`,
-`__pycache__` and ignored `verification/results`. `--clean` removed only that
+`__pycache__` and ignored internal-check outputs. `--clean` removed only that
 copy's `results` directory after checking its resolved location. All four molecular
 kernels, 12 descriptors and scaffold identifiers were regenerated from the raw
 SMILES. The working repository's legacy cache was not replaced.
@@ -41,7 +42,7 @@ older record is not presented as evidence of this run.
 
 ## File comparison
 
-`verification/compare_end_to_end.py` compared 144 files across `results`,
+The recorded comparison covered 144 files across `results`,
 `source_data` and `output/descriptor_audit`. Of these, **140 were regenerated** by
 the numerical pipeline and its verification steps:
 
@@ -98,12 +99,6 @@ the cache validator's identity, hash, shape and environment checks remain strict
 - `results/reproducibility/end_to_end_structure_run.txt`: additional cohort-structure-check log.
 - `results/reproducibility/analysis_integrity_verification.json`: working-cache verification;
   the isolated copy contains the corresponding freshly generated-cache report.
-
-To repeat the comparison against this retained isolated run:
-
-```shell
-python verification/compare_end_to_end.py D:\ApisTox_revision_e2e_20261002
-```
 
 Four files are explicitly outside the regenerated-file count. The separate
 `record_audit/UPSTREAM_PIN_CHECK.json` network check and

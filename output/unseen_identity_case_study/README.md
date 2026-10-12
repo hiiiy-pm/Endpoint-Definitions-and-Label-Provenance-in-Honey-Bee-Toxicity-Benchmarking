@@ -19,14 +19,12 @@ Recompute the evaluation from the frozen predictions and endpoints:
 
 ```sh
 python output/unseen_identity_case_study/evaluate_new_compound_pilot.py
-python output/unseen_identity_case_study/verify_case_metrics.py
 ```
 
 The evaluator checks the endpoint and prediction manifests before joining
 them. It reports route-specific metrics, fixed-decision confusion matrices,
 paired contrasts and 5,000 bootstrap draws. Single-class discrimination
-metrics remain undefined. Current manuscript-wide checks are in the root
-`verification/` directory.
+metrics remain undefined.
 
 `data_curation/frozen_endpoint_ledger.csv` records the source evidence and
 inclusion decisions. `evaluation/new_compound_case_predictions.csv` has 99

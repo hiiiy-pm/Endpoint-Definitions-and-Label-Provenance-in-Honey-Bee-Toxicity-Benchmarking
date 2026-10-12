@@ -10,7 +10,7 @@ import urllib.parse
 import urllib.request
 
 REPOSITORY = "hiiiy-pm/Endpoint-Definitions-and-Label-Provenance-in-Honey-Bee-Toxicity-Benchmarking"
-TAG = "ieee-access-submission-2026-10-12"
+TAG = "ieee-access-submission-final-2026-10-12"
 ROOT = Path(__file__).resolve().parents[2]
 ASSETS = ROOT / "release_assets"
 API = "https://api.github.com/repos/" + REPOSITORY
@@ -50,12 +50,30 @@ def main():
     require(os.environ.get("GITHUB_REF") == "refs/heads/main", "Only main may publish this snapshot")
     commit = os.environ["GITHUB_SHA"]
     require(re.fullmatch(r"[0-9a-f]{40}", commit) is not None, "Invalid target commit")
+    metadata_path = Path(__file__).with_name("submission_zip_metadata.json")
+    metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+    require(metadata["schema_version"] == 2 and len(metadata["archives"]) == 4, "Invalid archive metadata")
+    require(isinstance(metadata["source_member_count"], int) and metadata["source_member_count"] > 2, "Invalid source member count")
     report = json.loads((ASSETS / "archive_rebuild_verification.json").read_text(encoding="utf-8"))
-    require(report["status"] == "PASS" and report["source_members_verified"] == 806, "Archive verification has not passed")
+    require(report["status"] == "PASS" and report["source_members_verified"] == metadata["source_member_count"], "Archive verification has not passed")
+    require(report["research_manifest_entries_verified"] == metadata["research_manifest_entry_count"], "Research manifest verification has not passed")
+    require(report["metadata_sha256"] == hashlib.sha256(metadata_path.read_bytes()).hexdigest(), "Verification used different metadata")
     require(len(report["archives"]) == 4, "Incomplete archive set")
+    archive_specs = {a["name"]: a for a in metadata["archives"]}
+    require(len(archive_specs) == 4 and {a["file"] for a in report["archives"]} == set(archive_specs), "Archive names differ from metadata")
     for item in report["archives"]:
+        spec = archive_specs[item["file"]]
+        require(item["bytes"] == spec["bytes"] and item["sha256"] == spec["sha256"] and item["byte_identical_to_submission"] is True, "Archive report differs from submission metadata")
         path = ASSETS / item["file"]
         require(path.stat().st_size == item["bytes"] and hashlib.sha256(path.read_bytes()).hexdigest() == item["sha256"], "Archive changed after verification")
+    checksums = {}
+    for line in (ROOT / "RESEARCH_ARCHIVE_SHA256SUMS.txt").read_text(encoding="utf-8-sig").splitlines():
+        match = re.fullmatch(r"([0-9a-f]{64})  (.+)", line)
+        require(match is not None, "Malformed Release checksum line")
+        digest, name = match.groups()
+        require(name not in checksums, "Duplicate Release checksum entry")
+        checksums[name] = digest
+    require(checksums == {name: spec["sha256"] for name, spec in archive_specs.items()}, "Release checksum text differs from submission metadata")
     for name in ("RELEASE_README.txt", "RESEARCH_ARCHIVE_SHA256SUMS.txt"):
         shutil.copyfile(ROOT / name, ASSETS / name)
     names = [item["file"] for item in report["archives"]] + ["RELEASE_README.txt", "RESEARCH_ARCHIVE_SHA256SUMS.txt"]
@@ -75,7 +93,7 @@ def main():
     else:
         release = api("POST", API + "/releases", {
             "tag_name": TAG, "target_commitish": commit,
-            "name": "IEEE Access submission research materials (12 October 2026)",
+            "name": "IEEE Access final submission materials (12 October 2026)",
             "body": body, "draft": True, "prerelease": False,
         })
     release_id = release["id"]
@@ -94,7 +112,7 @@ def main():
     final_assets = api("GET", assets_url)
     require({a["name"] for a in final_assets} == set(expected), "Incomplete remote release")
     for asset in final_assets:
-        require(asset.get("digest") == expected[asset["name"]]["digest"] and asset["size"] == expected[asset["name"]]["size"], "Remote verification failed")
+        require(asset["state"] == "uploaded" and asset.get("digest") == expected[asset["name"]]["digest"] and asset["size"] == expected[asset["name"]]["size"], "Remote verification failed")
     if release["draft"]:
         release = api("PATCH", API + f"/releases/{release_id}", {"draft": False, "prerelease": False, "make_latest": "true", "body": body})
     require(not release["draft"], "Release remains a draft")

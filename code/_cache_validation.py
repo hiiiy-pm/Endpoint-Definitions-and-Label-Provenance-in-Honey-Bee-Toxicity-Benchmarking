@@ -150,7 +150,7 @@ def validate_cache(study, directory: Path, *, require_provenance: bool = True) -
             if not report_path.is_file():
                 raise CacheValidationError(
                     "Legacy cache generation environment is unknown. Run "
-                    "python verification/verify_analysis_integrity.py --cache-only to independently "
+                    "python scripts/prepare_cache.py to independently "
                     "recompute and validate it without inventing historical provenance.")
             evidence = json.loads(report_path.read_text(encoding="utf-8"))
             if (evidence.get("basis") != "fresh_raw_smiles_recomputation"

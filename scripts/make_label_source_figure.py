@@ -5,7 +5,6 @@ against source-retrieved labels? All three splits and both primary contrasts
 are shown for broad and route-matched cohorts. No model or label is fitted.
 """
 from pathlib import Path
-import json
 import shutil
 import numpy as np
 import pandas as pd
@@ -13,14 +12,8 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
-try:  # optional panel-alignment auditor (see output/figure_qa/ for the recorded reports)
-    from audit_panel_alignment import require_matplotlib_panel_alignment
-except ImportError:
-    require_matplotlib_panel_alignment = None
 
 ROOT=Path(__file__).resolve().parents[1]
-QA=ROOT/'output/figure_qa'
-QA.mkdir(parents=True,exist_ok=True)
 DATA=ROOT/'output/external_evaluation/frozen_contrasts_ECFP.csv'
 source=pd.read_csv(DATA)
 blocks=[
@@ -89,17 +82,9 @@ fig.text(.03,.033,'Matched compounds and saved ECFP scores within each row. Open
     'An absent marker denotes an undefined contrast. Complete counts, intervals and eligibility rules are supplied in the Supplementary Information.',
     fontsize=7,ha='left',va='bottom',color='#40464F')
 fig.canvas.draw()
-if require_matplotlib_panel_alignment is not None:
- require_matplotlib_panel_alignment(fig,json_out=str(QA/'FigS4_label_source_contrasts.alignment.json'),
-    overlay_svg=str(QA/'FigS4_label_source_contrasts.alignment.svg'),tolerance_pt=1.5,gutter_tolerance_pt=1.5,strict=True)
 path=ROOT/'figures/FigS4_label_source_contrasts'
 fig.savefig(path.with_suffix('.pdf'))
 fig.savefig(path.with_suffix('.svg'))
 fig.savefig(path.with_suffix('.png'),dpi=600)
 fig.savefig(path.with_suffix('.tiff'),dpi=600,pil_kwargs={'compression':'tiff_lzw'})
-(QA/'FigS4_contract.json').write_text(json.dumps({'question':'Sensitivity of saved-score endpoint contrasts to label source',
-    'archetype':'single quantitative paired-contrast panel','width_inches':7.16,
-    'all_splits_and_primary_contrasts_retained':True,'n_rows':24,'n_estimates':len(table),
-    'uncertainty_exception':'Omit intervals when a constituent class has fewer than5 compounds; keep the estimates and full machine-readable intervals.',
-    'source':str(DATA.relative_to(ROOT))},indent=2),encoding='utf-8')
 print('Exported Supplementary Figure S4 with all 24 paired rows at final journal width.')

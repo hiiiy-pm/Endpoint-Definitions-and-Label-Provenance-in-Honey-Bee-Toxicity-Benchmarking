@@ -26,16 +26,16 @@ The endpoint analysis followed exploratory modelling on these same official
 splits and is not a preregistered confirmatory study. See
 `docs/ANALYSIS_HISTORY.md` for preserved historical evidence and its limits.
 
-This archive supplies the analyses and evidence supporting the accompanying
-article. The earlier public commit anchors the frozen study. The supplementary audit section
-below identifies the additional material included in this archive.
+This archive supplies the complete analyses and evidence supporting the
+accompanying article. The [final study release](https://github.com/hiiiy-pm/Endpoint-Definitions-and-Label-Provenance-in-Honey-Bee-Toxicity-Benchmarking/releases/tag/ieee-access-submission-final-2026-10-12)
+provides the code, data, model outputs, source records, figures and tables
+matching the four Research Materials attachments.
 
 ## Supplementary audits
 
-This copy extends the frozen research release at commit
-`27f63e1c3cfc63e95c60f6c3cce3edaec05af623`. The historical benchmark inputs,
-official split files and reported primary outputs are retained. New analyses
-are under `supplementary_audits/`; they do not replace the released labels.
+The historical benchmark inputs, official split files and reported primary
+outputs are retained. Additional analyses are under `supplementary_audits/`;
+they do not replace the released benchmark labels.
 
 The extension includes a current PubChem identifier-consistency screen,
 record-level checks of the upstream exclusion log, a qualifier-direction
@@ -44,9 +44,9 @@ Current database responses are dated snapshots and are not assumed to reproduce
 the original data-collection responses. A flagged identity is a review candidate,
 not automatically a mislabeled compound.
 
-The additional scripts and outputs are supplied in this revision archive.
-They are not claimed to be present at the earlier public commit. The accompanying
-manuscript source includes the new audit supplement and crossover figure.
+The additional scripts and outputs are included in the final study release.
+The accompanying manuscript source includes the audit supplement and
+crossover figure.
 Instructions for the added analyses are in `supplementary_audits/README.txt`.
 
 ## Research Materials attachments
@@ -57,15 +57,15 @@ non-overlapping files. Extract all four into one destination.
 
 | Attachment | Contents |
 |---|---|
-| `Research_Code_and_Data.zip` | Code, source inputs, documentation, supplementary audits and verification tools |
+| `Research_Code_and_Data.zip` | Code, source inputs, documentation and supplementary scientific analyses |
 | `Research_Model_Outputs.zip` | Molecular representations, predictions, metrics and model-analysis outputs |
 | `Research_Source_Audits.zip` | External-source reconstruction, external evaluation and unseen-identity case materials |
-| `Research_Figures_and_Tables.zip` | Figures, figure source data, tables and figure-quality records |
+| `Research_Figures_and_Tables.zip` | Current figures, figure source data and tables |
 
 `FILE_MANIFEST.json` and `SHA256SUMS.txt` identify this exact archive by file
-content rather than a version suffix. Upstream identifiers and recorded
-analysis history retain their original scientific meaning. The earlier public
-commit is a base release, not a claim that all materials here are already public.
+content. Upstream identifiers and recorded analysis history retain their
+original scientific meaning. The final study release contains the complete
+materials listed in this manifest.
 
 ## Repository structure
 
@@ -84,9 +84,7 @@ commit is a base release, not a claim that all materials here are already public
 | `output/descriptor_audit/` | Fitting ledger of the nested descriptor analysis |
 | `output/main_tables/` | Retained base-release table rows; see the current main/SI mapping below |
 | `output/latex_tables/` | Supplementary Tables S1-S24 and the added S25-S26 audit tables |
-| `output/figure_qa/` | Panel-alignment and text-collision reports for all figures |
-| `scripts/` | Table and figure generation |
-| `verification/` | File checksums and independent numerical checks |
+| `scripts/` | Table and figure generation, source reconstruction and cohort description |
 | `docs/` | Data dictionary, provenance, result map and reproduction notes |
 
 ## Environment
@@ -102,31 +100,14 @@ python -m pip install -r requirements-analysis.txt -r requirements-figures.txt
 `environment.yml` gives the equivalent conda environment and
 `SOFTWARE_VERSIONS.json` the recorded package versions and random seed.
 
-## Check the supplied results
+## File integrity and saved results
 
-Run from the repository root:
-
-```sh
-python verification/verify_files.py
-python verification/verify_metrics.py
-python verification/verify_rank_statistics.py
-python verification/verify_analysis_integrity.py
-python verification/check_crossover_nesting.py
-```
-
-The first command checks every file against `FILE_MANIFEST.json`
-(`SHA256SUMS.txt` gives the same checksums for `sha256sum -c`). The two
-numerical checks recompute the saved metrics, tier-pair AUROCs, the Tier1
-decomposition, concordance counts, case-study confusion matrices and table
-rows from the saved predictions. The second check uses rank-pair computations
-without scikit-learn metric functions. Neither refits the original models.
-Reports are written to `verification/results/`.
-The revision verifier independently rebuilds representations from raw SMILES,
-checks cache rejection paths and refits the primary and crossover models;
-its delivered evidence is in `results/reproducibility/`. Thus, unlike the
-two older numerical checks, it does perform new fits. The nesting check reports
-that the `negative` unresolved-label policy can violate threshold nesting;
-this is an extreme stress test, not a feasible corrected nested benchmark.
+`FILE_MANIFEST.json` and `SHA256SUMS.txt` record the delivered files and their
+SHA-256 hashes. The saved predictions, metrics, bootstrap draws and figure
+source data are identified in `docs/RESULT_FILE_MAP.md`.
+Historical numerical rerun and cache-validation evidence is retained in
+`results/reproducibility/`, `docs/END_TO_END_RERUN.md` and
+`docs/CACHE_VALIDATION.md`.
 
 ## Reproduce the analyses
 
@@ -141,7 +122,6 @@ python code/11_qualifier_propagation_audit.py
 python code/12_label_rule_audit.py
 python code/13_corrected_label_crossover.py
 python code/14_record_case_audit.py
-python verification/check_crossover_nesting.py
 ```
 
 `10` reuses the saved held-out scores and the primary bootstrap draws and fits
@@ -150,7 +130,9 @@ from `output/external_data_audit/cache/upstream_ecotox.csv`, checks it against
 all 441 ECOTOX-derived benchmark labels and then re-reads the inequality
 operators. See `docs/REPRODUCIBILITY.md` and `docs/END_TO_END_RERUN.md`.
 `12` separates qualifier and aggregation rules at all three cut-offs;
-`13` uses identical retained training/test identities within each crossover;
+`13` uses identical retained training/test identities within each crossover.
+The `negative` unresolved-label policy is an extreme stress test that can
+violate threshold nesting; it is not a feasible corrected nested benchmark.
 `14` preserves raw-row provenance and distinguishes record-level extraction
 errors from unresolved cross-study differences. Input/model identity checks
 are described in `docs/CACHE_VALIDATION.md`.
@@ -166,8 +148,10 @@ python scripts/make_tier_boundary_tables.py
 python scripts/make_audit_tables.py
 python scripts/assemble_supplementary_tables.py
 python scripts/make_main_tables.py
-python scripts/generate_manuscript_figures.py
+python scripts/generate_manuscript_figures.py --layout-13page
 python scripts/make_label_source_figure.py
+python scripts/make_crossover_figure.py
+python scripts/assemble_audit_supplement.py
 ```
 
 The current manuscript contains Tables 1-4: endpoint construction, primary
@@ -175,8 +159,8 @@ MaxMin contrasts, Tier1 exclusion and route-matched source agreement,
 respectively. The former external-AUROC Table 5 is now represented in
 Supplementary Tables S18a-b. Retained base-release exporters may generate
 historical tables; see `supplementary_audits/FINAL_MANUSCRIPT_MAP.txt` for the
-current main/SI mapping. `docs/RESULT_FILE_MAP.md` retains the base-release
-result map.
+current main/SI mapping. `docs/RESULT_FILE_MAP.md` links the current results
+to their source files and identifies historical exporter names.
 
 ## External sources and manuscript compilation
 
@@ -190,8 +174,7 @@ The code/data archive is supplied separately. From `LaTeX_Source/`,
 `python build.py --source-only` compiles both documents using the included
 assets and an existing LaTeX installation. To regenerate assets from this
 repository, use `python build.py /path/to/research-repository --regenerate`.
-`python check_manuscript.py /path/to/research-repository` checks source/data/PDF
-agreement. The standalone LaTeX ZIP has the same source files at its root.
+The standalone LaTeX ZIP has the same source files at its root.
 
 ## Unseen-identity models
 

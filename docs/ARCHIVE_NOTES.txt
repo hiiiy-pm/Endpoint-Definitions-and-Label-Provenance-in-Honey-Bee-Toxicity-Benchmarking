@@ -17,6 +17,6 @@ not be interpreted as hashes of the currently edited script text; use the
 archive-wide manifest for the delivered files. Current directory-level integrity
 lists for the supplementary audits are refreshed after intentional edits.
 
-The metrics and rank-statistics verification scripts were run again using the
-saved results. No complete model-training rerun is claimed. The human-readable
-delivery checks in Author_Notes document the build and packaging validation.
+The current package contains the complete scientific sources, current figures
+and retained numerical results. Packaging and documentation updates do not
+constitute a new model-training run.

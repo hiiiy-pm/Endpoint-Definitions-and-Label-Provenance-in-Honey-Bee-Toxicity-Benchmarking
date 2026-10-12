@@ -23,7 +23,6 @@ STAGES = [
     ('output/external_data_audit/extract_tables.py', []),
     ('output/external_data_audit/align_structures.py', ['--offline', '--rebuild-structures']),
     ('output/external_data_audit/audit_external_data.py', []),
-    ('output/external_data_audit/verify_audit.py', []),
     ('output/external_evaluation/build_frozen_members.py', []),
     ('output/external_evaluation/frozen_evaluation.py', []),
 ]

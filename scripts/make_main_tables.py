@@ -1,8 +1,8 @@
 """Generate the data rows of main-text Tables 3-5 from saved outputs.
 
-The rows are written to output/main_tables/ and appear verbatim in the paper;
-verification/verify_metrics.py regenerates them and compares them with the
-written files.
+The rows are written to output/main_tables/. These retained base-release
+table numbers map to current manuscript/SI tables as documented in
+supplementary_audits/FINAL_MANUSCRIPT_MAP.txt.
 """
 from pathlib import Path
 

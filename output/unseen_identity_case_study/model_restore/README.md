@@ -24,8 +24,8 @@ feasibility probe fitted the same nine original configurations once.
   difference of 2.220446049250313e-16. Fixed-threshold classifications agree.
 - The public prediction interface independently reloads models, regenerates
   fingerprints from the old test SMILES, and reproduces those same scores.
-- First-round self-tests: 135 passed. See `restoration_verification.json`.
-  Current independent checks are in the repository-root `verification/` directory.
+- `restoration_verification.json` records the original restoration checks
+  and input hashes.
 
 ## Structure-only input
 

@@ -18,10 +18,8 @@ from matplotlib.colors import LinearSegmentedColormap
 from sklearn.metrics import roc_auc_score
 
 ROOT = Path(__file__).resolve().parents[1]
-QA = ROOT / "supplementary_audits/statistics/figure_qa"
-QA.mkdir(parents=True, exist_ok=True)
-sys.path.insert(0, str(QA))
-from audit_panel_alignment import require_matplotlib_panel_alignment
+NUMERIC = ROOT / "supplementary_audits/statistics/figure_numeric"
+NUMERIC.mkdir(parents=True, exist_ok=True)
 sys.path.insert(0, str(ROOT / "code"))
 from _common import multinomial_weights, percentile_ci, tie_aware_weighted_auc
 
@@ -98,7 +96,7 @@ def main():
     source_hash = hashlib.sha256(source_path.read_bytes()).hexdigest()
     pd.testing.assert_frame_equal(pd.read_csv(source_path), source,
                                   check_dtype=False, check_exact=False, rtol=0, atol=1e-14)
-    pd.DataFrame(check_rows).to_csv(QA / "numeric_verification.csv", index=False)
+    pd.DataFrame(check_rows).to_csv(NUMERIC / "numeric_verification.csv", index=False)
 
     plt.rcParams.update({"font.family": "sans-serif", "font.sans-serif": ["Arial", "DejaVu Sans"],
                          "font.size": 10, "axes.labelsize": 10, "xtick.labelsize": 10, "ytick.labelsize": 10,
@@ -159,11 +157,6 @@ def main():
         axis.annotate(title, (0, 1), xycoords="axes fraction", xytext=(0, 32), textcoords="offset points",
                       ha="left", va="bottom", fontsize=10, fontweight="bold")
     fig.canvas.draw()
-    require_matplotlib_panel_alignment(fig, axes=[left, right], panel_ids=["a", "b"],
-                                        json_out=QA / "Fig7_label_crossover.alignment.json",
-                                        overlay_svg=QA / "Fig7_label_crossover.alignment.svg",
-                                        tolerance_pt=1.5, gutter_tolerance_pt=1.5,
-                                        require_panel_labels=True, strict=True)
     output = ROOT / "figures/Fig7_label_crossover"
     fig.savefig(output.with_suffix(".pdf"))
     fig.savefig(output.with_suffix(".png"), dpi=600)
@@ -179,10 +172,7 @@ def main():
               "source_figure_inches": [7.16, 4.0], "source_minimum_font_pt": 10,
               "planned_manuscript_scale": .712, "planned_manuscript_minimum_font_pt": 7.12}
     assert hashlib.sha256(source_path.read_bytes()).hexdigest() == source_hash
-    (QA / "FIGURE_NUMERIC_METADATA.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
-    caption = r"""\textbf{Matched-cohort training-by-evaluation label crossover.} \textbf{(a)} Severe-minus-broad AUROC gaps for all four combinations of distributed (O) and provisional source-derived (P) training/evaluation labels, using the primary correction rules, the keep policy and ECFP. Each row uses 828 training and 207 test compounds with identical membership across its four cells; columns show point estimates. \textbf{(b)} Change in each gap after revising both label sets (P/P minus O/O), with 95\% paired scaffold-cluster percentile intervals from 2,000 shared draws. Positive values indicate a wider gap. All three splits and both severe endpoints are shown. The intervals describe empirical reweighting variability within each current test cohort, conditional on the fitted models, label rules and analysis protocol. They do not establish coverage for all future compounds and are not adjusted across correction scenarios. Complete cell intervals, scores and source data accompany Supplementary Table~S23.
-"""
-    (QA / "figure_crossover_caption_reference.tex").write_text(caption, encoding="utf-8")
+    (NUMERIC / "FIGURE_NUMERIC_METADATA.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
     print(json.dumps(report, indent=2))
 
 

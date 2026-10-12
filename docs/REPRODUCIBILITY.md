@@ -1,29 +1,19 @@
-# Reproduction and verification
+# Reproduction and result provenance
 
 Run commands from the repository root using the recorded dependencies
 (Python 3.12; `requirements-analysis.txt` and `requirements-figures.txt`).
 
-1. `python verification/verify_files.py` checks every file against
-   `FILE_MANIFEST.json`.
-2. `python verification/verify_metrics.py` recomputes saved point metrics,
-   tier-pair AUROCs and the Eq. (4) identity, the Tier1-exclusion AUROCs and the
-   exact decomposition, source-label disagreement counts by tier, the qualifier
-   tracing totals, and regenerates the retained base-release table rows
-   (historical main-text Tables 3-5) and the compact descriptor table from the
-   saved results. See the current table mapping below.
-3. `python verification/verify_rank_statistics.py` independently computes rank-based
-   metrics (including the Tier1-excluded refits), bootstrap quantiles, censored
-   endpoint labels, identity exclusion and case-study confusion matrices. It
-   also checks that Supplementary Tables S1-S24 are complete and in numerical
-   order, and reads the figure alignment and collision reports.
+`FILE_MANIFEST.json` and `SHA256SUMS.txt` identify the supplied files by
+SHA-256 hash. The analysis scripts below regenerate the scientific outputs;
+`docs/RESULT_FILE_MAP.md` maps those outputs to the manuscript.
 
 The current manuscript contains Tables 1-4: endpoint construction, primary
 MaxMin contrasts, Tier1 exclusion and route-matched source agreement,
 respectively. The former external-AUROC Table 5 is now represented in
 Supplementary Tables S18a-b. Retained base-release exporters may generate
 historical tables; see `supplementary_audits/FINAL_MANUSCRIPT_MAP.txt` for the
-current main/SI mapping. `docs/RESULT_FILE_MAP.md` retains the base-release
-result-to-file map.
+current main/SI mapping. `docs/RESULT_FILE_MAP.md` identifies current results
+and historical exporter names.
 `results/final/EXPORT_PROVENANCE.json` records inputs and transformations for
 the regenerated tables and figure data. The descriptor fitting ledger is
 `output/descriptor_audit/training_fit_audit.csv`.
@@ -34,24 +24,19 @@ in `output/unseen_identity_case_study/model_restore/`.
 
 `python code/run_all_analysis.py --clean` deletes `results/` and reruns
 scripts `00`-`14` from the raw data and split files, including the molecular
-kernels. Run it in a separate copy of the repository. A full rerun in the
+kernels. It then recomputes cache-validation metadata with
+`scripts/prepare_cache.py` and the descriptive cohort-structure outputs with
+`scripts/describe_cohort_selection.py`. Run it in a separate copy of the
+repository. A historical full rerun in the
 pinned environment and its comparison with the supplied `results/` files are
 recorded in `docs/END_TO_END_RERUN.md`.
 
-## Revision verification and source reconstruction
+## Source reconstruction
 
-`python verification/verify_analysis_integrity.py` checks cache lineage and negative
-failure paths, rebuilds all molecular representations from raw SMILES, refits
-all 45 primary models and both training-label models in the 225 retained-cohort
-(`exclude`) crossover cells. It checks all exported crossover labels, AUROCs and
-gap calculations. It writes `results/reproducibility/`; it is a stronger, fitting-based
-check than the saved-score rounds above. `python
-verification/check_crossover_nesting.py` audits nesting of exported test labels
-and agreement of cohort/label identity across representations.
-`python verification/check_training_label_nesting.py` separately reconstructs
-all 45 training-label cohorts, with no fitting. Its results distinguish the
-nested `keep`/`exclude` corrections from the declared non-nested `negative`
-stress test and are saved in `results/reproducibility/`.
+The saved cache and numerical rerun records describe the historical validation
+scope in `docs/CACHE_VALIDATION.md` and `docs/END_TO_END_RERUN.md`.
+The `keep` and `exclude` corrected-label policies retain nested endpoints;
+the `negative` unresolved-label policy is a non-nested extreme stress test.
 
 External-source preparation is a separate workflow using the frozen files in
 `data/external_raw/`, retained query responses, and existing primary predictions.
@@ -59,7 +44,7 @@ Run it in a separate copy because it regenerates that copy's external tables.
 The complete offline entry point is:
 
 ```sh
-python -X utf8 verification/rebuild_external_sources.py
+python -X utf8 scripts/rebuild_external_sources.py
 ```
 
 To compare the fresh outputs with an untouched release, add
@@ -67,13 +52,12 @@ To compare the fresh outputs with an untouched release, add
 rebuilds all workbook/structure caches, preserves frozen inputs, and writes
 per-stage logs plus CSV/JSON/NPZ comparisons to
 `results/reproducibility/external_rebuild/`. It does not fit or tune models.
-The six equivalent explicit steps are:
+The five equivalent scientific steps are:
 
 ```sh
 python -X utf8 output/external_data_audit/extract_tables.py
 python -X utf8 output/external_data_audit/align_structures.py --offline --rebuild-structures
 python -X utf8 output/external_data_audit/audit_external_data.py
-python -X utf8 output/external_data_audit/verify_audit.py
 python -X utf8 output/external_evaluation/build_frozen_members.py
 python -X utf8 output/external_evaluation/frozen_evaluation.py
 ```
@@ -86,7 +70,8 @@ current input, generator and output hashes; it is not a recovered historical
 freeze. The evaluator independently reconstructs those members again and requires
 exact membership/label agreement before calculating metrics and paired intervals.
 UTF-8 mode prevents Windows console encodings from failing on printed dose units.
-The 3 October 2026 isolated reconstruction completed all six stages offline and
+The historical 3 October 2026 isolated reconstruction, which also included a
+separate internal audit stage, completed all six stages offline and
 matched 37 regenerated existing outputs, including every stored external
 bootstrap draw, with maximum numerical difference zero. See
 `results/reproducibility/external_rebuild/EXTERNAL_REBUILD_VERIFICATION.json`
@@ -108,12 +93,9 @@ The formal submission package supplies `LaTeX_Source/` alongside the main and SI
 PDFs. The research code/data archive is separate. From the LaTeX source directory,
 `python build.py --source-only` compiles the supplied assets; `python build.py
 /path/to/research-repository --regenerate` first regenerates tables and figures.
-`python check_manuscript.py /path/to/research-repository` checks source/data/PDF
-agreement. LaTeX and BibTeX must already be on PATH (or supplied via
-PDFLATEX/BIBTEX). The standalone LaTeX ZIP contains the identical source files
-at its root, without an extra enclosing directory.
-Figure geometry audit helpers, when available on PYTHONPATH, are invoked at
-render time; the supplied `output/figure_qa/` reports are retained independently.
+LaTeX and BibTeX must already be on PATH (or supplied via PDFLATEX/BIBTEX).
+The standalone LaTeX ZIP contains the identical source files at its root,
+without an extra enclosing directory.
 
 ## Case-study batches
 

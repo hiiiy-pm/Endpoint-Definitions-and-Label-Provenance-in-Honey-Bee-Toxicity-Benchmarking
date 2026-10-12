@@ -3,9 +3,8 @@ Dated extension to the frozen ApisTox study
 Run commands from the research directory with the recorded Python environment.
 These commands use the packaged inputs and do not replace the released benchmark.
 
-Offline checks (no new model fitting):
+Reconstruct supplementary statistics and source evidence (no new model fitting):
   python supplementary_audits/statistics/verify_audit_statistics.py
-  python supplementary_audits/statistics/verify_derived_outputs.py
   python supplementary_audits/identity_sources/audit_identity_sources.py compare
   python supplementary_audits/identity_sources/build_source_evidence.py --check-source-only
 

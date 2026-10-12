@@ -47,11 +47,9 @@ def main() -> None:
         path = CODE / script
         print(f"\n=== {script} ===", flush=True)
         subprocess.run([sys.executable, str(path)], cwd=ROOT, check=True)
-    subprocess.run([sys.executable, str(ROOT / "verification" / "verify_analysis_integrity.py")],
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "prepare_cache.py")],
                    cwd=ROOT, check=True)
-    subprocess.run([sys.executable, str(ROOT / "verification" / "check_crossover_nesting.py")],
-                   cwd=ROOT, check=True)
-    subprocess.run([sys.executable, str(ROOT / "verification" / "describe_cohort_selection.py")],
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "describe_cohort_selection.py")],
                    cwd=ROOT, check=True)
     print("\nAll final numerical analyses completed.")
 

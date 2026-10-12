@@ -1,102 +1,65 @@
-IEEE Access submission research materials
+IEEE Access final submission research materials
+
 Endpoint Definitions and Label Provenance in Honey-Bee Toxicity Benchmarking
-Prepared for public release: 12 October 2026
+Yongye Huang, Runqing Liao and Zhining Wang
+Final study release: https://github.com/hiiiy-pm/Endpoint-Definitions-and-Label-Provenance-in-Honey-Bee-Toxicity-Benchmarking/releases/tag/ieee-access-submission-final-2026-10-12
 
-Authors: Yongye Huang, Runqing Liao and Zhining Wang
-School of Mathematics and Statistics, Hanshan Normal University, China
-Corresponding author and materials contact: Zhining Wang
-Email: mathwangzhining@163.com
+DESCRIPTION AND PACKING LIST
+The four Research archives contain the current study code, source data, saved
+outputs, source records, figures and tables. They contain 710 distinct files.
+They reproduce the Research materials supplied with the final submission.
+Internal manuscript/code/layout checks, obsolete figure drafts and previews
+are excluded. The 15 core analysis scripts 00-14, data inputs, final figures,
+saved predictions, representations and restored models are unchanged.
 
-PURPOSE AND STATUS
-These materials support the submitted manuscript's endpoint comparisons,
-label-provenance audits, training-by-evaluation crossover and sensitivity
-analyses. This is a submission-materials release; it does not assert acceptance,
-publication or an IEEE reproducibility badge.
+- Research_Code_and_Data.zip: 31,608,748 bytes
+- Research_Figures_and_Tables.zip: 12,656,092 bytes
+- Research_Model_Outputs.zip: 18,690,813 bytes
+- Research_Source_Audits.zip: 31,696,681 bytes
 
-The 806 research files match the four final Research ZIP attachments exactly.
-The repository places the contents of Research/ at its root. This additional
-release README is distribution metadata outside that frozen research snapshot.
-FILE_MANIFEST.json and SHA256SUMS.txt identify the archived research files.
-Historical run-specific hashes and timestamps describe those original runs;
-they are not rewritten as claims about this release.
+Research_Code_and_Data.zip contains analysis code, raw/source inputs,
+documentation and supplementary scientific analyses.
+Research_Model_Outputs.zip contains representations, predictions, metrics,
+bootstrap draws and retained numerical rerun evidence.
+Research_Source_Audits.zip contains external-source reconstruction, regulatory
+reassessment, source endpoint evidence and unseen-identity case materials.
+Research_Figures_and_Tables.zip contains current figures, source tables and
+the tables used by the manuscript and Supplementary Information.
 
-This release extends historical base commit
-27f63e1c3cfc63e95c60f6c3cce3edaec05af623. The base remains available in Git history.
-The additions include current identifier and source audits, uniform-aggregation
-and identity-exclusion sensitivities, Figure 7 and SI S25-S26 materials.
-Current manuscript Tables 1-4 and the historical Table 5 / current SI S18a-b
-mapping are documented in README.md, docs/REPRODUCIBILITY.md and
-supplementary_audits/FINAL_MANUSCRIPT_MAP.txt.
+SETUP
+1. Download all four Research ZIP files and the archive SHA-256 list.
+2. Compare each ZIP with RESEARCH_ARCHIVE_SHA256SUMS.txt.
+3. Extract all four archives into the same destination. Each contains
+   non-overlapping paths under Research/; together they form one directory.
+4. Read Research/README.md and Research/docs/REPRODUCIBILITY.md.
 
-FILES AND SIZES
-Research_Code_and_Data.zip       32,774,716 bytes
-Research_Model_Outputs.zip       18,690,813 bytes
-Research_Source_Audits.zip        31,704,644 bytes
-Research_Figures_and_Tables.zip   12,687,927 bytes
-Total compressed research data:  95,858,100 bytes (about 95.9 MB)
-Total uncompressed file content: 140,591,901 bytes (about 140.6 MB)
-Allow additional space for the Python environment and any regenerated outputs.
+PLATFORM AND ENVIRONMENT
+Python 3.12 and the pinned packages in requirements-analysis.txt and
+requirements-figures.txt are required for numerical work. environment.yml
+provides a conda specification. SOFTWARE_VERSIONS.json records package
+versions and random seeds. Standard-library archive extraction works on
+Windows, macOS and Linux; configure long-path support on Windows if needed.
 
-All four ZIPs have non-overlapping members under Research/. Extract all four
-into the same destination, then run commands from the resulting Research/
-directory. A repository checkout already places those files at the root.
-RESEARCH_ARCHIVE_SHA256SUMS.txt provides the four download checksums.
+RUN INSTRUCTIONS AND EXPECTED OUTPUTS
+Work from the Research directory using the pinned environment.
+The supplied predictions, metric CSVs, bootstrap arrays and figures can be
+inspected directly; docs/RESULT_FILE_MAP.md maps the reported results.
+python code/run_all_analysis.py --clean reruns the raw-benchmark numerical
+pipeline in a separate copy, producing results/. This command fits models.
+scripts/rebuild_external_sources.py reconstructs the retained external-source
+analyses from bundled inputs; the documented cache/network boundary applies.
+The README lists separate commands for current tables and figures, restored
+model inference and supplementary scientific analyses. Reproduction is
+distinguished from collection or adjudication of new source observations.
 
-The four components contain, respectively:
-1. Code, frozen inputs, documentation, supplementary audits and verification.
-2. Molecular representations, predictions, metrics and saved model outputs.
-3. External-source reconstruction, external evaluation and unseen-case evidence.
-4. Figures, figure source data, tables and figure-quality records.
+The manuscript/SI TeX sources and build script are supplied separately in the
+journal submission's LaTeX_Source.zip. They are not one of these four archives.
+FILE_MANIFEST.json and SHA256SUMS.txt record the exact research file contents.
+Repository-only release automation is outside that manifest and the ZIPs.
 
-PLATFORM, DEPENDENCIES AND INSTALLATION
-The documented end-to-end run used Windows and Python 3.12.13; see
-docs/END_TO_END_RERUN.md for its actual date, environment and scope.
-The current packaging/integrity verification was also performed on Windows.
-Compatibility with other operating systems has not been established by this
-release operation. Exact dependency versions are listed in SOFTWARE_VERSIONS.json,
-requirements-analysis.txt and requirements-figures.txt; environment.yml provides
-the corresponding conda specification. Historical environment records are retained.
-
-Example installation from the research root:
-  python -m venv .venv
-  .venv\Scripts\python.exe -m pip install -r requirements-analysis.txt -r requirements-figures.txt
-
-USAGE AND EXPECTED OUTPUTS
-Check the shipped files without fitting models:
-  .venv\Scripts\python.exe verification/verify_files.py
-Expected output: status PASS, files_checked 804, empty missing and changed lists.
-The manifest and checksum-list files themselves are not among those 804 entries.
-
-For saved-result metric checks, run in a separate working copy because report
-and table outputs are regenerated:
-  python verification/verify_metrics.py
-  python verification/verify_rank_statistics.py
-These recompute metrics, comparisons and checks from saved results. Read the
-scientific limitations together with the PASS/check reports; a numerical check
-does not establish population-level validation.
-
-Figure 7 and the added SI table generation entry points are:
-  python scripts/make_crossover_figure.py
-  python scripts/assemble_audit_supplement.py
-Their expected figure/table outputs and provenance are mapped in
-supplementary_audits/FINAL_MANUSCRIPT_MAP.txt. Added-analysis instructions are
-in supplementary_audits/README.txt and docs/REPRODUCIBILITY.md.
-
-For a full analysis rerun, follow docs/REPRODUCIBILITY.md in a separate copy.
-Its --clean entry point deletes that copy's results/ before rebuilding it.
-No new model-training or experimental run was performed to publish this release.
-
-LICENSE AND SOURCE ATTRIBUTION
-Preserve LICENSE and NOTICE.md. The MIT license applies to the authors' original
-analysis code within its stated scope. Third-party data, cached upstream code,
-regulatory records and source documents retain their original terms and attribution;
-this release does not relicense them as MIT. Source ledgers and provenance documents
-identify their origins and the limits of the reconstruction.
-
-JOURNAL SUPPLEMENTARY-MATERIALS ROUTE
-The four Research ZIPs are also intended for separate submission as journal
-supplementary materials. GitHub publication complements that route and does not
-replace uploading the attachments to the IEEE Access submission system.
-The release documentation follows the scope of the official guidance:
-https://ieeeaccess.ieee.org/authors/submission-guidelines/
-https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/prepare-supplementary-materials/
+LICENSE AND CONTACT
+Study code: MIT License. Third-party data retain their own terms; see LICENSE
+and NOTICE.md. Cite the associated article and original datasets (CITATION.cff).
+Corresponding author: Zhining Wang, mathwangzhining@163.com.
+No new experiments, model fits or scientific results were produced while
+preparing this final submission package.

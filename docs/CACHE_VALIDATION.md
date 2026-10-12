@@ -1,4 +1,4 @@
-# Cache validation and revision checks
+# Cache provenance and regeneration
 
 The supplied cache contains deterministic representations of the 1,035 ordered raw
 SMILES. Its original `results/cache/CACHE_METADATA.json` is a legacy manifest: it
@@ -7,7 +7,7 @@ environment. The revision retains that manifest unchanged. The separate
 `results/cache/CACHE_VALIDATION.json` records **current validation by fresh
 recomputation**, not reconstructed historical provenance.
 
-## Current verification
+## Recorded validation
 
 The validation run on 2 October 2026 (Asia/Shanghai) used Python 3.12.13, RDKit
 2025.9.4, NumPy 2.5.3, pandas 3.0.1, SciPy 1.18.1 and scikit-learn 1.8.0. Exact
@@ -61,18 +61,17 @@ Every existing-cache load checks the following before returning arrays:
    and SHA-256 of every cached artifact.
 
 A partial, changed or unverifiable cache raises `CacheValidationError`. It is not
-silently reused or replaced. A legacy cache without valid present-day evidence
-can be checked without modifying its numerical files:
+silently reused or replaced. The supplied cache retains its recorded validation
+metadata. To recompute the representations from raw SMILES and compare them
+with the existing cache:
 
 ```shell
-python verification/verify_analysis_integrity.py --cache-only
+python scripts/prepare_cache.py
 ```
 
-Run the full revision verification after the analysis outputs exist:
-
-```shell
-python verification/verify_analysis_integrity.py
-```
+This command writes current cache-validation metadata. It does not replace
+the cache arrays or fit models. Regeneration from the raw SMILES produces
+new generation metadata.
 
 New caches record schema-v2 generation metadata, including timestamp, raw/split
 hashes, ordered identity hashes, parameters, versions, implementation digest,
@@ -85,9 +84,9 @@ separate checkout/copy:
 python code/run_all_analysis.py --clean
 ```
 
-The entry point runs scripts 00 through 14, `verify_analysis_integrity.py`, and the
-exported-test-label check `check_crossover_nesting.py`, followed by the descriptive
-cohort-structure check `describe_cohort_selection.py`.
+The entry point runs scripts 00 through 14, then `scripts/prepare_cache.py`,
+and finally regenerates the descriptive cohort-structure outputs with
+`scripts/describe_cohort_selection.py`.
 `--clean` removes the checkout's `results` directory; the upstream ECOTOX and
 external source exports under `output/external_data_audit` are separate frozen
 inputs. Manuscript compilation and figure rendering are separate steps. Validation

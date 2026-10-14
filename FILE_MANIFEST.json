@@ -1156,19 +1156,29 @@
       "sha256": "d11b2ec2d81513f39f7fce56cef29faa01090d937d9451bf79a050b2998483f4"
     },
     {
+      "path": "output/unseen_identity_case_study/model_restore/public_interface_validation.csv",
+      "bytes": 401,
+      "sha256": "9ce94fc15f0326270fdc1f779a8197ff89eaac8a9317234e3aad7b2423e9e61b"
+    },
+    {
       "path": "output/unseen_identity_case_study/model_restore/README.md",
-      "bytes": 4156,
-      "sha256": "b2c2489f560008a83d9b3f581543748ddd4cea859ef195d0bcf442955166062b"
+      "bytes": 4528,
+      "sha256": "8fd1691c59b3d24ea737936d0ab13e1fe44138cb0c1b6c3a3cd30efa08fb25e0"
     },
     {
       "path": "output/unseen_identity_case_study/model_restore/restoration_manifest.json",
       "bytes": 117940,
-      "sha256": "2976fa89cba8eb63854e8002780942f2e80f6d75d4efb7ffea0d29724200fd87"
+      "sha256": "d260000619093d4ed85da86d07275e568c71ffe58228c9c1bea859d5e0f9e759"
     },
     {
       "path": "output/unseen_identity_case_study/model_restore/restoration_metric_summary.csv",
       "bytes": 521,
       "sha256": "b10b549b44841c00213b315e33fdb4d2b4e3b6382dc20a0acd072cc9bf84b072"
+    },
+    {
+      "path": "output/unseen_identity_case_study/model_restore/restoration_verification.json",
+      "bytes": 9201,
+      "sha256": "90eade0ad6b14f6c7ccf600411d651d6246388d5e478b2cb2e26dc8f98f9f1d2"
     },
     {
       "path": "output/unseen_identity_case_study/model_restore/restore_original_ecfp.py",
@@ -1214,6 +1224,11 @@
       "path": "output/unseen_identity_case_study/predictions/initial8/structure_only_input.csv",
       "bytes": 899,
       "sha256": "75a1aabc4641f0ef801486995f9a10b1077bf1c824d53e44e6e8cb0e322e349e"
+    },
+    {
+      "path": "output/unseen_identity_case_study/predictions/prediction_release_verification.json",
+      "bytes": 7093,
+      "sha256": "d969023dcd25683381242aa91c10d84a14f2bbe7710732c63bbbae8d9bd2a01f"
     },
     {
       "path": "output/unseen_identity_case_study/README.md",
@@ -3131,7 +3146,7 @@
       "sha256": "64c99922b4ea5549fd5928e3985672b4da86ad0a84560bf30b679787477deffa"
     }
   ],
-  "file_count": 626,
+  "file_count": 629,
   "manifest_excludes": [
     "FILE_MANIFEST.json",
     "SHA256SUMS.txt"

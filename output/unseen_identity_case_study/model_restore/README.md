@@ -70,6 +70,8 @@ development reference, and inference script before use. All original input hashe
 and software versions are recorded in `restoration_manifest.json`. Nine model
 objects and three ordered training tables are supplied.
 
+`restoration_verification.json` records the model-restoration checks; `../predictions/prediction_release_verification.json` records the current release replay and hashes, while the original `prediction_run_manifest.json` files retain the original prediction-event times and provenance.
+
 ## Supporting files
 
 - `restored_vs_original_test_scores.csv`: all 1,863 paired original/restored scores.

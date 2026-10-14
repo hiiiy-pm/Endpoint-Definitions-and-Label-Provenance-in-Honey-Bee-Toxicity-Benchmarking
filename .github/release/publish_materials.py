@@ -9,8 +9,8 @@ import urllib.request
 from materials_common import ASSET_NAMES, require, verify_blob, load_metadata
 
 REPOSITORY = 'hiiiy-pm/Endpoint-Definitions-and-Label-Provenance-in-Honey-Bee-Toxicity-Benchmarking'
-TAG = 'submission-materials'
-TITLE = 'Study materials'
+TAG = 'submission-materials-2026-10-14'
+TITLE = 'Study materials (14 October 2026)'
 BODY = ('Materials for "Endpoint Definitions and Label Provenance in Honey-Bee Toxicity Benchmarking".\n\n'
         'The manuscript, Supplementary Information, cover letter and LaTeX sources are accompanied by '
         'the research code, data, model outputs, source records, figures and tables. '

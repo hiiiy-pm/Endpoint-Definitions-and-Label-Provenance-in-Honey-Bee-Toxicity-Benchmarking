@@ -25,7 +25,7 @@ RES = ROOT / 'results'
 OUT.mkdir(parents=True, exist_ok=True)
 _parser = argparse.ArgumentParser(description=__doc__)
 _parser.add_argument('--only', nargs='+', help='Export only the requested figure stems')
-_parser.add_argument('--layout-13page', '--compact-main', dest='reference_layout', action='store_true',
+_parser.add_argument('--publication-layout', '--layout-13page', '--compact-main', dest='reference_layout', action='store_true',
                      help='Regenerate the selected reference layouts; preserve the current provenance panel.')
 _ARGS = _parser.parse_args()
 _REFERENCE_LAYOUT = _ARGS.reference_layout

@@ -11,10 +11,12 @@ def esc(x):
 def table(title,spec,head,rows,note):
  add(r'\Needspace{12\baselineskip}\subsection*{'+title+'}')
  add(note)
- add(r'\begingroup\small\setlength{\tabcolsep}{4pt}')
+ number=re.search(r'Supplementary Table (S\d+[a-z]?)',title).group(1)
+ # A small local reduction keeps S18a's final row with the rest of its table.
+ spacing=r'\renewcommand{\arraystretch}{0.97}' if number=='S18a' else ''
+ add(r'\begingroup\small\setlength{\tabcolsep}{4pt}'+spacing)
  add(r'\begin{longtable}{'+spec+'}')
  add(r'\toprule '+head+r' \\ \midrule\endfirsthead')
- number=re.search(r'Supplementary Table (S\d+[a-z]?)',title).group(1)
  add(r'\multicolumn{'+str(len(head.split('&')))+r'}{l}{\textit{Supplementary Table '+number+r' (continued)}} \\')
  add(r'\toprule '+head+r' \\ \midrule\endhead')
  add(r'\midrule\multicolumn{'+str(len(head.split('&')))+r'}{r}{Continued on next page}\endfoot\bottomrule\endlastfoot')

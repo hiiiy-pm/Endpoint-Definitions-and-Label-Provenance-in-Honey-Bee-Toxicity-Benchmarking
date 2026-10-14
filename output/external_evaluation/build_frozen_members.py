@@ -83,7 +83,7 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     target = OUT / 'frozen_split_external_members.csv'
     table.to_csv(target, index=False, encoding='utf-8', lineterminator='\n')
-    manifest = {'status': 'passed', 'provenance': 'Reconstructed during the 2026-10-03 revision; not a recovered historical preregistration or freeze',
+    manifest = {'status': 'passed', 'provenance': 'Cohort membership reconstructed from source records and official splits; retrospective analysis, not preregistration',
                 'generator': str(Path(__file__).relative_to(ROOT)).replace('\\', '/'),
                 'generator_sha256': sha(Path(__file__)), 'input_sha256': before,
                 'output_sha256': {target.relative_to(ROOT).as_posix(): sha(target)},

@@ -1,10 +1,11 @@
-"""Figure: all four label-crossover cells and their paired full-revision effect.
+"""Figure: all four label-crossover cells and their paired effect of changing both training and evaluation labels.
 
-The primary keep ECFP scenario is selected before inspecting effect sizes.
+The designated primary keep ECFP scenario is displayed retrospectively.
 Every split and both severe endpoints are retained. The left panel gives point
 estimates; the right panel supplies the paired uncertainty for the question.
 """
 from pathlib import Path
+import argparse
 import hashlib
 import json
 import sys
@@ -20,8 +21,6 @@ from sklearn.metrics import roc_auc_score
 ROOT = Path(__file__).resolve().parents[1]
 NUMERIC = ROOT / "supplementary_audits/statistics/figure_numeric"
 NUMERIC.mkdir(parents=True, exist_ok=True)
-sys.path.insert(0, str(ROOT / "code"))
-from _common import multinomial_weights, percentile_ci, tie_aware_weighted_auc
 
 INPUT = ROOT / "results/label_audit/07_crossover_gap.csv"
 PRED = ROOT / "results/label_audit/09_crossover_predictions.csv.gz"
@@ -32,6 +31,10 @@ CELLS = (("original", "original"), ("original", "corrected"),
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--render-only", action="store_true",
+                        help="Render unchanged saved values after checking existing verification/input hashes; skip numerical resampling.")
+    args = parser.parse_args()
     gap = pd.read_csv(INPUT)
     gap = gap[(gap.Scenario == "primary") & (gap.Unresolved == "keep") & (gap.Representation == "ECFP")]
     selected = []
@@ -52,51 +55,66 @@ def main():
     for _, rows in source.groupby("Split"):
         assert rows.train_index_sha256.nunique() == rows.test_index_sha256.nunique() == 1
 
-    # Recompute from compound scores, including the exact published change draws.
-    predictions = pd.read_csv(PRED)
-    predictions = predictions[(predictions.Scenario == "primary") & (predictions.Unresolved == "keep") &
-                              (predictions.Representation == "ECFP")]
-    scaffolds = pd.read_csv(ROOT / "results/cache/scaffolds.csv").set_index("Index").Scaffold
-    check_rows = []
-    for split_index, split in enumerate(SPLITS):
-        est, draws = {}, {}
-        reference = predictions[(predictions.Split == split) & (predictions.Threshold == 100)]
-        indices = reference.Index.to_numpy(int)
-        uniq, inverse = np.unique(scaffolds.loc[indices].to_numpy(str), return_inverse=True)
-        rng = np.random.default_rng(20260829 + 13000 + 97 * split_index)
-        weights = multinomial_weights(len(uniq), 2000, rng)[:, inverse]
-        for threshold in (100, 11, 1):
-            rows = predictions[(predictions.Split == split) & (predictions.Threshold == threshold)]
-            assert np.array_equal(rows.Index.to_numpy(int), indices)
-            for train, evaluate in CELLS:
-                scores = rows.OriginalTrainScore.to_numpy(float) if train == "original" else rows.CorrectedTrainScore.to_numpy(float)
-                labels = rows.OriginalLabel.to_numpy(int) if evaluate == "original" else rows.CorrectedLabel.to_numpy(int)
-                est[threshold, train, evaluate] = roc_auc_score(labels, scores)
-                draws[threshold, train, evaluate] = tie_aware_weighted_auc(labels, scores, weights)
-        for severe in SEVERE:
-            for train, evaluate in CELLS:
-                observed = est[severe, train, evaluate] - est[100, train, evaluate]
-                row = source[(source.Split == split) & (source.Severe == severe) &
-                             (source.TrainLabels == train) & (source.EvalLabels == evaluate)].iloc[0]
-                difference = abs(observed - row.Gap)
+    if args.render_only:
+        previous = json.loads((NUMERIC / "FIGURE_NUMERIC_METADATA.json").read_text(encoding="utf-8"))
+        assert previous["input_sha256"] == hashlib.sha256(INPUT.read_bytes()).hexdigest()
+        assert previous["predictions_sha256"] == hashlib.sha256(PRED.read_bytes()).hexdigest()
+        source_path = ROOT / "source_data/figure_label_crossover.csv"
+        source_hash = hashlib.sha256(source_path.read_bytes()).hexdigest()
+        assert previous["source_data_sha256_unchanged"] == source_hash
+        pd.testing.assert_frame_equal(pd.read_csv(source_path), source,
+                                      check_dtype=False, check_exact=False, rtol=0, atol=1e-14)
+        check_rows = pd.read_csv(NUMERIC / "numeric_verification.csv").to_dict("records")
+        assert len(check_rows) == 30 and max(r["MaxAbsoluteDifference"] for r in check_rows) < 1e-12
+    else:
+        # Keep the full verification path and its numerical algorithms unchanged.
+        sys.path.insert(0, str(ROOT / "code"))
+        from _common import multinomial_weights, percentile_ci, tie_aware_weighted_auc
+        # Recompute from compound scores, including the exact published change draws.
+        predictions = pd.read_csv(PRED)
+        predictions = predictions[(predictions.Scenario == "primary") & (predictions.Unresolved == "keep") &
+                                  (predictions.Representation == "ECFP")]
+        scaffolds = pd.read_csv(ROOT / "results/cache/scaffolds.csv").set_index("Index").Scaffold
+        check_rows = []
+        for split_index, split in enumerate(SPLITS):
+            est, draws = {}, {}
+            reference = predictions[(predictions.Split == split) & (predictions.Threshold == 100)]
+            indices = reference.Index.to_numpy(int)
+            uniq, inverse = np.unique(scaffolds.loc[indices].to_numpy(str), return_inverse=True)
+            rng = np.random.default_rng(20260829 + 13000 + 97 * split_index)
+            weights = multinomial_weights(len(uniq), 2000, rng)[:, inverse]
+            for threshold in (100, 11, 1):
+                rows = predictions[(predictions.Split == split) & (predictions.Threshold == threshold)]
+                assert np.array_equal(rows.Index.to_numpy(int), indices)
+                for train, evaluate in CELLS:
+                    scores = rows.OriginalTrainScore.to_numpy(float) if train == "original" else rows.CorrectedTrainScore.to_numpy(float)
+                    labels = rows.OriginalLabel.to_numpy(int) if evaluate == "original" else rows.CorrectedLabel.to_numpy(int)
+                    est[threshold, train, evaluate] = roc_auc_score(labels, scores)
+                    draws[threshold, train, evaluate] = tie_aware_weighted_auc(labels, scores, weights)
+            for severe in SEVERE:
+                for train, evaluate in CELLS:
+                    observed = est[severe, train, evaluate] - est[100, train, evaluate]
+                    row = source[(source.Split == split) & (source.Severe == severe) &
+                                 (source.TrainLabels == train) & (source.EvalLabels == evaluate)].iloc[0]
+                    difference = abs(observed - row.Gap)
+                    assert difference < 1e-12
+                    check_rows.append({"Split": split, "Severe": severe, "Quantity": f"{train}/{evaluate}",
+                                       "MaxAbsoluteDifference": difference})
+                diff_draws = ((draws[severe, "corrected", "corrected"] - draws[100, "corrected", "corrected"])
+                              - (draws[severe, "original", "original"] - draws[100, "original", "original"]))
+                lo, hi = percentile_ci(diff_draws)
+                observed = ((est[severe, "corrected", "corrected"] - est[100, "corrected", "corrected"])
+                            - (est[severe, "original", "original"] - est[100, "original", "original"]))
+                row = source[(source.Split == split) & (source.Severe == severe) & (source.Quantity == "paired_full_change")].iloc[0]
+                difference = max(abs(observed - row.Gap), abs(lo - row.CI_low), abs(hi - row.CI_high))
                 assert difference < 1e-12
-                check_rows.append({"Split": split, "Severe": severe, "Quantity": f"{train}/{evaluate}",
+                check_rows.append({"Split": split, "Severe": severe, "Quantity": "paired_full_change_and_CI",
                                    "MaxAbsoluteDifference": difference})
-            diff_draws = ((draws[severe, "corrected", "corrected"] - draws[100, "corrected", "corrected"])
-                          - (draws[severe, "original", "original"] - draws[100, "original", "original"]))
-            lo, hi = percentile_ci(diff_draws)
-            observed = ((est[severe, "corrected", "corrected"] - est[100, "corrected", "corrected"])
-                        - (est[severe, "original", "original"] - est[100, "original", "original"]))
-            row = source[(source.Split == split) & (source.Severe == severe) & (source.Quantity == "paired_full_change")].iloc[0]
-            difference = max(abs(observed - row.Gap), abs(lo - row.CI_low), abs(hi - row.CI_high))
-            assert difference < 1e-12
-            check_rows.append({"Split": split, "Severe": severe, "Quantity": "paired_full_change_and_CI",
-                               "MaxAbsoluteDifference": difference})
-    source_path = ROOT / "source_data/figure_label_crossover.csv"
-    source_hash = hashlib.sha256(source_path.read_bytes()).hexdigest()
-    pd.testing.assert_frame_equal(pd.read_csv(source_path), source,
-                                  check_dtype=False, check_exact=False, rtol=0, atol=1e-14)
-    pd.DataFrame(check_rows).to_csv(NUMERIC / "numeric_verification.csv", index=False)
+        source_path = ROOT / "source_data/figure_label_crossover.csv"
+        source_hash = hashlib.sha256(source_path.read_bytes()).hexdigest()
+        pd.testing.assert_frame_equal(pd.read_csv(source_path), source,
+                                      check_dtype=False, check_exact=False, rtol=0, atol=1e-14)
+        pd.DataFrame(check_rows).to_csv(NUMERIC / "numeric_verification.csv", index=False)
 
     plt.rcParams.update({"font.family": "sans-serif", "font.sans-serif": ["Arial", "DejaVu Sans"],
                          "font.size": 10, "axes.labelsize": 10, "xtick.labelsize": 10, "ytick.labelsize": 10,
@@ -115,7 +133,7 @@ def main():
         for col in range(4):
             left.text(col, row, f"{matrix[row, col]:.3f}", ha="center", va="center", fontsize=10.5,
                       color="#172c39", fontweight="bold" if col == 3 else "normal")
-    left.set_xticks(range(4), ["O / O", "O / P", "P / O", "P / P"])
+    left.set_xticks(range(4), ["O / O", "O / R", "R / O", "R / R"])
     left.xaxis.tick_top()
     left.tick_params(axis="x", length=0, pad=8)
     left.set_yticks(range(6), [f"{split}, {severe} - 100" for split, severe in row_keys])
@@ -151,7 +169,7 @@ def main():
     right.set_xlabel("Change in AUROC gap", labelpad=9)
     right.spines[["top", "right", "left"]].set_visible(False)
     right.spines["bottom"].set_color("#74808a")
-    for axis, letter, title in [(left, "a", "Four-cell AUROC gap"), (right, "b", "Paired change: P/P - O/O")]:
+    for axis, letter, title in [(left, "a", "Four-cell AUROC gap"), (right, "b", "Paired change: R/R - O/O")]:
         axis.annotate(letter, (0, 1), xycoords="axes fraction", xytext=(-13, 31), textcoords="offset points",
                       ha="left", va="bottom", fontsize=12, fontweight="bold")
         axis.annotate(title, (0, 1), xycoords="axes fraction", xytext=(0, 32), textcoords="offset points",
@@ -168,6 +186,8 @@ def main():
               "inclusion_rule": "primary/keep/ECFP, all 3 splits and 2 severe endpoints, all 4 cells plus full change",
               "uncertainty": "95% scaffold-cluster percentiles, B=2000, conditional and exploratory",
               "layout": "all gap estimates on left; paired effect and uncertainty on right",
+              "display_label_symbols": {"original": "O", "corrected": "R (provisionally revised)"},
+              "numeric_verification_mode": "existing verified inputs and saved checks" if args.render_only else "full numerical recomputation",
               "source_data_sha256_unchanged": source_hash,
               "source_figure_inches": [7.16, 4.0], "source_minimum_font_pt": 10,
               "planned_manuscript_scale": .712, "planned_manuscript_minimum_font_pt": 7.12}

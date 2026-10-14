@@ -1,4 +1,4 @@
-"""Generate the added SI tables from the dated audit outputs, without fitting models."""
+"""Generate supplementary sensitivity tables from scientific outputs without fitting models."""
 from pathlib import Path
 import csv
 import json
@@ -28,8 +28,8 @@ def num(value):
 def main():
     stat = REV / 'statistics'
     ident = REV / 'identity_sources'
-    pieces = [r'\section*{Supplementary revision audits}',
-        r'''These analyses extend the frozen benchmark audit. They retain the original
+    pieces = [r'\section*{Supplementary sensitivity analyses}',
+        r'''These analyses assess label-rule sensitivity, source provenance and identifier consistency. They retain the original
 SMILES, labels and official split files. Current identifier responses are a dated
 consistency screen; the conditional qualifier replay and additional model
 sensitivities are reported separately from the historical reconstruction.''']
@@ -77,7 +77,8 @@ reused. The original mixed-rule exclusion fits were independently reproduced.
 Intervals use 2,000 paired scaffold-cluster draws, condition on the fitted models
 and retained cohorts, and are not adjusted for the added scenario. This selected
 cohort differs from the primary keep cohort. O/O denotes original training and
-evaluation labels; P/P denotes provisional labels for both.''']
+evaluation labels; R/R denotes provisionally revised labels for both. O/R label-source
+notation is distinct from aggregation rules A--D and outcome codes P/N/U.''']
     gaps = read_csv(stat / 'uniform_d_exclude_gap.csv')
     rows = []
     for split in ['Random', 'MaxMin', 'Time']:
@@ -90,7 +91,7 @@ evaluation labels; P/P denotes provisional labels for both.''']
             assert abs(float(new['Gap']) - float(old['Gap']) - float(change['Gap'])) < 1e-12
             rows.append([split, f'{severe}--100', num(old['Gap']), num(new['Gap']),
                          num(change['Gap']), f"[{num(change['CI_low'])}, {num(change['CI_high'])}]"])
-    pieces.append(table(['Split', 'Contrast', 'O/O gap', 'P/P gap', 'Change', r'95\% CI'], rows, 'llrrrr'))
+    pieces.append(table(['Split', 'Contrast', 'O/O gap', 'R/R gap', 'Change', r'95\% CI'], rows, 'llrrrr'))
 
     pieces += [r'\Needspace{18\baselineskip}', r'\subsection*{Supplementary Table S25d. Benomyl qualifier-direction replay}',
         r'''The archived oral record for CAS 17804-35-2 reports $<10$~\ugbee;
@@ -138,7 +139,7 @@ ledger accompany the archive.''')
 current identifier conflicts from alternative entity representations. CAS lookup
 and structure agreement corroborate the listed candidate CIDs; they are not
 substituted into the frozen benchmark.''']
-    pieces.append(table(['Stored CID', 'Case', 'Current review finding'], [
+    pieces.append(table(['Stored CID', 'Case', 'Source-comparison finding'], [
         ['13836', 'Chlormequat / chloride', 'Cation matches 13837; salt matches 13836'],
         ['5284484', 'Metiram / zineb', 'Distinct materials; zineb matches 5284484'],
         ['16116', 'Silthiofam / substituted urea', 'Silthiofam matches 9881821'],
@@ -150,9 +151,9 @@ queries. ECOTOX use flags also originate from PubChem; PPDB/BPDB use flags were
 parsed from provider-page text. The historical per-row literature-query responses
 were not retained, and the archived literature endpoint returned HTTP 404 in the
 current retrieval. A current creation date cannot replace an unknown historical
-literature date. This review therefore establishes dependency paths and current
+literature date. This analysis therefore establishes dependency paths and current
 identifier conflicts, but does not adjudicate replacement historical years or
-changed Time membership. In the ten-row review, the ECOTOX identifiers match
+changed Time membership. In the ten-row source comparison, the ECOTOX identifiers match
 their frozen structures; the confirmed distinct-structure CID conflicts are in
 PPDB rows whose use flags came from provider pages. The ledger records these
 source-specific distinctions instead of inferring use errors from every CID flag.''')

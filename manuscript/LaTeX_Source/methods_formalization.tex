@@ -1,0 +1,74 @@
+\subsection*{Pairwise representation of endpoint discrimination}
+Let \(g_i\in\{0,1,2,3\}\) be the analytical tier of test compound \(i\), and let \(n_r\) count test compounds in tier \(r\). The positive tiers at endpoint \(b\) start at \(k_b\), where \((k_{100},k_{11},k_1)=(1,2,3)\). Thus \(n_b^+=\sum_{r=k_b}^{3}n_r\) and \(n_b^-=\sum_{\ell=0}^{k_b-1}n_\ell\). For scores \(s_i^{(a)}\) from the model trained at endpoint \(a\), define the tier-pair ranking probability
+\begin{equation}
+\widehat q_{r\ell}^{(a)}
+=\frac{1}{n_rn_\ell}
+\sum_{i:g_i=r}\sum_{j:g_j=\ell}
+\left[\mathbf1\{s_i^{(a)}>s_j^{(a)}\}
++\frac12\mathbf1\{s_i^{(a)}=s_j^{(a)}\}\right].
+\label{eq:si-tier-pair}
+\end{equation}
+Partitioning the positive and negative index sets by tier gives
+\begin{equation}
+\widehat A_{a\to b}
+=\sum_{r=k_b}^{3}\sum_{\ell=0}^{k_b-1}
+\frac{n_rn_\ell}{n_b^+n_b^-}\widehat q_{r\ell}^{(a)}.
+\label{eq:si-tier-expansion}
+\end{equation}
+To obtain this identity, group the positive--negative summands in the empirical AUROC by \((g_i,g_j)=(r,\ell)\). Each group contains \(n_rn_\ell\) comparisons; its sum is \(n_rn_\ell\widehat q_{r\ell}^{(a)}\). Division by the total \(n_b^+n_b^-\) yields \eqref{eq:si-tier-expansion}. Empty tier-pairs are omitted, and an endpoint with either class absent has undefined AUROC.
+
+The weights sum to one and equal the product of the within-positive and within-negative tier proportions. For a fixed score vector, changing the evaluation endpoint changes the included tier-pairs and their weights. Endpoint-specific comparisons, \(a=b\), also change the fitted score vector. These two operations correspond to the cross-endpoint and endpoint-specific evaluations in the main manuscript.
+
+\subsection*{Fixed learner specification}
+For training indices \(\mathcal R\), write \(z_i^{(a)}=2y_i^{(a)}-1\), \(n_{\mathrm{tr}}=|\mathcal R|\), and let \(n_{c,\mathrm{tr}}^{(a)}\) be the training count in class \(c\). The support-vector classifier minimizes the class-weighted hinge objective
+\begin{equation}
+\min_{w,\beta}\ \frac12\|w\|^2+
+C\sum_{i\in\mathcal R}
+\omega_{y_i^{(a)}}^{(a)}
+\max\!\left\{0,1-z_i^{(a)}
+\left[\langle w,\phi(x_i)\rangle+\beta\right]\right\},
+\qquad
+\omega_c^{(a)}=\frac{n_{\mathrm{tr}}}{2n_{c,\mathrm{tr}}^{(a)}},
+\quad C=1.
+\label{eq:si-svm-objective}
+\end{equation}
+The protocol fixes \(C\), while the balanced class weights are calculated from the labels in each fitted training set. The resulting score is
+\begin{equation}
+s^{(a)}(x)=\sum_{i\in\mathcal R}
+\alpha_i^{(a)}z_i^{(a)}K(x_i,x)+\beta^{(a)},
+\qquad
+0\leq\alpha_i^{(a)}\leq C\omega_{y_i^{(a)}}^{(a)}.
+\label{eq:si-svm-score}
+\end{equation}
+Binary fingerprints use the Tanimoto kernel specified in the main manuscript. The descriptor comparator uses a radial basis function kernel after training-fitted robust scaling. The unseen-identity evaluation applies the fixed decision rule \(\widehat y^{(a)}(x)=\mathbf1\{s^{(a)}(x)>0\}\); its reported AUROC uses the continuous score.
+
+For WL-HI, let \(c_{i\ell}\) be the count of a layer--label combination \(\ell\) at initialization or either of the two refinement iterations. Initial labels encode element, formal charge and aromaticity; refinement incorporates the bond-typed neighbouring labels. The histogram-intersection expansion is
+\begin{equation}
+\psi_{\ell,q}(x_i)=\mathbf1\{c_{i\ell}\geq q\},
+\qquad
+\langle\psi(x_i),\psi(x_j)\rangle
+=\sum_\ell\min(c_{i\ell},c_{j\ell}).
+\label{eq:si-hi-expansion}
+\end{equation}
+Here \(q\) ranges over the positive count levels for each label. Cosine normalization of these expanded features gives the implemented kernel
+\begin{equation}
+K_{\mathrm{WL-HI}}(x_i,x_j)=
+\frac{\sum_\ell\min(c_{i\ell},c_{j\ell})}
+{\sqrt{\left(\sum_\ell c_{i\ell}\right)
+\left(\sum_\ell c_{j\ell}\right)}}.
+\label{eq:si-wl-kernel}
+\end{equation}
+
+\subsection*{Algorithm S1. Paired evaluation procedure}
+\textbf{Inputs:} the fixed compound identities and tier mapping; the Random, MaxMin and Time training/test partitions; the representation and learner specifications. Regulatory records and new candidate structures enter the separate evaluation stages below.
+\begin{enumerate}
+\item Construct \(y_i^{(100)}\), \(y_i^{(11)}\) and \(y_i^{(1)}\) from the same tier vector. For each split, retain identical training and test identities across endpoints.
+\item Fit each representation--endpoint learner on the training partition under its specified protocol. Fit preprocessing, any selected hyperparameters, probability calibration and fusion using training observations only; obtain training out-of-fold scores where calibration or fusion requires them.
+\item Save the held-out decision scores. Compute \(\widehat A_{b\to b}\) for each endpoint and the two contrasts \(\widehat\Delta_b\), \(b\in\{11,1\}\). For the ECFP and WL-HI cross-endpoint analysis, retain each score vector while evaluating all three label vectors.
+\item Resample the same test compounds, or the same scaffold clusters with all their members, across endpoints and representations. Compute the paired contrasts for 5,000 draws and construct the stated two-contrast or ten-contrast simultaneous interval family. The fitted score vectors remain fixed.
+\item Evaluate every saved score vector on each pair of analytical tiers (Eq.~\eqref{eq:si-tier-pair}). Remove Tier1 from the test set, then refit the fixed learner without Tier1 training compounds, and evaluate both on the Tier1-free test set with the same resampling draws; report the descriptive Tier1-removal component and the residual of the severe-minus-broad contrast, with separate evaluation-only and refit increments.
+\item For the retrospective source reassessment, apply the identity, route and quality screens and identify a common three-cut-off cohort. Evaluate the saved scores under the benchmark and source-derived labels on this same cohort. For the primary ECFP model, use shared compound-bootstrap draws to estimate \(\widehat\Gamma_b\) and its percentile interval; retain class counts and degenerate-draw counts.
+\item For the label crossover, reconstruct labels under each scenario and policy, then cross distributed and partially revised training labels with their corresponding evaluation labels. Keep training and evaluation membership equal across all four cells within a scenario and policy; recompute balanced weights at each refit. Estimate contrast changes from 2,000 shared scaffold-cluster draws. Retain the nonnested negative policy only as a stress test.
+\item For the unseen-identity evaluation, exclude identities found anywhere in the benchmark, restore the original ECFP models and verify their saved-score agreement. Apply these models to the candidate structures and join eligible experimental outcomes using the documented candidate and prediction-stage records. Report ranking and fixed-zero-boundary classifications separately by route and endpoint.
+\end{enumerate}
+\textbf{Outputs:} saved scores, endpoint, cross-endpoint and tier-pair discrimination, paired contrasts and uncertainty, the Tier1 decomposition, source-label and label-crossover contrast changes, and individual unseen-identity decisions.

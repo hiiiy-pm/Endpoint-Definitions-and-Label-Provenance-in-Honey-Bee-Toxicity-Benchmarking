@@ -113,7 +113,7 @@ longtable('Supplementary Table S14. Tier1 exclusion for all representations',
           r'removing Tier1 test compounds (Tier0 versus Tier2 and Tier3). No-T1 refit: the same fixed learner refitted '
           r'without Tier1 training compounds and evaluated on the Tier1-free test set. T1 comp.: No-T1 refit minus '
           r'$\leq100$. Residual: $\leq11$ minus No-T1 refit. The two components add to the $\leq11$ minus $\leq100$ '
-          r'contrast. Intervals are scaffold-cluster 95\% percentile intervals over the primary bootstrap draws; '
+          r'contrast. Intervals are scaffold-cluster 95\% percentile intervals over the primary bootstrap draws. '
           r'This is a descriptive sensitivity decomposition, not a causal effect or a formal bound. Molecule-level intervals are in '
           r'\path{results/tier_boundary/03_tier1_exclusion_decomposition.csv}.',
           size=r'\footnotesize', sep='3pt')

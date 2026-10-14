@@ -1,8 +1,6 @@
-"""Generate the data rows of main-text Tables 3-5 from saved outputs.
+"""Generate main-text Tables 3 and 4 from the scientific analysis outputs.
 
-The rows are written to output/main_tables/. These retained base-release
-table numbers map to current manuscript/SI tables as documented in
-supplementary_audits/FINAL_MANUSCRIPT_MAP.txt.
+The rows are written to output/main_tables/. External-evaluation results are generated in the supplementary tables.
 """
 from pathlib import Path
 
@@ -50,30 +48,9 @@ def table4_rows():
     return rows
 
 
-def table5_rows():
-    m = pd.read_csv(ROOT / 'output' / 'external_evaluation' / 'frozen_metrics_ECFP.csv')
-    m = m[m.metric == 'AUROC']
-    rows = []
-    for src, cohort, name in [('OFT_48h_contact', 'original_contact_only', 'OFT48'),
-                              ('PLOS_resolved_contact', 'original_contact_quality_screen', 'EPA')]:
-        for sp in ['random', 'maxmin', 'time']:
-            q = m[(m.source == src) & (m.cohort == cohort) & (m.split == sp)]
-            cells = [name, {'random': 'Random', 'maxmin': 'MaxMin', 'time': 'Time'}[sp],
-                     str(int(q.n_compounds.iloc[0]))]
-            for thr in (100, 11, 1):
-                for lab in ('original', 'external'):
-                    r = q[(q.threshold == thr) & (q.labels == lab)].iloc[0]
-                    est = '--' if pd.isna(r.estimate) else f'{r.estimate:.3f}'
-                    star = '*' if bool(r.exploratory_sparse) else ''
-                    cells.append(f'{est}{star} ({int(r.n_pos)}/{int(r.n_neg)})')
-            rows.append(' & '.join(cells) + r' \\')
-    return rows
-
-
 if __name__ == '__main__':
     for name, rows in [('table3_tier1_exclusion', table3_rows()),
-                       ('table4_concordance_by_tier', table4_rows()),
-                       ('table5_external_auroc', table5_rows())]:
+                       ('table4_concordance_by_tier', table4_rows())]:
         (OUT / f'{name}.tex').write_text('\n'.join(rows) + '\n', encoding='utf-8')
         print(f'== {name}')
         print('\n'.join(rows))

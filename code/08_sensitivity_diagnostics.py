@@ -1,4 +1,4 @@
-"""Diagnostics added in response to pre-submission review.
+"""Sensitivity analyses for endpoint comparisons and predictive performance.
 
 1. Cross-endpoint evaluation: scores trained for one endpoint, evaluated on another.
 2. Brier skill against a constant training-prevalence forecast.

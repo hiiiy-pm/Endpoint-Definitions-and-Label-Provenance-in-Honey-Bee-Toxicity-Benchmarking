@@ -6,7 +6,7 @@
   "PDF_page": 3,
   "printed_page": 56,
   "visual_check": "Benomyl contact >10 and oral >10 ug/bee; comparison with historical ECOTOX oral <10",
-  "reused_local_original": "D:\\hiy132版本sci\\新建文件夹\\ApisTox_Complete_English_Submission_Support_Package\\ApisTox_Complete_English_Submission_Support_Package\\revision_20261001\\source_trace_20261003\\ecotox\\downloads\\fulltexts\\35461_rothamsted_official.pdf",
+  "reused_local_original": "source_documents\\35461_rothamsted_official.pdf",
   "matches_latest_trace_expected_sha256": true,
   "adjudication": "Document-level discrepancy; one-to-one original trial identity not fully established; no named two-expert independent adjudication claimed."
 }

@@ -22,9 +22,9 @@ compound records.
 The six frozen split files are under `data/official_splits/`. Each split has
 828 training and 207 test compounds and is joined to the raw data by `SMILES`.
 
-## Metrics and revised label audit
+## Metrics and label-rule audit
 
-Legacy result-column `AUPRC` means scikit-learn **average precision (AP)**,
+Result column `AUPRC` means scikit-learn **average precision (AP)**,
 the step-function precision–recall summary, not trapezoidal PR-AUC. AUROC
 contrasts throughout are **severe minus broad** (11−100 or 1−100).
 
@@ -38,8 +38,9 @@ The `fixed` route uses the historical determining group; `eligible` and
 `all` evaluate the minimum over retained routes, without claiming a uniquely
 identified corrected determining route.
 
-The crossover predicts each threshold separately. `keep` retains original
-labels where unresolved; `exclude` drops any compound unresolved at any of
+The crossover predicts each threshold separately. A missing rule lookup is
+represented internally by `-9` and handled as unresolved, together with `-1`
+and `-2`. `keep` retains original labels where unresolved; `exclude` drops any compound unresolved at any of
 the three thresholds from both training-label versions and all evaluations;
 `negative` sets unresolved labels negative at 100 only. The last policy can
 violate nesting and is reported only as an extreme, non-nested stress test.

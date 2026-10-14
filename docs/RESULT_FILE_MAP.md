@@ -1,16 +1,14 @@
 # Result file map
 
-The current main manuscript contains Tables 1-4 (endpoint construction, primary
-MaxMin contrasts, Tier1 exclusion and route-matched source agreement). The
-historical external-AUROC Table 5 is now Supplementary Tables S18a-b. The
-crossover appears in Figure 7 and Supplementary Table S23. Historical exporter
-filenames do not imply additional tables in the current main manuscript.
+Main Tables 1–4 describe endpoint construction, primary MaxMin contrasts,
+Tier1 exclusion and route-matched source agreement. Figure 7 and Table S23
+report the label crossover. Tables S18a–b report regulatory-source evaluation.
 
 | Result | Source file |
 |---|---|
 | Dataset, Tier and split validation | `results/final/00_data_validation.json`; `results/decomposition/00_split_endpoint_counts.csv` |
 | Tier composition table/heatmap | `results/decomposition/01_tier_composition_long.csv`; `02_tier_composition_wide.csv`; `03_tier_composition_association_tests.csv` |
-| Five-representation AUROC/AP (legacy column `AUPRC`) | `results/primary/01_representation_performance.csv` |
+| Five-representation AUROC/AP (column `AUPRC` stores average precision) | `results/primary/01_representation_performance.csv` |
 | Primary endpoint scores | `results/primary/02_test_predictions.csv` |
 | Molecule/scaffold paired endpoint bootstrap | `results/primary/03_ecfp_paired_bootstrap.csv`; distributions in `.npz` |
 | Same bootstrap for all five representations | `results/primary/05_representation_paired_bootstrap.csv`; distributions in `.npz` |
@@ -31,26 +29,25 @@ filenames do not imply additional tables in the current main manuscript.
 | Boundary-specific Brier slopes | `results/applicability/03_boundary_specific_brier_slopes.csv` |
 | Joint interaction tests | `results/applicability/04_joint_interaction_tests.csv` |
 | Sparse descriptor supplement | `results/supplementary/01_elasticnet_stability_selection.csv`; `02_topk_descriptor_performance.csv`; `03_descriptor_consensus.csv` |
-| Main and supplementary figures | Current exports for `figures/Fig1`–`Fig7` and `figures/FigS1`–`FigS4`; manuscript PDF assets are included in `LaTeX_Source.zip` |
-| Final key numbers and claim matrix | `results/final/01_key_numbers.json`; `09_final_evidence_matrix_english.csv`; `FINAL_RESULTS_SUMMARY_ENGLISH.md` |
+| Main and supplementary figures | Exports for `figures/Fig1`–`Fig7` and `figures/FigS1`–`FigS4`; manuscript PDF assets are included in `LaTeX_Source.zip` |
+| Key numerical summaries | `results/final/01_key_numbers.json` |
 | Descriptor sensitivity (Supplementary Table S8) and complete fitting audit | `results/supplementary/02_topk_descriptor_performance.csv`; `output/descriptor_audit/` |
 | Source concordance (Supplementary Table S15) | `output/external_data_audit/label_concordance_summary.csv`; row-level concordance and source observations |
-| Supplementary Tables S18a-b (historical main Table 5) | `output/external_evaluation/frozen_metrics_ECFP.csv`; `frozen_contrasts_ECFP.csv`; `frozen_compound_members.csv` |
+| Supplementary Tables S18a-b | `output/external_evaluation/frozen_metrics_ECFP.csv`; `frozen_contrasts_ECFP.csv`; `frozen_compound_members.csv` |
 | Supplementary Fig. S4 | `source_data/figure_external_reassessment.csv`; `scripts/make_label_source_figure.py` |
 | Unseen identities (Supplementary Tables S19a-b) | `output/unseen_identity_case_study/data_curation/frozen_scoreable_48h_endpoints.csv`; complete endpoint ledger |
 | Case-study results (Supplementary Table S20) | `output/unseen_identity_case_study/evaluation/pilot_performance.csv`; case scores and contrasts |
-| Final export chain | `code/09_export_submission_tables.py`; `results/final/EXPORT_PROVENANCE.json` |
+| Table and figure-data export chain | `code/09_export_submission_tables.py`; `results/final/EXPORT_PROVENANCE.json` |
 | Tier-pair AUROC (Fig. 4b; Supplementary Table S11) | `results/tier_boundary/01_tier_pair_auroc.csv`; `source_data/figure_tier_pair_auroc.csv` |
 | Tier1 exclusion (Fig. 4c; Table 3; Supplementary Table S14) | `results/tier_boundary/02_tier1_exclusion_auroc.csv`; `02b_tier1_refit_test_predictions.csv`; `03_tier1_exclusion_decomposition.csv`; `source_data/figure_tier1_exclusion.csv` |
 | Concordance by tier and record source (Table 4; Fig. 5a; Supplementary Table S16) | `results/tier_boundary/04_concordance_by_tier.csv`; `05_concordance_by_record_source.csv`; `source_data/figure_concordance_by_tier.csv` |
 | Original consensus qualifier tracing (Supplementary Table S17) | `results/tier_boundary/06_ecotox_qualifier_propagation.csv`; `07_ecotox_qualifier_by_tier.csv`; `QUALIFIER_PROPAGATION_SUMMARY.json` |
 | Factorial rule comparison (Fig. 5b; Supplementary Table S22) | `results/label_audit/03_rule_transition_counts.csv`; `source_data/figure_label_rule_comparison.csv` |
 | Key numbers of the tier-boundary analyses | `results/tier_boundary/TIER_BOUNDARY_SUMMARY.json` |
-| Historical main-table exports (see current mapping above) | `scripts/make_main_tables.py` (writes `output/main_tables/`) |
+| Main Tables 3–4 | `scripts/make_main_tables.py` (writes `output/main_tables/`) |
 | Supplementary tables (LaTeX) | `output/latex_tables/supplementary_tables_ordered.tex`, assembled by `scripts/assemble_supplementary_tables.py` |
 | Complete rule labels / heterogeneity / upstream cut-off selection | `results/label_audit/02_compound_labels_by_rule.csv`; `04_determining_group_heterogeneity.csv`; `05_upstream_cutoff_rules.csv` |
 | Correction crossover (Figure 7; Supplementary Table S23) | `results/label_audit/06_crossover_auroc.csv`; `07_crossover_gap.csv`; `08_crossover_label_changes.csv`; `09_crossover_predictions.csv.gz`; `CROSSOVER_SUMMARY.json` |
-| Non-nested extreme stress test | `results/label_audit/LABEL_NESTING_CHECK.csv`; `LABEL_NESTING_CHECK.json` |
+| Non-nested extreme stress test | `scripts/check_label_nesting.py` reconstructs training/test labels from the compound-rule ledger, regulatory concordance and official splits and checks exported crossover labels |
 | Record cases, source flow, overlap and metadata limits (Supplementary Table S24) | `results/record_audit/`; `docs/RECORD_CASE_AUDIT.md` |
-| Historical numerical rerun and cache-validation evidence | `results/reproducibility/`; `docs/CACHE_VALIDATION.md`; `docs/END_TO_END_RERUN.md` |
-| Analysis-history evidence | `docs/ANALYSIS_HISTORY.md`; `docs/analysis_history/EVIDENCE_MANIFEST.json` |
+| Identifier and aggregation sensitivity results (Tables S25–S26) | `supplementary_audits/statistics/`; `supplementary_audits/identity_sources/` |

@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "provenance": "Reconstructed during the 2026-10-03 revision; not a recovered historical preregistration or freeze",
+  "provenance": "Cohort membership reconstructed from source records and official splits; retrospective analysis, not preregistration",
   "generator": "output/external_evaluation/build_frozen_members.py",
-  "generator_sha256": "bf85190ca44d5306b7f4c069ac0b354e602fa8ce9f5a04240d9bf8a1826aae21",
+  "generator_sha256": "a15e8e796c0b252ec83e96fc9c357ce69eeee8b95964950d530ca74ce66c4405",
   "input_sha256": {
     "output/external_data_audit/apistox_structures.csv": "9f87a916fa57755dcc19bc9cff8e2e38d1a079e1a0fdeda2b1ef7067011802a1",
     "output/external_data_audit/oft_acute_endpoints_aligned.csv": "ede2c6499e711854371249c4f69374fe978c0b729dbfadc6e91727048ae83ffc",

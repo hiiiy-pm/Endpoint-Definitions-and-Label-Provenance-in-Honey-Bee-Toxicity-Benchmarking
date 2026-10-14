@@ -1,8 +1,7 @@
 # Source-record and case audit
 
-This audit was completed on 2026-10-02 for the review requests concerning
-record adjudication, study identity, source selection and experimental
-metadata. It uses the supplied records without fitting models or changing
+This analysis examines record adjudication, study identity, source selection
+and experimental metadata. It uses the supplied records without fitting models or changing
 benchmark labels. Run `python code/14_record_case_audit.py` from the pinned
 analysis environment. The ordinary run is offline. Add `--verify-upstream`
 to repeat the three read-only upstream code comparisons.
@@ -120,7 +119,7 @@ The cached `upstream_ecotox.py`, `upstream_ppdb_and_bpdb.py` and
 at upstream commit
 [`57c2c05de293a0f54c119744eb3ca9cb03bc030d`](https://github.com/j-adamczyk/ApisTox_dataset/tree/57c2c05de293a0f54c119744eb3ca9cb03bc030d).
 `UPSTREAM_PIN_CHECK.json` records exact raw-file URLs and local/remote
-SHA256 values. No local cache was replaced.
+SHA256 values.
 
 Every exported source record has its input-file SHA256 and original parsed
 data-row ordinal (zero-based, excluding the header; not a physical text
@@ -140,13 +139,6 @@ arbitrary future inputs or all route/filter combinations. Approximate
 existing analysis. Daily-dose units are flagged; their historical numeric
 conversion is replayed, not endorsed as equivalent to a single dose.
 
-A separate validation command checked all twelve input-file hashes,
-828 ECOTOX row ordinals/hashes/operators, all 1,070 external row hashes and
-identity/route links, 751 OFT UUID/operator/document links to the original
-workbook and 319 EPA values/operators against the original S1 cells.
-Independently specified expected labels for all seven cases also passed.
-Results are recorded in `INDEPENDENT_VALIDATION.json`.
-
 ## Outputs
 
 All outputs are under `results/record_audit/`:
@@ -157,4 +149,4 @@ All outputs are under `results/record_audit/`:
 - `09`–`11`: identifier inventory, EPA MRID grouping and metadata missingness.
 - `12`: exact-interval transition counts at all three thresholds.
 - `13`–`15`: cohort flow, included/excluded composition and exact duplicate rows.
-- JSON files: summary, input hashes, pinned upstream comparison and independent validation.
+- JSON files: summary, input hashes, pinned upstream comparison and source-record metadata.

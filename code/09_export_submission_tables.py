@@ -77,16 +77,13 @@ def export(input_results: Path, baseline_dir: Path, output_results: Path,
         "comp": "decomposition/01_tier_composition_long.csv",
         "assoc": "decomposition/03_tier_composition_association_tests.csv",
         "model": "decomposition/04_model_decomposition_performance.csv",
-        "mboot": "decomposition/06_model_decomposition_bootstrap.csv",
         "curve": "learning_curves/01_matched_learning_curves_long.csv",
         "matched": "learning_curves/02_matched_learning_curves_summary.csv",
         "contrast": "learning_curves/03_matched_learning_curve_contrasts.csv",
         "perm": "geometry/02_conditional_neighborhood_permutation.csv",
         "scaf": "geometry/08_scaffold_sensitivity_bootstrap.csv",
         "nov": "applicability/03_boundary_specific_brier_slopes.csv",
-        "interaction": "applicability/02_boundary_novelty_interactions.csv",
         "joint": "applicability/04_joint_interaction_tests.csv",
-        "topk": "supplementary/02_topk_descriptor_performance.csv",
     }
     data = {key: read(path) for key, path in paths.items()}
     perf, boot, rboot = data["perf"], data["boot"], data["rboot"]
@@ -94,7 +91,7 @@ def export(input_results: Path, baseline_dir: Path, output_results: Path,
     matched = data["matched"].loc[lambda d: d.n_per_class.eq(125)].copy()
     primary_boot = boot[boot.PrimaryComparison.eq(True)].copy()
 
-    # Validation is regenerated from raw labels and split membership, not the old JSON.
+    # Validate the raw labels and official split membership directly.
     raw = read_baseline("raw/apistox.csv")
     tier = np.select([raw.ppdb_level.eq(0), raw.ppdb_level.eq(1) & raw.label.eq(0),
                       raw.ppdb_level.eq(1) & raw.label.eq(1), raw.ppdb_level.eq(2)],
@@ -153,41 +150,6 @@ def export(input_results: Path, baseline_dir: Path, output_results: Path,
     }
     json_file(key_numbers, "01_key_numbers.json", list(paths.values()), "Calculate counts and select reported estimates; no frozen-number input")
 
-    mm = primary_boot.query("Split == 'MaxMin' and Bootstrap == 'ScaffoldCluster'").set_index("Comparison")
-    severe_use = model[model.Model.eq("AgrochemicalFlags") & model.Threshold.isin([1, 11])].AUROC
-    significant_novelty = nov[nov.CI_low.gt(0)]
-    fused_boot = data["mboot"].query("Bootstrap == 'ScaffoldCluster' and Comparison == 'ECFP+AllMetadata-AllMetadata'")
-    significant_interactions = int(data["interaction"].HolmP.lt(0.05).sum())
-    top3 = data["topk"].query("TopK == 3 and Threshold in [1, 11]")
-    descriptor_ranges = "; ".join(f"{s}: {g.TestAUROC.min():.3f}-{g.TestAUROC.max():.3f}" for s, g in top3.groupby("Split", sort=False))
-    mm_text = "; ".join(f"{c}={mm.loc[c, 'ObservedDeltaAUROC']:.3f} [{mm.loc[c, 'SimultaneousCI_low']:.3f}, {mm.loc[c, 'SimultaneousCI_high']:.3f}]" for c in ["11-100", "1-100"])
-    rows = [
-        ("Broad-endpoint AUROC is lower under the tested representation and split protocols", "Supported in tested settings" if ordering.all() else "Mixed across settings",
-         f"Broad AUROC was lower than both severe endpoints in {ordering.sum()}/{len(ordering)} settings. MaxMin ECFP scaffold-cluster simultaneous intervals: {mm_text}."),
-        ("The broad-endpoint gap persists with equal training class counts", "Supported descriptively" if c125.MeanDeltaAUROC.gt(0).all() else "Mixed across splits",
-         "At 125 compounds per class, mean 11-100 AUROC differences were " + ", ".join(f"{s} {c125.loc[s, 'MeanDeltaAUROC']:.3f}" for s in SPLITS) + ". Repeated fits are dependent sensitivity analyses."),
-        ("Chemical-use metadata is associated with the benchmark labels", "Supported as an association",
-         f"Tier versus insecticide status: Cramer V={cv:.3f}. Agrochemical-flag severe-endpoint AUROC ranged {severe_use.min():.3f}-{severe_use.max():.3f}; this does not identify the fraction of structural performance caused by use class."),
-        ("Combining structure and metadata improves the saved decomposition point estimates", "Point estimates with limited interval support",
-         f"Combined AUROC exceeded metadata in {counts['combined_better_than_metadata']}/{len(mv)} and structure in {counts['combined_better_than_structure']}/{len(mv)} settings. {fused_boot.SimultaneousCI_low.gt(0).sum()}/{len(fused_boot)} scaffold-cluster simultaneous intervals excluded zero for combined-minus-metadata. These intervals belong to the original decomposition preprocessing."),
-        ("Tier2 neighborhood entropy differences persist in some conditional permutations", "Conditional support",
-         "; ".join(f"{r.PermutationScheme}: {r.Significant_q05}/{r.Total} within-scheme BH q<0.05" for r in perm_summary.itertuples()) + ". The conditional results do not establish composition-independent universal mixing."),
-        ("Corrected scaffold analyses establish a positive Tier2 entropy difference", "Not supported" if not scaf.CI_low.gt(0).any() else "Setting-dependent",
-         f"{scaf.CI_low.gt(0).sum()}/{len(scaf)} saved scaffold-bootstrap intervals had lower bounds above zero. Neighborhood and scaffold-level analyses use different units."),
-        ("Novelty is associated with higher Brier loss in selected settings", "Supported in selected settings",
-         f"{len(significant_novelty)}/{len(nov)} unadjusted marginal slope intervals had lower bounds above zero. For the broad endpoint: " + "; ".join(f"{s} {novelty100.loc[s, 'Slope_per_0.1_novelty']:.4f} [{novelty100.loc[s, 'CI_low']:.4f}, {novelty100.loc[s, 'CI_high']:.4f}]" for s in ["MaxMin", "Time"]) + ". This is not evidence of a significant slope at every endpoint."),
-        ("Endpoint-by-novelty interactions are detected", "Not supported by adjusted tests" if significant_interactions == 0 else "Some adjusted contrasts detected",
-         f"{significant_interactions}/{len(data['interaction'])} saved pairwise Holm-adjusted tests had p<0.05. Brier joint-interaction p values: " + ", ".join(f"{s} {joint.loc[s, 'P']:.3f}" for s in SPLITS) + ". Non-detection does not establish equal slopes."),
-        ("Sparse descriptor models characterize split-specific performance", "Descriptive supplement",
-         "Separately selected and fitted Top3 severe-endpoint models had test AUROC ranges " + descriptor_ranges + ". This is not transfer of one frozen descriptor signature across time."),
-        ("The numerical threshold alone has an identified causal effect", "Not established",
-         "Endpoints were derived from joint upstream labels on one dataset. Source, use class, record selection and label processing were not independently randomized; cumulative-label AUROC is not an information-independence test."),
-    ]
-    claims = pd.DataFrame(rows, columns=["Claim", "Verdict", "Evidence"])
-    for name in ["02_revised_claims_evidence_matrix_english.csv", "09_final_evidence_matrix_english.csv"]:
-        csv(claims, name, list(paths.values()), "Predefined claim wording with evidence and support counts calculated from saved analyses")
-    csv(claims, "final_evidence_matrix.csv", list(paths.values()), "Same regenerated claims matrix as final tables", figure=True)
-
     # Figure values retain full precision. Display rounding belongs to the renderer.
     csv(perf[["Split", "Representation", "Threshold", "AUROC"]].rename(columns={"Split": "split", "Representation": "representation", "Threshold": "endpoint", "AUROC": "auroc"}),
         "figure_primary_data.csv", [paths["perf"]], "Rename four plotting columns; retain full precision", True)
@@ -223,7 +185,7 @@ def export(input_results: Path, baseline_dir: Path, output_results: Path,
     csv(nov_plot, "figure_novelty_raw.csv", [paths["nov"]], "Brier-loss slopes per 0.1 novelty with marginal intervals", True)
     perm_plot = perm[["Representation", "k", "PermutationScheme", "ObservedEffect", "NullMean", "NullQ025", "NullQ975", "BH_q_within_scheme", "Significant_q05"]].copy()
     perm_plot.columns = ["representation", "k", "scheme", "observed_effect", "null_mean", "null_q025", "null_q975", "bh_q", "significant_q05"]
-    csv(perm_plot, "figure_permutation_raw.csv", [paths["perm"]], "Explicit null quantiles and BH q; replaces misleading legacy q=NullQ025 column", True)
+    csv(perm_plot, "figure_permutation_raw.csv", [paths["perm"]], "Permutation-null quantiles and within-scheme Benjamini-Hochberg adjusted p values", True)
     rb = rboot[rboot.PrimaryComparison.eq(True) & rboot.Bootstrap.eq("ScaffoldCluster")].copy()
     csv(rb, "figure_representation_bootstrap.csv", [paths["rboot"]], "All representation primary scaffold contrasts", True)
     sf = scaf[scaf.Analysis.isin(["ScaffoldEqualWeighted", "PairedScaffoldsContainingBothTiers"]) & scaf.Comparison.isin(["T2-T1", "T2-T3"])].copy()
@@ -232,25 +194,19 @@ def export(input_results: Path, baseline_dir: Path, output_results: Path,
     sf["Comparison"] = sf.Comparison.str.replace("-", "−", regex=False)
     sf = sf[["MinScaffoldN", "Analysis", "Comparison", "ObservedDifference", "CI_low", "CI_high"]]
     sf.columns = ["minimum", "analysis", "contrast", "estimate", "low", "high"]
-    csv(sf, "figure_scaffold_corrected.csv", [paths["scaf"]], "Figure5 scaffold-equal/shared-scaffold T2-T1 and T2-T3 contrasts", True)
+    csv(sf, "figure_scaffold_corrected.csv", [paths["scaf"]], "Supplementary Fig. S3 scaffold-equal/shared-scaffold T2-T1 and T2-T3 contrasts", True)
 
     dictionary = {
         "precision": "Exported values retain analysis precision; renderers may format to 3 decimal places.",
         "endpoint": "Cumulative label threshold in ug/bee; these are frozen benchmark labels, not re-extracted continuous measurements.",
-        "figure_permutation_raw.csv": {"null_q025": "2.5% quantile of permutation null; legacy column q contained this quantity", "bh_q": "Within-permutation-scheme Benjamini-Hochberg adjusted p value"},
-        "figure_composition_data.csv": {"Tier": "Explicit row identifier replacing legacy unnamed index", "OtherRoute": "toxicity_type=Other", "OtherAgrochemical": "Separate binary use flag"},
+        "figure_permutation_raw.csv": {"null_q025": "2.5% quantile of the permutation null distribution", "bh_q": "Within-permutation-scheme Benjamini-Hochberg adjusted p value"},
+        "figure_composition_data.csv": {"Tier": "Benchmark toxicity-tier row identifier", "OtherRoute": "toxicity_type=Other", "OtherAgrochemical": "Separate binary use flag"},
         "figure_learning_curve_raw.csv": {"n": "Training compounds per class", "rows": "Repeat-level fits; original repeat order retained from analysis table"},
         "figure_bootstrap_data.csv": {"low/high": "Simultaneous 95% interval for the two primary endpoint contrasts within split"},
         "figure_scaffold_corrected.csv": {"low/high": "Saved percentile 95% scaffold-bootstrap interval"},
         "figure_novelty_raw.csv": {"estimate": "Brier-loss slope per +0.1 novelty", "low/high": "Unadjusted marginal 95% interval"},
     }
     json_file(dictionary, "SOURCE_DATA_DICTIONARY.json", list(paths.values()), "Column definitions and precision policy", True)
-    summary = ["# Submission result summary", "", "Generated by code/09_export_submission_tables.py from analysis outputs.", ""]
-    summary += [f"- {r.Claim}: {r.Verdict}. {r.Evidence}" for r in claims.itertuples()]
-    summary += ["", "The exporter does not refit models or replace analysis results. Regulatory-source and unseen-identity outputs are produced by separate analyses under output/.", ""]
-    summary_path = final / "FINAL_RESULTS_SUMMARY_ENGLISH.md"
-    summary_path.write_text("\n".join(summary), encoding="utf-8")
-    outputs["results/final/FINAL_RESULTS_SUMMARY_ENGLISH.md"] = {"inputs": canonical_dependencies(list(paths.values())), "operation": "Render regenerated claims and evidence", "sha256": sha256(summary_path)}
     provenance = {"generator": "code/09_export_submission_tables.py", "model_fits": 0,
                   "reads_previous_exports": False, "input_sha256": inputs, "outputs": outputs}
     (final / "EXPORT_PROVENANCE.json").write_text(json.dumps(provenance, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

@@ -1,21 +1,52 @@
-**Frozen-score reassessment protocol**
+# Saved-score reassessment protocol
 
-Recorded on 2026-09-22 before the primary assistant reviewed the new performance results. This is a retrospective analysis plan, not a prospective preregistration: external data labels and aggregate disagreement counts have already been inspected.
+This retrospective analysis asks whether AUROC(11) minus AUROC(100) and
+AUROC(1) minus AUROC(100) persist when the same held-out scores are evaluated
+against independently retrieved source records. External-source labels and
+aggregate disagreement counts were inspected during analysis development;
+this is not a prospective preregistration.
 
-**Question.** Do the two reported endpoint contrasts, AUROC(11) minus AUROC(100) and AUROC(1) minus AUROC(100), persist when frozen scores on the same held-out compounds are evaluated against independently retrieved source records?
+## Sources and cohorts
 
-**Scope.** No fitting, retraining, tuning, feature selection, calibration, threshold selection from predictions, or modification of frozen manuscript data. The data are external sources; overlapping held-out compounds do not constitute entirely new chemical test cases. Underlying experimental independence remains unconfirmed for some records.
+OpenFoodTox contact candidate records and EPA S1 adult-contact records with
+S4 source mappings supply the regulatory observations. Eligibility uses
+chemical identity, the official split membership and saved held-out scores.
+Identity checks include full InChIKey, connectivity, standardized parent,
+CAS and name conflicts. Labels are aggregated within structure and route by
+unanimous determinate interval labels. Paired endpoint comparisons use one
+common cohort with all three labels determined.
 
-**Sources and cohorts.** Use the previously audited OFT adult-contact candidate records and PLOS S1 adult-contact records with S4 source mappings. Exclude identities present in each model's original training pool using full InChIKey, connectivity, standardized parent, CAS and name-conflict checks. Use only original test compounds with saved scores. Aggregate within structure and route by unanimous determined interval labels. Restrict the main paired endpoint comparisons to a common set with all three labels determined.
+The broad OpenFoodTox screen, its 48-hour/material-field screen and the EPA
+cohort are reported separately. Original ApisTox contact-route subsets provide
+the more direct source-label comparison. Different original routes also imply
+endpoint-route mismatch. Same-route agreement does not establish matching
+duration, formulation or underlying study. The EPA sensitivity screen requires
+no recorded source SMILES/InChI disagreement and a nonmissing MRID; it is a
+conservative screen rather than a diagnosis of every excluded identity.
 
-Report the already defined broad OFT screen, the stricter OFT 48 h/material-field screen, and PLOS candidates. Separately mark whether the original ApisTox selected route is Contact. Interpret changes on original-Contact subsets as the more relevant label comparison; other original routes additionally involve endpoint-route mismatch. Same route does not guarantee identical duration, formulation or study.
+## Models and statistics
 
-For PLOS, additionally report a sensitivity screen requiring no recorded source SMILES/InChI disagreement and a nonmissing MRID. Full-key disagreement can reflect stereochemistry rather than an erroneous graph, so this is conservative screening, not an assertion that all flagged entries are wrong. Keep all screens and all split results; do not select a screen based on performance.
+ECFP is primary; four other saved representations provide descriptive
+robustness analyses. Each Random, MaxMin and Time model is evaluated on its
+own eligible set. There is no fitting, tuning, calibration or outcome-based
+threshold selection in this reassessment. Overlapping test compounds are not
+new chemical test cases, and predictions across splits or sources are not
+treated as independent observations.
 
-**Models and comparisons.** ECFP is primary, consistent with the manuscript. The other four saved representations are descriptive robustness analyses. Each original Random/MaxMin/Time model is evaluated on its own eligible set. Do not pool predictions across splits or sources as independent observations. On exactly the same compounds and exactly the same scores, compare original labels with external source labels, then compare the endpoint contrasts. Full original 207-compound metrics are context and a calculation check, not the comparator for attributing effects to relabelling.
+Original and regulatory-source labels are compared on exactly the same
+compounds and scores. The full 207-compound test performance is descriptive
+context, not a different-cohort comparator for attributing relabeling effects.
+Outputs include AUROC, average precision, class counts and undefined metrics
+for single-class cases. ECFP uncertainty uses 5,000 compound bootstrap draws
+paired across labels and thresholds, with valid and degenerate counts.
+The percentile intervals are exploratory. Cases with fewer than five
+compounds in a constituent class are marked sparse; a numerical interval
+does not resolve that limited information.
 
-**Statistics.** Report AUROC, average precision (with the implementation and prevalence), positive/negative counts and undefined metrics for single-class cases. ECFP uncertainty uses 5,000 ordinary compound bootstrap resamples, paired across old/new labels and thresholds. Report valid/degenerate replicate counts. Confidence intervals are exploratory percentile intervals, not a new confirmatory multiple-testing family. If any constituent class has fewer than five compounds, flag the contrast as sparse; a numerical interval or exclusion of zero does not resolve insufficient independent positive cases. Ordinary bootstrap can give artificially reassuring conditional intervals when only one positive case exists.
+## Interpretation
 
-**Interpretation.** Retention, attenuation and reversal are all reportable. A change cannot be assigned exclusively to censoring or label error without matched original-study evidence. New candidate chemical identities found in regulatory reports are listed separately from scored compounds and from fully verified external samples. No predicted endpoint is allowed to serve as experimental ground truth.
-
-**Required two-round evaluation.** Round 1 checks input hashes, source/split joins, identity exclusion, interval labels, score preservation, metrics against independent implementations and original published tables, and bootstrap edge cases. Round 2 independently reconstructs key metrics and cohort rules, assesses sparse-class/route/provenance limitations, checks the new regulatory candidate claims, and checks figure/report consistency. Findings must be fixed or explicitly bounded before delivery.
+Retention, attenuation and reversal of the endpoint gap are all reported.
+Source disagreement cannot be assigned exclusively to censoring or label
+error without matched original-study evidence. Database separation does not
+establish independent experimental studies. New candidate identities are
+curated and evaluated separately; predicted values never supply ground truth.

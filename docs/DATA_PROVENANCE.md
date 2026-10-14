@@ -9,9 +9,8 @@
   `data/official_splits/`. Their compound membership matches the Zenodo release
   exactly; row order differs from the release for Random and Time, because the
   files were reconstructed rather than copied byte for byte. All analyses use
-  the fixed row order of these archived files; FILE_MANIFEST.json records their
-  hashes. Official membership and archived row order are distinct guarantees.
+  the fixed row order of the supplied split files. Official membership and archived row order are distinct guarantees.
 
 ## External sources
 
-The eight supplied raw files are under data/external_raw with INPUT_MANIFEST.json. OpenFoodTox v7: https://doi.org/10.5281/zenodo.19388272; ApisTox v2: https://doi.org/10.5281/zenodo.13350981; EPA retrospective: https://doi.org/10.1371/journal.pone.0265962. The case-study endpoint ledger retains every regulatory URL, study identifier, exact source location, stage evidence and material uncertainty. No source is assumed study-independent from the benchmark solely because its database differs. Sources and their terms/attribution remain identifiable.
+The eight supplied raw files are under data/external_raw with INPUT_MANIFEST.json. OpenFoodTox 3.0 dataset record: https://doi.org/10.5281/zenodo.19388272; ApisTox dataset record: https://doi.org/10.5281/zenodo.13350981; EPA retrospective: https://doi.org/10.1371/journal.pone.0265962. The case-study endpoint ledger retains every regulatory URL, study identifier, exact source location, stage evidence and material uncertainty. No source is assumed study-independent from the benchmark solely because its database differs. Sources and their terms/attribution remain identifiable.

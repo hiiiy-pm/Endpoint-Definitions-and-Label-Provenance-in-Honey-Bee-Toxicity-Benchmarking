@@ -18,7 +18,7 @@ python -X utf8 output/external_evaluation/frozen_evaluation.py
 
 The first two commands rebuild disposable workbook and structure pickle
 caches directly from the source workbooks. The membership builder reconstructs
-the missing feasibility-stage membership dependency from source records and
+the eligible cohort membership from source records and
 official splits; the evaluator independently checks it before re-evaluating saved
 predictions. Run the chain in a separate copy to preserve a released output set.
 `python -X utf8 scripts/rebuild_external_sources.py --compare-to /path/to/release/repo`
@@ -30,7 +30,7 @@ Cached PubChem query responses are consolidated in
 `cache/pubchem_records.json` with their original query, URL and retrieval
 metadata. Existing individual response files, if generated, take precedence.
 `--offline` fails if a needed response is absent or retryable; no new lookup is
-sent. Omitting that option preserves the legacy interactive lookup behaviour.
+sent. Omitting that option allows interactive network lookup.
 The upstream ApisTox source
 files are retained under `cache/`; `fetch_provenance.py` refreshes those files
 from their public sources when needed.

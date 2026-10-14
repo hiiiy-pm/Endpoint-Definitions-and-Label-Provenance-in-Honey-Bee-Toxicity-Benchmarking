@@ -1,0 +1,73 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{supplementary_style}[Supplementary Information style]
+\RequirePackage[a4paper,top=22mm,bottom=23mm,left=24mm,right=24mm,headsep=7mm,footskip=11mm]{geometry}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\IfFileExists{newtxtext.sty}{\RequirePackage{newtxtext,newtxmath}}{\RequirePackage{lmodern}}
+\RequirePackage[scaled=0.92]{helvet}
+\RequirePackage{microtype}
+\RequirePackage{graphicx}
+\RequirePackage{booktabs}
+\RequirePackage{longtable}
+\RequirePackage{tabularx}
+\RequirePackage{array}
+\RequirePackage{threeparttable}
+\RequirePackage{makecell}
+\RequirePackage{multirow}
+\RequirePackage{siunitx}
+\RequirePackage{xcolor}
+\RequirePackage{caption}
+\RequirePackage{subcaption}
+\RequirePackage{enumitem}
+\RequirePackage{setspace}
+\RequirePackage{lineno}
+\RequirePackage[numbers,sort&compress]{natbib}
+\RequirePackage[colorlinks=true,citecolor=blue,urlcolor=blue,linkcolor=blue,pdfborder={0 0 0}]{hyperref}
+\RequirePackage[nameinlink,noabbrev]{cleveref}
+\RequirePackage{fancyhdr}
+\RequirePackage{etoolbox}
+\definecolor{AccentBlue}{HTML}{0072B2}
+\definecolor{AccentGreen}{HTML}{009E73}
+\definecolor{AccentOrange}{HTML}{D55E00}
+\definecolor{AccentGrey}{HTML}{4D4D4D}
+\definecolor{LightRule}{HTML}{D9D9D9}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4.2pt plus 1pt minus .5pt}
+\setlength{\emergencystretch}{2.5em}
+\linespread{1.08}
+\setlist{nosep,leftmargin=1.25em}
+\captionsetup{font=small,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=false,skip=5pt}
+\captionsetup[subfigure]{font=small,labelfont=bf,justification=raggedright,singlelinecheck=false}
+\sisetup{detect-all,separate-uncertainty=true}
+\RequirePackage{xspace}
+\newcommand{\ugbee}{\ensuremath{\mu\mathrm{g\,bee}^{-1}}\xspace}
+\newcommand{\auroc}{\mathrm{AUROC}}
+\newcommand{\ap}{\mathrm{AUPRC}}
+\newcommand{\ldfifty}{\mathrm{LD}_{50}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcommand{\keyresult}[1]{\textbf{#1}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\sffamily\footnotesize Endpoint definition and honey-bee toxicity}
+\fancyhead[R]{\sffamily\footnotesize Manuscript}
+\fancyfoot[C]{\sffamily\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0.35pt}
+\renewcommand{\footrulewidth}{0pt}
+\makeatletter
+\renewcommand{\section}{\@startsection{section}{1}{0pt}{1.45ex plus .2ex minus .2ex}{.55ex}{\sffamily\large\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{0pt}{1.15ex plus .2ex minus .2ex}{.35ex}{\sffamily\normalsize\bfseries}}
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{0pt}{.9ex plus .1ex minus .1ex}{.2ex}{\sffamily\normalsize\itshape}}
+\renewcommand{\maketitle}{%
+  \begin{flushleft}
+  {\sffamily\fontsize{20}{23}\selectfont\bfseries \@title\par}
+  \vspace{8pt}
+  {\sffamily\large \@author\par}
+  \vspace{5pt}
+  {\small\@date\par}
+  \end{flushleft}
+  \vspace{6pt}\hrule\vspace{10pt}}
+\makeatother
+\AtBeginEnvironment{table}{\small}
+\AtBeginEnvironment{tabular}{\renewcommand{\arraystretch}{1.16}}

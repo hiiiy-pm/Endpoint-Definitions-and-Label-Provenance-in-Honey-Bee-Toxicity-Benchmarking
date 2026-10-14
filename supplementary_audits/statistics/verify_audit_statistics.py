@@ -1,7 +1,7 @@
-"""Independent, standard-library checks for the October 2026 revision.
+"""Independent, standard-library reconstruction of label-rule sensitivity.
 
 Frozen inputs are read without modification. Outputs are confined to this
-directory and the revision audit report. The Benomyl operator change is a
+directory. The Benomyl operator change is a
 counterfactual replay, not an edit of the archived ECOTOX export.
 """
 from __future__ import annotations
@@ -289,41 +289,8 @@ def main():
               "InputSHA256": {p: digest(ROOT / p) for p in inputs},
               "Limits": ["Benomyl replay does not adjudicate the primary paper or edit the archive.",
                          "Identical keep inputs establish deterministic equivalence under the same fitting protocol.",
-                         "Full-D exclude has different membership; its performance requires separate evaluation."]}
+                         "All-D exclusion changes cohort membership; performance is evaluated separately by run_uniform_d_exclude.py."]}
     (OUT / "STATISTICS_VERIFICATION.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
-    paragraph = r"""\subsection*{Uniform-aggregation and exclusion-log checks}
-An independent replay compared the primary D/C/D rules (at 100/11/1~\ugbee) with interval-median rule D at every cut-off, using all accepted records and the same upstream-eligible routes. At 11~\ugbee, only two ECOTOX identities differed before unresolved-label handling: CAS 115086-54-9 and 736994-63-1 were unresolved under C and positive under D. Both carried positive distributed labels. With unresolved labels retained at their distributed values, all three full-cohort label vectors were therefore identical under the two rule sets (1,035 entries each; 789, 296 and 170 positives at 100, 11 and 1~\ugbee). This establishes input equivalence under the fixed fitting protocol; it is not a separate model-validation experiment. Excluding identities unresolved at any cut-off retained 913 compounds under D/C/D and 915 under all-D. The two additional identities were positive at all three cut-offs. They entered the Random and MaxMin training sets and the Time test set (table below). The all-D/exclude scenario consequently requires a separate performance analysis.
-
-The upstream uncertainty log uses CAS-level membership, whereas filtering acts on CAS-by-route groups. Its 745 logged observations comprised 536 observations in the 79 excluded groups and 209 observations in other, retained groups from the same CAS identities. Of the latter, 119 observations belonged to determining groups of final ECOTOX-derived benchmark compounds. Thus a logged observation is not necessarily an observation removed from label construction.
-
-A counterfactual replay changed the archived Benomyl oral qualifier from $<10$ to $>10$~\ugbee without changing its numerical bound or historical route eligibility. The primary reconstructed labels at 100/11/1 changed from positive/positive/unresolved to unresolved/unresolved/negative. The keep policy gave the same final positive/positive/negative labels, and the exclude policy omitted the identity before and after the replay. This held for all five reported scenarios under keep and exclude. The replay changes provisional rule counts and some negative-assignment stress-test inputs; it does not alter the primary keep inputs or the Tier1-only counts because Benomyl is in Tier2. The archived export remains unchanged, and literature-level adjudication is documented separately.
-
-\begin{center}
-\begin{tabular}{llrr}
-\toprule
-Split & Partition & D/C/D, exclude & All-D, exclude \\
-\midrule
-Random & Training & 728 & 730 \\
-Random & Test & 185 & 185 \\
-MaxMin & Training & 727 & 729 \\
-MaxMin & Test & 186 & 186 \\
-Time & Training & 734 & 734 \\
-Time & Test & 179 & 181 \\
-\bottomrule
-\end{tabular}
-\end{center}
-"""
-    (OUT / "si_statistics_insert.tex").write_text(paragraph, encoding="utf-8")
-    report_path = OUT / "INDEPENDENT_STATISTICS_README.md"
-    report_path.write_text("# Independent revision statistics\n\n"
-        "The standard-library replay passed all assertions. Frozen source data and results were not changed.\n\n"
-        "- All-D/keep and D/C/D/keep have identical three label vectors, with explicit byte hashes.\n"
-        "- All-D/exclude adds indices 861 and 953: training in Random/MaxMin, test in Time.\n"
-        "- The CAS-level exclusion log has 745 entries: 536 in deleted route groups and 209 in retained route groups.\n"
-        "- The Benomyl sign replay leaves all five scenarios' keep/exclude effective inputs unchanged; negative stress-test changes are retained in the CSV.\n"
-        "- Five repeated CIDs cover ten rows; cation/salt and metiram/zineb representation cases are distinguished from the other three structural conflicts.\n\n"
-        "This report does not claim that the full-D/exclude performance has been computed. Any separate fit is documented in its own sensitivity outputs.\n",
-        encoding="utf-8")
     print(json.dumps({k: v for k, v in result.items() if k != "InputSHA256"}, indent=2))
 
 

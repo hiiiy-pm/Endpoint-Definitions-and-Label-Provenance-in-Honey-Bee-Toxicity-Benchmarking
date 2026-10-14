@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite the associated article and the original source datasets when using these materials."
+message: "Please cite the associated article and the original source datasets."
 title: "Endpoint Definitions and Label Provenance in Honey-Bee Toxicity Benchmarking: Data and Code"
 type: software
 license: MIT
@@ -14,7 +14,7 @@ authors:
     given-names: Zhining
     affiliation: Hanshan Normal University
 repository-code: "https://github.com/hiiiy-pm/Endpoint-Definitions-and-Label-Provenance-in-Honey-Bee-Toxicity-Benchmarking"
-url: "https://github.com/hiiiy-pm/Endpoint-Definitions-and-Label-Provenance-in-Honey-Bee-Toxicity-Benchmarking/releases/tag/ieee-access-submission-final-2026-10-12"
+url: "https://github.com/hiiiy-pm/Endpoint-Definitions-and-Label-Provenance-in-Honey-Bee-Toxicity-Benchmarking/releases/latest"
 keywords:
   - honey-bee toxicity
   - benchmark auditing

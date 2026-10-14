@@ -1,8 +1,9 @@
-"""Run the final numerical analyses for the English submission package.
+"""Regenerate the numerical analyses from the supplied scientific inputs.
 
 This entry point regenerates all numerical analysis outputs from the frozen raw
-CSV and the six official split files. Manuscript compilation and figure rendering
-are handled separately by build.sh and scripts/.
+CSV, six official split files, and cached source records. Manuscript compilation
+and figure rendering are separate steps. Label checks are computed directly;
+pre-existing validation reports are not required.
 """
 from __future__ import annotations
 
@@ -37,6 +38,8 @@ SCRIPTS = [
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--clean", action="store_true", help="Remove results before running.")
+    parser.add_argument("--validation-report-dir", type=Path,
+                        help="Optional output directory for label-check reports.")
     args = parser.parse_args()
     if args.clean and RESULTS.exists():
         if RESULTS.resolve() != ROOT.resolve() / "results":
@@ -51,7 +54,11 @@ def main() -> None:
                    cwd=ROOT, check=True)
     subprocess.run([sys.executable, str(ROOT / "scripts" / "describe_cohort_selection.py")],
                    cwd=ROOT, check=True)
-    print("\nAll final numerical analyses completed.")
+    check_command = [sys.executable, str(ROOT / "scripts" / "check_label_nesting.py")]
+    if args.validation_report_dir is not None:
+        check_command += ["--report-dir", str(args.validation_report_dir.resolve())]
+    subprocess.run(check_command, cwd=ROOT, check=True)
+    print("\nAll numerical analyses and direct label checks completed.")
 
 
 if __name__ == "__main__":

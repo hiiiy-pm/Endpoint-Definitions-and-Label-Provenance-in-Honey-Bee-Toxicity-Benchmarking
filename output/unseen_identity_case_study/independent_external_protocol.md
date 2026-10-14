@@ -1,21 +1,48 @@
-**Independent new-structure external pilot, 2026-09-23**
+# Unseen-identity case-study protocol
 
-This protocol governs model recovery and new-compound testing. It does not use external observations for model fitting, parameter selection, calibration, or selection of a favourable model. It is a retrospective, evidence-limited pilot, not a prospective registration study.
+This case study evaluates nine restored ECFP models on structures outside the
+1,035-compound development dataset. Candidate selection was informed by
+available regulatory outcomes, so the exercise is not a blinded prospective
+validation.
 
-**Restored models.** Recover only the original primary ECFP models: the three original train/test splits and thresholds 1, 11 and 100 µg/bee. Use the original training order, labels, radius-2 / 1,024-bit Morgan fingerprints without chirality, float32 Tanimoto kernel, and SVC(C=1, kernel='precomputed', class_weight='balanced'). Match every old held-out score before using the recovered objects. The saved recovery requires nine fits on original training data; a preceding reproducibility feasibility probe also performed nine original-data fits, recorded separately in the restoration manifest (18 fits in total so far). They must not be described as zero training. No external compound or label enters those fits.
+## Models and inference
 
-**Prediction-first separation.** A data curator supplies an eight-candidate structure-only file, without toxicity outcomes, and records its checksum before new-model predictions. All eight structures receive predictions, including those without eligible experimental endpoints. A bounded second candidate list may be frozen as a separate version; do not selectively add structures on the basis of their predicted success. Data curation is performed without reading new prediction results. Keep inference outputs separate from experimental truth and join only after endpoint eligibility is frozen.
+The models use the original Random, MaxMin and Time training sets and the
+100, 11 and 1 microgram-per-bee labels, radius-2/1,024-bit Morgan fingerprints,
+float32 Tanimoto kernels and class-balanced SVC with C=1. Model restoration
+fits these nine configurations on their original training data. External
+structures and outcomes do not enter fitting or model selection. The saved
+restored-model scores reproduce all 1,863 corresponding benchmark test scores
+to numerical precision.
 
-**Chemical independence.** Compare candidates with all 1,035 ApisTox structures and any additional development identities, using full InChIKey plus connectivity, standardised parent, CAS/name and source-identity review. No model-specific old test compound is to be advertised as a new chemical. A new regulatory publication date is not proof that a study is new or independent. Record original study identifiers where available and do not count repeated reviews as separate experiments.
+Two structure-only inference batches contain eight and two candidates. They
+are parts of one ten-structure case study. Structure files and predictions
+are stored separately from the experimental endpoint ledger. The evaluation
+joins these records by compound identity after the endpoint criteria have
+been applied. All candidate structures receive predictions, including those
+without eligible experimental outcomes.
 
-**Identity resolution.** The original primary ECFP does not encode stereochemistry. A documented mixture of stereoisomers sharing one connectivity may be predicted as a connectivity-defined active ingredient after explicitly verifying fingerprint equivalence under the original parameters. This does not make a representative full InChIKey identical to the whole test material. Multi-active formulations, unspecified connectivity and contradictory identity remain excluded from primary scoring. Preserve unresolved purity, batch and stereochemical details; distinguish a regulator-reviewed endpoint from independently inspecting the original laboratory study.
+## Chemical identity and endpoints
 
-**Endpoints.** Primary candidate task: adult Apis mellifera, 48 h acute contact LD50, individual-dose units. Oral 48 h is a separate secondary task; 24 h and 72/96 h evidence remains in separately labelled time-window sensitivity tables. These targets are more specific than the original mixed-route benchmark labels, and this change must be disclosed. Do not change inclusion windows to improve score direction. Distinguish LD50 from LC50, ED10, chronic daily dose and container concentration. Preserve inequalities and intervals; labels are 1 for LD50 ≤ threshold, 0 for LD50 > threshold, otherwise unresolved. No LD50 is imputed from a limit or from a prediction. An unconfirmed life stage is not silently upgraded to adult.
+Candidate structures are screened against all development structures using
+full InChIKey, connectivity, standardized parent and CAS/name evidence. A new
+publication date does not establish a new or independent toxicological study.
+Original source locations and study identifiers are retained where available.
 
-**Inference.** Produce continuous decision scores and the fixed original SVC decision class, plus nearest-training Tanimoto similarity, separately for each original split and endpoint model. Decision scores are not probabilities. New structures do not update fingerprint definitions, train kernel normalisation, model coefficients or thresholds. Assert that the structure-only interface cannot read experimental outcomes.
+The primary task is adult Apis mellifera 48-hour acute contact LD50 in
+individual-dose units. Oral 48-hour observations are a separate secondary
+task. Other durations remain separately identified. LD50 is distinguished
+from concentration-based and chronic-dose endpoints. Inequalities and
+intervals are preserved: a label is positive if LD50 is at or below the
+threshold, negative if it is above the threshold, and unresolved otherwise.
+No value is imputed from a prediction or an indeterminate limit observation.
 
-**Evaluation.** Join eligible evidence only after freezing curation and predictions. Report individual cases, molecule counts, positive/negative/unresolved counts, four-tier coverage, and confusion counts at the unchanged SVC decision rule. AUROC/AP are not used as discrimination summaries for a single-class set. If an eligible set has both classes, report any metrics as small-sample pilot results with uncertainty; one positive does not support a stable generalisation claim. Compare the three thresholds on a common label-determinate compound cohort. Missing middle tiers mean the pilot cannot replicate the original threshold-relabeling question, even if a numerical AUROC can be calculated. Do not pool nine predictions per molecule as nine experimental samples. Similarity reports describe applicability context and are not post hoc exclusion rules.
+## Reporting and limits
 
-**Two-round verification.** Round 1 independently regenerates fingerprints/kernels, restores old predictions, verifies serialisation/inference and locks input hashes; the curator separately checks units, species, time, qualifiers, material and source evidence. Round 2 rechecks restored models, new-compound exclusion, the prediction-only path, endpoint source samples and all joins/metrics, then audits tables/figures/report. Any source corrections must be recorded and relevant checks rerun. Preserve unchanged original manuscript data and results.
-
-**Success conditions.** The immediate operational deliverable is a verified recovery of the original prediction capability and an auditable new-structure prediction/evidence panel. Completion of a statistically informative independent validation additionally requires enough eligible independent cases and class/tier coverage. Neither favourable predictions nor completion of technical checks removes those scientific requirements.
+The fixed decision rule is score > 0; scores are not calibrated probabilities.
+Results include each eligible endpoint, route-specific class counts, ranking
+metrics, confusion matrices, paired contrasts and conditional bootstrap
+intervals. Single-class ranking metrics remain undefined. Six identities
+provide eleven eligible endpoints, so repeated models and endpoints do not
+constitute additional independent chemicals. Small class counts, missing
+severity tiers and incomplete study-identity evidence bound interpretation.

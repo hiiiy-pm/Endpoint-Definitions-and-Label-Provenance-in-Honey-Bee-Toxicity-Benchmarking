@@ -1,6 +1,6 @@
-# Identifier and source audit, 3 October 2026
+# Identifier and source audit
 
-This directory records current identifier checks and source-provenance review for a historical ApisTox benchmark audit. No frozen data, model result, manuscript source or official split was edited here. Model sensitivity using the frozen 33-identity exclusion list is performed separately.
+This directory contains identifier comparisons and source-provenance evidence for the ApisTox benchmark. The 33-identity screening list is a fixed input to the reported exclusion sensitivity.
 
 ## Main outputs
 
@@ -15,7 +15,6 @@ This directory records current identifier checks and source-provenance review fo
 | `upstream_exclusion_log_745_row_audit.csv` | Actual route rejection versus overinclusive CAS-level logging |
 | `benomyl_record_level_impact_ledger.csv` | Seven historical benomyl records with the proposed source interpretation separated |
 | `benomyl_primary_rule_conditional_effects.csv` | Conditional label propagation without editing labels or fitting models |
-| `si_identity_sources_insert.tex` | Proposed English SI methods/results paragraphs |
 | `responses/` | Raw HTTP bodies with separate URLs, timestamps, headers and SHA256 metadata |
 | `upstream/` | Source code downloaded from pinned ApisTox commit `57c2c05de293a0f54c119744eb3ca9cb03bc030d` |
 | `source_documents/` | Official Rothamsted PDF and hash/source metadata |
@@ -32,7 +31,7 @@ The actual upstream 11-cut-off filter rejects 536 records in 79 route groups. It
 
 ## Reproduction
 
-Network retrieval uses `audit_identity_sources.py fetch_all`, `fetch_known`, and `fetch_candidates` with Python and requests. Saved successful responses are reused. `audit_identity_sources.py compare` requires RDKit; the audited version was 2025.09.4. `build_source_evidence.py` uses Python's standard library and the preserved responses. Its PDF-copy source path is a local recovery location; the packaged PDF plus recorded SHA256 are sufficient for inspecting this evidence without that original path. The scripts write only inside this directory.
+Network retrieval uses `audit_identity_sources.py fetch_all`, `fetch_known`, and `fetch_candidates` with Python and requests. Saved successful responses are reused. `audit_identity_sources.py compare` requires RDKit; the audited version was 2025.09.4. `build_source_evidence.py` uses Python's standard library and the preserved responses. It uses the packaged Rothamsted PDF and verifies its recorded SHA256; optional retrieval is requested explicitly with `--download-missing-source`. The scripts write only inside this directory.
 
 The 33-identity list is a separate frozen input. Re-running current network lookups in the future does not authorize changing that list or treating a later response as the original 2026-10-03 response.
 

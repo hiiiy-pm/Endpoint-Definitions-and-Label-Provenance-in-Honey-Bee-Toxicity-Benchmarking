@@ -1,0 +1,229 @@
+\section*{Supplementary sensitivity analyses}
+
+These analyses assess label-rule sensitivity, source provenance and identifier consistency. They retain the original
+SMILES, labels and official split files. Current identifier responses are a dated
+consistency screen; the conditional qualifier replay and additional model
+sensitivities are reported separately from the historical reconstruction.
+
+\subsection*{Supplementary Table S25a. Exclusion-log scope and actual filtering}
+
+The upstream log selects all rows for a flagged CAS identity, whereas
+the filter removes individual CAS-by-route groups. The additional log entries
+do not imply that the executed filter removed those observations.
+
+\begin{center}
+\small
+\begin{tabular}{lr}
+\toprule
+Quantity & Count \\
+\midrule
+Log rows & 745 \\
+CAS identities in log & 72 \\
+Removed CAS-by-route groups & 79 \\
+Rows in removed groups & 536 \\
+Eligible groups also included in log & 75 \\
+Eligible-group rows also included in log & 209 \\
+Logged rows in final ECOTOX determining groups & 119 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Supplementary Table S25b. Uniform rule D and unresolved-label handling}
+
+All-D and the primary D/C/D rules were applied to all accepted records
+and the same upstream-eligible routes at 100/11/1~\ugbee. At 11~\ugbee, CAS
+115086-54-9 and 736994-63-1 were unresolved under C and positive under D. Both
+had positive distributed labels. With the keep policy, the three 1,035-entry
+final label vectors were identical, containing 789/296/170 positives. This is an
+input-equivalence check under the same fitting protocol, not a second independent
+performance experiment. Under exclude, all-D retained 915 identities instead of
+913; the two additions were positive at every cut-off.
+
+\begin{center}
+\small
+\begin{tabular}{lcc}
+\toprule
+Split & D/C/D train/test & All-D train/test \\
+\midrule
+Random & 728/185 & 730/185 \\
+MaxMin & 727/186 & 729/186 \\
+Time & 734/179 & 734/181 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Supplementary Table S25c. ECFP crossover after all-D exclusion}
+
+Original and provisional labels use identical retained members within
+each all-D crossover. Both training-label versions were fitted for Random and
+MaxMin; the Time training inputs were unchanged and their fitted scores were
+reused. The original mixed-rule exclusion fits were independently reproduced.
+Intervals use 2,000 paired scaffold-cluster draws, condition on the fitted models
+and retained cohorts, and are not adjusted for the added scenario. This selected
+cohort differs from the primary keep cohort. O/O denotes original training and
+evaluation labels; R/R denotes provisionally revised labels for both. O/R label-source
+notation is distinct from aggregation rules A--D and outcome codes P/N/U.
+
+\begin{center}
+\small
+\begin{tabular}{llrrrr}
+\toprule
+Split & Contrast & O/O gap & R/R gap & Change & 95\% CI \\
+\midrule
+Random & 11--100 & 0.134 & 0.145 & 0.011 & [-0.070, 0.098] \\
+Random & 1--100 & 0.185 & 0.196 & 0.011 & [-0.070, 0.098] \\
+MaxMin & 11--100 & 0.213 & 0.222 & 0.009 & [-0.066, 0.091] \\
+MaxMin & 1--100 & 0.222 & 0.231 & 0.009 & [-0.066, 0.091] \\
+Time & 11--100 & 0.068 & 0.059 & -0.008 & [-0.099, 0.085] \\
+Time & 1--100 & 0.134 & 0.126 & -0.008 & [-0.099, 0.085] \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\Needspace{18\baselineskip}
+
+\subsection*{Supplementary Table S25d. Benomyl qualifier-direction replay}
+
+The archived oral record for CAS 17804-35-2 reports $<10$~\ugbee;
+the cited Rothamsted report's Table 2 (printed p.~56) reports $>10$~\ugbee.
+The table below changes only that operator while retaining the numerical bound,
+historical conditions and route eligibility. It does not adjudicate the full
+experimental identity. The primary keep inputs are unchanged, and the identity
+is excluded before and after the replay under the exclude policy. The compound
+is Tier2, so the 212-compound Tier1 audit counts are unaffected. Full scenario
+input comparisons are in \path{supplementary_audits/statistics/benomyl_scenario_input_impact.csv}.
+The original report and database also differ in material and stage metadata;
+these fields are retained separately in the source ledger.
+
+\begin{center}
+\small
+\begin{tabular}{lccc}
+\toprule
+Cut-off & Reconstructed, $<10$ & Reconstructed, $>10$ & Keep, both \\
+\midrule
+100 & Positive & Unresolved & Positive \\
+11 & Positive & Unresolved & Positive \\
+1 & Unresolved & Negative & Negative \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Original source: \url{https://www.era.rothamsted.ac.uk/eradoc/book/16}. The cited PDF SHA256 and record-to-table locations are supplied with the source audit.
+
+\Needspace{30\baselineskip}
+
+\subsection*{Supplementary Table S26a. Current CID--structure consistency screen}
+
+PubChem property records were retrieved for all 1,030 distinct stored
+CIDs on 3 October 2026. RDKit 2025.09.4 converted the frozen SMILES to InChIKeys.
+Complete-key and connectivity-block matches were assessed before comparison of
+standardized fragment parents. Differences may reflect salts, stereochemistry,
+mixtures or representation changes, as well as incorrect identifiers. They do
+not by themselves establish toxicity-label errors. Neither the frozen structures
+nor their labels were replaced.
+
+\begin{center}
+\small
+\begin{tabular}{lr}
+\toprule
+Comparison to current stored-CID structure & Rows \\
+\midrule
+Complete InChIKey match & 875 \\
+Connectivity match; complete key differs & 127 \\
+Fragment-parent full-key match only & 4 \\
+Fragment-parent connectivity match only & 2 \\
+No match under these checks; review required & 27 \\
+Total & 1035 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The fixed screening set contains the 33 identities without a
+direct connectivity-block match (six fragment-parent cases and 27 remaining
+differences). Its membership file and SHA256 were recorded before evaluating
+the exclusion sensitivity. The 127 direct connectivity matches were retained;
+the ECFP models do not encode chirality. Complete responses and the full 1,035-row
+ledger accompany the archive.
+
+\subsection*{Supplementary Table S26b. Review of five non-unique CID groups}
+
+Five stored CIDs are shared by ten benchmark rows. The table separates
+current identifier conflicts from alternative entity representations. CAS lookup
+and structure agreement corroborate the listed candidate CIDs; they are not
+substituted into the frozen benchmark.
+
+\begin{center}
+\small
+\begin{tabular}{lp{0.29\linewidth}p{0.43\linewidth}}
+\toprule
+Stored CID & Case & Source-comparison finding \\
+\midrule
+13836 & Chlormequat / chloride & Cation matches 13837; salt matches 13836 \\
+5284484 & Metiram / zineb & Distinct materials; zineb matches 5284484 \\
+16116 & Silthiofam / substituted urea & Silthiofam matches 9881821 \\
+93341 & Diclomezine / diflumetorim & Diflumetorim matches 15390131 \\
+5483872 & Metominostrobin / phthalide & Phthalide matches 33791 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+All sources obtain their year proxy through CID-based PubChem
+queries. ECOTOX use flags also originate from PubChem; PPDB/BPDB use flags were
+parsed from provider-page text. The historical per-row literature-query responses
+were not retained, and the archived literature endpoint returned HTTP 404 in the
+current retrieval. A current creation date cannot replace an unknown historical
+literature date. This analysis therefore establishes dependency paths and current
+identifier conflicts, but does not adjudicate replacement historical years or
+changed Time membership. In the ten-row source comparison, the ECOTOX identifiers match
+their frozen structures; the confirmed distinct-structure CID conflicts are in
+PPDB rows whose use flags came from provider pages. The ledger records these
+source-specific distinctions instead of inferring use errors from every CID flag.
+
+\subsection*{Supplementary Table S26c. ECFP sensitivity to the identifier screening set}
+
+The screening set was fixed before the new model fits and contained 33 current identifier-consistency flags, comprising six fragment-parent-related differences and 27 remaining differences requiring adjudication. These are not 33 confirmed historical errors. We removed these identities from both partitions of each official split, retaining the distributed labels and frozen molecular representations for every remaining compound. No SMILES, year or chemical-use flag was replaced. The retained training/test counts were 804/198 (Random), 811/191 (MaxMin) and 808/194 (Time).
+
+The ECFP/Tanimoto SVM used $C=1$ and balanced class weights recalculated within each retained training set. Nine original-model fits first reproduced saved scores with maximum absolute difference $2.22\times10^{-16}$. We then evaluated three stages: the original saved scores on all test identities (Original/all); the same saved scores on retained test identities (Frozen/reduced); and nine refitted models on those retained test identities (Refit/reduced). Thus the evaluation-only and refitting changes remain separately inspectable.
+
+For all stages and endpoints, 5,000 shared draws resampled scaffold clusters on each original test cohort; reduced stages retained only their eligible observations within each draw. Intervals for the two severe-minus-broad contrasts are simultaneous centred-bootstrap intervals within a split and stage. They condition on the fitted models, fixed screening set and labels. All 5,000 draws were jointly valid in each family. Intervals on original points were regenerated under this shared sensitivity resampling and do not replace the primary-analysis intervals.
+
+\begin{center}
+\footnotesize
+\begin{tabularx}{\linewidth}{llcXXX}
+\toprule
+Split & Stage & Train/test $n$ & AUROC, 100 & AUROC, 11 & AUROC, 1 \\
+\midrule
+Random & Original/all & 828/207 & 0.718 (179/28) & 0.848 (59/148) & 0.917 (33/174) \\
+Random & Frozen/reduced & 828/198 & 0.710 (171/27) & 0.855 (56/142) & 0.918 (33/165) \\
+Random & Refit/reduced & 804/198 & 0.716 (171/27) & 0.856 (56/142) & 0.921 (33/165) \\
+MaxMin & Original/all & 828/207 & 0.592 (162/45) & 0.792 (42/165) & 0.795 (23/184) \\
+MaxMin & Frozen/reduced & 828/191 & 0.590 (154/37) & 0.795 (41/150) & 0.793 (23/168) \\
+MaxMin & Refit/reduced & 811/191 & 0.587 (154/37) & 0.799 (41/150) & 0.796 (23/168) \\
+Time & Original/all & 828/207 & 0.691 (167/40) & 0.754 (41/166) & 0.792 (24/183) \\
+Time & Frozen/reduced & 828/194 & 0.691 (159/35) & 0.760 (39/155) & 0.787 (23/171) \\
+Time & Refit/reduced & 808/194 & 0.674 (159/35) & 0.766 (39/155) & 0.786 (23/171) \\
+\bottomrule
+\end{tabularx}
+\end{center}
+Numbers in parentheses are positive/negative test counts at the indicated cut-off in $\mu$g per bee. Original and Frozen refer to the same saved score vectors, with different evaluation membership.
+
+\begin{center}
+\footnotesize
+\begin{tabularx}{\linewidth}{llXX}
+\toprule
+Split & Stage & 11 minus 100 (simultaneous 95\% CI) & 1 minus 100 (simultaneous 95\% CI) \\
+\midrule
+Random & Original/all & 0.130 (-0.015 to 0.276) & 0.199 (0.053 to 0.345) \\
+Random & Frozen/reduced & 0.145 (-0.002 to 0.293) & 0.208 (0.060 to 0.356) \\
+Random & Refit/reduced & 0.140 (-0.005 to 0.284) & 0.205 (0.061 to 0.350) \\
+MaxMin & Original/all & 0.200 (0.053 to 0.347) & 0.203 (0.056 to 0.350) \\
+MaxMin & Frozen/reduced & 0.205 (0.057 to 0.354) & 0.203 (0.055 to 0.352) \\
+MaxMin & Refit/reduced & 0.212 (0.062 to 0.362) & 0.209 (0.060 to 0.359) \\
+Time & Original/all & 0.063 (-0.097 to 0.223) & 0.101 (-0.059 to 0.262) \\
+Time & Frozen/reduced & 0.069 (-0.098 to 0.235) & 0.096 (-0.070 to 0.263) \\
+Time & Refit/reduced & 0.093 (-0.077 to 0.263) & 0.112 (-0.057 to 0.282) \\
+\bottomrule
+\end{tabularx}
+\end{center}
+The broad endpoint remained lowest in all three refitted ECFP evaluations. The MaxMin refit contrasts were 0.212 (simultaneous 95\% CI 0.062--0.362) and 0.209 (0.060--0.359). All paired intervals for total changes in the endpoint gaps included zero. These selected-cohort deletion results do not adjudicate individual structures or establish prospective performance. Complete per-compound scores, class counts, pointwise AUROC intervals and paired evaluation/refit components are in the \path{supplementary_audits/statistics/current_identifier_flagged_exclusion_*} files. These retrospective sensitivity intervals
+exclude uncertainty from historical identifier assignment or study-level adjudication.

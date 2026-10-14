@@ -1,18 +1,16 @@
-"""Export review-stage supplementary tables from auditable saved results.
+"""Export supplementary tables from scientific data and saved model results.
 
 No models are fitted. Numeric estimates and intervals are copied from their
 stated analysis outputs; quantities calculated here are descriptive counts.
 """
 from pathlib import Path
 import json
-import sys
 
 import pandas as pd
+from check_label_nesting import check_label_nesting
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'output/latex_tables/supp_tables_audit.tex'
-sys.path.insert(0, str(ROOT / 'code'))
-from _common import load_study_data  # noqa: E402
 
 lines = []
 
@@ -27,15 +25,27 @@ def f(x, digits=3):
 
 def table(number, title, spec, head, rows, note=''):
     n = head.count('&') + 1
+    # Improve dense tables without scaling the whole table or its numeric text.
+    size = r'\fontsize{8.5}{10.2}\selectfont' if number in {'S21c', 'S22b', 'S23b', 'S24d'} else r'\small'
+    spacing = r'\setlength{\tabcolsep}{3.5pt}' if number in {'S21c', 'S22b', 'S23b', 'S24d'} else r'\setlength{\tabcolsep}{4pt}'
+    if number == 'S24e':
+        spacing += r'\setlength{\LTpre}{0pt}'
+    # S23b has a long methodological note: place it below the data so that it
+    # cannot consume the space reserved for the heading and first data rows.
+    note_after = number == 'S23b'
+    first_label = (r'\multicolumn{' + str(n) + r'}{l}{\textit{Supplementary Table ' + number + r'}} \\'
+                   if note_after else '')
     lines.extend([r'\Needspace{12\baselineskip}\subsection*{Supplementary Table ' + number + '. ' + title + '}',
-                  note, r'\begingroup\footnotesize\setlength{\tabcolsep}{4pt}',
-                  r'\begin{longtable}{' + spec + '}',
+                  '' if note_after else note, r'\begingroup' + size + spacing,
+                  r'\begin{longtable}{' + spec + '}', first_label,
                   r'\toprule ' + head + r' \\ \midrule\endfirsthead',
                   rf'\multicolumn{{{n}}}{{l}}{{\textit{{Supplementary Table {number} (continued)}}}} \\',
                   r'\toprule ' + head + r' \\ \midrule\endhead',
                   rf'\midrule\multicolumn{{{n}}}{{r}}{{Continued on next page}}\\\endfoot\bottomrule\endlastfoot'])
     lines.extend(' & '.join(map(str, row)) + r' \\' for row in rows)
     lines.append(r'\end{longtable}\endgroup')
+    if note_after:
+        lines.append(note)
 
 
 # Configuration details are source-code specifications, not estimated results.
@@ -52,10 +62,10 @@ config = [
     ['Seeds and folds', r'Base seed 20260829; all five-fold partitions are stratified and shuffled. Calibration uses base+$100s+e$, fusion base+$100s+t$, additional-learner CV base+$s$; $s=0,1,2$ for Random/MaxMin/Time, $e=0,1,2$ for thresholds $100,11,1$, and $t$ is the numeric threshold.'],
 ]
 pins = dict(line.strip().split('==',1) for line in (ROOT/'requirements-analysis.txt').read_text().splitlines() if '==' in line)
-config.append(['Pinned environment', '; '.join(f'{name} {pins[name]}' for name in ['numpy','pandas','scipy','scikit-learn','rdkit','statsmodels']) + r'. Exact pins are in \path{requirements-analysis.txt}; execution validation is recorded separately.'])
+config.append(['Pinned environment', '; '.join(f'{name} {pins[name]}' for name in ['numpy','pandas','scipy','scikit-learn','rdkit','statsmodels']) + r'. Exact pins are in \path{requirements-analysis.txt}.'])
 table('S21a', 'Reproducible learner and calibration settings', r'p{0.19\linewidth}p{0.72\linewidth}',
       'Component & Implemented settings', config,
-      r'Settings are taken from \path{code/_common.py}, \path{code/01_primary_endpoint_models.py}, \path{code/02_metadata_decomposition.py}, \path{code/06_novelty_calibration.py} and \path{code/08_sensitivity_diagnostics.py}. Fixed learner specifications do not imply identical class weights across endpoints. Environment versions are retained in the repository environment lock and validation records.')
+      r'Settings are taken from \path{code/_common.py}, \path{code/01_primary_endpoint_models.py}, \path{code/02_metadata_decomposition.py}, \path{code/06_novelty_calibration.py} and \path{code/08_sensitivity_diagnostics.py}. Fixed learner specifications do not imply identical class weights across endpoints. Environment versions are specified in the repository dependency files.')
 
 a = pd.read_csv(ROOT / 'results/decomposition/03_tier_composition_association_tests.csv')
 names = {'source': 'Source', 'toxicity_type': 'Exposure route', 'insecticide': 'Insecticide',
@@ -77,7 +87,11 @@ table('S21c', 'Formal endpoint-by-novelty interactions', 'lllccccc',
       r'Split & Outcome & Contrast & Coefficient & 95\% CI & Holm $p$ & Joint $\chi^2$ & Joint $p$', rows,
       r'Coefficients and Wald intervals are per one-unit novelty increase; divide by ten to obtain the 0.1-unit scale used for marginal slopes in Fig.~S3c. Classification-error interactions use a logit link. Holm adjustment covers the two interactions within each split and outcome; each joint Wald test has two degrees of freedom. Nonsignificance does not establish absence of an effect.')
 
-study = load_study_data()
+# Presentation uses the already validated processed ledger, with a direct check
+# against the raw columns; no molecular representation or label is recomputed.
+df = pd.read_csv(ROOT / 'results/cache/processed_data.csv')
+raw = pd.read_csv(ROOT / 'data/raw/apistox.csv')
+pd.testing.assert_frame_equal(df[raw.columns], raw, check_dtype=False, check_exact=True)
 pred = pd.read_csv(ROOT / 'results/primary/02_test_predictions.csv')
 rows = []
 for sp in ['Random', 'MaxMin', 'Time']:
@@ -88,7 +102,6 @@ table('S21d', 'Held-out scaffold-cluster sizes and permutation strata', 'lrrrrrr
       'Split & Compounds & Clusters & Singletons & Minimum & Median & Maximum', rows,
       r'Bootstrap clusters are the stored Bemis--Murcko scaffold identifiers, with acyclic compounds assigned normalized-structure clusters. Singletons are retained.')
 rows = []
-df = study.df.assign(Tier=study.tier)
 for label, cols in [('Global', []), ('Source + insecticide', ['source', 'insecticide']),
                     ('Source + route + insecticide', ['source', 'toxicity_type', 'insecticide'])]:
     groups = [df] if not cols else [q for _, q in df.groupby(cols)]
@@ -111,7 +124,7 @@ def tally(q, t):
 
 
 rule_note = (r'A: numerical median, operators ignored; B: numerical unanimous-record rule, operators ignored; '
-             r'C: qualifier-aware unanimous-record rule; D: interval median. Each cell is positive/negative/unresolved/no eligible record, '
+              r'C: qualifier-aware unanimous-record rule; D: interval median. P/N/U/none means positive/negative/unresolved/no eligible record, '
              r'in that order, at the stated cut-off in $\mu$g/bee. The denominator is fixed at the distributed ECOTOX-derived identities; '
              r'absence after a strict screen is kept distinct from an interval that crosses the threshold. A and D differ only in qualifier handling; '
              r'A and B differ only in aggregation. At 11, rule B uses strict $>11$ for negative records; the original code also accepted '
@@ -158,8 +171,8 @@ for sp in ['Random','MaxMin','Time']:
             vals = [f(q.loc[(tr,ev),'AUROC']) for tr,ev in [('original','original'),('original','corrected'),('corrected','original'),('corrected','corrected')]]
             rows.append([sp, rep, t] + vals + [f"{int(q.loc[('original','original'),'n_pos'])}/{int(q.loc[('original','corrected'),'n_pos'])}"])
 table('S23a', 'Fixed-membership primary label crossover for every representation', 'llrccccc',
-      r'Split & Representation & Cut-off & O/O & O/C & C/O & C/C & Positive O/C', rows,
-      r'Each cell is AUROC. Before/after the slash denotes training/evaluation labels: O, distributed benchmark; C, partially revised labels. The primary scenario uses qualifier-aware interval medians at 100 and 1, and unanimity at 11, combining the upstream-eligible routes. Unresolved labels retain their distributed values; PPDB/BPDB labels are unchanged. Each split retains its original 828 training and 207 test identities, and no external cohort is introduced. Endpoint class counts and 2,000-draw scaffold percentile intervals for all four cells are in \path{results/label_audit/06_crossover_auroc.csv}. Revised labels are an auditable sensitivity definition, not established ground truth.')
+      r'Split & Representation & Cut-off & O/O & O/R & R/O & R/R & Positive O/R', rows,
+      r'Each cell is AUROC. Before/after the slash denotes training/evaluation labels: O, distributed benchmark; R, provisionally revised labels. These label-source symbols are distinct from aggregation rules A--D and outcome codes P/N/U in S22. The primary scenario uses qualifier-aware interval medians at 100 and 1, and unanimity at 11, combining the upstream-eligible routes. Unresolved labels retain their distributed values; PPDB/BPDB labels are unchanged. Each split retains its original 828 training and 207 test identities, and no external cohort is introduced. Endpoint class counts and 2,000-draw scaffold percentile intervals for all four cells are in \path{results/label_audit/06_crossover_auroc.csv}. Revised labels are an auditable sensitivity definition, not established ground truth.')
 
 rows = []
 for scenario in ['primary','conservative','adult48','regulatory','combined']:
@@ -168,16 +181,20 @@ for scenario in ['primary','conservative','adult48','regulatory','combined']:
             q = gap[(gap.Scenario == scenario) & (gap.Unresolved == how) & (gap.Split == sp) & (gap.Representation == 'ECFP') & (gap.Severe == 11)].set_index(['TrainLabels','EvalLabels'])
             c = changes[(changes.Scenario == scenario) & (changes.Unresolved == how) & (changes.Split == sp)].iloc[0]
             d = q.loc[('change:corrected-vs-original','change:corrected-vs-original')]
+            assert (int(d.B_requested), int(d.B_valid), int(d.B_degenerate)) == (2000, 2000, 0)
             vals = [f(q.loc[(tr,ev),'Gap']) for tr,ev in [('original','original'),('original','corrected'),('corrected','original'),('corrected','corrected')]]
             rows.append([{'primary':'Primary','conservative':'Cons.','adult48':'Adult48','regulatory':'Reg.','combined':'Comb.'}[scenario],
                          {'keep':'K','exclude':'E','negative':'N'}[how], sp, f'{int(c.n_train)}/{int(c.n_test)}'] + vals + [f'{f(d.Gap)} [{f(d.CI_low)}, {f(d.CI_high)}]'])
 table('S23b', 'ECFP 11-minus-100 crossover contrasts and uncertainty across every sensitivity scenario', 'llllccccc',
-      r'Scenario & Unresolved & Split & Train/test & O/O & O/C & C/O & C/C & C/C minus O/O [95\% CI]', rows,
-      r'Scenario and unresolved-label rules are defined in Supplementary Methods: Cons., conservative; Reg., regulatory; Comb., combined; K, keep; E, exclude; N, negative. O/C notation follows S23a. Both training-label arms use the same retained training and test members, including refitting the original-label arm after exclusion. Intervals are paired scaffold-cluster percentiles from 2,000 draws conditional on fitted models; they are not simultaneous and do not include uncertainty in label adjudication. Negative can create severe-positive/broad-negative labels: it is a nonnested extreme stress test, excluded from substantive correction inference and not a feasible corrected nested benchmark. The complete two-contrast results for all five representations and all four cells, including evaluation-only changes, are in \path{results/label_audit/07_crossover_gap.csv}. Label-change and class counts are in \path{results/label_audit/08_crossover_label_changes.csv}.')
-nest = pd.read_csv(ROOT / 'results/label_audit/LABEL_NESTING_CHECK.csv')
-negative = nest[nest.Unresolved == 'negative']
-assert (nest[nest.Unresolved.isin(['keep','exclude'])].CorrectedLabel_nonnested == 0).all()
-lines.append(f'Independent verification of exported test labels found no nesting violations under keep or exclude. All {len(negative)} negative-policy test cohorts contained violations ({int(negative.CorrectedLabel_nonnested.min())}--{int(negative.CorrectedLabel_nonnested.max())} of 207 identities). ' + r'The per-cohort counts and offending indices are in \path{results/label_audit/LABEL_NESTING_CHECK.csv}. This check concerns exported test labels; the prediction artifact does not contain training-label vectors.')
+      r'Scenario & Policy & Split & Train/test & O/O & O/R & R/O & R/R & R/R minus O/O [95\% CI]', rows,
+      r'Scenario and missing/unresolved-label policies are defined in Supplementary Methods: Cons., conservative; Reg., regulatory; Comb., combined; K, keep; E, exclude; N, negative. O/R notation follows S23a; policy N is distinct from the negative-outcome code N in S22. Both training-label arms use the same retained training and test members, including refitting the original-label arm after exclusion. For ECOTOX record-filter scenarios, a compound with no eligible record is assigned unresolved status before the policy is applied. The Adult48 reconstruction has 76 identities without eligible records and 93 with records but at least one unresolved cut-off: exclude removes all 169, keep retains their distributed labels where unavailable, and negative assigns unavailable broad labels to negative. PPDB/BPDB labels are unchanged in this scenario. Identities without any matched regulatory source retain distributed labels; combined uses ECOTOX reconstruction where applicable. Intervals are paired scaffold-cluster percentiles from 2,000 requested draws conditional on fitted models; every displayed contrast has 2,000 valid draws and zero degenerate draws. They are not simultaneous and do not include uncertainty in label adjudication. Negative can create severe-positive/broad-negative labels: it is a nonnested extreme stress test, excluded from substantive correction inference and not a feasible corrected nested benchmark. The complete two-contrast results for all five representations and all four cells, including evaluation-only changes and requested/valid/degenerate draw counts, are in \path{results/label_audit/07_crossover_gap.csv}. Label-change and class counts are in \path{results/label_audit/08_crossover_label_changes.csv}.')
+nesting, _ = check_label_nesting(ROOT)
+lines.append('Direct reconstruction found no nesting violations in keep/exclude training or test labels. '
+             f'All {nesting["negative_policy_test_cohorts_with_violations"]} negative-policy test cohorts '
+             f'contained violations ({nesting["negative_policy_test_violations_min"]}--'
+             f'{nesting["negative_policy_test_violations_max"]} of 207 identities); all '
+             f'{nesting["negative_policy_train_cohorts_with_violations"]} corresponding training '
+             'cohorts also contained violations.')
 
 pilot = ROOT / 'output/unseen_identity_case_study'
 candidates = pd.read_csv(pilot / 'data_curation/all_candidate_structures.csv')
@@ -242,7 +259,7 @@ table('S24c', 'Benchmark-wide concordance cohort flow and source-metadata covera
       'Source screen & Full-key matched & Same route & Three cut-offs determinate', rows,
       r'Counts are unique benchmark identities at each sequential stage, not the split-specific saved-score cohorts in S18. Retaining a common three-cut-off cohort introduces selection by source availability, route and threshold determinacy. Source screens and matching exclusions are recorded in \path{results/record_audit/13_concordance_cohort_flow.csv}.')
 missing = pd.read_csv(ROOT / 'results/record_audit/11_route_matched_metadata_missingness.csv')
-lines.extend([r'\begin{longtable}{lrrrrrr}',
+lines.extend([r'\Needspace{6\baselineskip}\begin{longtable}{lrrrrrr}',
               r'\toprule Source & Records & Time missing & 48 h & Material missing & Dose basis missing & MRID missing \\ \midrule'])
 for r in missing.itertuples():
     lines.append(' & '.join(map(str,[source_labels[r.source],r.records,r.duration_missing,r.duration_48h,
@@ -277,5 +294,6 @@ table('S24e', 'Structural proximity to the selected concordance cohorts', 'llrrr
       r'Source & Membership & $n$ & Selected set & References/query & Median & Q1--Q3', rows,
       r'For every benchmark molecule, the descriptive statistic is its largest ECFP4 Tanimoto similarity to the corresponding same-route, all-three-determinate selected cohort. An included molecule is compared with the other selected molecules, excluding its own identity; an excluded molecule is compared with the entire selected set. The table reports medians and interquartile ranges across query molecules, not confidence intervals. The reference-set size is shown because nearest-neighbour similarity depends on that size; the three screens are not directly comparable standardized coverage measures. These summaries quantify proximity to each selected chemical pool and do not prove representativeness or identify a causal selection effect. The saved kernel is reused without model fitting or cohort changes. Per-molecule values and cohort summaries are supplied with \path{results/record_audit/16_selection_structure_summary.csv}.')
 
+OUT.parent.mkdir(parents=True, exist_ok=True)
 OUT.write_text('\n\n'.join(lines) + '\n', encoding='utf-8')
-print('Wrote supplementary revision tables S19c-d, S21a-d, S22a-c, S23a-b and S24a-e to', OUT)
+print('Wrote supplementary tables S19c-d, S21a-d, S22a-c, S23a-b and S24a-e to', OUT)

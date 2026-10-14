@@ -165,6 +165,16 @@ def validate_cache(study, directory: Path, *, require_provenance: bool = True) -
     if evidence is not None:
         for key, value in current_context(study).items():
             if evidence.get(key) != value:
+                if key == "environment":
+                    command = ("python scripts/prepare_cache.py" if schema == 1
+                               else "python code/run_all_analysis.py --clean")
+                    action = ("recompute and validate the supplied cache" if schema == 1
+                              else "rebuild the analyses in a separate copy")
+                    raise CacheValidationError(
+                        "Cache validation context changed: environment. "
+                        "The recorded and current Python/package versions must match exactly. "
+                        f"Run `{command}` from the research directory to {action} "
+                        "under the current environment. Do not manually edit cache JSON files.")
                 raise CacheValidationError(f"Cache validation context changed: {key}")
         if evidence.get("artifact_sha256") != artifact_hashes(directory):
             raise CacheValidationError("Cache artifact SHA-256 mismatch")

@@ -3,9 +3,8 @@
 This directory restores the nine original primary ECFP SVC models: three official
 splits (Random, MaxMin, Time) crossed with thresholds of 100, 11, and 1 µg/bee.
 It does not introduce new hyperparameters, calibration, model selection, or
-external observations into fitting. **Restoration does perform original-data
-fitting:** the completed script run fitted nine models, and the preliminary
-feasibility probe fitted the same nine original configurations once.
+external observations into fitting. **Restoration fits the nine specified models on their original training data.**
+Using the saved model objects for inference does not fit models.
 
 ## Verified restoration
 
@@ -16,16 +15,14 @@ feasibility probe fitted the same nine original configurations once.
 - Features are RDKit Morgan bit fingerprints, radius 2, 1024 bits, all remaining
   generator settings as in the original code. Molecular inputs are not changed
   by the parent-standardization steps used for identity exclusion.
-- Tanimoto values are rounded to float32 before reaching SVC, matching the old
-  cache and preserving its numerical feature path.
+- Tanimoto values are rounded to float32 before reaching SVC, matching the supplied
+  kernel and preserving its numerical feature path.
 - Regenerating all 1,035 × 1,035 similarities directly from original SMILES gives
   exactly the original kernel matrix.
 - All 1,863 original ECFP test scores are reproduced with a maximum absolute
   difference of 2.220446049250313e-16. Fixed-threshold classifications agree.
 - The public prediction interface independently reloads models, regenerates
-  fingerprints from the old test SMILES, and reproduces those same scores.
-- `restoration_verification.json` records the original restoration checks
-  and input hashes.
+  fingerprints from the benchmark test SMILES, and reproduces those same scores.
 
 ## Structure-only input
 
@@ -71,15 +68,13 @@ No applicability-domain cutoff is selected from external outcomes.
 The interface verifies hashes of the model, training identity files, complete
 development reference, and inference script before use. All original input hashes
 and software versions are recorded in `restoration_manifest.json`. Nine model
-objects and three ordered training tables are saved locally; original data,
-results, manuscript files and original code are unchanged.
+objects and three ordered training tables are supplied.
 
-## Files for review
+## Supporting files
 
 - `restored_vs_original_test_scores.csv`: all 1,863 paired original/restored scores.
 - `restoration_metric_summary.csv`: nine per-model maximum score errors.
 - `public_interface_validation.csv`: independent end-to-end inference recovery.
-- `restoration_verification.json`: first-round checks and original hashes.
 - `restoration_manifest.json`: exact model settings, original training indices,
   versions, artifact hashes, fingerprint definition and provenance.
 - `ordered_training_*.csv`: ordered training structures and original labels.

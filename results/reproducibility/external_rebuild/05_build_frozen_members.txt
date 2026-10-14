@@ -1,5 +1,0 @@
-{
-  "status": "passed",
-  "cohorts": 9,
-  "member_rows": 264
-}

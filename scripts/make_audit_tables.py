@@ -33,11 +33,9 @@ def table(number, title, spec, head, rows, note=''):
     # S23b has a long methodological note: place it below the data so that it
     # cannot consume the space reserved for the heading and first data rows.
     note_after = number == 'S23b'
-    first_label = (r'\multicolumn{' + str(n) + r'}{l}{\textit{Supplementary Table ' + number + r'}} \\'
-                   if note_after else '')
     lines.extend([r'\Needspace{12\baselineskip}\subsection*{Supplementary Table ' + number + '. ' + title + '}',
                   '' if note_after else note, r'\begingroup' + size + spacing,
-                  r'\begin{longtable}{' + spec + '}', first_label,
+                  r'\begin{longtable}{' + spec + '}',
                   r'\toprule ' + head + r' \\ \midrule\endfirsthead',
                   rf'\multicolumn{{{n}}}{{l}}{{\textit{{Supplementary Table {number} (continued)}}}} \\',
                   r'\toprule ' + head + r' \\ \midrule\endhead',
@@ -53,7 +51,7 @@ config = [
     ['ECFP4', 'Morgan radius 2; 1,024 bits; chirality disabled; Tanimoto kernel.'],
     ['Avalon / MACCS', 'Avalon 1,024 bits; RDKit MACCS 167-bit vector (bit zero unused); Tanimoto kernels.'],
     ['WL-HI', 'Two refinement iterations; element, charge, aromaticity and bond types; normalized histogram intersection (Eq.~\\eqref{eq:si-wl-kernel}).'],
-    ['Primary SVM', r'$C=1$; \texttt{class\_weight=balanced}; precomputed kernels; default SVC tolerance $10^{-3}$ and no probability fit.'],
+    ['Primary SVM', r'$C=1$; \texttt{class\_weight=balanced}; precomputed kernels; default SVM solver tolerance $10^{-3}$ and no probability fit.'],
     ['Descriptor SVM', r'12 descriptors; training-fitted \texttt{RobustScaler}; RBF kernel; \texttt{gamma=scale}; $C=1$, balanced class weights.'],
     ['Metadata / fusion', r'L2 logistic, $C=1$, \texttt{lbfgs}, balanced class weights, 5,000 iterations; categorical one-hot encoding. Fusion standardizes its structural score and metadata inputs.'],
     ['Calibration', r'Unweighted logistic sigmoid on five-fold out-of-fold SVM scores; $C=10^6$, \texttt{lbfgs}, 5,000 iterations. Apply that sigmoid to the final full-training model score.'],
@@ -223,7 +221,7 @@ for (name, sp), q in newpred.groupby(['compound_id','split'], sort=False):
                 [f'{f(q.loc[t,"score"])} ({int(q.loc[t,"predicted_label"])})' for t in [100,11,1]])
 table('S19d', 'Individual new-structure scores, default decisions and nearest-training similarity', 'llcccc',
       r'Identity & Split & Nearest Tanimoto & $\leq100$ score (class) & $\leq11$ score (class) & $\leq1$ score (class)', rows,
-      r'Continuous values are uncalibrated ECFP SVM decision scores, not probabilities. Class uses the saved zero decision threshold of the balanced SVC; it was not chosen for a regulatory decision, an external calibration target or an error-cost function. Similarity is the largest training-set ECFP Tanimoto for the corresponding split. Scores are recorded for all ten predicted identities, including the four without eligible outcomes. Source-linked outcomes and correctness at each determinate threshold are in \path{output/unseen_identity_case_study/evaluation/new_compound_case_predictions.csv}; full nearest-neighbour identities and model hashes are in the two prediction CSVs.')
+      r'Continuous values are uncalibrated ECFP SVM decision scores, not probabilities. Class uses the saved zero decision threshold of the balanced SVM; it was not chosen for a regulatory decision, an external calibration target or an error-cost function. Similarity is the largest training-set ECFP Tanimoto for the corresponding split. Scores are recorded for all ten predicted identities, including the four without eligible outcomes. Source-linked outcomes and correctness at each determinate threshold are in \path{output/unseen_identity_case_study/evaluation/new_compound_case_predictions.csv}; full nearest-neighbour identities and model hashes are in the two prediction CSVs.')
 
 cases = pd.read_csv(ROOT / 'results/record_audit/04_selected_ecotox_cases.csv')
 rows = []

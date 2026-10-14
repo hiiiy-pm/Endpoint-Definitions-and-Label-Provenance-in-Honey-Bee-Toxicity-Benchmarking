@@ -1,5 +1,6 @@
 \Needspace{12\baselineskip}\subsection*{Supplementary Table S1. Full test AUROC across representations, splits and endpoints}
 \begin{longtable}{llccc}
+
 \toprule Split & Representation & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
 \multicolumn{5}{l}{\textit{Supplementary Table S1 (continued)}} \\
 \toprule Split & Representation & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
@@ -28,6 +29,7 @@ Time & Descriptors12 & 0.390 & 0.567 & 0.650 \\
 \Needspace{12\baselineskip}\subsection*{Supplementary Table S2. Scaffold-cluster simultaneous intervals for the two-contrast family within each representation and split}
 All 5,000 bootstrap draws are valid for every reported contrast (zero single-class draws). Intervals are simultaneous only within the two stated contrasts for each representation and split.
 \begin{longtable}{llcccc}
+
 \toprule Split & Representation & Contrast & $\Delta$AUROC & 95\% CI low & 95\% CI high \\ \midrule\endfirsthead
 \multicolumn{6}{l}{\textit{Supplementary Table S2 (continued)}} \\
 \toprule Split & Representation & Contrast & $\Delta$AUROC & 95\% CI low & 95\% CI high \\ \midrule\endhead
@@ -70,6 +72,7 @@ Time & Descriptors12 & $\leq1-\leq100$ & 0.260 & 0.104 & 0.416 \\
 
 \Needspace{12\baselineskip}\subsection*{Supplementary Table S3. Scaffold-cluster simultaneous intervals over the ten contrasts within each split}
 \begin{longtable}{llccc}
+
 \toprule Split & Representation & Contrast & $\Delta$AUROC & 95\% CI \\ \midrule\endfirsthead
 \multicolumn{5}{l}{\textit{Supplementary Table S3 (continued)}} \\
 \toprule Split & Representation & Contrast & $\Delta$AUROC & 95\% CI \\ \midrule\endhead
@@ -113,6 +116,7 @@ Time & Descriptors12 & $\leq1-\leq100$ & 0.260 & 0.055 to 0.465 \\
 \Needspace{12\baselineskip}\subsection*{Supplementary Table S4. Test AUROC for additional learners on ECFP4 bits}
 Point-estimate sensitivity. Logistic regression selects $C$ by five-fold training-only AUROC; the selected values at 100/11/1 are 0.10/0.10/0.10 for Random and 0.01/0.10/0.10 for MaxMin and Time. Random forest uses 500 trees and \texttt{balanced\_subsample} weights; details are in Supplementary Table~S21a.
 \begin{longtable}{llccc}
+
 \toprule Split & Learner & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
 \multicolumn{5}{l}{\textit{Supplementary Table S4 (continued)}} \\
 \toprule Split & Learner & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
@@ -131,6 +135,7 @@ Time & Random forest & 0.719 & 0.750 & 0.819 \\
 
 \Needspace{12\baselineskip}\subsection*{Supplementary Table S5. Test AUROC for metadata, structure and fused models}
 \begin{longtable}{llccc}
+
 \toprule Split & Model & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
 \multicolumn{5}{l}{\textit{Supplementary Table S5 (continued)}} \\
 \toprule Split & Model & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
@@ -155,8 +160,9 @@ Time & ECFP structure & 0.691 & 0.754 & 0.792 \\
 Time & Structure $+$ metadata & 0.667 & 0.847 & 0.943 \\
 \addlinespace
 \end{longtable}
-Fusion contrasts below use scaffold-cluster 95\% simultaneous intervals within each split and endpoint. The family contains structure minus metadata, fusion minus metadata and fusion minus structure; it is separate from the endpoint-contrast family. All 5,000 draws are valid for these contrasts.
+\Needspace{12\baselineskip}Fusion contrasts below use scaffold-cluster 95\% simultaneous intervals within each split and endpoint. The family contains structure minus metadata, fusion minus metadata and fusion minus structure; it is separate from the endpoint-contrast family. All 5,000 draws are valid for these contrasts.
 \begin{longtable}{llccc}
+\multicolumn{5}{l}{\textit{Supplementary Table S5 (continued)}} \\
 \toprule Split & Endpoint & Contrast & $\Delta$AUROC & 95\% simultaneous CI \\ \midrule\endfirsthead
 \multicolumn{5}{l}{\textit{Supplementary Table S5 (continued)}} \\
 \toprule Split & Endpoint & Contrast & $\Delta$AUROC & 95\% simultaneous CI \\ \midrule\endhead
@@ -193,6 +199,7 @@ Time & 1 & Fusion--structure & 0.151 & 0.021 to 0.281 \\
 
 \Needspace{12\baselineskip}\subsection*{Supplementary Table S6. Metadata-only, structure-only and fused models under identical standardization}
 \begin{longtable}{llcccc}
+
 \toprule Split & Endpoint & Metadata & Metadata without route & ECFP & Fused (all / without route) \\ \midrule\endfirsthead
 \multicolumn{6}{l}{\textit{Supplementary Table S6 (continued)}} \\
 \toprule Split & Endpoint & Metadata & Metadata without route & ECFP & Fused (all / without route) \\ \midrule\endhead
@@ -213,8 +220,9 @@ Time & $\leq1$ & 0.893 & 0.894 & 0.792 & 0.943 / 0.942 \\
 \end{longtable}
 
 \Needspace{12\baselineskip}\subsection*{Supplementary Table S7. Leave-one-out scaffold-entropy contrasts}
-Scaffold-equal and shared-scaffold paired analyses estimate different summaries. The paired analysis restricts to scaffolds containing both compared tiers; its negative contrasts should not be interpreted as confirmation of the scaffold-equal estimand.
+Scaffold-equal and shared-scaffold paired analyses estimate different summaries. The paired analysis is restricted to scaffolds containing both compared tiers; its negative contrasts should not be interpreted as confirmation of the scaffold-equal estimand.
 \begin{longtable}{llllccc}
+
 \toprule Min. size & Weighting & Contrast & Estimate & 95\% CI low & 95\% CI high & Scaffolds \\ \midrule\endfirsthead
 \multicolumn{7}{l}{\textit{Supplementary Table S7 (continued)}} \\
 \toprule Min. size & Weighting & Contrast & Estimate & 95\% CI low & 95\% CI high & Scaffolds \\ \midrule\endhead
@@ -270,6 +278,7 @@ Time & 12 & 0.375 & 0.561 & 0.553 \\
 \Needspace{12\baselineskip}\subsection*{Supplementary Table S9. Mean AUROC and training-subsample ranges at 125 compounds per class}
 Cells give means and 2.5th--97.5th percentile ranges across 200 repeated balanced training subsamples. The test identities are fixed. These ranges describe training-subsample variability and are not independent-test confidence intervals; Figure~4a uses medians.
 \begin{longtable}{lccc}
+
 \toprule Split & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
 \multicolumn{4}{l}{\textit{Supplementary Table S9 (continued)}} \\
 \toprule Split & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
@@ -280,6 +289,7 @@ MaxMin & 0.554 [0.505, 0.604] & 0.715 [0.669, 0.760] & 0.747 [0.691, 0.793] \\
 Time & 0.604 [0.542, 0.663] & 0.705 [0.632, 0.761] & 0.771 [0.715, 0.820] \\
 \end{longtable}
 \begin{longtable}{llccc}
+\multicolumn{5}{l}{\textit{Supplementary Table S9 (continued)}} \\
 \toprule Split & Contrast & Mean $\Delta$AUROC & 2.5th percentile & 97.5th percentile \\ \midrule\endfirsthead
 \multicolumn{5}{l}{\textit{Supplementary Table S9 (continued)}} \\
 \toprule Split & Contrast & Mean $\Delta$AUROC & 2.5th percentile & 97.5th percentile \\ \midrule\endhead
@@ -386,6 +396,7 @@ Time & $\leq1$ & -- & -- & 0.219 & -- & 0.689 & 0.093 \\
 \Needspace{12\baselineskip}\subsection*{Supplementary Table S12. Cross-endpoint evaluation (rows: endpoint the model was trained for; columns: endpoint whose labels were used for evaluation)}
 Cells give AUROC and 95\% scaffold-cluster percentile intervals from 2,000 draws. Each off-diagonal entry reuses the row model\textquotesingle s score vector; no model is refitted for the column labels.
 \begin{longtable}{lllccc}
+
 \toprule Split & Representation & Trained for & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
 \multicolumn{6}{l}{\textit{Supplementary Table S12 (continued)}} \\
 \toprule Split & Representation & Trained for & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
@@ -419,6 +430,7 @@ Time & WL--HI & $\leq1$ & 0.572 (0.47--0.69) & 0.704 (0.60--0.80) & 0.788 (0.66-
 
 \Needspace{12\baselineskip}\subsection*{Supplementary Table S13. Brier score of calibrated ECFP forecasts against a constant training-prevalence forecast}
 \begin{longtable}{llcccc}
+
 \toprule Split & Endpoint & Training prevalence & Model Brier & Constant Brier & Brier skill \\ \midrule\endfirsthead
 \multicolumn{6}{l}{\textit{Supplementary Table S13 (continued)}} \\
 \toprule Split & Endpoint & Training prevalence & Model Brier & Constant Brier & Brier skill \\ \midrule\endhead
@@ -798,39 +810,41 @@ Flupentiofenox & $>$100 & $>$500 & Explicit \\
 
 \Needspace{12\baselineskip}\subsection*{Supplementary Table S19b. Source traceability and eligibility exclusions}
 
+PMRA denotes the Pest Management Regulatory Agency of Health Canada, as named in the cited assessment reports. Study identifiers and printed/PDF page locators below identify the underlying evidence.
+
 \paragraph{Acynonapyr.}
 
-Contact: PMRA 3328790 (2016). Table 24 printed pp106-107/PDF112-113; reference printed p149/PDF155. \url{https://publications.gc.ca/collections/collection_2026/sc-hc/h113-9/H113-9-2026-3-eng.pdf}.
+Contact: PMRA 3328790 (2016). Table 24 printed pp. 106--107 / PDF pp. 112--113; reference printed p. 149 / PDF p. 155. \url{https://publications.gc.ca/collections/collection_2026/sc-hc/h113-9/H113-9-2026-3-eng.pdf}.
 
-Oral: PMRA 3328790 (2016). Table24 printed p106/PDF112. \url{https://publications.gc.ca/collections/collection_2026/sc-hc/h113-9/H113-9-2026-3-eng.pdf}.
+Oral: PMRA 3328790 (2016). Table 24 printed p. 106 / PDF p. 112. \url{https://publications.gc.ca/collections/collection_2026/sc-hc/h113-9/H113-9-2026-3-eng.pdf}.
 
 \paragraph{Spiropidion.}
 
-Contact: PMRA 3436778 (2018). Table19 printed p92/PDF98; reference printed p153/PDF159. \url{https://publications.gc.ca/collections/collection_2026/sc-hc/h113-9/H113-9-2026-9-eng.pdf}.
+Contact: PMRA 3436778 (2018). Table 19 printed p. 92 / PDF p. 98; reference printed p. 153 / PDF p. 159. \url{https://publications.gc.ca/collections/collection_2026/sc-hc/h113-9/H113-9-2026-9-eng.pdf}.
 
-Oral: PMRA 3436778 (2018). Table19 printed p92/PDF98. \url{https://publications.gc.ca/collections/collection_2026/sc-hc/h113-9/H113-9-2026-9-eng.pdf}.
+Oral: PMRA 3436778 (2018). Table 19 printed p. 92 / PDF p. 98. \url{https://publications.gc.ca/collections/collection_2026/sc-hc/h113-9/H113-9-2026-9-eng.pdf}.
 
 \paragraph{Cyclobutrifluram.}
 
-Contact: PMRA3273332 (2020); EPA MRID51459447 index-only. Table22 printed p126/PDF131; identity printed pp9-10/PDF14-15. \url{https://publications.gc.ca/collections/collection_2025/sc-hc/h113-9/H113-9-2025-6-eng.pdf}.
+Contact: PMRA 3273332 (2020); EPA MRID 51459447 index-only. Table 22 printed p. 126 / PDF p. 131; identity printed pp. 9--10 / PDF pp. 14--15. \url{https://publications.gc.ca/collections/collection_2025/sc-hc/h113-9/H113-9-2025-6-eng.pdf}.
 
-Oral: PMRA3273332 (2020). Table22 printed p126/PDF131. \url{https://publications.gc.ca/collections/collection_2025/sc-hc/h113-9/H113-9-2025-6-eng.pdf}.
+Oral: PMRA 3273332 (2020). Table 22 printed p. 126 / PDF p. 131. \url{https://publications.gc.ca/collections/collection_2025/sc-hc/h113-9/H113-9-2025-6-eng.pdf}.
 
 \paragraph{Isocycloseram.}
 
-Oral: PMRA3246199;2016;SYN547407. Table17 printedp133/PDF138; source lines7283-7294;study reference printedp180/PDF185. \url{https://publications.gc.ca/collections/collection_2025/sc-hc/h113-9/H113-9-2025-11-eng.pdf}.
+Oral: PMRA 3246199; 2016; SYN547407. Table 17 printed p. 133 / PDF p. 138; source lines 7283--7294; study reference printed p. 180 / PDF p. 185. \url{https://publications.gc.ca/collections/collection_2025/sc-hc/h113-9/H113-9-2025-11-eng.pdf}.
 
 \paragraph{Fluxametamide.}
 
-Contact: NC-515 Acute Toxicity to Honey Bees;2014;HuntingdonLifeSciencesONE0224(E0701). Table2.6-11 printedp106/PDF113; bibliography II.2.6.3.1. \url{https://www.maff.go.jp/j/nouyaku/n_sinsa/attach/pdf/index-38.pdf}.
+Contact: NC-515 Acute Toxicity to Honey Bees; 2014; Huntingdon Life Sciences Ltd.; ONE0224 (E0701). Table 2.6-11 printed p. 106 / PDF p. 113; bibliography II.2.6.3.1. \url{https://www.maff.go.jp/j/nouyaku/n_sinsa/attach/pdf/index-38.pdf}.
 
-Oral: NC-515 Acute Toxicity to Honey Bees;2014;HuntingdonLifeSciencesONE0224(E0701). Table2.6-11 printedp106/PDF113; bibliography II.2.6.3.1. \url{https://www.maff.go.jp/j/nouyaku/n_sinsa/attach/pdf/index-38.pdf}.
+Oral: NC-515 Acute Toxicity to Honey Bees; 2014; Huntingdon Life Sciences Ltd.; ONE0224 (E0701). Table 2.6-11 printed p. 106 / PDF p. 113; bibliography II.2.6.3.1. \url{https://www.maff.go.jp/j/nouyaku/n_sinsa/attach/pdf/index-38.pdf}.
 
 \paragraph{Flupentiofenox.}
 
-Contact: SmithersUSA;2020;Report13912.6119;KCI200136. Tables2-3 printedpp8-9/PDF11-12;references PDF23. \url{https://www.maff.go.jp/j/council/sizai/nouyaku/attach/pdf/mitubati_17-7.pdf}.
+Contact: Smithers, U.S.A.; 2020; Report 13912.6119; KCI200136. Tables 2-3 printed pp. 8--9 / PDF pp. 11--12; references PDF p. 23. \url{https://www.maff.go.jp/j/council/sizai/nouyaku/attach/pdf/mitubati_17-7.pdf}.
 
-Oral: SmithersUSA;2020;Report13912.6118;KCI200140. Tables2-3 printedpp8-9/PDF11-12;references PDF23. \url{https://www.maff.go.jp/j/council/sizai/nouyaku/attach/pdf/mitubati_17-7.pdf}.
+Oral: Smithers, U.S.A.; 2020; Report 13912.6118; KCI200140. Tables 2-3 printed pp. 8--9 / PDF pp. 11--12; references PDF p. 23. \url{https://www.maff.go.jp/j/council/sizai/nouyaku/attach/pdf/mitubati_17-7.pdf}.
 
 All 11 accepted endpoints are in \path{output/unseen_identity_case_study/data_curation/frozen_scoreable_48h_endpoints.csv}, including source material, stage evidence, full key and connectivity. The complete \path{output/unseen_identity_case_study/data_curation/frozen_endpoint_ledger.csv} retains rejected observations and reasons. The ten predicted candidate structures include four identities without an accepted 48-hour endpoint; they were not removed according to prediction success. Inpyrfluxam lacks adequate stage confirmation. Longer-time observations are stored separately in \path{output/unseen_identity_case_study/data_curation/extended_times_not_primary.csv}. Sources not downloaded locally remain identified as full-text checked or unavailable in the source manifests; their local availability is not overstated. Study years refer to the individual experiments, whereas the linked assessment reports may have later publication years.
 
@@ -841,8 +855,6 @@ Sixteen candidates yielded 14 identities absent by connectivity, ten predicted s
 \begingroup\small\setlength{\tabcolsep}{4pt}
 
 \begin{longtable}{lccccp{0.28\linewidth}}
-
-
 
 \toprule Candidate & Batch & Overlap & Predicted & Evaluated & Status \\ \midrule\endfirsthead
 
@@ -890,13 +902,11 @@ The structure and prediction hashes are in \path{output/unseen_identity_case_stu
 
 \Needspace{12\baselineskip}\subsection*{Supplementary Table S19d. Individual new-structure scores, default decisions and nearest-training similarity}
 
-Continuous values are uncalibrated ECFP SVM decision scores, not probabilities. Class uses the saved zero decision threshold of the balanced SVC; it was not chosen for a regulatory decision, an external calibration target or an error-cost function. Similarity is the largest training-set ECFP Tanimoto for the corresponding split. Scores are recorded for all ten predicted identities, including the four without eligible outcomes. Source-linked outcomes and correctness at each determinate threshold are in \path{output/unseen_identity_case_study/evaluation/new_compound_case_predictions.csv}; full nearest-neighbour identities and model hashes are in the two prediction CSVs.
+Continuous values are uncalibrated ECFP SVM decision scores, not probabilities. Class uses the saved zero decision threshold of the balanced SVM; it was not chosen for a regulatory decision, an external calibration target or an error-cost function. Similarity is the largest training-set ECFP Tanimoto for the corresponding split. Scores are recorded for all ten predicted identities, including the four without eligible outcomes. Source-linked outcomes and correctness at each determinate threshold are in \path{output/unseen_identity_case_study/evaluation/new_compound_case_predictions.csv}; full nearest-neighbour identities and model hashes are in the two prediction CSVs.
 
 \begingroup\small\setlength{\tabcolsep}{4pt}
 
 \begin{longtable}{llcccc}
-
-
 
 \toprule Identity & Split & Nearest Tanimoto & $\leq100$ score (class) & $\leq11$ score (class) & $\leq1$ score (class) \\ \midrule\endfirsthead
 
@@ -1067,8 +1077,6 @@ Settings are taken from \path{code/_common.py}, \path{code/01_primary_endpoint_m
 
 \begin{longtable}{p{0.19\linewidth}p{0.72\linewidth}}
 
-
-
 \toprule Component & Implemented settings \\ \midrule\endfirsthead
 
 \multicolumn{2}{l}{\textit{Supplementary Table S21a (continued)}} \\
@@ -1083,7 +1091,7 @@ Avalon / MACCS & Avalon 1,024 bits; RDKit MACCS 167-bit vector (bit zero unused)
 
 WL-HI & Two refinement iterations; element, charge, aromaticity and bond types; normalized histogram intersection (Eq.~\eqref{eq:si-wl-kernel}). \\
 
-Primary SVM & $C=1$; \texttt{class\_weight=balanced}; precomputed kernels; default SVC tolerance $10^{-3}$ and no probability fit. \\
+Primary SVM & $C=1$; \texttt{class\_weight=balanced}; precomputed kernels; default SVM solver tolerance $10^{-3}$ and no probability fit. \\
 
 Descriptor SVM & 12 descriptors; training-fitted \texttt{RobustScaler}; RBF kernel; \texttt{gamma=scale}; $C=1$, balanced class weights. \\
 
@@ -1108,8 +1116,6 @@ All six association tests form one Benjamini--Hochberg family. The four use flag
 \begingroup\small\setlength{\tabcolsep}{4pt}
 
 \begin{longtable}{lrrrrr}
-
-
 
 \toprule Variable & $\chi^2$ & df & $p$ & Cram\'er\textquotesingle s $V$ & BH $q$ \\ \midrule\endfirsthead
 
@@ -1140,8 +1146,6 @@ Coefficients and Wald intervals are per one-unit novelty increase; divide by ten
 \begingroup\fontsize{8.5}{10.2}\selectfont\setlength{\tabcolsep}{3.5pt}
 
 \begin{longtable}{lllccccc}
-
-
 
 \toprule Split & Outcome & Contrast & Coefficient & 95\% CI & Holm $p$ & Joint $\chi^2$ & Joint $p$ \\ \midrule\endfirsthead
 
@@ -1184,8 +1188,6 @@ Bootstrap clusters are the stored Bemis--Murcko scaffold identifiers, with acycl
 \begingroup\small\setlength{\tabcolsep}{4pt}
 
 \begin{longtable}{lrrrrrr}
-
-
 
 \toprule Split & Compounds & Clusters & Singletons & Minimum & Median & Maximum \\ \midrule\endfirsthead
 
@@ -1230,8 +1232,6 @@ A: numerical median, operators ignored; B: numerical unanimous-record rule, oper
 \begingroup\small\setlength{\tabcolsep}{4pt}
 
 \begin{longtable}{llrccc}
-
-
 
 \toprule Tier & Rule & $n$ & $\leq100$: P/N/U/none & $\leq11$: P/N/U/none & $\leq1$: P/N/U/none \\ \midrule\endfirsthead
 
@@ -1290,8 +1290,6 @@ Cell order and rules follow S22a. Adult48 retains explicitly adult, exactly two-
 \begingroup\fontsize{8.5}{10.2}\selectfont\setlength{\tabcolsep}{3.5pt}
 
 \begin{longtable}{llllccc}
-
-
 
 \toprule Record filter & Routes & Rule & Tier & $\leq100$: P/N/U/none & $\leq11$: P/N/U/none & $\leq1$: P/N/U/none \\ \midrule\endfirsthead
 
@@ -1455,8 +1453,6 @@ Counts describe the original label-determining ECOTOX groups before stricter rec
 
 \begin{longtable}{lrrrrrrr}
 
-
-
 \toprule Tier & Groups & Records & All adult & All 2 d & Any /d & All Adult48 & Any Adult48 \\ \midrule\endfirsthead
 
 \multicolumn{8}{l}{\textit{Supplementary Table S22c (continued)}} \\
@@ -1488,8 +1484,6 @@ Each cell is AUROC. Before/after the slash denotes training/evaluation labels: O
 \begingroup\small\setlength{\tabcolsep}{4pt}
 
 \begin{longtable}{llrccccc}
-
-
 
 \toprule Split & Representation & Cut-off & O/O & O/R & R/O & R/R & Positive O/R \\ \midrule\endfirsthead
 
@@ -1598,8 +1592,6 @@ Time & Descriptors12 & 1 & 0.650 & 0.650 & 0.646 & 0.646 & 24/24 \\
 \begingroup\fontsize{8.5}{10.2}\selectfont\setlength{\tabcolsep}{3.5pt}
 
 \begin{longtable}{llllccccc}
-
-\multicolumn{9}{l}{\textit{Supplementary Table S23b}} \\
 
 \toprule Scenario & Policy & Split & Train/test & O/O & O/R & R/O & R/R & R/R minus O/O [95\% CI] \\ \midrule\endfirsthead
 
@@ -1713,8 +1705,6 @@ Label vectors are ordered 100/11/1, with U unresolved. Raw rows are zero-based d
 
 \begin{longtable}{lllp{0.21\linewidth}cccl}
 
-
-
 \toprule Case & CAS & Route & Original value and unit & \shortstack{Adult48/\\Adult48+AI} & Original & Rule D & Raw rows \\ \midrule\endfirsthead
 
 \multicolumn{8}{l}{\textit{Supplementary Table S24a (continued)}} \\
@@ -1749,8 +1739,6 @@ Values are in $\mu$g/bee. All four identities are benchmark-positive and source-
 
 \begin{longtable}{lllllcrc}
 
-
-
 \toprule Case & Source & Identity & CAS & Route & Value & Hours & MRID \\ \midrule\endfirsthead
 
 \multicolumn{8}{l}{\textit{Supplementary Table S24b (continued)}} \\
@@ -1776,8 +1764,6 @@ Counts are unique benchmark identities at each sequential stage, not the split-s
 \begingroup\small\setlength{\tabcolsep}{4pt}
 
 \begin{longtable}{lrrr}
-
-
 
 \toprule Source screen & Full-key matched & Same route & Three cut-offs determinate \\ \midrule\endfirsthead
 
@@ -1814,8 +1800,6 @@ Cells give counts and percentages within membership groups. Included means same-
 \begingroup\fontsize{8.5}{10.2}\selectfont\setlength{\tabcolsep}{3.5pt}
 
 \begin{longtable}{llcccccc}
-
-
 
 \toprule Field & Value & OFT in & OFT out & OFT48 in & OFT48 out & EPA in & EPA out \\ \midrule\endfirsthead
 
@@ -1870,8 +1854,6 @@ For every benchmark molecule, the descriptive statistic is its largest ECFP4 Tan
 \begingroup\small\setlength{\tabcolsep}{4pt}\setlength{\LTpre}{0pt}
 
 \begin{longtable}{llrrrrc}
-
-
 
 \toprule Source & Membership & $n$ & Selected set & References/query & Median & Q1--Q3 \\ \midrule\endfirsthead
 

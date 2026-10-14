@@ -74,7 +74,6 @@ objects and three ordered training tables are supplied.
 
 - `restored_vs_original_test_scores.csv`: all 1,863 paired original/restored scores.
 - `restoration_metric_summary.csv`: nine per-model maximum score errors.
-- `public_interface_validation.csv`: independent end-to-end inference recovery.
 - `restoration_manifest.json`: exact model settings, original training indices,
   versions, artifact hashes, fingerprint definition and provenance.
 - `ordered_training_*.csv`: ordered training structures and original labels.

@@ -9,7 +9,7 @@ import urllib.request
 from materials_common import ASSET_NAMES, require, verify_blob, load_metadata
 
 REPOSITORY = 'hiiiy-pm/Endpoint-Definitions-and-Label-Provenance-in-Honey-Bee-Toxicity-Benchmarking'
-TAG = 'study-materials'
+TAG = 'submission-materials'
 TITLE = 'Study materials'
 BODY = ('Materials for "Endpoint Definitions and Label Provenance in Honey-Bee Toxicity Benchmarking".\n\n'
         'The manuscript, Supplementary Information, cover letter and LaTeX sources are accompanied by '
@@ -50,7 +50,7 @@ def find_release():
         if len(rows) < 100:
             break
         page += 1
-    require(len(found) <= 1, 'Multiple releases use the study-materials tag')
+    require(len(found) <= 1, 'Multiple releases use the ' + TAG + ' tag')
     return found[0] if found else None
 
 def verified_assets(metadata_path, assets_dir):

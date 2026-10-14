@@ -24,10 +24,15 @@ DATA = ROOT / 'source_data'
 RES = ROOT / 'results'
 OUT.mkdir(parents=True, exist_ok=True)
 _parser = argparse.ArgumentParser(description=__doc__)
+_parser.add_argument('--output-dir', type=Path, help='Write selected exports and derived tables to this directory')
+_parser.add_argument('--qa-dir', type=Path, help='Write render-time alignment reports (audit_panel_alignment must be on PYTHONPATH)')
 _parser.add_argument('--only', nargs='+', help='Export only the requested figure stems')
 _parser.add_argument('--publication-layout', '--layout-13page', '--compact-main', dest='reference_layout', action='store_true',
                      help='Regenerate the selected reference layouts; preserve the current provenance panel.')
 _ARGS = _parser.parse_args()
+if _ARGS.output_dir is not None:
+    OUT = _ARGS.output_dir
+    OUT.mkdir(parents=True, exist_ok=True)
 _REFERENCE_LAYOUT = _ARGS.reference_layout
 _SELECTED = _ARGS.only
 if _REFERENCE_LAYOUT and not _SELECTED:
@@ -133,6 +138,12 @@ def save(fig, stem, align=None, tick_gap_axis=None):
         plt.close(fig)
         return
     fig.canvas.draw()
+    if _ARGS.qa_dir is not None:
+        from audit_panel_alignment import require_matplotlib_panel_alignment
+        require_matplotlib_panel_alignment(
+            fig, json_out=_ARGS.qa_dir / f'{stem}.alignment.json',
+            overlay_svg=_ARGS.qa_dir / f'{stem}.alignment.svg',
+            tolerance_pt=1.5, gutter_tolerance_pt=1.5, strict=True, **(align or {}))
     export = {}
     fig.savefig(OUT / f'{stem}.pdf', **export)
     fig.savefig(OUT / f'{stem}.png', dpi=600, **export)
@@ -505,13 +516,15 @@ OWN_PAIRS = {100: {(1, 0), (2, 0), (3, 0)},
 AUC_DIVERGING = matplotlib.colors.LinearSegmentedColormap.from_list(
     'auc_diverging', ['#B3440E', '#F2D3BE', '#F7F7F7', '#C6DBEC', '#0B5C91'])
 
-fig = plt.figure(figsize=(W2, 6.45))
+fig = plt.figure(figsize=(W2, 5.45))
 outer = fig.add_gridspec(2, 1, height_ratios=[1.0, 1.45], hspace=0.66)
 gsa = outer[0].subgridspec(1, 3, wspace=0.16)
 gsb = outer[1].subgridspec(1, 2, width_ratios=[1.10, 1.0], wspace=0.66)
 
+axes_a = []
 for j, sp in enumerate(SPLITS):
     ax = fig.add_subplot(gsa[0, j])
+    axes_a.append(ax)
     if j == 0:
         panel(ax, 'a', x=-0.30, y=1.30)
     d = curve[curve.split == sp]
@@ -554,17 +567,17 @@ im = ax_b.imshow(M, aspect='auto', cmap=AUC_DIVERGING,
 for i, (sp, t) in enumerate(rows_b):
     for j, (hi, lo) in enumerate(PAIRS):
         v = M[i, j]
-        ax_b.text(j, i, f'{v:.2f}', ha='center', va='center', fontsize=6.5,
+        ax_b.text(j, i, f'{v:.2f}', ha='center', va='center', fontsize=8.0,
                   color='white' if (v > 0.86 or v < 0.36) else INK)
         if (hi, lo) in OWN_PAIRS[t]:
             ax_b.add_patch(plt.Rectangle((j - 0.47, i - 0.47), 0.94, 0.94, fill=False,
                                          edgecolor='#3A3A3A', lw=0.75, zorder=4))
 for k in (3, 6):
     ax_b.axhline(k - 0.5, color='white', lw=2.6)
-ax_b.set_xticks(range(len(PAIRS)), [f'T{hi}>T{lo}' for hi, lo in PAIRS], fontsize=7.0)
+ax_b.set_xticks(range(len(PAIRS)), [f'T{hi}>T{lo}' for hi, lo in PAIRS], fontsize=7.5)
 ax_b.get_xticklabels()[0].set_color(C_EP['1'])
 ax_b.get_xticklabels()[0].set_fontweight('bold')
-ax_b.set_yticks(range(len(rows_b)), [f'{sp} · model ≤{t}' for sp, t in rows_b], fontsize=7.0)
+ax_b.set_yticks(range(len(rows_b)), [f'{sp} · model ≤{t}' for sp, t in rows_b], fontsize=8.0)
 for s in ax_b.spines.values():
     s.set_visible(False)
 ax_b.tick_params(length=0)
@@ -572,9 +585,9 @@ ax_b.set_title('Tier-pair AUROC of saved ECFP scores', loc='left', fontweight='b
                pad=7, color=INK, fontsize=8.5)
 cb = fig.colorbar(im, ax=ax_b, fraction=0.045, pad=0.025)
 cb.set_ticks([0.3, 0.5, 0.75, 1.0])
-cb.set_label('P(higher tier ranked above lower tier)', fontsize=6.8)
+cb.set_label('P(higher tier ranked above lower tier)', fontsize=7.5)
 cb.outline.set_linewidth(0.5)
-cb.ax.tick_params(length=2, labelsize=6.6)
+cb.ax.tick_params(length=2, labelsize=7.5)
 
 # c: Tier1 exclusion from evaluation, then from training
 ax_c = fig.add_subplot(gsb[0, 1])
@@ -599,7 +612,7 @@ ax_c.tick_params(axis='y', length=0)
 ax_c.set_ylim(-0.9, (len(SPLITS) - 1) * GAP + len(QUANT) - 0.1)
 ax_c.set_xlim(0.40, 1.0)
 ax_c.set_xticks([0.4, 0.6, 0.8, 1.0])
-ax_c.set_xlabel('Test AUROC (scaffold-cluster 95% interval)')
+ax_c.set_xlabel('Test AUROC\n(scaffold-cluster 95% interval)')
 xgrid(ax_c)
 trim(ax_c, keep_left=False)
 ax_c.set_title('Tier1 exclusion', loc='left', fontweight='bold', pad=7, color=INK,
@@ -607,16 +620,19 @@ ax_c.set_title('Tier1 exclusion', loc='left', fontweight='bold', pad=7, color=IN
 hq = [Line2D([0], [0], marker=mk, lw=0, color=col, markersize=4.4,
              markerfacecolor=col if filled else 'white', markeredgecolor=col,
              markeredgewidth=0.9, label=lab) for _q, lab, col, mk, filled in QUANT]
-ax_c.legend(handles=hq, frameon=False, loc='upper left', bbox_to_anchor=(-0.02, -0.20),
-            ncol=2, fontsize=6.6, handletextpad=0.3, columnspacing=1.0)
+fig.legend(handles=hq, frameon=False, loc='upper center', bbox_to_anchor=(0.5, -0.012),
+           ncol=2, fontsize=8.0, handletextpad=0.3, columnspacing=1.4)
 
-save(fig, 'Fig4_class_count_and_tier_boundary', align={'require_panel_labels': False})
+save(fig, 'Fig4_class_count_and_tier_boundary', align={'axes': [*axes_a, ax_b, ax_c],
+     'panel_ids': ['a-random', 'a-maxmin', 'a-time', 'b', 'c'],
+     'row_groups': [['a-random', 'a-maxmin', 'a-time'], ['b', 'c']],
+     'require_panel_labels': False})
 
 # --------------------------------------------------------------------------
 # Supplementary Figure S3 - neighbourhood, scaffold and novelty diagnostics
 # --------------------------------------------------------------------------
-fig = plt.figure(figsize=(W2, 3.30))
-gss = fig.add_gridspec(1, 3, wspace=0.95)
+fig = plt.figure(figsize=(W2, 3.70))
+gss = fig.add_gridspec(1, 3, wspace=1.16)
 
 # a: significance matrix for Tier2 excess local mixing
 ax = fig.add_subplot(gss[0, 0])
@@ -635,13 +651,13 @@ ax.imshow(M, aspect='auto', cmap=matplotlib.colors.ListedColormap(['#ECECEC', '#
 for i in range(len(rows) + 1):
     ax.axhline(i - 0.5, color='white', lw=0.9)
 for j in range(4):
-    ax.axvline(j - 0.5, color='white', lw=0.9)
-ax.set_xticks(range(3), ['Global', 'Source ×\ninsect.', '+ route'], fontsize=6.8,
+    ax.vlines(j - 0.5, -0.5, len(rows) - 0.5, color='white', lw=0.9)
+ax.set_xticks(range(3), ['Global', 'Source ×\ninsect.', '+ route'], fontsize=8.0,
               rotation=0, ha='center')
 # Shift the outside labels away from the two-line middle label.
 ax.get_xticklabels()[0].set_ha('right')
 ax.get_xticklabels()[2].set_ha('left')
-ax.set_yticks(range(len(rows)), [f'{rep} · k={k}' for rep, k in rows], fontsize=7.0)
+ax.set_yticks(range(len(rows)), [f'{rep} · k={k}' for rep, k in rows], fontsize=8.2)
 for j in range(3):
     ax.text(j, -1.4, f'{int(np.nansum(M[:, j]))}/15', ha='center', va='bottom',
             fontsize=7.8, fontweight='bold', color=INK)
@@ -658,7 +674,7 @@ ax.legend(handles=[
            label='significant at BH-FDR 0.05'),
     Line2D([0], [0], marker='s', lw=0, markersize=5, color='#ECECEC',
            markeredgecolor='#C4C4C4', markeredgewidth=0.5, label='not significant')],
-    frameon=False, loc='upper left', bbox_to_anchor=(-0.02, -0.14), fontsize=7.0,
+    frameon=False, loc='upper left', bbox_to_anchor=(-0.02, -0.14), fontsize=8.2,
     handletextpad=0.4, ncol=1)
 ax_mix = ax
 
@@ -676,8 +692,8 @@ for y0, r in zip(ys, rows_s):
                marker='o' if r.analysis == 'Scaffold-equal' else 's')
 ax.axvline(0, color='#9A9A9A', lw=0.7, ls=(0, (3, 2)))
 ax.set_yticks(ys, [f'{r.minimum} · {"equal" if r.analysis=="Scaffold-equal" else "paired"}'
-                   f' · {r.contrast}' for r in rows_s], fontsize=7.0)
-ax.set_xlabel('Δ leave-one-out scaffold entropy')
+                   f' · {r.contrast}' for r in rows_s], fontsize=8.2)
+ax.set_xlabel('Δ leave-one-out\nscaffold entropy')
 xgrid(ax)
 trim(ax, keep_left=False)
 ax.tick_params(axis='y', length=0)
@@ -700,8 +716,8 @@ for y0, (sp, ep) in zip(ys, order):
     ax.scatter(r.estimate, y0, s=20, zorder=3,
                color=C_EP[ep] if sig else 'white', edgecolor=C_EP[ep], linewidth=0.9)
 ax.axvline(0, color='#9A9A9A', lw=0.7, ls=(0, (3, 2)))
-ax.set_yticks(ys, [f'{sp} · ≤{ep}' for sp, ep in order], fontsize=7.0)
-ax.set_xlabel('Brier-loss slope per +0.1 novelty')
+ax.set_yticks(ys, [f'{sp} · ≤{ep}' for sp, ep in order], fontsize=8.2)
+ax.set_xlabel('Brier-loss slope\nper +0.1 novelty')
 ax.set_xticks([0.0, 0.02, 0.04])
 xgrid(ax)
 trim(ax, keep_left=False)
@@ -727,7 +743,7 @@ if _REFERENCE_LAYOUT:
         pd.read_csv(DATA / 'figure_label_rule_comparison.csv', dtype={'Tier': str}).reset_index(drop=True),
         check_dtype=False)
 else:
-    qual.to_csv(DATA / 'figure_label_rule_comparison.csv', index=False)
+    qual.to_csv((OUT if _ARGS.output_dir is not None else DATA) / 'figure_label_rule_comparison.csv', index=False)
 SOURCES = [('OFT', 'OpenFoodTox', '#0072B2', 'o'),
            ('OFT 48 h', 'OpenFoodTox, 48 h', '#56B4E9', 's'),
            ('EPA', 'EPA review', '#E69F00', 'D')]

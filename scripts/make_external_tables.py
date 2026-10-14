@@ -8,6 +8,19 @@ def add(s): lines.append(s)
 def fmt(x,n=3): return '--' if pd.isna(x) else f'{x:.{n}f}'
 def esc(x):
  return str(x).replace('&',r'\&').replace('_',r'\_').replace('%',r'\%').replace('>',r'$>$')
+def source_reference(x):
+ """Format ledger locators for reading without changing source identifiers."""
+ s=str(x)
+ # Names and report boundaries follow the archived regulatory source texts.
+ s=s.replace('HuntingdonLifeSciencesONE0224(E0701)', 'Huntingdon Life Sciences Ltd.; ONE0224 (E0701)')
+ s=s.replace('SmithersUSA', 'Smithers, U.S.A.')
+ s=re.sub(r';\s*', '; ', s)
+ s=re.sub(r'\b(Table|Tables|PMRA|MRID|Report|lines)\s*(?=\d)', r'\1 ', s)
+ s=re.sub(r'printed\s*(pp?)\.?\s*(?=\d)', r'printed \1. ', s)
+ s=re.sub(r'PDF\s*(\d+(?:-\d+)?)', lambda m: 'PDF '+('pp. ' if '-' in m[1] else 'p. ')+m[1], s)
+ s=re.sub(r'\s*/\s*(?=PDF)', ' / ', s)
+ s=re.sub(r'((?:pp\.|lines)\s+\d+)-(\d+)', r'\1--\2', s)
+ return esc(s)
 def table(title,spec,head,rows,note):
  add(r'\Needspace{12\baselineskip}\subsection*{'+title+'}')
  add(note)
@@ -81,10 +94,11 @@ for name,q in e.groupby('candidate',sort=False):
 table('Supplementary Table S19a. Eligible unseen-identity 48-hour endpoints','lccc',r'Chemical identity & Contact LD$_{50}$ & Oral LD$_{50}$ & Adult evidence',rows,
  r'Values retain their original qualifiers and are reported in $\mu$g per bee. Active-ingredient dose basis is indicated only where stated by the source; test-material and dose-basis limitations remain in the endpoint ledger. -- means no eligible endpoint, not no toxicity. Adult evidence is explicit in the source or inferred from regulatory separation of adult acute and larval studies. The latter cases are excluded from the explicit-adult sensitivity. For acynonapyr, $>98.8$ cannot determine the 100-cut-off label; for cyclobutrifluram, $>72.2$ cannot determine it. Same-connectivity stereoisomer mixtures are evaluated by the non-chiral model without asserting exact material-level stereochemical identity.')
 add(r'\subsection*{Supplementary Table S19b. Source traceability and eligibility exclusions}')
+add(r'PMRA denotes the Pest Management Regulatory Agency of Health Canada, as named in the cited assessment reports. Study identifiers and printed/PDF page locators below identify the underlying evidence.')
 for name,q in e.groupby('candidate',sort=False):
  add(r'\paragraph{'+name.capitalize()+r'.}')
  for _,a in q.iterrows():
-  add(esc(a.route.capitalize())+': '+esc(a.study_id)+'. '+esc(a.source_location)+'. '+r'\url{'+a.source_url+r'}.')
+  add(esc(a.route.capitalize())+': '+source_reference(a.study_id)+'. '+source_reference(a.source_location)+'. '+r'\url{'+a.source_url+r'}.')
 add(r'All 11 accepted endpoints are in \path{output/unseen_identity_case_study/data_curation/frozen_scoreable_48h_endpoints.csv}, including source material, stage evidence, full key and connectivity. The complete \path{output/unseen_identity_case_study/data_curation/frozen_endpoint_ledger.csv} retains rejected observations and reasons. The ten predicted candidate structures include four identities without an accepted 48-hour endpoint; they were not removed according to prediction success. Inpyrfluxam lacks adequate stage confirmation. Longer-time observations are stored separately in \path{output/unseen_identity_case_study/data_curation/extended_times_not_primary.csv}. Sources not downloaded locally remain identified as full-text checked or unavailable in the source manifests; their local availability is not overstated. Study years refer to the individual experiments, whereas the linked assessment reports may have later publication years.')
 # S20 all pilot metrics, transparent confusion matrices and sizes.
 pdft=pd.read_csv(ROOT/'output/unseen_identity_case_study/evaluation/pilot_performance.csv')

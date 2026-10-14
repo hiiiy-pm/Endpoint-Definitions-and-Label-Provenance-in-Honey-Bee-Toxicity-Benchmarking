@@ -8,13 +8,15 @@ model=pd.read_csv(data/'figure_model_decomposition.csv',dtype={'endpoint':str})
 matched=pd.read_csv(data/'figure_matched_n125.csv',dtype={'endpoint':str})
 scaf=pd.read_csv(data/'figure_scaffold_corrected.csv')
 
-def longtable_open(table_number, column_spec, header):
+def longtable_open(table_number, column_spec, header, continued=False):
     """Repeat the table identifier and column names after each page break."""
     columns = header.count('&') + 1
+    identifier = rf'\multicolumn{{{columns}}}{{l}}{{\textit{{Supplementary Table {table_number} (continued)}}}} \\'
     return [
         rf'\begin{{longtable}}{{{column_spec}}}',
+        identifier if continued else '',
         header + r'\endfirsthead',
-        rf'\multicolumn{{{columns}}}{{l}}{{\textit{{Supplementary Table {table_number} (continued)}}}} \\',
+        identifier,
         header + r'\endhead',
         rf'\midrule\multicolumn{{{columns}}}{{r}}{{Continued on next page}}\\\endfoot',
         r'\bottomrule\endlastfoot',
@@ -45,9 +47,9 @@ lines.append(r'\end{longtable}')
 
 mb = pd.read_csv(root/'results/decomposition/06_model_decomposition_bootstrap.csv')
 mb = mb[(mb.Bootstrap == 'ScaffoldCluster') & mb.PrimaryFamily]
-lines.append(r'Fusion contrasts below use scaffold-cluster 95\% simultaneous intervals within each split and endpoint. The family contains structure minus metadata, fusion minus metadata and fusion minus structure; it is separate from the endpoint-contrast family. All 5,000 draws are valid for these contrasts.')
+lines.append(r'\Needspace{12\baselineskip}Fusion contrasts below use scaffold-cluster 95\% simultaneous intervals within each split and endpoint. The family contains structure minus metadata, fusion minus metadata and fusion minus structure; it is separate from the endpoint-contrast family. All 5,000 draws are valid for these contrasts.')
 assert (mb.B_valid == 5000).all()
-lines.extend(longtable_open('S5', 'llccc', r'\toprule Split & Endpoint & Contrast & $\Delta$AUROC & 95\% simultaneous CI \\ \midrule'))
+lines.extend(longtable_open('S5', 'llccc', r'\toprule Split & Endpoint & Contrast & $\Delta$AUROC & 95\% simultaneous CI \\ \midrule', continued=True))
 model_contrasts = {'ECFPStructure-AllMetadata': 'Structure--metadata', 'ECFP+AllMetadata-AllMetadata': 'Fusion--metadata', 'ECFP+AllMetadata-ECFPStructure': 'Fusion--structure'}
 for r in mb.itertuples():
     lines.append(f'{r.Split} & {r.Threshold} & {model_contrasts[r.Comparison]} & {r.ObservedDeltaAUROC:.3f} & {r.SimultaneousCI_low:.3f} to {r.SimultaneousCI_high:.3f}' + r' \\')
@@ -63,13 +65,13 @@ for sp in ['Random','MaxMin','Time']:
     cells=[f'{d.loc[t,"MeanAUROC"]:.3f} [{d.loc[t,"AUROC_Q025"]:.3f}, {d.loc[t,"AUROC_Q975"]:.3f}]' for t in [100,11,1]]
     lines.append(sp + ' & ' + ' & '.join(cells) + r' \\')
 lines.append(r'\end{longtable}')
-lines.extend(longtable_open('S9', 'llccc', r'\toprule Split & Contrast & Mean $\Delta$AUROC & 2.5th percentile & 97.5th percentile \\ \midrule'))
+lines.extend(longtable_open('S9', 'llccc', r'\toprule Split & Contrast & Mean $\Delta$AUROC & 2.5th percentile & 97.5th percentile \\ \midrule', continued=True))
 for r in mc[(mc.n_per_class==125)&mc.Comparison.isin(['11-100','1-100'])].itertuples():
     lines.append(f'{r.Split} & {r.Comparison} & {r.MeanDeltaAUROC:.3f} & {r.Q025:.3f} & {r.Q975:.3f}' + r' \\')
 lines.append(r'\end{longtable}')
 
 lines.append(r'\subsection*{Supplementary Table S7. Leave-one-out scaffold-entropy contrasts}')
-lines.append(r'Scaffold-equal and shared-scaffold paired analyses estimate different summaries. The paired analysis restricts to scaffolds containing both compared tiers; its negative contrasts should not be interpreted as confirmation of the scaffold-equal estimand.')
+lines.append(r'Scaffold-equal and shared-scaffold paired analyses estimate different summaries. The paired analysis is restricted to scaffolds containing both compared tiers; its negative contrasts should not be interpreted as confirmation of the scaffold-equal estimand.')
 sb = pd.read_csv(root/'results/geometry/08_scaffold_sensitivity_bootstrap.csv')
 lines.extend(longtable_open('S7', 'llllccc', r'\toprule Min. size & Weighting & Contrast & Estimate & 95\% CI low & 95\% CI high & Scaffolds \\ \midrule'))
 for _,r in scaf.iterrows():

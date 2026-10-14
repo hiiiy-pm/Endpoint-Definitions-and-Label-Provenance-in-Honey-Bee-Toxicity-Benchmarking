@@ -6,6 +6,7 @@ are shown for broad and route-matched cohorts. No model or label is fitted.
 """
 from pathlib import Path
 import shutil
+import argparse
 import numpy as np
 import pandas as pd
 import matplotlib
@@ -14,6 +15,12 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 
 ROOT=Path(__file__).resolve().parents[1]
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--output-dir', type=Path, help='Write figure exports and derived table to this directory')
+parser.add_argument('--qa-dir', type=Path, help='Write render-time alignment report (audit_panel_alignment must be on PYTHONPATH)')
+args=parser.parse_args()
+OUT=args.output_dir if args.output_dir is not None else ROOT/'figures'
+OUT.mkdir(parents=True,exist_ok=True)
 DATA=ROOT/'output/external_evaluation/frozen_contrasts_ECFP.csv'
 source=pd.read_csv(DATA)
 blocks=[
@@ -31,10 +38,10 @@ for block,(src,cohort,label) in enumerate(blocks):
             for _,r in g.iterrows():
                 rows.append({**r.to_dict(),'block':block,'block_label':label})
 table=pd.DataFrame(rows)
-table.to_csv(ROOT/'source_data/figure_external_reassessment.csv',index=False,encoding='utf-8-sig')
+table.to_csv((OUT if args.output_dir is not None else ROOT/'source_data')/'figure_external_reassessment.csv',index=False,encoding='utf-8-sig')
 
 plt.rcParams.update({'font.family':'sans-serif','font.sans-serif':['Arial','DejaVu Sans'],
-    'font.size':8,'axes.labelsize':8,'xtick.labelsize':8,'ytick.labelsize':7.5,
+    'font.size':8,'axes.labelsize':8.5,'xtick.labelsize':8.5,'ytick.labelsize':8.5,
     'pdf.fonttype':42,'svg.fonttype':'none','axes.unicode_minus':False})
 fig,ax=plt.subplots(figsize=(7.16,7.0))
 fig.subplots_adjust(left=.37,right=.985,top=.925,bottom=.18)
@@ -64,7 +71,7 @@ for block,(src,cohort,label) in enumerate(blocks):
                     ax.plot([r.ci_low,r.ci_high],[y+offset,y+offset],linestyle='none',marker='|',color=colors[lab],ms=4,zorder=2)
                 ax.plot(r.estimate,y+offset,marker=markers[lab],ms=4.2,linestyle='none',
                     markerfacecolor='white' if sparse else colors[lab],markeredgecolor=colors[lab],markeredgewidth=.85,zorder=3)
-    ax.text(-.57,block*7-.94,label,transform=ax.get_yaxis_transform(),ha='left',va='bottom',fontweight='bold',fontsize=8,clip_on=False)
+    ax.text(-.57,block*7-.94,label,transform=ax.get_yaxis_transform(),ha='left',va='bottom',fontweight='bold',fontsize=8.5,clip_on=False)
 ax.axvline(0,color='#C0C6CC',ls=':',lw=.85,zorder=0)
 ax.set_yticks(ticks,ticklabels)
 ax.tick_params(axis='y',length=0,pad=7)
@@ -76,13 +83,18 @@ ax.spines[['top','right','left']].set_visible(False)
 ax.spines['bottom'].set_color('#777E87')
 handles=[Line2D([],[],color=colors[k],marker=markers[k],linestyle='none',ms=4.5,
     label='Original labels' if k=='original' else 'External-source labels') for k in colors]
-fig.legend(handles=handles,loc='upper right',bbox_to_anchor=(.985,.995),ncol=2,frameon=False,fontsize=8)
-fig.text(.03,.033,'Matched compounds and saved ECFP scores within each row. Open markers: a constituent class has fewer than five compounds.\n'
-    'Intervals are omitted for sparse comparisons; filled-marker intervals are exploratory 95% paired bootstrap intervals.\n'
-    'An absent marker denotes an undefined contrast. Complete counts, intervals and eligibility rules are supplied in the Supplementary Information.',
-    fontsize=7,ha='left',va='bottom',color='#40464F')
+fig.legend(handles=handles,loc='upper right',bbox_to_anchor=(.985,.995),ncol=2,frameon=False,fontsize=8.5)
+fig.text(.03,.033,'Matched compounds and saved ECFP scores within each row. Open markers: a constituent class has fewer than\n'
+    'five compounds. Intervals are omitted for sparse comparisons; filled-marker intervals are exploratory 95%\n'
+    'paired bootstrap intervals. An absent marker denotes an undefined contrast. Complete counts, intervals and\n'
+    'eligibility rules are supplied in the Supplementary Information.',
+    fontsize=8.2,ha='left',va='bottom',color='#40464F')
 fig.canvas.draw()
-path=ROOT/'figures/FigS4_label_source_contrasts'
+if args.qa_dir is not None:
+    from audit_panel_alignment import require_matplotlib_panel_alignment
+    require_matplotlib_panel_alignment(fig, json_out=args.qa_dir/'FigS4_label_source_contrasts.alignment.json',
+        tolerance_pt=1.5, gutter_tolerance_pt=1.5, strict=True)
+path=OUT/'FigS4_label_source_contrasts'
 fig.savefig(path.with_suffix('.pdf'))
 fig.savefig(path.with_suffix('.svg'))
 fig.savefig(path.with_suffix('.png'),dpi=600)

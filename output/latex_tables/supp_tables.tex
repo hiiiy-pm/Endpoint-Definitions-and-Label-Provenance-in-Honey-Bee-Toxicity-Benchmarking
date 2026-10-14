@@ -1,5 +1,6 @@
 \subsection*{Supplementary Table S1. Full test AUROC across representations, splits and endpoints}
 \begin{longtable}{llccc}
+
 \toprule Split & Representation & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
 \multicolumn{5}{l}{\textit{Supplementary Table S1 (continued)}} \\
 \toprule Split & Representation & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
@@ -26,6 +27,7 @@ Time & Descriptors12 & 0.390 & 0.567 & 0.650 \\
 \end{longtable}
 \subsection*{Supplementary Table S5. Test AUROC for metadata, structure and fused models}
 \begin{longtable}{llccc}
+
 \toprule Split & Model & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
 \multicolumn{5}{l}{\textit{Supplementary Table S5 (continued)}} \\
 \toprule Split & Model & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
@@ -50,8 +52,9 @@ Time & ECFP structure & 0.691 & 0.754 & 0.792 \\
 Time & Structure $+$ metadata & 0.667 & 0.847 & 0.943 \\
 \addlinespace
 \end{longtable}
-Fusion contrasts below use scaffold-cluster 95\% simultaneous intervals within each split and endpoint. The family contains structure minus metadata, fusion minus metadata and fusion minus structure; it is separate from the endpoint-contrast family. All 5,000 draws are valid for these contrasts.
+\Needspace{12\baselineskip}Fusion contrasts below use scaffold-cluster 95\% simultaneous intervals within each split and endpoint. The family contains structure minus metadata, fusion minus metadata and fusion minus structure; it is separate from the endpoint-contrast family. All 5,000 draws are valid for these contrasts.
 \begin{longtable}{llccc}
+\multicolumn{5}{l}{\textit{Supplementary Table S5 (continued)}} \\
 \toprule Split & Endpoint & Contrast & $\Delta$AUROC & 95\% simultaneous CI \\ \midrule\endfirsthead
 \multicolumn{5}{l}{\textit{Supplementary Table S5 (continued)}} \\
 \toprule Split & Endpoint & Contrast & $\Delta$AUROC & 95\% simultaneous CI \\ \midrule\endhead
@@ -88,6 +91,7 @@ Time & 1 & Fusion--structure & 0.151 & 0.021 to 0.281 \\
 \subsection*{Supplementary Table S9. Mean AUROC and training-subsample ranges at 125 compounds per class}
 Cells give means and 2.5th--97.5th percentile ranges across 200 repeated balanced training subsamples. The test identities are fixed. These ranges describe training-subsample variability and are not independent-test confidence intervals; Figure~4a uses medians.
 \begin{longtable}{lccc}
+
 \toprule Split & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
 \multicolumn{4}{l}{\textit{Supplementary Table S9 (continued)}} \\
 \toprule Split & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
@@ -98,6 +102,7 @@ MaxMin & 0.554 [0.505, 0.604] & 0.715 [0.669, 0.760] & 0.747 [0.691, 0.793] \\
 Time & 0.604 [0.542, 0.663] & 0.705 [0.632, 0.761] & 0.771 [0.715, 0.820] \\
 \end{longtable}
 \begin{longtable}{llccc}
+\multicolumn{5}{l}{\textit{Supplementary Table S9 (continued)}} \\
 \toprule Split & Contrast & Mean $\Delta$AUROC & 2.5th percentile & 97.5th percentile \\ \midrule\endfirsthead
 \multicolumn{5}{l}{\textit{Supplementary Table S9 (continued)}} \\
 \toprule Split & Contrast & Mean $\Delta$AUROC & 2.5th percentile & 97.5th percentile \\ \midrule\endhead
@@ -111,8 +116,9 @@ Time & 11-100 & 0.101 & 0.007 & 0.186 \\
 Time & 1-100 & 0.167 & 0.078 & 0.256 \\
 \end{longtable}
 \subsection*{Supplementary Table S7. Leave-one-out scaffold-entropy contrasts}
-Scaffold-equal and shared-scaffold paired analyses estimate different summaries. The paired analysis restricts to scaffolds containing both compared tiers; its negative contrasts should not be interpreted as confirmation of the scaffold-equal estimand.
+Scaffold-equal and shared-scaffold paired analyses estimate different summaries. The paired analysis is restricted to scaffolds containing both compared tiers; its negative contrasts should not be interpreted as confirmation of the scaffold-equal estimand.
 \begin{longtable}{llllccc}
+
 \toprule Min. size & Weighting & Contrast & Estimate & 95\% CI low & 95\% CI high & Scaffolds \\ \midrule\endfirsthead
 \multicolumn{7}{l}{\textit{Supplementary Table S7 (continued)}} \\
 \toprule Min. size & Weighting & Contrast & Estimate & 95\% CI low & 95\% CI high & Scaffolds \\ \midrule\endhead
@@ -130,6 +136,7 @@ n$\geq$5 & Paired & T2$-$T3 & -0.127 & -0.234 & -0.013 & 6 \\
 \subsection*{Supplementary Table S2. Scaffold-cluster simultaneous intervals for the two-contrast family within each representation and split}
 All 5,000 bootstrap draws are valid for every reported contrast (zero single-class draws). Intervals are simultaneous only within the two stated contrasts for each representation and split.
 \begin{longtable}{llcccc}
+
 \toprule Split & Representation & Contrast & $\Delta$AUROC & 95\% CI low & 95\% CI high \\ \midrule\endfirsthead
 \multicolumn{6}{l}{\textit{Supplementary Table S2 (continued)}} \\
 \toprule Split & Representation & Contrast & $\Delta$AUROC & 95\% CI low & 95\% CI high \\ \midrule\endhead
@@ -171,6 +178,7 @@ Time & Descriptors12 & $\leq1-\leq100$ & 0.260 & 0.104 & 0.416 \\
 \end{longtable}
 \subsection*{Supplementary Table S3. Scaffold-cluster simultaneous intervals over the ten contrasts within each split}
 \begin{longtable}{llccc}
+
 \toprule Split & Representation & Contrast & $\Delta$AUROC & 95\% CI \\ \midrule\endfirsthead
 \multicolumn{5}{l}{\textit{Supplementary Table S3 (continued)}} \\
 \toprule Split & Representation & Contrast & $\Delta$AUROC & 95\% CI \\ \midrule\endhead
@@ -213,6 +221,7 @@ Time & Descriptors12 & $\leq1-\leq100$ & 0.260 & 0.055 to 0.465 \\
 \subsection*{Supplementary Table S4. Test AUROC for additional learners on ECFP4 bits}
 Point-estimate sensitivity. Logistic regression selects $C$ by five-fold training-only AUROC; the selected values at 100/11/1 are 0.10/0.10/0.10 for Random and 0.01/0.10/0.10 for MaxMin and Time. Random forest uses 500 trees and \texttt{balanced\_subsample} weights; details are in Supplementary Table~S21a.
 \begin{longtable}{llccc}
+
 \toprule Split & Learner & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
 \multicolumn{5}{l}{\textit{Supplementary Table S4 (continued)}} \\
 \toprule Split & Learner & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
@@ -231,6 +240,7 @@ Time & Random forest & 0.719 & 0.750 & 0.819 \\
 \subsection*{Supplementary Table S12. Cross-endpoint evaluation (rows: endpoint the model was trained for; columns: endpoint whose labels were used for evaluation)}
 Cells give AUROC and 95\% scaffold-cluster percentile intervals from 2,000 draws. Each off-diagonal entry reuses the row model\textquotesingle s score vector; no model is refitted for the column labels.
 \begin{longtable}{lllccc}
+
 \toprule Split & Representation & Trained for & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endfirsthead
 \multicolumn{6}{l}{\textit{Supplementary Table S12 (continued)}} \\
 \toprule Split & Representation & Trained for & $\leq100$ & $\leq11$ & $\leq1$ \\ \midrule\endhead
@@ -263,6 +273,7 @@ Time & WL--HI & $\leq1$ & 0.572 (0.47--0.69) & 0.704 (0.60--0.80) & 0.788 (0.66-
 \end{longtable}
 \subsection*{Supplementary Table S6. Metadata-only, structure-only and fused models under identical standardization}
 \begin{longtable}{llcccc}
+
 \toprule Split & Endpoint & Metadata & Metadata without route & ECFP & Fused (all / without route) \\ \midrule\endfirsthead
 \multicolumn{6}{l}{\textit{Supplementary Table S6 (continued)}} \\
 \toprule Split & Endpoint & Metadata & Metadata without route & ECFP & Fused (all / without route) \\ \midrule\endhead
@@ -283,6 +294,7 @@ Time & $\leq1$ & 0.893 & 0.894 & 0.792 & 0.943 / 0.942 \\
 \end{longtable}
 \subsection*{Supplementary Table S13. Brier score of calibrated ECFP forecasts against a constant training-prevalence forecast}
 \begin{longtable}{llcccc}
+
 \toprule Split & Endpoint & Training prevalence & Model Brier & Constant Brier & Brier skill \\ \midrule\endfirsthead
 \multicolumn{6}{l}{\textit{Supplementary Table S13 (continued)}} \\
 \toprule Split & Endpoint & Training prevalence & Model Brier & Constant Brier & Brier skill \\ \midrule\endhead

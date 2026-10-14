@@ -6,8 +6,6 @@ Settings are taken from \path{code/_common.py}, \path{code/01_primary_endpoint_m
 
 \begin{longtable}{p{0.19\linewidth}p{0.72\linewidth}}
 
-
-
 \toprule Component & Implemented settings \\ \midrule\endfirsthead
 
 \multicolumn{2}{l}{\textit{Supplementary Table S21a (continued)}} \\
@@ -22,7 +20,7 @@ Avalon / MACCS & Avalon 1,024 bits; RDKit MACCS 167-bit vector (bit zero unused)
 
 WL-HI & Two refinement iterations; element, charge, aromaticity and bond types; normalized histogram intersection (Eq.~\eqref{eq:si-wl-kernel}). \\
 
-Primary SVM & $C=1$; \texttt{class\_weight=balanced}; precomputed kernels; default SVC tolerance $10^{-3}$ and no probability fit. \\
+Primary SVM & $C=1$; \texttt{class\_weight=balanced}; precomputed kernels; default SVM solver tolerance $10^{-3}$ and no probability fit. \\
 
 Descriptor SVM & 12 descriptors; training-fitted \texttt{RobustScaler}; RBF kernel; \texttt{gamma=scale}; $C=1$, balanced class weights. \\
 
@@ -47,8 +45,6 @@ All six association tests form one Benjamini--Hochberg family. The four use flag
 \begingroup\small\setlength{\tabcolsep}{4pt}
 
 \begin{longtable}{lrrrrr}
-
-
 
 \toprule Variable & $\chi^2$ & df & $p$ & Cram\'er\textquotesingle s $V$ & BH $q$ \\ \midrule\endfirsthead
 
@@ -79,8 +75,6 @@ Coefficients and Wald intervals are per one-unit novelty increase; divide by ten
 \begingroup\fontsize{8.5}{10.2}\selectfont\setlength{\tabcolsep}{3.5pt}
 
 \begin{longtable}{lllccccc}
-
-
 
 \toprule Split & Outcome & Contrast & Coefficient & 95\% CI & Holm $p$ & Joint $\chi^2$ & Joint $p$ \\ \midrule\endfirsthead
 
@@ -123,8 +117,6 @@ Bootstrap clusters are the stored Bemis--Murcko scaffold identifiers, with acycl
 \begingroup\small\setlength{\tabcolsep}{4pt}
 
 \begin{longtable}{lrrrrrr}
-
-
 
 \toprule Split & Compounds & Clusters & Singletons & Minimum & Median & Maximum \\ \midrule\endfirsthead
 
@@ -169,8 +161,6 @@ A: numerical median, operators ignored; B: numerical unanimous-record rule, oper
 \begingroup\small\setlength{\tabcolsep}{4pt}
 
 \begin{longtable}{llrccc}
-
-
 
 \toprule Tier & Rule & $n$ & $\leq100$: P/N/U/none & $\leq11$: P/N/U/none & $\leq1$: P/N/U/none \\ \midrule\endfirsthead
 
@@ -229,8 +219,6 @@ Cell order and rules follow S22a. Adult48 retains explicitly adult, exactly two-
 \begingroup\fontsize{8.5}{10.2}\selectfont\setlength{\tabcolsep}{3.5pt}
 
 \begin{longtable}{llllccc}
-
-
 
 \toprule Record filter & Routes & Rule & Tier & $\leq100$: P/N/U/none & $\leq11$: P/N/U/none & $\leq1$: P/N/U/none \\ \midrule\endfirsthead
 
@@ -394,8 +382,6 @@ Counts describe the original label-determining ECOTOX groups before stricter rec
 
 \begin{longtable}{lrrrrrrr}
 
-
-
 \toprule Tier & Groups & Records & All adult & All 2 d & Any /d & All Adult48 & Any Adult48 \\ \midrule\endfirsthead
 
 \multicolumn{8}{l}{\textit{Supplementary Table S22c (continued)}} \\
@@ -427,8 +413,6 @@ Each cell is AUROC. Before/after the slash denotes training/evaluation labels: O
 \begingroup\small\setlength{\tabcolsep}{4pt}
 
 \begin{longtable}{llrccccc}
-
-
 
 \toprule Split & Representation & Cut-off & O/O & O/R & R/O & R/R & Positive O/R \\ \midrule\endfirsthead
 
@@ -537,8 +521,6 @@ Time & Descriptors12 & 1 & 0.650 & 0.650 & 0.646 & 0.646 & 24/24 \\
 \begingroup\fontsize{8.5}{10.2}\selectfont\setlength{\tabcolsep}{3.5pt}
 
 \begin{longtable}{llllccccc}
-
-\multicolumn{9}{l}{\textit{Supplementary Table S23b}} \\
 
 \toprule Scenario & Policy & Split & Train/test & O/O & O/R & R/O & R/R & R/R minus O/O [95\% CI] \\ \midrule\endfirsthead
 
@@ -652,8 +634,6 @@ Sixteen candidates yielded 14 identities absent by connectivity, ten predicted s
 
 \begin{longtable}{lccccp{0.28\linewidth}}
 
-
-
 \toprule Candidate & Batch & Overlap & Predicted & Evaluated & Status \\ \midrule\endfirsthead
 
 \multicolumn{6}{l}{\textit{Supplementary Table S19c (continued)}} \\
@@ -700,13 +680,11 @@ The structure and prediction hashes are in \path{output/unseen_identity_case_stu
 
 \Needspace{12\baselineskip}\subsection*{Supplementary Table S19d. Individual new-structure scores, default decisions and nearest-training similarity}
 
-Continuous values are uncalibrated ECFP SVM decision scores, not probabilities. Class uses the saved zero decision threshold of the balanced SVC; it was not chosen for a regulatory decision, an external calibration target or an error-cost function. Similarity is the largest training-set ECFP Tanimoto for the corresponding split. Scores are recorded for all ten predicted identities, including the four without eligible outcomes. Source-linked outcomes and correctness at each determinate threshold are in \path{output/unseen_identity_case_study/evaluation/new_compound_case_predictions.csv}; full nearest-neighbour identities and model hashes are in the two prediction CSVs.
+Continuous values are uncalibrated ECFP SVM decision scores, not probabilities. Class uses the saved zero decision threshold of the balanced SVM; it was not chosen for a regulatory decision, an external calibration target or an error-cost function. Similarity is the largest training-set ECFP Tanimoto for the corresponding split. Scores are recorded for all ten predicted identities, including the four without eligible outcomes. Source-linked outcomes and correctness at each determinate threshold are in \path{output/unseen_identity_case_study/evaluation/new_compound_case_predictions.csv}; full nearest-neighbour identities and model hashes are in the two prediction CSVs.
 
 \begingroup\small\setlength{\tabcolsep}{4pt}
 
 \begin{longtable}{llcccc}
-
-
 
 \toprule Identity & Split & Nearest Tanimoto & $\leq100$ score (class) & $\leq11$ score (class) & $\leq1$ score (class) \\ \midrule\endfirsthead
 
@@ -786,8 +764,6 @@ Label vectors are ordered 100/11/1, with U unresolved. Raw rows are zero-based d
 
 \begin{longtable}{lllp{0.21\linewidth}cccl}
 
-
-
 \toprule Case & CAS & Route & Original value and unit & \shortstack{Adult48/\\Adult48+AI} & Original & Rule D & Raw rows \\ \midrule\endfirsthead
 
 \multicolumn{8}{l}{\textit{Supplementary Table S24a (continued)}} \\
@@ -822,8 +798,6 @@ Values are in $\mu$g/bee. All four identities are benchmark-positive and source-
 
 \begin{longtable}{lllllcrc}
 
-
-
 \toprule Case & Source & Identity & CAS & Route & Value & Hours & MRID \\ \midrule\endfirsthead
 
 \multicolumn{8}{l}{\textit{Supplementary Table S24b (continued)}} \\
@@ -849,8 +823,6 @@ Counts are unique benchmark identities at each sequential stage, not the split-s
 \begingroup\small\setlength{\tabcolsep}{4pt}
 
 \begin{longtable}{lrrr}
-
-
 
 \toprule Source screen & Full-key matched & Same route & Three cut-offs determinate \\ \midrule\endfirsthead
 
@@ -887,8 +859,6 @@ Cells give counts and percentages within membership groups. Included means same-
 \begingroup\fontsize{8.5}{10.2}\selectfont\setlength{\tabcolsep}{3.5pt}
 
 \begin{longtable}{llcccccc}
-
-
 
 \toprule Field & Value & OFT in & OFT out & OFT48 in & OFT48 out & EPA in & EPA out \\ \midrule\endfirsthead
 
@@ -943,8 +913,6 @@ For every benchmark molecule, the descriptive statistic is its largest ECFP4 Tan
 \begingroup\small\setlength{\tabcolsep}{4pt}\setlength{\LTpre}{0pt}
 
 \begin{longtable}{llrrrrc}
-
-
 
 \toprule Source & Membership & $n$ & Selected set & References/query & Median & Q1--Q3 \\ \midrule\endfirsthead
 

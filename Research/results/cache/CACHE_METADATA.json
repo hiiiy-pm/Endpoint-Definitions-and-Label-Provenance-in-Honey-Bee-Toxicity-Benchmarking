@@ -1,0 +1,14 @@
+{
+  "seed": 20260829,
+  "n_molecules": 1035,
+  "source_sha256": "de4b160a23601a44ac5ec5b23aae95973acba060135630a6df8f73d128baea9e",
+  "files": {
+    "ECFP": "results/cache/kernel_ecfp.npy",
+    "Avalon": "results/cache/kernel_avalon.npy",
+    "MACCS": "results/cache/kernel_maccs.npy",
+    "WL-HI": "results/cache/kernel_wlhi.npy",
+    "Descriptors12": "results/cache/descriptors12.npy",
+    "Scaffolds": "results/cache/scaffolds.csv",
+    "Processed": "results/cache/processed_data.csv"
+  }
+}

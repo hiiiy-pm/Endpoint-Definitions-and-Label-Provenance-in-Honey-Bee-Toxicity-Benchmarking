@@ -1,0 +1,12 @@
+{
+  "official_url": "https://www.era.rothamsted.ac.uk/eradoc/OCR/ResReport1977p2-57-74",
+  "doi": "10.23637/ERADOC-1-16",
+  "sha256": "270ae180f6a58f7c03133ff6b226d5b9ca2c88dd7174ece6b4d8c80e6c039ae1",
+  "table": "Table 2",
+  "PDF_page": 3,
+  "printed_page": 56,
+  "visual_check": "Benomyl contact >10 and oral >10 ug/bee; comparison with historical ECOTOX oral <10",
+  "reused_local_original": "source_documents\\35461_rothamsted_official.pdf",
+  "matches_latest_trace_expected_sha256": true,
+  "adjudication": "Document-level discrepancy; one-to-one original trial identity not fully established; no named two-expert independent adjudication claimed."
+}

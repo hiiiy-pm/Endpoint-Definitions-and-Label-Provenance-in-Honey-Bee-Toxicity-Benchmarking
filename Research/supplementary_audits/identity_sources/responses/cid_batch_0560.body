@@ -1,0 +1,286 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 91665,
+        "MolecularFormula": "C11H11NO",
+        "SMILES": "C1CC(=O)N2CCC3=CC=CC1=C32",
+        "InChIKey": "XRJLAOUDSILTFT-UHFFFAOYSA-N",
+        "IUPACName": "1-azatricyclo[6.3.1.04,12]dodeca-4,6,8(12)-trien-11-one"
+      },
+      {
+        "CID": 91677,
+        "MolecularFormula": "C12H10Cl2F3NO",
+        "SMILES": "C1C(C(C(=O)N1C2=CC=CC(=C2)C(F)(F)F)Cl)CCl",
+        "InChIKey": "OQZCSNDVOWYALR-UHFFFAOYSA-N",
+        "IUPACName": "3-chloro-4-(chloromethyl)-1-[3-(trifluoromethyl)phenyl]pyrrolidin-2-one"
+      },
+      {
+        "CID": 91683,
+        "MolecularFormula": "C17H12ClFN2O",
+        "SMILES": "C1=CC=C(C(=C1)C(C2=CC=C(C=C2)F)(C3=CN=CN=C3)O)Cl",
+        "InChIKey": "SAPGTCDSBGMXCD-UHFFFAOYSA-N",
+        "IUPACName": "(2-chlorophenyl)-(4-fluorophenyl)-pyrimidin-5-ylmethanol"
+      },
+      {
+        "CID": 91687,
+        "MolecularFormula": "C13H19ClNO3PS2",
+        "SMILES": "CC(C)N(C1=CC=C(C=C1)Cl)C(=O)CSP(=S)(OC)OC",
+        "InChIKey": "NXQDBZGWYSEGFL-UHFFFAOYSA-N",
+        "IUPACName": "N-(4-chlorophenyl)-2-dimethoxyphosphinothioylsulfanyl-N-propan-2-ylacetamide"
+      },
+      {
+        "CID": 91692,
+        "MolecularFormula": "C19H21ClN2O",
+        "SMILES": "C1CCC(C1)N(CC2=CC=C(C=C2)Cl)C(=O)NC3=CC=CC=C3",
+        "InChIKey": "OGYFATSSENRIKG-UHFFFAOYSA-N",
+        "IUPACName": "1-[(4-chlorophenyl)methyl]-1-cyclopentyl-3-phenylurea"
+      },
+      {
+        "CID": 91693,
+        "MolecularFormula": "C13H15Cl2N3",
+        "SMILES": "CCCC(CN1C=NC=N1)C2=C(C=C(C=C2)Cl)Cl",
+        "InChIKey": "WKBPZYKAUNRMKP-UHFFFAOYSA-N",
+        "IUPACName": "1-[2-(2,4-dichlorophenyl)pentyl]-1,2,4-triazole"
+      },
+      {
+        "CID": 91694,
+        "MolecularFormula": "C19H31N",
+        "SMILES": "CC(CC1=CC=C(C=C1)C(C)(C)C)CN2CCCCC2",
+        "InChIKey": "MGNFYQILYYYUBS-UHFFFAOYSA-N",
+        "IUPACName": "1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine"
+      },
+      {
+        "CID": 91699,
+        "MolecularFormula": "C15H15ClF3N3O",
+        "SMILES": "CCCOCC(=NC1=C(C=C(C=C1)Cl)C(F)(F)F)N2C=CN=C2",
+        "InChIKey": "HSMVPDGQOIQYSR-UHFFFAOYSA-N",
+        "IUPACName": "N-[4-chloro-2-(trifluoromethyl)phenyl]-1-imidazol-1-yl-2-propoxyethanimine"
+      },
+      {
+        "CID": 91708,
+        "MolecularFormula": "C20H9Cl3F5N3O3",
+        "SMILES": "C1=CC(=C(C(=C1)F)C(=O)NC(=O)NC2=CC(=C(C(=C2)Cl)OC3=C(C=C(C=N3)C(F)(F)F)Cl)Cl)F",
+        "InChIKey": "UISUNVFOGSJSKD-UHFFFAOYSA-N",
+        "IUPACName": "N-[[3,5-dichloro-4-[[3-chloro-5-(trifluoromethyl)-2-pyridinyl]oxy]phenyl]carbamoyl]-2,6-difluorobenzamide"
+      },
+      {
+        "CID": 91724,
+        "MolecularFormula": "C11H6Cl2N2",
+        "SMILES": "C1=CC(=C(C(=C1)Cl)Cl)C2=CNC=C2C#N",
+        "InChIKey": "FKLFBQCQQYDUAM-UHFFFAOYSA-N",
+        "IUPACName": "4-(2,3-dichlorophenyl)-1H-pyrrole-3-carbonitrile"
+      },
+      {
+        "CID": 91727,
+        "MolecularFormula": "C16H13F2N3O",
+        "SMILES": "C1=CC=C(C(=C1)C(CN2C=NC=N2)(C3=CC=C(C=C3)F)O)F",
+        "InChIKey": "JWUCHKBSVLQQCO-UHFFFAOYSA-N",
+        "IUPACName": "1-(2-fluorophenyl)-1-(4-fluorophenyl)-2-(1,2,4-triazol-1-yl)ethanol"
+      },
+      {
+        "CID": 91729,
+        "MolecularFormula": "C11H11N5O6S2",
+        "SMILES": "CC1=NC(=NC(=N1)OC)NC(=O)NS(=O)(=O)C2=C(SC=C2)C(=O)O",
+        "InChIKey": "LOQQVLXUKHKNIA-UHFFFAOYSA-N",
+        "IUPACName": "3-[(4-methoxy-6-methyl-1,3,5-triazin-2-yl)carbamoylsulfamoyl]thiophene-2-carboxylic acid"
+      },
+      {
+        "CID": 91730,
+        "MolecularFormula": "C13H13N5O6S",
+        "SMILES": "CC1=NC(=NC(=N1)OC)NC(=O)NS(=O)(=O)C2=CC=CC=C2C(=O)O",
+        "InChIKey": "UWHURBUBIHUHSU-UHFFFAOYSA-N",
+        "IUPACName": "2-[(4-methoxy-6-methyl-1,3,5-triazin-2-yl)carbamoylsulfamoyl]benzoic acid"
+      },
+      {
+        "CID": 91731,
+        "MolecularFormula": "C13H4Cl2F6N4O4",
+        "SMILES": "C1=C(C=NC(=C1Cl)NC2=C(C=C(C(=C2[N+](=O)[O-])Cl)C(F)(F)F)[N+](=O)[O-])C(F)(F)F",
+        "InChIKey": "UZCGKGPEKUCDTF-UHFFFAOYSA-N",
+        "IUPACName": "3-chloro-N-[3-chloro-2,6-dinitro-4-(trifluoromethyl)phenyl]-5-(trifluoromethyl)pyridin-2-amine"
+      },
+      {
+        "CID": 91734,
+        "MolecularFormula": "C14H6Cl2F4N2O2",
+        "SMILES": "C1=CC(=C(C(=C1)F)C(=O)NC(=O)NC2=CC(=C(C(=C2F)Cl)F)Cl)F",
+        "InChIKey": "CJDWRQLODFKPEL-UHFFFAOYSA-N",
+        "IUPACName": "N-[(3,5-dichloro-2,4-difluorophenyl)carbamoyl]-2,6-difluorobenzamide"
+      },
+      {
+        "CID": 91735,
+        "MolecularFormula": "C19H11F5N2O2",
+        "SMILES": "C1=CC(=CC(=C1)OC2=C(C=CC=N2)C(=O)NC3=C(C=C(C=C3)F)F)C(F)(F)F",
+        "InChIKey": "WYEHFWKAOXOVJD-UHFFFAOYSA-N",
+        "IUPACName": "N-(2,4-difluorophenyl)-2-[3-(trifluoromethyl)phenoxy]pyridine-3-carboxamide"
+      },
+      {
+        "CID": 91739,
+        "MolecularFormula": "C10H5Cl2NO2",
+        "SMILES": "C1=CC(=C(C2=NC=C(C=C21)Cl)C(=O)O)Cl",
+        "InChIKey": "FFSSWMQPCJRCRV-UHFFFAOYSA-N",
+        "IUPACName": "3,7-dichloroquinoline-8-carboxylic acid"
+      },
+      {
+        "CID": 91741,
+        "MolecularFormula": "C16H8Cl2F6N2O3",
+        "SMILES": "C1=CC(=C(C(=C1)F)C(=O)NC(=O)NC2=CC(=C(C(=C2)Cl)OC(C(F)F)(F)F)Cl)F",
+        "InChIKey": "RGNPBRKPHBKNKX-UHFFFAOYSA-N",
+        "IUPACName": "N-[[3,5-dichloro-4-(1,1,2,2-tetrafluoroethoxy)phenyl]carbamoyl]-2,6-difluorobenzamide"
+      },
+      {
+        "CID": 91742,
+        "MolecularFormula": "C14H21NO4",
+        "SMILES": "CCOC1=C(C=C(C=C1)NC(=O)OC(C)C)OCC",
+        "InChIKey": "LNJNFVJKDJYTEU-UHFFFAOYSA-N",
+        "IUPACName": "propan-2-yl N-(3,4-diethoxyphenyl)carbamate"
+      },
+      {
+        "CID": 91743,
+        "MolecularFormula": "C19H19ClF3NO5",
+        "SMILES": "CCOCCOC(=O)C(C)OC1=CC=C(C=C1)OC2=C(C=C(C=N2)C(F)(F)F)Cl",
+        "InChIKey": "MIJLZGZLQLAQCM-UHFFFAOYSA-N",
+        "IUPACName": "2-ethoxyethyl 2-[4-[[3-chloro-5-(trifluoromethyl)-2-pyridinyl]oxy]phenoxy]propanoate"
+      },
+      {
+        "CID": 91745,
+        "MolecularFormula": "C18H26O2",
+        "SMILES": "CC1=CC=CC=C1CO[C@@H]2C[C@]3(CC[C@@]2(O3)C)C(C)C",
+        "InChIKey": "QMTNOLKHSWIQBE-FGTMMUONSA-N",
+        "IUPACName": "(1S,2R,4R)-1-methyl-2-[(2-methylphenyl)methoxy]-4-propan-2-yl-7-oxabicyclo[2.2.1]heptane"
+      },
+      {
+        "CID": 91746,
+        "MolecularFormula": "C20H27NO3",
+        "SMILES": "CCC(=C1C(=O)CC(CC1=O)C2=C(C=C(C=C2C)C)C)NOCC",
+        "InChIKey": "SOTLWPHEAQOHHC-UHFFFAOYSA-N",
+        "IUPACName": "2-[1-(ethoxyamino)propylidene]-5-(2,4,6-trimethylphenyl)cyclohexane-1,3-dione"
+      },
+      {
+        "CID": 91749,
+        "MolecularFormula": "C11H8ClNO2",
+        "SMILES": "CC1=CC2=C(C(=C(C=C2)Cl)C(=O)O)N=C1",
+        "InChIKey": "ALZOLUNSQWINIR-UHFFFAOYSA-N",
+        "IUPACName": "7-chloro-3-methylquinoline-8-carboxylic acid"
+      },
+      {
+        "CID": 91750,
+        "MolecularFormula": "C14H18N6O7S",
+        "SMILES": "CCOC(=O)C1=C(N(N=C1)C)S(=O)(=O)NC(=O)NC2=NC(=CC(=N2)OC)OC",
+        "InChIKey": "BGNQYGRXEXDAIQ-UHFFFAOYSA-N",
+        "IUPACName": "ethyl 5-[(4,6-dimethoxypyrimidin-2-yl)carbamoylsulfamoyl]-1-methylpyrazole-4-carboxylate"
+      },
+      {
+        "CID": 91751,
+        "MolecularFormula": "C15H16F3N5O4S",
+        "SMILES": "CC1=NC(=NC(=N1)OC)NC(=O)NS(=O)(=O)C2=CC=CC=C2CCC(F)(F)F",
+        "InChIKey": "LTUNNEGNEKBSEH-UHFFFAOYSA-N",
+        "IUPACName": "1-(4-methoxy-6-methyl-1,3,5-triazin-2-yl)-3-[2-(3,3,3-trifluoropropyl)phenyl]sulfonylurea"
+      },
+      {
+        "CID": 91752,
+        "MolecularFormula": "C10H23O2PS2",
+        "SMILES": "CCC(C)SP(=O)(OCC)SC(C)CC",
+        "InChIKey": "KXRPCFINVWWFHQ-UHFFFAOYSA-N",
+        "IUPACName": "2-[butan-2-ylsulfanyl(ethoxy)phosphoryl]sulfanylbutane"
+      },
+      {
+        "CID": 91753,
+        "MolecularFormula": "C20H19NO3",
+        "SMILES": "CC(COC1=CC=C(C=C1)OC2=CC=CC=C2)OC3=CC=CC=N3",
+        "InChIKey": "NHDHVHZZCFYRSB-UHFFFAOYSA-N",
+        "IUPACName": "2-[1-(4-phenoxyphenoxy)propan-2-yloxy]pyridine"
+      },
+      {
+        "CID": 91754,
+        "MolecularFormula": "C19H25ClN2OS",
+        "SMILES": "CC(C)(C)C1=CC=C(C=C1)CSC2=C(C(=O)N(N=C2)C(C)(C)C)Cl",
+        "InChIKey": "DWFZBUWUXWZWKD-UHFFFAOYSA-N",
+        "IUPACName": "2-tert-butyl-5-[(4-tert-butylphenyl)methylsulfanyl]-4-chloropyridazin-3-one"
+      },
+      {
+        "CID": 91755,
+        "MolecularFormula": "C18H14F3NO2",
+        "SMILES": "CNC1=C(C(=O)C(O1)C2=CC=CC=C2)C3=CC(=CC=C3)C(F)(F)F",
+        "InChIKey": "NYRMIJKDBAQCHC-UHFFFAOYSA-N",
+        "IUPACName": "5-(methylamino)-2-phenyl-4-[3-(trifluoromethyl)phenyl]furan-3-one"
+      },
+      {
+        "CID": 91756,
+        "MolecularFormula": "C15H18N6O6S",
+        "SMILES": "CCOC1=NC(=NC(=N1)NC(=O)NS(=O)(=O)C2=CC=CC=C2C(=O)OC)NC",
+        "InChIKey": "ZINJLDJMHCUBIP-UHFFFAOYSA-N",
+        "IUPACName": "methyl 2-[[4-ethoxy-6-(methylamino)-1,3,5-triazin-2-yl]carbamoylsulfamoyl]benzoate"
+      },
+      {
+        "CID": 91757,
+        "MolecularFormula": "C15H16F5NO2S2",
+        "SMILES": "CC(C)CC1=C(C(=NC(=C1C(=O)SC)C(F)(F)F)C(F)F)C(=O)SC",
+        "InChIKey": "YUBJPYNSGLJZPQ-UHFFFAOYSA-N",
+        "IUPACName": "3-S,5-S-dimethyl 2-(difluoromethyl)-4-(2-methylpropyl)-6-(trifluoromethyl)pyridine-3,5-dicarbothioate"
+      },
+      {
+        "CID": 91758,
+        "MolecularFormula": "C9H18NO3PS2",
+        "SMILES": "CCC(C)SP(=O)(N1CCSC1=O)OCC",
+        "InChIKey": "DUFVKSUJRWYZQP-UHFFFAOYSA-N",
+        "IUPACName": "3-[butan-2-ylsulfanyl(ethoxy)phosphoryl]-1,3-thiazolidin-2-one"
+      },
+      {
+        "CID": 91759,
+        "MolecularFormula": "C12H9F2N5O2S",
+        "SMILES": "CC1=NC2=NC(=NN2C=C1)S(=O)(=O)NC3=C(C=CC=C3F)F",
+        "InChIKey": "RXCPQSJAVKGONC-UHFFFAOYSA-N",
+        "IUPACName": "N-(2,6-difluorophenyl)-5-methyl-[1,2,4]triazolo[1,5-a]pyrimidine-2-sulfonamide"
+      },
+      {
+        "CID": 91760,
+        "MolecularFormula": "C14H13ClO5S",
+        "SMILES": "CS(=O)(=O)C1=CC(=C(C=C1)C(=O)C2C(=O)CCCC2=O)Cl",
+        "InChIKey": "PQTBTIFWAXVEPB-UHFFFAOYSA-N",
+        "IUPACName": "2-(2-chloro-4-methylsulfonylbenzoyl)cyclohexane-1,3-dione"
+      },
+      {
+        "CID": 91762,
+        "MolecularFormula": "C13H11ClN4O6S",
+        "SMILES": "COC1=CC(=NC(=N1)NC(=O)NS(=O)(=O)C2=CC=CC=C2C(=O)O)Cl",
+        "InChIKey": "RIUXZHMCCFLRBI-UHFFFAOYSA-N",
+        "IUPACName": "2-[(4-chloro-6-methoxypyrimidin-2-yl)carbamoylsulfamoyl]benzoic acid"
+      },
+      {
+        "CID": 91763,
+        "MolecularFormula": "C13H15ClN6O7S",
+        "SMILES": "CN1C(=C(C(=N1)Cl)C(=O)OC)S(=O)(=O)NC(=O)NC2=NC(=CC(=N2)OC)OC",
+        "InChIKey": "FMGZEUWROYGLAY-UHFFFAOYSA-N",
+        "IUPACName": "methyl 3-chloro-5-[(4,6-dimethoxypyrimidin-2-yl)carbamoylsulfamoyl]-1-methylpyrazole-4-carboxylate"
+      },
+      {
+        "CID": 91765,
+        "MolecularFormula": "C17H27NO3S",
+        "SMILES": "CCCC(=C1C(=O)CC(CC1=O)C2CCCSC2)NOCC",
+        "InChIKey": "HAHCNFVGRVWFIP-UHFFFAOYSA-N",
+        "IUPACName": "2-[1-(ethoxyamino)butylidene]-5-(thian-3-yl)cyclohexane-1,3-dione"
+      },
+      {
+        "CID": 91766,
+        "MolecularFormula": "C21H11ClF6N2O3",
+        "SMILES": "C1=CC(=C(C(=C1)F)C(=O)NC(=O)NC2=C(C=C(C=C2)OC3=C(C=C(C=C3)C(F)(F)F)Cl)F)F",
+        "InChIKey": "RYLHNOVXKPXDIP-UHFFFAOYSA-N",
+        "IUPACName": "N-[[4-[2-chloro-4-(trifluoromethyl)phenoxy]-2-fluorophenyl]carbamoyl]-2,6-difluorobenzamide"
+      },
+      {
+        "CID": 91768,
+        "MolecularFormula": "C26H22ClF3N2O3",
+        "SMILES": "CC(C)[C@H](C(=O)OC(C#N)C1=CC(=CC=C1)OC2=CC=CC=C2)NC3=C(C=C(C=C3)C(F)(F)F)Cl",
+        "InChIKey": "INISTDXBRIBGOC-XMMISQBUSA-N",
+        "IUPACName": "[cyano-(3-phenoxyphenyl)methyl] (2R)-2-[2-chloro-4-(trifluoromethyl)anilino]-3-methylbutanoate"
+      },
+      {
+        "CID": 91770,
+        "MolecularFormula": "C14H17N3O3",
+        "SMILES": "CC1=CC(=C(N=C1)C2=NC(C(=O)N2)(C)C(C)C)C(=O)O",
+        "InChIKey": "PVSGXWMWNRGTKE-UHFFFAOYSA-N",
+        "IUPACName": "5-methyl-2-(4-methyl-5-oxo-4-propan-2-yl-1H-imidazol-2-yl)pyridine-3-carboxylic acid"
+      }
+    ]
+  }
+}

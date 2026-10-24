@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 74087703,
+        "MolecularFormula": "C17H24NNaO5",
+        "SMILES": "CCCC(=NOCC=C)[C-]1C(=O)CC(C(C1=O)C(=O)OC)(C)C.[Na+]",
+        "InChIKey": "DVQHRBFGRZHMSR-UHFFFAOYSA-N",
+        "IUPACName": "sodium methyl 2,2-dimethyl-4,6-dioxo-5-(N-prop-2-enoxy-C-propylcarbonimidoyl)cyclohexane-1-carboxylate"
+      }
+    ]
+  }
+}

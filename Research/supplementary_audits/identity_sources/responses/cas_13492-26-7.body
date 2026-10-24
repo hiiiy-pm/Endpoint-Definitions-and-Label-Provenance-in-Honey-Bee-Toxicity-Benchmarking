@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 101823767,
+        "MolecularFormula": "HK2O3P",
+        "SMILES": "[O-][PH+]([O-])[O-].[K+].[K+]",
+        "InChIKey": "OZYJVQJGKRFVHQ-UHFFFAOYSA-L",
+        "IUPACName": "dipotassium;trioxidophosphanium"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Please cite the associated article and the original source datasets."
+title: "Auditing label provenance and endpoint definitions in a honey-bee toxicity benchmark: data and code"
+type: software
+date-released: 2026-10-24
+license: MIT
+authors:
+  - family-names: Huang
+    given-names: Yongye
+    affiliation: Hanshan Normal University
+  - family-names: Liao
+    given-names: Runqing
+    affiliation: Hanshan Normal University
+  - family-names: Yang
+    given-names: Xiaopeng
+    affiliation: Hanshan Normal University
+  - family-names: Wang
+    given-names: Zhining
+    affiliation: Hanshan Normal University
+repository-code: "https://github.com/hiiiy-pm/Endpoint-Definitions-and-Label-Provenance-in-Honey-Bee-Toxicity-Benchmarking"
+url: "https://github.com/hiiiy-pm/Endpoint-Definitions-and-Label-Provenance-in-Honey-Bee-Toxicity-Benchmarking/releases/tag/research-reproducibility-2026-10-24"
+keywords:
+  - honey-bee toxicity
+  - benchmark auditing
+  - endpoint definition
+  - label provenance
+  - label noise
+  - reproducibility

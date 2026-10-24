@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 20056429,
+        "MolecularFormula": "C24H42Cl2O4",
+        "SMILES": "CCC(C)OC(=O)C1CCC(CC1C)Cl.CCC(C)OC(=O)C1CC(CCC1C)Cl",
+        "InChIKey": "ZZZRZSOTRLRALD-UHFFFAOYSA-N",
+        "IUPACName": "butan-2-yl 4-chloro-2-methylcyclohexane-1-carboxylate;butan-2-yl 5-chloro-2-methylcyclohexane-1-carboxylate"
+      }
+    ]
+  }
+}

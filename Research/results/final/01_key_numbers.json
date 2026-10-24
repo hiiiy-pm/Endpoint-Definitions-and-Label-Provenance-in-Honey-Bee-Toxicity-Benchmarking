@@ -1,0 +1,41 @@
+{
+  "seed": 20260829,
+  "n_molecules": 1035,
+  "representation_ordering_pass": 15,
+  "insecticide_cramers_v": 0.5721441746684056,
+  "matched_n125_11_minus_100": {
+    "MaxMin": 0.1610795165054424,
+    "Random": 0.1256683378124293,
+    "Time": 0.1008280389705455
+  },
+  "neighborhood_significant": {
+    "Global": 15,
+    "Source×Insecticide": 11,
+    "Source×Route×Insecticide": 11
+  },
+  "combined_better_than_metadata": 9,
+  "combined_better_than_structure": 8,
+  "scaffold_positive_ci_count": 0,
+  "novelty_100_slopes": {
+    "Random": {
+      "slope_per_0.1": 0.0106199952418746,
+      "ci_low": -0.0021310538105857,
+      "ci_high": 0.0233710442943351
+    },
+    "MaxMin": {
+      "slope_per_0.1": 0.0270769219237498,
+      "ci_low": 0.0120862369385435,
+      "ci_high": 0.042067606908956
+    },
+    "Time": {
+      "slope_per_0.1": 0.0196077489585165,
+      "ci_low": 0.007266118140045,
+      "ci_high": 0.0319493797769879
+    }
+  },
+  "brier_joint_interaction_p": {
+    "Random": 0.8833703047357412,
+    "MaxMin": 0.155800944905137,
+    "Time": 0.4367111262919102
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "ecotox_export_records": 2674,
+  "records_after_upstream_filters": 2245,
+  "cas_route_groups": 885,
+  "groups_removed_by_upstream_11_filter": 79,
+  "cas_with_removed_route": 72,
+  "cas_with_removed_route_retained_by_another_route": 58,
+  "benchmark_ecotox_compounds": 441,
+  "replication_label_level_route_match": 441,
+  "groups_with_exact_11_and_values_above_only": [
+    {
+      "CAS": "62924-70-3",
+      "route": "Contact",
+      "values": ">11;>105.3;>17.1"
+    },
+    {
+      "CAS": "188425-85-6",
+      "route": "Oral",
+      "values": ">166;>11"
+    },
+    {
+      "CAS": "1417782-03-6",
+      "route": "Oral",
+      "values": ">11;52;>100;47.6;>100"
+    }
+  ],
+  "records_with_range_operator_fields": 0,
+  "determining_group_heterogeneity": [
+    {
+      "Tier": 0,
+      "groups": 72,
+      "all_adult": 63,
+      "any_larva_or_pupa": 5,
+      "stage_not_reported_only": 4,
+      "all_duration_2d": 51,
+      "any_daily_unit": 2,
+      "all_adult48": 51,
+      "any_adult48": 62,
+      "any_right_censored": 54,
+      "records": 117
+    },
+    {
+      "Tier": 1,
+      "groups": 212,
+      "all_adult": 162,
+      "any_larva_or_pupa": 36,
+      "stage_not_reported_only": 10,
+      "all_duration_2d": 148,
+      "any_daily_unit": 30,
+      "all_adult48": 146,
+      "any_adult48": 174,
+      "any_right_censored": 180,
+      "records": 309
+    },
+    {
+      "Tier": 2,
+      "groups": 60,
+      "all_adult": 41,
+      "any_larva_or_pupa": 9,
+      "stage_not_reported_only": 7,
+      "all_duration_2d": 37,
+      "any_daily_unit": 6,
+      "all_adult48": 36,
+      "any_adult48": 43,
+      "any_right_censored": 11,
+      "records": 89
+    },
+    {
+      "Tier": 3,
+      "groups": 97,
+      "all_adult": 50,
+      "any_larva_or_pupa": 11,
+      "stage_not_reported_only": 23,
+      "all_duration_2d": 40,
+      "any_daily_unit": 5,
+      "all_adult48": 37,
+      "any_adult48": 62,
+      "any_right_censored": 6,
+      "records": 313
+    },
+    {
+      "Tier": "all",
+      "groups": 441,
+      "all_adult": 316,
+      "any_larva_or_pupa": 61,
+      "stage_not_reported_only": 44,
+      "all_duration_2d": 276,
+      "any_daily_unit": 43,
+      "all_adult48": 270,
+      "any_adult48": 341,
+      "any_right_censored": 251,
+      "records": 828
+    }
+  ],
+  "upstream_cutoff_rules": [
+    {
+      "threshold": 100,
+      "rule_in_upstream": "group median; straddling route groups kept",
+      "determining_groups": 441,
+      "determining_groups_straddling_cutoff_numerically": 34
+    },
+    {
+      "threshold": 11,
+      "rule_in_upstream": "all records agree; straddling route groups removed",
+      "determining_groups": 441,
+      "determining_groups_straddling_cutoff_numerically": 3
+    },
+    {
+      "threshold": 1,
+      "rule_in_upstream": "group median; straddling route groups kept",
+      "determining_groups": 441,
+      "determining_groups_straddling_cutoff_numerically": 16
+    }
+  ]
+}

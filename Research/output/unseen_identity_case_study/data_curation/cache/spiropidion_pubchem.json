@@ -1,0 +1,15 @@
+{
+  "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/spiropidion/property/InChIKey,InChI,IsomericSMILES/JSON",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 58537978,
+          "SMILES": "CCOC(=O)OC1=C(C(=O)N(C12CCN(CC2)OC)C)C3=C(C=C(C=C3C)Cl)C",
+          "InChI": "InChI=1S/C21H27ClN2O5/c1-6-28-20(26)29-18-17(16-13(2)11-15(22)12-14(16)3)19(25)23(4)21(18)7-9-24(27-5)10-8-21/h11-12H,6-10H2,1-5H3",
+          "InChIKey": "WOPFPAIGRGHWAQ-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "input_sha256": {
+    "data/raw/apistox.csv": "de4b160a23601a44ac5ec5b23aae95973acba060135630a6df8f73d128baea9e",
+    "results/cache/kernel_ecfp.npy": "2b8aab46312d086832f403e1e1ebb3708cd8b557f8988b2c3454a69c0e0f77c5",
+    "results/cache/CACHE_VALIDATION.json": "bb20bb02a00174352391090c0201098e3ce5130d100d6dfe508a1d49e4031750",
+    "results/record_audit/07_route_matched_external_records.csv": "2f28615359fcb2587edd19238f18239e291ff739dbb966a862391e6c0dc9556f",
+    "results/record_audit/13_concordance_cohort_flow.csv": "53a283545a24f763b1678c0eb481b640bdd4cef7702ab9497e4f88601c6d22e8"
+  },
+  "parameters": {
+    "radius": 2,
+    "bits": 1024,
+    "chirality": false,
+    "quantiles": "NumPy default linear interpolation"
+  },
+  "independent_raw_smiles_maximum_checks": 3105,
+  "maximum_absolute_difference_from_direct_rdkit": {
+    "OpenFoodTox": 2.9038160320737916e-08,
+    "OpenFoodTox_48h_screen": 2.9038160320737916e-08,
+    "EPA": 2.9495081932395806e-08
+  },
+  "nearest_tie_rule": "smallest benchmark Index among tied cached similarities",
+  "scope": "whole-benchmark selected cohorts; not split-specific frozen-score reassessment",
+  "limitations": "Maxima depend on selected cohort composition and size. Included queries use n-1 references and excluded queries n; this comparison does not establish representativeness, distributional equivalence or experiment independence."
+}

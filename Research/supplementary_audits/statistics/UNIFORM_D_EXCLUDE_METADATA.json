@@ -1,0 +1,22 @@
+{
+  "Status": "completed",
+  "Representation": "ECFP",
+  "BootstrapDraws": 2000,
+  "BaselineChecks": 27,
+  "MaxBaselineScoreDifference": 2.220446049250313e-16,
+  "TimeUniformFitsReused": 6,
+  "Resampling": "paired scaffold-cluster bootstrap on the union (uniform-D) test cohort; mixed cohort filtered within each draw",
+  "InferenceScope": "conditional on fitted models and selected cohorts; exploratory, no multiplicity correction",
+  "Interpretation": "scenario changes include membership changes; keep remains exactly input-equivalent",
+  "Python": "3.12.13",
+  "Numpy": "2.5.3",
+  "Pandas": "3.0.1",
+  "ScikitLearn": "1.8.0",
+  "InputSHA256": {
+    "results/cache/kernel_ecfp.npy": "2b8aab46312d086832f403e1e1ebb3708cd8b557f8988b2c3454a69c0e0f77c5",
+    "results/cache/scaffolds.csv": "4f8f221867fa23d131e724d19f5454e1ab206c4a3a87a950d63f9213961daec5",
+    "results/label_audit/02_compound_labels_by_rule.csv": "4b637d259f636f487c0322e844a211b7ad5e461784b2340294a9a70aa1be68a9",
+    "results/primary/02_test_predictions.csv": "ceb8a3885ccc0633c5f7035a9949917a562005b931729d5218543b7afb3ee6f4",
+    "results/label_audit/09_crossover_predictions.csv.gz": "31d16983cca67357ff49c400f3fbf84dc1ccfe89b9b91f58f62a00261f2f9b00"
+  }
+}

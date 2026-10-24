@@ -1,0 +1,11 @@
+{
+  "log_rows": 745,
+  "log_CAS": 72,
+  "actual_rejected_groups": 79,
+  "actual_rejected_records": 536,
+  "retained_group_rows_also_logged": 209,
+  "retained_groups_also_logged": 75,
+  "ecotox_snapshot_sha256": "426b4be8ab8b265404a75efa75fc892bf3074a4352efcdab6af9cd736d4f7c5a",
+  "evidence": "upstream/dataset_creation_ecotox.py:175-186;log masks by CAS while filtering masks route statistics",
+  "model_impact": "The log defect does not change the route-level filtering executed by the original code."
+}

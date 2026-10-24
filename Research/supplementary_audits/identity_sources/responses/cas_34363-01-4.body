@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 61928,
+        "MolecularFormula": "C20H36",
+        "SMILES": "CC1=CCC(CC1)C(C)C.CC1=CCC(CC1)C(C)C",
+        "InChIKey": "GEEMIUONIWYDTI-UHFFFAOYSA-N",
+        "IUPACName": "1-methyl-4-propan-2-ylcyclohexene"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "sha256": "bf751a65630ff394fe5948c78a457bfb430c974b33c795e641229202ae207207",
+  "n_compounds": 2,
+  "contains_endpoint_labels": false,
+  "curator_no_prediction_files_read": true,
+  "curator_manifest_sha256": "a823d54afdcd118797aded331f8a39305148c98dee4409d4f563ed62d486dd9b",
+  "recorded_before_prediction_utc": "2026-09-22T17:22:27.399216+00:00",
+  "note": "Projection of curator endpoint freeze manifest for the fixed structure-only inference interface"
+}

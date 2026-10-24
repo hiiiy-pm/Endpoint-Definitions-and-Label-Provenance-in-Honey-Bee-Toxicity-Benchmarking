@@ -1,0 +1,15 @@
+{
+  "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/1472050-04-6/property/InChIKey,InChI,IsomericSMILES/JSON",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 162368358,
+          "SMILES": "C1=C(C(=CC(=C1F)OCCCCCSC(F)(F)F)S(=O)CC(F)(F)F)O",
+          "InChI": "InChI=1S/C14H15F7O3S2/c15-9-6-10(22)12(26(23)8-13(16,17)18)7-11(9)24-4-2-1-3-5-25-14(19,20)21/h6-7,22H,1-5,8H2",
+          "InChIKey": "XCROCGNWBSWUCC-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}

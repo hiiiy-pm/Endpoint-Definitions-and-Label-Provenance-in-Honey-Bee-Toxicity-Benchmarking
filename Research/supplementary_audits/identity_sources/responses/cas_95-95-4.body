@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 7271,
+        "MolecularFormula": "C6H3Cl3O",
+        "SMILES": "C1=C(C(=CC(=C1Cl)Cl)Cl)O",
+        "InChIKey": "LHJGJYXLEPZJPM-UHFFFAOYSA-N",
+        "IUPACName": "2,4,5-trichlorophenol"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 6336603,
+        "MolecularFormula": "Na2O3P+",
+        "SMILES": "[O-]P(=O)=O.[Na+].[Na+]",
+        "InChIKey": "IIRVGTWONXBBAW-UHFFFAOYSA-M"
+      }
+    ]
+  }
+}

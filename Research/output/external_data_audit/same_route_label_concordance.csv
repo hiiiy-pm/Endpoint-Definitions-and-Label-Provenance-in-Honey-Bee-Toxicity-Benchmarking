@@ -1,0 +1,446 @@
+﻿source,name,inchikey,route,n_endpoint_records,apistox_source,external_names,external_values_ug_bee,contains_right_censored_100,all_exact,external_y_1,apistox_y_1,agreement_1,external_y_11,apistox_y_11,agreement_11,external_y_100,apistox_y_100,agreement_100
+OpenFoodTox,Thifensulfuron-methyl (Ref: DPX M6316),AHTPATJNIAFOLR-UHFFFAOYSA-N,Oral,1,PPDB,Thifensulfuron-methyl,>7.1,False,False,0,0,1,-1,1,-1,-1,1,-1
+OpenFoodTox,Quinmerac (Ref: BAS 518H),ALZOLUNSQWINIR-UHFFFAOYSA-N,Contact,1,PPDB,Quinmerac,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"(3-Bromo-6-methoxy-2-methylphenyl)(2,3,4-trimethoxy-6-methylphenyl)methanone",AMSPWOYQQAWRRM-UHFFFAOYSA-N,Oral,2,ECOTOX,Metrafenone,>114.0|>32.7,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,2-[2-Chloro-5-[4-chloro-5-(difluoromethoxy)-1-methyl-1H-pyrazol-3-yl]-4-fluorophenoxy]acetic acid ethyl ester,APTZNLHMIGJTEW-UHFFFAOYSA-N,Contact,1,ECOTOX,Pyraflufen-ethyl,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Sodium o-nitrophenolate,AXKBOWBNOCUNJL-UHFFFAOYSA-M,Contact,1,PPDB,Sodium o-nitrophenolate,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Diclofop-methyl (Ref: HOE 023408),BACHBFVBHLGWSL-UHFFFAOYSA-N,Contact,1,PPDB,Diclofop-Methyl,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"beta-(4-Chlorophenoxy)-alpha-(1,1-dimethylethyl)-1H-1,2,4-triazole-1-ethanol",BAZVSMNPJJMILC-UHFFFAOYSA-N,Contact,1,ECOTOX,Triadimenol,>200.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,Quizalofop-P-tefuryl (Ref: UBI C4874 ),BBKDWPHJZANJGB-UHFFFAOYSA-N,Contact,1,PPDB,Quizalofop-P-tefuryl,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"2,6-Dichloro-4-nitrobenzenamine",BIXZHMJUSMUDOQ-UHFFFAOYSA-N,Contact,1,ECOTOX,Dicloran,>100.0,True,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,"[3-(4,5-Dihydro-3-isoxazolyl)-2-methyl-4-(methylsulfonyl)phenyl](5-hydroxy-1-methyl-1H-pyrazol-4-yl)methanone",BPPVUXSMLBXYGG-UHFFFAOYSA-N,Oral,1,ECOTOX,Topramezone,>72.05,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,"1-[[2-[2-Chloro-4-(4-chlorophenoxyl)phenyl]-4-methyl-1,3-dioxolan-2-yl]methyl]-1H-1,2,4-triazole",BQYJATMQXGBDHF-UHFFFAOYSA-N,Contact,1,ECOTOX,Difenoconazole,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Imazaquin (Ref: BAS 725H),CABMTIJINOIHOD-UHFFFAOYSA-N,Oral,1,PPDB,Imazaquin,>6.5,False,False,0,0,1,-1,1,-1,-1,1,-1
+OpenFoodTox,"N-[9-(Dichloromethylene)-1,2,3,4-tetrahydro-1,4-1H-pyrazole-4-carboxamide",CCCGEKHKTPTUHJ-UHFFFAOYSA-N,Contact,1,ECOTOX,Benzovindiflupyr,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"N-(1-Ethylpropyl)-3,4-dimethyl-2,6-dinitro-benzenamine",CHIFOSRWCNZCFN-UHFFFAOYSA-N,Contact,1,ECOTOX,Pendimethalin,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"3-[2,4-Dichloro-5-(1-methylethoxy)phenyl]-5-(1,1-dimethylethyl)-1,3,4-oxadiazol-2(3H)-one",CHNUNORXWHYHNE-UHFFFAOYSA-N,Contact,1,ECOTOX,Oxadiazon,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Mepanipyrim (Ref: KUF 6201),CIFWZNRJIBNXRE-UHFFFAOYSA-N,Oral,1,PPDB,Mepanipyrim,>50.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Teflubenzuron (Ref: CME 13406),CJDWRQLODFKPEL-UHFFFAOYSA-N,Oral,1,PPDB,Teflubenzuron,>72.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Benalaxyl (Ref: M 9834),CJPQIRJHIZUAQP-UHFFFAOYSA-N,Oral,1,PPDB,Benalaxyl,>22.6,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,"2,4,5,6-Tetrachloro-1,3-benzenedicarbonitrile",CRQQGFGUEAVUIL-UHFFFAOYSA-N,Contact,1,ECOTOX,Chlorothalonil,>40.0,False,False,0,0,1,0,0,1,-1,0,-1
+OpenFoodTox,2-Chloro-N-(2-ethoxyethyl)-N-(2-methyl-1-phenyl-1-propen-1-yl)acetamide,CSWIKHNSBZVWNQ-UHFFFAOYSA-N,Oral,1,ECOTOX,Pethoxamid,>200.0,False,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Amidosulfuron,CTTHWASMBLQOFR-UHFFFAOYSA-N,Contact,1,PPDB,Amidosulfuron,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Sodium p-nitrophenolate,CURNJKLCYZZBNJ-UHFFFAOYSA-M,Oral,1,PPDB,Sodium p-nitrophenolate,>61.2,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,1-Naphthalenol methylcarbamate,CVXBEEMKQHEXEN-UHFFFAOYSA-N,Contact,1,ECOTOX,Carbaryl,>0.14,False,False,-1,1,-1,-1,1,-1,-1,1,-1
+OpenFoodTox,"N-(3-Chlorophenyl)carbamic acid, 1-Methylethyl ester",CWJSHJJYOPWUGX-UHFFFAOYSA-N,Contact,1,ECOTOX,Chlorpropham,96.1,False,True,0,0,1,0,0,1,1,1,1
+OpenFoodTox,Aclonifen (Ref: AE F068300),DDBMQDADIHOWIC-UHFFFAOYSA-N,Contact,1,PPDB,Aclonifen,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"3-(Difluoromethyl)-N-methoxy-1-methyl-N-[1-(2,4,6-trichlorophenyl)propan-2-yl]-1H-pyrazole-4-carboxamide",DGOAXBPOVUPPEB-UHFFFAOYSA-N,Contact,1,ECOTOX,Pydiflumetofen,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"4-[2-[4-(1,1-Dimethylethyl)phenyl]ethoxy]quinazoline",DMYHGDXADUDKCQ-UHFFFAOYSA-N,Contact,2,ECOTOX,Fenazaquin,1.21,False,True,0,0,1,1,1,1,1,1,1
+OpenFoodTox,Tricyclazole (Ref: EL 291),DQJCHOQLCLEDLL-UHFFFAOYSA-N,Oral,1,PPDB,Tricyclazole,30.9,False,True,0,0,1,0,0,1,1,1,1
+OpenFoodTox,"Octanoic acid, 2,6-Dibromo-4-cyanophenyl ester",DQKWXTIYGWPGOO-UHFFFAOYSA-N,Oral,1,ECOTOX,Bromoxynil octanoate,>65.5,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Bupirimate (Ref: PP 588),DSKJPMWIHSOYEA-UHFFFAOYSA-N,Contact,1,PPDB,Bupirimate,>50.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,"2,3-Dihydro-2,2-dimethyl-7-benzofuranol 7-(N-methylcarbamate)",DUEPRVBVGDRKAG-UHFFFAOYSA-N,Contact,2,ECOTOX,Carbofuran,0.0357,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox,3-Bromo-1-(3-chloro-2-pyridinyl)-N-[4-cyano-2-methyl-6-[(methylamino)carbonyl]phenyl]-1H-pyrazole-5-carboxamide,DVBUIBGJRQBEDP-UHFFFAOYSA-N,Oral,1,ECOTOX,Cyantraniliprole,>0.1055,False,False,-1,1,-1,-1,1,-1,-1,1,-1
+OpenFoodTox,"4-Chloro-2-(1,1-dimethylethyl)-5-[[[4-(1,1-dimethylethyl)phenyl]methyl]thio]-3(2H)pyridazinene",DWFZBUWUXWZWKD-UHFFFAOYSA-N,Contact,1,ECOTOX,Pyridaben,>0.024,False,False,-1,1,-1,-1,1,-1,-1,1,-1
+OpenFoodTox,Nonanoic acid,FBUKVWPVBMHYJY-UHFFFAOYSA-N,Contact,1,ECOTOX,Nonanoic acid,>37.5,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Bixlozone (Ref: F9600),FHUKASKVKWSLCY-UHFFFAOYSA-N,Contact,1,PPDB,Bixlozone,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Proquinazid (Ref: DPX KQ926),FLVBXVXXXMLMOX-UHFFFAOYSA-N,Oral,1,PPDB,Proquinazid,>125.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,Metribuzin (Ref: DPX G2504),FOXFZRUHNHCZPX-UHFFFAOYSA-N,Oral,2,PPDB,Metribuzin,166.0|34.2,False,True,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Benfuracarb,FYZBOYWSHKHDMT-UHFFFAOYSA-N,Contact,2,PPDB,Benfuracarb,0.19,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox,Terbuthylazine,FZXISNSWEXTPMF-UHFFFAOYSA-N,Oral,1,PPDB,Terbuthylazine,>22.6,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,"2,6-Dichloro-N-[[3-chloro-5-(trifluoromethyl)-2-pyridinyl]methyl]benzamide",GBOYJIHYACSLGN-UHFFFAOYSA-N,Contact,1,ECOTOX,Fluopicolide,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Ametoctradin (Ref: BAS 650F),GGKQIOFASHYUJZ-UHFFFAOYSA-N,Contact,1,PPDB,Ametoctradin,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Metaldehyde,GKKDCARASOJPNG-UHFFFAOYSA-N,Oral,1,PPDB,Metaldehyde,>87.5,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,"N-(5,7-Dimethoxy[1,2,4]triazolo[1,5-a]pyrimidin-2-yl)-2-methoxy-4-(trifluoromethyl)-3-pyridinesulfonamide",GLBLPMUBLHYFCW-UHFFFAOYSA-N,Contact,1,ECOTOX,Pyroxsulam,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Penflufen (Ref: BYF-14182),GOFJDXZZHFNFLV-UHFFFAOYSA-N,Contact,1,PPDB,Penflufen,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"3,3-Dimethylbutanoic acid 2-oxo-3-(2,4,6-trimethylphenyl)-1-oaxspiro[4.4]non-3-en-4-yl ester",GOLXNESZZPUPJE-UHFFFAOYSA-N,Contact,2,ECOTOX,Spiromesifen,>200.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,N-(2-Chloro-4-pyridinyl)-N'-phenylurea  ,GPXLRLUVLMHHIK-UHFFFAOYSA-N,Contact,1,ECOTOX,Forchlorfenuron,>30.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,"5,6-Dihydro-2-methyl-N-phenyl-1,4-oxathiin-3-carboxamide",GYSSRZJIHXQEHQ-UHFFFAOYSA-N,Oral,1,ECOTOX,Carboxin,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Cyprodinil (Ref: CGA 219417),HAORKNGNJCEJBX-UHFFFAOYSA-N,Contact,2,PPDB,Cyprodinil,>75.0|>784.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,"2-[(Trichloromethyl)thio]-1H-isoindole-1,3(2H)dione",HKIOYBQGHSTUDB-UHFFFAOYSA-N,Contact,2,ECOTOX,Folpet,>100.0|>200.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,[N(Z)]-N-[3-[(6-Chloro-3-pyridinyl)methyl]-2-thiazolidinylidene]cyanamide,HOKKPVIRMVDYPB-UHFFFAOYSA-N,Oral,1,ECOTOX,Thiacloprid,17.32,False,True,0,0,1,0,0,1,1,1,1
+OpenFoodTox,Chromafenozide (Ref: ANS 118),HPNSNYBUADCFDR-UHFFFAOYSA-N,Contact,1,PPDB,Chromafenozide,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"3,6-Dichloro-2-pyridinecarboxylic acid",HUBANNPOLNYSAD-UHFFFAOYSA-N,Oral,2,ECOTOX,Clopyralid,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"N-[[4,6-Dimethoxy-2-pyrimidinyl)amino]carbonyl]-3-(trifluoromethyl)-2-pyridinesulfonamide",HWATZEJQIXKWQS-UHFFFAOYSA-N,Contact,1,ECOTOX,Flazasulfuron,>25.9,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,"1,1-Dichloro-N-[(dimethylamino)sulfonyl]-1-fluoro-N-(4-methylphenyl)methanesulfenamide",HYVWIQDYBVKITD-UHFFFAOYSA-N,Oral,1,ECOTOX,Tolylfluanid,>197.0,False,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"alpha-Butyl-alpha-(4-chlorophenyl)-1H-1,2,4-triazole-1-propanenitrile",HZJKXKUJVSEEFU-UHFFFAOYSA-N,Oral,2,ECOTOX,Myclobutanil,>33.9,False,False,0,0,1,0,0,1,-1,0,-1
+OpenFoodTox,"N-(4-Fluorophenyl)-N-(1-methylethyl)-2-[[5-(trifluoromethyl)-1,3,4-thiadiazol-2-yl]oxy]acetamide",IANUJLZYFUDJIH-UHFFFAOYSA-N,Contact,1,ECOTOX,Flufenacet,>100.0,True,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,"1-[4-[4-[5-(2,6-Difluorophenyl)-4,5-dihydro-3-isoxazolyl]-2-thiazolyl]-1-piperidinyl]-2-[5-methyl-3-(trifluoromethyl)-1H-pyrazol-1-yl]ethanone",IAQLCKZJGNTRDO-UHFFFAOYSA-N,Contact,1,ECOTOX,Oxathiapiprolin,>100.0,True,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,(3-Methylphenyl)carbamic acid 3-[(methoxycarbonyl)amino]phenyl ester,IDOWTHOLJBTAFI-UHFFFAOYSA-N,Contact,1,ECOTOX,Phenmedipham,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Triflusulfuron-methyl (Ref: DPX 66037),IMEVJVISCHQJRM-UHFFFAOYSA-N,Contact,1,PPDB,Triflusulfuron-Methyl,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"S-[(6-Chloro-2-oxo-3(2H)-benzoxazolyl)methyl]O,O-diethyl ester phosphorodithioic acid",IOUNQDKNJZEDEP-UHFFFAOYSA-N,Contact,1,ECOTOX,Phosalone,4.4,False,True,0,0,1,1,1,1,1,1,1
+OpenFoodTox,Oxasulfuron (Ref: CGA 277476 ),IOXAXYHXMLCCJJ-UHFFFAOYSA-N,Oral,1,PPDB,Oxasulfuron,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Triazoxide (Ref: SAS 9244),IQGKIPDJXCAMSM-UHFFFAOYSA-N,Contact,2,PPDB,Triazoxide,>200.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,"2-Ethoxy-2,3-dihydro-3,3-dimethyl-5-benzofuranol 5-methanesulfonate",IRCMYGHHKLLGHV-UHFFFAOYSA-N,Oral,1,ECOTOX,Ethofumesate,>50.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Tembotrione (Ref: AE 0172747),IUQAXCIUEPFPSF-UHFFFAOYSA-N,Oral,1,PPDB,Tembotrione,>92.8,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,"2-(2,6-Difluorophenyl)-4-[4-(1,1-dimethylethyl)-2-ethoxyphenyl]-4,5-dihydrooxazole",IXSZQYVWNJNRAL-UHFFFAOYSA-N,Contact,1,ECOTOX,Etoxazole,>200.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,Isoflucypram (Ref: BCS-CN88460),JEFUQUGZXLEHLD-UHFFFAOYSA-N,Contact,1,PPDB,Isoflucypram,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Flupyrsulfuron-methyl-sodium,JKPSVOHVUGMYGH-UHFFFAOYSA-M,Contact,1,PPDB,Flupyrsulfuron-methyl,>250.0,False,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Carbosulfan (Ref: OMS 3022),JLQUFIHWVLZVTJ-UHFFFAOYSA-N,Contact,2,PPDB,Carbosulfan,0.18,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox,Dimethenamid-P,JLYFCTQDENRSOL-UHFFFAOYSA-N,Oral,1,PPDB,Dimethenamid,1000.0,False,True,0,0,1,0,0,1,0,0,1
+OpenFoodTox,Propoxycarbazone,JTHMVYBOQLDDIY-UHFFFAOYSA-N,Contact,1,PPDB,Propoxycarbazone,>100.0,True,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,Pyridate (Ref: CL 11344),JTZCTMAVMHRNTR-UHFFFAOYSA-N,Contact,1,PPDB,Pyridate,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Iodosulfuron-methyl-sodium (Ref: AE F115008),JUJFQMPKBJPSFZ-UHFFFAOYSA-M,Oral,1,PPDB,Iodosulfuron-methyl-sodium,>70.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Flutriafol (Ref: PP 450),JWUCHKBSVLQQCO-UHFFFAOYSA-N,Oral,1,PPDB,Flutriafol,>2.0,False,False,0,0,1,-1,1,-1,-1,1,-1
+OpenFoodTox,"2-[(Dimethoxyphosphinothioyl)thio]butanedioic acid 1,4-diethyl ester",JXSJBGJIGXNWCI-UHFFFAOYSA-N,Contact,2,ECOTOX,Malathion,0.16,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox,Sodium 5-nitroguaiacolate,KBRKFTKQRMYINW-UHFFFAOYSA-M,Contact,1,PPDB,Sodium 5-nitroguaiacolate,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,4-Amino-3-chloro-6-(4-chloro-2-fluoro-3-methoxyphenyl)-2-pyridinecarboxylic acid methyl ester,KDHKOPYYWOHESS-UHFFFAOYSA-N,Contact,1,ECOTOX,Halauxifen-methyl,>98.1,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,"2-[(2-Chlorophenyl)methyl]-4,4-dimethyl-3-isoxazolidinone",KIEDNEWSYUYDSN-UHFFFAOYSA-N,Oral,2,ECOTOX,Clomazone,>85.29|>91.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Propineb (Ref: BAY 46131),KKMLIVYBGSAJPM-UHFFFAOYSA-L,Contact,1,PPDB,Propineb,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"1H-1,2,4-Triazol-3-amine",KLSJWNVTNUYHDU-UHFFFAOYSA-N,Contact,1,ECOTOX,Amitrole,>100.0,True,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,Mesotrione (Ref: ZA 1296),KPUREKXXPHOJQT-UHFFFAOYSA-N,Oral,1,PPDB,Mesotrione,>11.0,False,False,0,0,1,0,1,0,-1,1,-1
+OpenFoodTox,"N,N,N',N'-Tetramethylthioperoxydicarbonic diamide ([(H2N)C(S)]2S2)",KUAZQDVKQLNFPE-UHFFFAOYSA-N,Contact,1,ECOTOX,Thiram (expressed as thiram),>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,N-[2-[3-Chloro-5-(trifluoromethyl)-2-pyridinyl]ethyl]-2-(trifluoromethyl)benzamide,KVDJTXBXMWJJEF-UHFFFAOYSA-N,Contact,1,ECOTOX,Fluopyram,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Tritosulfuron,KVEQCVKVIFQSGC-UHFFFAOYSA-N,Contact,1,PPDB,Tritosulfuron,71.4,False,True,0,0,1,0,0,1,1,0,0
+OpenFoodTox,Cadusafos (Ref: FMC 67825),KXRPCFINVWWFHQ-UHFFFAOYSA-N,Contact,2,PPDB,Cadusafos,1.8,False,True,0,0,1,1,1,1,1,1,1
+OpenFoodTox,Propisochlor,KZNDFYDURHAESM-UHFFFAOYSA-N,Contact,1,PPDB,Propisochlor,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Captan (Ref: SR 406),LDVVMCZRFWMZSG-UHFFFAOYSA-N,Oral,2,PPDB,Captan,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"N-(3,4-Dichlorophenyl)propanamide",LFULEKSKNZEWOE-UHFFFAOYSA-N,Contact,1,ECOTOX,Propanil,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"S-[(1,3-Dihydro-1,3-dioxo-2H-isoindol-2-yl)methyl]O,O-dimethyl ester, Phosphorodithioic acid",LMNZTLDVJIUSHT-UHFFFAOYSA-N,Contact,3,ECOTOX,Phosmet,0.22,False,True,1,0,0,1,1,1,1,1,1
+OpenFoodTox,"1-[2-(2,4-Dichlorophenyl)-3-(1,1,2,2-tetrafluoroethoxy)propyl]-1H-1,2,4-triazole",LQDARGUHUSPFNL-UHFFFAOYSA-N,Oral,1,ECOTOX,Tetraconazole,>130.0,False,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Azimsulfuron,MAHPNPYYQAIOJN-UHFFFAOYSA-N,Contact,1,PPDB,Azimsulfuron,>25.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,8-hydroxyquinoline,MCJGNVYPOGVAJF-UHFFFAOYSA-N,Oral,1,PPDB,8-hydroxyquinoline,>68.64,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,"N-[[(4,6-Dimethoxy-2-pyrimidinyl)amino]carbonyl]-3-(ethylsulfonyl)-2-pyridine sulfonamide",MEFOUWRMVYJCQC-UHFFFAOYSA-N,Oral,1,ECOTOX,Rimsulfuron,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Fluroxypyr (Ref: DOW 43304-H),MEFQWPUMEMWTJP-UHFFFAOYSA-N,Oral,1,PPDB,Fluroxypyr,37.1,False,True,0,0,1,0,0,1,1,1,1
+OpenFoodTox,"2,2-Dimethylpropanoic acid  8-(2,6-diethyl-4-methylphenyl)-1,2,4,5- tetrahydro-7-oxo-7H-pyrazolo[1,2-d][1,4,5]oxadiazepin-9-yl ester",MGOHCFMYLBAPRN-UHFFFAOYSA-N,Contact,1,ECOTOX,Pinoxaden,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,2-[2-(4-Cyanophenyl)-1-[3-(trifluoromethyl)phenyl]ethylidene]-N-[4-(trifluoromethoxy)phenyl]hydrazinecarboxamide,MIFOMMKAVSCNKQ-UHFFFAOYSA-N,Oral,1,ECOTOX,Metaflumizone (sum of E- and Z- isomers),2.43,False,True,0,0,1,1,1,1,1,1,1
+OpenFoodTox,"alpha,2-Dichloro-5-[4-(difluoromethyl)-4,5-dihydro-3-methyl-5-oxo-1H-1,2,4-triazol-1-yl]-4-fluorobenzenepropanoic acid, Ethyl ester",MLKCGVHIFJBRCD-UHFFFAOYSA-N,Contact,1,ECOTOX,Carfentrazone-ethyl,>81.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,"2-[2-(1-Chlorocyclopropyl)-3-(2-chlorophenyl)-2-hydroxypropyl]-1,2-dihydro-3H-1,2,4-triazole-3-thione",MNHVNIJQQRJYDH-UHFFFAOYSA-N,Contact,1,ECOTOX,Prothioconazole,>200.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,"4-(2,2-Difluoro-1,3-benzodioxol-4-yl)-1H-pyrrole-3-carbonitrile",MUJOIMFVNIBMKC-UHFFFAOYSA-N,Contact,1,ECOTOX,Fludioxonil,>24.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,"N,N-Bis(1-methylethyl)carbamothioic acid, S-(2,3,3-trichloro-2-propen-1-yl) ester",MWBPRDONLNQCFV-UHFFFAOYSA-N,Contact,1,ECOTOX,Tri-allate,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,1-decanol,MWKFXSUHUHTGQN-UHFFFAOYSA-N,Contact,1,PPDB,1-Decanol,>13.8,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Silthiofam (Ref: MON 65500),MXMXHPPIGKYTAR-UHFFFAOYSA-N,Contact,1,PPDB,Silthiofam,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"N,N-Dimethyl-N'-[3[[(methylamino)carbonyl]oxy]phenyl]methanimidamide hydrochloride (1:1)",MYPKGPZHHQEODQ-UHFFFAOYSA-N,Oral,1,ECOTOX,Formetanate hydrochloride,0.16,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox,"2-Chloro-N-[[(4,6-dimethoxy-2-pyrimidinyl)amino]carbonyl]imidazo[1,2-a]pyridine-3-sulfonamide",NAGRVUXEKKZNHT-UHFFFAOYSA-N,Oral,1,ECOTOX,Imazosulfuron,>41.6,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,2-[1-Methyl-2-(4-phenoxyphenoxy)ethoxy]pyridine,NHDHVHZZCFYRSB-UHFFFAOYSA-N,Contact,1,ECOTOX,Pyriproxyfen,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Mesosulfuron-methyl (Ref: AE F130060),NIFKBBMCXCMCAO-UHFFFAOYSA-N,Contact,1,PPDB,Mesosulfuron-methyl,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Sulfur,NINIDFKCEFEMDL-UHFFFAOYSA-N,Contact,2,ECOTOX,Sulfur (S),>700.1|>98.5,False,False,0,0,1,0,0,1,-1,0,-1
+OpenFoodTox,Aminopyralid (Ref: XDE 750),NIXXQNOQHKNPEJ-UHFFFAOYSA-N,Oral,1,PPDB,Aminopyralid,>120.0,False,False,0,0,1,0,1,0,0,1,0
+OpenFoodTox,Potassium iodide,NLKNQRATVPKPDG-UHFFFAOYSA-M,Contact,1,PPDB,Potassium iodide,>0.78,False,False,-1,1,-1,-1,1,-1,-1,1,-1
+OpenFoodTox,Daminozide,NOQGZXFMHARMLW-UHFFFAOYSA-N,Contact,1,PPDB,Daminozide,>250.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,Prosulfocarb (Ref: SC 0574),NQLVQOSNDJXLKG-UHFFFAOYSA-N,Contact,1,PPDB,Prosulfocarb,>80.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,"4-Amino-3,5,6-trichloro-2-pyridinecarboxylic acid",NQQVFXUMIDALNH-UHFFFAOYSA-N,Contact,1,ECOTOX,Picloram,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Imazamox (Ref: BAS 720H),NUPJIGQFXCQJBK-UHFFFAOYSA-N,Oral,1,PPDB,"Imazamox (sum of imazamox and its salts, expressed as imazamox)",>40.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Flurtamone (Ref: RPA 590515),NYRMIJKDBAQCHC-UHFFFAOYSA-N,Contact,2,PPDB,Flurtamone,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"Phosphorothioic acid O-(2,6-dichloro-4-methylphenyl) O,O-dimethyl ester",OBZIQQJJIKNWNO-UHFFFAOYSA-N,Contact,2,ECOTOX,Tolclofos-methyl,455.9|>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Pencycuron (Ref: NTN 19701),OGYFATSSENRIKG-UHFFFAOYSA-N,Oral,1,PPDB,Pencycuron,>98.5,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Fosetyl-aluminium (Ref: RP 32545),OIPMQULDKWSNGX-UHFFFAOYSA-N,Contact,2,PPDB,Fosetyl-aluminium,>100.0|>1000.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,(alphaE)-alpha-(Methoxyimino)-2-[[[(E)-[1-[3-(trifluoromethyl)phenyl]ethylidene]amino]oxy]methyl]benzeneacteic acid methyl ester,ONCZDRURRATYFI-UHFFFAOYSA-N,Contact,1,ECOTOX,Trifloxystrobin,>100.0,True,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,"3-(3,5-Dichlorophenyl)-N-(1-methylethyl)-2,4-dioxo-1-imidazolidinecarboxamide",ONUFESLQCSAYKA-UHFFFAOYSA-N,Oral,1,ECOTOX,Iprodione,>100.0,True,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,2-Chloro-1-(3-ethoxy-4-nitrophenoxy)-4-(trifluoromethyl)benzene,OQMBBFQZGJFLBU-UHFFFAOYSA-N,Oral,1,ECOTOX,Oxyfluorfen,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"2,4-D (Ref: L 208)",OVSKIKFHRZPJSS-UHFFFAOYSA-N,Oral,2,PPDB,"2,4-D",94.0,False,True,0,0,1,0,0,1,1,1,1
+OpenFoodTox,Isoxaflutole (Ref: RPA 201772),OYIKARCXOQLFHF-UHFFFAOYSA-N,Contact,1,PPDB,Isoxaflutole,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"5-Methyl-5-(4-phenoxyphenyl)-3-(phenylamino)-2,4-oxazolidinedione",PCCSBWNGDMYFCW-UHFFFAOYSA-N,Oral,1,ECOTOX,Famoxadone,>63.0,False,False,0,0,1,0,1,0,-1,1,-1
+OpenFoodTox,"N-[2-(1,3-Dimethylbutyl)-3-thienyl]-1-methyl-3-(trifluoromethyl)-1H-pyrazole-4-carboxamide",PFFIDZXUXFLSSR-UHFFFAOYSA-N,Oral,1,ECOTOX,Penthiopyrad,>500.0,False,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Bromoxynil-butanoate,PGMZYNZXIYOOHJ-UHFFFAOYSA-N,Oral,1,PPDB,Bromoxynil butyrate,76.4,False,True,0,0,1,0,0,1,1,1,1
+OpenFoodTox,Clothianidin (Ref: CGA 322704),PGOOBECODWQEAB-UHFFFAOYSA-N,Oral,5,PPDB,Clothianidin,0.00379,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox,Propyzamide (Ref: RH 315),PHNUZKMIPFFYSO-UHFFFAOYSA-N,Oral,1,PPDB,Propyzamide,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"Phosphorothioic acid, S-[2-(Ethylsulfinyl)ethyl] O,O-dimethyl ester",PMCVMORKVPSKHZ-UHFFFAOYSA-N,Oral,1,ECOTOX,Oxydemeton-methyl,0.2,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox,Aluminium phosphide,PPNXXZIBFHTHDM-UHFFFAOYSA-N,Oral,1,PPDB,Aluminium phosphide,0.24,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox,Sulcotrione (Ref: SC 0051),PQTBTIFWAXVEPB-UHFFFAOYSA-N,Oral,1,PPDB,Sulcotrione,50.0,False,True,0,0,1,0,0,1,1,1,1
+OpenFoodTox,"2-[(1,1-Dimethylethyl)imino]tetrahydro-3-(1-methylethyl)-5-phenyl-4H-1,3,5-thiadiazin-4-one",PRLVTUNWOQKEAI-UHFFFAOYSA-N,Oral,2,ECOTOX,Buprofezin,>163.5,False,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,1-Naphthaleneacetic acid,PRPINYUDVPFIRX-UHFFFAOYSA-N,Oral,1,ECOTOX,1-naphthylacetic acid,>120.0,False,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Chlorantraniliprole (Ref: DPX E2Y45),PSOVNZZNOMJUBI-UHFFFAOYSA-N,Contact,1,PPDB,Chlorantraniliprole,>4.0,False,False,0,0,1,-1,1,-1,-1,1,-1
+OpenFoodTox,Flutolanil (Ref: NNF 136),PTCGDEVVHUXTMP-UHFFFAOYSA-N,Contact,1,PPDB,Flutolanil,>200.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,Isoproturon (Ref: HOE 16410),PUIYMUZLKQOUOZ-UHFFFAOYSA-N,Oral,1,PPDB,Isoproturon,>99.2,False,False,0,0,1,0,0,1,-1,0,-1
+OpenFoodTox,Foramsulfuron (Ref: AE F130360),PXDNXJSDGQBLKS-UHFFFAOYSA-N,Contact,1,PPDB,Foramsulfuron,>4.66,False,False,0,0,1,-1,0,-1,-1,1,-1
+OpenFoodTox,Tebuconazole (Ref: HWG 1608),PXMNMQRDXWABCY-UHFFFAOYSA-N,Oral,2,PPDB,Tebuconazole,>83.05,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Dithianon (Ref: BAS 216F),PYZSVQVRHDXQSL-UHFFFAOYSA-N,Oral,1,PPDB,Dithianon,>25.4,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,"1-[2-(2,4-Dichlorophenyl)-2-(2-propenyloxy)ethyl]-1H-imidazole",PZBPKYOVPCNPJY-UHFFFAOYSA-N,Oral,1,ECOTOX,Imazalil,>35.1,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Methoxyfenozide (Ref: RH 2485),QCAWEPFNJXQPAN-UHFFFAOYSA-N,Contact,1,PPDB,Methoxyfenozide,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"N,N'-[1,2-Phenylenebis(iminocarbonothioyl)]bis-C,C'- dimethyl ester carbamic acid",QGHREAKMXXNCOA-UHFFFAOYSA-N,Contact,1,ECOTOX,Thiophanate-methyl,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"4-[[(6-Chloro-3-pyridinyl)methyl](2,2-difluoroethyl)amino]-2(5H)-furanone",QOIYTRGFOFZNKF-UHFFFAOYSA-N,Oral,1,ECOTOX,Flupyradifurone,1.2,False,True,0,0,1,1,1,1,1,1,1
+OpenFoodTox,"2-[(4-Chlorophenyl)methyl]-5-(1-methylethyl)-1-(1H-1,2,4-triazol-1-ylmethyl)cyclopentanol",QTYCMDBMOLSEAM-UHFFFAOYSA-N,Oral,1,ECOTOX,Ipconazole,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"1-(1,1-Dimethylethyl)-2-(4-ethylbenzoyl)hydrazide-3,5-dimethylbenzoic acid",QYPNKSZPJQQLRK-UHFFFAOYSA-N,Contact,1,ECOTOX,Tebufenozide,>234.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,Florasulam (Ref: DE 570),QZXATCCPQKOEIH-UHFFFAOYSA-N,Contact,1,PPDB,Florasulam,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Cyclaniliprole (Ref: IKI-3106),RAMUASXTSSXCMB-UHFFFAOYSA-N,Oral,1,PPDB,Cyclaniliprole,0.194,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox,"N-[[(4,6-Dimethoxy-2-pyrimidinyl)amino]carbonyl]-2-(ethylsulfonyl)imidazo[1,2-a]pyridine-3-sulfonamide",RBSXHDIPCIWOMG-UHFFFAOYSA-N,Contact,1,ECOTOX,Sulfosulfuron,>25.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,"2-[(3,5,6-Trichloro-2-pyridinyl)oxy]acetic acid",REEQLXCGVXDJSQ-UHFFFAOYSA-N,Oral,1,ECOTOX,Triclopyr,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Paclobutrazol (Ref: PP 333),RMOGWMIKYWRTKW-UHFFFAOYSA-N,Oral,1,PPDB,Paclobutrazol,>2.0,False,False,0,0,1,-1,1,-1,-1,1,-1
+OpenFoodTox,"alpha-[2-(4-Chlorophenyl)ethyl]-alpha-phenyl-1H-1,2,4-triazole-1-propanenitrile",RQDJADAKIFFEKQ-UHFFFAOYSA-N,Oral,1,ECOTOX,Fenbuconazole,>5.2,False,False,0,0,1,-1,1,-1,-1,1,-1
+OpenFoodTox,Metsulfuron-methyl (Ref: DPX T6376),RSMUVYRMZCOLBH-UHFFFAOYSA-N,Oral,1,PPDB,Metsulfuron-methyl,>44.3,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,"4-(Cyclopropylhydroxymethylene)-3,5-dioxocyclohexanecarboxylic acid ethyl ester",RVKCCVTVZORVGD-UHFFFAOYSA-N,Contact,2,ECOTOX,Trinexapac-Ethyl,69.6|>100.0,True,False,0,0,1,0,0,1,-1,0,-1
+OpenFoodTox,Flufenoxuron (Ref: BAS 3071),RYLHNOVXKPXDIP-UHFFFAOYSA-N,Contact,1,PPDB,Flufenoxuron,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Dimethachlor (Ref: CGA 17020),SCCDDNKJYDZXMM-UHFFFAOYSA-N,Contact,1,PPDB,Dimethachlor,>200.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,"N-Butyl-N-ethyl-2,6-dinitro-4-(trifluoromethyl)benzenamine",SMDHCQAYESWHAE-UHFFFAOYSA-N,Contact,2,ECOTOX,Benfluralin,>100.0,True,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,Tralkoxydim (Ref: PP 604),SOTLWPHEAQOHHC-UHFFFAOYSA-N,Contact,1,PPDB,Tralkoxydim,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"3,5-Dichloro-N-(3-chloro-1-ethyl-1-methyl-2-oxopropyl)-4-methylbenzamide",SOUGWDPPRBKJEX-UHFFFAOYSA-N,Oral,1,ECOTOX,Zoxamide,>33.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Metazachlor (Ref: BAS 47900H),STEPQTYSZVCJPV-UHFFFAOYSA-N,Oral,1,PPDB,Metazachlor,>72.19,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Bifenox,SUSRORUBZHMPCO-UHFFFAOYSA-N,Contact,1,PPDB,Bifenox,>200.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,Fluxapyroxad (Ref: BAS 700F),SXSGXWCSHSVPGB-UHFFFAOYSA-N,Contact,1,PPDB,Fluxapyroxad,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"2-(2,2-Difluoroethoxy)-N-(5,8-dimethoxy[1,2,4]triazolo[1,5-c]pyrimidin-2-yl)-6-(trifluoromethyl)benzenesulfonamide",SYJGKVOENHZYMQ-UHFFFAOYSA-N,Contact,1,ECOTOX,Penoxsulam,>6.5,False,False,0,0,1,-1,0,-1,-1,1,-1
+OpenFoodTox,Prochloraz (Ref: BTS 40542),TVLSRXXIMLFWEO-UHFFFAOYSA-N,Oral,1,PPDB,Prochloraz,>101.06,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,N-1H-Benzimidazol-2-yl carbamic acid methyl ester,TWFZGCMQGLPBSX-UHFFFAOYSA-N,Contact,1,ECOTOX,Carbendazim,>50.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Potassium bicarbonate,TYJJADVDDVDEDZ-UHFFFAOYSA-M,Oral,1,PPDB,Potassium hydrogen carbonate,626.0,False,True,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"2-[[[[[(4,6-Dimethoxy-2-pyrimidinyl)amino]carbonyl]amino]sulfonyl]amino]-N,N-dimethylbenzamide",UCDPMNSCCRBWIC-UHFFFAOYSA-N,Contact,1,ECOTOX,Orthosulfamuron,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,(2-Chloroethyl)phosphonic acid,UDPGUMQDCGORJQ-UHFFFAOYSA-N,Contact,2,ECOTOX,Ethephon,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"1,2,3-Benzothiadiazole-7-carbothioic acid S-methyl ester",UELITFHSCLAHKR-UHFFFAOYSA-N,Oral,1,ECOTOX,Acibenzolar-S-methyl,128.0,False,True,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"alpha-(4-Chlorophenyl)-alpha-(1-cyclopropylethyl)-1H-1,2,4-triazole-1-ethanol",UFNOUKDBUJZYDE-UHFFFAOYSA-N,Oral,1,ECOTOX,Cyproconazole,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"2-Chloro-N,N,N-trimethylethanaminium chloride (1:1)",UHZZMRAGKVHANO-UHFFFAOYSA-M,Contact,1,ECOTOX,Chlormequat chloride,>65.2,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Oryzalin (Ref: EL 119),UNAHYJYOSSSJHH-UHFFFAOYSA-N,Oral,1,PPDB,Oryzalin,32.0,False,True,0,0,1,0,0,1,1,1,1
+OpenFoodTox,"3,5-Dibromo-4-hydroxybenzonitrile",UPMXNNIRAGDFEH-UHFFFAOYSA-N,Oral,1,ECOTOX,Bromoxynil,10.9,False,True,0,0,1,1,1,1,1,1,1
+OpenFoodTox,"3,6-Bis(2-chlorophenyl)-1,2,4,5-tetrazine",UXADOQPNKNTIHB-UHFFFAOYSA-N,Oral,1,ECOTOX,Clofentezine,>252.6,False,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Fuberidazole,UYJUZNLFJAWNEZ-UHFFFAOYSA-N,Oral,1,PPDB,Fuberidazole,>187.2,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,Fluazinam (Ref: IKF 1216),UZCGKGPEKUCDTF-UHFFFAOYSA-N,Oral,1,PPDB,Fluazinam,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Fenhexamid (Ref: KBR 2738),VDLGAVXLJYLFDH-UHFFFAOYSA-N,Oral,1,PPDB,Fenhexamid,>102.07,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,Metosulam (Ref: XDE 511),VGHPMIFEKOFHHQ-UHFFFAOYSA-N,Contact,1,PPDB,Metosulam,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Bitertanol (Ref: KWG 0599),VGPIBGGRCVEHQZ-UHFFFAOYSA-N,Oral,1,PPDB,Bitertanol (sum of isomers),>104.4,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,Metamitron (Ref: BAY DRW 1139),VHCNQEUWZYOAEV-UHFFFAOYSA-N,Oral,1,PPDB,Metamitron,>97.2,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,"2-(4-Methoxy[1,1'-biphenyl]-3-yl)hydrazinecarboxylic acid, 1-Methylethyl ester",VHLKTXFWDRXILV-UHFFFAOYSA-N,Contact,2,ECOTOX,Bifenazate,8.5,False,True,0,0,1,1,1,1,1,1,1
+OpenFoodTox,Mepiquat chloride (Ref: BAS 083W),VHOVSQVSAAQANU-UHFFFAOYSA-M,Contact,1,PPDB,Mepiquat chloride,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"Phosphorodithioic acid O-ethyl S,S-dipropyl ester",VJYFKVYYMZPMAB-UHFFFAOYSA-N,Contact,1,ECOTOX,Ethoprophos,5.56,False,True,0,0,1,1,1,1,1,1,1
+OpenFoodTox,"2-Chloro-N-[[(4-methoxy-6-methyl-1,3,5-triazin-2-yl)amino]carbonyl]benzenesulfonamide",VJYIFXVZLXQVHO-UHFFFAOYSA-N,Contact,1,ECOTOX,Chlorsulfuron,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Tribenuron-methyl (Ref: DPX L5300),VLCQZHSMCYCDJL-UHFFFAOYSA-N,Oral,2,PPDB,Tribenuron-methyl,>9.1,False,False,0,0,1,-1,1,-1,-1,1,-1
+OpenFoodTox,2-Chloro-N-(ethoxymethyl)-N-(2-ethyl-6-methylphenyl)acetamide,VTNQPKFIQCLBDU-UHFFFAOYSA-N,Oral,2,ECOTOX,Acetochlor,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Calcium carbonate,VTYYLEPIZMXCLO-UHFFFAOYSA-L,Oral,1,PPDB,Calcium carbonate,337.0,False,True,0,0,1,0,0,1,0,0,1
+OpenFoodTox,Ferric phosphate,WBJZTOZJJYAKHQ-UHFFFAOYSA-K,Contact,1,PPDB,Ferric phosphate,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Acetamiprid,WCXDHFDTOYPNIE-UHFFFAOYSA-N,Contact,1,PPDB,Acetamiprid,9.26,False,True,0,0,1,1,1,1,1,1,1
+OpenFoodTox,2-(4-Thiazolyl)-1H-benzimidazole,WJCNZQLZVWNLKY-UHFFFAOYSA-N,Oral,2,ECOTOX,Thiabendazole,>200.0|>4.0,False,False,0,0,1,-1,1,-1,-1,1,-1
+OpenFoodTox,Benzyl 4-amino-3-chloro-6-(4-chloro-2-fluoro-3-methoxyphenyl)-5-fluoropyridine-2-carboxylate,WNZCDFOXYNRBRB-UHFFFAOYSA-N,Contact,1,ECOTOX,Florpyrauxifen-benzyl,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Dimethyl disulfide,WQOXQRCZOLPYPM-UHFFFAOYSA-N,Contact,1,ECOTOX,Dimethyl disulfide,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Diflufenican (Ref: AE 088657),WYEHFWKAOXOVJD-UHFFFAOYSA-N,Contact,1,PPDB,Diflufenican,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"N-[3-[[(Phenylamino)carbonyl]oxy]phenyl]carbamic acid, Ethyl ester",WZJZMXBKUWKXTQ-UHFFFAOYSA-N,Contact,1,ECOTOX,Desmedipham,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Triflumuron (Ref: OMS 2015),XAIPTRIXGHTTNT-UHFFFAOYSA-N,Contact,2,PPDB,Triflumuron,>200.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,N-(Phosphonomethyl)glycine,XDDAORKBJWWYJS-UHFFFAOYSA-N,Contact,2,ECOTOX,Glyphosate,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"N,N'-[Thiobis[(methylimino)carbonyloxy]]bisethanimidothioic acid dimethyl ester",XDOTVMNBCQVZKG-UHFFFAOYSA-N,Oral,1,ECOTOX,Thiodicarb,0.153,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox,1-naphthylacetamide,XFNJVKMNNVCYEK-UHFFFAOYSA-N,Contact,1,PPDB,1-naphthylacetamide,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,"N'-(3,4-Dichlorophenyl)-N-methoxy-N-methylurea",XKJMBINCVNINCA-UHFFFAOYSA-N,Contact,1,ECOTOX,Linuron,>97.8,False,False,0,0,1,0,0,1,-1,0,-1
+OpenFoodTox,Bensulfuron-methyl (Ref: DPX F5384),XMQFTWRPUQYINF-UHFFFAOYSA-N,Oral,1,PPDB,Bensulfuron-Methyl,>51.41,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Thiencarbazone-methyl (Ref: BYH 18636 ),XSKZXGDFSCCXQX-UHFFFAOYSA-N,Oral,1,PPDB,Thiencarbazone-methyl,>199.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,"3,5-Dimethyl-4-(methylthio)phenol, Methylcarbamate",YFBPRJGDJKVWAH-UHFFFAOYSA-N,Contact,2,ECOTOX,Methiocarb,0.23,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox,Pirimicarb (Ref: OMS 1330),YFGYUFNIOHWBOB-UHFFFAOYSA-N,Oral,1,PPDB,Pirimicarb,4.0,False,True,0,0,1,1,1,1,1,1,1
+OpenFoodTox,N-Dodecylguanidine acetate (1:1),YIKWKLYQRFRGPM-UHFFFAOYSA-N,Contact,1,ECOTOX,Dodine,>100.0,True,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,Dodemorph acetate (Ref: BAS 238F),YLJLLELGHSWIDU-UHFFFAOYSA-N,Contact,1,PPDB,Dodemorph acetate,>76.6,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,1-[[2-(4-Ethoxyphenyl)-2-methylpropoxy]methyl]-3-phenoxybenzene,YREQHYQNNWYQCJ-UHFFFAOYSA-N,Contact,1,ECOTOX,Etofenprox,0.015,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox,Imidacloprid (Ref: BAY NTN 33893),YWTYJOPNNQFBPC-UHFFFAOYSA-N,Oral,5,PPDB,Imidacloprid,0.0037,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox,"4-Chloro-2-cyano-N,N-dimethyl-5-(4-methylphenyl)-1H-imidazole-1-sulfonamide",YXKMMRDKEKCERS-UHFFFAOYSA-N,Oral,2,ECOTOX,Cyazofamid,>31.8,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Glufosinate-ammonium (Ref: HOE 039866),ZBMRKNMTMPPMMK-UHFFFAOYSA-N,Contact,1,PPDB,Glufosinate-ammonium,>345.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,(1-Methylethyl)phosphoramidic acid ethyl-3-methyl-4-(methylthio)phenyl ester,ZCJPOPBZHLUFHF-UHFFFAOYSA-N,Contact,1,ECOTOX,Fenamiphos,0.28,False,True,1,0,0,1,1,1,1,1,1
+OpenFoodTox,Ethametsulfuron-methyl (Ref: DPX-A7881),ZINJLDJMHCUBIP-UHFFFAOYSA-N,Contact,2,PPDB,Ethametsulfuron-Methyl,4.62,False,True,0,0,1,1,1,1,1,1,1
+OpenFoodTox,"4,6-Dimethyl-N-phenyl-2-pyrimidinamine",ZLIBICFPKPWGIZ-UHFFFAOYSA-N,Contact,1,ECOTOX,Pyrimethanil,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox,Potassium thiocyanate,ZNNZYHKDIALBAK-UHFFFAOYSA-M,Contact,1,PPDB,Potassium thiocyanate,>0.33,False,False,-1,1,-1,-1,1,-1,-1,1,-1
+OpenFoodTox,"Phosphorothioic acid O,O-dimethyl O-(3-methyl-4-nitrophenyl)ester",ZNOLGFHPUIJIMJ-UHFFFAOYSA-N,Oral,1,ECOTOX,Fenitrothion,0.2,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox,"5-Amino-1-[2,6-dichloro-4-(trifluoromethyl)phenyl]-4-[(trifluoromethyl)sulfinyl]-1H-pyrazole-3-carbonitrile",ZOCSXAVNDGMNBV-UHFFFAOYSA-N,Contact,2,ECOTOX,Fipronil,0.00593,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox,"2,6-Dinitro-N,N-dipropyl-4-(trifluoromethyl)benzenamine",ZSDSQXJSNMTJDA-UHFFFAOYSA-N,Oral,2,ECOTOX,Trifluralin,>100.0|>80.0,True,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox,Lenacil (Ref: DPX B634),ZTMKADLOSYKWCA-UHFFFAOYSA-N,Oral,1,PPDB,Lenacil,>110.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox,"2-[4-(1,1-Dimethylethyl)phenoxy]cyclohexyl 2-propynyl ester sulfurous acid",ZYHMJXZULPZUED-UHFFFAOYSA-N,Contact,1,ECOTOX,Propargite,47.92,False,True,0,0,1,0,0,1,1,1,1
+OpenFoodTox,Tebufenpyrad (Ref: AC 801757),ZZYSLNWGKKDOML-UHFFFAOYSA-N,Contact,1,PPDB,Tebufenpyrad,>6.7,False,False,0,0,1,-1,1,-1,-1,1,-1
+OpenFoodTox_48h_screen,Quinmerac (Ref: BAS 518H),ALZOLUNSQWINIR-UHFFFAOYSA-N,Contact,1,PPDB,Quinmerac,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,2-[2-Chloro-5-[4-chloro-5-(difluoromethoxy)-1-methyl-1H-pyrazol-3-yl]-4-fluorophenoxy]acetic acid ethyl ester,APTZNLHMIGJTEW-UHFFFAOYSA-N,Contact,1,ECOTOX,Pyraflufen-ethyl,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,Diclofop-methyl (Ref: HOE 023408),BACHBFVBHLGWSL-UHFFFAOYSA-N,Contact,1,PPDB,Diclofop-Methyl,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,"beta-(4-Chlorophenoxy)-alpha-(1,1-dimethylethyl)-1H-1,2,4-triazole-1-ethanol",BAZVSMNPJJMILC-UHFFFAOYSA-N,Contact,1,ECOTOX,Triadimenol,>200.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox_48h_screen,"2,6-Dichloro-4-nitrobenzenamine",BIXZHMJUSMUDOQ-UHFFFAOYSA-N,Contact,1,ECOTOX,Dicloran,>100.0,True,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox_48h_screen,"[3-(4,5-Dihydro-3-isoxazolyl)-2-methyl-4-(methylsulfonyl)phenyl](5-hydroxy-1-methyl-1H-pyrazol-4-yl)methanone",BPPVUXSMLBXYGG-UHFFFAOYSA-N,Oral,1,ECOTOX,Topramezone,>72.05,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox_48h_screen,"1-[[2-[2-Chloro-4-(4-chlorophenoxyl)phenyl]-4-methyl-1,3-dioxolan-2-yl]methyl]-1H-1,2,4-triazole",BQYJATMQXGBDHF-UHFFFAOYSA-N,Contact,1,ECOTOX,Difenoconazole,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,"3-[2,4-Dichloro-5-(1-methylethoxy)phenyl]-5-(1,1-dimethylethyl)-1,3,4-oxadiazol-2(3H)-one",CHNUNORXWHYHNE-UHFFFAOYSA-N,Contact,1,ECOTOX,Oxadiazon,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,Teflubenzuron (Ref: CME 13406),CJDWRQLODFKPEL-UHFFFAOYSA-N,Oral,1,PPDB,Teflubenzuron,>72.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox_48h_screen,2-Chloro-N-(2-ethoxyethyl)-N-(2-methyl-1-phenyl-1-propen-1-yl)acetamide,CSWIKHNSBZVWNQ-UHFFFAOYSA-N,Oral,1,ECOTOX,Pethoxamid,>200.0,False,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,Amidosulfuron,CTTHWASMBLQOFR-UHFFFAOYSA-N,Contact,1,PPDB,Amidosulfuron,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,Aclonifen (Ref: AE F068300),DDBMQDADIHOWIC-UHFFFAOYSA-N,Contact,1,PPDB,Aclonifen,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,"4-[2-[4-(1,1-Dimethylethyl)phenyl]ethoxy]quinazoline",DMYHGDXADUDKCQ-UHFFFAOYSA-N,Contact,2,ECOTOX,Fenazaquin,1.21,False,True,0,0,1,1,1,1,1,1,1
+OpenFoodTox_48h_screen,Bupirimate (Ref: PP 588),DSKJPMWIHSOYEA-UHFFFAOYSA-N,Contact,1,PPDB,Bupirimate,>50.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox_48h_screen,"4-Chloro-2-(1,1-dimethylethyl)-5-[[[4-(1,1-dimethylethyl)phenyl]methyl]thio]-3(2H)pyridazinene",DWFZBUWUXWZWKD-UHFFFAOYSA-N,Contact,1,ECOTOX,Pyridaben,>0.024,False,False,-1,1,-1,-1,1,-1,-1,1,-1
+OpenFoodTox_48h_screen,Nonanoic acid,FBUKVWPVBMHYJY-UHFFFAOYSA-N,Contact,1,ECOTOX,Nonanoic acid,>37.5,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox_48h_screen,Proquinazid (Ref: DPX KQ926),FLVBXVXXXMLMOX-UHFFFAOYSA-N,Oral,1,PPDB,Proquinazid,>125.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox_48h_screen,Metribuzin (Ref: DPX G2504),FOXFZRUHNHCZPX-UHFFFAOYSA-N,Oral,1,PPDB,Metribuzin,166.0,False,True,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,Benfuracarb,FYZBOYWSHKHDMT-UHFFFAOYSA-N,Contact,2,PPDB,Benfuracarb,0.19,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox_48h_screen,Metaldehyde,GKKDCARASOJPNG-UHFFFAOYSA-N,Oral,1,PPDB,Metaldehyde,>87.5,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox_48h_screen,"N-(5,7-Dimethoxy[1,2,4]triazolo[1,5-a]pyrimidin-2-yl)-2-methoxy-4-(trifluoromethyl)-3-pyridinesulfonamide",GLBLPMUBLHYFCW-UHFFFAOYSA-N,Contact,1,ECOTOX,Pyroxsulam,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,Penflufen (Ref: BYF-14182),GOFJDXZZHFNFLV-UHFFFAOYSA-N,Contact,1,PPDB,Penflufen,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,"3,3-Dimethylbutanoic acid 2-oxo-3-(2,4,6-trimethylphenyl)-1-oaxspiro[4.4]non-3-en-4-yl ester",GOLXNESZZPUPJE-UHFFFAOYSA-N,Contact,2,ECOTOX,Spiromesifen,>200.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox_48h_screen,"5,6-Dihydro-2-methyl-N-phenyl-1,4-oxathiin-3-carboxamide",GYSSRZJIHXQEHQ-UHFFFAOYSA-N,Oral,1,ECOTOX,Carboxin,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,Cyprodinil (Ref: CGA 219417),HAORKNGNJCEJBX-UHFFFAOYSA-N,Contact,1,PPDB,Cyprodinil,>784.0,False,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,[N(Z)]-N-[3-[(6-Chloro-3-pyridinyl)methyl]-2-thiazolidinylidene]cyanamide,HOKKPVIRMVDYPB-UHFFFAOYSA-N,Oral,1,ECOTOX,Thiacloprid,17.32,False,True,0,0,1,0,0,1,1,1,1
+OpenFoodTox_48h_screen,Chromafenozide (Ref: ANS 118),HPNSNYBUADCFDR-UHFFFAOYSA-N,Contact,1,PPDB,Chromafenozide,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,"S-[(6-Chloro-2-oxo-3(2H)-benzoxazolyl)methyl]O,O-diethyl ester phosphorodithioic acid",IOUNQDKNJZEDEP-UHFFFAOYSA-N,Contact,1,ECOTOX,Phosalone,4.4,False,True,0,0,1,1,1,1,1,1,1
+OpenFoodTox_48h_screen,Triazoxide (Ref: SAS 9244),IQGKIPDJXCAMSM-UHFFFAOYSA-N,Contact,2,PPDB,Triazoxide,>200.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox_48h_screen,"2-Ethoxy-2,3-dihydro-3,3-dimethyl-5-benzofuranol 5-methanesulfonate",IRCMYGHHKLLGHV-UHFFFAOYSA-N,Oral,1,ECOTOX,Ethofumesate,>50.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox_48h_screen,Carbosulfan (Ref: OMS 3022),JLQUFIHWVLZVTJ-UHFFFAOYSA-N,Contact,2,PPDB,Carbosulfan,0.18,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox_48h_screen,Flutriafol (Ref: PP 450),JWUCHKBSVLQQCO-UHFFFAOYSA-N,Oral,1,PPDB,Flutriafol,>2.0,False,False,0,0,1,-1,1,-1,-1,1,-1
+OpenFoodTox_48h_screen,"2-[(2-Chlorophenyl)methyl]-4,4-dimethyl-3-isoxazolidinone",KIEDNEWSYUYDSN-UHFFFAOYSA-N,Oral,2,ECOTOX,Clomazone,>85.29|>91.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox_48h_screen,N-[2-[3-Chloro-5-(trifluoromethyl)-2-pyridinyl]ethyl]-2-(trifluoromethyl)benzamide,KVDJTXBXMWJJEF-UHFFFAOYSA-N,Contact,1,ECOTOX,Fluopyram,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,Captan (Ref: SR 406),LDVVMCZRFWMZSG-UHFFFAOYSA-N,Oral,2,PPDB,Captan,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,"S-[(1,3-Dihydro-1,3-dioxo-2H-isoindol-2-yl)methyl]O,O-dimethyl ester, Phosphorodithioic acid",LMNZTLDVJIUSHT-UHFFFAOYSA-N,Contact,2,ECOTOX,Phosmet,0.22,False,True,1,0,0,1,1,1,1,1,1
+OpenFoodTox_48h_screen,Azimsulfuron,MAHPNPYYQAIOJN-UHFFFAOYSA-N,Contact,1,PPDB,Azimsulfuron,>25.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox_48h_screen,"N-[[(4,6-Dimethoxy-2-pyrimidinyl)amino]carbonyl]-3-(ethylsulfonyl)-2-pyridine sulfonamide",MEFOUWRMVYJCQC-UHFFFAOYSA-N,Oral,1,ECOTOX,Rimsulfuron,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,"2,2-Dimethylpropanoic acid  8-(2,6-diethyl-4-methylphenyl)-1,2,4,5- tetrahydro-7-oxo-7H-pyrazolo[1,2-d][1,4,5]oxadiazepin-9-yl ester",MGOHCFMYLBAPRN-UHFFFAOYSA-N,Contact,1,ECOTOX,Pinoxaden,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,1-decanol,MWKFXSUHUHTGQN-UHFFFAOYSA-N,Contact,1,PPDB,1-Decanol,>13.8,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox_48h_screen,"N,N-Dimethyl-N'-[3[[(methylamino)carbonyl]oxy]phenyl]methanimidamide hydrochloride (1:1)",MYPKGPZHHQEODQ-UHFFFAOYSA-N,Oral,1,ECOTOX,Formetanate hydrochloride,0.16,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox_48h_screen,Sulfur,NINIDFKCEFEMDL-UHFFFAOYSA-N,Contact,1,ECOTOX,Sulfur (S),>98.5,False,False,0,0,1,0,0,1,-1,0,-1
+OpenFoodTox_48h_screen,Aminopyralid (Ref: XDE 750),NIXXQNOQHKNPEJ-UHFFFAOYSA-N,Oral,1,PPDB,Aminopyralid,>120.0,False,False,0,0,1,0,1,0,0,1,0
+OpenFoodTox_48h_screen,Prosulfocarb (Ref: SC 0574),NQLVQOSNDJXLKG-UHFFFAOYSA-N,Contact,1,PPDB,Prosulfocarb,>80.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox_48h_screen,"Phosphorothioic acid O-(2,6-dichloro-4-methylphenyl) O,O-dimethyl ester",OBZIQQJJIKNWNO-UHFFFAOYSA-N,Contact,1,ECOTOX,Tolclofos-methyl,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,Pencycuron (Ref: NTN 19701),OGYFATSSENRIKG-UHFFFAOYSA-N,Oral,1,PPDB,Pencycuron,>98.5,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox_48h_screen,(alphaE)-alpha-(Methoxyimino)-2-[[[(E)-[1-[3-(trifluoromethyl)phenyl]ethylidene]amino]oxy]methyl]benzeneacteic acid methyl ester,ONCZDRURRATYFI-UHFFFAOYSA-N,Contact,1,ECOTOX,Trifloxystrobin,>100.0,True,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox_48h_screen,"3-(3,5-Dichlorophenyl)-N-(1-methylethyl)-2,4-dioxo-1-imidazolidinecarboxamide",ONUFESLQCSAYKA-UHFFFAOYSA-N,Oral,1,ECOTOX,Iprodione,>100.0,True,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox_48h_screen,2-Chloro-1-(3-ethoxy-4-nitrophenoxy)-4-(trifluoromethyl)benzene,OQMBBFQZGJFLBU-UHFFFAOYSA-N,Oral,1,ECOTOX,Oxyfluorfen,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,"N-[2-(1,3-Dimethylbutyl)-3-thienyl]-1-methyl-3-(trifluoromethyl)-1H-pyrazole-4-carboxamide",PFFIDZXUXFLSSR-UHFFFAOYSA-N,Oral,1,ECOTOX,Penthiopyrad,>500.0,False,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,Clothianidin (Ref: CGA 322704),PGOOBECODWQEAB-UHFFFAOYSA-N,Oral,1,PPDB,Clothianidin,0.00379,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox_48h_screen,Aluminium phosphide,PPNXXZIBFHTHDM-UHFFFAOYSA-N,Oral,1,PPDB,Aluminium phosphide,0.24,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox_48h_screen,Sulcotrione (Ref: SC 0051),PQTBTIFWAXVEPB-UHFFFAOYSA-N,Oral,1,PPDB,Sulcotrione,50.0,False,True,0,0,1,0,0,1,1,1,1
+OpenFoodTox_48h_screen,"2-[(1,1-Dimethylethyl)imino]tetrahydro-3-(1-methylethyl)-5-phenyl-4H-1,3,5-thiadiazin-4-one",PRLVTUNWOQKEAI-UHFFFAOYSA-N,Oral,2,ECOTOX,Buprofezin,>163.5,False,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,Flutolanil (Ref: NNF 136),PTCGDEVVHUXTMP-UHFFFAOYSA-N,Contact,1,PPDB,Flutolanil,>200.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox_48h_screen,Tebuconazole (Ref: HWG 1608),PXMNMQRDXWABCY-UHFFFAOYSA-N,Oral,2,PPDB,Tebuconazole,>83.05,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox_48h_screen,Dithianon (Ref: BAS 216F),PYZSVQVRHDXQSL-UHFFFAOYSA-N,Oral,1,PPDB,Dithianon,>25.4,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox_48h_screen,"1-[2-(2,4-Dichlorophenyl)-2-(2-propenyloxy)ethyl]-1H-imidazole",PZBPKYOVPCNPJY-UHFFFAOYSA-N,Oral,1,ECOTOX,Imazalil,>35.1,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox_48h_screen,Methoxyfenozide (Ref: RH 2485),QCAWEPFNJXQPAN-UHFFFAOYSA-N,Contact,1,PPDB,Methoxyfenozide,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,"2-[(4-Chlorophenyl)methyl]-5-(1-methylethyl)-1-(1H-1,2,4-triazol-1-ylmethyl)cyclopentanol",QTYCMDBMOLSEAM-UHFFFAOYSA-N,Oral,1,ECOTOX,Ipconazole,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,"1-(1,1-Dimethylethyl)-2-(4-ethylbenzoyl)hydrazide-3,5-dimethylbenzoic acid",QYPNKSZPJQQLRK-UHFFFAOYSA-N,Contact,1,ECOTOX,Tebufenozide,>234.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox_48h_screen,Florasulam (Ref: DE 570),QZXATCCPQKOEIH-UHFFFAOYSA-N,Contact,1,PPDB,Florasulam,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,"N-[[(4,6-Dimethoxy-2-pyrimidinyl)amino]carbonyl]-2-(ethylsulfonyl)imidazo[1,2-a]pyridine-3-sulfonamide",RBSXHDIPCIWOMG-UHFFFAOYSA-N,Contact,1,ECOTOX,Sulfosulfuron,>25.0,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox_48h_screen,Paclobutrazol (Ref: PP 333),RMOGWMIKYWRTKW-UHFFFAOYSA-N,Oral,1,PPDB,Paclobutrazol,>2.0,False,False,0,0,1,-1,1,-1,-1,1,-1
+OpenFoodTox_48h_screen,Flufenoxuron (Ref: BAS 3071),RYLHNOVXKPXDIP-UHFFFAOYSA-N,Contact,1,PPDB,Flufenoxuron,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,Dimethachlor (Ref: CGA 17020),SCCDDNKJYDZXMM-UHFFFAOYSA-N,Contact,1,PPDB,Dimethachlor,>200.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox_48h_screen,Metazachlor (Ref: BAS 47900H),STEPQTYSZVCJPV-UHFFFAOYSA-N,Oral,1,PPDB,Metazachlor,>72.19,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox_48h_screen,Bifenox,SUSRORUBZHMPCO-UHFFFAOYSA-N,Contact,1,PPDB,Bifenox,>200.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox_48h_screen,Prochloraz (Ref: BTS 40542),TVLSRXXIMLFWEO-UHFFFAOYSA-N,Oral,1,PPDB,Prochloraz,>101.06,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox_48h_screen,"2-[[[[[(4,6-Dimethoxy-2-pyrimidinyl)amino]carbonyl]amino]sulfonyl]amino]-N,N-dimethylbenzamide",UCDPMNSCCRBWIC-UHFFFAOYSA-N,Contact,1,ECOTOX,Orthosulfamuron,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,(2-Chloroethyl)phosphonic acid,UDPGUMQDCGORJQ-UHFFFAOYSA-N,Contact,1,ECOTOX,Ethephon,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,"1,2,3-Benzothiadiazole-7-carbothioic acid S-methyl ester",UELITFHSCLAHKR-UHFFFAOYSA-N,Oral,1,ECOTOX,Acibenzolar-S-methyl,128.0,False,True,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,"alpha-(4-Chlorophenyl)-alpha-(1-cyclopropylethyl)-1H-1,2,4-triazole-1-ethanol",UFNOUKDBUJZYDE-UHFFFAOYSA-N,Oral,1,ECOTOX,Cyproconazole,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,"2-Chloro-N,N,N-trimethylethanaminium chloride (1:1)",UHZZMRAGKVHANO-UHFFFAOYSA-M,Contact,1,ECOTOX,Chlormequat chloride,>65.2,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox_48h_screen,Fuberidazole,UYJUZNLFJAWNEZ-UHFFFAOYSA-N,Oral,1,PPDB,Fuberidazole,>187.2,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox_48h_screen,Fluazinam (Ref: IKF 1216),UZCGKGPEKUCDTF-UHFFFAOYSA-N,Oral,1,PPDB,Fluazinam,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,Fenhexamid (Ref: KBR 2738),VDLGAVXLJYLFDH-UHFFFAOYSA-N,Oral,1,PPDB,Fenhexamid,>102.07,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox_48h_screen,Metosulam (Ref: XDE 511),VGHPMIFEKOFHHQ-UHFFFAOYSA-N,Contact,1,PPDB,Metosulam,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,Bitertanol (Ref: KWG 0599),VGPIBGGRCVEHQZ-UHFFFAOYSA-N,Oral,1,PPDB,Bitertanol (sum of isomers),>104.4,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox_48h_screen,Metamitron (Ref: BAY DRW 1139),VHCNQEUWZYOAEV-UHFFFAOYSA-N,Oral,1,PPDB,Metamitron,>97.2,False,False,0,0,1,0,0,1,-1,1,-1
+OpenFoodTox_48h_screen,"2-(4-Methoxy[1,1'-biphenyl]-3-yl)hydrazinecarboxylic acid, 1-Methylethyl ester",VHLKTXFWDRXILV-UHFFFAOYSA-N,Contact,1,ECOTOX,Bifenazate,8.5,False,True,0,0,1,1,1,1,1,1,1
+OpenFoodTox_48h_screen,"2-Chloro-N-[[(4-methoxy-6-methyl-1,3,5-triazin-2-yl)amino]carbonyl]benzenesulfonamide",VJYIFXVZLXQVHO-UHFFFAOYSA-N,Contact,1,ECOTOX,Chlorsulfuron,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,Tribenuron-methyl (Ref: DPX L5300),VLCQZHSMCYCDJL-UHFFFAOYSA-N,Oral,2,PPDB,Tribenuron-methyl,>9.1,False,False,0,0,1,-1,1,-1,-1,1,-1
+OpenFoodTox_48h_screen,2-Chloro-N-(ethoxymethyl)-N-(2-ethyl-6-methylphenyl)acetamide,VTNQPKFIQCLBDU-UHFFFAOYSA-N,Oral,1,ECOTOX,Acetochlor,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,Benzyl 4-amino-3-chloro-6-(4-chloro-2-fluoro-3-methoxyphenyl)-5-fluoropyridine-2-carboxylate,WNZCDFOXYNRBRB-UHFFFAOYSA-N,Contact,1,ECOTOX,Florpyrauxifen-benzyl,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,Diflufenican (Ref: AE 088657),WYEHFWKAOXOVJD-UHFFFAOYSA-N,Contact,1,PPDB,Diflufenican,>100.0,True,False,0,0,1,0,0,1,0,1,0
+OpenFoodTox_48h_screen,Triflumuron (Ref: OMS 2015),XAIPTRIXGHTTNT-UHFFFAOYSA-N,Contact,2,PPDB,Triflumuron,>200.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox_48h_screen,"N,N'-[Thiobis[(methylimino)carbonyloxy]]bisethanimidothioic acid dimethyl ester",XDOTVMNBCQVZKG-UHFFFAOYSA-N,Oral,1,ECOTOX,Thiodicarb,0.153,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox_48h_screen,Thiencarbazone-methyl (Ref: BYH 18636 ),XSKZXGDFSCCXQX-UHFFFAOYSA-N,Oral,1,PPDB,Thiencarbazone-methyl,>199.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox_48h_screen,"3,5-Dimethyl-4-(methylthio)phenol, Methylcarbamate",YFBPRJGDJKVWAH-UHFFFAOYSA-N,Contact,2,ECOTOX,Methiocarb,0.23,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox_48h_screen,N-Dodecylguanidine acetate (1:1),YIKWKLYQRFRGPM-UHFFFAOYSA-N,Contact,1,ECOTOX,Dodine,>100.0,True,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox_48h_screen,1-[[2-(4-Ethoxyphenyl)-2-methylpropoxy]methyl]-3-phenoxybenzene,YREQHYQNNWYQCJ-UHFFFAOYSA-N,Contact,1,ECOTOX,Etofenprox,0.015,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox_48h_screen,Imidacloprid (Ref: BAY NTN 33893),YWTYJOPNNQFBPC-UHFFFAOYSA-N,Oral,4,PPDB,Imidacloprid,0.0037,False,True,1,1,1,1,1,1,1,1,1
+OpenFoodTox_48h_screen,Glufosinate-ammonium (Ref: HOE 039866),ZBMRKNMTMPPMMK-UHFFFAOYSA-N,Contact,1,PPDB,Glufosinate-ammonium,>345.0,False,False,0,0,1,0,0,1,0,0,1
+OpenFoodTox_48h_screen,(1-Methylethyl)phosphoramidic acid ethyl-3-methyl-4-(methylthio)phenyl ester,ZCJPOPBZHLUFHF-UHFFFAOYSA-N,Contact,1,ECOTOX,Fenamiphos,0.28,False,True,1,0,0,1,1,1,1,1,1
+OpenFoodTox_48h_screen,Tebufenpyrad (Ref: AC 801757),ZZYSLNWGKKDOML-UHFFFAOYSA-N,Contact,1,PPDB,Tebufenpyrad,>6.7,False,False,0,0,1,-1,1,-1,-1,1,-1
+PLOS2022,Cyflufenamid (Ref: NF 149),ACMXQHFNODYQAT-UHFFFAOYSA-N,Contact,1,PPDB,Cyflufenamid,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"(3-Bromo-6-methoxy-2-methylphenyl)(2,3,4-trimethoxy-6-methylphenyl)methanone",AMSPWOYQQAWRRM-UHFFFAOYSA-N,Oral,1,ECOTOX,Metrafenone,>114.0,False,False,0,0,1,0,0,1,0,1,0
+PLOS2022,2-[2-Chloro-5-[4-chloro-5-(difluoromethoxy)-1-methyl-1H-pyrazol-3-yl]-4-fluorophenoxy]acetic acid ethyl ester,APTZNLHMIGJTEW-UHFFFAOYSA-N,Contact,1,ECOTOX,Pyraflufen-ethyl,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"beta-(4-Chlorophenoxy)-alpha-(1,1-dimethylethyl)-1H-1,2,4-triazole-1-ethanol",BAZVSMNPJJMILC-UHFFFAOYSA-N,Contact,1,ECOTOX,Triadimenol,>200.0,False,False,0,0,1,0,0,1,0,0,1
+PLOS2022,"1-[[2-[2-Chloro-4-(4-chlorophenoxyl)phenyl]-4-methyl-1,3-dioxolan-2-yl]methyl]-1H-1,2,4-triazole",BQYJATMQXGBDHF-UHFFFAOYSA-N,Contact,1,ECOTOX,Difenoconazole,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"N-[9-(Dichloromethylene)-1,2,3,4-tetrahydro-1,4-1H-pyrazole-4-carboxamide",CCCGEKHKTPTUHJ-UHFFFAOYSA-N,Contact,1,ECOTOX,Benzovindiflupyr,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"N-(1-Ethylpropyl)-3,4-dimethyl-2,6-dinitro-benzenamine",CHIFOSRWCNZCFN-UHFFFAOYSA-N,Contact,1,ECOTOX,Pendimethalin,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"3-[2,4-Dichloro-5-(1-methylethoxy)phenyl]-5-(1,1-dimethylethyl)-1,3,4-oxadiazol-2(3H)-one",CHNUNORXWHYHNE-UHFFFAOYSA-N,Contact,1,ECOTOX,Oxadiazon,>25.0,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,"1-Naphthaleneacetic acid, Sodium salt",CJUUXVFWKYRHAR-UHFFFAOYSA-M,Contact,1,ECOTOX,Sodium 1-naphthaleneacetate,>96.7,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,1-Naphthalenol methylcarbamate,CVXBEEMKQHEXEN-UHFFFAOYSA-N,Contact,1,ECOTOX,Carbaryl,1.336,False,True,0,1,0,1,1,1,1,1,1
+PLOS2022,"(5-Hydroxy-1,3-dimethyl-1H-pyrazol-4-yl)[2-(methylsulfonyl)-4-(trifluoromethyl)phenyl]methanone",CZRVDACSCJKRFL-UHFFFAOYSA-N,Contact,1,ECOTOX,Pyrasulfotole,>75.0,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,2-Chloro-6-(trichloromethyl)pyridine,DCUJJWWUNKIJPH-UHFFFAOYSA-N,Contact,1,ECOTOX,Nitrapyrin,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"3-(Difluoromethyl)-N-methoxy-1-methyl-N-[1-(2,4,6-trichlorophenyl)propan-2-yl]-1H-pyrazole-4-carboxamide",DGOAXBPOVUPPEB-UHFFFAOYSA-N,Contact,1,ECOTOX,Pydiflumetofen,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"4-[2-[4-(1,1-Dimethylethyl)phenyl]ethoxy]quinazoline",DMYHGDXADUDKCQ-UHFFFAOYSA-N,Contact,1,ECOTOX,Fenazaquin,8.1,False,True,0,0,1,1,1,1,1,1,1
+PLOS2022,Momfluorothrin (Ref: S-1563),DPJITPZADZSLBP-UHFFFAOYSA-N,Contact,1,PPDB,Momfluorothrin,0.2,False,True,1,1,1,1,1,1,1,1,1
+PLOS2022,3-Bromo-1-(3-chloro-2-pyridinyl)-N-[4-cyano-2-methyl-6-[(methylamino)carbonyl]phenyl]-1H-pyrazole-5-carboxamide,DVBUIBGJRQBEDP-UHFFFAOYSA-N,Oral,1,ECOTOX,Cyantraniliprole,>0.1055,False,False,-1,1,-1,-1,1,-1,-1,1,-1
+PLOS2022,"4-Chloro-2-(1,1-dimethylethyl)-5-[[[4-(1,1-dimethylethyl)phenyl]methyl]thio]-3(2H)pyridazinene",DWFZBUWUXWZWKD-UHFFFAOYSA-N,Contact,1,ECOTOX,Pyridaben,0.024,False,True,1,1,1,1,1,1,1,1,1
+PLOS2022,"1,1'-Dimethyl-4,4'-bipyridinium chloride (1:2)",FIKAKWIAUPDISJ-UHFFFAOYSA-L,Oral,1,ECOTOX,Paraquat dichloride,51.0,False,True,0,0,1,0,0,1,1,1,1
+PLOS2022,"2,6-Bis[(4,6-dimethoxy-2-pyrimidinyl)oxy]benzoic acid sodium salt",FUHMZYWBSHTEDZ-UHFFFAOYSA-M,Contact,1,ECOTOX,Bispyribac-sodium,>25.0,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,Ametoctradin (Ref: BAS 650F),GGKQIOFASHYUJZ-UHFFFAOYSA-N,Contact,1,PPDB,Ametoctradin,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,Metaldehyde,GKKDCARASOJPNG-UHFFFAOYSA-N,Oral,1,PPDB,Metaldehyde,>87.0,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,"N-(5,7-Dimethoxy[1,2,4]triazolo[1,5-a]pyrimidin-2-yl)-2-methoxy-4-(trifluoromethyl)-3-pyridinesulfonamide",GLBLPMUBLHYFCW-UHFFFAOYSA-N,Contact,1,ECOTOX,Pyroxsulam,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"1-[[(2,4-Dichlorophenyl)amino]carbonyl]cyclopropane carboxylic acid",GLWWLNJJJCTFMZ-UHFFFAOYSA-N,Oral,1,ECOTOX,Cyclanilide,>89.5,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,"3,3-Dimethylbutanoic acid 2-oxo-3-(2,4,6-trimethylphenyl)-1-oaxspiro[4.4]non-3-en-4-yl ester",GOLXNESZZPUPJE-UHFFFAOYSA-N,Contact,1,ECOTOX,Spiromesifen,>200.0,False,False,0,0,1,0,0,1,0,0,1
+PLOS2022,N-(2-Chloro-4-pyridinyl)-N'-phenylurea  ,GPXLRLUVLMHHIK-UHFFFAOYSA-N,Contact,1,ECOTOX,Forchlorfenuron,>25.0,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,"Chloric acid, Sodium salt (1:1)",GQMRMFTXVUMSAU-UHFFFAOYSA-N,Oral,1,ECOTOX,Sodium chlorate,>75.0,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,"5,6-Dihydro-2-methyl-N-phenyl-1,4-oxathiin-3-carboxamide",GYSSRZJIHXQEHQ-UHFFFAOYSA-N,Oral,1,ECOTOX,Carboxin,>104.44,False,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"N-Phenyl-N'-1,2,3-thiadiazol-5-yl-urea",HFCYZXMHUIHAQI-UHFFFAOYSA-N,Contact,1,ECOTOX,Thidiazuron,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,[N(Z)]-N-[3-[(6-Chloro-3-pyridinyl)methyl]-2-thiazolidinylidene]cyanamide,HOKKPVIRMVDYPB-UHFFFAOYSA-N,Oral,1,ECOTOX,Thiacloprid,17.94,False,True,0,0,1,0,0,1,1,1,1
+PLOS2022,"N-[[4,6-Dimethoxy-2-pyrimidinyl)amino]carbonyl]-3-(trifluoromethyl)-2-pyridinesulfonamide",HWATZEJQIXKWQS-UHFFFAOYSA-N,Contact,1,ECOTOX,Flazasulfuron,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,2-Furancarboxaldehyde,HYBBIBNJHNGZAN-UHFFFAOYSA-N,Contact,1,ECOTOX,Furfural,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"alpha-Butyl-alpha-(4-chlorophenyl)-1H-1,2,4-triazole-1-propanenitrile",HZJKXKUJVSEEFU-UHFFFAOYSA-N,Oral,1,ECOTOX,Myclobutanil,>500.0,False,False,0,0,1,0,0,1,0,0,1
+PLOS2022,[2-[[[1-(4-Chlorophenyl)-1H-pyrazol-3-yl]oxy]methyl]phenyl]methoxycarbamic acid methyl ester,HZRSNVGNWUDEFX-UHFFFAOYSA-N,Contact,1,ECOTOX,Pyraclostrobin,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"N-(4-Fluorophenyl)-N-(1-methylethyl)-2-[[5-(trifluoromethyl)-1,3,4-thiadiazol-2-yl]oxy]acetamide",IANUJLZYFUDJIH-UHFFFAOYSA-N,Contact,1,ECOTOX,Flufenacet,>193.8,False,False,0,0,1,0,0,1,0,0,1
+PLOS2022,"1-[4-[4-[5-(2,6-Difluorophenyl)-4,5-dihydro-3-isoxazolyl]-2-thiazolyl]-1-piperidinyl]-2-[5-methyl-3-(trifluoromethyl)-1H-pyrazol-1-yl]ethanone",IAQLCKZJGNTRDO-UHFFFAOYSA-N,Contact,1,ECOTOX,Oxathiapiprolin,>104.39,False,False,0,0,1,0,0,1,0,0,1
+PLOS2022,(3-Methylphenyl)carbamic acid 3-[(methoxycarbonyl)amino]phenyl ester,IDOWTHOLJBTAFI-UHFFFAOYSA-N,Contact,1,ECOTOX,Phenmedipham,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"3-Phenyl-5-(2-thienyl)-1,2,4-oxadiazole",IHNSIFFSNUQGQN-UHFFFAOYSA-N,Oral,1,ECOTOX,Tioxazafen,>0.41,False,False,-1,1,-1,-1,1,-1,-1,1,-1
+PLOS2022,"2-(4-Chlorophenyl)-1-ethyl-1,4-dihydro-6-methyl-4-oxo-3-pyridinecarboxylic acid, Potassium salt",IUUMSKQPWAMVQI-UHFFFAOYSA-M,Oral,1,ECOTOX,Karetazan-potassium,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"3,6-Dichloro-2-methyoxybenzoic acid",IWEDIXLBFLAXBO-UHFFFAOYSA-N,Contact,1,ECOTOX,Dicamba,2.58,False,True,0,0,1,1,0,0,1,1,1
+PLOS2022,"2-(2,6-Difluorophenyl)-4-[4-(1,1-dimethylethyl)-2-ethoxyphenyl]-4,5-dihydrooxazole",IXSZQYVWNJNRAL-UHFFFAOYSA-N,Contact,1,ECOTOX,Etoxazole,>200.0,False,False,0,0,1,0,0,1,0,0,1
+PLOS2022,"2-[4-(4-Chlorophenoxy)-2-(trifluoromethyl)phenyl]-1-(1H-1,2,4-triazol-1-yl)propan-2-ol",JERZEQUMJNCPRJ-UHFFFAOYSA-N,Oral,1,ECOTOX,Mefentrifluconazole,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,Dimethenamid-P,JLYFCTQDENRSOL-UHFFFAOYSA-N,Oral,1,PPDB,Dimethenamid,94.0,False,True,0,0,1,0,0,1,1,0,0
+PLOS2022,Propoxycarbazone-sodium (Ref: MKH 6561),JRQGDDUXDKCWRF-UHFFFAOYSA-M,Contact,1,PPDB,Propoxycarbazone-sodium,>200.0,False,False,0,0,1,0,0,1,0,0,1
+PLOS2022,Flutriafol (Ref: PP 450),JWUCHKBSVLQQCO-UHFFFAOYSA-N,Oral,1,PPDB,Flutriafol,47.0,False,True,0,0,1,0,1,0,1,1,1
+PLOS2022,"2-[(Dimethoxyphosphinothioyl)thio]butanedioic acid 1,4-diethyl ester",JXSJBGJIGXNWCI-UHFFFAOYSA-N,Contact,1,ECOTOX,Malathion,0.709,False,True,1,1,1,1,1,1,1,1,1
+PLOS2022,Beta-cypermethrin (Ref: OMS 3068),KAATUXNTWXVJKI-UHFFFAOYSA-N,Contact,1,PPDB,Cypermethrin,0.023,False,True,1,1,1,1,1,1,1,1,1
+PLOS2022,4-Amino-3-chloro-6-(4-chloro-2-fluoro-3-methoxyphenyl)-2-pyridinecarboxylic acid methyl ester,KDHKOPYYWOHESS-UHFFFAOYSA-N,Contact,1,ECOTOX,Halauxifen methyl,>98.1,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,5-Methyl-3(2H)-isoxazolone,KGVPNLBXJKTABS-UHFFFAOYSA-N,Contact,1,ECOTOX,Hymexazole,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"2-[(2-Chlorophenyl)methyl]-4,4-dimethyl-3-isoxazolidinone",KIEDNEWSYUYDSN-UHFFFAOYSA-N,Oral,1,ECOTOX,Clomazone,>85.29,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,1-(3-Chloropyridin-2-yl)-N-[4-cyano-2-methyl-6-(methylcarbamoyl)phenyl]-3-{[5-(trifluoromethyl)-2H-tetrazol-2-yl]methyl}-1H-pyrazole-5-carboxamide,KNDVJPKNBVIKML-UHFFFAOYSA-N,Oral,1,ECOTOX,Tetraniliprole,0.0103,False,True,1,1,1,1,1,1,1,1,1
+PLOS2022,Mesotrione (Ref: ZA 1296),KPUREKXXPHOJQT-UHFFFAOYSA-N,Oral,1,PPDB,Mesotrione,>11.0,False,False,0,0,1,0,1,0,-1,1,-1
+PLOS2022,4-Chloro-N-[2-[3-methoxy-4-(2-propynyloxy)phenyl]ethyl]-alpha-(2-propynyloxy)benzeneacetamide,KWLVWJPJKJMCSH-UHFFFAOYSA-N,Oral,1,ECOTOX,Mandipropamid,>160.0,False,False,0,0,1,0,0,1,0,0,1
+PLOS2022,"N-(3',4'-Dichloro-5-fluoro[1,1'-biphenyl]-2-yl)-3-(difluoromethyl)-1-methyl-1H-pyrazole-4-carboxamide",LDLMOOXUCMHBMZ-UHFFFAOYSA-N,Contact,1,ECOTOX,Bixafen,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,Captan (Ref: SR 406),LDVVMCZRFWMZSG-UHFFFAOYSA-N,Oral,1,PPDB,Captan,0.055,False,True,1,0,0,1,0,0,1,1,1
+PLOS2022,"N-(3,4-Dichlorophenyl)propanamide",LFULEKSKNZEWOE-UHFFFAOYSA-N,Contact,1,ECOTOX,Propanil,>99.8,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,"(5S)-3,5-Dihydro-5-methyl-2-(methylthio)-5-phenyl-3-(phenylamino)-4H-imidazol-4-one",LMVPQMGRYSRMIW-UHFFFAOYSA-N,Contact,1,ECOTOX,Fenamidone,82.3,False,True,0,0,1,0,0,1,1,1,1
+PLOS2022,2-Chloro-N-(1-methylethyl)-N-phenylacetamide,MFOUDYKPLGXPGO-UHFFFAOYSA-N,Contact,1,ECOTOX,Propachlor,311.0,False,True,0,0,1,0,0,1,0,0,1
+PLOS2022,"2,2-Dimethylpropanoic acid  8-(2,6-diethyl-4-methylphenyl)-1,2,4,5- tetrahydro-7-oxo-7H-pyrazolo[1,2-d][1,4,5]oxadiazepin-9-yl ester",MGOHCFMYLBAPRN-UHFFFAOYSA-N,Contact,1,ECOTOX,Pinoxaden,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"2-[2-(1-Chlorocyclopropyl)-3-(2-chlorophenyl)-2-hydroxypropyl]-1,2-dihydro-3H-1,2,4-triazole-3-thione",MNHVNIJQQRJYDH-UHFFFAOYSA-N,Contact,1,ECOTOX,Prothioconazole,>200.0,False,False,0,0,1,0,0,1,0,0,1
+PLOS2022,"N,N-Dimethyl-N'-[3[[(methylamino)carbonyl]oxy]phenyl]methanimidamide hydrochloride (1:1)",MYPKGPZHHQEODQ-UHFFFAOYSA-N,Oral,1,ECOTOX,Formetanate hydrochloride,0.16,False,True,1,1,1,1,1,1,1,1,1
+PLOS2022,"2-Chloro-N-[[(4,6-dimethoxy-2-pyrimidinyl)amino]carbonyl]imidazo[1,2-a]pyridine-3-sulfonamide",NAGRVUXEKKZNHT-UHFFFAOYSA-N,Oral,1,ECOTOX,Imazosulfuron,45.9,False,True,0,0,1,0,0,1,1,1,1
+PLOS2022,2-[1-Methyl-2-(4-phenoxyphenoxy)ethoxy]pyridine,NHDHVHZZCFYRSB-UHFFFAOYSA-N,Contact,1,ECOTOX,Pyriproxyfen,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,alpha-(2-Chlorophenyl)-alpha-(4-chlorophenyl)-5-pyrimidinemethanol,NHOWDZOIZKMVAI-UHFFFAOYSA-N,Oral,1,ECOTOX,Fenarimol,>10.0,False,False,0,0,1,-1,1,-1,-1,1,-1
+PLOS2022,Mesosulfuron-methyl (Ref: AE F130060),NIFKBBMCXCMCAO-UHFFFAOYSA-N,Contact,1,PPDB,Mesosulfuron-methyl,>13.0,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,"N-[[[3-Chloro-4-[1,1,2-trifluoro-2-(trifluoromethoxy)ethoxy]phenyl]amino]carbonyl]-2,6-difluorobenzamide",NJPPVKZQTLUDBO-UHFFFAOYSA-N,Contact,1,ECOTOX,Novaluron,>100.0,True,False,0,0,1,0,0,1,0,0,1
+PLOS2022,"(5-Chloro-2-methoxy-4-methylpyridin-3-yl)(2,3,4-trimethoxy-6-methylphenyl)methanone",NMVCBWZLCXANER-UHFFFAOYSA-N,Oral,1,ECOTOX,Pyriofenone,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,N-(Cyano-2-thienylmethyl)-4-ethyl-2-(ethylamino)-5-thiazolecarboxamide,NQRFDNJEBWAUBL-UHFFFAOYSA-N,Oral,1,ECOTOX,Ethaboxam,>111.8,False,False,0,0,1,0,0,1,0,0,1
+PLOS2022,"N-{2-[(4,6-Dimethoxypyrimidin-2-yl)(hydroxy)methyl]-6-(methoxymethyl)phenyl}-1,1-difluoromethanesulfonamide",NTBVTCXMRYKRTB-UHFFFAOYSA-N,Contact,1,ECOTOX,Pyrimisulfan,>25.0,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,Imazamox (Ref: BAS 720H),NUPJIGQFXCQJBK-UHFFFAOYSA-N,Oral,1,PPDB,Imazamox,>40.0,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,Fosetyl-aluminium (Ref: RP 32545),OIPMQULDKWSNGX-UHFFFAOYSA-N,Contact,1,PPDB,Fosetyl-Al,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"2-[(4-Amino-3,5-dichloro-6-fluoro-2-pyridinyl)oxy]acetic acid 1-methylheptyl ester",OLZQTUCTGLHFTQ-UHFFFAOYSA-N,Contact,1,ECOTOX,Fluroxypyr 1-methylheptyl ester,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,(alphaE)-alpha-(Methoxyimino)-2-[[[(E)-[1-[3-(trifluoromethyl)phenyl]ethylidene]amino]oxy]methyl]benzeneacteic acid methyl ester,ONCZDRURRATYFI-UHFFFAOYSA-N,Contact,1,ECOTOX,Trifloxystrobin,>200.0,False,False,0,0,1,0,0,1,0,0,1
+PLOS2022,"5-[[(2,6-Difluorophenyl)methoxy]methyl]-4,5-dihydro-5-methyl(3-methyl-2-thienyl)isoxazole",OPEJGICLTMWFNQ-UHFFFAOYSA-N,Oral,1,ECOTOX,Methiozolin,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,2-Chloro-1-(3-ethoxy-4-nitrophenoxy)-4-(trifluoromethyl)benzene,OQMBBFQZGJFLBU-UHFFFAOYSA-N,Oral,1,ECOTOX,Oxyfluorfen,>109.0,False,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"4-Amino-N-(1,1-dimethylethyl)-4,5-dihydro-3-(1-methylethyl)-5-oxo-1H-1,2,4-triazole-1-carboxamide",ORFPWVRKFLOQHK-UHFFFAOYSA-N,Contact,1,ECOTOX,Amicarbazone,>200.0,False,False,0,0,1,0,0,1,0,0,1
+PLOS2022,"5-Methyl-5-(4-phenoxyphenyl)-3-(phenylamino)-2,4-oxazolidinedione",PCCSBWNGDMYFCW-UHFFFAOYSA-N,Oral,1,ECOTOX,Famoxadone,>0.92,False,False,-1,0,-1,-1,1,-1,-1,1,-1
+PLOS2022,Clothianidin (Ref: CGA 322704),PGOOBECODWQEAB-UHFFFAOYSA-N,Oral,1,PPDB,Clothianidin,0.00368,False,True,1,1,1,1,1,1,1,1,1
+PLOS2022,"N-Ethyl-N-(2-methyl-2-propenyl)-2,6-dinitro-4-(trifluoromethyl)benzenamine",PTFJIKYUEPWBMS-UHFFFAOYSA-N,Oral,1,ECOTOX,Ethalfluralin,>97.0,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,"8-(1,1-Dimethylethyl)-N-ethyl-N-propyl-1,4-dioxaspiro[4.5]decane-2-methanamine",PUYXTUJWRLOUCW-UHFFFAOYSA-N,Contact,1,ECOTOX,Spiroxamine,4.22,False,True,0,0,1,1,1,1,1,1,1
+PLOS2022,"2-Chloro-N-[2,6-dinitro-4-(trifluoromethyl)phenyl]-N-ethyl-6-fluorobenzenemethanamine",PWNAWOCHVWERAR-UHFFFAOYSA-N,Contact,1,ECOTOX,Flumetralin,>105.3,False,False,0,0,1,0,0,1,0,1,0
+PLOS2022,Methoxyfenozide (Ref: RH 2485),QCAWEPFNJXQPAN-UHFFFAOYSA-N,Contact,1,PPDB,Methoxyfenozide,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"2-(Acetyloxy)-3-dodecyl-1,4-naphthalenedione",QDRXWCAVUNHOGA-UHFFFAOYSA-N,Contact,1,ECOTOX,Acequinocyl,>100.0,True,False,0,0,1,0,0,1,0,0,1
+PLOS2022,"4,5-Dihydro-6-methyl-4-[(E)-(3-pyridinylmethylene)amino]-1,2,4-triazin-3(2H)-one",QHMTXANCGGJZRX-UHFFFAOYSA-N,Oral,1,ECOTOX,Pymetrozine,>117.0,False,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"N,N-Diethylcarbamothioic acid S-[(4-chlorophenyl)methyl] ester",QHTQREMOGMZHJV-UHFFFAOYSA-N,Contact,1,ECOTOX,Thiobencarb,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"N-(2,6-Dichlorophenyl)-5-ethoxy-7-fluoro-[1,2,4-triazolo[1,5-c]pyrimidine-2-sulfonamide",QNXAVFXEJCPCJO-UHFFFAOYSA-N,Contact,1,ECOTOX,Diclosulam,>25.0,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,"4-[[(6-Chloro-3-pyridinyl)methyl](2,2-difluoroethyl)amino]-2(5H)-furanone",QOIYTRGFOFZNKF-UHFFFAOYSA-N,Oral,1,ECOTOX,Flupyradifurone,1.2,False,True,0,0,1,1,1,1,1,1,1
+PLOS2022,Diflubenzuron (Ref: OMS 1804),QQQYTWIFVNKMRW-UHFFFAOYSA-N,Oral,1,PPDB,Diflubenzuron,>9.1,False,False,0,0,1,-1,1,-1,-1,1,-1
+PLOS2022,Florasulam (Ref: DE 570),QZXATCCPQKOEIH-UHFFFAOYSA-N,Contact,1,PPDB,Florasulam,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,Cyclaniliprole (Ref: IKI-3106),RAMUASXTSSXCMB-UHFFFAOYSA-N,Oral,1,PPDB,Cyclaniliprole,0.702,False,True,1,1,1,1,1,1,1,1,1
+PLOS2022,"N-[[(4,6-Dimethoxy-2-pyrimidinyl)amino]carbonyl]-2-(ethylsulfonyl)imidazo[1,2-a]pyridine-3-sulfonamide",RBSXHDIPCIWOMG-UHFFFAOYSA-N,Contact,1,ECOTOX,Sulfosulfuron,>25.0,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,"2-[(3,5,6-Trichloro-2-pyridinyl)oxy]acetic acid",REEQLXCGVXDJSQ-UHFFFAOYSA-N,Oral,1,ECOTOX,Triclopyr,>99.0,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,Hexaflumuron (Ref: XRD 473),RGNPBRKPHBKNKX-UHFFFAOYSA-N,Oral,1,PPDB,Hexaflumuron,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"3-(2,2-Dichloroethenyl)-2,2-dimethylcyclopropanecarboxylic acid, (3-Phenoxyphenyl)methyl ester",RLLPVAHGXHCWKJ-UHFFFAOYSA-N,Contact,1,ECOTOX,Permethrin,0.025,False,True,1,1,1,1,1,1,1,1,1
+PLOS2022,N-(Cyanomethyl)-4-(trifluoromethyl)-3-pyridinecarboxamide,RLQJEEJISHYWON-UHFFFAOYSA-N,Oral,1,ECOTOX,Flonicamid,>60.5,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,"N,N'-[1,4-Piperazinediylbis(2,2,2-trichloroethylidene)]bis-formamide",RROQIUMZODEXOR-UHFFFAOYSA-N,Contact,1,ECOTOX,Triforine,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"4-(Cyclopropylhydroxymethylene)-3,5-dioxocyclohexanecarboxylic acid ethyl ester",RVKCCVTVZORVGD-UHFFFAOYSA-N,Contact,1,ECOTOX,Trinexapac-ethyl,47.0,False,True,0,0,1,0,0,1,1,0,0
+PLOS2022,"N,N-Dimethyl-N'-[3-(trifluoromethyl)phenyl]urea",RZILCCPWPBTYDO-UHFFFAOYSA-N,Contact,1,ECOTOX,Fluometuron,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"1-[[2-(2,4-Dichlorophenyl)-4-propyl-1,3-dioxolan-2-yl]methyl]-1H-1,2,4-triazole",STJLVHWMYQXCPB-UHFFFAOYSA-N,Contact,1,ECOTOX,Propiconazole,>25.0,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,"2-(2,2-Difluoroethoxy)-N-(5,8-dimethoxy[1,2,4]triazolo[1,5-c]pyrimidin-2-yl)-6-(trifluoromethyl)benzenesulfonamide",SYJGKVOENHZYMQ-UHFFFAOYSA-N,Contact,1,ECOTOX,Penoxsulam,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"(2R)-2-[4-(4-Cyano-2-fluorophenoxy)phenoxy]propanoic acid, Butyl ester",TYIYMOAHACZAMQ-UHFFFAOYSA-N,Contact,1,ECOTOX,Cyhalofop-butyl,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"2-[[[[[(4,6-Dimethoxy-2-pyrimidinyl)amino]carbonyl]amino]sulfonyl]amino]-N,N-dimethylbenzamide",UCDPMNSCCRBWIC-UHFFFAOYSA-N,Contact,1,ECOTOX,Orthosulfamuron,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"1,2,3-Benzothiadiazole-7-carbothioic acid S-methyl ester",UELITFHSCLAHKR-UHFFFAOYSA-N,Oral,1,ECOTOX,Acibenzolar-S-methyl,>128.3,False,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"3,5-Dibromo-4-hydroxybenzonitrile",UPMXNNIRAGDFEH-UHFFFAOYSA-N,Oral,1,ECOTOX,Bromoxynil,3.3,False,True,0,0,1,1,1,1,1,1,1
+PLOS2022,"S-Prop-2-en-1-yl 5-amino-4-(2-methylphenyl)-3-oxo-2-(propan-2-yl)-2,3-dihydro-1H-pyrazole-1-carbothioate",UTOHZQYBSYOOGC-UHFFFAOYSA-N,Contact,1,ECOTOX,Fenpyrazamine,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,Fenhexamid (Ref: KBR 2738),VDLGAVXLJYLFDH-UHFFFAOYSA-N,Oral,1,PPDB,Fenhexamid,>100.0,True,False,0,0,1,0,0,1,0,0,1
+PLOS2022,3-[2-Chloro-4-(methanesulfonyl)benzoyl]-4-(phenylsulfanyl)bicyclo[3.2.1]oct-3-en-2-one,VIXCLRUCUMWJFF-UHFFFAOYSA-N,Contact,1,ECOTOX,Benzobicyclon,>200.0,False,False,0,0,1,0,0,1,0,0,1
+PLOS2022,2-Chloro-N-(ethoxymethyl)-N-(2-ethyl-6-methylphenyl)acetamide,VTNQPKFIQCLBDU-UHFFFAOYSA-N,Oral,1,ECOTOX,Acetochlor,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,Acetamiprid,WCXDHFDTOYPNIE-UHFFFAOYSA-N,Contact,1,PPDB,Acetamiprid,8.1,False,True,0,0,1,1,1,1,1,1,1
+PLOS2022,2-(4-Chloro-2-methylphenoxy)acetic acid,WHKUVVPPKQRRBV-UHFFFAOYSA-N,Contact,1,ECOTOX,MCPA,>194.0,False,False,0,0,1,0,0,1,0,1,0
+PLOS2022,2-(4-Thiazolyl)-1H-benzimidazole,WJCNZQLZVWNLKY-UHFFFAOYSA-N,Oral,1,ECOTOX,Thiabendazole,>4.0,False,False,0,0,1,-1,1,-1,-1,1,-1
+PLOS2022,Benzyl 4-amino-3-chloro-6-(4-chloro-2-fluoro-3-methoxyphenyl)-5-fluoropyridine-2-carboxylate,WNZCDFOXYNRBRB-UHFFFAOYSA-N,Contact,1,ECOTOX,Florpyrauxifen-benzyl ester,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,4-Chloro-3-ethyl-1-methyl-N-[[4-(4-methylphenoxy)phenyl]methyl]-1H-pyrazole-5-carboxamide,WPALTCMYPARVNV-UHFFFAOYSA-N,Oral,1,ECOTOX,Tolfenpyrad,0.63,False,True,1,1,1,1,1,1,1,1,1
+PLOS2022,2-Chloro-N-(2-ethyl-6-methylphenyl)-N-(2-methoxy-1-methylethyl)acetamide,WVQBLGZPHOPPFO-UHFFFAOYSA-N,Contact,2,ECOTOX,Metolachlor|S-Metolachlor,>110.0|>200.0,False,False,0,0,1,0,0,1,0,0,1
+PLOS2022,"2-Chloro-N-(4'-chloro[1,1'-biphenyl]-2-yl)-3-pyridinecarboxamide",WYEMLYFITZORAB-UHFFFAOYSA-N,Oral,1,ECOTOX,Boscalid,>166.0,False,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"N-[3-[[(Phenylamino)carbonyl]oxy]phenyl]carbamic acid, Ethyl ester",WZJZMXBKUWKXTQ-UHFFFAOYSA-N,Contact,1,ECOTOX,Desmedipham,>50.0,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,N-(Phosphonomethyl)glycine,XDDAORKBJWWYJS-UHFFFAOYSA-N,Contact,1,ECOTOX,Glyphosate,>103.0,False,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"N,N'-[Thiobis[(methylimino)carbonyloxy]]bisethanimidothioic acid dimethyl ester",XDOTVMNBCQVZKG-UHFFFAOYSA-N,Oral,1,ECOTOX,Thiodicarb,0.13,False,True,1,1,1,1,1,1,1,1,1
+PLOS2022,2-Cyano-N-[(ethylamino)carbonyl]-2-(methoxyimino)acetamide,XERJKGMBORTKEO-UHFFFAOYSA-N,Contact,1,ECOTOX,Cymoxanil,>25.0,False,False,0,0,1,0,0,1,-1,1,-1
+PLOS2022,"N-(2-[1,1'-Bicyclopropyl]-2-ylphenyl)-3-(difluoromethyl)-1-methyl-1H-pyrazole-4-carboxamide",XQJQCBDIXRIYRP-UHFFFAOYSA-N,Oral,1,ECOTOX,Sedaxane,>4.22,False,False,0,0,1,-1,1,-1,-1,1,-1
+PLOS2022,"5-Chloro-2-(3,4,4-trifluorobut-3-ene-1-sulfonyl)-1,3-thiazole",XSNMWAPKHUGZGQ-UHFFFAOYSA-N,Oral,1,ECOTOX,Fluensulfone,>190.0,False,False,0,0,1,0,0,1,0,0,1
+PLOS2022,Imazethapyr (Ref: AC 252925),XVOKUMIPKHGGTN-UHFFFAOYSA-N,Oral,1,PPDB,Imazethapyr,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"5-[(4-Chlorophenyl)methyl]-2,2-dimethyl-1-(1H-1,2,4-triazol-1-ylmethyl)cyclopentanol",XWPZUHJBOLQNMN-UHFFFAOYSA-N,Oral,1,ECOTOX,Metconazole,88.0,False,True,0,0,1,0,0,1,1,1,1
+PLOS2022,Pirimicarb (Ref: OMS 1330),YFGYUFNIOHWBOB-UHFFFAOYSA-N,Oral,1,PPDB,Pirimicarb,3.01,False,True,0,0,1,1,1,1,1,1,1
+PLOS2022,N-Dodecylguanidine acetate (1:1),YIKWKLYQRFRGPM-UHFFFAOYSA-N,Contact,1,ECOTOX,Dodine,>200.0,False,False,0,0,1,0,0,1,0,0,1
+PLOS2022,Dinotefuran (Ref: MTI 446),YKBZOVFACRVRJN-UHFFFAOYSA-N,Contact,1,PPDB,Dinotefuran,0.047,False,True,1,1,1,1,1,1,1,1,1
+PLOS2022,"2-(Difluoromethyl)-4-(2-methylpropyl)-6-(trifluoromethyl)-3,5-pyridinedicarbothioic acid, S3,S5-Dimethyl ester",YUBJPYNSGLJZPQ-UHFFFAOYSA-N,Contact,1,ECOTOX,Dithiopyr,81.0,False,True,0,0,1,0,0,1,1,1,1
+PLOS2022,Imidacloprid (Ref: BAY NTN 33893),YWTYJOPNNQFBPC-UHFFFAOYSA-N,Oral,1,PPDB,Imidacloprid,0.0039,False,True,1,1,1,1,1,1,1,1,1
+PLOS2022,"4-Chloro-2-cyano-N,N-dimethyl-5-(4-methylphenyl)-1H-imidazole-1-sulfonamide",YXKMMRDKEKCERS-UHFFFAOYSA-N,Oral,1,ECOTOX,Cyazofamid,>151.7,False,False,0,0,1,0,0,1,0,1,0
+PLOS2022,N-(Phosphonomethyl)glycine compd. with 2-propanamine (1:1),ZEKANFGSDXODPD-UHFFFAOYSA-N,Contact,1,ECOTOX,"Glyphosate, isopropylamine salt",>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"N2-[1,1-Dimethyl-2-(methylsulfonyl)ethyl]-3-iodo-N1-[2-methyl-4-[1,2,2,2-tetrafluoro-1-(trifluoromethyl)ethyl]phenyl]-1,2-benzenedicarboxamide",ZGNITFSDLCMLGI-UHFFFAOYSA-N,Contact,1,ECOTOX,Flubendiamide,>200.0,False,False,0,0,1,0,0,1,0,0,1
+PLOS2022,"4,6-Dimethyl-N-phenyl-2-pyrimidinamine",ZLIBICFPKPWGIZ-UHFFFAOYSA-N,Contact,1,ECOTOX,Pyrimethanil,>100.0,True,False,0,0,1,0,0,1,0,1,0
+PLOS2022,"5-Amino-1-[2,6-dichloro-4-(trifluoromethyl)phenyl]-4-[(trifluoromethyl)sulfinyl]-1H-pyrazole-3-carbonitrile",ZOCSXAVNDGMNBV-UHFFFAOYSA-N,Contact,1,ECOTOX,Fipronil,0.00277,False,True,1,1,1,1,1,1,1,1,1
+PLOS2022,"2-[4-(1,1-Dimethylethyl)phenoxy]cyclohexyl 2-propynyl ester sulfurous acid",ZYHMJXZULPZUED-UHFFFAOYSA-N,Contact,1,ECOTOX,Propargite,15.0,False,True,0,0,1,0,0,1,1,1,1

@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 53309,
+        "MolecularFormula": "C15H19Cl2N3O",
+        "SMILES": "CC(C)(C)C(C(CC1=C(C=C(C=C1)Cl)Cl)N2C=NC=N2)O",
+        "InChIKey": "URDNHJIVMYZFRT-UHFFFAOYSA-N",
+        "IUPACName": "1-(2,4-dichlorophenyl)-4,4-dimethyl-2-(1,2,4-triazol-1-yl)pentan-3-ol"
+      }
+    ]
+  }
+}

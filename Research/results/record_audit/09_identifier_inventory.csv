@@ -1,0 +1,13 @@
+scope,source,id_field,records,records_with_id,unique_ids,repeated_id_records_beyond_first,interpretation
+all_aligned,EPA,MRID,319,304,206,98,EPA report/study identifier; multiple compounds or endpoints may share it
+all_aligned,EPA,document_id,319,0,0,0,"OFT document UUID, not proven distinct physical trial"
+all_aligned,EPA,result_id,319,319,319,0,"source result UUID or EPA spreadsheet cell, not independent-study proof"
+all_aligned,OpenFoodTox,MRID,751,0,0,0,EPA report/study identifier; multiple compounds or endpoints may share it
+all_aligned,OpenFoodTox,document_id,751,751,751,0,"OFT document UUID, not proven distinct physical trial"
+all_aligned,OpenFoodTox,result_id,751,751,751,0,"source result UUID or EPA spreadsheet cell, not independent-study proof"
+route_matched_main,EPA,MRID,134,128,128,0,EPA report/study identifier; multiple compounds or endpoints may share it
+route_matched_main,EPA,document_id,134,0,0,0,"OFT document UUID, not proven distinct physical trial"
+route_matched_main,EPA,result_id,134,134,134,0,"source result UUID or EPA spreadsheet cell, not independent-study proof"
+route_matched_main,OpenFoodTox,MRID,263,0,0,0,EPA report/study identifier; multiple compounds or endpoints may share it
+route_matched_main,OpenFoodTox,document_id,263,263,263,0,"OFT document UUID, not proven distinct physical trial"
+route_matched_main,OpenFoodTox,result_id,263,263,263,0,"source result UUID or EPA spreadsheet cell, not independent-study proof"

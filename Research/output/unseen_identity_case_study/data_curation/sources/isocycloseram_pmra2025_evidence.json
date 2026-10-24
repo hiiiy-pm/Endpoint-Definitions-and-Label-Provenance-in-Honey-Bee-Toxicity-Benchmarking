@@ -1,0 +1,33 @@
+{
+  "source_url": "https://publications.gc.ca/collections/collection_2025/sc-hc/h113-9/H113-9-2025-11-eng.pdf",
+  "access": "full PDF text via browsing; direct download returned non-PDF",
+  "table": "17",
+  "printed_page": 133,
+  "pdf_page_one_based": 138,
+  "source_text_lines": "7283-7294",
+  "species": "Apis mellifera",
+  "life_stage": "adult (explicit)",
+  "material": "Isocycloseram Technical",
+  "purity_statement_scope": "96.9%-98.8%w/w is a grouped table-cell range; no individual batch inferred",
+  "study_observation_cell": "72-hour oral adult",
+  "endpoint_observation_h": 48,
+  "endpoint_name": "LD50",
+  "value": 0.29,
+  "qualifier": "=",
+  "unit": "ug ai/bee",
+  "same_cell_also_reports": "72h LD50=0.29ugai/bee",
+  "pmra_study_id": "3246199",
+  "study_year": 2016,
+  "study_substance_code": "SYN547407",
+  "reference_printed_page": 180,
+  "reference_pdf_page_one_based": 185,
+  "reference_text_lines": "10034-10036",
+  "exclusion_checks": {
+    "not_bombus": true,
+    "not_syn549106_degradate": true,
+    "not_contact_96h": true,
+    "not_larval_72h": true,
+    "not_chronic_daily_dose": true
+  },
+  "source_relation_note": "Likely same2016 study asWHO VV-466340/S16-02527; different time/rounding, not independent replication."
+}

@@ -1,0 +1,3157 @@
+
+=== PDF PAGE 1 ===
+Page 1 of 44 
+WHO SPECIFICATIONS AND EVALUATIONS FOR 
+PUBLIC HEALTH PESTICIDES 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ISOCYCLOSERAM  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== PDF PAGE 2 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 2 of 44 
+TABLE OF CONTENTS 
+Disclaimer .................................................................................................................. 3 
+Introduction ................................................................................................................ 4 
+Part One: Specifications ............................................................................................. 5 
+Isocycloseram Information ...................................................................................... 6 
+Isocycloseram Technical Material ........................................................................... 8 
+Isocycloseram Wettable Powder in Sealed Water-Soluble Bag .............................. 9 
+Part Two: Evaluation Reports ................................................................................... 12 
+FAO/WHO Evaluation Report 1025/2025.2 ........................................................... 13 
+Annex 1: References ..................................................................................... 16 
+FAO/WHO Evaluation Report 1025/2025.1 ........................................................... 17 
+Supporting Information .................................................................................. 19 
+Annex 1: Hazard Summary Provided by the Proposer .................................. 24 
+Annex 2: References ..................................................................................... 36 
+ 
+ 
+  
+
+=== PDF PAGE 3 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 3 of 44 
+DISCLAIMER1 
+WHO specifications are developed with the basic objective of promoting, as far as 
+practicable, the manufacture, distribution and use of pesticides that meet basic quality 
+requirements. 
+Compliance with the specifications does not constitute an endorsement or warranty of 
+the fitness of a particular pesticide for a particular purpose, including its suitability for 
+the control of any given pest, or its suitability for use in a particular area. Owing to the 
+complexity of the problems involved, the suitability of pesticides for a particular 
+purpose and the content of the labelling instructions must be decided at the national 
+or provincial level. 
+Furthermore, pesticides which are manufactured to comply with these specifications 
+are not exempted from any safety regulation or other legal or administrative provision 
+applicable to their manufacture, sale, transportation, storage, handling, preparation 
+and/or use. 
+WHO disclaims any and all liability for any injury, death, loss, damage or other 
+prejudice of any kind that may be arise as a result of, or in connection with, the 
+manufacture, sale, transportation, storage, handling, preparation and/or use of 
+pesticides which are found, or are claimed, to have been manufactured to comply with 
+these specifications. 
+Additionally, WHO wishes to alert users to the fact that improper storage, handling, 
+preparation and/or use of pesticides can result in either a lowering or complete loss of 
+safety and/or efficacy. 
+WHO is not responsible, and does not accept any liability, for the testing of pesticides 
+for compliance with the specifications, nor for any methods recommended and/or used 
+for testing compliance. As a result, WHO does not in any way warrant or represent 
+that any pesticide claimed to comply with a WHO specification actually does so. 
+ 
+  
+ 
+1 This disclaimer applies to all specifications published by WHO. 
+
+=== PDF PAGE 4 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 4 of 44 
+INTRODUCTION 
+ 
+WHO establishes and publishes specifications 1  for technical material and related 
+formulations of public health pesticides with the objective that these specifications may 
+be used to provide an international point of reference against which products can be 
+judged either for regulatory purposes or in commercial dealings. 
+ 
+From 2002, the development of WHO specifications follows the New Procedure , 
+described in the "Manual on the development and use of FAO and WHO specifications 
+for chemical pesticides." This New Procedure follows a formal and transparent 
+evaluation process. It describes the minimum data package, the procedure and 
+evaluation applied by WHO and the experts of the FAO/WHO Joint Meeting on 
+Pesticide Specifications (JMPS). 
+ 
+WHO specifications now only apply to products for which the technical materials have 
+been evaluated. Consequently, from the year 2002 onwards, the publication of WHO 
+specifications under the New Procedure has changed. Every specification consists 
+now of two parts, namely the specifications and the evaluation report(s): 
+ 
+Part One: The Specification of the technical material and the related formulations of 
+the pesticide in accordance with chapters 4 to 8 of the above- mentioned 
+manual. 
+ 
+Part Two: The Evaluation Report(s) of the pesticide, reflecting the evaluation of the 
+data package carried out by WHO and the JMPS. The data are provided by 
+the manufacturer(s) according to the requirements of chapter 3 of the 
+above-mentioned manual and supported by other information sourc es. 
+Evaluation reports include the name(s) of the manufacturer(s) whose 
+technical material has been evaluated. Evaluation reports on specifications 
+developed subsequently to the original set of specifications are added in 
+chronological order to this report. 
+ 
+WHO specifications under the New Procedure do not necessarily apply to nominally 
+similar products of other manufacturer(s), nor to those where the active ingredient is 
+produced by other routes of manufacture. WHO has the possibility to extend the scope 
+of the specifications to similar products but only when the JMPS has been satisfied 
+that the additional products are equivalent to that which formed the basis of the 
+reference specification. 
+ 
+Specifications bear the date (month and year) of publication of the current 
+version. Evaluations bear the date (year) of the meeting at which the 
+recommendations were made by the JMPS. 
+ 
+  
+ 
+1 Publications available on the WHO Prequalification Unit – Vector Control Product Assessment Team 
+(PQT/VCP) website: https://extranet.who.int/prequal/vector-control-products 
+
+=== PDF PAGE 5 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 5 of 44 
+PART ONE: SPECIFICATIONS 
+ 
+ 
+ISOCYCLOSERAM 
+ Page 
+Isocycloseram Information ...................................................................................... 6 
+Isocycloseram Technical Material ........................................................................... 8 
+Isocycloseram Wettable Powder in Sealed Water-Soluble Bag .............................. 9 
+ 
+  
+
+=== PDF PAGE 6 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 6 of 44 
+ISOCYCLOSERAM INFORMATION 
+ 
+ISO common name:   Isocycloseram  
+Synonyms:     SYN547407 
+Chemical names: 
+IUPAC (PIN):  mixture comprised of 80–100% 4-[(5S)-5-(3,5-dichloro-4-
+fluorophenyl)-5-(trifluoromethyl)-4,5-dihydro-1,2-oxazol-
+3-yl]-N-[(4R)-2-ethyl-3-oxo-1,2-oxazolidin-4-yl]-2-
+methylbenzamide and 20–0% of the (5R,4R), (5R,4S) and 
+(5S,4S) isomers 
+CA:  4-[5-(3,5-dichloro-4-fluorophenyl)-4,5-dihydro-5-
+(trifluoromethyl)-3-isoxazolyl]-N-(2-ethyl-3-oxo-4-
+isoxazolidinyl)-2-methylbenzamide 
+Structural formulae: 
+    5S,4R-isomer 
+         
+CH3
+CH3
+Cl
+Cl
+F
+F
+F
+F
+NH
+N
+N
+O
+O
+O
+O
+H
+ 
+ 
+ 
+    5R,4R-isomer 
+      
+CH3
+CH3
+Cl
+Cl
+F
+F
+F
+F
+NH
+N
+N
+O
+O
+O
+O
+H
+ 
+ 
+  
+
+=== PDF PAGE 7 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 7 of 44 
+    5R,4S-isomer 
+      
+CH3
+CH3
+Cl
+Cl
+F
+F
+F
+F
+NH
+N
+N
+O
+O
+O
+O
+H
+ 
+    5S,4S-isomer 
+      
+CH3
+CH3
+Cl
+Cl
+F
+F
+F
+F
+NH
+N
+N
+O
+O
+O
+O
+H
+ 
+ 
+Molecular formula:   C23 H19 Cl2 F4 N3 O4 
+Relative molecular mass:  548.3 
+CAS Registry number:  2061933-85-3 
+CIPAC number:   1025 
+Identity tests:    HPLC retention time, UV spectrum, IR spectrum. 
+ 
+ 
+  
+
+=== PDF PAGE 8 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 8 of 44 
+ISOCYCLOSERAM TECHNICAL MATERIAL 
+WHO Specification 1025/TC (April 2025*) 
+This specification, which is PART ONE of this publication, is based on an evaluation of data submitted 
+by the manufacturers whose names are listed in the evaluation reports (1025/2025.1). This specification 
+should be applicable to TC produced by these manufacturers, but it is not an endorsement of those 
+products nor a guarantee that they comply with the specification. The specification may not be 
+appropriate for TC produced by other manufacturers. The evaluation reports ( 1025/2025.1), as PART 
+TWO, form an integral part of this publication. 
+ 
+1 Description 
+ The material shall consist of isocycloseram together with related manufacturing 
+impurities, in the form of a white to beige powder, and shall be free from visible 
+extraneous matter and added modifying agents, except stabilizers if required. 
+ 
+2 Active ingredient 
+2.1 Identity tests (1025/TC/M/2, CIPAC Handbook Q, p.86, 2024) 
+ The active ingredient shall comply with an identity test and, where the identity 
+remains in doubt, shall comply with at least one additional test. 
+2.2 Isocycloseram content (1025/TC/M/3, CIPAC Handbook Q, p.89, 2024) 
+ The isocycloseram content shall be declared (not less than 960 g/kg) and, 
+when determined, the average measured content shall not be lower than the 
+declared minimum content. 
+2.3 Isocycloseram isomer ratio (1025/TC/M/2.2, CIPAC Handbook Q, p.8 6, 
+2024) 
+ The isocycloseram 5S ,4R-isomer content  shall be  at least 80% of  the total 
+isocycloseram content as measured under 2.2. 
+  
+ 
+∗ Specifications may be revised and/or additional evaluations may be undertaken. Ensure the use of 
+current versions by checking at the WHO Prequalification Unit – Vector Control Product Assessment 
+Team (PQT/VCP) website: https://extranet.who.int/prequal/vec tor-control-products/specifications-new-
+procedure 
+
+=== PDF PAGE 9 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 9 of 44 
+ISOCYCLOSERAM WETTABLE POWDER IN SEALED WATER-SOLUBLE BAG 
+WHO Specification 1025/WP-SB (August 2025*) 
+This specification, which is PART ONE of this publication, is based on an evaluation of data submitted 
+by the manufacturers whose names are listed in the evaluation reports (1025/2025.2). This specification 
+should be applicable to relevant products of these manufacturers and those of any other formulators 
+who use only TC from the evaluated sources. The specification is not an endorsement of those products 
+nor a guarantee that they comply  with the specification. The specification may not be appropriate for 
+the products of other manufacturers who use TC from other sources. The evaluation reports 
+(1025/2025.2), as PART TWO, form an integral part of this publication. 
+ 
+1 Description 
+The material shall consist of a defined quantity of a homogeneous mixture of 
+technical isocycloseram, complying with the requirements of the WHO 
+Specification 1025/TC in the form of a powder together with filler(s) and any 
+other necessary formulants. It shall be in the form of a fine powder, free from 
+visible extraneous matter and hard lumps, contained in a sealed water-soluble 
+bag (Note 1). 
+ 
+2 Active ingredient 
+2.1 Identity tests (1025/WP/M/2, CIPAC Handbook Q, p.92, 2024) (Note 2) 
+The active ingredient shall comply with an identity test and, where the identity 
+remains in doubt, shall comply with at least one additional test. 
+2.2. Isocycloseram content (1025/WP/M/3, CIPAC Handbook Q, p. 92, 2024)  
+(Note 2) 
+The isocycloseram content shall be declared (g/kg or g/L at 20 ± 2°C, Note 2) 
+and, when determined, the average measured content shall not differ from that 
+declared by more than the following tolerance: 
+Declared content, g/kg or g/l at 20 ± 2ºC Tolerance 
+above 100 up to 250 
+Note: the upper limit is included in each range 
+± 6% of the declared 
+content 
+ 
+3 Physical properties (Note 2) 
+3.1 pH range (MT 75.3, CIPAC Handbook J, p.131, 2000) (Note 3), 
+pH range: 6 to 9 
+3.2 Wettability (MT 53.3, CIPAC Handbook F, p.164, 1995) 
+The formulation shall be completely wetted in 1 min without swirling. 
+3.3 Wet sieve test (MT 185.1, CIPAC Handbook Q, p.205, 2024) 
+Maximum: 2% retained on a 75 µm test sieve. 
+ 
+∗ Specifications may be revised and/or additional evaluations may be undertaken. Ensure the use of 
+current versions by checking at the WHO Prequalification Unit – Vector Control Product Assessment 
+Team (PQT/VCP) website: https://extranet.who.int/prequal/vec tor-control-products/specifications-new-
+procedure 
+
+=== PDF PAGE 10 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 10 of 44 
+3.4 Suspensibility (MT 184.1, CIPAC Handbook P, p.245, 2021) (Notes 4 & 5)  
+The suspensibility shall be tested on a suspension containing the WP and the 
+bag material  in the actual ratio of application, prepared according to the 
+procedure described in Note 6. 
+A minimum of 60 % of the isocycloseram content shall be in suspension after 
+30 min in CIPAC Standard Water D at 25 ± 5°C.1 
+The re-suspensibility should be determined only if suspensibility is < 60 %. A 
+minimum of 95% of the isocycloseram content shall be in suspension after 30 
+min in CIPAC Standard Water D at 25 ± 5°C. 
+3.5 Persistent foam (MT 47.3, CIPAC Handbook O, p.177, 2017) (Note 7) 
+The persistent foam shall be tested on a suspension containing the WP and the 
+bag material in the actual ratio of application in CIPAC Standard Water D, 
+prepared according to the procedure described in Note 6. 
+Maximum: 40 mL after 1 min. 
+3.6 Dissolution of the bag (MT 176, CIPAC Handbook F, p.440, 1995) (Notes 2 
+& 8) 
+The dissolution of the bag shall be tested on a sample of the emptied and 
+cleaned bag together with an appropriate proportion of the WP in CIPAC 
+Standard Water D taken according to the procedure described in Note 8. 
+Flow time of the suspension: maximum 30 sec.  
+4 Storage stability 
+4.1 Stability at elevated temperature (MT 46. 4, CIPAC Handbook P, p.232, 
+2021) 
+The package should be enclosed in a watertight sachet, box or any other 
+container at 54 °C for 14 days. The determined average active ingredient 
+content must not be lower than 95% relative to the determined average content 
+found before storage (Note 9), and the formulation shall continue to comply with 
+the clauses for: 
+- pH range (3.1), 
+- wettability (3.2), 
+- wet sieve test (3.3), 
+- suspensibility (3.4), 
+- persistent foam (3.5), 
+- dissolution of the bag (3.6). 
+None of the bags tested should show signs of leakage or rupture during normal 
+handling, before and after storage. 
+___________________________________ 
+ 
+1 For prequalified vector control products minimum values may differ in comparison to the generalized 
+WHO specifications. The manufacturing release specifications in the WHO Public Assessment report 
+should be used as a reference for quality control testing. 
+
+=== PDF PAGE 11 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 11 of 44 
+Note 1 For record keeping purposes, the suffix “SB” should be added to the formulation code (WP-
+SB). 
+Note 2 Sub-sampling. 
+Lay the bag on a bench and carefully open one side of the bag with a cutter, taking care not 
+to damage the seals. Transfer the contents of the bag into a suitable flask. This material shall 
+be used to carry out the tests for: 
+- active ingredient identity (2.1), 
+- active ingredient content (2.2), 
+- pH range (3.1), 
+- wettability (3.2), 
+- wet sieve test (3.3), 
+- suspensibility (3.4), 
+- persistent foam (3.5), 
+- dissolution of the bag (3.6). 
+The bag is then opened on three sides, completely cleaned from adhering powder by brushing 
+or suction and weighed to the nearest 0.01 g. It shall be used to carry out the dissolution test 
+(3.6). Aliquots of an aqueous solution of the bag material shall be used in the suspensibility 
+(3.4) and persistent foam (3.5) tests.  
+In the case of delay of the above tests, the bag shall be stored in a watertight container (glass 
+bottle or equivalent) to avoid any change in its properties. 
+Note 3 The method to be used shall be stated. If several methods are available, a referee method 
+shall be selected. 
+Note 4 The formulation should be tested at the highest and lowest rates of use recommended by the 
+supplier, provided this does not exceed the conditions given in method MT 184.1.  
+Note 5 Chemical assay is the only fully reliable method to measure the mass of active ingredient still 
+in suspension. However, the simpler gravimetric method may be used on a routine basis 
+provided that it has been shown to give equal results to those of chemical assay. In case of 
+dispute, chemical assay shall be the referee method. 
+Note 6 The procedure for adding the bag material to the solution for the suspensibility and persistent 
+foam tests should be as follows:  
+Prepare a stock solution of the bag material (1 mg/ml) by weighing approximately a sample 
+(n mg) of the bag (excluding sealed parts) to the nearest mg. Dissolve this sample by stirring 
+in the standard water used for the tests to give a final volume of n ml. Store the stock solution 
+in a stoppered bottle before use. 
+Calculate the volume (V ml) of the stock solution of the bag to be added to the test suspension 
+of the wettable powder according to the following equation: 
+V(ml) = X x 1000B 
+W 
+Where:  B (g) = weight of the emptied and cleaned bag 
+W (g) = nominal weight of the WP contained in the bag 
+X (g) = weight of the WP sample used in the test 
+Note 7 The mass of sample to be used in the test should be specified at the highest rate 
+recommended by the supplier. The test is to be conducted in CIPAC standard water D at 25 
+± 5 °C. 
+Note 8 The sampling of the bag for the dissolution test should be as follows: 
+Lay the empty cleaned bag in its original configuration (double layer). Delineate and then cut 
+up a test sample including part of the upper seal (5 cm) and symmetrically including the 
+vertical seal (10 cm). If the size of the bag is less than this dimension, use the whole bag.  
+Carry out the dissolution test immediately to avoid any modification of the sample.  
+Note 9 Samples of the formulation taken before and after the accelerated storage stability test may 
+be analysed concurrently after the test in order to reduce the analytical error.  
+
+=== PDF PAGE 12 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 12 of 44 
+PART TWO: EVALUATION REPORTS 
+ 
+ 
+ISOCYCLOSERAM 
+  Page 
+2025.2 FAO/WHO evaluation report based on submission of data 
+from Syngenta Crop Protection AG 13 
+ Annex 1: References 16 
+2025.1 FAO/WHO evaluation report based on submission of data 
+from Syngenta Crop Protection AG 17 
+ Supporting Information 19 
+ Annex 1: Hazard Summary Provided by the Proposer 24 
+ Annex 2: References 36 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 
+  
+
+=== PDF PAGE 13 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 13 of 44 
+ISOCYCLOSERAM 
+FAO/WHO EVALUATION REPORT 1025/2025.2 
+ 
+Recommendations 
+The Meeting recommended the specification for isocycloseram WP-SB, proposed by 
+Syngenta Crop Protection AG, as amended, should be adopted by WHO.  
+Appraisal 
+The Meeting considered data and information submitted between November 2023 and 
+October 2024 by Syngenta Crop Protection AG in support of the development of a new 
+specification for Isocycloseram WP-SB (wettable powder in sealed water-soluble bag).  
+The Manufacturer provided a data package on the physical and chemical properties 
+of the isocycloseram WP -SB formulation to support the proposed specification. The 
+data submitted were in accordance with the requirements of the Manual on 
+Development and Use of FAO and WHO Specifications for Pesticides (2022, second 
+edition). 
+Test results for all properties of a WP for three batches of the WP formulation were 
+provided. Suspensibility and persi stent foam were tested on three  batches of WP in 
+the presence of the water-soluble bag (SB), wettability and wet sieve in the presence 
+of the water-soluble bag were tested in one batch.  
+Description 
+The supporting data showed the appearance of the WP formulation to be an off-white 
+powder that does not change after storage at elevated temperatures. 
+Active ingredient identity and content and analytical methods 
+The nominal content of isocycloseram in the WP formulation is 150 g/kg . The 
+supporting data showed that the isocycloseram content is well within the tolerance of 
+± 6% of the declared content in all the batches analysed. 
+A CIPAC method 1025/TC/- is available for the determination of isocycloseram in TC 
+(1025/TC/- CIPAC Handbook Q, p.85, 2024) and WP formulations (CIPAC Handbook 
+Q, p.85, 2024) (1025/WP/ - CIPAC Handbook Q, p.92, 2024) . Isocycloseram is 
+determined by reverse phase HPLC-UV at 265 nm using external standardisation. For 
+the determination of isocycloseram content in the WP -SB, an in -house method 
+identical to the CIPAC method was used.  
+Relevant impurities 
+The are no relevant impurities identified in the WHO specification for isocycloseram 
+TC. 
+The Meeting concluded that no relevant impurities need to be specified for the WP-SB 
+formulation. 
+Physical-chemical properties 
+The physical and chemical properties were tested using the relevant CIPAC methods 
+for each property.  
+For pH a range of 6 to 10 was proposed. The pH of a 1% dilution in water was 
+measured and showed consistent results for all batches tested.  The Meeting noted 
+
+=== PDF PAGE 14 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 14 of 44 
+that isocycloseram is hydrolytically unstable at higher pH therefore a pH clause is 
+justified, however also noted that isocycloseram shows rapid degradation at pH>9. 
+The Manufacturer proposed a narrower range for the clause of 6 to 9.  The Meeting 
+considered this range is supported by the available data.  
+Where required, physical -chemical properties were tested with and without the 
+presence of the water -soluble bag material (SB) as outlined in the Manual on 
+Development and Use of FAO and WHO Specifications for Pesticides (2022, second 
+edition). The Manufacturer confirmed that the concentration of SB used in the tests 
+was consistent with the ratio of SB to WP in the finished product. 
+The data for wettability ( three batches tested without SB, one batch tested with SB), 
+and dissolution of the bag ( three batches) supported the proposed clauses in the 
+specification. The Manufacturer further explained that wettability characteristics are 
+considered inherent properties of a WP and that , as the dissolution properties of the 
+water-soluble bag were acceptable, data tested on one batch in the presence of the 
+SB was sufficient to show that wettability would not be adversely affected by the SB 
+packaging.  
+For wet sieve, the maximum clause limit in the Manual of “maximum 2% retained on a
+ 
+75µm sieve” was proposed; the Meeting noted that although the provided data (max. 
+0.82% for three batches without the SB, max 0.5% for one batch with the SB) showed 
+a lower limit might be possible , the available data supported the proposed limit. 
+Furthermore, as the dissolution properties of the water -soluble bag were acceptable, 
+the Meeting noted the Manufacturer’s justification that the bag material would not have 
+an impact on the wet sieve results and  agreed that no further wet sieve data w ere 
+required to support the clause.  
+For persistent foam, the maximum clause limit in the Manual of 60 mL after 1 minute 
+was proposed, whereas the data (max. 1 mL after 1 minute for three batches tested in 
+the presence of the SB) showed a much lower limit could be supported.  The 
+Manufacturer indicated that they had initially chosen the maximum limit of 60 mL after 
+1 minute, as this is a globally established standard. They noted that although the tests 
+did not show significant foam development , foaming cannot always be completely 
+prevented; therefore, they proposed a revised maximum limit of 40 mL after 1 minute. 
+The Meeting accepted the revised limit. 
+For suspensibility , a clause of “minimum 35% of the isocycloseram  content” was 
+proposed. This was based on data from three batches tested in th e presence of the 
+SB at both the lowest and highest in-use concentration and determined using chemical 
+assay. The suspensibility tested under these conditions ranged from 44%–56% (57%–
+67% after accelerated storage according to MT 46.4). 
+The Manufacturer also provided data on one  batch which compared results by the 
+gravimetric method with chemical assay. Suspensibility determined using the 
+gravimetric determination was much higher (86%–88%). In all cases, re-suspensibility 
+was tested and gave results ranging from 97% –99% (three batches including bag, 
+chemical assay) and 102%–103% (one batch including bag, gravimetric method). 
+The Manufacturer indicated that the results for suspensibility show that the gravimetric 
+determination is not an adequate acceptance criterion for a product release due to the 
+obvious discrepancy between analytical and gravimetrical determination. The 
+suspensibility must therefore be determined and specified analytically  for Sovrenta 
+15WP formulation specifically. 
+
+=== PDF PAGE 15 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 15 of 44 
+The Manufacturer further justified that the specification clause  of the minimum 35% 
+was suggested to account for potential batch -to-batch variations, and that where 
+suspensibility levels of less than 60% are obtained,  the re-suspensibility should be 
+tested, and that the product must show a re-suspensibility of 95%–105%. This was the 
+case for the product tested. They also noted that, considering the specific instructions 
+on mixing procedures, the results for suspensibility and re-suspensibility demonstrate 
+that the product is suitable for its use in IRS programs under the given conditions and 
+recommendations. 
+The Manufacturer therefore suggested a footnote in the specification which reads , “If 
+the suspensibility is determined to be below 60%, then the re-suspensibility should be 
+determined, where a minimum of 95% of the isocycloseram content found under 2.2.2 
+shall be in suspension after 30 minuntes in CIPAC Standard Water D at 30 ± 2 °C.” 
+The Meeting agreed that, given the potential for low initial suspensibility values,  this 
+information should be included in the main text of the specification as a principal clause 
+rather than in a footnote, meaning that the re -suspensibility should only be tested i f 
+the initial suspensibility value is determined to be below 60%.  
+The Meeting acknowledged the challenges of establishing the general specification for 
+a formulation type for which a single product has been developed and submitted.  It 
+was agreed by the Meeting and recommended that, for the purpose of the WHO 
+specification, the generic language recommended in the FAO/WHO Manual, indicating 
+a minimum of 60% suspensibility, coupled with the re-suspensibility clause, should be 
+included in the WP specification for isocycloseram. The Meeting acknowledged that in 
+product specific evaluations , regulatory authorities and or the P requalification 
+Programme may determine the need for differing product specific tolerances. 
+Storage stability 
+The stability of the WP -SB after the accelerated storage test (MT 46. 4) was 
+demonstrated to be acceptable and no significant adverse effects of storage of the 
+formulated product were observed in terms of active ingredient content, pH, wettability 
+wet sieve, suspensibility, re-suspensibility, and dissolution of the water-soluble bag. 
+ 
+ 
+ 
+
+=== PDF PAGE 16 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 16 of 44 
+Annex 1: References 
+Study 
+number 
+Author(s) Year Study title. Study identification number. Report identification 
+number. GLP [if GLP]. Company conducting the study 
+USGR210339 Perine, S. 2022 A23752B - Chemical Characterization of Batch ID 1222763, 
+Syngenta Crop Protection, LLC, Syngenta File No. VV-937370 
+USGR220275 Mittapalli, R. 2022 A23752B - Chemical Characterization of Batch ID 1257375, 
+Syngenta Crop Protection, LLC, Syngenta File No. VV-966493 
+USGR220274 Mittapalli, R. 2022 A23752B - Chemical Characterization of Batch ID 1257373, 
+Syngenta Crop Protection, LLC, Syngenta File No. VV-966271 
+USGR220365 Schilling, W. 2023 A23752B - Content of Active Ingredient after Storage in Water 
+Soluble Bag in PE/PET Packaging for 2 Weeks at 54°C, 
+Syngenta Crop Protection, LLC, Syngenta File No. VV-980193 
+USGR220400 Schilling, W. 2023 A23752B - Content of Active Ingredient after Storage in Water 
+Soluble Bag in PE/PET Packaging for 2 Weeks at 54°C, 
+Syngenta Crop Protection, LLC, Syngenta File No. VV-980887 
+USGR220384 Schilling, W. 2023 A23752B - Content of Active Ingredient after Storage in Water 
+Soluble Bag in PE/PET Packaging for 2 Weeks at 54°C, 
+Syngenta Crop Protection, LLC, Syngenta File No. VV-980200 
+USGR220362 Schilling, W. 2023 A23752B - Physico-chemical characteristics of Batch 1222763 
+Syngenta Crop Protection, LLC, Syngenta File No. VV-982239 
+USGR220398 Schilling, W. 2023 A23752B - Physico-chemical characteristics of Batch 1257375 
+Syngenta Crop Protection, LLC, Syngenta File No. VV-980420 
+USGR220382 Schilling, W. 2023 A23752B - Physico-chemical characteristics of Batch 1257373 
+Syngenta Crop Protection, LLC, Syngenta File No. VV-980418 
+USGR220366 Schilling, W. 2023 A23752B - Physical and Technical Properties of Batch 1222763 
+After Storage in Water Soluble Bag in PE/PET Packaging for 2 
+Weeks at 54°C, Syngenta Crop Protection, LLC, Syngenta File 
+No. VV-983504 
+USGR220401 Schilling, W. 2023 A23752B - Physical and Technical Properties of Batch 1257375 
+After Storage in Water Soluble Bag in PE/PET Packaging for 2 
+Weeks at 54°C, Syngenta Crop Protection, LLC, Syngenta File 
+No. VV-983673 
+USGR220385 Schilling, W. 2023 A23752B - Physical and Technical Properties of Batch 1257373 
+After Storage in Water Soluble Bag in PE/PET Packaging for 2 
+Weeks at 54°C, Syngenta Crop Protection, LLC, Syngenta File 
+No. VV-983524 
+300225950 Schilling, W. 2023 A23752B - Storage Stability and Shelf-Life Statement for Batch 
+1257373 (2 Weeks 54°C) in Water Soluble Bags in PE/PET 
+packaging according to CIPAC MT 46.4 Syngenta Crop 
+Protection, LLC, Syngenta File No. VV-985789 
+300225931  Schilling, W. 2023 A23752B - Storage Stability and Shelf-Life Statement for Batch 
+1222763 (2 Weeks 54°C) in Water Soluble Bags in PE/PET 
+packaging according to CIPAC MT 46.4 , Syngenta Crop 
+Protection, LLC, Syngenta File No. VV-985791  
+300226235 Schilling, W. 2023 A23752B - Storage Stability and Shelf-Life Statement for Batch 
+1257375 (2 Weeks 54°C) in Water Soluble Bags in PE/PET 
+packaging according to CIPAC MT 46.4 , Syngenta Crop 
+Protection, LLC, Syngenta File No. VV-986934  
+ 
+  
+
+=== PDF PAGE 17 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 17 of 44 
+ISOCYCLOSERAM 
+FAO/WHO EVALUATION REPORT 1025/2025.1 
+ 
+Recommendations 
+The Meeting recommended that the specification for isocycloseram TC, proposed by 
+Syngenta Crop Protection AG, should be adopted by WHO. 
+ 
+Appraisal 
+The Meeting considered data and information submitted in 2022 –2024 by Syngenta 
+Crop Protection AG (”Syngenta”) in support of development of a new WHO 
+specification for isocycloseram TC. The data submitted met the requirements of the 
+Manual on development and use of FAO and WHO specifications for chemical 
+pesticides (2022, second edition). Isocycloseram consists of four stereoisomers, with 
+80–100% 5S,4R-isomer and 20–0% of the (5R,4R), (5R,4S) and (5S,4S) isomers. 
+The toxicology of isocycloseram was evaluated by the FAO/WHO JMPR in 2023. 
+Isocycloseram TC has been registered in Australia. A notice of approval has been 
+received (APVMA, Nov 2021). Registration is being pursued in the USA. 
+Isocycloseram is a white to beige powder. It has a low vapour pressure. The compound 
+has no potentially dissociating functional groups, possesses  low water solubility and 
+the octanol/water partition coefficient  at pH 5- 6 at 20°C  is 5. The active ingredient  
+undergoes rapid degradation by hydrolysis at pH 9 at 25°C. In simulated sunlight, there 
+is degradation with half-life of 38.4 days at pH 4. 
+The manufacturer submitted confidential data on the manufacturing process, together 
+with the manufacturing specification and 5- batch analysis data on  isocycloseram TC 
+purity and all detectable impurities at or above 1 g/kg.   
+The batches analyzed in the 5-batch study were produced over 3 months in 2018. The 
+mass balance in the 5 batches ranged from 9 91 to 993 g/kg. The specified minimum 
+purity of isocycloseram in the TC is 9 60 g/kg. The minimum purity, the isomer ratio, 
+and the maximum limits for the impurities were supported by the 5-batch data and are 
+statistically justified.  The 5- batch study report indicates that no other significant 
+impurities (each at or above 1 g/kg) were found in any of the 5 batches. 
+Based on available toxicological information, in silico modelling and the criteria of the 
+Manual, the Meeting concluded that no impurities should be considered as relevant at 
+the specified limits. 
+The identity of isocycloseram is confirmed by comparing the retention time in the HPLC 
+method and by IR spectroscopy. The 5-batch analysis study was performed according 
+to GLP guidelines.  Validated in-house methods were used for the determination of 
+isocycloseram content (reversed-phase UHPLC with UV detection)  and isomer ratio  
+(chiral UHPLC with  UV detection) in the technical material. GLP analytical bridging 
+studies were submitted, which demonstrated that in-house methods led to comparable 
+results as CIPAC methods 1025/TC/M/3 and 1025/TC/M/2.2,  respectively. Validated 
+in-house methods ( reversed-phase UHPLC with UV detection, or GC with flame 
+ionization detection) were used for the determination of organic manufacturing 
+impurities. Water was determined using the CIPAC method MT 30.6 (Karl Fischer  
+
+=== PDF PAGE 18 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 18 of 44 
+titration). All the analytical methods used in the 5- batch analysis study were 
+adequately validated with their specificity, linearity of response, accuracy, repeatability 
+and limits of detection and quantification (for impurities).  
+Test methods for determination of physical-chemical properties of the technical active 
+ingredient were essentially OECD and CIPAC methods, as indicated in the supporting 
+data.  
+Isocycloseram is of low toxicity following acute exposure. The acute oral median lethal 
+dose (LD
+50) is greater than 4500 mg/kg bw in female rats and the dermal LD 50 is 
+greater than 5000 mg/kg bw in female rats under the experimental conditions 
+employed. Acute inhalation exposure was conducted for 4 hours nose-only in male 
+and female rats. The combined median lethal concentration (LC
+50) value was above 
+1.15 mg/L in one study (Biró, 2022) and 4.62 mg/L in another study (JMPR, 2023), the 
+highest attainable concentration in the study. Isocycloseram was not a skin irritant to 
+rabbits but was minimally irritating to rabbit eyes. Finally, isocycloseram obtained a 
+positive result in a skin sensitizer murine local lymph node assay (LLNA) in mice but 
+a negative result in the less sensitive Buehler test in guinea pigs. 
+JMPR selected a point of departure (POD) to derive an acute reference dose (ARfD) 
+from an acute neurotoxicity study in rats with a NOAEL of 50 mg/kg and a LOAEL of 
+200 mg/kg based on decreased body weight gain, reduced food consumption and 
+transiently depressed activity. This study was considered appropriate by JMPR for the 
+route of duration of exposure and for the population of concern. An uncertainty factor 
+of 100X (10X for interspecies extrapolation and 10X for intraspecies variation) is 
+applied to establish the ARfD of 0.5 mg/kg bw (JMPR, 2023). 
+JMPR reported on an 18- month carcinogenicity study in m ice and a chronic (24-
+month) carcinogenicity study in rat that support establishing a POD of 2 mg/kg/day to 
+derive the acceptable daily intake (ADI). The mouse carcinogenicity study review 
+identified a NOAEL of 1.7 mg/kg/day from the LOAEL of 6.7 mg/kg/day based on 
+increased plasma cell infiltration in the mesenteric lymph nodes. The rat 
+carcinogenicity study review identified a NOAEL of 2.3 mg/kg/day from the LOAEL of 
+7.0 mg/kg/day based on histopathological findings in the testes and epididymis in 
+males. JMP R considered these studies appropriate for the route of exposure and 
+duration and for the population of concern. JMPR has established an ADI at 0 –  0.02 
+mg/kg bw/day from the two chronic carcinogenicity studies in m ice and rats and the 
+safety factor of 100X (10X for interspecies extrapolation and 10X for intraspecies 
+variation) (JMPR, 2023). 
+Isocycloseram was not considered carcinogenic in mice or rats and is unlikely to be 
+genotoxic based on the chronic carcinogenicity and genotoxic studies according to 
+JMPR (2023). Furthermore, JMPR also concluded that isocycloseram is not 
+teratogenic (2023). 
+The Meeting concluded that the specifications for isocycloseram TC, proposed by 
+Syngenta Crop Protection AG, should be adopted by WHO. 
+ 
+  
+
+=== PDF PAGE 19 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 19 of 44 
+Supporting Information 
+for 
+Evaluation Report 1025/2025 
+ 
+Uses 
+Isocycloseram is a new broad spectrum insecticide belonging to the chemical group 
+of isoxazolines. Isocycloseram binds to a site on the GABA receptor, resulting in a 
+block of inhibitory neurotransmission, hyperexcitation, and death of target insects, and 
+the mode of action is classified by the Insecticide Resistance Action Committee as 
+a Group 30 insecticide (GABA-gated chloride channel allosteric modulators). It is used 
+in public health against mosquitos. 
+ 
+Identity of the active ingredient 
+ISO common name 
+Isocycloseram  
+Synonyms 
+SYN547407 
+Chemical names 
+IUPAC (PIN)   
+mixture comprised of 80 –100% 4- [(5S)-5-(3,5-dichloro-4-fluorophenyl)-5-
+(trifluoromethyl)-4,5-dihydro-1,2-oxazol-3-yl]-N-[(4R)-2-ethyl-3-oxo-1,2-
+oxazolidin-4-yl]-2-methylbenzamide and 20 –0% of the (5R ,4R), (5 R,4S) and 
+(5S,4S) isomers 
+CA      
+4-[5-(3,5-dichloro-4-fluorophenyl)-4,5-dihydro-5-(trifluoromethyl)-3-isoxazolyl]-N-
+(2-ethyl-3-oxo-4-isoxazolidinyl)-2-methylbenzamide 
+Structural formulae 
+5S,4R-isomer 
+CH3
+CH3
+Cl
+Cl
+F
+F
+F
+F
+NH
+N
+N
+O
+O
+O
+O
+H
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 20 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 20 of 44 
+5R,4R-isomer 
+CH3
+CH3
+Cl
+Cl
+F
+F
+F
+F
+NH
+N
+N
+O
+O
+O
+O
+H
+ 
+ 
+ 
+ 
+5R,4S-isomer 
+CH3
+CH3
+Cl
+Cl
+F
+F
+F
+F
+NH
+N
+N
+O
+O
+O
+O
+H
+ 
+5S,4S-isomer 
+CH3
+CH3
+Cl
+Cl
+F
+F
+F
+F
+NH
+N
+N
+O
+O
+O
+O
+H
+ 
+ 
+Molecular formula 
+C23 H19 Cl2 F4 N3 O4 
+Relative molecular mass 
+548.3 
+CAS Registry number 
+2061933-85-3 
+CIPAC number 
+1025 
+Identity tests 
+HPLC retention time, UV spectrum, IR spectrum. 
+ 
+ 
+ 
+
+=== PDF PAGE 21 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 21 of 44 
+ 
+Physico-chemical properties of isocycloseram 
+Table 1. Physico-chemical properties of pure isocycloseram 
+Parameter Value(s) and conditions Purity
+% 
+Method reference 
+(and technique if 
+the reference 
+gives more than 
+one) 
+Study 
+number 
+Vapour pressure < 6.2 · 10-6 Pa at 20 °C  
+< 6.2 · 10-6 Pa at 25 °C  
+98.4 OECD 104 (2006) 
+gas saturation 
+method 
+Vijayakumar 
+(2017)  
+SMG14076, 
+GLP 
+Melting point.  138.9 °C, at 100.1 to 103.0 kPa 98.4 OECD 102 (1995) 
+differential 
+scanning 
+calorimetry (DSC) 
+O’Connor 
+(2017)  
+QD17QM, 
+GLP 
+Temperature of 
+decomposition 
+The test item was determined to 
+decompose from approximately 
+212°C (485 K) at 102.0 to 103.0 kPa. 
+Decomposition was observed both in 
+air and under a nitrogen atmosphere 
+98.4 OECD 103 (1995) 
+differential 
+scanning 
+calorimetry (DSC) 
+O’Connor 
+(2017)  
+SG92NR, GLP 
+Solubility in 
+water 
+1.2 mg / l (pure water, pH=6) at 20°C 
+No Potential dissociating functional 
+groups. Therefore, no other pH 
+ranges measured 
+98.4 OECD 105 (1995) 
+column elution 
+method 
+Halarnakar 
+(2017)  
+SMG14120, 
+GLP  
+Octanol/water 
+partition 
+coefficient 
+log Pow = 5.0 (pH=5.4) at 20°C 98.4 OECD 107 (1995) 
+shake-flask 
+method 
+Halarnakar 
+(2017)  
+SMG14121, 
+GLP 
+Hydrolysis 
+characteristics 
+At pH 4, SYN547407 was relatively 
+stable with DegT50 values of 1290, 
+759, 350 and 140 days at 25, 50, 60 
+and 70°C, respectively. 
+Degradation of SYN547407 was 
+slightly faster at pH 7 than pH 4. 
+DegT50 values of 262, 9.81, 3.14 and 
+1.03 days were obtained at 25, 50, 60 
+and 70°C, respectively. 
+Degradation at pH 9 was rapid 
+resulting in DegT
+50 values of 5.41, 
+1.36 and 0.348 days at 10, 25 and 
+35°C, respectively. 
+97.4-
+99.7 
+(chemi
+cal 
+purity); 
+97.4-
+99.3 
+(radioc
+hemical 
+purity) 
+OECD 111 (2004) Adam (2019) 
+20160233, 
+GLP 
+Photolysis 
+characteristics 
+Photo-degradation of SYN547407 in 
+pH 4 buffer solution was slow as a 
+result of direct photolysis. A half-life 
+(DegT
+50) of 38.4 days was 
+determined in continuously irradiated 
+samples under the light of the 
+Suntest. This was calculated to be 
+equivalent to 233.9 days of Tokyo 
+spring sunlight at 35°N and of 72.4 
+days of summer sunlight at 30 to 
+50°N. 
+98.9-
+99.2 
+(chemi
+cal 
+purity); 
+97.5-
+99.1 
+(radioc
+hemical 
+purity) 
+OECD 316 (2008) Wijnties, 
+(2021) 
+20160284, 
+GLP 
+
+=== PDF PAGE 22 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 22 of 44 
+Dissociation 
+characteristics 
+No Potential dissociating functional 
+groups 
+No experimental evaluation due to 
+low water solubility 
+98.4 OECD 112 (1981) O’Connor 
+(2017) 
+YJ47SY, GLP 
+Solubility in 
+organic solvents 
+See for technical grade 
+ 
+   
+ 
+Table 2. Chemical composition and properties of isocycloseram technical 
+materials (TC and/or TK) 
+Manufacturing process, maximum limits for 
+impurities ³ 1 g/kg, 5 batch analysis data 
+Confidential information supplied and held on file by 
+WHO. Mass balances were 99.1 -99.3% and 
+percentages of unknowns were 0.7 - 0.9%. 
+Declared minimum isocycloseram content 960 g/kg  
+Relevant impurities ³ 1 g/kg and maximum 
+limits for them 
+None 
+Relevant impurities < 1 g/kg and maximum 
+limits for them: 
+None 
+Stabilisers or other additives and maximum 
+limits for them: 
+None 
+Parameter Value and conditions Purity% Method reference Study number 
+Melting temperature 
+range of the TC and/or 
+TK 
+135.3°C  96.9 OECD 102 
+DSC 
+B J O’Connor (2017) 
+VV-466832 
+Solubility in organic 
+solvents 
+at 25°C: 
+acetone 270 g/l  
+methanol 75 g/l  
+dichloromethane 400 g/l  
+octanol 17 g/l  
+ethyl acetate 190 g/l  
+toluene 33 g/l  
+hexane 39 mg/I 
+96.9 Similar to CIPAC 
+MT 157.3 
+flask method 
+C Vijayakumar 
+(2017) VV-466922 
+ 
+Hazard summary 
+The toxicology of isocycloseram was evaluated by the FAO/WHO JMPR in 2023. 
+The JMPR concluded that the results of the long- term studies in rats and mice and a 
+series of studies designed to evaluate genotoxicity indicated that  isocycloseram is 
+unlikely to pose a carcinogenic hazard to humans. An ADI  of 0-0.02 mg/kg bw  was 
+allocated on the basis of the NOAEL using a 100-fold safety factor.  
+ 
+Formulations 
+The main formulation type available is WP. 
+ 
+Methods of analysis and testing 
+The analytical methods for the active ingredient in TC are validated in-house methods. 
+Isocycloseram content is determined by reversed -phase UHPLC with UV detection , 
+while the isomer ratio is determined by chiral UHPLC with UV detection. GLP analytical 
+bridging studies were submitted , which demonstrated that in- house methods led to 
+
+=== PDF PAGE 23 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 23 of 44 
+comparable results as CIPAC methods 1025/TC/M/3 and 1025/TC/M/2.2,  
+respectively. 
+The methods for determination of impurities are based on reversed-phase UHPLC 
+with UV detection, or GC with flame ionization detection, and are adequately validated. 
+Test methods for determination of physico-chemical properties of the technical active 
+ingredient were essentially OECD and CIPAC methods, as indicated in the supporting 
+data.  
+ 
+Containers and packaging 
+No special requirements for containers and packaging have been identified. 
+ 
+Expression of the active ingredient  
+The active ingredient is expressed as isocycloseram. 
+  
+
+=== PDF PAGE 24 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 24 of 44 
+Annex 1: Hazard Summary Provided by the Proposer 
+ 
+Notes.  
+(i) The proposer has confirmed that the toxicological and ecotoxicological data 
+included in the summary below were derived from isocycloseram  having 
+impurity profiles similar to that referred to in the table above.  
+(ii) The conclusions expressed in the summary below are those of the proposer, 
+unless otherwise specified. 
+ 
+  
+
+=== PDF PAGE 25 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 25 of 44 
+Table 3. Toxicology profile of the isocycloseram technical material, based on 
+acute toxicity, irritation and sensitization. 
+Species Test Purity% Guideline, duration, doses 
+and conditions 
+Result 
+[(isomer/form)] 
+Study 
+number 
+Rat 
+(Crl:WI); 
+(female) 
+oral 96.9 OECD425 (2008), GLP 
+Dose levels: 1750 or 5000 
+mg/kg 
+14 day observation period 
+LD50 >5000 
+mg/kg bw 
+Tarcai 
+(2016) 
+VV-
+466679 
+Rat (SD); 
+(males 
+and 
+females) 
+oral 96.9 P.R. of China GB/T 15670.3-
+2017 
+Dose levels: 464, 1000, 2150, 
+4640 or 5000 mg/kg 
+14 day observation period 
+LD50 = 4569 
+mg/kg bw 
+Xue 
+(2021) 
+VV-
+924284 
+Rat 
+(Crl:WI); 
+(males 
+and 
+females) 
+dermal 96.9 OECD402 (1987), GLP 
+Dose levels: 5000 mg/kg 
+14 day observation period 
+LD50 >5000 
+mg/kg bw 
+Tarcia 
+(2016) 
+VV-
+466714 
+Rat (SD); 
+(males 
+and 
+females) 
+dermal 96.9 P.R. of China GB/T 15670.5-
+2017 
+Dose levels: 5000 mg/kg 
+14 day observation period 
+LD50 >5000 
+mg/kg bw 
+Xue 
+(2021) 
+VV-
+937895 
+Rat 
+(Crl:WI); 
+(males 
+and 
+females) 
+inhalation 96.9 OECD403 (2009), GLP 
+4h nose only exposure, MMAD 
+approx.3.38 µm 
+14 day observation period 
+LC50 = 
+>4.62mg/L 
+Rosos-
+Matting 
+(2016) 
+VV-
+467437 
+Rabbit 
+(NZW); 
+(male) 
+skin 
+irritation 
+98.4 OECD404 (2002), GLP 
+Dose levels: 0.5g per animal 
+72hr observation period 
+Not irritating Matting 
+(2015) 
+VV-
+413103 
+Rabbit 
+(JW); 
+(male) 
+skin 
+irritation 
+96.9 P.R. of China GB/T 15670.7-
+2017 
+Dose levels: 0.5g per animal 
+72hr observation period 
+Not irritating Xue 
+(2021) 
+VV-
+937896 
+Rabbit 
+(NZW); 
+(male) 
+eye irritation 98.4 OECD405 (2012), GLP 
+Dose levels: 0.1g per left eye 
+72hr observation period 
+Minimal irritant Matting 
+(2015) 
+VV-
+413102 
+Chicken 
+eye 
+eye irritation 98 OECD438 (2013), GLP 
+Dose levels: 30mg per eye 
+4hr observation period 
+Not classified 
+as a severe 
+irritant and not 
+classified as 
+non-irritant  
+Váliczkó 
+(2014) 
+VV-
+410146 
+Rabbit 
+(JW); 
+(male) 
+eye irritation 96.9 P.R. of China GB/T 15670.8-
+2017 
+Dose levels: 0.1g per right eye 
+72hr observation period 
+Slight irritant Xue 
+(2021) 
+VV-
+937897 
+Mouse 
+(CBA/Ca); 
+(Female) 
+skin 
+sensitisation 
+96.9 OECD429 (2010), GLP 
+Dose levels: 10, 25, 50% (w/w) 
+in acetone/olive oil 4:1 
+Skin 
+sensitization 
+potential 
+Pooles 
+(2016) 
+VV-
+466882 
+Guinea 
+Pig 
+(Dunkin 
+Hartley); 
+(male) 
+skin 
+sensitisation 
+96.9 P.R. of China GB/T 15670.9-
+2017 
+Dose levels: 50% w/w in corn 
+oil 
+Not a skin 
+sensitiser 
+Xue 
+(2021) 
+VV-
+937898 
+
+=== PDF PAGE 26 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 26 of 44 
+Table 4.  Toxicology profile of the isocycloseram technical material based on 
+repeated administration (subacute to chronic) 
+Species Test Purity
+% 
+ 
+Guideline, 
+duration, 
+doses and 
+conditions 
+Result 
+[(isomer/form)
+] 
+Study 
+number  
+Rat (Crl:WI), 
+(males and 
+females) 
+Short term 
+toxicity 
+98 OECD407 
+(2008), GLP 
+28 day 
+dietary oral 
+Dose levels: 
+0, 50, 200, 
+350 or 500 
+ppm (males) 
+or 0, 50, 
+700, 800 or 
+1000 ppm 
+(females) 
+5/sex/group 
+NOAEL = 50 
+ppm (4.3mg/kg 
+(male), 
+4.5mg/kg 
+(female)) 
+Dymarkowsk
+a (2017) 
+VV-467799 
+Mouse (Crl:CD-1); 
+(males and 
+females) 
+Short term 
+toxicity 
+98 OECD407 
+(2008); GLP 
+28 day 
+dietary oral 
+Dose levels: 
+0, 100, 300, 
+700 or 1000 
+ppm 
+5/sex/group 
+NOAEL = 100 
+ppm 
+(17.4mg/kg 
+(male), 
+20.9mg/kg 
+(female)) 
+Dymarkowsk
+a (2015) 
+VV-467980 
+Dog (Beagle); 
+(males and 
+females) 
+Short term 
+toxicity 
+98 OECD409 
+(1998), GLP 
+28 day 
+capsule oral 
+Dose levels: 
+0, 10, 50 
+and 150/80 
+mg/kg 
+(males) or 0, 
+10, 35 and 
+70 mg/kg 
+(females) 
+3/sex/group 
+NOAEL = 
+10mg/kg 
+Robertson 
+(2019) 
+VV-719063 
+Rat (Crl:WI); 
+(males and 
+females) 
+Short term 
+toxicity 
+98.4 OECD408 
+(1998), GLP 
+13 week 
+dietary oral 
+Dose levels: 
+0, 50, 150 or 
+300 ppm 
+(equivalent 
+to 0, 3.9, 
+11.2, and 
+22.0 mg/kg 
+in males and 
+0, 4.4, 13.4, 
+and 24.0 
+mg/kg in 
+females) 
+NOAEL = 50 
+ppm in males 
+(3.9mg/kg), 
+150ppm in 
+females 
+(13.4mg/kg) 
+Laidlaw 
+(2019) 
+VV-472306 
+
+=== PDF PAGE 27 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 27 of 44 
+Species Test Purity
+% 
+ 
+Guideline, 
+duration, 
+doses and 
+conditions 
+Result 
+[(isomer/form)
+] 
+Study 
+number  
+10/sex/grou
+p 
+Mouse (CRL:CD-
+1); (males and 
+females) 
+Short term 
+toxicity 
+98.4 OECD408 
+(1998), GLP 
+13 week 
+dietary oral 
+Dose levels: 
+0, 50, 300 or 
+700 ppm 
+(equivalent 
+to 0, 8.0, 
+48.8 and 
+117 mg/kg in 
+males and 0, 
+9.9, 51.6 
+and 140 
+mg/kg in 
+females) 
+10/sex/grou
+p 
+NOAEL = 50 
+ppm equating 
+to 8.0 mg/kg 
+bw/day in 
+males and 9.9 
+mg/kg bw/day 
+in females 
+Laidlaw 
+(2019) 
+VV-472418 
+Dog (Beagle); 
+(males and 
+females) 
+Short term 
+toxicity 
+96.9 OECD409 
+(1998), GLP 
+13 week 
+capsule oral 
+Dose levels: 
+0, 5, 15 and 
+35/25 mg/kg 
+4/sex/group 
+NOAEL = 15 
+mg/kg 
+Robertson 
+(2019) 
+VV-718750 
+Rat 
+(RccHan™:WIST)
+; (males and 
+females) 
+Short term 
+dermal toxicity 
+96.9 OECD410 
+(1981), GLP 
+4 week 
+dermal 
+Dose levels: 
+0, 100, 300 
+and 1000 
+mg/kg 
+10/sex/grou
+p 
+NOAEL = 100 
+mg/kg 
+Cooper 
+(2019) 
+VV-619265 
+Rat (Crl:WI); 
+(males and 
+females) 
+Carcinogenicit
+y 
+96.9 OECD453 
+(2009), GLP 
+104 Week 
+dietary oral 
+Dose levels: 
+0, 20, 50 or 
+150 ppm 
+(equivalent 
+to 0, 0.9, 2.3 
+and 7.0 
+mg/kg in 
+males and 0, 
+1.2, 3.0 and 
+9.2 mg/kg 
+for females) 
+52/sex/grou
+p 
+NOAEL = 50 
+ppm 
+(2.3/3.0 mg/kg 
+for 
+males/females 
+respectively) 
+Strepka 
+(2019) 
+VV-716659 
+
+=== PDF PAGE 28 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 28 of 44 
+Species Test Purity
+% 
+ 
+Guideline, 
+duration, 
+doses and 
+conditions 
+Result 
+[(isomer/form)
+] 
+Study 
+number  
+Mouse (CRL:CD-
+1); (males and 
+females) 
+Carcinogenicit
+y 
+96.9 OECD451 
+(2009) 
+80 Week 
+dietary oral 
+Dose levels: 
+0, 15, 60 or 
+200 ppm 
+(equivalent 
+to 0, 1.7, 6.7 
+and 23.1 
+mg/kg in 
+males and 0, 
+1.8, 7.1 and 
+24.4 mg/kg 
+for females) 
+50/sex/grou
+p 
+NOAEL = 15 
+ppm 
+(1.7/1.8 mg/kg 
+for 
+males/females 
+respectively) 
+Strepka 
+(2019) 
+VV-716634 
+Rat (Crl:WI); 
+(males and 
+females) 
+Reproductive 
+toxicity, 
+enhanced 1-
+generation 
+98.4 OECD415 
+(1983) 
+Oral gavage 
+Dose levels: 
+0, 7.5, 15, 
+and 45/60 
+mg/kg 
+(males), 0, 
+3.5, 7.5, and 
+15 mg/kg 
+(females) 
+24/sex/grou
+p 
+NOAEL: 
+Reproductive 
+45/60 mg/kg 
+(males) and 15 
+mg/kg 
+(females) 
+Systemic 
+7.5 mg/kg 
+(males and 
+females) 
+Penn (2018) 
+VV-471049 
+Rat (Crl:WI); 
+(males and 
+females) 
+Reproductive 
+toxicity, 2-
+generation 
+96.9 OECD416 
+(2001) 
+Dietary oral 
+Dose levels: 
+0, 1.5, 4, 
+and 12 
+mg/kg 
+24/sex/grou
+p 
+NOAEL: 
+Reproductive 
+12 mg/kg  
+Systemic 
+4 mg/kg 
+Britton, King 
+(2019) 
+VV-471790 
+Rat (Crl:WI); 
+(female) 
+Developmental 
+toxicity dose 
+ranger finding 
+96-97 No guideline 
+Oral gavage 
+Dose levels: 
+0, 3.5, 7.5, 
+and 15 
+mg/kg 
+10/group 
+NOAEL: Not 
+assigned in this 
+study type 
+Britton (2015) 
+VV-411304 
+Rat (Crl:WI); 
+(female) 
+Developmental 
+toxicity 
+96.9 OECD414 
+(2001), GLP 
+Oral gavage 
+Dose levels: 
+0, 3.5, 7.5, 
+and 15 
+mg/kg  
+22/group 
+NOAEL:  
+Maternal 
+15 mg/kg  
+Embryo-Fetal 
+15 mg/kg 
+Blunt, Fincher 
+(2019) 
+VV-472253 
+Wolton, 
+French 
+(2020) 
+VV-882864 
+
+=== PDF PAGE 29 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 29 of 44 
+Species Test Purity
+% 
+ 
+Guideline, 
+duration, 
+doses and 
+conditions 
+Result 
+[(isomer/form)
+] 
+Study 
+number  
+DeSesso, 
+Williams 
+(2019) 
+VV-882865 
+Rabbit (NZW); 
+(female) 
+Developmental 
+toxicity dose 
+ranger finding 
+>96 No guideline 
+Oral gavage 
+Dose levels: 
+0, 7.5, 15, 
+and 30 
+mg/kg 
+10/group 
+NOAEL: Not 
+assigned in this 
+study type 
+Blunt (2015) 
+VV-411667 
+Rabbit (NZW); 
+(female) 
+Developmental 
+toxicity 
+96.9 OECD414 
+(2001) 
+Oral gavage 
+Dose levels: 
+0, 3.5, 7.5, 
+and 15 
+mg/kg 
+22/group 
+NOAEL: 
+Maternal 
+15 mg/kg  
+Embryo-Fetal 
+15 mg/kg  
+Pottle (2017) 
+VV-468197 
+Rat (RccHan™ : 
+WIST); (males 
+and females) 
+Acute 
+neurotoxicity 
+98.4 OECD424 
+(1997) 
+Oral gavage 
+Dose levels: 
+0, 50, 200, 
+and 1000 
+mg/kg 
+10/sex/grou
+p 
+NOAEL:  
+General 
+Toxicity 
+50 mg/kg 
+Neurotoxicity 
+1000 mg/kg 
+Cocker 
+(2016) 
+VV-466670 
+Rat (RccHan™ : 
+WIST); (males 
+and females) 
+90 day 
+neurotoxicity 
+96.9 OECD424 
+(1997) 
+Dietary oral 
+Dose levels: 
+0, 50, 150, 
+300 ppm 
+10/sex/grou
+p 
+NOAEL: 
+General 
+Toxicity and 
+Neurotoxicity 
+300ppm (24.8 
+and 32.7 mg/kg 
+for males and 
+females 
+respectively) 
+Froud (2019) 
+VV-619064 
+ 
+Table 5. Mutagenicity profile of the isocycloseram technical material based on 
+in vitro and in vivo tests  
+Species Test Purity% 
+ 
+Guideline, duration, 
+doses and 
+conditions 
+Result 
+[(isomer/form)] 
+Study 
+number 
+Salmonella 
+typhimurium 
+strains 
+TA1535, 
+TA1537, 
+TA98, and 
+TA100, and 
+the 
+Escherichia 
+coli strains 
+Bacterial 
+Reverse 
+Gene 
+Mutation 
+(in vitro) 
+96.9 3-5000 µg/plate ±S9-
+mix 
+(Exp I&II) 
+DMSO 
+OECD471 (1997), 
+GLP 
+Negative Chang 
+(2016) 
+VV-465073 
+
+=== PDF PAGE 30 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 30 of 44 
+Species Test Purity% 
+ 
+Guideline, duration, 
+doses and 
+conditions 
+Result 
+[(isomer/form)] 
+Study 
+number 
+WP2 uvrA 
+pKM101 and 
+WP2 pKM101 
+Salmonella 
+typhimurium 
+strains 
+TA1535, 
+TA1537, 
+TA98, and 
+TA100, and 
+the 
+Escherichia 
+coli strains 
+WP2 uvrA 
+pKM101 and 
+WP2 pKM101 
+Bacterial 
+Reverse 
+Gene 
+Mutation 
+(in vitro) 
+96.1 3-5000 µg/plate ±S9-
+mix (Exp I) 
+33-5000 µg/plate 
+±S9-mix (Exp II) 
+33-5000 µg/plate -
+S9-mix (Exp III) 
+DMSO 
+OECD471 (1997), 
+GLP 
+Negative Chang 
+(2019) 
+VV-619413 
+Mouse 
+lymphoma 
+L5178Y Tk +/- 
+cells 
+Mammalian 
+Gene 
+Mutation 
+(in vitro) 
+96.9 1-125 µg/mL ±S9-
+mix (Exp I) 
+1.9-77.5 µg/mL ±S9-
+mix (Exp II) 
+DMSO 
+OECD490 (2015) 
+Non-mutagenic Wollny 
+(2016) 
+VV 465417 
+Mouse 
+lymphoma 
+L5178Y Tk +/- 
+cells 
+Mammalian 
+Gene 
+Mutation 
+(in vitro) 
+96.1 0.9-80 µg/mL ±S9-
+mix (Exp I) 
+3.13-80 µg/mL +S9-
+mix (Exp II) 
+3.2-75 µg/mL +S9-
+mix (Exp III) 
+DMSO 
+OECD490 (2016) 
+Non-mutagenic Sokolowski 
+(2019) 
+VV-719550 
+Human 
+lymphocytes 
+Chromosomal 
+aberration 
+(in vitro) 
+96.9 4.3-5160 µg/mL ±S9-
+mix (Exp I) 
+2.1-322.5 µg/mL -S9 
+mix (Exp II) 
+DMSO 
+OECD473 (2014) 
+Non-
+clastogenic 
+Chang 
+(2016) 
+VV-465554 
+Rat (CRL:WI); 
+(male) 
+Micronucleus 
+formation 
+(in vivo) 
+96.9 500, 1250, 2000 
+mg/kg bw/day 
+0.5% (w/v) CMC with 
+0.1% (v/v) Tween 80 
+OECD474 (1997) 
+Neither 
+clastogenic nor 
+aneugenic 
+Dunton 
+(2016) 
+VV 465063 
+
+=== PDF PAGE 31 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 31 of 44 
+Table 6. Ecotoxicology profile of the isocycloseram technical material 
+Species Test Purity% 
+ 
+Guideline, duration, 
+doses and conditions 
+Result 
+[(isomer/form)] 
+Study 
+number  
+Colinus virginianus  
+[Bobwhite quail] 
+Acute toxicity 96.9 OECD Guideline 223.  
+2000 mg/kg bw limit dose 
+LD50 > 2000 
+mg/kg bw 
+VV-
+465340 
+Anas platyrhynchos 
+[Mallard duck] 
+Acute toxicity 96.9 OECD Guideline 223.  
+2000 mg/kg bw limit dose 
+LD50 > 2000 
+mg/kg bw 
+VV-
+465876 
+Serinus Canaria  
+[Canary] 
+Acute toxicity 96.9 OECD Guideline 223.  
+1500 mg/kg bw limit dose 
+LD50 > 1500 
+mg/kg bw 
+VV-
+470612 
+Colinus virginianus  
+[Bobwhite quail] 
+Short term 
+dietary 
+96.9 U.S. EPA 850.2200, 
+OECD Guideline 205.  
+5-day dietary study, 562, 
+1000, 1780, 3160, 5620 
+mg/kg 
+LC50 > 5620 
+mg/kg 
+VV-
+465340 
+Anas platyrhynchos 
+[Mallard duck] 
+Short term 
+dietary 
+96.9 U.S. EPA 850.2200, 
+OECD Guideline 205.  
+5-day dietary study, 562, 
+1000, 1780, 3160, 5620 
+mg/kg 
+LC50 = 2000 
+mg/kg 
+VV-
+468375 
+Colinus virginianus  
+[Bobwhite quail] 
+Chronic 
+toxicity 
+96.9 U.S. EPA 850.2300, 
+OECD Guideline 206.  
+21-week reproductive 
+study, 100, 320, 1000 
+mg/kg 
+NOEC = 320 
+mg/kg equivalent 
+to 21.6 mg/kg 
+bw/d 
+VV-
+470611 
+Anas platyrhynchos 
+[Mallard duck] 
+Chronic 
+toxicity 
+96.9 U.S. EPA 850.2300, 
+OECD Guideline 206.  
+21-week reproductive 
+study, 100, 320, 1000 
+mg/kg 
+NOEC = 100 
+mg/kg equivalent 
+to 14.6 mg/kg 
+bw/d 
+VV-
+470610 
+Oncorhynchus 
+mykiss [rainbow 
+trout] 
+Acute toxicity 96.9 U.S. EPA 850.1075, 
+OECD Guideline 203, 96 
+hr acute test 
+0.066, 0.12, 0.23, 0.42 and 
+0.94 mg/L  
+LC50 = 0.13 mg/L VV-
+470111 
+Pimephales 
+promelas  
+[fathead minnow] 
+Acute toxicity 96.9 U.S. EPA 850.1075, 
+OECD Guideline 203, 96 
+hr acute test 
+0.058, 0.14, 0.23, 0.48 and 
+0.62 mg/L  
+LC50 = 0.33 mg/L VV-
+469970 
+Cyprinodon 
+variegatus 
+[sheepshead 
+minnow] 
+Acute toxicity 96.9 U.S. EPA 850.1075, 
+OECD Guideline 203, 96 
+hr acute test 
+0.064, 0.14, 0.27, 0.54 and 
+0.94 mg/L  
+LC50 = 0.29 mg/L VV-
+470108 
+Cyprinus carpio 
+[carp] 
+Acute toxicity 96.9 U.S. EPA 850.1075, 
+OECD Guideline 203, 96 
+hr acute test 
+0.057, 0.12, 0.24, 0.47 and 
+0.97 mg/L  
+LC50 = 0.37 mg/L VV-
+470076 
+Pimephales 
+promelas  
+[fathead minnow] 
+Chronic 
+toxicity 
+96.9 U.S. EPA 850.1400, 
+OECD Guideline 210, 28-
+day early life-stage toxicity 
+test, 
+0.013, 0.027, 0.048, 0.11 
+and 0.22 mg/L  
+NOEC = 0.11 
+mg/L 
+VV-
+470291 
+
+=== PDF PAGE 32 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 32 of 44 
+Cyprinodon 
+variegatus 
+[sheepshead 
+minnow] 
+Chronic 
+toxicity 
+96.9 U.S. EPA 850.1400, 
+OECD Guideline 210, 28-
+day early life-stage toxicity 
+test, 
+0.0037, 0.0081, 0.018, 
+0.052 and 0.13 mg/L  
+NOEC = 0.0081 
+mg/L 
+VV-
+469971 
+Daphnia magna  
+[water flea] 
+ 
+Acute toxicity 96.9 U.S. EPA 850.1010, 
+OECD Guideline 202, 48 
+hr acute toxicity 0.0035, 
+0.0089, 0.021, 0.052, 0.14, 
+0.53 and 0.91 mg/L 
+EC50 = 0.52 mg/L VV-
+470284 
+Crassostrea 
+virginica 
+[Eastern oyster] 
+Acute toxicity 96.9 U.S. EPA 850.1025, 96 hr 
+acute toxicity 0.0057, 
+0.016, 0.031, 0.056, 0.19 
+and 0.50 mg/L 
+EC50 = 0.083 
+mg/L 
+VV-
+469923 
+Mysidopsis bahia 
+[mysid shrimp] 
+Acute toxicity 96.9 U.S. EPA 850.1035, 96 hr 
+acute toxicity 0.003, 
+0.0064, 0.013, 0.026, 
+0.053 and 0.12 ug/L 
+LC50 = 0.018 ug/L VV-
+846361 
+Hyalella azteca 
+[freshwater 
+amphipod] 
+Acute toxicity 96.9 U.S. EPA 850.1020, 
+OECD Guideline 202, 
+JMAFF 2-7-5, 96 hr acute 
+toxicity 0.032, 0.095, 0.27, 
+0.82, 2.5 and 9.2 ug/L 
+LC50 = 0.041 ug/L VV-
+868235 
+Chironomus 
+riparius [midge] 
+Acute toxicity 96.9 OECD Guideline 235, 48 
+hr acute toxicity 0.0011, 
+0.0023, 0.0056, 0.014, 
+0.038 and 0.096 ug/L 
+LC50 = 0.015 ug/L VV-
+866777 
+Caecidotea 
+communis [water 
+louse] 
+Acute toxicity 96.9 U.S. EPA 850.1020, U.S. 
+EPA 850.1000, 96 hr acute 
+toxicity 0.038, 0.058, 
+0.099, 0.170 and 0.26 ug/L 
+EC50 = 0.15 ug/L VV-
+890842 
+Brachionus 
+calyciflorus 
+[freshwater rotifer] 
+Acute toxicity 96.9 U.S. EPA 850.1000, ASTM 
+E 1440-91, 24 hr acute 
+toxicity 1.3, 1.8, 7.2, 20, 
+66, 220 and 810 ug/L 
+EC50 > 810 ug/L VV-
+889418 
+Hexagenia limbate 
+[mayfly] 
+Acute toxicity 96.9 U.S. EPA 850.1000, 
+OECD Guideline 235, 48 
+hr acute toxicity <0.015, 
+0.032, 0.084, 0.23, 0.60 
+and 1.5 ug/L 
+EC50 = 0.32 ug/L VV-
+888013 
+Pycnopsyche 
+gentilis [caddisfly] 
+Acute toxicity 96.9 U.S. EPA 850.1000, 
+OECD Guideline 235, 48 
+hr acute toxicity <0.015, 
+0.027, 0.071, 0.19, 0.51 
+and 1.4 ug/L 
+EC50 = 0.49 ug/L VV-
+878602 
+Faxonius virilis 
+[Northern crayfish] 
+Acute toxicity 96.9 U.S. EPA 850.1000, 96 hr 
+acute toxicity 0.22, 0.49, 
+0.98, 2.1 and 3.6 ug/L 
+EC50 = 1.6 ug/L VV-
+888912 
+Palaemonetes 
+paludosus [grass 
+shrimp] 
+Acute toxicity 96.9 U.S. EPA 850.1000, U.S. 
+EPA 850.1045, 96 hr acute 
+toxicity 0.058, 0.14, 0.37, 
+0.91 and 2.2 ug/L 
+EC50 = 0.25 ug/L VV-
+889404 
+Thamnocephalus 
+platyurus [Fairy 
+shrimp] 
+Acute toxicity 96.9 U.S. EPA 850.1000, U.S. 
+EPA 850.1035, 96 hr acute 
+EC50 = 0.26 ug/L VV-
+892711 
+
+=== PDF PAGE 33 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 33 of 44 
+toxicity 0.028, 0.074, 0.22, 
+0.69, 2.3, 6.9 and 21 ug/L 
+Daphnia magna 
+[water flea] 
+Chronic 
+toxicity 
+96.9 U.S. EPA 850.1300, 
+OECD Guideline 211, 21-
+day static renewal, 0.031, 
+0.063, 0.13, 0.24, and 0.5 
+ug/L 
+NOEC = 0.063 
+ug/L 
+VV-
+740015 
+Daphnia magna 
+[water flea] 
+Chronic 
+toxicity 
+96.9 U.S. EPA 850.1300, 
+OECD Guideline 211, 21-
+day static renewal, 0.0092, 
+0.015, 0.03, 0.064, 0.13 
+and 0.24 ug/L 
+NOEC = 0.03 ug/L VV-
+869410 
+Mysidopsis bahia 
+[mysid shrimp] 
+Chronic 
+toxicity 
+96.9 U.S. EPA 850.1350, 28-
+day flow-through, 0.00052, 
+0.001, 0.0023, 0.0042 and 
+0.0074 ug/L 
+NOEC = 0.001 
+ug/L 
+VV-
+846373 
+Hyalella azteca 
+[freshwater 
+amphipod] 
+Chronic 
+toxicity 
+96.9 U.S. EPA 100.4, US EPA 
+850.1770 (in preparation), 
+42-day intermittent-
+renewal, 0.019, 0.051, 
+0.13, 0.31, 0.77 and 2.1 
+ug/kg dw 
+NOEC = 0.77 
+ug/kg dw 
+VV-
+869054 
+Leptocheirus 
+plumulosus 
+[estuarine 
+amphipod] 
+Chronic 
+toxicity 
+96.9 U.S. EPA 600/R-01/020, 
+21-day intermittent-
+renewal, 0.21, 0.38, 0.79, 
+1.7 and 3.0 ug/kg dw 
+NOEC = 1.7 ug/kg 
+dw 
+VV-
+846384 
+Chironomus dilutus 
+[midge] 
+Chronic 
+toxicity 
+96.9 U.S. EPA 100.5, US EPA 
+850.1760 (in preparation), 
+60-day intermittent-
+renewal, 0.018, 0.046, 
+0.12, 0.39 and 1.1 ug/kg 
+dw 
+NOEC = 0.39 
+ug/kg dw 
+VV-
+890854 
+Chironomus 
+riparius [midge] 
+Chronic 
+toxicity 
+96.9 OECD 218, 28-day static, 
+0.085, 0.18, 0.34, 0.68, 1.5 
+and 2.7 ug/kg dw 
+NOEC = 0.68 
+ug/kg dw 
+VV-
+893580 
+Pseudokirchneriella 
+subcapitata [green 
+algae] 
+Chronic 
+toxicity 
+96.9 U.S. EPA 850.4500, 
+OECD 201; 96 hr algal 
+growth inhibition assay. 
+0.041, 0.061, 0.11, 0.24 
+and 0.78 mg/L 
+96hr ErC50 > 0.78 
+mg/L 
+VV-
+469976 
+Navicula 
+pelliculosa 
+[freshwater diatom] 
+Chronic 
+toxicity 
+96.9 U.S. EPA 850.4500, 
+OECD 201; 96 hr algal 
+growth inhibition assay. 
+0.023, 0.042, 0.090, 0.21 
+and 0.61 mg/L 
+96hr ErC50 > 0.61 
+mg/L 
+VV-
+469967 
+Skeletonema 
+costatum [marine 
+diatom] 
+Chronic 
+toxicity 
+96.9 U.S. EPA 850.4500, 
+OECD 201; 96 hr algal 
+growth inhibition assay. 
+0.023, 0.044, 0.093, 0.21 
+and 0.54 mg/L 
+96hr ErC50 = 029 
+mg/L 
+VV-
+469997 
+Anabaena flos-
+aquae [freshwater 
+cyanobacterium] 
+Chronic 
+toxicity 
+96.9 U.S. EPA 850.4550, 
+OECD 201; 96 hr 
+freshwater cyanobacterium 
+growth inhibition assay. 
+0.033, 0.050, 0.11, 0.29 
+and 0.69 mg/L 
+96hr ErC50 > 0.69 
+mg/L 
+VV-
+470238 
+
+=== PDF PAGE 34 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 34 of 44 
+Lemna gibba 
+[Duckweed] 
+Chronic 
+toxicity 
+96.9 U.S. EPA 850.4400, 
+OECD 221; 7-day static 
+renewal. 
+0.080, 0.13, 0.24, 0.50 and 
+1.2 mg/L 
+7d ErC50 > 1.2 
+mg/L 
+VV-
+469969 
+Eisenia andrei 
+[earthworm] 
+Acute toxicity 96.9 OECD 207; 14d acute 
+toxicity test 
+62.5, 125, 250, 500 and 
+1000 mg/kg dry soil 
+LC50 > 1000 
+mg/kg dw 
+VV-
+466604 
+Eisenia fetida 
+[earthworm] 
+Chronic 
+toxicity 
+96.9 OECD 222; 28d chronic 
+toxicity test 
+0.625, 1.25, 2.5, 5.0 and 
+10.0 mg/kg dry soil 
+NOEC = 10 mg/kg 
+dw 
+VV-
+412931 
+Soil Microflora Nitrogen and 
+Carbon 
+Transformation  
+96.9 OECD 216, OECD 217; 
+28d chronic transformation 
+test 
+0.5 and 4.95 mg/kg dry soil
+ 
+NOEC = 4.95 
+mg/kg dw 
+VV-
+466609 
+Activated sludge Respiration 
+inhibition test 
+96.9 OECD 209, ISO 8192; 3-h 
+inhibition test 
+10, 32, 100, 320 and 1000 
+mg/L 
+NOEC = 100 mg/L VV-
+467858 
+Folsomia candida 
+[Collembola] 
+Chronic 
+toxicity 
+96.9 OECD 232; 28-day toxicity 
+test 
+0.009, 0.016, 0.029, 0.053, 
+0.095, 0.171, 0.309, 0.556 
+and 1.0 mg/kg dw 
+NOEC = 0.095 
+mg/kg dw 
+VV-
+412444 
+Hypoaspis aculeifer 
+[predatory mite] 
+Chronic 
+toxicity 
+96.9 OECD 226; 14-day toxicity 
+test 
+0.009, 0.016, 0.029, 0.053, 
+0.095, 0.171, 0.309, 0.556 
+and 1.0 mg/kg dw 
+NOEC = 0.171 
+mg/kg dw 
+VV-
+412437 
+Apis mellifera 
+[honeybee] 
+Acute toxicity 96.9 OECD 213, OECD 214; 
+96h acute oral and contact 
+toxicity test. 
+0.04, 0.09, 0.21, 0.47 and 
+0.99 ug/bee (oral test). 
+0.04, 0.09, 0.20, 0.45 and 
+1.0 ug/bee (contact test). 
+72-h oral LD50 = 
+0.28 ug/bee 
+96-h contact LD50 
+= 0.26 ug/bee 
+VV-
+466340 
+Bombus terrestris 
+[bumblebee] 
+Acute toxicity 96.9 OECD 246, OECD 247; 
+48h acute oral and contact 
+toxicity test. 
+0.16, 0.32, 0.64, 1.35 and 
+2.57 ug/bee (oral test). 1.3, 
+2.2, 3.6, 6.0 and 10 ug/bee 
+(contact test). 
+48-h oral LD50 = 
+0.35 ug/bee 
+48-h contact LD50 
+>10 ug/bee 
+VV-
+900003 
+Apis mellifera 
+[honeybee] 
+Chronic 
+toxicity 
+96.9 Based on OECD guideline 
+proposal (2016); 10-day 
+laboratory adult feeding 
+test. 
+0.07, 0.13, 0.25, 0.5 and 
+1.0 mg/kg feeding solution 
+NOEC = 0.13 
+mg/kg diet 
+NOEDD 0.0034 
+ug/bee/day 
+VV-
+462082 
+Apis mellifera 
+[honeybee] 
+Larval toxicity 
+test (single 
+exposure) 
+96.9 OECD 237; 7-day larval 
+toxicity test (single 
+exposure). 
+0.02, 0.07, 0.22, 0.67 and 
+2.0 mg/kg diet 
+LD50 = 0.08 
+ug/larvae 
+LC50 = 2.42 
+mg/kg diet 
+ 
+VV-
+467266 
+
+=== PDF PAGE 35 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 35 of 44 
+Apis mellifera 
+[honeybee] 
+Larval toxicity 
+test (repeat 
+exposure 
+through adult 
+emergence) 
+96.9 OECD Draft guidance 20 
+July 2015; 22-day repeat 
+exposure through feeding 
+larval toxicity test. 
+0.0123, 0.0370, 0.111, 
+0.333 and 1.0 mg/kg diet 
+22d NOEC = 
+0.111 mg/kg diet 
+22d NOED = 
+0.0171 ug/larvae 
+per developmental 
+period 
+VV-
+467145 
+  
+
+=== PDF PAGE 36 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 36 of 44 
+Annex 2: References 
+Study 
+number  
+Author(s) Year Study title. Study identification number. Report identification 
+number. GLP [if GLP]. Company conducting the study.  
+Physical Chemistry   
+VV-466820 B J O’Connor 2017 
+SYN547407 - Determination of Dissociation Constants in Water, 
+GLP Testing Facility Envigo Research Limited Shardlow Business 
+Park, Shardlow Derbyshire, DE72 2GD, UK, YJ47SY, 13 February 
+2017, GLP. unpublished 
+VV-466821 B J O’Connor 2017 
+SYN547407 - Determination of Melting Temperature, GLP Testing 
+Facility Envigo Research Limited Shardlow Business Park, 
+Shardlow Derbyshire, DE72 2GD, UK, QD17QM, 14 February 
+2017, GLP. unpublished 
+VV-466830 B J O’Connor 2017 
+SYN547407 - Determination of Boiling Temperature, GLP Testing 
+Facility Envigo Research Limited Shardlow Business Park, 
+Shardlow Derbyshire, DE72 2GD, UK, SG92NR, 13 February 
+2017, GLP. unpublished  
+VV-466832 B J O’Connor 2017 
+SYN547407 - Determination of Melting Temperature using 
+Technical Grade Material, GLP Testing Facility Envigo Research 
+Limited Shardlow Business Park, Shardlow Derbyshire, DE72 
+2GD, UK, CF74TF, 20 February 2017, GLP. Unpublished 
+VV-466922 C. 
+Vijayakumar 2017 
+SYN547407 - Solubility in Organic Solvents, GLP Testing Facility 
+GOA Syngenta Biosciences Pvt. Ltd, Santa Monica Works, 
+Corlim, Ilhas Goa 403 110, India, SMG14077, 3 February 2017 
+GLP. Unpublished 
+VV-466958 R. Halarnakar 2017 
+SYN547407 – Solubility in Water, GLP Testing Facility GOA 
+Syngenta Biosciences Pvt. Ltd, Santa Monica Works, Corlim, Ilhas 
+Goa 403 110, India, SMG14120, 3 March 2017. GLP. unpublished 
+VV-467214 C. 
+Vijayakumar 2017 
+SYN547407 - Vapour Pressure, GLP Testing Facility GOA 
+Syngenta Biosciences Pvt. Ltd, Santa Monica Works, Corlim, Ilhas 
+Goa 403 110, India, SMG14076, 23 February 2017.GLP. 
+unpublished 
+VV-467222 R. Halarnakar 2017 
+SYN547407 - 1-Octanol / Water Partition Coefficient, GLP Testing 
+Facility GOA Syngenta Biosciences Pvt. Ltd, Santa Monica Works, 
+Corlim, Ilhas Goa 403 110, India, SMG14121, 22 February 2017. 
+GLP. unpublished 
+VV-732925 Dr D. Adam 2019 
+SYN547407 - Hydrolysis of 14C-SYN547407, Innovative 
+Environmental Services (IES) Ltd Benkenstrasse 260 4108 
+Witterswil Switzerland, 20160233. 28 November 2019. GLP. 
+unpublished 
+VV-733294 C. Wijntjes 2021 
+SYN547407 - Photolysis of 14C-SYN547407 in pH 4 Buffer 
+Solution, Innovative Environmental Services (IES) Ltd 
+Benkenstrasse 260 4108 Witterswil Switzerland, 20160284. 17 
+May 2021 GLP. unpublished 
+Toxicology    
+SYN547407
+_10132 
+Hutton E 2017 SYN547407 – Pharmacokinetics of [Methylphenyl 14C] 
+SYN547407 Following Single Oral and Intravenous Administration 
+in the Rat. Charles River Laboratories Edinburgh Ltd, Tranent, 
+East Lothian, EH33 2NE, UK. Charles River Report No. 38010. 
+Issue date 02 October 2017. Unpublished 
+SYN547407
+_10139 
+Hutton E 2017 SYN547407 – The Absorption and Excretion of [Methylphenyl 
+14C], [Halophenyl 14C] and [Oxoisoxazolidinyl-14C] SYN547407 
+Following Single Oral Administration in the Rat. Charles River 
+Laboratories Edinburgh Ltd, Tranent, Edinburgh, EH33 2NE, UK. 
+Charles River Report No. 38261. Issue date 02 October 2017. 
+Unpublished.  
+
+=== PDF PAGE 37 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 37 of 44 
+VV 465063 Dunton, J 2016 SYN547407 – Oral (Gavage) Rat Micronucleus Test. Sequani Ltd. 
+Sequani Report No. BFI0443, issue date: 26 May 2016. 
+Unpublished.  
+VV 465417 Wollny H 2016 SYN547407 - Cell Mutation Assay at the Thymidine Kinase Locus 
+(TK +/-) in Mouse Lymphoma L5178Y Cells. Envigo CRS GmbH, 
+In den Leppsteinswiesen 19, 64380 Rossdorf, Germany. 
+Laboratory Report No. 1740700 issue date: 02 June 2016. 
+Unpublished.  
+VV-230077 Thibaut, R 2019 SYN547407 – In Vitro Comparative Metabolism of [Methylphenyl-
+U-14C]-SYN547407, [Halophenyl-U-14C]-SYN547407 and 
+[Oxoisoxazolidinyl-4,5-14C]-SYN547407 in Human and Rat Liver 
+Microsomes. Innovative Environmental Services (IES) Ltd, 
+Benkenstrasse 260, 4108 Witterswil, Switzerland. Report No. 
+20180274, issue date 11 April 2019. Unpublished. 
+VV-410146 Váliczkó É 2014 SYN547407 - In Vitro Eye Irritation Test on Isolated Chicken Eyes. 
+CiToxLAB Hungary Ltd. H-8200 Veszprém, Szabadságpuszta 
+Hungary, Laboratory Report No. 14/224-038CS, 23 September 
+2014. Unpublished. 
+VV-411304 Britton, L 2015 SYN547407 - Oral (Gavage) Dose Range-Finding Prenatal 
+Developmental Toxicity Study in the Rat. Sequani Limited, 
+Herefordshire. Laboratory Report No. BFI0197 Issue date: 06 
+February 2015. Unpublished 
+VV-411667 Blunt, H 2015 SYN547407 - Oral (Gavage) Dose Range-Finding Prenatal 
+Developmental Toxicity Study in the Rabbit. Sequani Limited, 
+Bromyard Road, Ledbury, Herefordshire, HR8 1LH, United 
+Kingdom. Laboratory Report No. BFI0190, 11 March 2015. 
+Unpublished.  
+VV-413102 Matting E 2015 SYN547407 - Acute Eye Irritation Study in Rabbits. CiToxLAB 
+Hungary Ltd. H-8200 Veszprém, Szabadságpuszta Hungary, 
+Laboratory Report No. 15/031-005N, 23 July 2015. Unpublished. 
+VV-413103 Matting E 2015 SYN547407 - Primary Skin Irritation Study in Rabbits. CiToxLAB 
+Hungary Ltd. H-8200 Veszprém, Szabadságpuszta Hungary, 
+Laboratory Report No. 15/031-006N, 23 July 2015. Unpublished. 
+VV-465073 Chang S 2016 SYN547407 - Salmonella Typhimurium and Escherichia Coli 
+Reverse Mutation Assay. Envigo CRS GmbH GmbH, In den 
+Leppsteinswiesen 19, 64380 Rossdorf Germany. Laboratory 
+Report No. 1737001, issue date: 25 May 2016. Unpublished.  
+VV-465554 Chang, S 2016 SYN547407 - Chromosome Aberration Test in Human 
+Lymphocytes In Vitro. Envigo CRS GmbH, In den 
+Leppsteinswiesen 19, 64380 Rossdorf, Germany. Laboratory 
+Report No. 1737002, issue date: 23 June 2016. Unpublished.  
+VV-466670 Cocker C 2016 SYN547407 - Neurotoxicity Study by a Single Gavage 
+Administration to Han Wistar Rats Followed by a 14-Day 
+Observation Period. Envigo CRS Limited, Eye, Suffolk, IP23 7PX, 
+United Kingdom. Laboratory Report No. TMR0074 31 October 
+2016. Unpublished.  
+VV-466679 Tarcai Z 2016 SYN547407 - Acute Oral Toxicity Study in Rats (Up and Down 
+Procedure). CiToxLAB Hungary Ltd. H-8200 Veszprém, 
+Szabadságpuszta, Hungary. Laboratory Report No. 16/043-001P. 
+10 November 2016. Unpublished. 
+VV-466714 Tarcai Z 2016 SYN547407 - Acute Dermal Toxicity Study in Rats. CiToxLAB 
+Hungary Ltd. H-8200 Veszprém, Szabadságpuszta, Hungary, 
+Laboratory Report No. 16/043-002P, 08 November 2016. 
+Unpublished.  
+
+=== PDF PAGE 38 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 38 of 44 
+VV-466882 Pooles A 2016 SYN547407 – Local Lymph Node Assay in the Mouse. Envigo 
+Research Limited, Shardlow Business Park, Shardlow, Derbyshire 
+DE72 2GD, UK. JB07JQ. 19 January 2017: Unpublished. 
+VV-467437 Rosos-
+Matting E 
+2016 SYN547407 - Acute Inhalation Toxicity Study (Nose-Only) in the 
+Rat. CiToxLAB Hungary Ltd.H-8200 Veszprém, Szabadságpuszta 
+Hungary, report number 16/043-004P, issue date 13 March 2017. 
+Unpublished. 
+VV-467799 Dymarkowsk
+a K 
+2017 SYN547407 - 28 Day Oral (Dietary) Toxicity Study in Rats. 
+Charles River Laboratories, Preclinical Services, Tranent (PCS-
+EDI), Edinburgh, EH33 2NE, UK. Laboratory Report No. 35086. 
+31 July 2017. Unpublished. 
+VV-467980 Dymarkowsk
+a K 
+2015 SYN547407 - 28 Day Oral (Dietary) Toxicity Study in Mice. 
+Charles River Laboratories, Preclinical Services, Tranent (PCS-
+EDI), Edinburgh, EH33 2NE, UK. Laboratory Report No. 35254. 
+16 February 2015 Unpublished.  
+VV-468197 Pottle C 2017 SYN547407 - Oral (Gavage) Prenatal Developmental Toxicity 
+Study in the Rabbit. Sequani Limited, Bromyard Road, Ledbury, 
+Herefordshire, HR8 1LH, United Kingdom. Laboratory Report No. 
+BFI0499, 12 September 2017. Unpublished.  
+VV-468517 Hutton E 2017 SYN547407- Tissue Depletion and Elimination of [Methylphenyl 
+14C] SYN547407 Following Single and Multiple Oral 
+Administration in the Rat. Charles River Laboratories Edinburgh 
+Ltd, Tranent, Edinburgh, EH33 2NE, UK. Charles River Report No. 
+38365. Issue date 02 October 2017. Unpublished  
+VV-470695 Real Sesma, 
+V 
+2018 SYN547407 – Biotransformation of [14C]-SYN547407 in Rat. 
+Charles River Laboratories Edinburgh Ltd, Elphinstone Research 
+Centre, Tranent, East Lothian, EH33 2NE, UK. Report No. 39106, 
+issue date 24 July 2018. Unpublished. 
+VV-471049 Penn L 2018 SYN547407 - Enhanced Oral (Gavage) One-Generation 
+Reproduction Toxicity Study in the Rat. Sequani Limited, United 
+Kingdom. Laboratory Report No. BFI0323. Issue date 21 
+November 2018. Unpublished 
+VV-471790 Britton, L., 
+King, O 
+2019 SYN547407 - Oral (Dietary) Two-Generation Reproduction 
+Toxicity Study in the Rat. Sequani Limited, United Kingdom. 
+Laboratory Report No. BFI0518. Issue date: 24 May 2019. 
+Unpublished.  
+VV-472253 Blunt, H, 
+Fincher, K 
+2019 SYN547407 – Oral (Gavage) Prenatal Developmental Toxicity 
+Study in the Rat. Sequani Ltd, Bromyard Road, Ledbury, 
+Herefordshire, HR8 1LH. BFI0500. Issue date: 11 July 2019. 
+Unpublished.  
+VV-472306 Laidlaw K 2019 SYN547407 - A 13 Week Oral (Dietary) Toxicity Study in the Rat. 
+Charles River Laboratories, Preclinical Services, Tranent (PCS-
+EDI), Edinburgh, EH33 2NE, UK. Laboratory Report No. 36411. 
+17 May 2019. Unpublished. 
+VV-472418 Laidlaw K 2019 SYN547407 - A 13 Week Oral (Dietary) Toxicity Study in the 
+Mouse. Charles River Laboratories, Preclinical Services, Tranent 
+(PCS-EDI), Edinburgh, EH33 2NE, UK. Laboratory Report No. 
+36265. 19 July 2019. Unpublished.  
+VV-619064 Froud A 2019 SYN547407 - SYN547407 - Neurotoxicity Study by Dietary 
+Administration to Han Wistar Rats for 13 Weeks. Covance CRS 
+Limited, Eye, Suffolk, IP23 7PX, United Kingdom. Laboratory 
+Report No. FP91LF, 24 July 2019. Unpublished.  
+VV-619265 Cooper S 2019 SYN547407 – Toxicity Study by Dermal Administration to Han 
+Wistar Rats for 4 Weeks. Envigo CRS Limited, Eye Suffolk, IP23 
+7PX, UK. Laboratory Report No. LT42LC. 08 February 2019. 
+Unpublished 
+
+=== PDF PAGE 39 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 39 of 44 
+VV-619413 Chang S 2019 SYN547407 tech. - Salmonella Typhimurium and Escherichia Coli 
+Reverse Mutation Assay.  Envigo CRS GmbH GmbH, In den 
+Leppsteinswiesen 19, 64380 Rossdorf Germany. Laboratory 
+Report No. 1941000, issue date: 7 February 2019. Unpublished.  
+VV-716634 Strepka C 2019 SYN547407- 80 Week Mouse Oral (Dietary) Carcinogenicity 
+Study. Charles River Laboratories Edinburgh Ltd, Elphinstone 
+Research Centre, Tranent, East Lothian EH33 2NE, UK. 
+Laboratory Report No. 39673, issue date: 31 October 2019. 
+Unpublished.  
+VV-716659 Strepka C 2019 SYN547407- 104 Week Rat Oral (Dietary) Carcinogenicity Study 
+with a Combined 52 Week Toxicity Study. Charles River 
+Laboratories Edinburgh Ltd, Elphinstone Research Centre, 
+Tranent, East Lothian EH33 2NE, UK. Laboratory Report No. 
+38885, issue date: 31 October 2019. Unpublished.  
+VV-718750 Robertson B 2019 SYN547407 - A 13 Week Oral (Capsule) Toxicity Study in the 
+Dog. Charles River Laboratories, Preclinical Services, Tranent 
+(PCS-EDI), Edinburgh, EH33 2NE, UK. Laboratory Report No. 
+39611. 07 November 2019. Unpublished.  
+VV-719063 Robertson B 2019 SYN547407 - 28 Day Oral (Capsule) Toxicity Study in the Dog. 
+Charles River Laboratories, Preclinical Services, Tranent (PCS-
+EDI), Edinburgh, EH33 2NE, UK. Laboratory Report No. 37422. 
+07 November 2019. Unpublished.  
+VV-719550 Sokolowski, 
+A 
+2019 SYN547407 tech. - Cell Mutation Assay at the Thymidine Kinase 
+Locus (TK +/-) in Mouse Lymphoma L5178Y Cells. ICCR-Roßdorf 
+GmbH, In den Leppsteinswiesen 19, 64380 Rossdorf, Germany. 
+Laboratory Report No. 1941100 issue date: 15 November 2019. 
+Unpublished 
+VV-877313 Tomlinson J 
+et al 
+2015 SYN547407 – A preliminary study of pharmacokinetics, 
+absorption, metabolism and excretion in the rat following single 
+oral and intravenous administration of [14C]-SYN547407. Charles 
+River Laboratories Edinburgh Ltd, Tranent, Edinburgh, EH33 2NE, 
+UK. Charles River Report No. 35414. Issue date 23 December 
+2015. Unpublished. 
+VV-882864 Wolton, K., 
+French, J 
+2020 SYN547407 – Technical Position on the OECD 414 Prenatal 
+Developmental Toxicity Study in the Rat. Syngenta Ltd, Jealott’s 
+Hill International Research Centre, Bracknell, Berkshire, RG 42 
+6EY UK. Laboratory Report No. TK0369128, 16 December 2020. 
+Unpublished 
+VV-882865 DeSesso, J., 
+Williams, A 
+2019 An Analysis of Bifid Sternebrae in the Context of General Sternum 
+Development- An Assessment of the Rat Embryofetal 
+Development Study of SYN547407. Exponent, 1800 Diagonal 
+Road, Suite 500, Alexandria, VA 22314 USA. Laboratory Report 
+No. 1705524.000 - 3389, 09 July 2019. Unpublished.  
+VV-924284 Xue L 2021 Acute Oral Toxicity Study of isocycloseram TC (SYN547407) in 
+Rats. Safety Evaluation Center of Shenyang SYRICI Testing Co., 
+Ltd. (Supervision and Test Center for Pesticide Safety Evaluation 
+and Quality Control), No. 600 Shenliao Rd., Tiexi District, 
+Shenyang, Liaoning Province, P. R. China, Post code 110141, 
+Laboratory Report No. F210110060, 18 October 2021. 
+Unpublished. 
+VV-937895 Xue L 2021 Acute Dermal Toxicity Study of isocycloseram TC (SYN547407) in 
+Rats. Safety Evaluation Center of Shenyang SYRICI Testing Co., 
+Ltd. (Supervision and Test Center for Pesticide Safety Evaluation 
+and Quality Control), No. 600 Shenliao Rd., Tiexi District, 
+Shenyang, Liaoning Province, P. R. China, Post code 110141, 
+Laboratory Report No. F210210060, 07 September 2021. 
+Unpublished 
+
+=== PDF PAGE 40 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 40 of 44 
+VV-937896 Xue L 2021 Acute Dermal Irritation/Corrosion Study of isocycloseram TC 
+(SYN547407) in Rabbits. Safety Evaluation Center of Shenyang 
+SYRICI Testing Co., Ltd. (Supervision and Test Center for 
+Pesticide Safety Evaluation and Quality Control), No. 600 
+Shenliao Rd., Tiexi District, Shenyang, Liaoning Province, P. R. 
+China, Post code 110141, Laboratory Report No. F210430060, 07 
+September 2021. Unpublished. 
+VV-937897 Xue L 2021 Acute Eye Irritation/Corrosion Study of isocycloseram TC 
+(SYN547407) in Rabbits. Safety Evaluation Center of Shenyang 
+SYRICI Testing Co., Ltd. (Supervision and Test Center for 
+Pesticide Safety Evaluation and Quality Control), No. 600 
+Shenliao Rd., Tiexi District, Shenyang, Liaoning Province, P. R. 
+China, Post code 110141, Laboratory Report No. F210330080, 22 
+July 2021. Unpublished. 
+VV-937898 Xue L 2021 Skin Sensitisation Study of isocycloseram TC (SYN547407) in 
+Guinea Pigs. Safety Evaluation Center of Shenyang SYRICI 
+Testing Co., Ltd. (Supervision and Test Center for Pesticide 
+Safety Evaluation and Quality Control), No. 600 Shenliao Rd., 
+Tiexi District, Shenyang, Liaoning Province, P. R. China, Post 
+code 110141, Laboratory Report No. F210640060, 07 September 
+2021. Unpublished. 
+Ecotoxicology   
+VV-412437 Vinall S. 2015 
+SYN547407 – A laboratory test to determine the effects of fresh 
+residues on the predatory mite Hypoaspis aculeifer (Acari, 
+Laelapidae), Report Number SYN-15-19, Mambo-Tox Ltd.2 
+Venture Road, University Science Park, Southampton SO16 7NP, 
+UK, GLP, not published 
+VV-412444 Geary N. 2015 
+SYN547407 – A laboratory test to determine the effects of fresh 
+residues on the springtail Folsomia candida (Collembola, 
+Isotomidae), Report Number SYN-15-18. Mambo-Tox Ltd. 2 
+Venture Road, University Science Park, Southampton SO16 7NP, 
+UK, GLP, not published 
+VV-412931 Hutcheson K. 2015 
+SYN547407 tech – Earthworm reproduction test (Eisenia fetida), 
+Report Number CEMR-6944. CEM Analytical Services Limited 
+(CEMAS) Imperial House, Oaklands Business Centre, Oaklands 
+Park, Wokingham, Berkshire, RG41 2FD, UK, GLP, not published 
+VV-462082 Kling A. 2017 
+SYN547407 – Assessment of Effects on the Adult Honey Bee, 
+Apis mellifera L., in a 10 Day Chronic Feeding Test under 
+Laboratory Conditions. Report Number S16-02526, Eurofins 
+Agroscience Services EcoChem GmbH / Eurofins Agroscience 
+Services Ecotox GmbH, Eutinger Str. 24, 75223 Niefern-
+Öschelbronn, Germany,GLP, not published 
+VV-465340 
+Hubbard 
+P.M., Frey 
+L.T. 
+2016 
+SYN547407 - An Acute Oral Toxicity Study with the Northern 
+Bobwhite Using a Sequential Testing Procedure, Report Number 
+528B-496. Wildlife International, 8598 Commerce Drive, Easton, 
+MD 21601 USA, GLP, not published 
+VV-465340 
+Hubbard 
+P.M., Frey 
+L.T. 
+2016 
+SYN547407 - An Acute Oral Toxicity Study with the Northern 
+Bobwhite Using a Sequential Testing Procedure, Report Number 
+528B-496. Wildlife International, 8598 Commerce Drive, Easton, 
+MD 21601 USA, GLP, not published 
+VV-465876 
+Hubbard 
+P.M., Temple 
+D.L. 
+2016 
+SYN547407 - An Acute Oral Toxicity Study with the Mallard Using 
+a Sequential Testing Procedure, Report Number 528B-497. EAG 
+Laboratories – Easton 8598 Commerce Drive Easton, MD 21601 
+USA, GLP, not published 
+
+=== PDF PAGE 41 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 41 of 44 
+VV-466340 Kling A. 2016 
+SYN547407 – Acute Oral and Contact Toxicity to the Honey Bee, 
+Apis mellifera L. under Laboratory Conditions, Report Number 
+S16-02527. Eurofins Agroscience Services EcoChem GmbH 
+/Eurofins Agrosciences Services Ecotox GmbH, Eutinger Str. 24, 
+75223 Niefern-Öschelbronn, Germany,GLP, not published 
+VV-466604 Friedrich S. 2016 
+SYN547407 - Acute Toxicity to the Earthworm Eisenia andrei in 
+Artificial Soil, Report Number 16 10 48 252 S. BioChem agrar, 
+Labor für biologische und chemische Analytik GmbH, 
+Kupferstraße 6, 04827 Gerichshain, Germany,GLP, not published 
+VV-466609 Schulz L. 2016 
+SYN547407 - Effects on the Activity of Soil Microflora (Nitrogen 
+and Carbon Transformation Tests), Report Number 16 10 48 081 
+C/N. BioChem agrar, Labor für biologische und chemische, 
+Analytik GmbH, Kupferstraße 6, 04827, Gerichshain, 
+Germany,GLP, not published 
+VV-467145 Eckert J. 2017 
+SYN547407 – Honey bee (Apis mellifera L.) Larval Toxicity Test 
+(Repeated Exposure through to Adult Emergence), Report 
+Number S16-02506. Eurofins Agroscience Services EcoChem 
+GmbH / Eurofins Agroscience Services Ecotox GmbH, Eutinger 
+Str. 24, 75223 Niefern-Öschelbronn, Germany,GLP, not published 
+VV-467266 Kling A., 
+Wagner J. 2017 
+SYN547407 - Honey bee (Apis mellifera L.) Larval Toxicity Test 
+(Single Exposure). Report Number S16-02507. Eurofins 
+Agroscience Services EcoChem GmbH / Eurofins Agroscience 
+Services, Ecotox GmbH, Eutinger Str. 24, 75223 Niefern-
+Öschelbronn, Germany,GLP, not published 
+VV-467858 Hammesfahr 
+U. 2017 
+SYN547407 – Toxicity to Activated Sludge in a Respiration 
+Inhibition Test, Report Number 124591171. ibacon GmbH, 
+Arheilger Weg 17, 64380 Rossdorf, Germany.,GLP, not published 
+VV-468375 Hubbard M., 
+et al. 2017 
+SYN547407 - A Dietary LC50 Study with the Mallard, Report 
+Number 528B-533. EAG, Inc., 8598 Commerce Drive, Easton, MD 
+21601 USA, GLP, not published 
+VV-469923 Shaw A.C. 2018 
+SYN547407 – Acute Toxicity Test with Eastern Oyster 
+(Crassostrea virginica) Under Flow-Through Conditions. Report 
+Number 1781.7165. Smithers Viscient, 790 Main Street, 
+Wareham, Massachusetts 02571-1037 USA, GLP, not published 
+VV-469967 Softcheck K. 
+A. 2018 
+SYN547407 – 96-Hour Toxicity Test with the Freshwater Diatom, 
+Navicula pelliculosa. Report Number 1781.7167, Smithers 
+Viscient, 790 Main Street, Wareham, MA 02571-1037 USA, GLP, 
+not published 
+VV-469969 Softcheck K. 
+A. 2018 
+SYN547407 – 7-Day Toxicity Test with Duckweed (Lemna gibba). 
+Report Number 1781.7170. Smithers Viscient, 790 Main Street, 
+Wareham, MA 02571-1037 USA, GLP, not published 
+VV-469970 Shaw A.C. 2018 
+SYN547407 – Acute Toxicity to Fathead Minnow (Pimephales 
+promelas) Under Flow-Through Conditions. Report Number 
+1781.7172. Smithers Viscient,790 Main Street, Wareham, MA 
+02571-1037 USA, GLP, not published 
+VV-469971 Marini J. P. 2018 
+SYN547407 – Early Life-Stage Toxicity Test with Sheepshead 
+Minnow (Cyprinodon variegatus). Report Number 1781.7209. 
+Smithers Viscient, 790 Main Street, Wareham, Massachusetts, 
+USA, 02571-1037, GLP, not published 
+VV-469976 Softcheck K. 
+A. 2018 
+SYN547407 – 96-Hour Toxicity Test with the Freshwater Green 
+Alga, Pseudokirchneriella subcapitata. Report Number 1781.7166, 
+Smithers Viscient, 790 Main Street, Wareham, MA 02571-1037, 
+USA, GLP, not published 
+
+=== PDF PAGE 42 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 42 of 44 
+VV-469997 Softcheck K. 
+A. 2018 
+SYN547407 – 96-Hour Toxicity Test with the Marine Diatom, 
+Skeletonema costatum, Report Number 1781.7168, Smithers 
+Viscient, 790 Main Street, Wareham, Massachusetts 02571-1037 
+USA, GLP, not published 
+VV-470076 Shaw A.C. 2021 
+SYN547407 – Acute Toxicity to Carp (Cyprinus carpio) Under 
+Flow-Through Conditions. Report Number 1781.7173. Smithers 
+Viscient, 790 Main Street, Wareham, Massachusetts USA, GLP, 
+not published 
+VV-470108 Shaw A.C. 2020 
+SYN547407 – Acute Toxicity to Sheepshead Minnow (Cyprinodon 
+variegatus) Under Flow-Through Conditions. Report Number 
+1781.7174. Smithers Viscient, 790 Main Street, Wareham, 
+Massachusetts 02571-1037 USA, GLP, not published 
+VV-470111 Shaw A.C. 2018 
+SYN547407 – Acute Toxicity to Rainbow Trout (Oncorhynchus 
+mykiss) Under Flow-Through Conditions. Report Number 
+1781.7171. Smithers Viscient, 790 Main Street, Wareham, MA 
+02571-1037, USA, GLP, not published 
+VV-470238 Softcheck K. 
+A. 2018 
+SYN547407 – 96-Hour Toxicity Test with the Freshwater 
+Cyanobacterium, Anabaena flos-aquae, Report Number 
+1781.7169, Smithers Viscient, 790 Main Street, Wareham, MA 
+02571-1037, USA, GLP, not published 
+VV-470284 Shaw A.C. 2018 
+SYN547407 – Acute Toxicity to Water Fleas (Daphnia magna) 
+Under Static Conditions, Final Report Amendment 1, Report 
+Number 1781.7160, Smithers Viscient, 790 Main Street, 
+Wareham, MA 02571-1037, USA, GLP, not published 
+VV-470291 Marini J. P. 2018 
+SYN547407 – Early Life-Stage Toxicity Test with Fathead Minnow 
+(Pimephales promelas). Report Number 1781.7175. Smithers 
+Viscient, 790 Main Street, Wareham, MA 02571-1037, USA, GLP, 
+not published 
+VV-470610 
+Hammett 
+K.H., Temple 
+D.L., Danos 
+L., Lockard 
+L.A., Martin 
+K.H. 
+2018 
+SYN547407 – A Reproduction Study with the Mallard. Report 
+Number 528B-518. EAG, Inc., 8598 Commerce Drive, Easton, MD 
+21601 USA, GLP, not published 
+VV-470611 
+Hammett 
+K.H., Temple 
+D.L., Danos 
+L., Lockard 
+L.A., Martin 
+K.H. 
+2018 
+SYN547407 – A Reproduction Study with the Northern Bobwhite. 
+Report Number 528B-517. EAG, Inc., 8598 Commerce Drive, 
+Easton, MD 21601 USA, GLP, not published 
+VV-470612 
+Hubbard, 
+P.M., 
+Temple, D.L. 
+2018 
+SYN547407 – An Acute Oral Toxicity Study with the Canary Using 
+a Sequential Testing Procedure. Report Number 528B-516. EAG, 
+Inc., 8598 Commerce Drive, Easton, MD 21601 USA, GLP, not 
+published 
+VV-740015 Shaw A.C. 2019 
+SYN547407 – Chronic Toxicity Test with Water Fleas (Daphnia 
+magna) Under Static-Renewal Conditions. Report Number 
+1781.7162. Smithers (formerly Smithers Viscient), 790 Main 
+Street, Wareham, MA 02571-1037, USA, GLP, not published 
+VV-846361 Shaw A.C. 2019 
+SYN547407 – Acute Toxicity to Mysids (Americamysis bahia) 
+Under Static-Renewal Conditions. Report Number 1781.7161. 
+Smithers Viscient, 790 Main Street, Wareham, Massachusetts, 
+USA, 02571-1037, GLP, not published 
+VV-846373 Marini J.P. 2019 
+SYN547407 – Life-Cycle Toxicity Test with Mysids (Americamysis 
+bahia). Report Number 1781.7164. Smithers Viscient, 790 Main 
+Street, Wareham, Massachusetts 0251-1037. USA, GLP, not 
+published 
+
+=== PDF PAGE 43 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 43 of 44 
+VV-846384 Bradley M. 2019 
+SYN547407 – 28-Day Toxicity Test Exposing Estuarine 
+Amphipods (Leptocheirus plumulosus) to a Test Substance 
+Applied to Sediment Under Intermittent-Renewal Conditions 
+Following EPA Test Methods. Report Number 1781.7181. 
+Smithers Viscient, 790 Main Street Wareham, Massachusetts, 
+USA, 02571-1037, GLP, not published 
+VV-866777 Shaw A.C. 2019 
+SYN547407. – Acute Toxicity to Midge (Chironomus riparius) 
+Under Static Conditions. Report Number 1781.7229. Smithers 
+Viscient, 790 Main Street, Wareham, Massachusetts, USA, 
+02571-1037, GLP, not published 
+VV-868235 Bradley M. 2020 
+SYN547407. – Acute Toxicity to Amphipods (Hyalella azteca) 
+Under Static-Renewal Conditions. Report Number 1781.7327. 
+Smithers, 790 Main Street, Wareham, Massachusetts, USA, 
+02571-1037, GLP, not published 
+VV-869054 Bradley M. 2019 
+SYN547407 – 42-Day Toxicity Test Exposing Freshwater 
+Amphipods (Hyalella azteca) to a Test Substance Applied to 
+Sediment Under Intermittent-Renewal Conditions Following EPA 
+Test Methods. Report Number 1781.7183. Smithers Viscient, 790 
+Main Street, Wareham, USA Massachusetts,GLP, not published 
+VV-869410 Conway J. 2020 
+SYN547407. – Chronic Toxicity Test with Water Fleas (Daphnia 
+magna) Under Static-Renewal Conditions. Report Number 
+1781.7304. Smithers (formerly Smithers Viscient), 790 Main 
+Street, Wareham, Massachusetts 02571-1037 USA,GLP, not 
+published 
+VV-878602 Bradley M. 2020 
+SYN547407 – Acute Toxicity to Caddisflies (Pycnopsyche gentilis) 
+Under Static Conditions, Report Number 1781.7358, Smithers, 
+790 Main Street, Wareham, Massachusetts 02571-1037 USA, 
+GLP, not published 
+VV-888013 Bradley M. 2020 
+SYN547407 – Acute Toxicity to Mayflies (Hexagenia limbata) 
+Under Static Conditions, Report Number 1781.7359, Smithers, 
+790 Main Street, Wareham, Massachusetts 02571-1037 USA, 
+GLP, not published 
+VV-888912 Bradley M. 2021 
+SYN547407. – Acute Toxicity to the Northern Crayfish (Faxonius 
+virilis) Under Static-Renewal Conditions. Report Number 
+1781.7381. Smithers, 790 Main Street, Wareham, Massachusetts, 
+USA, 02571-1037, GLP, not published 
+VV-889404 Bradley M. 2021 
+SYN547407. – Acute Toxicity to the Grass Shrimp (Palaemonetes 
+paludosus) Under Static-Renewal Conditions. Report Number 
+1781.7380. Smithers, 790 Main Street, Wareham, Massachusetts, 
+USA, 02571-1037, GLP, not published 
+VV-889418 Bradley M. 2021 
+SYN547407. – Acute Toxicity to the Freshwater Rotifers 
+(Brachionus calyciflorus) Under Static Conditions. Report Number 
+1781.7361. Smithers, 790 Main Street, Wareham, Massachusetts, 
+USA, 02571-1037, GLP, not published 
+VV-890842 Bradley M. 2021 
+SYN547407. – Acute Toxicity to the Water Louse (Caecidotea 
+communis) Under Static-Renewal Conditions. Report Number 
+1781.7356. Smithers, 790 Main Street, Wareham, Massachusetts, 
+USA, 02571-1037, GLP, not published 
+VV-890854 Bradley M. 2021 
+SYN547407 – Life-Cycle Toxicity Test Exposing Midges 
+(Chironomus dilutus) to a Test Substance Applied to Sediment 
+Under Intermittent-Renewal Conditions Following EPA Test 
+Methods. Report Number 1781.7182. Smithers, 790 Main Street, 
+Wareham, Massachusetts, USA, GLP, not published 
+
+=== PDF PAGE 44 ===
+WHO SPECIFICATIONS FOR PUBLIC HEALTH PESTICIDES 
+Page 44 of 44 
+VV-892711 Bradley M. 2021 
+SYN547407 – Acute Toxicity to Beavertail Fairy Shrimp 
+(Thamnocephalus platyurus) Under Static-Renewal Conditions. 
+Report Number 1781.7360. Smithers, 790 Main Street, Wareham, 
+Massachusetts, USA, 02571-1037, GLP, not published 
+VV-893580 Bradley M. 2021 
+SYN547407 – Toxicity Test with Sediment-Dwelling Midges 
+(Chironomus riparius) Under Static Conditions, Following OECD 
+Guideline 218, Report Number 1781.7379. Smithers, 790 Main 
+Street, Wareham, Massachusetts, USA, GLP, not published 
+VV-900003 Amsel K. 2021 
+Isocycloseram - Acute toxicity to the bumblebee, Bombus 
+terrestris L. under laboratory conditions, 21 48 BBA 0005. 
+BioChem agrar,Labor für biologische und chemische Analytik 
+GmbH, Kupferstr. 6, 04827 Machern OT Gerichshain, 
+Germany,GLP, not published 
+ 

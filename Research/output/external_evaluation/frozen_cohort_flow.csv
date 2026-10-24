@@ -1,0 +1,10 @@
+﻿source,split,external_records_before_train_filter,train_identity_matching_records,remaining_eligible_records,remaining_eligible_keys,fixed_three_endpoint_scored_compounds,fixed_original_contact_compounds
+OFT_single_structure_contact,random,282,243,39,35,24,15
+OFT_48h_contact,random,97,87,10,10,8,5
+PLOS_resolved_contact,random,166,128,38,38,32,18
+OFT_single_structure_contact,maxmin,282,236,46,38,18,13
+OFT_48h_contact,maxmin,97,80,17,14,8,6
+PLOS_resolved_contact,maxmin,166,134,32,32,24,13
+OFT_single_structure_contact,time,282,237,45,40,28,18
+OFT_48h_contact,time,97,85,12,12,9,5
+PLOS_resolved_contact,time,166,121,45,45,30,13

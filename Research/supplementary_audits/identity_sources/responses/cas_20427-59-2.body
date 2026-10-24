@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 164826,
+        "MolecularFormula": "CuH2O2",
+        "SMILES": "[OH-].[OH-].[Cu+2]",
+        "InChIKey": "JJLJMEJHUUYSSY-UHFFFAOYSA-L",
+        "IUPACName": "copper dihydroxide"
+      }
+    ]
+  }
+}

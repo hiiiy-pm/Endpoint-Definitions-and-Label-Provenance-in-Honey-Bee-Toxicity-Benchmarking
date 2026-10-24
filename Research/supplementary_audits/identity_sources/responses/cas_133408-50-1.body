@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 5483872,
+        "MolecularFormula": "C16H16N2O3",
+        "SMILES": "CNC(=O)/C(=N/OC)/C1=CC=CC=C1OC2=CC=CC=C2",
+        "InChIKey": "HIIRDDUVRXCDBN-OBGWFSINSA-N",
+        "IUPACName": "(2E)-2-methoxyimino-N-methyl-2-(2-phenoxyphenyl)acetamide"
+      }
+    ]
+  }
+}

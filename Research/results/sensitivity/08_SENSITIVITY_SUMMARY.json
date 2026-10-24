@@ -1,0 +1,10 @@
+{
+  "wider_family_scaffold_ci_above_zero": 7,
+  "wider_family_by_split": {
+    "MaxMin": 4,
+    "Random": 2,
+    "Time": 1
+  },
+  "learner_settings_with_100_lowest": 6,
+  "learner_settings_total": 6
+}

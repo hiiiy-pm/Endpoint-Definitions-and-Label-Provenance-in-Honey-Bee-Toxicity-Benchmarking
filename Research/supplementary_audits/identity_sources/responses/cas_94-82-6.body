@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 1489,
+        "MolecularFormula": "C10H10Cl2O3",
+        "SMILES": "C1=CC(=C(C=C1Cl)Cl)OCCCC(=O)O",
+        "InChIKey": "YIVXMZJTEQBPQO-UHFFFAOYSA-N",
+        "IUPACName": "4-(2,4-dichlorophenoxy)butanoic acid"
+      }
+    ]
+  }
+}

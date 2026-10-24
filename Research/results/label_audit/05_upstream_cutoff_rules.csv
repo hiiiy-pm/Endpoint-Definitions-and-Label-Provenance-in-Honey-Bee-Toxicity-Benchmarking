@@ -1,0 +1,4 @@
+threshold,rule_in_upstream,determining_groups,determining_groups_straddling_cutoff_numerically
+100,group median; straddling route groups kept,441,34
+11,all records agree; straddling route groups removed,441,3
+1,group median; straddling route groups kept,441,16

@@ -1,0 +1,746 @@
+﻿raw_row_0based,CAS,route,value_raw,unit_raw,value_converted,operator,actually_rejected_route_group,included_in_upstream_exclusion_log,log_status
+0,50-29-3,Contact,5.36,ug/bee,5.36,,True,True,rejected_route_group
+1,50-29-3,Contact,7.12,ug/bee,7.12,,True,True,rejected_route_group
+2,50-29-3,Contact,17.2,ug/org,17.2,,True,True,rejected_route_group
+3,50-29-3,Contact,3.01,ug/org,3.01,,True,True,rejected_route_group
+4,50-29-3,Contact,2.75,ug/org,2.75,,True,True,rejected_route_group
+5,50-29-3,Contact,2.4,ug/org,2.4,,True,True,rejected_route_group
+6,50-29-3,Contact,2.31,ug/org,2.31,,True,True,rejected_route_group
+7,50-29-3,Contact,6.5,ug/org,6.5,,True,True,rejected_route_group
+8,50-29-3,Contact,0.5,ug/org,0.5,,True,True,rejected_route_group
+9,50-29-3,Contact,2.14,ug/org,2.14,,True,True,rejected_route_group
+10,50-29-3,Contact,1.55,ug/org,1.55,,True,True,rejected_route_group
+11,50-29-3,Contact,10.04,ug/org,10.04,,True,True,rejected_route_group
+12,50-29-3,Contact,5.1,ug/org,5.1,,True,True,rejected_route_group
+13,50-29-3,Contact,1.54,ug/org,1.54,,True,True,rejected_route_group
+14,50-29-3,Contact,2.37,ug/org,2.37,,True,True,rejected_route_group
+15,50-29-3,Contact,9.60,ug/org,9.6,,True,True,rejected_route_group
+16,50-29-3,Contact,76.33,ug/org,76.33,,True,True,rejected_route_group
+17,50-29-3,Contact,2.5,ug/org,2.5,,True,True,rejected_route_group
+18,50-29-3,Contact,1.82,ug/org,1.82,,True,True,rejected_route_group
+19,50-29-3,Contact,10.2,ug/org,10.2,,True,True,rejected_route_group
+20,50-29-3,Contact,6.7,ug/org,6.7,,True,True,rejected_route_group
+21,50-29-3,Contact,2.97,ug/org,2.97,,True,True,rejected_route_group
+22,50-29-3,Contact,1.30,ug/org,1.3,,True,True,rejected_route_group
+23,50-29-3,Contact,67.00,ug/org,67.0,,True,True,rejected_route_group
+24,50-29-3,Contact,1.22,ug/org,1.22,,True,True,rejected_route_group
+25,50-29-3,Contact,7.3,ug/org,7.3,,True,True,rejected_route_group
+26,50-29-3,Contact,70.5,ug/org,70.5,,True,True,rejected_route_group
+27,50-29-3,Contact,1.6,ug/org,1.6,,True,True,rejected_route_group
+28,50-29-3,Contact,2.6,ug/org,2.6,,True,True,rejected_route_group
+29,50-29-3,Contact,20.1,ug/org,20.1,,True,True,rejected_route_group
+30,50-29-3,Contact,3.2,ug/org,3.2,,True,True,rejected_route_group
+31,50-29-3,Contact,4.00,ug/org,4.0,,True,True,rejected_route_group
+32,50-29-3,Contact,2.23,ug/org,2.23,,True,True,rejected_route_group
+33,50-29-3,Contact,2.0,ug/org,2.0,,True,True,rejected_route_group
+34,50-29-3,Contact,1.2,ug/org,1.2,,True,True,rejected_route_group
+35,50-29-3,Contact,1.25,ug/org,1.25,,True,True,rejected_route_group
+36,50-29-3,Contact,1.7,ug/org,1.7,,True,True,rejected_route_group
+37,50-29-3,Contact,3.6,ug/org,3.6,,True,True,rejected_route_group
+38,50-29-3,Contact,15.7,ug/org,15.7,,True,True,rejected_route_group
+39,50-29-3,Contact,1.5,ug/org,1.5,,True,True,rejected_route_group
+40,50-29-3,Contact,1.87,ug/org,1.87,,True,True,rejected_route_group
+41,50-29-3,Contact,2.05,ug/org,2.05,,True,True,rejected_route_group
+42,50-29-3,Contact,1.52,ug/org,1.52,,True,True,rejected_route_group
+43,50-29-3,Contact,7.5,ug/org,7.5,,True,True,rejected_route_group
+44,50-29-3,Contact,6.90,ug/org,6.9,,True,True,rejected_route_group
+45,50-29-3,Contact,1.31,ug/org,1.31,,True,True,rejected_route_group
+46,50-29-3,Contact,9.60,ug/org,9.6,,True,True,rejected_route_group
+47,50-29-3,Contact,1.27,ug/org,1.27,,True,True,rejected_route_group
+48,50-29-3,Contact,1.44,ug/org,1.44,,True,True,rejected_route_group
+49,50-29-3,Contact,0.54,ug/org,0.54,,True,True,rejected_route_group
+50,50-29-3,Contact,1.55,ug/org,1.55,,True,True,rejected_route_group
+51,50-29-3,Contact,3.10,ug/org,3.1,,True,True,rejected_route_group
+52,50-29-3,Contact,7.91,ug/org,7.91,,True,True,rejected_route_group
+53,50-29-3,Contact,2.41,ug/org,2.41,,True,True,rejected_route_group
+54,50-29-3,Contact,36.6,ug/org,36.6,,True,True,rejected_route_group
+55,50-29-3,Contact,9.67,ug/org,9.67,,True,True,rejected_route_group
+56,50-29-3,Contact,3.81,ug/org,3.81,,True,True,rejected_route_group
+57,50-29-3,Contact,1.10,ug/org,1.1,,True,True,rejected_route_group
+58,50-29-3,Contact,63.76,ug/org,63.76,,True,True,rejected_route_group
+59,50-29-3,Contact,0.92,ug/org,0.92,,True,True,rejected_route_group
+60,50-29-3,Contact,2.42,ug/org,2.42,,True,True,rejected_route_group
+61,50-29-3,Contact,1.49,ug/org,1.49,,True,True,rejected_route_group
+62,50-29-3,Contact,1.58,ug/org,1.58,,True,True,rejected_route_group
+63,50-29-3,Contact,2.904,ug/org,2.904,,True,True,rejected_route_group
+64,50-29-3,Contact,4.69,ug/org,4.69,,True,True,rejected_route_group
+65,50-29-3,Contact,18.0,ug/org,18.0,,True,True,rejected_route_group
+66,50-29-3,Contact,3.47,ug/org,3.47,,True,True,rejected_route_group
+68,50-29-3,Contact,3.9,ug/bee,3.9,,True,True,rejected_route_group
+69,50-29-3,Oral,3.7,ug/bee,3.7,,False,True,retained_route_group_logged_due_to_shared_CAS
+70,50-29-3,Contact,5.95,ug/bee,5.95,,True,True,rejected_route_group
+75,50-29-3,Contact,2.4,ug/org,2.4,,True,True,rejected_route_group
+76,50-29-3,Contact,25.09,ug/org,25.09,,True,True,rejected_route_group
+77,50-29-3,Contact,6.30,ug/org,6.3,,True,True,rejected_route_group
+78,50-29-3,Contact,0.0520,ug/org,0.052,,True,True,rejected_route_group
+80,52-68-6,Contact,5.137,AI ug/org,5.137,,True,True,rejected_route_group
+82,52-68-6,Contact,59.83,ug/bee,59.83,,True,True,rejected_route_group
+83,52-68-6,Contact,9.000,AI ug/org,9.0,,True,True,rejected_route_group
+84,52-68-6,Contact,0.0240,ug/org,0.024,,True,True,rejected_route_group
+129,60-51-5,Oral,1.67/,ug/org,1.67,,True,True,rejected_route_group
+130,60-51-5,Oral,1.69/,ug/org,1.69,,True,True,rejected_route_group
+131,60-51-5,Oral,0.10,AI ug/org,0.1,,True,True,rejected_route_group
+132,60-51-5,Oral,0.26,AI ug/org,0.26,,True,True,rejected_route_group
+133,60-51-5,Oral,0.22,AI ug/org,0.22,,True,True,rejected_route_group
+134,60-51-5,Oral,0.12,AI ug/org,0.12,,True,True,rejected_route_group
+135,60-51-5,Oral,0.11,AI ug/org,0.11,,True,True,rejected_route_group
+136,60-51-5,Oral,0.11,AI ug/org,0.11,,True,True,rejected_route_group
+137,60-51-5,Oral,0.30,AI ug/org,0.3,,True,True,rejected_route_group
+138,60-51-5,Oral,1.14,AI ug/org,1.14,,True,True,rejected_route_group
+139,60-51-5,Oral,0.14,AI ug/org,0.14,,True,True,rejected_route_group
+140,60-51-5,Oral,0.2,AI ug/org,0.2,<,True,True,rejected_route_group
+141,60-51-5,Oral,0.60,AI ug/org,0.6,,True,True,rejected_route_group
+142,60-51-5,Contact,0.31,ug/org,0.31,,False,True,retained_route_group_logged_due_to_shared_CAS
+143,60-51-5,Contact,0.0224,ug/org,0.0224,,False,True,retained_route_group_logged_due_to_shared_CAS
+144,60-51-5,Oral,0.0004305,mg/bee,0.4305,,True,True,rejected_route_group
+145,60-51-5,Oral,0.0003251,mg/bee,0.3251,,True,True,rejected_route_group
+146,60-51-5,Oral,0.0003391,mg/bee,0.3391,,True,True,rejected_route_group
+147,60-51-5,Oral,0.13,AI ug/org,0.13,,True,True,rejected_route_group
+148,60-51-5,Contact,0.188,ug/bee,0.188,,False,True,retained_route_group_logged_due_to_shared_CAS
+150,60-51-5,Contact,0.16,AI ug/org,0.16,,False,True,retained_route_group_logged_due_to_shared_CAS
+151,60-51-5,Contact,0.16,AI ug/org,0.16,,False,True,retained_route_group_logged_due_to_shared_CAS
+152,60-51-5,Contact,0.19,AI ug/org,0.19,,False,True,retained_route_group_logged_due_to_shared_CAS
+156,60-51-5,Oral,0.32,mg/org,320.0,,True,True,rejected_route_group
+157,60-51-5,Oral,0.43,mg/org,430.0,,True,True,rejected_route_group
+158,60-51-5,Oral,0.339,mg/org,339.0,,True,True,rejected_route_group
+159,60-51-5,Oral,0.13,AI ug/org,0.13,,True,True,rejected_route_group
+160,60-51-5,Oral,0.15,AI ug/org,0.15,,True,True,rejected_route_group
+161,60-51-5,Oral,0.11,AI ug/org,0.11,,True,True,rejected_route_group
+163,60-51-5,Other,152,ng/org,0.152,,False,True,retained_route_group_logged_due_to_shared_CAS
+164,60-51-5,Contact,0.12,ug/bee,0.12,,False,True,retained_route_group_logged_due_to_shared_CAS
+165,60-51-5,Oral,0.15,ug/bee,0.15,,True,True,rejected_route_group
+166,60-51-5,Contact,0.19,AI ug/org,0.19,,False,True,retained_route_group_logged_due_to_shared_CAS
+167,60-51-5,Contact,0.19,AI ug/org,0.19,,False,True,retained_route_group_logged_due_to_shared_CAS
+168,60-51-5,Contact,0.19,AI ug/org,0.19,,False,True,retained_route_group_logged_due_to_shared_CAS
+169,60-51-5,Contact,0.20,AI ug/org,0.2,,False,True,retained_route_group_logged_due_to_shared_CAS
+171,60-51-5,Other,0.22,ug/bee,0.22,,False,True,retained_route_group_logged_due_to_shared_CAS
+172,60-51-5,Other,0.10,AI ug/org,0.1,,False,True,retained_route_group_logged_due_to_shared_CAS
+175,60-51-5,Oral,1.93,ug/org,1.93,,True,True,rejected_route_group
+176,60-51-5,Oral,0.13,ug/org,0.13,,True,True,rejected_route_group
+177,60-51-5,Contact,0.16,ug/org,0.16,,False,True,retained_route_group_logged_due_to_shared_CAS
+178,60-51-5,Oral,0.13,AI ug/org,0.13,,True,True,rejected_route_group
+179,60-51-5,Oral,0.11,AI ug/org,0.11,,True,True,rejected_route_group
+180,60-51-5,Oral,0.15,AI ug/org,0.15,,True,True,rejected_route_group
+181,60-51-5,Oral,170,ng/org,0.17,<=,True,True,rejected_route_group
+182,60-51-5,Contact,0.16,AI ug/org,0.16,,False,True,retained_route_group_logged_due_to_shared_CAS
+183,60-51-5,Contact,0.16,AI ug/org,0.16,,False,True,retained_route_group_logged_due_to_shared_CAS
+184,60-51-5,Contact,0.19,AI ug/org,0.19,,False,True,retained_route_group_logged_due_to_shared_CAS
+185,60-51-5,Other,0.248,ug/org,0.248,,False,True,retained_route_group_logged_due_to_shared_CAS
+186,60-51-5,Other,0.661,ug/org,0.661,,False,True,retained_route_group_logged_due_to_shared_CAS
+187,60-51-5,Other,0.315,ug/org,0.315,,False,True,retained_route_group_logged_due_to_shared_CAS
+188,60-51-5,Other,0.191,ug/org,0.191,,False,True,retained_route_group_logged_due_to_shared_CAS
+193,60-51-5,Oral,108,AI ng/org,0.108,,True,True,rejected_route_group
+194,60-51-5,Oral,89,AI ng/org,0.089,,True,True,rejected_route_group
+195,60-51-5,Oral,133,AI ng/org,0.133,,True,True,rejected_route_group
+196,60-51-5,Oral,38,AI ng/org,0.038,,True,True,rejected_route_group
+197,60-51-5,Contact,0.0014,ug/org,0.0014,,False,True,retained_route_group_logged_due_to_shared_CAS
+222,63-25-2,Contact,1.34,ug/bee,1.34,,False,True,retained_route_group_logged_due_to_shared_CAS
+223,63-25-2,Oral,46,AI ug/org,46.0,>,True,True,rejected_route_group
+224,63-25-2,Contact,1.02,ug/bee,1.02,,False,True,retained_route_group_logged_due_to_shared_CAS
+225,63-25-2,Contact,1.88,ug/bee,1.88,,False,True,retained_route_group_logged_due_to_shared_CAS
+226,63-25-2,Contact,0.212,ug/org,0.212,,False,True,retained_route_group_logged_due_to_shared_CAS
+227,63-25-2,Contact,0.75,ug/org,0.75,,False,True,retained_route_group_logged_due_to_shared_CAS
+228,63-25-2,Oral,0.14,ug/bee,0.14,,True,True,rejected_route_group
+229,63-25-2,Contact,0.18,ug/org,0.18,~,False,True,retained_route_group_logged_due_to_shared_CAS
+230,63-25-2,Contact,0.14,ug/org,0.14,~,False,True,retained_route_group_logged_due_to_shared_CAS
+238,63-25-2,Other,1.41,ug/bee,1.41,,False,True,retained_route_group_logged_due_to_shared_CAS
+240,63-25-2,Other,0.62,AI ug/org,0.62,,False,True,retained_route_group_logged_due_to_shared_CAS
+243,63-25-2,Contact,1.809,AI ug/org,1.809,,False,True,retained_route_group_logged_due_to_shared_CAS
+245,63-25-2,Contact,0.123,ug/org,0.123,,False,True,retained_route_group_logged_due_to_shared_CAS
+249,63-25-2,Other,2.115,ug/org,2.115,,False,True,retained_route_group_logged_due_to_shared_CAS
+250,63-25-2,Other,0.488,ug/org,0.488,,False,True,retained_route_group_logged_due_to_shared_CAS
+251,63-25-2,Other,1.720,ug/org,1.72,,False,True,retained_route_group_logged_due_to_shared_CAS
+252,63-25-2,Other,1.34,ug/org,1.34,,False,True,retained_route_group_logged_due_to_shared_CAS
+253,63-25-2,Other,1.212,ug/org,1.212,,False,True,retained_route_group_logged_due_to_shared_CAS
+257,63-25-2,Contact,1.1,ug/org,1.1,,False,True,retained_route_group_logged_due_to_shared_CAS
+259,63-25-2,Contact,1.3,ug/org,1.3,,False,True,retained_route_group_logged_due_to_shared_CAS
+262,63-25-2,Contact,0.385,AI ug/org,0.385,,False,True,retained_route_group_logged_due_to_shared_CAS
+264,63-25-2,Contact,1.3,ug/bee,1.3,,False,True,retained_route_group_logged_due_to_shared_CAS
+267,63-25-2,Contact,0.142,ug/org,0.142,,False,True,retained_route_group_logged_due_to_shared_CAS
+268,63-25-2,Contact,0.055,ug/org,0.055,,False,True,retained_route_group_logged_due_to_shared_CAS
+269,63-25-2,Contact,0.96,ug/org,0.96,,False,True,retained_route_group_logged_due_to_shared_CAS
+270,63-25-2,Contact,0.78,ug/org,0.78,,False,True,retained_route_group_logged_due_to_shared_CAS
+272,63-25-2,Contact,0.0428,ug/org,0.0428,,False,True,retained_route_group_logged_due_to_shared_CAS
+273,63-25-2,Oral,1.33,ug/org,1.33,,True,True,rejected_route_group
+274,63-25-2,Contact,1.34,ug/bee,1.34,,False,True,retained_route_group_logged_due_to_shared_CAS
+307,78-57-9,Contact,4.3,ug/bee,4.3,,True,True,rejected_route_group
+310,78-57-9,Oral,0.46,ug/bee,0.46,,False,True,retained_route_group_logged_due_to_shared_CAS
+311,78-57-9,Contact,11.06,ug/bee,11.06,,True,True,rejected_route_group
+316,83-79-4,Contact,60,ug/bee,60.0,>,True,True,rejected_route_group
+317,83-79-4,Oral,30,ug/bee,30.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+318,83-79-4,Contact,2.42,ug/bee,2.42,>,True,True,rejected_route_group
+339,93-65-2,Contact,100,ug/bee,100.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+340,93-65-2,Oral,10,ug/bee,10.0,>,True,True,rejected_route_group
+341,93-65-2,Contact,18.13,ug/bee,18.13,>,False,True,retained_route_group_logged_due_to_shared_CAS
+342,93-65-2,Oral,115.5,ug/bee,115.5,,True,True,rejected_route_group
+343,93-65-2,Oral,138.6,ug/bee,138.6,,True,True,rejected_route_group
+344,93-65-2,Oral,111.2,ug/bee,111.2,,True,True,rejected_route_group
+345,93-65-2,Oral,99.2,ug/bee,99.2,,True,True,rejected_route_group
+346,93-65-2,Oral,73.0,ug/bee,73.0,,True,True,rejected_route_group
+347,93-65-2,Oral,96.8,ug/bee,96.8,,True,True,rejected_route_group
+349,93-65-2,Oral,89.2,ug/bee,89.2,,True,True,rejected_route_group
+350,93-65-2,Oral,90.0,ug/bee,90.0,,True,True,rejected_route_group
+351,93-65-2,Oral,115.1,ug/bee,115.1,,True,True,rejected_route_group
+352,93-65-2,Oral,129.1,ug/bee,129.1,,True,True,rejected_route_group
+354,93-65-2,Oral,110.2,ug/bee,110.2,,True,True,rejected_route_group
+355,93-65-2,Oral,51.3,ug/bee,51.3,,True,True,rejected_route_group
+362,94-74-6,Oral,194,AI ug/org,194.0,>,True,True,rejected_route_group
+363,94-74-6,Contact,194,AI ug/org,194.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+364,94-74-6,Oral,34.6,AI ug/org,34.6,,True,True,rejected_route_group
+365,94-74-6,Contact,24.17,ug/bee,24.17,>,False,True,retained_route_group_logged_due_to_shared_CAS
+366,94-74-6,Oral,10,ug/bee,10.0,>,True,True,rejected_route_group
+367,94-74-6,Oral,93.9,AI ug/org/d,93.9,,True,True,rejected_route_group
+368,94-74-6,Contact,100,ug/bee,100.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+401,115-29-7,Contact,0.0461,ug/org,0.0461,,True,True,rejected_route_group
+402,115-29-7,Contact,16.14,AI ug/org,16.14,,True,True,rejected_route_group
+403,115-29-7,Contact,7.81,ug/bee,7.81,,True,True,rejected_route_group
+405,115-29-7,Other,109.5,ug/org,109.5,,False,True,retained_route_group_logged_due_to_shared_CAS
+406,115-29-7,Other,21.79,ug/org,21.79,,False,True,retained_route_group_logged_due_to_shared_CAS
+407,115-29-7,Other,14.42,ug/org,14.42,,False,True,retained_route_group_logged_due_to_shared_CAS
+408,115-29-7,Other,28.14,ug/org,28.14,,False,True,retained_route_group_logged_due_to_shared_CAS
+409,115-29-7,Other,13.88,ug/org,13.88,,False,True,retained_route_group_logged_due_to_shared_CAS
+412,115-29-7,Contact,7.1,ug/bee,7.1,,True,True,rejected_route_group
+413,115-29-7,Oral,6.9,ug/bee,6.9,,True,True,rejected_route_group
+414,115-29-7,Contact,6.83,ug/bee,6.83,,True,True,rejected_route_group
+415,115-29-7,Contact,9.50,ug/bee,9.5,,True,True,rejected_route_group
+416,115-29-7,Contact,6.30,ug/bee,6.3,,True,True,rejected_route_group
+417,115-29-7,Contact,6.15,ug/bee,6.15,,True,True,rejected_route_group
+418,115-29-7,Contact,4.45,ug/bee,4.45,,True,True,rejected_route_group
+419,115-29-7,Contact,5.85,ug/bee,5.85,,True,True,rejected_route_group
+420,115-29-7,Contact,5.51,ug/bee,5.51,,True,True,rejected_route_group
+421,115-29-7,Contact,5.08,ug/bee,5.08,,True,True,rejected_route_group
+422,115-29-7,Contact,4.86,ug/bee,4.86,,True,True,rejected_route_group
+423,115-29-7,Contact,4.43,ug/bee,4.43,,True,True,rejected_route_group
+424,115-29-7,Contact,6.11,ug/bee,6.11,,True,True,rejected_route_group
+425,115-29-7,Contact,4.82,ug/bee,4.82,,True,True,rejected_route_group
+426,115-29-7,Contact,7.62,ug/bee,7.62,,True,True,rejected_route_group
+427,115-29-7,Contact,5.87,ug/bee,5.87,,True,True,rejected_route_group
+429,115-29-7,Contact,8.875,AI ug/org,8.875,,True,True,rejected_route_group
+431,115-29-7,Oral,15.6,ug/bee,15.6,,True,True,rejected_route_group
+432,115-29-7,Oral,22.6,ug/bee,22.6,,True,True,rejected_route_group
+433,115-29-7,Oral,40.3,ug/bee,40.3,,True,True,rejected_route_group
+434,115-29-7,Oral,79.1,ug/bee,79.1,,True,True,rejected_route_group
+435,115-29-7,Oral,61.1,ug/bee,61.1,,True,True,rejected_route_group
+436,115-29-7,Oral,38.9,ug/bee,38.9,,True,True,rejected_route_group
+437,115-29-7,Oral,42.1,ug/bee,42.1,,True,True,rejected_route_group
+438,115-29-7,Oral,44.3,ug/bee,44.3,,True,True,rejected_route_group
+457,121-75-5,Other,1.316,ug/org,1.316,,False,True,retained_route_group_logged_due_to_shared_CAS
+460,121-75-5,Oral,1.66,AI ug/org,1.66,,True,True,rejected_route_group
+461,121-75-5,Oral,0.4,AI ug/org,0.4,,True,True,rejected_route_group
+462,121-75-5,Contact,0.709,ug/bee,0.709,,False,True,retained_route_group_logged_due_to_shared_CAS
+463,121-75-5,Contact,0.156,AI ug/org,0.156,,False,True,retained_route_group_logged_due_to_shared_CAS
+464,121-75-5,Contact,0.19,AI ug/org,0.19,,False,True,retained_route_group_logged_due_to_shared_CAS
+465,121-75-5,Oral,1.66,AI ug/org,1.66,,True,True,rejected_route_group
+466,121-75-5,Contact,0.0273,ug/org,0.0273,,False,True,retained_route_group_logged_due_to_shared_CAS
+469,121-75-5,Oral,0.87,mg/bee,870.0,,True,True,rejected_route_group
+470,121-75-5,Oral,0.82,mg/bee,820.0,,True,True,rejected_route_group
+471,121-75-5,Oral,0.41,mg/bee,410.0,,True,True,rejected_route_group
+472,121-75-5,Contact,0.231,AI ug/org,0.231,,False,True,retained_route_group_logged_due_to_shared_CAS
+473,121-75-5,Contact,0.27,ug/bee,0.27,,False,True,retained_route_group_logged_due_to_shared_CAS
+474,121-75-5,Oral,0.38,ug/bee,0.38,,True,True,rejected_route_group
+478,121-75-5,Other,0.726,ug/org,0.726,,False,True,retained_route_group_logged_due_to_shared_CAS
+479,121-75-5,Other,0.350,ug/org,0.35,,False,True,retained_route_group_logged_due_to_shared_CAS
+480,121-75-5,Other,0.764,ug/org,0.764,,False,True,retained_route_group_logged_due_to_shared_CAS
+482,121-75-5,Contact,0.0020,ug/org,0.002,,False,True,retained_route_group_logged_due_to_shared_CAS
+510,133-06-2,Contact,3.090,ug/org,3.09,,True,True,rejected_route_group
+511,133-06-2,Contact,215.1,ug/org,215.1,,True,True,rejected_route_group
+512,133-06-2,Oral,6,AI ug/org/d,6.0,,True,True,rejected_route_group
+513,133-06-2,Contact,215,ug/bee,215.0,>,True,True,rejected_route_group
+514,133-06-2,Oral,107,AI ug/org,107.0,>,True,True,rejected_route_group
+515,133-06-2,Contact,5.392,ug/org,5.392,,True,True,rejected_route_group
+516,133-06-2,Contact,10,ug/bee,10.0,>,True,True,rejected_route_group
+517,133-06-2,Oral,2000,ug/bee,2000.0,>,True,True,rejected_route_group
+591,298-04-4,Contact,1.11,AI ug/org,1.11,,False,True,retained_route_group_logged_due_to_shared_CAS
+594,298-04-4,Oral,6.12,ug/org,6.12,,True,True,rejected_route_group
+595,298-04-4,Oral,35.30,ug/org,35.3,,True,True,rejected_route_group
+596,298-04-4,Oral,230.5,ug/org,230.5,,True,True,rejected_route_group
+597,298-04-4,Oral,27.83,ug/org,27.83,,True,True,rejected_route_group
+598,298-04-4,Oral,8.169,ug/org,8.169,,True,True,rejected_route_group
+599,298-04-4,Contact,4.3,ug/bee,4.3,,False,True,retained_route_group_logged_due_to_shared_CAS
+600,298-04-4,Oral,16,ug/bee,16.0,,True,True,rejected_route_group
+601,298-04-4,Oral,39,ug/bee,39.0,,True,True,rejected_route_group
+603,298-04-4,Contact,5.14,ug/bee,5.14,,False,True,retained_route_group_logged_due_to_shared_CAS
+606,298-04-4,Contact,0.96,AI ug/org,0.96,,False,True,retained_route_group_logged_due_to_shared_CAS
+615,301-12-2,Other,24.40,ug/org,24.4,,True,True,rejected_route_group
+616,301-12-2,Other,2.153,ug/org,2.153,,True,True,rejected_route_group
+617,301-12-2,Other,3.274,ug/org,3.274,,True,True,rejected_route_group
+618,301-12-2,Other,4.44,ug/org,4.44,,True,True,rejected_route_group
+619,301-12-2,Other,2.99,ug/org,2.99,,True,True,rejected_route_group
+620,301-12-2,Contact,3,ug/bee,3.0,,False,True,retained_route_group_logged_due_to_shared_CAS
+621,301-12-2,Contact,0.54,ug/bee,0.54,,False,True,retained_route_group_logged_due_to_shared_CAS
+622,301-12-2,Oral,0.31,ug/bee,0.31,,False,True,retained_route_group_logged_due_to_shared_CAS
+623,301-12-2,Contact,0.0030,ug/org,0.003,,False,True,retained_route_group_logged_due_to_shared_CAS
+673,510-15-6,Contact,1849,ug/bee,1849.0,,True,True,rejected_route_group
+674,510-15-6,Contact,9.67,ug/bee,9.67,>,True,True,rejected_route_group
+696,709-98-8,Oral,99.1,AI ug/org,99.1,>,True,True,rejected_route_group
+697,709-98-8,Contact,24.17,ug/bee,24.17,>,False,True,retained_route_group_logged_due_to_shared_CAS
+698,709-98-8,Contact,99.8,AI ug/org,99.8,>,False,True,retained_route_group_logged_due_to_shared_CAS
+699,709-98-8,Oral,22,AI ug/org/d,22.0,>,True,True,rejected_route_group
+700,709-98-8,Oral,99.8,AI ug/org,99.8,>,True,True,rejected_route_group
+701,709-98-8,Oral,6.13,AI ug/org,6.13,>,True,True,rejected_route_group
+756,1332-40-7,Oral,12.7,ug/bee,12.7,,True,True,rejected_route_group
+759,1332-40-7,Oral,33.3,ug/bee,33.3,,True,True,rejected_route_group
+760,1332-40-7,Oral,13.2,ug/bee,13.2,,True,True,rejected_route_group
+761,1332-40-7,Oral,11.9,ug/bee,11.9,,True,True,rejected_route_group
+763,1332-40-7,Oral,47.9,ug/bee,47.9,,True,True,rejected_route_group
+764,1332-40-7,Oral,16.7,ug/bee,16.7,,True,True,rejected_route_group
+765,1332-40-7,Oral,6.1,ug/bee,6.1,,True,True,rejected_route_group
+767,1332-40-7,Oral,5.3,ug/bee,5.3,,True,True,rejected_route_group
+768,1332-40-7,Oral,23.8,ug/bee,23.8,,True,True,rejected_route_group
+769,1332-40-7,Oral,13.3,ug/bee,13.3,,True,True,rejected_route_group
+770,1332-40-7,Oral,4.6,ug/bee,4.6,,True,True,rejected_route_group
+771,1332-40-7,Oral,5.1,ug/bee,5.1,,True,True,rejected_route_group
+772,1332-40-7,Oral,12.3,ug/bee,12.3,,True,True,rejected_route_group
+773,1332-40-7,Oral,10.2,ug/bee,10.2,,True,True,rejected_route_group
+775,1332-40-7,Oral,15.6,ug/bee,15.6,,True,True,rejected_route_group
+776,1332-40-7,Oral,32.0,ug/bee,32.0,,True,True,rejected_route_group
+777,1332-40-7,Oral,12.5,ug/bee,12.5,,True,True,rejected_route_group
+778,1332-40-7,Oral,18.4/,ug/bee,18.4,,True,True,rejected_route_group
+779,1332-40-7,Oral,15.8/,ug/bee,15.8,,True,True,rejected_route_group
+780,1332-40-7,Oral,10.3,ug/bee,10.3,,True,True,rejected_route_group
+782,1332-40-7,Oral,24.7,ug/bee,24.7,,True,True,rejected_route_group
+783,1332-40-7,Oral,21.7,ug/bee,21.7,,True,True,rejected_route_group
+784,1332-40-7,Oral,23.4,ug/bee,23.4,,True,True,rejected_route_group
+786,1332-40-7,Oral,15.1,ug/bee,15.1,,True,True,rejected_route_group
+787,1332-40-7,Oral,15.0,ug/bee,15.0,,True,True,rejected_route_group
+788,1332-40-7,Oral,7.7,ug/bee,7.7,,True,True,rejected_route_group
+789,1332-40-7,Oral,22.1,ug/bee,22.1,,True,True,rejected_route_group
+790,1332-40-7,Oral,21.2,ug/bee,21.2,,True,True,rejected_route_group
+791,1332-40-7,Oral,19.4,ug/bee,19.4,,True,True,rejected_route_group
+792,1332-40-7,Oral,11.6,ug/bee,11.6,,True,True,rejected_route_group
+793,1332-40-7,Oral,11.5,ug/bee,11.5,,True,True,rejected_route_group
+794,1332-40-7,Oral,19.2,ug/bee,19.2,,True,True,rejected_route_group
+795,1332-40-7,Oral,12.4,ug/bee,12.4,,True,True,rejected_route_group
+796,1332-40-7,Oral,7.4,ug/bee,7.4,,True,True,rejected_route_group
+798,1332-40-7,Oral,37.7,ug/bee,37.7,,True,True,rejected_route_group
+799,1332-40-7,Oral,19.8,ug/bee,19.8,,True,True,rejected_route_group
+800,1332-40-7,Oral,20.3,ug/bee,20.3,,True,True,rejected_route_group
+802,1332-40-7,Oral,27.1,ug/bee,27.1,,True,True,rejected_route_group
+803,1332-40-7,Oral,14.2,ug/bee,14.2,,True,True,rejected_route_group
+804,1332-40-7,Oral,22.6/,ug/bee,22.6,,True,True,rejected_route_group
+805,1332-40-7,Oral,26.7/,ug/bee,26.7,,True,True,rejected_route_group
+806,1332-40-7,Oral,14.8,ug/bee,14.8,,True,True,rejected_route_group
+807,1332-40-7,Oral,11.0,ug/bee,11.0,,True,True,rejected_route_group
+808,1332-40-7,Oral,10.2,ug/bee,10.2,,True,True,rejected_route_group
+810,1332-40-7,Oral,13.6,ug/bee,13.6,,True,True,rejected_route_group
+811,1332-40-7,Oral,21.7,ug/bee,21.7,,True,True,rejected_route_group
+812,1332-40-7,Oral,30.3,ug/bee,30.3,,True,True,rejected_route_group
+813,1332-40-7,Oral,9.8/,ug/bee,9.8,,True,True,rejected_route_group
+814,1332-40-7,Oral,11.0/,ug/bee,11.0,,True,True,rejected_route_group
+815,1332-40-7,Oral,13.6,ug/bee,13.6,,True,True,rejected_route_group
+816,1332-40-7,Oral,12.5,ug/bee,12.5,,True,True,rejected_route_group
+817,1332-40-7,Oral,3.0,ug/bee,3.0,,True,True,rejected_route_group
+818,1332-40-7,Oral,35.8,ug/bee,35.8,,True,True,rejected_route_group
+819,1332-40-7,Oral,14.2,ug/bee,14.2,,True,True,rejected_route_group
+820,1332-40-7,Oral,13.0,ug/bee,13.0,,True,True,rejected_route_group
+821,1332-40-7,Oral,32.2,ug/bee,32.2,,True,True,rejected_route_group
+822,1332-40-7,Oral,7.2,ug/bee,7.2,,True,True,rejected_route_group
+824,1332-40-7,Oral,12.7,ug/bee,12.7,,True,True,rejected_route_group
+826,1332-40-7,Oral,8.9,ug/bee,8.9,,True,True,rejected_route_group
+827,1332-40-7,Oral,5.5,ug/bee,5.5,,True,True,rejected_route_group
+828,1332-40-7,Oral,32.4,ug/bee,32.4,,True,True,rejected_route_group
+842,1646-88-4,Other,0.659,ug/org,0.659,,True,True,rejected_route_group
+844,1646-88-4,Other,52.55,ug/org,52.55,,True,True,rejected_route_group
+845,1646-88-4,Other,42.93,ug/org,42.93,,True,True,rejected_route_group
+846,1646-88-4,Other,1.067,ug/org,1.067,,True,True,rejected_route_group
+847,1646-88-4,Other,399.3,ug/org,399.3,,True,True,rejected_route_group
+865,1918-00-9,Contact,90.65,ug/bee,90.65,>,False,True,retained_route_group_logged_due_to_shared_CAS
+866,1918-00-9,Oral,21,AI ug/org/d,21.0,>,True,True,rejected_route_group
+867,1918-00-9,Contact,100,ug/bee,100.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+868,1918-00-9,Oral,10,ug/bee,10.0,>,True,True,rejected_route_group
+891,2164-17-2,Contact,100,AI ug/org,100.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+892,2164-17-2,Oral,5.87,AI ug/org/d,5.87,>,True,True,rejected_route_group
+893,2164-17-2,Oral,100,AI ug/org,100.0,>,True,True,rejected_route_group
+894,2164-17-2,Oral,96,AI ug/org,96.0,>,True,True,rejected_route_group
+895,2164-17-2,Oral,5.05,AI ug/org/d,5.05,>,True,True,rejected_route_group
+896,2164-17-2,Oral,34.02,AI ug/org,34.02,>,True,True,rejected_route_group
+897,2164-17-2,Contact,100,AI ug/org,100.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+898,2164-17-2,Oral,22,AI ug/org,22.0,,True,True,rejected_route_group
+899,2164-17-2,Contact,193.38,ug/bee,193.38,>,False,True,retained_route_group_logged_due_to_shared_CAS
+903,2310-17-0,Contact,8.94,ug/bee,8.94,,False,True,retained_route_group_logged_due_to_shared_CAS
+905,2310-17-0,Oral,13.3,ug/bee,13.3,,True,True,rejected_route_group
+906,2310-17-0,Oral,11.1,ug/bee,11.1,,True,True,rejected_route_group
+907,2310-17-0,Oral,16.3,ug/bee,16.3,,True,True,rejected_route_group
+908,2310-17-0,Oral,9.9,ug/bee,9.9,,True,True,rejected_route_group
+909,2310-17-0,Oral,17.4,ug/bee,17.4,,True,True,rejected_route_group
+910,2310-17-0,Oral,11.8,ug/bee,11.8,,True,True,rejected_route_group
+911,2312-35-8,Contact,15,ug/bee,15.0,,False,True,retained_route_group_logged_due_to_shared_CAS
+912,2312-35-8,Oral,100,AI ug/org,100.0,>,True,True,rejected_route_group
+913,2312-35-8,Contact,62.19,AI ug/org,62.19,,False,True,retained_route_group_logged_due_to_shared_CAS
+914,2312-35-8,Oral,4.8,AI ug/org/d,4.8,,True,True,rejected_route_group
+915,2312-35-8,Oral,25.31,AI ug/org/d,25.31,,True,True,rejected_route_group
+916,2312-35-8,Other,107.8,ug/org,107.8,,False,True,retained_route_group_logged_due_to_shared_CAS
+917,2312-35-8,Other,67.47,ug/org,67.47,,False,True,retained_route_group_logged_due_to_shared_CAS
+918,2312-35-8,Oral,100,AI ug/org,100.0,>,True,True,rejected_route_group
+919,2312-35-8,Other,111.8,ug/org,111.8,,False,True,retained_route_group_logged_due_to_shared_CAS
+920,2312-35-8,Other,126866.99,ug/bee,126866.99,,False,True,retained_route_group_logged_due_to_shared_CAS
+921,2312-35-8,Other,88299.42,AI ug/org,88299.42,,False,True,retained_route_group_logged_due_to_shared_CAS
+923,2312-35-8,Contact,51.33,AI ug/org,51.33,,False,True,retained_route_group_logged_due_to_shared_CAS
+984,2795-39-3,Oral,0.72,AI ug/org,0.72,,False,True,retained_route_group_logged_due_to_shared_CAS
+985,2795-39-3,Contact,38.9,AI ug/org,38.9,,True,True,rejected_route_group
+986,2795-39-3,Oral,0.40,AI ug/org,0.4,,False,True,retained_route_group_logged_due_to_shared_CAS
+987,2795-39-3,Oral,0.46,AI ug/org,0.46,,False,True,retained_route_group_logged_due_to_shared_CAS
+988,2795-39-3,Oral,0.40,AI ug/org,0.4,,False,True,retained_route_group_logged_due_to_shared_CAS
+989,2795-39-3,Contact,10.4,AI ug/org,10.4,,True,True,rejected_route_group
+990,2795-39-3,Contact,4.78,AI ug/org,4.78,,True,True,rejected_route_group
+991,2795-39-3,Contact,6.00,AI ug/org,6.0,,True,True,rejected_route_group
+1023,5326-23-8,Contact,50,AI ug/org,50.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1024,5326-23-8,Oral,1000,ng/org,1.0,>,True,True,rejected_route_group
+1025,5326-23-8,Oral,1000,ng/org,1.0,>,True,True,rejected_route_group
+1026,5326-23-8,Oral,1000,ng/org,1.0,>,True,True,rejected_route_group
+1027,5326-23-8,Oral,121500,AI ng/org,121.5,>,True,True,rejected_route_group
+1083,8001-35-2,Oral,0.03981,mg/org,39.809999999999995,,False,True,retained_route_group_logged_due_to_shared_CAS
+1085,8001-35-2,Contact,35.68,ug/org,35.68,,True,True,rejected_route_group
+1086,8001-35-2,Contact,21.30,ug/org,21.3,,True,True,rejected_route_group
+1087,8001-35-2,Contact,50.4,ug/bee,50.4,,True,True,rejected_route_group
+1088,8001-35-2,Contact,73.81,ug/org,73.81,,True,True,rejected_route_group
+1089,8001-35-2,Contact,19.08,ug/org,19.08,,True,True,rejected_route_group
+1090,8001-35-2,Contact,33.60,ug/org,33.6,,True,True,rejected_route_group
+1091,8001-35-2,Contact,0.1440,ug/org,0.144,,True,True,rejected_route_group
+1137,10124-65-9,Contact,25,ug/bee,25.0,>,True,True,rejected_route_group
+1138,10124-65-9,Contact,0.4975,AI ug/org,0.4975,>,True,True,rejected_route_group
+1139,10265-92-6,Contact,1.37,ug/bee,1.37,,True,True,rejected_route_group
+1141,10265-92-6,Oral,3.700,AI ug/org,3.7,,False,True,retained_route_group_logged_due_to_shared_CAS
+1142,10265-92-6,Other,0.766,ug/org,0.766,,False,True,retained_route_group_logged_due_to_shared_CAS
+1143,10265-92-6,Other,0.698,ug/org,0.698,,False,True,retained_route_group_logged_due_to_shared_CAS
+1144,10265-92-6,Other,1.37,ug/org,1.37,,False,True,retained_route_group_logged_due_to_shared_CAS
+1145,10265-92-6,Other,0.871,ug/org,0.871,,False,True,retained_route_group_logged_due_to_shared_CAS
+1146,10265-92-6,Other,0.730,ug/org,0.73,,False,True,retained_route_group_logged_due_to_shared_CAS
+1147,10265-92-6,Oral,200,ng/org,0.2,,False,True,retained_route_group_logged_due_to_shared_CAS
+1148,10265-92-6,Contact,408.5,AI ug/org,408.5,,True,True,rejected_route_group
+1149,10311-84-9,Contact,34.45,ug/bee,34.45,,True,True,rejected_route_group
+1150,10311-84-9,Oral,29.2,ug/bee,29.2,,False,True,retained_route_group_logged_due_to_shared_CAS
+1151,10311-84-9,Contact,9.5,ug/bee,9.5,,True,True,rejected_route_group
+1152,10311-84-9,Contact,28.6,ug/bee,28.6,,True,True,rejected_route_group
+1250,17804-35-2,Contact,10,ug/bee,10.0,>,True,True,rejected_route_group
+1251,17804-35-2,Oral,10,ug/bee,10.0,<,False,True,retained_route_group_logged_due_to_shared_CAS
+1252,17804-35-2,Other,3757,ug/org,3757.0,,False,True,retained_route_group_logged_due_to_shared_CAS
+1253,17804-35-2,Other,853000,ug/org,853000.0,,False,True,retained_route_group_logged_due_to_shared_CAS
+1254,17804-35-2,Other,1020000000,ug/org,1020000000.0,,False,True,retained_route_group_logged_due_to_shared_CAS
+1255,17804-35-2,Contact,120.86,ug/bee,120.86,>,True,True,rejected_route_group
+1256,17804-35-2,Other,1050000,ug/org,1050000.0,,False,True,retained_route_group_logged_due_to_shared_CAS
+1270,23103-98-2,Oral,3.2,ug/bee,3.2,,True,True,rejected_route_group
+1271,23103-98-2,Oral,19.5,AI ug/org,19.5,,True,True,rejected_route_group
+1272,23103-98-2,Contact,54,ug/bee,54.0,>,True,True,rejected_route_group
+1273,23103-98-2,Contact,12.56,AI ug/org,12.56,,True,True,rejected_route_group
+1274,23103-98-2,Oral,3.01,AI ug/org,3.01,,True,True,rejected_route_group
+1275,23103-98-2,Contact,2.791,AI ug/org,2.791,,True,True,rejected_route_group
+1276,23103-98-2,Contact,18.72,AI ug/org,18.72,,True,True,rejected_route_group
+1277,23103-98-2,Oral,11.31,AI ug/org,11.31,,True,True,rejected_route_group
+1295,23422-53-9,Contact,4.971,AI ug/org,4.971,,False,True,retained_route_group_logged_due_to_shared_CAS
+1296,23422-53-9,Other,67.202,ug/org,67.202,,True,True,rejected_route_group
+1297,23422-53-9,Other,18.252,ug/org,18.252,,True,True,rejected_route_group
+1298,23422-53-9,Other,426.3,ug/org,426.3,,True,True,rejected_route_group
+1299,23422-53-9,Other,9.21,ug/org,9.21,,True,True,rejected_route_group
+1300,23422-53-9,Oral,0.16,AI ug/org,0.16,,False,True,retained_route_group_logged_due_to_shared_CAS
+1301,23422-53-9,Oral,0.11,AI ug/org/d,0.11,,False,True,retained_route_group_logged_due_to_shared_CAS
+1302,23422-53-9,Contact,1,AI ug/org,1.0,,False,True,retained_route_group_logged_due_to_shared_CAS
+1306,23564-05-8,Contact,100,AI ug/org,100.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1307,23564-05-8,Oral,52,AI ug/org/d,52.0,,True,True,rejected_route_group
+1308,23564-05-8,Oral,4.16,AI ug/org/d,4.16,>,True,True,rejected_route_group
+1309,23564-05-8,Oral,114.68,AI ug/org,114.68,>,True,True,rejected_route_group
+1310,23564-05-8,Oral,88,AI ug/org,88.0,>,True,True,rejected_route_group
+1402,35367-38-5,Contact,3.01,ug/org,3.01,,True,True,rejected_route_group
+1404,35367-38-5,Oral,0.0624,AI ug/org,0.0624,,True,True,rejected_route_group
+1405,35367-38-5,Oral,85.6,AI ug/org,85.6,>,True,True,rejected_route_group
+1406,35367-38-5,Contact,74.2,AI ug/org,74.2,>,True,True,rejected_route_group
+1407,35367-38-5,Oral,9.1,AI ug/org,9.1,>,True,True,rejected_route_group
+1408,35367-38-5,Oral,0.044,AI ug/org/d,0.044,,True,True,rejected_route_group
+1409,35367-38-5,Contact,100,AI ug/org,100.0,>,True,True,rejected_route_group
+1410,35367-38-5,Contact,2.42,ug/org,2.42,,True,True,rejected_route_group
+1411,35367-38-5,Contact,6.01,ug/org,6.01,,True,True,rejected_route_group
+1412,35367-38-5,Oral,30,ug/bee,30.0,>,True,True,rejected_route_group
+1413,35367-38-5,Contact,30,ug/bee,30.0,>,True,True,rejected_route_group
+1496,52508-35-7,Oral,91,AI ug/org,91.0,>,True,True,rejected_route_group
+1497,52508-35-7,Oral,66,AI ug/org,66.0,>,True,True,rejected_route_group
+1498,52508-35-7,Oral,7.3,AI ug/org/d,7.3,>,True,True,rejected_route_group
+1499,52508-35-7,Contact,81,AI ug/org,81.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1516,52918-63-5,Contact,50.65,ng/org,0.05065,,True,True,rejected_route_group
+1517,52918-63-5,Oral,0.079,ug/bee,0.079,,False,True,retained_route_group_logged_due_to_shared_CAS
+1518,52918-63-5,Oral,0.850,AI ug/org,0.85,,False,True,retained_route_group_logged_due_to_shared_CAS
+1520,52918-63-5,Oral,18.4,AI ng/org,0.0184,,False,True,retained_route_group_logged_due_to_shared_CAS
+1521,52918-63-5,Contact,19.4,AI ng/org,0.0194,,True,True,rejected_route_group
+1522,52918-63-5,Oral,710,AI ng/org,0.71,,False,True,retained_route_group_logged_due_to_shared_CAS
+1523,52918-63-5,Other,19.0,AI ng/org,0.019,,False,True,retained_route_group_logged_due_to_shared_CAS
+1524,52918-63-5,Contact,0.677,AI ug/org,0.677,,True,True,rejected_route_group
+1525,52918-63-5,Oral,0.05,ug/org,0.05,,False,True,retained_route_group_logged_due_to_shared_CAS
+1526,52918-63-5,Contact,0.112,AI ug/org,0.112,,True,True,rejected_route_group
+1527,52918-63-5,Oral,0.21,AI ug/org,0.21,,False,True,retained_route_group_logged_due_to_shared_CAS
+1528,52918-63-5,Oral,0.191,AI ug/org,0.191,,False,True,retained_route_group_logged_due_to_shared_CAS
+1529,52918-63-5,Contact,0.0015,AI ug/org,0.0015,,True,True,rejected_route_group
+1531,52918-63-5,Contact,0.051,ug/bee,0.051,,True,True,rejected_route_group
+1532,52918-63-5,Contact,112.2,AI ug/org,112.2,,True,True,rejected_route_group
+1552,57960-19-7,Oral,1.2,AI ug/org,1.2,,True,True,rejected_route_group
+1553,57960-19-7,Contact,100,AI ug/org,100.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1554,57960-19-7,Oral,0.43,AI ug/org/d,0.43,>,True,True,rejected_route_group
+1555,57960-19-7,Contact,350,AI ug/org,350.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1556,57960-19-7,Oral,315,AI ug/org,315.0,>,True,True,rejected_route_group
+1559,59669-26-0,Other,2.79,ug/bee,2.79,,False,True,retained_route_group_logged_due_to_shared_CAS
+1561,59669-26-0,Other,0.95,AI ug/org,0.95,,False,True,retained_route_group_logged_due_to_shared_CAS
+1562,59669-26-0,Contact,0.130,AI ug/org,0.13,,True,True,rejected_route_group
+1563,59669-26-0,Oral,0.13,AI ug/org,0.13,,False,True,retained_route_group_logged_due_to_shared_CAS
+1564,59669-26-0,Contact,25,AI ug/org,25.0,>,True,True,rejected_route_group
+1565,59669-26-0,Contact,2.11,AI ug/org,2.11,,True,True,rejected_route_group
+1605,68157-60-8,Oral,15,AI ug/org,15.0,,True,True,rejected_route_group
+1606,68157-60-8,Oral,15,AI ug/org/d,15.0,,True,True,rejected_route_group
+1607,68157-60-8,Contact,25,AI ug/org,25.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1608,68157-60-8,Oral,4.23,AI ug/org/d,4.23,,True,True,rejected_route_group
+1631,71422-67-8,Contact,0.000195,ug/org,0.000195,,True,True,rejected_route_group
+1632,71422-67-8,Contact,0.0000734,ug/org,7.34e-05,,True,True,rejected_route_group
+1633,71422-67-8,Contact,0.000478,ug/org,0.000478,,True,True,rejected_route_group
+1634,71422-67-8,Contact,186.6,ug/org,186.6,,True,True,rejected_route_group
+1651,74051-80-2,Contact,200.2,AI ug/org,200.2,>,True,True,rejected_route_group
+1652,74051-80-2,Oral,21,AI ug/org/d,21.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1653,74051-80-2,Contact,10,AI ug/org,10.0,>,True,True,rejected_route_group
+1654,74051-80-2,Oral,200.2,AI ug/org,200.2,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1661,76674-21-0,Contact,50,AI ug/org,50.0,>,True,True,rejected_route_group
+1662,76674-21-0,Oral,198,ug/bee,198.0,>,True,True,rejected_route_group
+1663,76674-21-0,Contact,198,ug/bee,198.0,,True,True,rejected_route_group
+1664,76674-21-0,Contact,10.5,AI ug/org,10.5,>,True,True,rejected_route_group
+1665,76674-21-0,Oral,47,ug/org,47.0,,True,True,rejected_route_group
+1666,76674-21-0,Oral,50,ug/org,50.0,>,True,True,rejected_route_group
+1667,76674-21-0,Oral,2,AI ug/org,2.0,>,True,True,rejected_route_group
+1668,76674-21-0,Contact,52.5,AI ug/org,52.5,>,True,True,rejected_route_group
+1718,86479-06-3,Oral,100,AI ug/org,100.0,>,True,True,rejected_route_group
+1719,86479-06-3,Contact,5.83,AI ug/org,5.83,,True,True,rejected_route_group
+1720,86479-06-3,Contact,99.6,AI ug/org,99.6,>,True,True,rejected_route_group
+1721,86479-06-3,Oral,5.68,AI ug/org,5.68,,True,True,rejected_route_group
+1759,95737-68-1,Oral,72.8,AI ug/org,72.8,>,True,True,rejected_route_group
+1760,95737-68-1,Oral,2,AI ug/org/d,2.0,>,True,True,rejected_route_group
+1761,95737-68-1,Contact,100,AI ug/org,100.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1773,102851-06-9,Contact,9450,ng/org,9.450000000000001,,True,True,rejected_route_group
+1774,102851-06-9,Contact,8050,ng/org,8.05,,True,True,rejected_route_group
+1781,102851-06-9,Contact,19.8,ug/org,19.8,,True,True,rejected_route_group
+1786,104206-82-8,Oral,10.6,AI ug/org/d,10.6,>,True,True,rejected_route_group
+1787,104206-82-8,Oral,11,AI ug/org,11.0,>,True,True,rejected_route_group
+1788,104206-82-8,Oral,24.9,AI ug/org/d,24.9,,True,True,rejected_route_group
+1789,104206-82-8,Contact,100,AI ug/org,100.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1813,112281-77-3,Other,12.77,ug/bee,12.77,,True,True,rejected_route_group
+1815,112281-77-3,Other,2.62,AI ug/org,2.62,,True,True,rejected_route_group
+1816,112281-77-3,Oral,76,AI ug/org/d,76.0,,False,True,retained_route_group_logged_due_to_shared_CAS
+1817,112281-77-3,Oral,28.3,AI ug/org/d,28.3,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1838,116714-46-6,Oral,0.0048,AI ug/org/d,0.0048,>,True,True,rejected_route_group
+1839,116714-46-6,Oral,200,ug/bee,200.0,>,True,True,rejected_route_group
+1840,116714-46-6,Oral,100,AI ug/org,100.0,>,True,True,rejected_route_group
+1841,116714-46-6,Contact,200,ug/bee,200.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1842,116714-46-6,Contact,100,AI ug/org,100.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1843,116714-46-6,Other,5907.76,AI ug/org,5907.76,,False,True,retained_route_group_logged_due_to_shared_CAS
+1844,116714-46-6,Other,63524.34,ug/bee,63524.34,,False,True,retained_route_group_logged_due_to_shared_CAS
+1847,117428-22-5,Oral,200,AI ug/org,200.0,>,True,True,rejected_route_group
+1848,117428-22-5,Oral,7.83,AI ug/org,7.83,,True,True,rejected_route_group
+1849,117428-22-5,Contact,200,AI ug/org,200.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1850,117428-22-5,Contact,200,AI ug/org,200.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1856,119446-68-3,Contact,100,AI ug/org,100.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1857,119446-68-3,Oral,1.79,AI ug/org/d,1.79,,True,True,rejected_route_group
+1858,119446-68-3,Oral,20.9,AI ug/org/d,20.9,>,True,True,rejected_route_group
+1881,120868-66-8,Oral,1000,ng/org,1.0,>,True,True,rejected_route_group
+1882,120868-66-8,Oral,1000,ng/org,1.0,>,True,True,rejected_route_group
+1883,120868-66-8,Oral,1000,ng/org,1.0,>,True,True,rejected_route_group
+1884,120868-66-8,Oral,99500,AI ng/org,99.5,>,True,True,rejected_route_group
+1901,123312-89-0,Oral,117,AI ug/org,117.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1902,123312-89-0,Contact,100,AI ug/org,100.0,>,True,True,rejected_route_group
+1903,123312-89-0,Contact,0.16,ug/org,0.16,,True,True,rejected_route_group
+1904,123312-89-0,Oral,62.71,AI ug/org,62.71,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1905,123312-89-0,Contact,200,AI ug/org,200.0,>,True,True,rejected_route_group
+1936,129909-90-6,Oral,24.4,AI ug/org,24.4,,True,True,rejected_route_group
+1937,129909-90-6,Oral,5.2,AI ug/org/d,5.2,,True,True,rejected_route_group
+1938,129909-90-6,Contact,200,AI ug/org,200.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1939,129909-90-6,Oral,45,AI ug/org,45.0,,True,True,rejected_route_group
+1950,134098-61-6,Other,1.15,AI ug/org,1.15,,True,True,rejected_route_group
+1951,134098-61-6,Other,23.07,ug/bee,23.07,,True,True,rejected_route_group
+1952,134098-61-6,Oral,0.029,AI ug/org/d,0.029,,False,True,retained_route_group_logged_due_to_shared_CAS
+1953,134098-61-6,Oral,0.2,AI ug/org,0.2,,False,True,retained_route_group_logged_due_to_shared_CAS
+1956,134098-61-6,Contact,15.8,AI ug/org,15.8,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1957,134098-61-6,Contact,479.8,AI ug/org,479.8,>,False,True,retained_route_group_logged_due_to_shared_CAS
+1959,134098-61-6,Oral,0.031,AI ug/org/d,0.031,,False,True,retained_route_group_logged_due_to_shared_CAS
+1964,135410-20-7,Other,276.85,AI ug/org,276.85,,False,True,retained_route_group_logged_due_to_shared_CAS
+1966,135410-20-7,Other,395.50,ug/bee,395.5,,False,True,retained_route_group_logged_due_to_shared_CAS
+1967,135410-20-7,Oral,21.5,ng/org,0.021500000000000002,,True,True,rejected_route_group
+1968,135410-20-7,Oral,9.1,ug/org,9.1,,True,True,rejected_route_group
+1969,135410-20-7,Oral,72.6,ug/org,72.6,,True,True,rejected_route_group
+1970,135410-20-7,Oral,8.96,AI ug/org,8.96,,True,True,rejected_route_group
+1971,135410-20-7,Oral,5.65,ug/org,5.65,,True,True,rejected_route_group
+1972,135410-20-7,Contact,1.69,ug/org,1.69,,True,True,rejected_route_group
+1973,135410-20-7,Contact,64.6,ug/org,64.6,,True,True,rejected_route_group
+1974,135410-20-7,Contact,12.5,AI ug/org,12.5,<,True,True,rejected_route_group
+1975,135410-20-7,Oral,0.96,AI ug/org/d,0.96,>,True,True,rejected_route_group
+1976,135410-20-7,Oral,5.43,AI ug/org/d,5.43,,True,True,rejected_route_group
+1977,135410-20-7,Oral,10.21,AI ug/org,10.21,>,True,True,rejected_route_group
+1978,135410-20-7,Contact,8.81,ug/org,8.81,,True,True,rejected_route_group
+1979,135410-20-7,Contact,10.53,AI ug/org,10.53,,True,True,rejected_route_group
+1980,135410-20-7,Contact,7.07,AI ug/org,7.07,,True,True,rejected_route_group
+1982,135410-20-7,Oral,1.16,AI ug/org,1.16,,True,True,rejected_route_group
+1984,135410-20-7,Contact,3.26,AI ug/org,3.26,,True,True,rejected_route_group
+1985,135410-20-7,Contact,4.79,AI ug/org,4.79,,True,True,rejected_route_group
+1986,135410-20-7,Contact,0.96,AI ug/org,0.96,,True,True,rejected_route_group
+1987,135410-20-7,Contact,6.44,AI ug/org,6.44,,True,True,rejected_route_group
+1988,135410-20-7,Contact,0.86,AI ug/org,0.86,,True,True,rejected_route_group
+1989,135410-20-7,Contact,4.43,AI ug/org,4.43,,True,True,rejected_route_group
+1990,135410-20-7,Contact,10.73,AI ug/org,10.73,,True,True,rejected_route_group
+1991,135410-20-7,Contact,15.91,AI ug/org,15.91,,True,True,rejected_route_group
+1992,135410-20-7,Contact,3.62,AI ug/org,3.62,,True,True,rejected_route_group
+1993,135410-20-7,Contact,1.21,AI ug/org,1.21,,True,True,rejected_route_group
+1994,135410-20-7,Contact,1.52,AI ug/org,1.52,,True,True,rejected_route_group
+1995,135410-20-7,Contact,26,AI ug/org,26.0,,True,True,rejected_route_group
+1996,135410-20-7,Contact,7.28,AI ug/org,7.28,,True,True,rejected_route_group
+2079,139968-49-3,Oral,2.43,AI ug/org,2.43,,False,True,retained_route_group_logged_due_to_shared_CAS
+2080,139968-49-3,Contact,1.65,AI ug/org,1.65,,True,True,rejected_route_group
+2081,139968-49-3,Contact,106,AI ug/org,106.0,>,True,True,rejected_route_group
+2094,145701-21-9,Oral,202,AI ug/org,202.0,>,True,True,rejected_route_group
+2095,145701-21-9,Contact,25,AI ug/org,25.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+2096,145701-21-9,Oral,16.7,AI ug/org,16.7,>,True,True,rejected_route_group
+2097,145701-21-9,Oral,1.1,AI ug/org/d,1.1,>,True,True,rejected_route_group
+2108,153233-91-1,Oral,1,AI ug/org/d,1.0,>,True,True,rejected_route_group
+2109,153233-91-1,Contact,200,AI ug/org,200.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+2110,153233-91-1,Other,1470.21,AI ug/org,1470.21,,False,True,retained_route_group_logged_due_to_shared_CAS
+2112,153233-91-1,Other,2041.96,ug/bee,2041.96,,False,True,retained_route_group_logged_due_to_shared_CAS
+2113,153233-91-1,Oral,200,AI ug/org,200.0,>,True,True,rejected_route_group
+2248,161326-34-7,Contact,47.1,AI ug/org,47.1,,False,True,retained_route_group_logged_due_to_shared_CAS
+2249,161326-34-7,Oral,7.56,AI ug/org,7.56,<,True,True,rejected_route_group
+2250,161326-34-7,Oral,159.8,AI ug/org,159.8,>,True,True,rejected_route_group
+2251,161326-34-7,Contact,82.3,AI ug/org,82.3,,False,True,retained_route_group_logged_due_to_shared_CAS
+2252,161326-34-7,Oral,0.84,AI ug/org/d,0.84,>,True,True,rejected_route_group
+2256,165252-70-0,Contact,0.0750,AI ug/org,0.075,,False,True,retained_route_group_logged_due_to_shared_CAS
+2257,165252-70-0,Oral,0.51,ug/bee,0.51,,True,True,rejected_route_group
+2258,165252-70-0,Oral,0.59,ug/bee,0.59,,True,True,rejected_route_group
+2261,165252-70-0,Contact,0.047,AI ug/org,0.047,,False,True,retained_route_group_logged_due_to_shared_CAS
+2262,165252-70-0,Oral,0.023,AI ug/org,0.023,,True,True,rejected_route_group
+2263,165252-70-0,Contact,0.024,AI ug/org,0.024,,False,True,retained_route_group_logged_due_to_shared_CAS
+2266,165252-70-0,Contact,0.041,ug/bee,0.041,,False,True,retained_route_group_logged_due_to_shared_CAS
+2268,165252-70-0,Contact,0.0006,ug/org,0.0006,,False,True,retained_route_group_logged_due_to_shared_CAS
+2269,165252-70-0,Oral,15,AI ug/org,15.0,>,True,True,rejected_route_group
+2270,165252-70-0,Contact,0.061,AI ug/org,0.061,,False,True,retained_route_group_logged_due_to_shared_CAS
+2271,165252-70-0,Oral,0.032,AI ug/org,0.032,,True,True,rejected_route_group
+2272,165252-70-0,Oral,3.3,AI ug/org,3.3,>,True,True,rejected_route_group
+2273,165252-70-0,Oral,0.0076,AI ug/org,0.0076,,True,True,rejected_route_group
+2274,165252-70-0,Oral,0.0110,AI ug/org,0.011,,True,True,rejected_route_group
+2283,173584-44-6,Contact,0.0682,AI ug/org,0.0682,,False,True,retained_route_group_logged_due_to_shared_CAS
+2284,173584-44-6,Other,0.27,AI ug/org,0.27,,False,True,retained_route_group_logged_due_to_shared_CAS
+2285,173584-44-6,Other,1.80,ug/bee,1.8,,False,True,retained_route_group_logged_due_to_shared_CAS
+2287,173584-44-6,Oral,0.528,AI ug/org,0.528,,True,True,rejected_route_group
+2288,173584-44-6,Oral,0.204,AI ug/org,0.204,,True,True,rejected_route_group
+2289,173584-44-6,Contact,0.566,AI ug/org,0.566,,False,True,retained_route_group_logged_due_to_shared_CAS
+2290,173584-44-6,Oral,18.1,AI ug/org,18.1,,True,True,rejected_route_group
+2291,173584-44-6,Oral,0.478,AI ug/org,0.478,,True,True,rejected_route_group
+2292,173584-44-6,Oral,14,AI ug/org,14.0,,True,True,rejected_route_group
+2293,173584-44-6,Contact,1.5,AI ug/org,1.5,,False,True,retained_route_group_logged_due_to_shared_CAS
+2294,173584-44-6,Contact,0.18,AI ug/org,0.18,,False,True,retained_route_group_logged_due_to_shared_CAS
+2295,173584-44-6,Oral,10,AI ug/org,10.0,,True,True,rejected_route_group
+2296,173584-44-6,Oral,0.0403,AI ug/org/d,0.0403,,True,True,rejected_route_group
+2298,175013-18-0,Contact,100,AI ug/org,100.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+2299,175013-18-0,Contact,100,AI ug/org,100.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+2300,175013-18-0,Oral,110,AI ug/org,110.0,>,True,True,rejected_route_group
+2301,175013-18-0,Oral,4.8,AI ug/org/d,4.8,,True,True,rejected_route_group
+2302,178928-70-6,Oral,71,AI ug/org,71.0,>,True,True,rejected_route_group
+2303,178928-70-6,Oral,5.2,AI ug/org/d,5.2,>,True,True,rejected_route_group
+2304,178928-70-6,Contact,200,AI ug/org,200.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+2305,178928-70-6,Oral,58,AI ug/org/d,58.0,>,True,True,rejected_route_group
+2306,178928-70-6,Oral,232,ug/bee,232.0,>,True,True,rejected_route_group
+2307,178928-70-6,Contact,200,ug/bee,200.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+2308,179101-81-6,Contact,6.16,ug/org,6.16,,True,True,rejected_route_group
+2309,179101-81-6,Contact,25,AI ug/org,25.0,>,True,True,rejected_route_group
+2337,210880-92-5,Oral,9.5,AI ng/org/d,0.0095,,True,True,rejected_route_group
+2338,210880-92-5,Oral,18.0,AI ng/org/d,0.018000000000000002,,True,True,rejected_route_group
+2339,210880-92-5,Oral,26.9,AI ng/org/d,0.0269,,True,True,rejected_route_group
+2340,210880-92-5,Oral,2.0,ng/org,0.002,,True,True,rejected_route_group
+2342,210880-92-5,Oral,0.00002212,mg/bee,0.02212,,True,True,rejected_route_group
+2343,210880-92-5,Oral,0.00002212,mg/bee,0.02212,,True,True,rejected_route_group
+2344,210880-92-5,Oral,0.00001960,mg/bee,0.0196,,True,True,rejected_route_group
+2345,210880-92-5,Contact,0.0275,AI ug/org,0.0275,,False,True,retained_route_group_logged_due_to_shared_CAS
+2346,210880-92-5,Contact,0.0218,AI ug/org,0.0218,,False,True,retained_route_group_logged_due_to_shared_CAS
+2347,210880-92-5,Contact,0.0350,ug/org,0.035,,False,True,retained_route_group_logged_due_to_shared_CAS
+2348,210880-92-5,Oral,0.00739,ug/org,0.00739,,True,True,rejected_route_group
+2349,210880-92-5,Oral,15.1,AI ng/org/d,0.0151,,True,True,rejected_route_group
+2353,210880-92-5,Oral,0.00528,AI ug/org,0.00528,>,True,True,rejected_route_group
+2357,210880-92-5,Contact,0.0439,AI ug/org,0.0439,,False,True,retained_route_group_logged_due_to_shared_CAS
+2359,210880-92-5,Oral,2.6,pg/org,2.6e-06,,True,True,rejected_route_group
+2360,210880-92-5,Oral,36.7,pg/org,3.6700000000000004e-05,,True,True,rejected_route_group
+2361,210880-92-5,Oral,0.013,pg/org,1.2999999999999999e-08,,True,True,rejected_route_group
+2362,210880-92-5,Oral,6.36,pg/org,6.36e-06,,True,True,rejected_route_group
+2363,210880-92-5,Other,0.03,AI ug/org,0.03,,False,True,retained_route_group_logged_due_to_shared_CAS
+2365,210880-92-5,Other,0.11,ug/bee,0.11,,False,True,retained_route_group_logged_due_to_shared_CAS
+2366,210880-92-5,Oral,0.0154,mg/org,15.4,,True,True,rejected_route_group
+2367,210880-92-5,Oral,0.0146,mg/org,14.6,,True,True,rejected_route_group
+2368,210880-92-5,Oral,0.0117,mg/org,11.700000000000001,,True,True,rejected_route_group
+2383,210880-92-5,Oral,0.0157,AI ug/org,0.0157,,True,True,rejected_route_group
+2384,210880-92-5,Oral,0.00368,AI ug/org,0.00368,,True,True,rejected_route_group
+2385,210880-92-5,Oral,0.00408,AI ug/org,0.00408,,True,True,rejected_route_group
+2386,210880-92-5,Other,0.0037/,AI ug/org,0.0037,,False,True,retained_route_group_logged_due_to_shared_CAS
+2387,210880-92-5,Oral,1.11,AI ng/org,0.00111,,True,True,rejected_route_group
+2388,210880-92-5,Oral,1.24,AI ng/org,0.00124,,True,True,rejected_route_group
+2389,210880-92-5,Oral,1.25,AI ng/org,0.00125,,True,True,rejected_route_group
+2390,210880-92-5,Oral,4.83,AI ng/org,0.00483,,True,True,rejected_route_group
+2391,210880-92-5,Oral,5.37,AI ng/org,0.005370000000000001,,True,True,rejected_route_group
+2392,210880-92-5,Oral,5.07,AI ng/org,0.005070000000000001,,True,True,rejected_route_group
+2396,210880-92-5,Oral,2.79,AI ng/org,0.00279,,True,True,rejected_route_group
+2397,210880-92-5,Oral,2.82,AI ng/org,0.00282,,True,True,rejected_route_group
+2398,210880-92-5,Oral,2.75,AI ng/org,0.00275,,True,True,rejected_route_group
+2399,210880-92-5,Oral,2.19,AI ng/org,0.00219,,True,True,rejected_route_group
+2400,210880-92-5,Oral,2.16,AI ng/org,0.00216,,True,True,rejected_route_group
+2401,210880-92-5,Oral,2.20,AI ng/org,0.0022,,True,True,rejected_route_group
+2405,210880-92-5,Oral,2.85,AI ng/org,0.00285,,True,True,rejected_route_group
+2406,210880-92-5,Oral,2.50,AI ng/org,0.0025,,True,True,rejected_route_group
+2407,210880-92-5,Oral,2.61,AI ng/org,0.00261,,True,True,rejected_route_group
+2408,210880-92-5,Oral,4.671,AI ng/org,0.004671000000000001,,True,True,rejected_route_group
+2409,210880-92-5,Oral,4.930,AI ng/org,0.0049299999999999995,,True,True,rejected_route_group
+2410,210880-92-5,Oral,4.514,AI ng/org,0.004514000000000001,,True,True,rejected_route_group
+2411,210880-92-5,Oral,3.747,AI ng/org,0.003747,,True,True,rejected_route_group
+2412,210880-92-5,Oral,3.885,AI ng/org,0.003885,,True,True,rejected_route_group
+2413,210880-92-5,Oral,3.789,AI ng/org,0.0037890000000000003,,True,True,rejected_route_group
+2414,210880-92-5,Oral,4.369,AI ng/org,0.004369,,True,True,rejected_route_group
+2415,210880-92-5,Oral,4.507,AI ng/org,0.004507,,True,True,rejected_route_group
+2416,210880-92-5,Oral,4.627,AI ng/org,0.004627,,True,True,rejected_route_group
+2417,210880-92-5,Contact,21.418,ng/org,0.021418,,False,True,retained_route_group_logged_due_to_shared_CAS
+2419,210880-92-5,Oral,1.68,AI ng/org,0.00168,,True,True,rejected_route_group
+2421,210880-92-5,Oral,1.90,AI ng/org,0.0019,,True,True,rejected_route_group
+2422,210880-92-5,Oral,6.76,AI ng/org,0.0067599999999999995,,True,True,rejected_route_group
+2424,210880-92-5,Oral,6.27,AI ng/org,0.0062699999999999995,,True,True,rejected_route_group
+2425,210880-92-5,Oral,6.13,AI ng/org,0.00613,,True,True,rejected_route_group
+2432,219714-96-2,Oral,21.2,AI ug/org,21.2,>,True,True,rejected_route_group
+2433,219714-96-2,Oral,8.48,AI ug/org,8.48,>,True,True,rejected_route_group
+2434,219714-96-2,Contact,21.9,AI ug/org,21.9,>,False,True,retained_route_group_logged_due_to_shared_CAS
+2435,219714-96-2,Contact,100,AI ug/org,100.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+2436,219714-96-2,Oral,3.4,AI ug/org/d,3.4,>,True,True,rejected_route_group
+2437,219714-96-2,Oral,85.3,AI ug/org,85.3,>,True,True,rejected_route_group
+2447,243973-20-8,Oral,93,AI ug/org,93.0,,True,True,rejected_route_group
+2448,243973-20-8,Oral,1.4,AI ug/org/d,1.4,,True,True,rejected_route_group
+2449,243973-20-8,Oral,88,AI ug/org,88.0,>,True,True,rejected_route_group
+2450,243973-20-8,Contact,200,AI ug/org,200.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+2451,243973-20-8,Oral,5.2,AI ug/org,5.2,,True,True,rejected_route_group
+2452,243973-20-8,Contact,84,AI ug/org,84.0,,False,True,retained_route_group_logged_due_to_shared_CAS
+2453,243973-20-8,Contact,100,AI ug/org,100.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+2454,243973-20-8,Oral,220,AI ug/org,220.0,>,True,True,rejected_route_group
+2467,283594-90-1,Other,43331000000000000,ug/bee,4.3331e+16,,False,True,retained_route_group_logged_due_to_shared_CAS
+2468,283594-90-1,Oral,0.06,AI ug/org/d,0.06,>,True,True,rejected_route_group
+2469,283594-90-1,Other,10009000000000000,AI ug/org,1.0009e+16,,False,True,retained_route_group_logged_due_to_shared_CAS
+2470,283594-90-1,Oral,0.07,AI ug/org/d,0.07,>,True,True,rejected_route_group
+2472,283594-90-1,Oral,64.1,AI ug/org,64.1,,True,True,rejected_route_group
+2473,283594-90-1,Contact,200,AI ug/org,200.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+2474,283594-90-1,Oral,0.3,AI ug/org/d,0.3,>,True,True,rejected_route_group
+2475,283594-90-1,Oral,792.4,AI ug/org,792.4,,True,True,rejected_route_group
+2476,283594-90-1,Contact,200,AI ug/org,200.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+2523,500008-45-7,Oral,0.119,AI ug/org/d,0.119,,False,True,retained_route_group_logged_due_to_shared_CAS
+2524,500008-45-7,Contact,0.706,ug/org,0.706,,False,True,retained_route_group_logged_due_to_shared_CAS
+2526,500008-45-7,Other,23046000000000,AI ug/org,23046000000000.0,,True,True,rejected_route_group
+2527,500008-45-7,Other,4.609200000000000000,ug/bee,4.6092,,True,True,rejected_route_group
+2528,500008-45-7,Oral,1.6,AI ug/org/d,1.6,,False,True,retained_route_group_logged_due_to_shared_CAS
+2529,500008-45-7,Oral,0.193,AI ug/org/d,0.193,,False,True,retained_route_group_logged_due_to_shared_CAS
+2584,943831-98-9,Oral,5.34,AI ug/org/d,5.34,>,True,True,rejected_route_group
+2585,943831-98-9,Contact,98.1,AI ug/org,98.1,>,False,True,retained_route_group_logged_due_to_shared_CAS
+2586,943831-98-9,Oral,108,AI ug/org,108.0,>,True,True,rejected_route_group
+2612,958647-10-4,Oral,10.4,AI ug/org,10.4,,True,True,rejected_route_group
+2613,958647-10-4,Oral,21.7,AI ug/org,21.7,>,True,True,rejected_route_group
+2614,958647-10-4,Oral,8.19,AI ug/org,8.19,,True,True,rejected_route_group
+2615,958647-10-4,Oral,100,AI ug/org,100.0,>,True,True,rejected_route_group
+2616,958647-10-4,Contact,100,AI ug/org,100.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+2617,958647-10-4,Contact,50,AI ug/org,50.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+2631,1072957-71-1,Oral,5.38,AI ug/org/d,5.38,>,True,True,rejected_route_group
+2632,1072957-71-1,Contact,100,AI ug/org,100.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+2633,1072957-71-1,Oral,109,AI ug/org,109.0,>,True,True,rejected_route_group
+2638,1228284-64-7,Oral,116,AI ug/org,116.0,>,True,True,rejected_route_group
+2639,1228284-64-7,Contact,100,AI ug/org,100.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+2640,1228284-64-7,Oral,7.6,AI ug/org/d,7.6,,True,True,rejected_route_group
+2641,1228284-64-7,Oral,0.0035,AI ug/org/d,0.0035,>,True,True,rejected_route_group
+2660,1390661-72-9,Oral,3.7,AI ug/org/d,3.7,,True,True,rejected_route_group
+2661,1390661-72-9,Contact,100,AI ug/org,100.0,>,False,True,retained_route_group_logged_due_to_shared_CAS
+2662,1390661-72-9,Oral,105.4,AI ug/org,105.4,>,True,True,rejected_route_group

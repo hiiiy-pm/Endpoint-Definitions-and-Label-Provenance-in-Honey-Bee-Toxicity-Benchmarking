@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 16116,
+        "MolecularFormula": "C14H20N2O",
+        "SMILES": "CC1CCCCC1NC(=O)NC2=CC=CC=C2",
+        "InChIKey": "JXVIIQLNUPXOII-UHFFFAOYSA-N",
+        "IUPACName": "1-(2-methylcyclohexyl)-3-phenylurea"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "request_started_utc": "2026-10-03T14:38:10.914451+00:00",
+  "response_completed_utc": "2026-10-03T14:38:12.672825+00:00",
+  "url": "https://pubchem.ncbi.nlm.nih.gov/sdq/sdqagent.cgi?infmt=json&outfmt=json&query=%7B%22download%22%3A+%22%2A%22%2C+%22collection%22%3A+%22literature%22%2C+%22where%22%3A+%7B%22ands%22%3A+%5B%7B%22cid%22%3A+%229881821%22%7D%5D%7D%2C+%22order%22%3A+%5B%22articlepubdate%2Casc%22%5D%2C+%22start%22%3A+0%2C+%22limit%22%3A+5%2C+%22downloadfilename%22%3A+%22pubchem_cid_9881821_literature%22%2C+%22nullatbottom%22%3A+1%7D",
+  "status": 404,
+  "response_headers": {
+    "Date": "Sat, 03 Oct 2026 14:38:17 GMT",
+    "Server": "Apache",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "Referrer-Policy": "origin-when-cross-origin",
+    "Content-Security-Policy": "upgrade-insecure-requests",
+    "Cache-Control": "private",
+    "Ncbi-Phid": "95B712FCAC1135910000000000000001.m_1",
+    "Ncbi-Sid": "95B712FCAC113591_0000SID",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Content-Type": "text/html",
+    "Set-Cookie": "ncbi_sid=95B712FCAC113591_0000SID; domain=.nih.gov; path=/; expires=Sun, 03 Oct 2027 14:38:17 GMT",
+    "Vary": "Accept-Encoding",
+    "Content-Encoding": "gzip",
+    "X-Ua-Compatible": "IE=Edge",
+    "X-Xss-Protection": "1; mode=block",
+    "Access-Control-Allow-Origin": "*",
+    "Via": "1.1 google",
+    "Alt-Svc": "clear",
+    "Transfer-Encoding": "chunked"
+  },
+  "sha256": "ccedb67fbecdddd3c88f5674bd464f6884f898a9407f35a89d237b5ea39f3ed6",
+  "bytes": 373109,
+  "attempt": 1,
+  "scope": "current_public_response_not_a_2024_snapshot"
+}

@@ -1,0 +1,7 @@
+Split,Partition,MixedExcludeN,UniformExcludeN,AddedN,AddedIndices
+random,train,728,730,2,861;953
+random,test,185,185,0,
+maxmin,train,727,729,2,861;953
+maxmin,test,186,186,0,
+time,train,734,734,0,
+time,test,179,181,2,861;953

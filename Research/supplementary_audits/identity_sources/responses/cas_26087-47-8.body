@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 33294,
+        "MolecularFormula": "C13H21O3PS",
+        "SMILES": "CC(C)OP(=O)(OC(C)C)SCC1=CC=CC=C1",
+        "InChIKey": "FCOAHACKGGIURQ-UHFFFAOYSA-N",
+        "IUPACName": "di(propan-2-yloxy)phosphorylsulfanylmethylbenzene"
+      }
+    ]
+  }
+}

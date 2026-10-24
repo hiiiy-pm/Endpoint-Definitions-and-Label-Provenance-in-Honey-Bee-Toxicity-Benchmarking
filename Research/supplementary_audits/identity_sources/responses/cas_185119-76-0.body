@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 11496886,
+        "MolecularFormula": "C13H12IN5O6S",
+        "SMILES": "CC1=NC(=NC(=N1)OC)NC(=O)NS(=O)(=O)C2=C(C=CC(=C2)I)C(=O)O",
+        "InChIKey": "MBFHUWCOCCICOK-UHFFFAOYSA-N",
+        "IUPACName": "4-iodo-2-[(4-methoxy-6-methyl-1,3,5-triazin-2-yl)carbamoylsulfamoyl]benzoic acid"
+      }
+    ]
+  }
+}

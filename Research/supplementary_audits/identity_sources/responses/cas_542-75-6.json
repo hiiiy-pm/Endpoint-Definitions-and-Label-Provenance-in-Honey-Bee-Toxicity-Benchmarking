@@ -1,0 +1,32 @@
+{
+  "request_started_utc": "2026-10-03T14:41:44.417993+00:00",
+  "response_completed_utc": "2026-10-03T14:41:46.830213+00:00",
+  "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/542-75-6/property/InChIKey,IsomericSMILES,MolecularFormula,IUPACName/JSON",
+  "status": 200,
+  "response_headers": {
+    "Date": "Sat, 03 Oct 2026 14:41:51 GMT",
+    "Server": "Apache",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "Referrer-Policy": "origin-when-cross-origin",
+    "Content-Security-Policy": "upgrade-insecure-requests",
+    "Cache-Control": "private",
+    "Expires": "Sat, 03 Oct 2026 15:41:51 GMT",
+    "Ncbi-Phid": "95B7C95BAC1142F10000000000000001.m_1",
+    "Ncbi-Sid": "95B7C95BAC1142F1_0000SID",
+    "X-Throttling-Control": "Request Count status: Green (1%), Request Time status: Green (0%), Service status: Green (20%)",
+    "Content-Type": "application/json",
+    "Set-Cookie": "ncbi_sid=95B7C95BAC1142F1_0000SID; domain=.nih.gov; path=/; expires=Sun, 03 Oct 2027 14:41:51 GMT",
+    "Vary": "Accept-Encoding",
+    "Content-Encoding": "gzip",
+    "X-Ua-Compatible": "IE=Edge",
+    "X-Xss-Protection": "1; mode=block",
+    "Access-Control-Allow-Origin": "*",
+    "Via": "1.1 google",
+    "Alt-Svc": "clear",
+    "Transfer-Encoding": "chunked"
+  },
+  "sha256": "dda60d8baac9f213e3c3245daf27f12a89f3fe5ee07ef6c519515940ef6fccfc",
+  "bytes": 261,
+  "attempt": 1,
+  "scope": "current_public_response_not_a_2024_snapshot"
+}

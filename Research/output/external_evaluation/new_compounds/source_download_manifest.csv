@@ -1,0 +1,8 @@
+﻿file,url,status,error,sha256,pages
+output\external_evaluation\new_compounds\sources\acynonapyr_pmra_2026.pdf,https://publications.gc.ca/collections/collection_2026/sc-hc/h113-9/H113-9-2026-3-eng.pdf,unavailable,response is not PDF,,
+output\external_evaluation\new_compounds\sources\spiropidion_pmra_2026.pdf,https://publications.gc.ca/collections/collection_2026/sc-hc/h113-9/H113-9-2026-9-eng.pdf,unavailable,response is not PDF,,
+output\external_evaluation\new_compounds\sources\cyclobutrifluram_epa_2025.pdf,https://downloads.regulations.gov/EPA-HQ-OPP-2022-0003-0026/content.pdf,unavailable,HTTP Error 403: Forbidden,,
+output\external_evaluation\new_compounds\sources\inpyrfluxam_epa.pdf,https://downloads.regulations.gov/EPA-HQ-OPP-2018-0038-0025/content.pdf,unavailable,HTTP Error 403: Forbidden,,
+output\external_evaluation\new_compounds\sources\inpyrfluxam_developer_2020.pdf,https://www.sumitomo-chem.co.jp/rd/report/files/docs/2020J_1.pdf,downloaded,,ef671382b9ed1a6ec8ff6693b726dcc690a71ccc2ad93fc048cc8ef3c58e1acc,13.0
+output\external_evaluation\new_compounds\sources\oxazosulfyl_developer_2021.pdf,https://www.sumitomo-chem.co.jp/english/rd/report/2021E_2.pdf,downloaded,,015c40f9860fd0b43ae7f0e09b2642735b9444ca5bbba70e8c8886eec54a3e1b,15.0
+output\external_evaluation\new_compounds\sources\isocycloseram_who_2025.pdf,https://extranet.who.int/prequal/sites/default/files/doc_parts/WHOVC-SP_Isocycloseram_2025.1.pdf,downloaded,,70e6549f8a5c0a64c15d0aa2adb280a444b635750c28fd5268c2a447d4fe581b,44.0

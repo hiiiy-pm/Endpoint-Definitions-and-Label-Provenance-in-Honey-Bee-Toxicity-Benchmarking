@@ -1,0 +1,9 @@
+﻿compound_id,SMILES,name,inchikey
+cyclobutrifluram,O=C(N[C@@H]1CC[C@@H]1c1ccc(Cl)cc1Cl)c1cccnc1C(F)(F)F,cyclobutrifluram,GBFKIHJZPMECCF-BXUZGUMPSA-N
+isocycloseram,CCN1OCC(NC(=O)c2ccc(C3=NOC(c4cc(Cl)c(F)c(Cl)c4)(C(F)(F)F)C3)cc2C)C1=O,isocycloseram,WLSQDEYDCAGPIR-UHFFFAOYSA-N
+dimpropyridaz,CCN(C(=O)c1cnn(C(C)C(C)C)c1C)c1ccnnc1,dimpropyridaz,NQPGZXOPMRKAGJ-UHFFFAOYSA-N
+acynonapyr,CCCOc1cc(C(F)(F)F)ccc1OC1C[C@H]2CCC[C@@H](C1)N2Oc1ccc(C(F)(F)F)cn1,acynonapyr,GIDAJLLAARKRMS-DFNIBXOVSA-N
+oxazosulfyl,CCS(=O)(=O)c1cccnc1-c1nc2cc(S(=O)(=O)C(F)(F)F)ccc2o1,oxazosulfyl,PTQBEFQWTBZMED-UHFFFAOYSA-N
+fluhexafon,CON=C1CCC(C(C#N)S(=O)(=O)CCC(F)(F)F)CC1,fluhexafon,NGLCOYIAJMJYQI-UHFFFAOYSA-N
+inpyrfluxam,C[C@@H]1CC(C)(C)c2cccc(NC(=O)c3cn(C)nc3C(F)F)c21,inpyrfluxam,YTCIYOXHHQLDEI-SNVBAGLBSA-N
+spiropidion,CCOC(=O)OC1=C(c2c(C)cc(Cl)cc2C)C(=O)N(C)C12CCN(OC)CC2,spiropidion,WOPFPAIGRGHWAQ-UHFFFAOYSA-N

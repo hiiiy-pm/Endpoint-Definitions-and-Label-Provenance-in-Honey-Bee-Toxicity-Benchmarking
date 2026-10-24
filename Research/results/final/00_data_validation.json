@@ -1,0 +1,33 @@
+{
+  "seed": 20260829,
+  "n_rows": 1035,
+  "n_unique_smiles": 1035,
+  "tier_counts": {
+    "0": 177,
+    "1": 562,
+    "2": 125,
+    "3": 171
+  },
+  "source_counts": {
+    "PPDB": 510,
+    "ECOTOX": 441,
+    "BPDB": 84
+  },
+  "nested_endpoint_invariant": true,
+  "source_csv_sha256": "de4b160a23601a44ac5ec5b23aae95973acba060135630a6df8f73d128baea9e",
+  "split_Random": {
+    "train_n": 828,
+    "test_n": 207,
+    "overlap_n": 0
+  },
+  "split_MaxMin": {
+    "train_n": 828,
+    "test_n": 207,
+    "overlap_n": 0
+  },
+  "split_Time": {
+    "train_n": 828,
+    "test_n": 207,
+    "overlap_n": 0
+  }
+}

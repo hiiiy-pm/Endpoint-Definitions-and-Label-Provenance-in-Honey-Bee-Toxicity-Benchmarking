@@ -1,0 +1,14 @@
+{
+  "data/raw/apistox.csv": "de4b160a23601a44ac5ec5b23aae95973acba060135630a6df8f73d128baea9e",
+  "output/external_data_audit/cache/upstream_ecotox.csv": "426b4be8ab8b265404a75efa75fc892bf3074a4352efcdab6af9cd736d4f7c5a",
+  "output/external_data_audit/apistox_structures.csv": "9f87a916fa57755dcc19bc9cff8e2e38d1a079e1a0fdeda2b1ef7067011802a1",
+  "output/external_data_audit/oft_acute_endpoints_aligned.csv": "ede2c6499e711854371249c4f69374fe978c0b729dbfadc6e91727048ae83ffc",
+  "output/external_data_audit/oft_bee_source_rows.csv": "8952004e6f8b565413fca06a0e41caeb101338859d2c89b9e62cb859a780b3d7",
+  "output/external_data_audit/plos_adult_acute_endpoints_aligned.csv": "af8c38c358f82295da0402381f5d21da899bdba61a2a66eea4a6eb3243436d87",
+  "output/external_data_audit/plos_mrid_citations.csv": "4f44d5a778a635aea0e3347c2855c39edfb02c175818e4fe32bb8f0892a379c2",
+  "output/external_data_audit/same_route_label_concordance.csv": "c796ec5ea4a2d8d4d78c3280a14cf75a9f85add632299e57fd2608f58f7e00ff",
+  "results/label_audit/02_compound_labels_by_rule.csv": "4b637d259f636f487c0322e844a211b7ad5e461784b2340294a9a70aa1be68a9",
+  "data/external_raw/OFT3.0 export repository.xlsx": "5181661e921651d4087b544981e1e5a63b99532844eac0112732806a00a85eda",
+  "data/external_raw/journal.pone.0265962.s001.xlsx": "dcee6401ef66ab914590cd7cb3a0dcfce8ccdc6e67792ee42f6a382f79a1ff2b",
+  "data/external_raw/journal.pone.0265962.s004.xlsx": "2f5db66bec655a7c13687435989b74d14909eabb6184ffe6a37b15f820656575"
+}

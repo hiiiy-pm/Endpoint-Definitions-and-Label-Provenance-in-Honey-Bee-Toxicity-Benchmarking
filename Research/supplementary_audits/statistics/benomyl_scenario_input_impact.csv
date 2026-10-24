@@ -1,0 +1,16 @@
+Scenario,Policy,Index,CAS,ArchivedRetained,ReplayedRetained,ArchivedY100,ArchivedY11,ArchivedY1,ReplayedY100,ReplayedY11,ReplayedY1,EffectiveInputChanged,RandomMembership,MaxMinMembership,TimeMembership
+primary,keep,111,17804-35-2,True,True,1,1,0,1,1,0,False,test,train,train
+primary,exclude,111,17804-35-2,False,False,1,1,-1,-1,-1,0,False,test,train,train
+primary,negative,111,17804-35-2,True,True,1,1,0,0,1,0,True,test,train,train
+conservative,keep,111,17804-35-2,True,True,1,1,0,1,1,0,False,test,train,train
+conservative,exclude,111,17804-35-2,False,False,1,1,-1,-1,-1,0,False,test,train,train
+conservative,negative,111,17804-35-2,True,True,1,1,0,0,1,0,True,test,train,train
+adult48,keep,111,17804-35-2,True,True,1,1,0,1,1,0,False,test,train,train
+adult48,exclude,111,17804-35-2,False,False,-1,-1,-1,-1,-1,-1,False,test,train,train
+adult48,negative,111,17804-35-2,True,True,0,1,0,0,1,0,False,test,train,train
+regulatory,keep,111,17804-35-2,True,True,1,1,0,1,1,0,False,test,train,train
+regulatory,exclude,111,17804-35-2,True,True,1,1,0,1,1,0,False,test,train,train
+regulatory,negative,111,17804-35-2,True,True,1,1,0,1,1,0,False,test,train,train
+combined,keep,111,17804-35-2,True,True,1,1,0,1,1,0,False,test,train,train
+combined,exclude,111,17804-35-2,False,False,1,1,-1,-1,-1,0,False,test,train,train
+combined,negative,111,17804-35-2,True,True,1,1,0,0,1,0,True,test,train,train

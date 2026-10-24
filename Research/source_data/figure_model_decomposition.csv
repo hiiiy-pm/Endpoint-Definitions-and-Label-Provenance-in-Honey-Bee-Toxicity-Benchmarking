@@ -1,0 +1,46 @@
+split,model,endpoint,auroc
+Random,Agrochemical flags,100,0.6796687948922586
+Random,Source + route,100,0.5382083000798085
+Random,All metadata,100,0.6544293695131683
+Random,ECFP structure,100,0.717877094972067
+Random,Structure + metadata,100,0.7324421388667199
+Random,Agrochemical flags,11,0.8583944113605131
+Random,Source + route,11,0.5535959688502061
+Random,All metadata,11,0.8743701328447091
+Random,ECFP structure,11,0.8480302336234539
+Random,Structure + metadata,11,0.89120476408612
+Random,Agrochemical flags,1,0.9088296760710554
+Random,Source + route,1,0.5936084987809126
+Random,All metadata,1,0.9127481713688612
+Random,ECFP structure,1,0.9169278996865204
+Random,Structure + metadata,1,0.957680250783699
+MaxMin,Agrochemical flags,100,0.6260631001371743
+MaxMin,Source + route,100,0.5247599451303154
+MaxMin,All metadata,100,0.5856652949245542
+MaxMin,ECFP structure,100,0.5920438957475994
+MaxMin,Structure + metadata,100,0.6382716049382715
+MaxMin,Agrochemical flags,11,0.7841991341991341
+MaxMin,Source + route,11,0.562049062049062
+MaxMin,All metadata,11,0.8112554112554112
+MaxMin,ECFP structure,11,0.7922077922077921
+MaxMin,Structure + metadata,11,0.8580086580086579
+MaxMin,Agrochemical flags,1,0.8844517958412098
+MaxMin,Source + route,1,0.4728260869565217
+MaxMin,All metadata,1,0.8647211720226843
+MaxMin,ECFP structure,1,0.7951323251417769
+MaxMin,Structure + metadata,1,0.9286389413988656
+Time,Agrochemical flags,100,0.57125748502994
+Time,Source + route,100,0.4514221556886227
+Time,All metadata,100,0.5600299401197605
+Time,ECFP structure,100,0.6910179640718563
+Time,Structure + metadata,100,0.6673652694610778
+Time,Agrochemical flags,11,0.8103878930355569
+Time,Source + route,11,0.6021157801939466
+Time,All metadata,11,0.8049515133705554
+Time,ECFP structure,11,0.7538936232735822
+Time,Structure + metadata,11,0.8473405818395534
+Time,Agrochemical flags,1,0.895264116575592
+Time,Source + route,1,0.5686475409836066
+Time,All metadata,1,0.8937841530054644
+Time,ECFP structure,1,0.7923497267759563
+Time,Structure + metadata,1,0.9433060109289616

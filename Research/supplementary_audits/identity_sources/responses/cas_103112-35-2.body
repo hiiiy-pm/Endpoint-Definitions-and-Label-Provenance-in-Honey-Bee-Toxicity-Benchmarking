@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 3033865,
+        "MolecularFormula": "C12H8Cl5N3O2",
+        "SMILES": "CCOC(=O)C1=NN(C(=N1)C(Cl)(Cl)Cl)C2=C(C=C(C=C2)Cl)Cl",
+        "InChIKey": "GMBRUAIJEFRHFQ-UHFFFAOYSA-N",
+        "IUPACName": "ethyl 1-(2,4-dichlorophenyl)-5-(trichloromethyl)-1,2,4-triazole-3-carboxylate"
+      }
+    ]
+  }
+}

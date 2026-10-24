@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "scope": "current_release_replay",
+  "purpose": "Verify that the released structure-only inputs reproduce the released prediction bytes using the released restored models.",
+  "recorded_utc": "2026-10-14T05:42:04.219522+00:00",
+  "path_base": "Research",
+  "original_event_record_scope": "Original prediction_run_manifest.json files retain the recorded original inference events. Their restoration_manifest_sha256 values identify the manifests recorded at those events, not the current release manifest.",
+  "current_restoration_manifest": "output/unseen_identity_case_study/model_restore/restoration_manifest.json",
+  "current_restoration_manifest_sha256": "d260000619093d4ed85da86d07275e568c71ffe58228c9c1bea859d5e0f9e759",
+  "current_restoration_manifest_input_hashes_checked": 15,
+  "current_restoration_manifest_artifact_hashes_checked": 15,
+  "all_current_restoration_manifest_hashes_match": true,
+  "all_restoration_source_inputs_unchanged": true,
+  "cache_metadata_unchanged": true,
+  "current_files_sha256": {
+    "output/unseen_identity_case_study/model_restore/restoration_manifest.json": "d260000619093d4ed85da86d07275e568c71ffe58228c9c1bea859d5e0f9e759",
+    "output/unseen_identity_case_study/model_restore/restoration_verification.json": "90eade0ad6b14f6c7ccf600411d651d6246388d5e478b2cb2e26dc8f98f9f1d2",
+    "output/unseen_identity_case_study/model_restore/predict_external.py": "d11b2ec2d81513f39f7fce56cef29faa01090d937d9451bf79a050b2998483f4",
+    "output/unseen_identity_case_study/run_frozen_structure_predictions.py": "51787c4cbebf319ef985a3ef0401324dc491226924b3d573f5ed5ebe16538a79",
+    "results/cache/CACHE_METADATA.json": "8d0871f5bf86a5305e34e19be27ec3dbf90af4e5eded937abe68d6d6a656e5fe",
+    "output/unseen_identity_case_study/predictions/initial8/prediction_run_manifest.json": "636acc4c6918d08f0a9eabe2ccfeaf0b340491e8ce51d93b54a6c7686dede71a",
+    "output/unseen_identity_case_study/data_curation/frozen_initial8_inference_structures.csv": "644cf492c823911144926e7b9c7d0c1561b3c0ef431e93dfb0d20c142f6efa00",
+    "output/unseen_identity_case_study/data_curation/frozen_initial8_manifest.json": "c7ab736917995c152ddafc0b2ab559598d4f592396f2ff56e8650b615c38fbbe",
+    "output/unseen_identity_case_study/predictions/initial8/structure_only_input.csv": "75a1aabc4641f0ef801486995f9a10b1077bf1c824d53e44e6e8cb0e322e349e",
+    "output/unseen_identity_case_study/predictions/initial8/new_compound_predictions.csv": "17d641a1bfcf0093fe411543bc41de1bd95509f0d57c25fccbe531ff51f6b102",
+    "output/unseen_identity_case_study/predictions/added2/prediction_run_manifest.json": "c03e5757e34a2128e5e1877a8b079256b900a287bcfbdf4b42bfb0306375974c",
+    "output/unseen_identity_case_study/data_curation/frozen_added2_inference_structures.csv": "bf751a65630ff394fe5948c78a457bfb430c974b33c795e641229202ae207207",
+    "output/unseen_identity_case_study/predictions/added2_source_manifest.json": "057cff0f3c50a62be8140588ee6f1d4159c141c305200b2419d23db72d91689b",
+    "output/unseen_identity_case_study/predictions/added2/structure_only_input.csv": "af570a315aa3f30fc05ddd6b5a0b502ca0da919000a7ad6bc5a2a59f8b53db85",
+    "output/unseen_identity_case_study/predictions/added2/new_compound_predictions.csv": "7bdcae0251459b9bb330d605b97e5eb954b373a749e0276384010ea103954e7d"
+  },
+  "batches": [
+    {
+      "batch": "initial8",
+      "original_prediction_event_manifest": "output/unseen_identity_case_study/predictions/initial8/prediction_run_manifest.json",
+      "recorded_original_started_utc": "2026-09-22T17:21:07.750032+00:00",
+      "recorded_original_completed_utc": "2026-09-22T17:21:11.998035+00:00",
+      "release_replay": {
+        "started_utc": "2026-10-14T05:40:44.891773+00:00",
+        "completed_utc": "2026-10-14T05:40:50.523415+00:00",
+        "completed": true,
+        "n_structures": 8,
+        "n_prediction_rows": 72,
+        "fit_calls_in_runner": 0,
+        "external_labels_read": false,
+        "require_new_structures": true,
+        "columns_passed_to_inference": [
+          "compound_id",
+          "SMILES",
+          "name",
+          "inchikey"
+        ],
+        "source_unchanged_after_inference": true
+      },
+      "structure_source": "output/unseen_identity_case_study/data_curation/frozen_initial8_inference_structures.csv",
+      "structure_source_manifest": "output/unseen_identity_case_study/data_curation/frozen_initial8_manifest.json",
+      "structure_only_input": "output/unseen_identity_case_study/predictions/initial8/structure_only_input.csv",
+      "released_predictions": "output/unseen_identity_case_study/predictions/initial8/new_compound_predictions.csv",
+      "replay_prediction_sha256": "17d641a1bfcf0093fe411543bc41de1bd95509f0d57c25fccbe531ff51f6b102",
+      "replay_structure_input_byte_identical_to_released_input": true,
+      "replay_prediction_bytes_identical_to_released_predictions": true,
+      "original_prediction_event_manifest_bytes_preserved": true,
+      "classification_disagreements": 0
+    },
+    {
+      "batch": "added2",
+      "original_prediction_event_manifest": "output/unseen_identity_case_study/predictions/added2/prediction_run_manifest.json",
+      "recorded_original_started_utc": "2026-09-22T17:22:28.387128+00:00",
+      "recorded_original_completed_utc": "2026-09-22T17:22:32.445972+00:00",
+      "release_replay": {
+        "started_utc": "2026-10-14T05:40:44.912639+00:00",
+        "completed_utc": "2026-10-14T05:40:50.483184+00:00",
+        "completed": true,
+        "n_structures": 2,
+        "n_prediction_rows": 18,
+        "fit_calls_in_runner": 0,
+        "external_labels_read": false,
+        "require_new_structures": true,
+        "columns_passed_to_inference": [
+          "compound_id",
+          "SMILES",
+          "name",
+          "inchikey"
+        ],
+        "source_unchanged_after_inference": true
+      },
+      "structure_source": "output/unseen_identity_case_study/data_curation/frozen_added2_inference_structures.csv",
+      "structure_source_manifest": "output/unseen_identity_case_study/predictions/added2_source_manifest.json",
+      "structure_only_input": "output/unseen_identity_case_study/predictions/added2/structure_only_input.csv",
+      "released_predictions": "output/unseen_identity_case_study/predictions/added2/new_compound_predictions.csv",
+      "replay_prediction_sha256": "7bdcae0251459b9bb330d605b97e5eb954b373a749e0276384010ea103954e7d",
+      "replay_structure_input_byte_identical_to_released_input": true,
+      "replay_prediction_bytes_identical_to_released_predictions": true,
+      "original_prediction_event_manifest_bytes_preserved": true,
+      "classification_disagreements": 0
+    }
+  ],
+  "total_replayed_structures": 10,
+  "total_replayed_predictions": 90,
+  "all_prediction_bytes_identical": true,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "pandas": "3.0.1",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.8.0",
+    "rdkit": "2025.09.4",
+    "joblib": "1.6.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/broflanilide/property/InChIKey,InChI,IsomericSMILES/JSON",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 53341374,
+          "SMILES": "CN(C1=CC=CC(=C1F)C(=O)NC2=C(C=C(C=C2Br)C(C(F)(F)F)(C(F)(F)F)F)C(F)(F)F)C(=O)C3=CC=CC=C3",
+          "InChI": "InChI=1S/C25H14BrF11N2O2/c1-39(21(41)12-6-3-2-4-7-12)17-9-5-8-14(18(17)27)20(40)38-19-15(23(29,30)31)10-13(11-16(19)26)22(28,24(32,33)34)25(35,36)37/h2-11H,1H3,(H,38,40)",
+          "InChIKey": "QSLZKWPYTWEWHC-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}

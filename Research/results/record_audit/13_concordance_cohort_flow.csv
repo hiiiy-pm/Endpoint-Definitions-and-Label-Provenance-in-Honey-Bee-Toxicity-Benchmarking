@@ -1,0 +1,13 @@
+source_screen,stage,records,nonempty_full_keys,benchmark_compounds,scope
+EPA,source_screen,319,171,149,benchmark-wide label concordance; not split-specific saved-score reassessment
+EPA,same_full_InChIKey,275,149,149,benchmark-wide label concordance; not split-specific saved-score reassessment
+EPA,same_benchmark_route,134,133,133,benchmark-wide label concordance; not split-specific saved-score reassessment
+EPA,all_three_thresholds_determinate,104,103,103,benchmark-wide label concordance; not split-specific saved-score reassessment
+OpenFoodTox,source_screen,594,297,250,benchmark-wide label concordance; not split-specific saved-score reassessment
+OpenFoodTox,same_full_InChIKey,488,250,250,benchmark-wide label concordance; not split-specific saved-score reassessment
+OpenFoodTox,same_benchmark_route,263,216,216,benchmark-wide label concordance; not split-specific saved-score reassessment
+OpenFoodTox,all_three_thresholds_determinate,184,149,149,benchmark-wide label concordance; not split-specific saved-score reassessment
+OpenFoodTox_48h_screen,source_screen,205,147,130,benchmark-wide label concordance; not split-specific saved-score reassessment
+OpenFoodTox_48h_screen,same_full_InChIKey,182,130,130,benchmark-wide label concordance; not split-specific saved-score reassessment
+OpenFoodTox_48h_screen,same_benchmark_route,112,96,96,benchmark-wide label concordance; not split-specific saved-score reassessment
+OpenFoodTox_48h_screen,all_three_thresholds_determinate,85,72,72,benchmark-wide label concordance; not split-specific saved-score reassessment

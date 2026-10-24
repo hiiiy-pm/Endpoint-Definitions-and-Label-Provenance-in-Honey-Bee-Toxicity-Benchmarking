@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 24883,
+        "MolecularFormula": "C3H4Cl2",
+        "SMILES": "C(C=CCl)Cl",
+        "InChIKey": "UOORRWUZONOOLO-UHFFFAOYSA-N",
+        "IUPACName": "1,3-dichloroprop-1-ene"
+      }
+    ]
+  }
+}

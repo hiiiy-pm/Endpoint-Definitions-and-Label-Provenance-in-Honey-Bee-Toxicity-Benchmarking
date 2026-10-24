@@ -1,0 +1,442 @@
+name,CAS,Tier,label,ppdb_level,route,n_records,median,n_right_censored,n_right_censored_ge100,interval_label_100,median_exactly_100,replicated_label_matches,replicated_level_matches
+Ethanedioic acid,144-62-7,0,0,0,Contact,3,372.01,0,0,0,False,True,True
+Kieselguhr,61790-53-2,0,0,0,Contact,1,241.72,1,1,0,False,True,True
+Benzoic acid,65-85-0,1,0,1,Contact,1,12.5,1,0,-1,False,True,True
+"S-[(1,3-Dihydro-1,3-dioxo-2H-isoindol-2-yl)methyl]O,O-dimethyl ester, Phosphorodithioic acid",732-11-6,2,1,1,Contact,2,1.482,0,0,1,False,True,True
+"(2E)-3,7-Dimethyl-2,6-octadien-1-ol",106-24-1,1,0,1,Oral,1,43.0,0,0,1,False,True,True
+"Sulfuric acid, Iron(3+) salt (3:2)",10028-22-5,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"(1alpha,2alpha,3beta,4alpha,5alpha,6beta)-1,2,3,4,5,6-Hexachlorocyclohexane",58-89-9,3,1,2,Contact,4,0.33,0,0,1,False,True,True
+"Phosphoric acid 2,2-dichloroethenyl dimethyl ester",62-73-7,3,1,2,Contact,1,0.495,0,0,1,False,True,True
+2-[[Ethoxy[(1-methylethyl)amino]phosphinothioyl]oxy]benzoic acid 1-methylethyl ester,25311-71-1,3,1,2,Contact,1,0.05,0,0,1,False,True,True
+"Sulfuric acid, Zinc salt (1:1)",7733-02-0,0,0,0,Oral,4,187.35,0,0,0,False,True,True
+"3-[(Dimethoxyphosphinyl)oxy]-2-butenoic acid, Methyl ester",7786-34-7,3,1,2,Oral,1,0.027,0,0,1,False,True,True
+(2-Chloroethyl)phosphonic acid,16672-87-0,1,0,1,Contact,2,56.045,2,1,-1,False,True,True
+"Sulfuric acid, Manganese(2+) salt (1:1)",7785-87-7,1,0,1,Oral,4,77.25,0,0,1,False,True,True
+"2,3,4,5,6-Pentachlorophenol",87-86-5,1,0,1,Contact,1,48.34,1,0,-1,False,True,True
+1-Naphthalenol methylcarbamate,63-25-2,3,1,2,Contact,19,0.78,0,0,1,False,True,True
+N-Dodecylguanidine acetate (1:1),2439-10-3,0,0,0,Contact,2,106.045,2,1,-1,False,True,True
+"3,6-Dichloro-2-methyoxybenzoic acid",1918-00-9,1,0,1,Contact,2,95.325,2,1,-1,False,True,True
+"N'-(3,4-Dichlorophenyl)-N-methoxy-N-methylurea",330-55-2,0,0,0,Contact,1,120.86,1,1,0,False,True,True
+5-Methyl-2-(1-methylethyl)phenol,89-83-8,1,0,1,Contact,1,55.1,0,0,1,False,True,True
+Chloroethylmercury,107-27-7,1,0,1,Oral,1,13.0,0,0,1,False,True,True
+"Chloric acid, Sodium salt (1:1)",7775-09-9,1,0,1,Oral,2,47.9,2,0,-1,False,True,True
+"N-Butyl-N-ethyl-2,6-dinitro-4-(trifluoromethyl)benzenamine",1861-40-1,0,0,0,Contact,1,101.0,1,1,0,False,True,True
+Cadmium chloride (CdCl2),10108-64-2,2,1,1,Oral,2,1.8024999999999998,0,0,1,False,True,True
+"Benzoic acid, Methyl ester",93-58-3,0,0,0,Other,1,370.0,0,0,0,False,True,True
+"2-[(Trichloromethyl)thio]-1H-isoindole-1,3(2H)dione",133-07-3,1,0,1,Contact,1,12.09,1,0,-1,False,True,True
+Trichloronitromethane,76-06-2,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"Tetrahydro-3,5-dimethyl-2H-1,3,5-thiadiazine-2-thione",533-74-4,2,1,1,Oral,1,10.0,1,0,-1,False,True,True
+"N-(3,4-Dichlorophenyl)propanamide",709-98-8,1,0,1,Contact,2,61.985,2,0,-1,False,True,True
+"Sulfuric acid, Chromium(3+)salt(3:2)",10101-53-8,1,0,1,Oral,1,34.6,0,0,1,False,True,True
+"Nitrous acid, Sodium salt",7632-00-0,0,0,0,Contact,1,182.0,0,0,0,False,True,True
+Dimethyl disulfide,624-92-0,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"N'-(3,4-Dichlorophenyl)-N,N-dimethylurea",330-54-1,0,0,0,Contact,2,145.03,2,2,0,False,True,True
+2-Chloro-N-(1-methylethyl)-N-phenylacetamide,1918-16-7,0,0,0,Contact,2,168.0,1,0,-1,False,True,True
+"N-Acetylphosphoramidothioic acid O,S-dimethyl ester",30560-19-1,2,1,1,Contact,1,1.2,0,0,1,False,True,True
+Tetraethyl ester diphosphoric acid,107-49-3,3,1,2,Contact,2,0.0015,0,0,1,False,True,True
+2-Furancarboxaldehyde,98-01-1,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"2,4-Dichloro-1-(4-nitrophenoxy)benzene",1836-75-5,0,0,0,Contact,1,275.0,0,0,0,False,True,True
+(Acetato-kappaO)phenylmercury,62-38-4,2,1,1,Oral,1,10.0,0,0,1,False,True,True
+Nonanoic acid,112-05-0,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"N,N'-[1,4-Piperazinediylbis(2,2,2-trichloroethylidene)]bis-formamide",26644-46-2,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"1,2-Dihydro-3,6-pyridazinedione",123-33-1,1,0,1,Contact,1,36.26,1,0,-1,False,True,True
+"3-(2-Chloro-3,3,3-trifluoro-1-propenyl)-2,2-dimethylcyclopropanecarboxylic acid cyano(3-phenoxyphenyl)methyl ester",68085-85-8,3,1,2,Contact,1,0.022,0,0,1,False,True,True
+"N-(1-Ethylpropyl)-3,4-dimethyl-2,6-dinitro-benzenamine",40487-42-1,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"2-[(Dimethoxyphosphinothioyl)thio]butanedioic acid 1,4-diethyl ester",121-75-5,3,1,2,Contact,7,0.19,0,0,1,False,True,True
+1-Methyl-2-pyrrolidinone,872-50-4,0,0,0,Contact,1,2000.0,1,1,0,False,True,True
+"1,2,3,4-Tetrahydronaphthalene",119-64-2,3,1,2,Contact,1,0.336,1,0,-1,False,True,True
+"As,As-Dimethylarsinic acid",75-60-5,0,0,0,Contact,1,157.12,1,1,0,False,True,True
+"2-(1-Methylethoxy)phenol, 1-(N-Methylcarbamate)",114-26-1,3,1,2,Contact,3,0.112,0,0,1,False,True,True
+"N,N-Bis(2-methylpropyl)carbamothioic acid S-ethyl ester",2008-41-5,1,0,1,Contact,1,26.01,1,0,-1,False,True,True
+4-Chloro-alpha-(4-chlorophenyl)-alpha-methylbenzenemethanol,80-06-8,1,0,1,Contact,1,50.0,1,0,-1,False,True,True
+"2-Aminobenzoic acid, Methyl ester",134-20-3,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"Methylarsonic acid, Monosodium salt",2163-80-6,1,0,1,Contact,2,46.085,1,0,-1,False,True,True
+"N-[1-[(Butylamino)carbonyl]-1H-benzimidazol-2-yl]carbamic acid, Methyl ester",17804-35-2,2,1,1,Oral,1,10.0,0,0,1,False,True,True
+"Phosphorothioic acid O,O-diethyl O-2-quinoxalinyl ester  ",13593-03-8,3,1,2,Contact,1,0.0292,0,0,1,False,True,True
+"Phosphorodithioic acid O,O-diethyl S-[(4-oxo-1,2,3-benzotriazin-3(4H)-yl)methyl] ester",2642-71-9,3,1,2,Contact,1,0.981,0,0,1,False,True,True
+As-(4-Aminophenyl)arsonic acid,98-50-0,1,0,1,Contact,2,100.0,2,2,0,True,True,True
+1-Naphthaleneacetic acid,86-87-3,1,0,1,Oral,1,25.0,1,0,-1,False,True,True
+2-Chloro-N-(ethoxymethyl)-N-(2-ethyl-6-methylphenyl)acetamide,34256-82-1,1,0,1,Oral,4,24.15,1,1,-1,False,True,True
+4-Chloro-alpha-(4-chlorophenyl)-alpha-(trichloromethyl)benzenemethanol,115-32-2,2,1,1,Oral,1,10.0,1,0,-1,False,True,True
+Paraffin oils,8012-95-1,0,0,0,Contact,2,965.0,2,2,0,False,True,True
+5-Amino-4-chloro-2-phenyl-3(2H)-pyridazinone,1698-60-8,0,0,0,Contact,1,193.38,1,1,0,False,True,True
+"Phosphorothioic acid, O,O-Dimethyl O-(2,4,5-trichlorophenyl)ester",299-84-3,2,1,1,Contact,2,5.68,0,0,1,False,True,True
+"3,5-Dimethyl-4-(methylthio)phenol, Methylcarbamate",2032-65-7,3,1,2,Contact,1,0.375,0,0,1,False,True,True
+"O,O-Dimethyl S-[2-(methylamino)-2-oxoethyl]phosphorodithioic acid ester",60-51-5,3,1,2,Contact,16,0.174,0,0,1,False,True,True
+"1-(4-Chlorophenoxy)-3,3-dimethyl-1-(1H-1,2,4-triazol-1-yl)-2-butanone",43121-43-3,1,0,1,Contact,2,25.0,2,0,-1,False,True,True
+(3-Methylphenyl)carbamic acid 3-[(methoxycarbonyl)amino]phenyl ester,13684-63-4,1,0,1,Contact,5,100.0,5,5,0,True,True,True
+"Nitric acid, Chromium(3+) salt",13548-38-4,1,0,1,Oral,1,20.5,0,0,1,False,True,True
+"N,N,N',N'-Tetramethylthioperoxydicarbonic diamide ([(H2N)C(S)]2S2)",137-26-8,1,0,1,Contact,1,73.72,0,0,1,False,True,True
+"Phosphorothioic acid, O,O-Diethyl-O-(4-nitrophenyl)ester",56-38-2,3,1,2,Contact,5,0.09,0,0,1,False,True,True
+"1,1'-(2,2-Dichloroethylidene)bis[4-chlorobenzene]",72-54-8,0,0,0,Contact,1,161.0,0,0,0,False,True,True
+Hydroxytriphenylstannane,76-87-9,0,0,0,Contact,1,114.82,1,1,0,False,True,True
+"1,2,3,4,5-Pentachloro-6-nitrobenzene",82-68-8,1,0,1,Contact,2,100.0,2,2,0,True,True,True
+"S-[2-(Ethylthio)ethyl]O,O-dimethyl ester phosphorodithioc acid",640-15-3,3,1,2,Contact,1,0.55,0,0,1,False,True,True
+"1,1'-Dimethyl-4,4'-bipyridinium chloride (1:2)",1910-42-5,1,0,1,Oral,3,43.0,1,0,-1,False,True,True
+Cryolite (Na3(AlF6)),15096-52-3,0,0,0,Contact,6,2228.5,1,1,0,False,True,True
+Sulfur,7704-34-9,0,0,0,Contact,1,1051.0,0,0,0,False,True,True
+Pyrethrins and Pyrethroids,8003-34-7,3,1,2,Oral,1,0.15,0,0,1,False,True,True
+Cadmium,7440-43-9,0,0,0,Oral,2,1805.0,0,0,0,False,True,True
+Calcium sulfide (Ca(Sx)),1344-81-6,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"Phosphorodithioic acid S-[[(1,1-dimethylethyl)thio]O,O-diethylmethyl]ester",13071-79-9,2,1,1,Contact,1,4.09,0,0,1,False,True,True
+[2-[[[1-(4-Chlorophenyl)-1H-pyrazol-3-yl]oxy]methyl]phenyl]methoxycarbamic acid methyl ester,175013-18-0,1,0,1,Contact,2,100.0,2,2,0,True,True,True
+"(OC-6-11)-tris(N,N-Dimethylcarbamodithioato-kappaS,kappaS')iron",14484-64-1,0,0,0,Oral,1,1000.0,1,1,0,False,True,True
+"5-[2-Chloro-4-(trifluoromethyl)phenoxy]-2-nitrobenzoic acid, Sodium salt (1:1)",62476-59-9,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"1-[2-(2,4-Dichlorophenyl)-3-(1,1,2,2-tetrafluoroethoxy)propyl]-1H-1,2,4-triazole",112281-77-3,1,0,1,Oral,2,52.15,1,0,-1,False,True,True
+Arsenic,7440-38-2,0,0,0,Oral,3,3600.0,0,0,0,False,True,True
+"Phosphorothioic acid O,O-dimethyl O-(3-methyl-4-nitrophenyl)ester",122-14-5,3,1,2,Oral,1,0.019,0,0,1,False,True,True
+"Phosphoric acid 1,2-dibromo-2,2-dichloroethyl dimethyl ester",300-76-5,3,1,2,Contact,2,0.2404,0,0,1,False,True,True
+"N-Phenylcarbamic acid, 1-Methylethyl ester",122-42-9,0,0,0,Contact,1,604.0,0,0,0,False,True,True
+"Arsenic acid (H3AsO4), Sodium salt (1:?)",7631-89-2,2,1,1,Oral,3,3.584,0,0,1,False,True,True
+"2-[4-(1,1-Dimethylethyl)phenoxy]cyclohexyl 2-propynyl ester sulfurous acid",2312-35-8,1,0,1,Contact,3,51.33,0,0,1,False,True,True
+Gentamicin,1403-66-3,1,0,1,Contact,1,25.4,1,0,-1,False,True,True
+"1-[[2-(2,4-Dichlorophenyl)-4-propyl-1,3-dioxolan-2-yl]methyl]-1H-1,2,4-triazole",60207-90-1,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+2-(4-Chloro-2-methylphenoxy)acetic acid,94-74-6,1,0,1,Contact,3,100.0,3,2,-1,True,True,True
+Chlordane (Technical Grade),12789-03-6,2,1,1,Oral,1,1.1219999999999999,0,0,1,False,True,True
+"4-[(2R)-2-[(1S,3S,5S)-3,5-Dimethyl-2-oxocyclohexyl]-2-hydroxyethyl]-2,6-piperidinedione",66-81-9,0,0,0,Contact,1,241.72,1,1,0,False,True,True
+"2,2-Dimethyl-3-(2-methyl-1-propen-1-yl)cyclopropanecarboxylic acid [5-(phenylmethyl)-3-furanyl]methyl ester",10453-86-8,3,1,2,Contact,4,0.054,0,0,1,False,True,True
+"2,6-Dichloro-4-nitrobenzenamine",99-30-9,0,0,0,Contact,1,181.29,1,1,0,False,True,True
+"1-Naphthaleneacetic acid, Sodium salt",61-31-4,1,0,1,Contact,1,96.7,1,0,-1,False,True,True
+2-(4-Chloro-2-methylphenoxy)acetic acid sodium salt (1:1),3653-48-3,0,0,0,Oral,1,104.7,0,0,0,False,True,True
+"2-Cyclohexyl-4,6-dinitrophenol",131-89-5,0,0,0,Contact,1,2175.0,0,0,0,False,True,True
+"2-[(1,1-Dimethylethyl)imino]tetrahydro-3-(1-methylethyl)-5-phenyl-4H-1,3,5-thiadiazin-4-one",69327-76-0,1,0,1,Oral,1,14.51,1,0,-1,False,True,True
+"1,4,5,6,7,8,8-Heptachloro-3a,4,7,7a-tetrahydro-4,7-methano-1H-indene",76-44-8,3,1,2,Contact,1,0.526,0,0,1,False,True,True
+"2-(2,4,5-Trichlorophenoxy)acetic acid, Butyl ester",93-79-8,0,0,0,Oral,4,534.05,0,0,0,False,True,True
+"(1R,4S,4aS,5S,8R,8aR)-rel-1,2,3,4,10,10-Hexachloro-1,4,4a,5,8,8a-hexahydro-1,4:5,8-dimethanonaphthalene",309-00-2,3,1,2,Contact,6,0.18,0,0,1,False,True,True
+"Phosphoric acid, Dimethyl 4-nitrophenyl ester",950-35-6,3,1,2,Oral,1,0.03,0,0,1,False,True,True
+"(1aR,2R,2aS,3S,6R,6aR,7S,7aS)-rel-3,4,5,6,9,9-Hexachloro-1a,2,2a,3,6,6a,7,7a-octahydro-2,7:3,6-dimethanonaphth[2,3-b]oxirene ",60-57-1,3,1,2,Contact,4,0.08810000000000001,0,0,1,False,True,True
+"2-(1-Methylpropyl)-4,6-dinitrophenol",88-85-7,1,0,1,Contact,1,36.26,0,0,1,False,True,True
+"O,O-Diethyl S-[2-(ethylsulfanyl)ethyl] phosphorothioate",126-75-0,2,1,1,Contact,1,1.49,0,0,1,False,True,True
+"2-Chloro-N-[[(4-methoxy-6-methyl-1,3,5-triazin-2-yl)amino]carbonyl]benzenesulfonamide",64902-72-3,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"alpha-(4-(1,1,3,3-Tetramethylbutyl)phenyl)-omega-hydroxypoly(oxy-1,2-ethanediyl)",9002-93-1,0,0,0,Contact,1,1436.0,0,0,0,False,True,True
+"3-(2,2-Dichloroethenyl)-2,2-dimethylcyclopropanecarboxylic acid, (3-Phenoxyphenyl)methyl ester",52645-53-1,3,1,2,Contact,3,0.025,0,0,1,False,True,True
+"N,N-Bis(1-methylethyl)carbamothioic acid, S-(2,3,3-trichloro-2-propen-1-yl) ester",2303-17-5,1,0,1,Contact,2,30.63,2,0,-1,False,True,True
+"N-Phenyl-N'-1,2,3-thiadiazol-5-yl-urea",51707-55-2,1,0,1,Contact,2,99.05,2,1,-1,False,True,True
+"O,O'-(Thiodi-4,1-phenylene) O,O,O',O'-tetramethyl ester phosphorothioic acid",3383-96-8,2,1,1,Contact,1,1.55,0,0,1,False,True,True
+Chlorotriphenylstannane,639-58-7,1,0,1,Contact,1,96.69,0,0,1,False,True,True
+"O,O-Diethyl O-[6-methyl-2-(1-methylethyl)-4-pyrimidinyl] ester phosphorothioic acid",333-41-5,3,1,2,Other,5,0.000121,0,0,1,False,True,True
+"2-Chloro-9-hydroxy-9H-fluorene-9-carboxylic acid, Methyl ester",2536-31-4,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"2,4,5,6-Tetrachloro-1,3-benzenedicarbonitrile",1897-45-6,0,0,0,Contact,1,181.29,1,1,0,False,True,True
+"1,1'-(2,2-Dichloroethylidene)bis[4-ethylbenzene",72-56-0,2,1,1,Contact,1,4.47,0,0,1,False,True,True
+"Thiodiphosphoric acid, Tetrapropyl ester",3244-90-4,1,0,1,Contact,1,17.43,0,0,1,False,True,True
+"N,N'-1,2-Ethanediylbiscarbamodithioic acid, Sodium salt (1:2)",142-59-6,1,0,1,Contact,1,12.09,1,0,-1,False,True,True
+"Phosphorothioic acid, S-[2-(Ethylsulfinyl)ethyl] O,O-dimethyl ester",301-12-2,3,1,2,Oral,1,0.31,0,0,1,False,True,True
+"N'-(4-chlorophenyl)-N,N-dimethylurea",150-68-5,0,0,0,Contact,1,110.0,0,0,0,False,True,True
+"Phosphorodithioic acid O-ethyl S,S-dipropyl ester",13194-48-4,2,1,1,Contact,2,2.58,0,0,1,False,True,True
+"N-(3-Chlorophenyl)carbamic acid, 1-Methylethyl ester",101-21-3,1,0,1,Contact,1,36.26,1,0,-1,False,True,True
+"1H-1,2,4-Triazol-3-amine",61-82-5,0,0,0,Contact,2,106.045,2,1,-1,False,True,True
+"O,O-Dimethyl S-[(4-oxo-1,2,3-benzotriazin-3(4H)-yl)methyl] ester, Phosphorodithioic acid",86-50-0,3,1,2,Oral,1,0.15,0,0,1,False,True,True
+"N,N,N',N'-Tetramethylphosphorodiamidic fluoride",115-26-4,2,1,1,Oral,1,1.905,0,0,1,False,True,True
+"2,2-Dichloropropanoic acid",75-99-0,1,0,1,Contact,1,24.17,1,0,-1,False,True,True
+Delnav,78-34-2,1,0,1,Contact,1,21.27,0,0,1,False,True,True
+"O,O-Dimethyl O-[3-methyl-4-(methylthio)phenyl]ester phosphorothioic acid",55-38-9,3,1,2,Contact,1,0.308,0,0,1,False,True,True
+"Phosphorodithioic acid, O,O-Diethyl-S-[2-(ethylthio)ethyl] ester",298-04-4,2,1,1,Contact,4,2.705,0,0,1,False,True,True
+"2-(2,4,5-Trichlorophenoxy)propanoic acid",93-72-1,0,0,0,Contact,1,241.72,1,1,0,False,True,True
+"6-Chloro-N,N'-diethyl-1,3,5-triazine-2,4-diamine",122-34-9,1,0,1,Contact,1,96.69,1,0,-1,False,True,True
+"S-[2-(Ethylthio)ethyl]O,O-dimethyl ester phosphorothioic acid",919-86-8,3,1,2,Oral,1,0.21,0,0,1,False,True,True
+"Phosphorodithioic acid S-[(5-methoxy-2-oxo-1,3,4-thiadiazol-3(2H)yl)methyl] O,O-dimethyl ester",950-37-8,3,1,2,Contact,2,0.236,0,0,1,False,True,True
+"6-Chloro-N2,N4-bis(1-methylethyl)-1,3,5-triazine-2,4-diamine",139-40-2,1,0,1,Contact,1,96.69,1,0,-1,False,True,True
+"alpha-[(Dimethoxyphosphinothioyl)thio] benzeneacetic acid, Ethyl ester",2597-03-7,3,1,2,Contact,1,0.306,0,0,1,False,True,True
+2-[4-[(6-Chloro-2-quinoxalinyl)oxy]phenoxy]propanoic acid,76578-12-6,1,0,1,Contact,1,50.0,1,0,-1,False,True,True
+"2-[(3,5,6-Trichloro-2-pyridinyl)oxy]acetic acid",55335-06-3,1,0,1,Oral,2,60.5,1,0,-1,False,True,True
+"Phosphorothioic acid O-(3-chloro-4-methyl-2-oxo-2H-1-benzopyran-7-yl) O,O-diethyl ester",56-72-4,2,1,1,Oral,5,3.1,0,0,1,False,True,True
+"O,O-Diethyl S-[(ethylthio)methyl])ester, Phosphorodithioic acid",298-02-2,3,1,2,Oral,1,0.44,0,0,1,False,True,True
+"N,N-dipropylcarbamothioic acid S-ethyl ester",759-94-4,2,1,1,Oral,1,11.0,0,0,1,False,True,True
+"Phosphoric acid, 2-Chloro-3-(diethylamino)-1-methyl-3-oxo-1-propen-1-yl dimethyl ester",13171-21-6,3,1,2,Contact,3,0.015,0,0,1,False,True,True
+"S-[(6-Chloro-2-oxo-3(2H)-benzoxazolyl)methyl]O,O-diethyl ester phosphorodithioic acid",2310-17-0,2,1,1,Contact,1,8.94,0,0,1,False,True,True
+"6-Methoxy-N2,N4-bis(1-methylethyl)-1,3,5-triazine-2,4-diamine",1610-18-0,1,0,1,Contact,1,36.0,0,0,1,False,True,True
+"1,1'-Dimethyl-4,4'-bipyridinium",4685-14-7,2,1,1,Contact,1,6.04,1,0,-1,False,True,True
+Dimetilan,644-64-4,2,1,1,Contact,1,5.84,0,0,1,False,True,True
+"N2-Ethyl-N4-(1-methylethyl)-6-(methylthio)-1,3,5-triazine-2,4-diamine",834-12-8,1,0,1,Contact,2,98.345,2,1,-1,False,True,True
+"6-Chloro-N-ethyl-N'-(1-methylethyl)-1,3,5-triazine-2,4-diamine",1912-24-9,1,0,1,Contact,1,96.69,1,0,-1,False,True,True
+"N2,N4-Bis(1-methylethyl)-6-(methylthio)-1,3,5-triazine-2,4-diamine",7287-19-6,1,0,1,Contact,1,96.69,1,0,-1,False,True,True
+Carbofenthion,786-19-6,2,1,1,Contact,2,2.9349999999999996,0,0,1,False,True,True
+6-Chloro-3-pyridinecarboxylic acid,5326-23-8,1,0,1,Contact,1,50.0,1,0,-1,False,True,True
+"2-Chloro-N,N,N-trimethylethanaminium chloride (1:1)",999-81-5,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+2-(4-Thiazolyl)-1H-benzimidazole,148-79-8,2,1,1,Oral,3,4.0,3,0,-1,False,True,True
+N-(Phenylmethyl)-1H-purin-6-amine,1214-39-7,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+P-Phenylphosphonothioic acid O-ethyl O-(4-nitrophenyl) ester ,2104-64-5,3,1,2,Contact,1,0.245,0,0,1,False,True,True
+"4-(Dimethylamino)-3,5-dimethylphenol, Methylcarbamate(ester)",315-18-4,3,1,2,Contact,2,0.1845,0,0,1,False,True,True
+"1,1a,3,3a,4,5,5,5a,5b,6-Decachlorooctahydro-1,3,4-metheno-2H-cyclobuta[cd]pentalen-2-one",143-50-0,2,1,1,Contact,1,10.39,0,0,1,False,True,True
+"2-Chloro-N-(2,6-diethylphenyl)-N-(methoxymethyl)acetamide",15972-60-8,1,0,1,Contact,1,36.26,1,0,-1,False,True,True
+"S-[(4,6-Diamino-1,3,5-triazin-2-yl)methyl]O,O-dimethyl ester phosphorodithioic acid",78-57-9,3,1,2,Oral,1,0.46,0,0,1,False,True,True
+"Phosphorothioic acid, O,O-Diethyl O-2-pyrazinyl ester  ",297-97-2,3,1,2,Contact,1,0.042,0,0,1,False,True,True
+"p-Phenylphosphonothioic acid, O-(4-Bromo-2,5-dichlorophenyl) O-methyl ester",21609-90-5,2,1,1,Contact,1,2.19,0,0,1,False,True,True
+"1,1,1,3,3,3-Hexakis(2-methyl-2-phenylpropyl)distannoxane",13356-08-6,0,0,0,Contact,1,3982.0,0,0,0,False,True,True
+"5-Bromo-6-methyl-3-(1-methylpropyl)-2,4(1H,3H)-pyrimidinedione",314-40-9,0,0,0,Contact,1,193.38,1,1,0,False,True,True
+"4-(Dimethylamino)-3-methylphenol, Methylcarbamate (ester)",2032-59-9,3,1,2,Contact,4,0.6205,0,0,1,False,True,True
+"N-Cyclopropyl-1,3,5-triazine-2,4,6-triamine",66215-27-8,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"N,N-dimethylcarbamic acid 3-methyl-1-(1-methylethyl)-1H-pyrazol-5-yl ester",119-38-0,3,1,2,Contact,1,0.471,0,0,1,False,True,True
+"2,6-Dinitro-N,N-dipropyl-4-(trifluoromethyl)benzenamine",1582-09-8,1,0,1,Oral,1,50.0,1,0,-1,False,True,True
+Methyl trithion,953-17-3,2,1,1,Contact,1,1.46,0,0,1,False,True,True
+"6-Methyl-1,3-dithiolo[4,5-b]quinoxalin-2-one",2439-01-2,1,0,1,Contact,1,66.47,0,0,1,False,True,True
+"1,3-Dithiolo[4,5-b]quinoxaline-2-thione",93-75-4,0,0,0,Contact,1,121.0,0,0,0,False,True,True
+"[[2-[(Dithiocarboxy)amino]ethyl]carbamodithioato(2-)-kappaS,kappaS']manganese",12427-38-2,1,0,1,Contact,1,12.09,1,0,-1,False,True,True
+"Phosphoric acid, (1E)-3-(Dimethylamino)-1-methyl-3-oxo-1-propen-1-yl dimethyl ester",141-66-2,3,1,2,Other,2,0.035,0,0,1,False,True,True
+"Methylarsonic acid, Disodium salt",144-21-8,1,0,1,Contact,1,20.7,1,0,-1,False,True,True
+"4-Amino-3,5,6-trichloro-2-pyridinecarboxylic acid",1918-02-1,1,0,1,Contact,1,14.5,1,0,-1,False,True,True
+"O-[4[(Dimethylamino)sulfonyl]phenyl]O,O-dimethylester phosphorothioic acid",52-85-7,3,1,2,Contact,1,0.417,0,0,1,False,True,True
+"1,1a,2,2,3,3a,4,5,5,5a,5b,6-Dodecachlorooctahydro-1,3,4-metheno-1H-cyclobuta[cd]pentalene",2385-85-5,2,1,1,Contact,1,7.15,0,0,1,False,True,True
+2-Chloro-6-(trichloromethyl)pyridine,1929-82-4,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+2-Methyl-2-(methylthio)propanol O-[(methylamino)carbonyl]oxime,116-06-3,3,1,2,Contact,1,0.285,0,0,1,False,True,True
+"Phosphoric acid, 2-Chloro-1-(2,4-dichlorophenyl)ethenyl diethyl ester",470-90-6,3,1,2,Oral,1,0.55,0,0,1,False,True,True
+"1,3-Dithiolan-2-ylidenephosphoramidic acid diethyl ester",947-02-4,2,1,1,Contact,1,4.23,0,0,1,False,True,True
+"3-[(Dimethoxyphosphinyl)oxy]-2-pentenedioic acid, Dimethyl ester",122-10-1,3,1,2,Contact,1,0.743,0,0,1,False,True,True
+"Phosphorothioic acid, O,O-Diethyl O(4-methylsulfinyl)phenyl)ester",115-90-2,3,1,2,Contact,1,0.35,0,0,1,False,True,True
+"2,3-Dihydro-2,2-dimethyl-7-benzofuranol 7-(N-methylcarbamate)",1563-66-2,3,1,2,Contact,1,0.16,0,0,1,False,True,True
+2-(Dimethylamino)-N-[[(methylamino)carbonyl]oxy]-2-oxo-ethanimidothioic acid methyl ester,23135-22-0,3,1,2,Other,7,0.14,0,0,1,False,True,True
+"O-Ethyl O-(2,4,5-trichlorophenyl)ester ethylphosphonothioic acid",327-98-0,2,1,1,Contact,1,2.33,0,0,1,False,True,True
+"Phosphorothioic acid, O,O-Diethyl O-(3,5,6-trichloro-2-pyridinyl) ester",2921-88-2,3,1,2,Contact,5,0.068,0,0,1,False,True,True
+"3-Cyclohexyl-6-(dimethylamino)-1-methyl-1,3,5-triazine-2,4-(1H,3H)dione",51235-04-2,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+N-[[(Methylamino)carbonyl]oxy]ethanimidothioic acid methyl ester,16752-77-5,3,1,2,Oral,13,0.23,0,0,1,False,True,True
+3-methyl-5-(1-methylethyl)phenol 1-(N-methylcarbamate)  ,2631-37-0,2,1,1,Contact,1,1.13,0,0,1,False,True,True
+(2E)-3-[(Dimethoxyphosphinyl)oxy]-2-butenoic acid 1-phenylethyl ester,7700-17-6,2,1,1,Contact,1,2.26,0,0,1,False,True,True
+"O,O-Dimethyl S-[2-(methylamino)-2-oxoethyl ester phosphorothioic acid",1113-02-6,3,1,2,Oral,2,0.049,0,0,1,False,True,True
+"N,N-Dimethyl-N'-[3-(trifluoromethyl)phenyl]urea",2164-17-2,1,0,1,Contact,3,100.0,3,3,0,True,True,True
+"1,1-Dichloro-N-[(dimethylamino)sulfonyl]-1-fluoro-N-phenylmethanesulfenamide",1085-98-9,0,0,0,Oral,2,535.0,2,1,-1,False,True,True
+(1-Methylethyl)phosphoramidic acid ethyl-3-methyl-4-(methylthio)phenyl ester,22224-92-6,2,1,1,Contact,1,1.87,0,0,1,False,True,True
+"Phosphoric acid (1Z)-2-chloro-1-(2,4,5-trichlorophenyl)ethenyl dimethyl ester",22248-79-9,2,1,1,Contact,1,1.37,0,0,1,False,True,True
+Tricyclohexylhydroxystannane,13121-70-5,1,0,1,Contact,2,39.34,0,0,1,False,True,True
+"5,6-Dihydro-2-methyl-N-phenyl-1,4-oxathiin-3-carboxamide",5234-68-4,1,0,1,Oral,2,89.72,1,1,-1,False,True,True
+N-1H-Benzimidazol-2-yl carbamic acid methyl ester,10605-21-7,1,0,1,Contact,1,50.0,1,0,-1,False,True,True
+"Phosphorothioic acid, O-(2,5-Dichloro-4-iodophenyl) O,O-dimethyl ester",18181-70-9,2,1,1,Contact,1,3.99,0,0,1,False,True,True
+"Ethylphosphonodithioic acid, O-Ethyl S-phenyl ester",944-22-9,2,1,1,Contact,1,3.3,0,0,1,False,True,True
+"Sulfuric acid, Iron(2+) salt(1:1), Monohydrate",17375-41-6,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"Benzo[b]thiophene-4-ol, 4-(N-methylcarbamate)",1079-33-0,3,1,2,Contact,1,0.423,0,0,1,False,True,True
+"3,5-Dibromo-4-hydroxybenzonitrile",1689-84-5,2,1,1,Oral,1,3.3,0,0,1,False,True,True
+"2-(1,3-Dioxolan-2-yl)phenol 1-(N-methylcarbamate)",6988-21-2,2,1,1,Contact,1,2.21,0,0,1,False,True,True
+"N,N-Dimethyl-N'-[3[[(methylamino)carbonyl]oxy]phenyl]methanimidamide hydrochloride (1:1)",23422-53-9,3,1,2,Oral,2,0.135,0,0,1,False,True,True
+"5-Chloro-3-(1,1-dimethylethyl)-6-methyl-2,4(1H,3H)-pyrimidinedione",5902-51-2,0,0,0,Contact,1,193.38,1,1,0,False,True,True
+"N,N'-[1,2-Phenylenebis(iminocarbonothioyl)]bis-C,C'- dimethyl ester carbamic acid",23564-05-8,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"Octanoic acid, 2,6-Dibromo-4-cyanophenyl ester",1689-99-2,1,0,1,Oral,1,60.0,0,0,1,False,True,True
+"S-[2-(Ethylsulfonyl)ethyl]O,O-dimethyl ester phosphorothioic acid",17040-19-6,3,1,2,Oral,1,0.19,0,0,1,False,True,True
+"alpha, alpha-bis(4-Chlorophenyl)-3-pyridinemethanol",17781-31-6,2,1,1,Contact,1,2.42,1,0,-1,False,True,True
+N-(2-Methylcyclohexyl)-N'-phenylurea,1982-49-6,0,0,0,Contact,2,110.43,2,2,0,False,True,True
+"2-(2,4-Dichlorophenoxy)acetic acid, 2-Ethylhexyl ester",1928-43-4,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"4-Ethoxy-7-phenyl-3,5-dioxa-6-aza-4-phosphaoct-6-ene-8-nitrile 4-sulfide",14816-18-3,3,1,2,Contact,1,0.305,0,0,1,False,True,True
+Cyclohexylethylcarbamothioic acid S-ethyl ester,1134-23-2,2,1,1,Oral,2,9.2,0,0,1,False,True,True
+"4-Amino-3,5,6-trichloro-2-pyridinecarboxylic acid, Potassium salt (1:1)",2545-60-0,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"O,O-Dimethyl O-[2-(methylthio)ethyl]ester phosphorothioic acid mixt. with O,O-dimethyl S-[2-(methylthio)ethyl]phosphorothioate",8065-62-1,3,1,2,Oral,1,0.22,0,0,1,False,True,True
+"N-[3-[[(Phenylamino)carbonyl]oxy]phenyl]carbamic acid, Ethyl ester",13684-56-5,1,0,1,Contact,1,50.0,1,0,-1,False,True,True
+Dimethyl 4-(methylsulfanyl)phenyl phosphate,3254-63-5,3,1,2,Contact,1,0.178,0,0,1,False,True,True
+"2-[(Diethoxyphosphinothionyl)oxy]-5-methylpyrazolo[1,5-a]pyrimidine-6-carboxylic acid ethyl ester",13457-18-6,2,1,1,Contact,1,1.85,0,0,1,False,True,True
+"2-Fluoroethyl ([1,1'-biphenyl]-4-yl)acetate",4301-50-2,1,0,1,Contact,1,16.62,0,0,1,False,True,True
+"2aR,3S,4S,4aR,5S,7aS,8S,10R,10aS,10bR)-10-(Acetyloxy)octahydro-3,5-dihydroxy-4-methyl-8-[[(2E)-2-methyl-1-oxo-2-buten-1-yl]oxy]-4-[(1aR,2S,3aS,6aS,7S,7aS)-3a,6a,7,7a-tetrahydro-6a-hydroxy-7a-methyl-2,7-methanofuro[2,3-b]oxireno[e]oxepin-1a(2H)-yl]-1H,7H-naptho[1,8-bc:4,4a-c']difuran-5,10a(8H)-dicarboxylic acid 5-10a-dimethyl ester",11141-17-6,2,1,1,Contact,1,2.5,1,0,-1,False,True,True
+4-[4-(Acetyloxy)phenyl]-2-butanone,3572-06-3,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+N-(Phosphonomethyl)glycine,1071-83-6,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"O-[2-(Diethylamino)-6-methyl-4-pyrimidinyl]O,O-dimethyl ester, Phosphorothioic acid",29232-93-7,3,1,2,Oral,1,0.36,0,0,1,False,True,True
+"Phosphoramidothioic acid, O,S-Dimethyl ester",10265-92-6,3,1,2,Other,5,0.766,0,0,1,False,True,True
+"3-[2,4-Dichloro-5-(1-methylethoxy)phenyl]-5-(1,1-dimethylethyl)-1,3,4-oxadiazol-2(3H)-one",19666-30-9,1,0,1,Contact,2,23.35,2,0,-1,False,True,True
+"2,2-Dimethyl-1,3-benzodioxol-4-ol 4-(N-methylcarbamate)",22781-23-3,3,1,2,Contact,1,0.428,0,0,1,False,True,True
+"Phosphorothioic acid O-[2-(diethylamino)-6-methyl-4-pyrimidinyl] O,O-diethyl ester",23505-41-1,3,1,2,Oral,1,0.39,0,0,1,False,True,True
+2-Methyl-2-(methylsulfinyl)propanal O-[(methylamino)carbonyl]oxime,1646-87-3,3,1,2,Other,5,0.854,0,0,1,False,True,True
+"N,N-Diethylcarbamothioic acid S-[(4-chlorophenyl)methyl] ester",28249-77-6,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"Benzoyl chloride, (2,4,6-Trichlorophenyl)hydrazone",25939-05-3,2,1,1,Contact,1,5.75,0,0,1,False,True,True
+"O,O-Dimethyl O-(3,5,6-trichloro-2-pyridinyl) ester phosphorothioic acid",5598-13-0,3,1,2,Oral,1,0.15,0,0,1,False,True,True
+"4-(1,1-Dimethylethyl)-N-(1-methylpropyl)-2,6-dinitrobenzenamine",33629-47-9,1,0,1,Oral,1,92.8,0,0,1,False,True,True
+2-[(1-Naphthalenylamino)carbonyl]benzoic acid sodium salt (1:1),132-67-2,0,0,0,Contact,1,113.2,1,1,0,False,True,True
+"3,3-Dimethyl-1-(methylthio)-2-butanone O-[(methylamino)carbonyl]oxime",39196-18-4,3,1,2,Contact,1,0.058,0,0,1,False,True,True
+"1-[2-(2,4-Dichlorophenyl)-2-(2-propenyloxy)ethyl]-1H-imidazole",35554-44-0,1,0,1,Oral,1,90.0,0,0,1,False,True,True
+"5-Chloro-2-(3,4,4-trifluorobut-3-ene-1-sulfonyl)-1,3-thiazole",318290-98-1,0,0,0,Oral,2,136.85,1,1,-1,False,True,True
+N-(2-Chloro-4-pyridinyl)-N'-phenylurea  ,68157-60-8,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+N-(Phosphonomethyl)glycine compd. with 2-propanamine (1:1),38641-94-0,1,0,1,Contact,2,100.0,2,2,0,True,True,True
+"N-Ethyl-N-(2-methyl-2-propenyl)-2,6-dinitro-4-(trifluoromethyl)benzenamine",55283-68-6,1,0,1,Oral,1,97.0,1,0,-1,False,True,True
+"N-[5-(1,1-Dimethylethyl)-1,3,4-thiadiazol-2-yl]-N,N'-dimethylurea",34014-18-1,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+2-[(Ethylthio)methyl]phenol 1-(N-methylcarbamate),29973-13-5,2,1,1,Oral,1,1.5,0,0,1,False,True,True
+"5-Amino-1-[2,6-dichloro-4-(trifluoromethyl)phenyl]-4-[(trifluoromethyl)sulfinyl]-1H-pyrazole-3-carbonitrile",120068-37-3,3,1,2,Contact,9,0.006,0,0,1,False,True,True
+1-Methyl-3-phenyl-5-[3-(trifluoromethyl)phenyl]-4(1H)pyridinone,59756-60-4,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+alpha-Cyclopropyl-alpha-(4-methoxyphenyl)-5-pyrimidinemethanol,12771-68-5,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"2,2-Dimethyl-3-(1,1,2,2-tetrabromoethyl)cyclopropanecarboxylic acid cyano(3-phenoxyphenyl)methyl ester",66841-25-6,3,1,2,Contact,2,0.0905,0,0,1,False,True,True
+"2-[[[[(4-Chloro-6-methoxy-2-pyrimidinyl)amino]carbonyl]amino]sulfonyl]benzoic acid, Ethyl ester",90982-32-4,1,0,1,Contact,1,12.5,1,0,-1,False,True,True
+"alpha-(4-Chlorophenyl)-alpha-(1-cyclopropylethyl)-1H-1,2,4-triazole-1-ethanol",94361-06-5,1,0,1,Oral,3,14.8,1,1,-1,False,True,True
+alpha-(2-Chlorophenyl)-alpha-(4-chlorophenyl)-5-pyrimidinemethanol,60168-88-9,2,1,1,Oral,1,10.0,1,0,-1,False,True,True
+4-(4-Chloro-2-methylphenoxy)butanoic acid sodium salt (1:1),6062-26-6,0,0,0,Contact,2,131.185,2,1,-1,False,True,True
+2-(Octylsulfanyl)ethan-1-ol,3547-33-9,1,0,1,Contact,1,56.9,0,0,1,False,True,True
+N-[2-[3-Chloro-5-(trifluoromethyl)-2-pyridinyl]ethyl]-2-(trifluoromethyl)benzamide,658066-35-4,1,0,1,Contact,2,100.0,2,2,0,True,True,True
+2-Chloro-1-(3-ethoxy-4-nitrophenoxy)-4-(trifluoromethyl)benzene,42874-03-3,1,0,1,Oral,2,66.0,2,1,-1,False,True,True
+4-Chloro-alpha-(1-methylethyl)benzeneacetic acid cyano(3-phenoxyphenyl)methyl ester,51630-58-1,3,1,2,Other,4,0.4265,0,0,1,False,True,True
+4-Bromo-2-(4-chlorophenyl)-1-(ethoxymethyl)-5-(trifluoromethyl)-1H-pyrrole-3-carbonitrile,122453-73-0,3,1,2,Contact,1,0.11,0,0,1,False,True,True
+5-Methyl-3(2H)-isoxazolone,10004-44-1,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"2,3:4,6-bis-O-(1-Methylethylidene)-alpha-L-xylo-2-hexulofuranosonic acid, Sodium salt",52508-35-7,1,0,1,Contact,1,81.0,1,0,-1,False,True,True
+"3,6-Dichloro-2-pyridinecarboxylic acid",1702-17-6,1,0,1,Oral,1,25.8,1,0,-1,False,True,True
+"3-(3,5-Dichlorophenyl)-N-(1-methylethyl)-2,4-dioxo-1-imidazolidinecarboxamide",36734-19-7,0,0,0,Oral,1,150.0,1,1,0,False,True,True
+Akton,1757-18-2,2,1,1,Contact,1,2.66,0,0,1,False,True,True
+"(1R,3R)-3-(2,2-Dibromoethenyl)-2,2-dimethylcyclopropanecarboxylic acid (S)cyano(3-phenoxyphenyl)methyl ester",52918-63-5,3,1,2,Other,1,0.019,0,0,1,False,True,True
+2-Chloro-N-(2-ethyl-6-methylphenyl)-N-(2-methoxy-1-methylethyl)acetamide,51218-45-2,0,0,0,Contact,1,110.0,1,1,0,False,True,True
+O-(4-bromo-2-chlorophenyl) O-ethyl S-propyl ester phosphorothioic acid,41198-08-7,3,1,2,Other,5,0.01,0,0,1,False,True,True
+"2,6-Difluoro-N-[[[4-(trifluoromethyl)phenyl]amino]carbonyl]benzamide",35367-31-8,2,1,1,Contact,3,3.09,0,0,1,False,True,True
+"beta-(4-Chlorophenoxy)-alpha-(1,1-dimethylethyl)-1H-1,2,4-triazole-1-ethanol",55219-65-3,0,0,0,Contact,1,200.0,1,1,0,False,True,True
+P-(Aminocarbonyl)phosphonic acid monoethyl ester ammonium salt (1:1),25954-13-6,0,0,0,Contact,1,200.0,1,1,0,False,True,True
+"2,6-Dinitro-N1,N1-dipropyl-4-(trifluoromethyl)-1,3-benzenediamine",29091-21-2,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"N-(2,6-Dimethylphenyl)-N-(methoxyacetyl)alanine methyl ester",57837-19-1,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"N,N'-[Thiobis[(methylimino)carbonyloxy]]bisethanimidothioic acid dimethyl ester",59669-26-0,3,1,2,Oral,1,0.13,0,0,1,False,True,True
+"1,1-Dichloro-N-[(dimethylamino)sulfonyl]-1-fluoro-N-(4-methylphenyl)methanesulfenamide",731-27-1,1,0,1,Oral,1,43.0,0,0,1,False,True,True
+2-Cyano-N-[(ethylamino)carbonyl]-2-(methoxyimino)acetamide,57966-95-7,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"N-(4-Methyl-1,3-dithiolan-2-ylidene)phosphoramidic acid diethyl ester",950-10-7,2,1,1,Contact,1,3.51,0,0,1,False,True,True
+N-[3-(Dimethylamino)propyl]carbamic acid propyl ester hydrochloride (1:1),25606-41-1,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8-Heptadecafluoro-1-octanesulfonic acid potassium salt",2795-39-3,3,1,2,Oral,4,0.43000000000000005,0,0,1,False,True,True
+"2,3-Dihydro-5,6-dimethyl-1,4-dithiin 1,1,4,4-tetraoxide",55290-64-7,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+2-[(Aminomethoxyphosphinothioyl)oxy]benzoic acid 1-methylethyl ester,24353-61-5,3,1,2,Contact,1,0.519,0,0,1,False,True,True
+"2,2-Dimethyl-3-(2-methyl-1-propenyl)cyclopropanecarboxylic acid 2-methyl-4-oxo-3-(2-propynyl)-2-cyclopenten-1-yl ester",23031-36-9,3,1,2,Contact,2,0.1065,0,0,1,False,True,True
+"Phosphorothioic acid O-(2,6-dichloro-4-methylphenyl) O,O-dimethyl ester",57018-04-9,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"(4aS)-7-Chloro-2,5-dihydro-2-[[(methoxycarbonyl)[4-(trifluoromethoxy)phenyl]amino]carbonyl]indeno[1,2-e][1,3,4]oxadiazine-4a(3H)-carboxylic acid methyl ester",173584-44-6,3,1,2,Contact,4,0.373,0,0,1,False,True,True
+"(1R,3R)-rel-3-[(1Z)-2-Chloro-3,3,3-trifluoro-1-propen-1-yl]-2,2-dimethylcyclopropanecarboxylic acid (2,3,5,6-tetrafluoro-4-methylphenyl)methyl ester",79538-32-2,3,1,2,Contact,1,0.17,0,0,1,False,True,True
+"3-[2-Chloro-2-(4-chlorophenyl)ethenyl]-2,2-dimethylcyclopropanecarboxylic acid cyano(4-fluoro-3-phenoxyphenyl)methyl ester",69770-45-2,3,1,2,Contact,1,0.05,0,0,1,False,True,True
+"2-[[[[(4,6-Dimethyl-2-pyrimidinyl)amino]carbonyl]amino]sulfonyl]benzoic acid, Methyl ester",74222-97-2,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"3,3-Dimethylbutanoic acid 2-oxo-3-(2,4,6-trimethylphenyl)-1-oaxspiro[4.4]non-3-en-4-yl ester",283594-90-1,0,0,0,Contact,2,200.0,2,2,0,False,True,True
+"Tetrahydro-5,5-dimethyl-2(1H)-pyrimidio[3-[4-trifluoromethyl)phenyl]-1-[2-[4-(trifluoromethyl)phenyl]ethenyl]-2-propenylidene]hydrazone",67485-29-4,1,0,1,Contact,1,68.0,0,0,1,False,True,True
+"2-Ethoxy-2,3-dihydro-3,3-dimethyl-5-benzofuranol 5-methanesulfonate",26225-79-6,1,0,1,Oral,1,22.0,1,0,-1,False,True,True
+2-[1-Methyl-2-(4-phenoxyphenoxy)ethoxy]pyridine,95737-68-1,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"(2R,6S)-rel-4-[3-[4-(1,1-Dimethylethyl)phenyl]-2-methylpropyl]-2,6-dimethylmorpholine  ",67564-91-4,1,0,1,Oral,1,95.6,1,0,-1,False,True,True
+"3,6-Bis(2-chlorophenyl)-1,2,4,5-tetrazine",74115-24-5,1,0,1,Oral,1,25.0,1,0,-1,False,True,True
+1-[[2-(4-Ethoxyphenyl)-2-methylpropoxy]methyl]-3-phenoxybenzene,80844-07-1,3,1,2,Contact,1,0.0145,0,0,1,False,True,True
+"[(3,5,6-Trichloro-2-pyridinyl)oxy]acetic acid, 2-Butoxyethyl ester",64700-56-7,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"alpha-Butyl-alpha-(4-chlorophenyl)-1H-1,2,4-triazole-1-propanenitrile",88671-89-0,0,0,0,Oral,2,257.1,2,1,-1,False,True,True
+alpha-(1-Methylethyl)-alpha-[4-(trifluoromethoxy)phenyl]-5-pyrimidinemethanol,56425-91-3,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"5-[2-Chloro-4-(trifluoromethyl)phenoxy]-2-nitrobenzoic acid, 2-Ethoxy-1-methyl-2-oxoethyl ester",77501-63-4,0,0,0,Contact,1,124.0,1,1,0,False,True,True
+"(4R,5R)-rel-5-(4-Chlorophenyl)-N-cyclohexyl-4-methyl-2-oxo-3-thiazolidinecarboxamide",78587-05-0,1,0,1,Oral,1,71.0,0,0,1,False,True,True
+"2-(2-Chloroethoxy)-N-[[(4-methoxy-6-methyl-1,3,5-triazin-2-yl)amino]carbonyl]benzenesulfonamide",82097-50-5,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"2-[(2-Chlorophenyl)methyl]-4,4-dimethyl-3-isoxazolidinone",81777-89-1,1,0,1,Oral,1,85.29,1,0,-1,False,True,True
+"2-(Difluoromethyl)-4-(2-methylpropyl)-6-(trifluoromethyl)-3,5-pyridinedicarbothioic acid, S3,S5-Dimethyl ester",97886-45-8,1,0,1,Contact,2,90.5,1,1,-1,False,True,True
+"3,7-Dichloro-8-quinolinecarboxylic acidZ",84087-01-4,0,0,0,Contact,2,269.145,2,2,0,False,True,True
+"2-Chloro-N-[2,6-dinitro-4-(trifluoromethyl)phenyl]-N-ethyl-6-fluorobenzenemethanamine",62924-70-3,1,0,1,Contact,3,17.1,3,1,-1,False,True,True
+"2-[[[[[4,6-Bis(difluoromethoxy)-2-pyrimidinyl]amino]carbonyl]amino]sulfonyl]benzoic acid, Methyl ester",86209-51-0,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"4-Chloro-2-(1,1-dimethylethyl)-5-[[[4-(1,1-dimethylethyl)phenyl]methyl]thio]-3(2H)pyridazinene",96489-71-3,3,1,2,Contact,2,0.917,0,0,1,False,True,True
+"5,7-Dichloro-4-(4-fluorophenoxy)quinoline",124495-18-7,1,0,1,Oral,1,19.38,1,0,-1,False,True,True
+"[[2-Chloro-4-fluoro-5-[(tetrahydro-3-oxo-1H,3H-[1,3,4]thiadiazolo [3,4-a]pyridazin-1-ylidine)amino]phenyl]thioacetic acid methyl ester",117337-19-6,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"N-[[4,6-Dimethoxy-2-pyrimidinyl)amino]carbonyl]-3-(trifluoromethyl)-2-pyridinesulfonamide",104040-78-0,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"4,6-Dimethyl-N-phenyl-2-pyrimidinamine",53112-28-0,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"3,5-Dichloro-N-(3-chloro-1-ethyl-1-methyl-2-oxopropyl)-4-methylbenzamide",156052-68-5,1,0,1,Oral,3,32.9,3,0,-1,False,True,True
+"[3-(4,5-Dihydro-3-isoxazolyl)-2-methyl-4-(methylsulfonyl)phenyl](5-hydroxy-1-methyl-1H-pyrazol-4-yl)methanone",210631-68-8,1,0,1,Oral,2,85.55,1,1,-1,False,True,True
+"3-(4-Chlorophenyl)-3-(3,4-dimethoxyphenyl)-1-(4-morpholinyl)-2-propen-1-one",110488-70-5,1,0,1,Contact,2,50.0,2,0,-1,False,True,True
+"Phosphorothioic acid O,O-diethyl-O-(1,2,2,2-tetrachloroethyl) ester",54593-83-8,3,1,2,Contact,1,0.09,0,0,1,False,True,True
+"2-[7-Fluoro-3,4-dihydro-3-oxo-4-(2-propynyl)-2H-1,4-benzoxazin-6-yl]-4,5,6,7-tetrahydro-1H-isoindole-1,3(2H)-dione",103361-09-7,0,0,0,Contact,1,105.0,1,1,0,False,True,True
+"2-[2-Chloro-4-fluoro-5-(1,3,4,5,6,7-hexahydro-1,3-dioxo-2H-isoindol-2-yl)phenoxy]acetic acid pentyl ester",87546-18-7,0,0,0,Contact,1,106.0,1,1,0,False,True,True
+"N-(2,6-Difluorophenyl)-5-methyl-[1,2,4]triazolo[1,5-a]pyrimidine-2-sulfonamide",98967-40-9,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"1-[[2-[2-Chloro-4-(4-chlorophenoxyl)phenyl]-4-methyl-1,3-dioxolan-2-yl]methyl]-1H-1,2,4-triazole",119446-68-3,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"1-(1,1-Dimethylethyl)-2-(4-ethylbenzoyl)hydrazide-3,5-dimethylbenzoic acid",112410-23-8,0,0,0,Contact,2,234.0,2,2,0,False,True,True
+"alpha-[2-(4-Chlorophenyl)ethyl]-alpha-phenyl-1H-1,2,4-triazole-1-propanenitrile",114369-43-6,2,1,1,Oral,1,3.04,1,0,-1,False,True,True
+"2-[(4-Amino-3,5-dichloro-6-fluoro-2-pyridinyl)oxy]acetic acid 1-methylheptyl ester",81406-37-3,1,0,1,Contact,4,62.5,4,2,-1,False,True,True
+"N-[[(4,6-Dimethoxy-2-pyrimidinyl)amino]carbonyl]-2-(ethylsulfonyl)imidazo[1,2-a]pyridine-3-sulfonamide",141776-32-1,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"2-(Difluoromethyl)-5-(4,5-dihydro-2-thiazolyl)-4-(2-methylpropyl)-6-(trifluoromethyl)-3-pyridinecarboxylic acid methyl ester",117718-60-2,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+(alphaE)-alpha-(Methoxyimino)-2-[[[(E)-[1-[3-(trifluoromethyl)phenyl]ethylidene]amino]oxy]methyl]benzeneacteic acid methyl ester,141517-21-7,0,0,0,Contact,1,200.0,1,1,0,False,True,True
+"4-[2-[4-(1,1-Dimethylethyl)phenyl]ethoxy]quinazoline",120928-09-8,2,1,1,Contact,2,4.6,0,0,1,False,True,True
+"N-(4-Fluorophenyl)-N-(1-methylethyl)-2-[[5-(trifluoromethyl)-1,3,4-thiadiazol-2-yl]oxy]acetamide",142459-58-3,0,0,0,Contact,4,146.9,4,3,-1,False,True,True
+(alphaE)-alpha-(Methoxyimino)-2-[(2-methylphenoxy)methyl]benzeneacetic acid methyl ester,143390-89-0,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"4-(2,2-Difluoro-1,3-benzodioxol-4-yl)-1H-pyrrole-3-carbonitrile",131341-86-1,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"(2R)-2-[4-(4-Cyano-2-fluorophenoxy)phenoxy]propanoic acid, Butyl ester",122008-85-9,1,0,1,Contact,2,100.0,2,2,0,True,True,True
+"N2-[1,1-Dimethyl-2-(methylsulfonyl)ethyl]-3-iodo-N1-[2-methyl-4-[1,2,2,2-tetrafluoro-1-(trifluoromethyl)ethyl]phenyl]-1,2-benzenedicarboxamide",272451-65-7,0,0,0,Contact,2,200.0,2,2,0,False,True,True
+"2-(Acetyloxy)-3-dodecyl-1,4-naphthalenedione",57960-19-7,0,0,0,Contact,2,225.0,2,2,0,False,True,True
+(2-Oxo-3-thiazolidinyl)phosphonothioic acid O-ethyl S-(1-methylpropyl)ester,98886-44-3,3,1,2,Contact,1,0.247,0,0,1,False,True,True
+"1,2,3-Benzothiadiazole-7-carbothioic acid S-methyl ester",135158-54-2,1,0,1,Oral,2,74.65,2,1,-1,False,True,True
+"alpha,2-Dichloro-5-[4-(difluoromethyl)-4,5-dihydro-3-methyl-5-oxo-1H-1,2,4-triazol-1-yl]-4-fluorobenzenepropanoic acid, Ethyl ester",128639-02-1,1,0,1,Contact,1,27.9,1,0,-1,False,True,True
+"2-[2-(1-Chlorocyclopropyl)-3-(2-chlorophenyl)-2-hydroxypropyl]-1,2-dihydro-3H-1,2,4-triazole-3-thione",178928-70-6,0,0,0,Contact,2,200.0,2,2,0,False,True,True
+"4,5-Dihydro-6-methyl-4-[(E)-(3-pyridinylmethylene)amino]-1,2,4-triazin-3(2H)-one",123312-89-0,1,0,1,Oral,2,89.855,2,1,-1,False,True,True
+"N-[[(4,6-Dimethoxy-2-pyrimidinyl)amino]carbonyl]-3-(ethylsulfonyl)-2-pyridine sulfonamide",122931-48-0,1,0,1,Oral,1,27.3,1,0,-1,False,True,True
+"2-[[[[[(4,6-Dimethoxy-2-pyrimidinyl)amino]carbonyl]amino]sulfonyl]amino]-N,N-dimethylbenzamide",213464-77-8,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"2-Chloro-N-[[(4,6-dimethoxy-2-pyrimidinyl)amino]carbonyl]imidazo[1,2-a]pyridine-3-sulfonamide",122548-33-8,1,0,1,Oral,2,32.95,1,0,-1,False,True,True
+(alphaE)-2-[[6-(2-Cyanophenoxy)-4-pyrimidinyl]oxy]-alpha-(methoxymethylene)benzeneacetic acid methyl ester,131860-33-8,0,0,0,Contact,1,200.0,1,1,0,False,True,True
+"2-[[[[[4-Ethoxy-6-(methylamino)-1,3,5-triazin-2-yl]amino]carbonyl]amino]sulfonyl]benzoic acid",111353-84-5,1,0,1,Contact,1,12.5,1,0,-1,False,True,True
+"2-Chloro-6-[(4,6-dimethoxy-2-pyrimidinyl)thio]benzoic acid sodium salt (1:1)",123343-16-8,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"2,2-Dimethyl-3-(2-methyl-1-propenyl)cyclopropanecarboxylic acid, [2,5-dioxo-3-(2-propynyl)-1-imidazolidinyl]methyl ester",72963-72-5,3,1,2,Contact,1,0.52,0,0,1,False,True,True
+6-chloro-3-pyridinemethanol,21543-49-7,1,0,1,Contact,1,50.0,1,0,-1,False,True,True
+"3-Chloro-2-[[(5-ethoxy-7-fluoro[1,2,4]triazolo[1,5-c]pyrimidin-2-yl)sulfonyl]amino]benzoic acid, Methyl ester",147150-35-4,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"N-[[[3-Chloro-4-[1,1,2-trifluoro-2-(trifluoromethoxy)ethoxy]phenyl]amino]carbonyl]-2,6-difluorobenzamide",116714-46-6,0,0,0,Contact,2,150.0,2,2,0,False,True,True
+"8-(1,1-Dimethylethyl)-N-ethyl-N-propyl-1,4-dioxaspiro[4.5]decane-2-methanamine",118134-30-8,2,1,1,Contact,1,4.22,0,0,1,False,True,True
+"N-[[(4-Methoxy-6-methyl-1,3,5-triazin-2-yl)amino]carbonyl]-2-(3,3,3-trifluoropropyl)benzenesulfonamide",94125-34-5,1,0,1,Oral,2,23.5,0,0,1,False,True,True
+"5-Methyl-5-(4-phenoxyphenyl)-3-(phenylamino)-2,4-oxazolidinedione",131807-57-3,2,1,1,Oral,2,4.215,2,0,-1,False,True,True
+"(1E)-N-[(6-Chloro-3-pyridinyl)methyl]-N-ethyl-N'-methyl-2-nitro-1,1-ethenediamine",150824-47-8,3,1,2,Contact,1,0.138,0,0,1,False,True,True
+"4-(Cyclopropylhydroxymethylene)-3,5-dioxocyclohexanecarboxylic acid ethyl ester",95266-40-3,0,0,0,Contact,2,120.3,1,1,-1,False,True,True
+"2-(2,6-Difluorophenyl)-4-[4-(1,1-dimethylethyl)-2-ethoxyphenyl]-4,5-dihydrooxazole",153233-91-1,0,0,0,Contact,1,200.0,1,1,0,False,True,True
+"(1E)-[2-[[6-(2-Chlorophenoxy)-5-fluoro-4-pyrimidinyl]oxy]phenyl](5,6-dihydro-1,4,2-dioxazin-3-yl)-methanone, O-Methyloxime",361377-29-9,1,0,1,Oral,3,80.0,3,1,-1,False,True,True
+"4-Amino-N-(1,1-dimethylethyl)-4,5-dihydro-3-(1-methylethyl)-5-oxo-1H-1,2,4-triazole-1-carboxamide",129909-90-6,0,0,0,Contact,1,200.0,1,1,0,False,True,True
+"1-[(6-Chloro-3-pyridinyl)methyl]-4,5-dihydro-1H-imidazol-2-amine",115970-17-7,3,1,2,Oral,3,1.0,3,0,-1,False,True,True
+"(5-Hydroxy-1,3-dimethyl-1H-pyrazol-4-yl)[2-(methylsulfonyl)-4-(trifluoromethyl)phenyl]methanone",365400-11-9,1,0,1,Contact,1,75.0,1,0,-1,False,True,True
+4-Chloro-N-[2-[3-methoxy-4-(2-propynyloxy)phenyl]ethyl]-alpha-(2-propynyloxy)benzeneacetamide,374726-62-2,0,0,0,Oral,1,160.0,1,1,0,False,True,True
+2-[2-Chloro-5-[4-chloro-5-(difluoromethoxy)-1-methyl-1H-pyrazol-3-yl]-4-fluorophenoxy]acetic acid ethyl ester,129630-19-9,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"2,2-Dimethylpropanoic acid  8-(2,6-diethyl-4-methylphenyl)-1,2,4,5- tetrahydro-7-oxo-7H-pyrazolo[1,2-d][1,4,5]oxadiazepin-9-yl ester",243973-20-8,1,0,1,Contact,3,100.0,2,2,-1,True,True,True
+"4-Chloro-2-cyano-N,N-dimethyl-5-(4-methylphenyl)-1H-imidazole-1-sulfonamide",120116-88-3,1,0,1,Oral,3,66.0,2,1,-1,False,True,True
+"alpha,2-Dichloro-5-[4-(difluoromethyl)-4,5-dihydro-3-methyl-5-oxo-1H-1,2,4-triazol-1-yl]-4-fluorobenzenepropanoic acid",128621-72-7,0,0,0,Contact,1,200.0,1,1,0,False,True,True
+"2-(2,2-Difluoroethoxy)-N-(5,8-dimethoxy[1,2,4]triazolo[1,5-c]pyrimidin-2-yl)-6-(trifluoromethyl)benzenesulfonamide",219714-96-2,1,0,1,Contact,2,60.95,2,1,-1,False,True,True
+"1-[[(2,4-Dichlorophenyl)amino]carbonyl]cyclopropane carboxylic acid",113136-77-9,1,0,1,Oral,1,89.5,1,0,-1,False,True,True
+"N-(2,6-Dichlorophenyl)-5-ethoxy-7-fluoro-[1,2,4-triazolo[1,5-c]pyrimidine-2-sulfonamide",145701-21-9,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"2-[(4-Chlorophenyl)methyl]-5-(1-methylethyl)-1-(1H-1,2,4-triazol-1-ylmethyl)cyclopentanol",125225-28-7,1,0,1,Oral,2,18.0,0,0,1,False,True,True
+"3-[(2-Chloro-5-thiazolyl)methyl]tetrahydro-5-methyl-N-nitro-4H-1,3,5-oxadiazin-4-imine",153719-23-4,3,1,2,Oral,60,0.00412,1,0,-1,False,True,True
+[N(Z)]-N-[3-[(6-Chloro-3-pyridinyl)methyl]-2-thiazolidinylidene]cyanamide,111988-49-9,1,0,1,Oral,3,17.94,0,0,1,False,True,True
+"5-[(4-Chlorophenyl)methyl]-2,2-dimethyl-1-(1H-1,2,4-triazol-1-ylmethyl)cyclopentanol",125116-23-6,1,0,1,Oral,3,88.0,2,1,-1,False,True,True
+"(5S)-3,5-Dihydro-5-methyl-2-(methylthio)-5-phenyl-3-(phenylamino)-4H-imidazol-4-one",161326-34-7,1,0,1,Contact,2,64.7,0,0,1,False,True,True
+"(1R,3S)-3-(2,2-Dichloroethenyl)-2,2-dimethyl-(2,3,5,6-tetrafluorophenyl)methyl ester cyclopropanecarboxylic acid",118712-89-3,3,1,2,Contact,1,0.0239,0,0,1,False,True,True
+"2-(4-Methoxy[1,1'-biphenyl]-3-yl)hydrazinecarboxylic acid, 1-Methylethyl ester",149877-41-8,2,1,1,Contact,1,7.8,0,0,1,False,True,True
+2-Chloro-N-(2-ethoxyethyl)-N-(2-methyl-1-phenyl-1-propen-1-yl)acetamide,106700-29-2,1,0,1,Oral,1,31.1,0,0,1,False,True,True
+"3-Chloro-5-[[[[(4,6-dimethoxy-2-pyrimidinyl)amino]carbonyl]amino]sulfonyl]-1-methyl-1H-pyrazole-4-carboxylic acid, Methyl ester",100784-20-1,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+N-(Cyano-2-thienylmethyl)-4-ethyl-2-(ethylamino)-5-thiazolecarboxamide,162650-77-3,0,0,0,Oral,2,105.9,2,2,0,False,True,True
+3-[2-Chloro-4-(methanesulfonyl)benzoyl]-4-(phenylsulfanyl)bicyclo[3.2.1]oct-3-en-2-one,156963-66-5,0,0,0,Contact,1,200.0,1,1,0,False,True,True
+1-[(6-Chloro-3-pyridinyl)methyl]-N-nitro-1H-imidazol-2-amine,115086-54-9,3,1,2,Oral,4,0.0285,1,0,-1,False,True,True
+"2-[2-Chloro-4-fluoro-5-[5-methyl-6-oxo-4-(trifluoromethyl)-1(6H)-pyridazinyl]phenoxy]acetic acid, Ethyl ester",188489-07-8,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"2-Chloro-5-[3,6-dihydro-3-methyl-2,6-dioxo-4-(trifluoromethyl)-1(2H)-pyrimidinyl]benzoic acid 1,1-dimethyl-2-oxo-2-(2-propenyloxy)ethyl ester",134605-64-4,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"2,2-Dimethylbutanoic acid, 3-(2,4-Dichlorophenyl)-2-oxo-1-oxaspiro[4.5]dec-3-en-4-yl ester",148477-71-8,0,0,0,Oral,2,148.0,2,2,0,False,True,True
+"2-Chloro-N-(4'-chloro[1,1'-biphenyl]-2-yl)-3-pyridinecarboxamide",188425-85-6,1,0,1,Oral,2,88.5,2,1,-1,False,True,True
+"N-[2,4-Dimethyl-5-[[(trifluoromethyl)sulfonyl]amino]phenyl]acetamide compd. with 2,2'-Iminobis[ethanol](1:1)",53780-36-2,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"5-[[(2,6-Difluorophenyl)methoxy]methyl]-4,5-dihydro-5-methyl(3-methyl-2-thienyl)isoxazole",403640-27-7,1,0,1,Oral,5,87.0,4,1,-1,False,True,True
+"N-[[(Methylamino)carbonyl]oxy]ethanimidothioic acid, 2-Cyanoethylester",25171-63-5,1,0,1,Contact,1,12.0,0,0,1,False,True,True
+"S-[(5-Ethoxy-2-oxo-1,3,4-thiadiazol-3(2H)-yl)methyl] O,O-dimethyl phosphorodithioate",2669-32-1,3,1,2,Contact,1,0.55,0,0,1,False,True,True
+"alpha-Methyl-omega-[3-[1,3,3,3-tetramethyl-1-[(trimethylsilyl)oxy]-1-disiloxanyl]propoxy]poly(oxy-1,2-ethanediyl)",27306-78-1,0,0,0,Contact,1,357.0,0,0,0,False,True,True
+"N'-[4-[(3,4-Dihydro-2-methoxy-2,4,4-trimethyl-2H-1-benzopyran-7-yl)oxy]phenyl]-N-methoxy-N-methylurea",111578-32-6,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"Cyclopropanecarboxylic acid, 3-(2,2-Dichloroethenyl)-2,2-dimethylcyano(4-fluoro-3-phenoxyphenyl)methyl ester mixt. with 1-[(6-chloro-3-pyridinyl)methyl]-N-nitro-2-imidizolidinimide",116475-12-8,3,1,2,Other,2,0.20500000000000002,0,0,1,False,True,True
+"1,1'-(2-Nitrobutylidene)bis(4-chlorobenzene), Mixt. with 1,1'-(2-Nitropropylidene)bis(4-chlorobenzene)",8027-00-7,1,0,1,Contact,1,40.49,0,0,1,False,True,True
+"3-(1-Ethylpropyl)phenol, 1-(N-Methylcarbamate) mixt. with 3-(1-Methylbutyl)phenyl N-methylcarbamate",8065-36-9,2,1,1,Contact,1,1.66,0,0,1,False,True,True
+"(3-Bromo-6-methoxy-2-methylphenyl)(2,3,4-trimethoxy-6-methylphenyl)methanone",220899-03-6,1,0,1,Oral,2,68.35,2,1,-1,False,True,True
+4-Chloro-3-ethyl-1-methyl-N-[[4-(4-methylphenoxy)phenyl]methyl]-1H-pyrazole-5-carboxamide,129558-76-5,3,1,2,Oral,3,0.044,0,0,1,False,True,True
+N-(Cyanomethyl)-4-(trifluoromethyl)-3-pyridinecarboxamide,158062-67-0,1,0,1,Oral,6,49.5,4,0,-1,False,True,True
+"N-(5,7-Dimethoxy[1,2,4]triazolo[1,5-a]pyrimidin-2-yl)-2-methoxy-4-(trifluoromethyl)-3-pyridinesulfonamide",422556-08-9,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+2-[2-(4-Cyanophenyl)-1-[3-(trifluoromethyl)phenyl]ethylidene]-N-[4-(trifluoromethoxy)phenyl]hydrazinecarboxamide,139968-49-3,2,1,1,Oral,1,2.43,0,0,1,False,True,True
+"4-Amino-3,5,6-trichloro-2-pyridinecarboxylic acid, Isooctyl ester",26952-20-5,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"C6-12 Fatty acids, Me esters",67762-39-4,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"2,6-Dichloro-N-[[3-chloro-5-(trifluoromethyl)-2-pyridinyl]methyl]benzamide",239110-15-7,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"2-[4,5-Dihydro-4-methyl-4-(1-methylethyl)-5-oxo-1H-imidazol-2-yl]-5-methyl-3-pyridinecarboxylic acid ammonium salt (1:1)",115136-53-3,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+(alphaE)-alpha-(Methoxymethylene)-2-[[[6-(trifluoromethyl)-2-pyridinyl]oxy]methyl]benzeneacetic acid methyl ester,117428-22-5,0,0,0,Contact,2,200.0,2,2,0,False,True,True
+"N-[2-(1,3-Dimethylbutyl)-3-thienyl]-1-methyl-3-(trifluoromethyl)-1H-pyrazole-4-carboxamide",183675-82-3,1,0,1,Oral,3,56.7,1,1,-1,False,True,True
+"2-(4-Chlorophenyl)-3-ethyl-2,5-dihydro-5-oxo-4-pyridazinecarboxylic acid potassium salt",82697-71-0,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"2-(4-Chlorophenyl)-1-ethyl-1,4-dihydro-6-methyl-4-oxo-3-pyridinecarboxylic acid, Potassium salt",81052-29-1,1,0,1,Oral,1,100.0,1,1,0,True,True,True
+"(2R)-2-(2,4-Dichlorophenoxy)propanoic acid 2-ethylhexyl ester",865363-39-9,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"Carbonic acid, cis-3-(2,5-Dimethylphenyl)-8-methoxy-2-oxo-1-azaspiro[4.5]dec-3-en-4-yl ethyl ester",203313-25-1,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"2,6-Bis[(4,6-dimethoxy-2-pyrimidinyl)oxy]benzoic acid sodium salt",125401-92-5,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"3-Phenyl-5-(2-thienyl)-1,2,4-oxadiazole",330459-31-9,3,1,2,Oral,1,0.41,1,0,-1,False,True,True
+"2-Chloro-5-[3,6-dihydro-3-methyl-2,6-dioxo-4-(trifluoromethyl-1(2H)-pyrimidinyl]-4-fluoro-N-[[methyl(1-methylethyl)amino]sulfonyl]benzamide",372137-35-4,1,0,1,Contact,2,100.0,2,2,0,True,True,True
+3-Bromo-1-(3-chloro-2-pyridinyl)-N-[4-cyano-2-methyl-6-[(methylamino)carbonyl]phenyl]-1H-pyrazole-5-carboxamide,736994-63-1,3,1,2,Oral,7,0.39,1,0,-1,False,True,True
+N-[Methyloxido[1-[6-(trifluoromethyl)-3-pyridinyl]ethyl]-lambda4-sulfanylidene]cyanamide,946578-00-3,3,1,2,Contact,3,0.224,0,0,1,False,True,True
+"2-(4-Chloro-2-methylphenoxy)acetic acid, 2-Ethylhexyl ester",29450-45-1,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"N2-[(1R,2S)-2,3-Dihydro-2,6-dimethyl-1H-inden-1-yl]-6-(1-fluoroethyl)-1,3,5-triazine-2,4-diamine",950782-86-2,1,0,1,Contact,2,100.0,2,2,0,True,True,True
+"3-[[[5-(Difluoromethoxy)-1-methyl-3-(trifluoromethyl)-1H-pyrazol-4-yl]methyl]sulfonyl]-4,5-dihydro-5,5-dimethyl-isoxazole",447399-55-5,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"2-[1-[2-[[(3,5-Difluorophenyl)amino]carbonyl]hydrazinylidene]ethyl]-3-pyridinecarboxylic acid",109293-97-2,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"N-(3',4'-Dichloro-5-fluoro[1,1'-biphenyl]-2-yl)-3-(difluoromethyl)-1-methyl-1H-pyrazole-4-carboxamide",581809-46-3,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"N,N'-[1,2-Phenylenebis(iminocarbonothioyl)]bis-C,C'-dimethyl ester carbamic acid mixt. with 2,4,5,6-tetrachloro-1,3-benzenedicarbonitrile",8077-21-2,3,1,2,Oral,1,3.9e-05,0,0,1,False,True,True
+"N-(2-[1,1'-Bicyclopropyl]-2-ylphenyl)-3-(difluoromethyl)-1-methyl-1H-pyrazole-4-carboxamide",874967-67-6,2,1,1,Oral,1,4.22,1,0,-1,False,True,True
+"3,6-Dichloro-2-pyridinecarboxylic acid compd. with 2-aminoethanol (1:1)",57754-85-5,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"1-Acetyl-3,4-dihydro-3-[(3-pyridinylmethyl)amino]-6-[1,2,2,2-tetrafluoro-1-(trifluoromethyl)ethyl]-2(1H)-quinazolinone",337458-27-2,2,1,1,Oral,2,5.050000000000001,0,0,1,False,True,True
+"N-[[(4,6-Dimethoxy-2-pyrimidinyl)amino]carbonyl]-(2,2,2-trifluoroethoxy)-2-pyridinesulfonamide sodium salt (1:1)",199119-58-9,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"N-{2-[(4,6-Dimethoxypyrimidin-2-yl)(hydroxy)methyl]-6-(methoxymethyl)phenyl}-1,1-difluoromethanesulfonamide",221205-90-9,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+"S-Prop-2-en-1-yl 5-amino-4-(2-methylphenyl)-3-oxo-2-(propan-2-yl)-2,3-dihydro-1H-pyrazole-1-carbothioate",473798-59-3,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"4-[[(6-Chloro-3-pyridinyl)methyl](2,2-difluoroethyl)amino]-2(5H)-furanone",951659-40-8,2,1,1,Oral,6,2.951,0,0,1,False,True,True
+"1-[4-[4-[5-(2,6-Difluorophenyl)-4,5-dihydro-3-isoxazolyl]-2-thiazolyl]-1-piperidinyl]-2-[5-methyl-3-(trifluoromethyl)-1H-pyrazol-1-yl]ethanone",1003318-67-9,0,0,0,Contact,3,104.39,3,3,0,False,True,True
+Spinetoram,935545-74-7,3,1,2,Contact,2,0.01315,0,0,1,False,True,True
+"N-[9-(Dichloromethylene)-1,2,3,4-tetrahydro-1,4-1H-pyrazole-4-carboxamide",1072957-71-1,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+4-Hydroxy-3-[[2-[(2-methoxyethoxy)methyl]-6-(trifluoromethyl)-3-pyridinyl]carbonyl]bicyclo[3.2.1]oct-3-en-2-one,352010-68-5,0,0,0,Oral,4,147.6,3,3,-1,False,True,True
+"(5-Chloro-2-methoxy-4-methylpyridin-3-yl)(2,3,4-trimethoxy-6-methylphenyl)methanone",688046-61-9,1,0,1,Oral,2,63.75,2,1,-1,False,True,True
+"2-{2-[(2,5-Dimethylphenoxy)methyl]phenyl}-2-methoxy-N-methylacetamide",173662-97-0,1,0,1,Oral,1,28.0,1,0,-1,False,True,True
+1-(3-Chloropyridin-2-yl)-N-[4-cyano-2-methyl-6-(methylcarbamoyl)phenyl]-3-{[5-(trifluoromethyl)-2H-tetrazol-2-yl]methyl}-1H-pyrazole-5-carboxamide,1229654-66-3,3,1,2,Oral,9,0.013,0,0,1,False,True,True
+N-[(2-Chlorophenyl)methyl]-N'-(1-methyl-1-phenylethyl)urea,99485-76-4,1,0,1,Contact,1,25.0,1,0,-1,False,True,True
+4-Amino-3-chloro-6-(4-chloro-2-fluoro-3-methoxyphenyl)-2-pyridinecarboxylic acid methyl ester,943831-98-9,1,0,1,Contact,1,98.1,1,0,-1,False,True,True
+"N-[6-[[[(Z)-[(1-Methyl-1H-tetrazol-5-yl)phenylmethylene]amino]oxy]methyl]-2-pyridinyl]-1,1-dimethylethyl ester carbamic acid",500207-04-5,1,0,1,Oral,3,96.8,3,1,-1,False,True,True
+"N-[1,1-Dimethyl-2-[2-methyl-4-(1-methylethoxy)phenyl]-2-oxoethyl]-3-methyl-2-thiophenecarboxamide",875915-78-9,1,0,1,Oral,1,75.5,0,0,1,False,True,True
+1-({1-Ethyl-4-[4-(methanesulfonyl)-3-(2-methoxyethoxy)-2-methylbenzoyl]-1H-pyrazol-5-yl}oxy)ethyl methyl carbonate,1101132-67-5,1,0,1,Oral,1,15.5,0,0,1,False,True,True
+(2Z)-2-[[2-Fluoro-5-(trifluoromethyl)phenyl]thio]-2-[3-(2-methoxyphenyl)-2-thiazolidinylidene]acetonitrile,958647-10-4,1,0,1,Contact,2,75.0,2,1,-1,False,True,True
+"Cyclopropanecarboxylic acid, [(3S,4R,4aR,6S,6aS,12R,12aS,12bS)-3-[(Cyclopropylcarbonyl)oxy]-1,3,4,4a,5,6,6a,12,12a,12b-decahydro-6,12-dihydroxy-4,6a,12b-trimethyl-11-oxo-9-(3-pyridinyl)-2H,11H-naphtho[2,1-b]pyrano[3,4-e]pyran-4-yl]methyl ester",915972-17-7,1,0,1,Oral,5,37.57,2,1,-1,False,True,True
+Methyl 3-(4-chlorophenyl)-3-[(N-{[(propan-2-yl)oxy]carbonyl}valyl)amino]propanoate,283159-90-0,1,0,1,Oral,3,19.5,2,1,-1,False,True,True
+"3-(Difluoromethyl)-N-methoxy-1-methyl-N-[1-(2,4,6-trichlorophenyl)propan-2-yl]-1H-pyrazole-4-carboxamide",1228284-64-7,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+"2-[4-(4-Chlorophenoxy)-2-(trifluoromethyl)phenyl]-1-(1H-1,2,4-triazol-1-yl)propan-2-ol",1417782-03-6,1,0,1,Oral,5,52.0,3,2,-1,False,True,True
+"Methyl N-[2-({2-chloro-4-fluoro-5-[3-methyl-2,6-dioxo-4-(trifluoromethyl)-3,6-dihydropyrimidin-1(2H)-yl]phenyl}sulfanyl)propanoyl]-beta-alaninate",1220411-29-9,2,1,1,Oral,2,5.115,2,0,-1,False,True,True
+"(1R,3R)-rel-3-[(1Z)-2-Chloro-3,3,3-trifluoro-1-propen-1-yl]-2,2-dimethylcyclopropanecarboxylic acid (2-methyl[1,1'-biphenyl]-3-yl)methyl ester mixt. with cyano(3-phenoxyphenyl)methyl 3-(2,2-dichloroethenyl)-2,2-dimethylcyclopropanecarboxylate",943012-36-0,3,1,2,Other,2,0.435,0,0,1,False,True,True
+"(1S,3S)-rel-3-[(1Z)-2-Chloro-3,3,3-trifluoro-1-propen-1-yl]-2,2-dimethyl-(R)-cyano(3-phenoxyphenyl)methyl ester cyclopropanecarboxylic acid mixt. with 3-bromo-N-[4-chloro-2-methyl-6-[(methylamino)carbonyl]phenyl]-1-(3-chloro-2-pyridinyl)-1H-pyrazole-5-carboxamide",873330-19-9,2,1,1,Other,2,1.77,0,0,1,False,True,True
+Benzyl 4-amino-3-chloro-6-(4-chloro-2-fluoro-3-methoxyphenyl)-5-fluoropyridine-2-carboxylate,1390661-72-9,1,0,1,Contact,1,100.0,1,1,0,True,True,True
+2-(4-Chloro-2-methylphenoxy)acetic acid compd. with N-methylmethanamine (1:1),2039-46-5,1,0,1,Contact,1,25.0,1,0,-1,False,True,True

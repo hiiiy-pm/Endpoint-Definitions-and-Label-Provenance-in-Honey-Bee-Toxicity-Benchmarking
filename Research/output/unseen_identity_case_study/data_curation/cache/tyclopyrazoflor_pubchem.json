@@ -1,0 +1,15 @@
+{
+  "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/tyclopyrazoflor/property/InChIKey,InChI,IsomericSMILES/JSON",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 86700627,
+          "SMILES": "CCN(C1=CN(N=C1Cl)C2=CN=CC=C2)C(=O)CCSCCC(F)(F)F",
+          "InChI": "InChI=1S/C16H18ClF3N4OS/c1-2-23(14(25)5-8-26-9-6-16(18,19)20)13-11-24(22-15(13)17)12-4-3-7-21-10-12/h3-4,7,10-11H,2,5-6,8-9H2,1H3",
+          "InChIKey": "DBHVHTPMRCXCIY-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}

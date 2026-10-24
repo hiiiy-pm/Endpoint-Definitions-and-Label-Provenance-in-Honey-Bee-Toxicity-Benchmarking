@@ -1,0 +1,15 @@
+{
+  "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/flupyrimin/property/InChIKey,InChI,IsomericSMILES/JSON",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 14127920,
+          "SMILES": "C1=CC(=NC(=O)C(F)(F)F)N(C=C1)CC2=CN=C(C=C2)Cl",
+          "InChI": "InChI=1S/C13H9ClF3N3O/c14-10-5-4-9(7-18-10)8-20-6-2-1-3-11(20)19-12(21)13(15,16)17/h1-7H,8H2",
+          "InChIKey": "DHQKLWKZSFCKTA-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}

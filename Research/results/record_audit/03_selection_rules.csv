@@ -1,0 +1,9 @@
+case_id,stratum,candidate_count,selection_rule
+E01,Tier1 determinate negative; includes >100,69,all adult48 first; fewest records; ascending numeric CAS; benchmark Index
+E02,"Tier1 determinate negative; other right limit, no >100",0,all adult48 first; fewest records; ascending numeric CAS; benchmark Index
+E03,Tier1 unresolved,106,all adult48 first; fewest records; ascending numeric CAS; benchmark Index
+E04,Tier1 determinate positive; point records,32,all adult48 first; fewest records; ascending numeric CAS; benchmark Index
+E05,Tier0 determinate negative control,72,all adult48 first; fewest records; ascending numeric CAS; benchmark Index
+E06,Tier3 changes to negative at 1,1,all adult48 first; fewest records; ascending numeric CAS; benchmark Index
+E07,Tier3 unresolved at 1,2,all adult48 first; fewest records; ascending numeric CAS; benchmark Index
+E08,Tier2 originally positive at 11; unanimous-aware unresolved,11,all adult48 first; fewest records; ascending numeric CAS; benchmark Index

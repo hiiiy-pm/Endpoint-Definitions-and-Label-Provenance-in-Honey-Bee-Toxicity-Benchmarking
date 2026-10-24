@@ -1,0 +1,11 @@
+CID,Index,CSVLine1,CAS,Name,SMILES,Category,Adjudication
+13836,290,292,7003-89-6,Chlormequat,C[N+](C)(C)CCCl,cation_and_chloride_salt,duplicate identifier confirmed; correct CID requires external verification
+13836,295,297,999-81-5,"2-Chloro-N,N,N-trimethylethanaminium chloride (1:1)",C[N+](C)(C)CCCl.[Cl-],cation_and_chloride_salt,duplicate identifier confirmed; correct CID requires external verification
+5284484,323,325,9006-42-2,Metiram (Ref: BAS 222F),S=C([S-])NCCNC(=S)S.S=C([S-])NCCNC(=S)S.[NH2-].[Zn],metiram_zineb_representation_conflict,duplicate identifier confirmed; correct CID requires external verification
+5284484,328,330,12122-67-7,Zineb (Ref: ENT 14874),S=C([S-])NCCNC(=S)[S-].[Zn+2],metiram_zineb_representation_conflict,duplicate identifier confirmed; correct CID requires external verification
+16116,413,415,175217-20-6,Silthiofam (Ref: MON 65500),C=CCNC(=O)c1c([Si](C)(C)C)sc(C)c1C,different_structures,duplicate identifier confirmed; correct CID requires external verification
+16116,416,418,1982-49-6,N-(2-Methylcyclohexyl)-N'-phenylurea,CC1CCCCC1NC(=O)Nc1ccccc1,different_structures,duplicate identifier confirmed; correct CID requires external verification
+93341,670,672,62865-36-5,Diclomezine (Ref: F-850),Cc1c(Cl)cc(-c2ccc(=O)[nH]n2)cc1Cl,different_structures,duplicate identifier confirmed; correct CID requires external verification
+93341,672,674,130339-07-0,Diflumetorim (Ref: UBF 002),CCC(Nc1ncnc(C)c1Cl)c1ccc(OC(F)F)cc1,different_structures,duplicate identifier confirmed; correct CID requires external verification
+5483872,824,826,133408-50-1,Metominostrobin (Ref: SSF 126),CNC(=O)C(=NOC)c1ccccc1Oc1ccccc1,different_structures,duplicate identifier confirmed; correct CID requires external verification
+5483872,832,834,27355-22-2,Phthalide (Ref: BAY 96610),O=C1OCc2c(Cl)c(Cl)c(Cl)c(Cl)c21,different_structures,duplicate identifier confirmed; correct CID requires external verification

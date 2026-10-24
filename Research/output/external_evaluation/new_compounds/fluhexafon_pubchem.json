@@ -1,0 +1,15 @@
+{
+  "query_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/fluhexafon/property/InChIKey,InChI,IsomericSMILES/JSON",
+  "response": {
+    "PropertyTable": {
+      "Properties": [
+        {
+          "CID": 53252713,
+          "SMILES": "CON=C1CCC(CC1)C(C#N)S(=O)(=O)CCC(F)(F)F",
+          "InChI": "InChI=1S/C12H17F3N2O3S/c1-20-17-10-4-2-9(3-5-10)11(8-16)21(18,19)7-6-12(13,14)15/h9,11H,2-7H2,1H3",
+          "InChIKey": "NGLCOYIAJMJYQI-UHFFFAOYSA-N"
+        }
+      ]
+    }
+  }
+}

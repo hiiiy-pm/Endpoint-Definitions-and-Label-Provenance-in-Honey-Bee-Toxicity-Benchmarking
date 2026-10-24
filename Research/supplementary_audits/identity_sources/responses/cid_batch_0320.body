@@ -1,0 +1,286 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 26710,
+        "MolecularFormula": "C9H18FeN3S6",
+        "SMILES": "CN(C)C(=S)[S-].CN(C)C(=S)[S-].CN(C)C(=S)[S-].[Fe+3]",
+        "InChIKey": "WHDGWKAJBYRJJL-UHFFFAOYSA-K",
+        "IUPACName": "tris(N,N-dimethylcarbamodithioate);iron(3+)"
+      },
+      {
+        "CID": 26927,
+        "MolecularFormula": "C12H15N2O3PS",
+        "SMILES": "CCOP(=S)(OCC)ON=C(C#N)C1=CC=CC=C1",
+        "InChIKey": "ATROHALUCMTWTB-UHFFFAOYSA-N",
+        "IUPACName": "N-diethoxyphosphinothioyloxybenzenecarboximidoyl cyanide"
+      },
+      {
+        "CID": 27159,
+        "MolecularFormula": "C7H15N3O2S2",
+        "SMILES": "CN(C)C(CSC(=O)N)CSC(=O)N",
+        "InChIKey": "IRUJZVNXZWPBMU-UHFFFAOYSA-N",
+        "IUPACName": "S-[3-carbamoylsulfanyl-2-(dimethylamino)propyl] carbamothioate"
+      },
+      {
+        "CID": 27189,
+        "MolecularFormula": "C17H21NO2",
+        "SMILES": "CCN(CC)C(=O)C(C)OC1=CC=CC2=CC=CC=C21",
+        "InChIKey": "WXZVAROIGSFCFJ-UHFFFAOYSA-N",
+        "IUPACName": "N,N-diethyl-2-naphthalen-1-yloxypropanamide"
+      },
+      {
+        "CID": 27375,
+        "MolecularFormula": "C10H13ClN2O",
+        "SMILES": "CC1=C(C=C(C=C1)NC(=O)N(C)C)Cl",
+        "InChIKey": "JXCGFZXSOMJFOA-UHFFFAOYSA-N",
+        "IUPACName": "3-(3-chloro-4-methylphenyl)-1,1-dimethylurea"
+      },
+      {
+        "CID": 27689,
+        "MolecularFormula": "C12H16N2O3",
+        "SMILES": "CCNC(=O)C(C)OC(=O)NC1=CC=CC=C1",
+        "InChIKey": "AMRQXHFXNZFDCH-UHFFFAOYSA-N",
+        "IUPACName": "[1-(ethylamino)-1-oxopropan-2-yl] N-phenylcarbamate"
+      },
+      {
+        "CID": 27982,
+        "MolecularFormula": "C2H6ClO3P",
+        "SMILES": "C(CCl)P(=O)(O)O",
+        "InChIKey": "UDPGUMQDCGORJQ-UHFFFAOYSA-N",
+        "IUPACName": "2-chloroethylphosphonic acid"
+      },
+      {
+        "CID": 28213,
+        "MolecularFormula": "C6H15O5PS2",
+        "SMILES": "CCS(=O)(=O)CCSP(=O)(OC)OC",
+        "InChIKey": "PZIRJMYRYORVIT-UHFFFAOYSA-N",
+        "IUPACName": "1-dimethoxyphosphorylsulfanyl-2-ethylsulfonylethane"
+      },
+      {
+        "CID": 28768,
+        "MolecularFormula": "C18H13Cl2NO",
+        "SMILES": "C1=CC(=CN=C1)C(C2=CC=C(C=C2)Cl)(C3=CC=C(C=C3)Cl)O",
+        "InChIKey": "NBNTWDUNCHRWMT-UHFFFAOYSA-N",
+        "IUPACName": "bis(4-chlorophenyl)-pyridin-3-ylmethanol"
+      },
+      {
+        "CID": 28780,
+        "MolecularFormula": "C14H18N4O3",
+        "SMILES": "CCCCNC(=O)N1C2=CC=CC=C2N=C1NC(=O)OC",
+        "InChIKey": "RIOXQFHNBCKOKP-UHFFFAOYSA-N",
+        "IUPACName": "methyl N-[1-(butylcarbamoyl)benzimidazol-2-yl]carbamate"
+      },
+      {
+        "CID": 28935,
+        "MolecularFormula": "C8H8Cl2IO3PS",
+        "SMILES": "COP(=S)(OC)OC1=CC(=C(C=C1Cl)I)Cl",
+        "InChIKey": "LFVLUOAHQIVABZ-UHFFFAOYSA-N",
+        "IUPACName": "(2,5-dichloro-4-iodophenoxy)-dimethoxy-sulfanylidene-lambda5-phosphane"
+      },
+      {
+        "CID": 28936,
+        "MolecularFormula": "C17H16Br2O3",
+        "SMILES": "CC(C)OC(=O)C(C1=CC=C(C=C1)Br)(C2=CC=C(C=C2)Br)O",
+        "InChIKey": "FOANIXZHAMJWOI-UHFFFAOYSA-N",
+        "IUPACName": "propan-2-yl 2,2-bis(4-bromophenyl)-2-hydroxyacetate"
+      },
+      {
+        "CID": 29025,
+        "MolecularFormula": "C10H14O",
+        "SMILES": "CC1=CC(=O)C2CC1C2(C)C",
+        "InChIKey": "DCSCXTJOXBUFGB-UHFFFAOYSA-N",
+        "IUPACName": "4,6,6-trimethylbicyclo[3.1.1]hept-3-en-2-one"
+      },
+      {
+        "CID": 29216,
+        "MolecularFormula": "C10H11N3OS",
+        "SMILES": "CNC(=O)N(C)C1=NC2=CC=CC=C2S1",
+        "InChIKey": "RRVIAQKBTUQODI-UHFFFAOYSA-N",
+        "IUPACName": "1-(1,3-benzothiazol-2-yl)-1,3-dimethylurea"
+      },
+      {
+        "CID": 29307,
+        "MolecularFormula": "C13H16NO4PS",
+        "SMILES": "CCOP(=S)(OCC)OC1=NOC(=C1)C2=CC=CC=C2",
+        "InChIKey": "SDMSCIWHRZJSRN-UHFFFAOYSA-N",
+        "IUPACName": "diethoxy-[(5-phenyl-1,2-oxazol-3-yl)oxy]-sulfanylidene-lambda5-phosphane"
+      },
+      {
+        "CID": 29393,
+        "MolecularFormula": "C12H18N4O6S",
+        "SMILES": "CCCN(CCC)C1=C(C=C(C=C1[N+](=O)[O-])S(=O)(=O)N)[N+](=O)[O-]",
+        "InChIKey": "UNAHYJYOSSSJHH-UHFFFAOYSA-N",
+        "IUPACName": "4-(dipropylamino)-3,5-dinitrobenzenesulfonamide"
+      },
+      {
+        "CID": 29732,
+        "MolecularFormula": "C15H18Cl2N2O3",
+        "SMILES": "CC(C)OC1=C(C=C(C(=C1)N2C(=O)OC(=N2)C(C)(C)C)Cl)Cl",
+        "InChIKey": "CHNUNORXWHYHNE-UHFFFAOYSA-N",
+        "IUPACName": "5-tert-butyl-3-(2,4-dichloro-5-propan-2-yloxyphenyl)-1,3,4-oxadiazol-2-one"
+      },
+      {
+        "CID": 29863,
+        "MolecularFormula": "C10H13ClN2O2",
+        "SMILES": "CN(C)C(=O)NC1=CC(=C(C=C1)OC)Cl",
+        "InChIKey": "DSRNRYQBBJQVCW-UHFFFAOYSA-N",
+        "IUPACName": "3-(3-chloro-4-methoxyphenyl)-1,1-dimethylurea"
+      },
+      {
+        "CID": 30154,
+        "MolecularFormula": "CuH4O2",
+        "SMILES": "O.O.[Cu]",
+        "InChIKey": "AEJIMXVJZFYIHN-UHFFFAOYSA-N",
+        "IUPACName": "copper;dihydrate"
+      },
+      {
+        "CID": 30332,
+        "MolecularFormula": "AlP",
+        "SMILES": "[Al]#P",
+        "InChIKey": "PPNXXZIBFHTHDM-UHFFFAOYSA-N",
+        "IUPACName": "alumanylidynephosphane"
+      },
+      {
+        "CID": 30479,
+        "MolecularFormula": "C8H14N4OS",
+        "SMILES": "CC(C)(C)C1=NN=C(N(C1=O)N)SC",
+        "InChIKey": "FOXFZRUHNHCZPX-UHFFFAOYSA-N",
+        "IUPACName": "4-amino-6-tert-butyl-3-methylsulfanyl-1,2,4-triazin-5-one"
+      },
+      {
+        "CID": 30709,
+        "MolecularFormula": "C13H10BrCl2O2PS",
+        "SMILES": "COP(=S)(C1=CC=CC=C1)OC2=CC(=C(C=C2Cl)Br)Cl",
+        "InChIKey": "CVRALZAYCYJELZ-UHFFFAOYSA-N",
+        "IUPACName": "(4-bromo-2,5-dichlorophenoxy)-methoxy-phenyl-sulfanylidene-lambda5-phosphane"
+      },
+      {
+        "CID": 30773,
+        "MolecularFormula": "C9H13ClN6",
+        "SMILES": "CCNC1=NC(=NC(=N1)Cl)NC(C)(C)C#N",
+        "InChIKey": "MZZBPDKVEFVLFF-UHFFFAOYSA-N",
+        "IUPACName": "2-[[4-chloro-6-(ethylamino)-1,3,5-triazin-2-yl]amino]-2-methylpropanenitrile"
+      },
+      {
+        "CID": 30913,
+        "MolecularFormula": "C7H16ClN3O2S2",
+        "SMILES": "CN(C)C(CSC(=O)N)CSC(=O)N.Cl",
+        "InChIKey": "MSHXTAQSSIEBQS-UHFFFAOYSA-N",
+        "IUPACName": "S-[3-carbamoylsulfanyl-2-(dimethylamino)propyl] carbamothioate;hydrochloride"
+      },
+      {
+        "CID": 31070,
+        "MolecularFormula": "C13H22NO3PS",
+        "SMILES": "CCOP(=O)(NC(C)C)OC1=CC(=C(C=C1)SC)C",
+        "InChIKey": "ZCJPOPBZHLUFHF-UHFFFAOYSA-N",
+        "IUPACName": "N-[ethoxy-(3-methyl-4-methylsulfanylphenoxy)phosphoryl]propan-2-amine"
+      },
+      {
+        "CID": 31099,
+        "MolecularFormula": "C11H15N3O2",
+        "SMILES": "CNC(=O)OC1=CC=CC(=C1)N=CN(C)C",
+        "InChIKey": "RMFNNCGOSPBBAD-UHFFFAOYSA-N",
+        "IUPACName": "[3-(dimethylaminomethylideneamino)phenyl] N-methylcarbamate"
+      },
+      {
+        "CID": 31199,
+        "MolecularFormula": "C9H15O8P",
+        "SMILES": "COC(=O)CC(=CC(=O)OC)OP(=O)(OC)OC",
+        "InChIKey": "BZSSHIWHSJYWAD-UHFFFAOYSA-N",
+        "IUPACName": "dimethyl 3-dimethoxyphosphoryloxypent-2-enedioate"
+      },
+      {
+        "CID": 31200,
+        "MolecularFormula": "C9H12NO5PS",
+        "SMILES": "CC1=C(C=CC(=C1)OP(=S)(OC)OC)[N+](=O)[O-]",
+        "InChIKey": "ZNOLGFHPUIJIMJ-UHFFFAOYSA-N",
+        "IUPACName": "dimethoxy-(3-methyl-4-nitrophenoxy)-sulfanylidene-lambda5-phosphane"
+      },
+      {
+        "CID": 31573,
+        "MolecularFormula": "C11H21N5S",
+        "SMILES": "CCNC1=NC(=NC(=N1)SC)NC(C)C(C)C",
+        "InChIKey": "IKYICRRUVNIHPP-UHFFFAOYSA-N",
+        "IUPACName": "4-N-ethyl-2-N-(3-methylbutan-2-yl)-6-methylsulfanyl-1,3,5-triazine-2,4-diamine"
+      },
+      {
+        "CID": 31645,
+        "MolecularFormula": "C11H18N4O2",
+        "SMILES": "CC1=C(N=C(N=C1OC(=O)N(C)C)N(C)C)C",
+        "InChIKey": "YFGYUFNIOHWBOB-UHFFFAOYSA-N",
+        "IUPACName": "[2-(dimethylamino)-5,6-dimethylpyrimidin-4-yl] N,N-dimethylcarbamate"
+      },
+      {
+        "CID": 31677,
+        "MolecularFormula": "C17H26ClNO2",
+        "SMILES": "CCCCOCN(C1=C(C=CC=C1CC)CC)C(=O)CCl",
+        "InChIKey": "HKPHPIREJKHECO-UHFFFAOYSA-N",
+        "IUPACName": "N-(butoxymethyl)-2-chloro-N-(2,6-diethylphenyl)acetamide"
+      },
+      {
+        "CID": 31899,
+        "MolecularFormula": "C11H16ClN3O2",
+        "SMILES": "CNC(=O)OC1=CC=CC(=C1)N=CN(C)C.Cl",
+        "InChIKey": "MYPKGPZHHQEODQ-UHFFFAOYSA-N",
+        "IUPACName": "[3-(dimethylaminomethylideneamino)phenyl] N-methylcarbamate;hydrochloride"
+      },
+      {
+        "CID": 31957,
+        "MolecularFormula": "C13H24N3O3PS",
+        "SMILES": "CCN(CC)C1=NC(=CC(=N1)OP(=S)(OCC)OCC)C",
+        "InChIKey": "TZBPRYIIJAJUOY-UHFFFAOYSA-N",
+        "IUPACName": "4-diethoxyphosphinothioyloxy-N,N-diethyl-6-methylpyrimidin-2-amine"
+      },
+      {
+        "CID": 32152,
+        "MolecularFormula": "C11H19N3O",
+        "SMILES": "CCCCC1=C(NC(=NC1=O)NCC)C",
+        "InChIKey": "BBXXLROWFHWFQY-UHFFFAOYSA-N",
+        "IUPACName": "5-butyl-2-(ethylamino)-6-methyl-1H-pyrimidin-4-one"
+      },
+      {
+        "CID": 32154,
+        "MolecularFormula": "C12H11Cl2NO",
+        "SMILES": "CC(C)(C#C)NC(=O)C1=CC(=CC(=C1)Cl)Cl",
+        "InChIKey": "PHNUZKMIPFFYSO-UHFFFAOYSA-N",
+        "IUPACName": "3,5-dichloro-N-(2-methylbut-3-yn-2-yl)benzamide"
+      },
+      {
+        "CID": 32184,
+        "MolecularFormula": "C12H16N3O3PS",
+        "SMILES": "CCOP(=S)(OCC)OC1=NN(C=N1)C2=CC=CC=C2",
+        "InChIKey": "AMFGTOFWMRQMEM-UHFFFAOYSA-N",
+        "IUPACName": "diethoxy-[(1-phenyl-1,2,4-triazol-3-yl)oxy]-sulfanylidene-lambda5-phosphane"
+      },
+      {
+        "CID": 32230,
+        "MolecularFormula": "C14H28NO3PS2",
+        "SMILES": "CCCOP(=S)(OCCC)SCC(=O)N1CCCCC1C",
+        "InChIKey": "UNLYSVIDNRIVFJ-UHFFFAOYSA-N",
+        "IUPACName": "2-dipropoxyphosphinothioylsulfanyl-1-(2-methylpiperidin-1-yl)ethanone"
+      },
+      {
+        "CID": 32490,
+        "MolecularFormula": "C9H20N2O2",
+        "SMILES": "CCCOC(=O)NCCCN(C)C",
+        "InChIKey": "WZZLDXDUQPOXNW-UHFFFAOYSA-N",
+        "IUPACName": "propyl N-[3-(dimethylamino)propyl]carbamate"
+      },
+      {
+        "CID": 32518,
+        "MolecularFormula": "C19H39NO",
+        "SMILES": "CCCCCCCCCCCCCN1CC(OC(C1)C)C",
+        "InChIKey": "YTOPFCCWCSOHFV-UHFFFAOYSA-N",
+        "IUPACName": "2,6-dimethyl-4-tridecylmorpholine"
+      },
+      {
+        "CID": 32739,
+        "MolecularFormula": "C5H12ClO2PS2",
+        "SMILES": "CCOP(=S)(OCC)SCCl",
+        "InChIKey": "QGTYWWGEWOBMAK-UHFFFAOYSA-N",
+        "IUPACName": "chloromethylsulfanyl-diethoxy-sulfanylidene-lambda5-phosphane"
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+Tier,n_ecotox_compounds,any_right_censored,right_censored_ge100,median_exactly_100,interval_label_100_negative,interval_label_100_unresolved,interval_label_100_positive
+0,72,54,53,0,62,10,0
+1,212,180,97,69,67,113,32
+2,60,11,0,0,0,11,49
+3,97,6,0,0,0,6,91

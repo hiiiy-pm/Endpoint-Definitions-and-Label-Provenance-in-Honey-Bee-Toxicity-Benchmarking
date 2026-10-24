@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 10915750,
+        "MolecularFormula": "C18H15ClN2O5",
+        "SMILES": "COCCOC1=CC=CC2=C1C(=O)C(=NN2C3=CC=C(C=C3)Cl)C(=O)O",
+        "InChIKey": "QLMNCUHSDAGQGT-UHFFFAOYSA-N",
+        "IUPACName": "1-(4-chlorophenyl)-5-(2-methoxyethoxy)-4-oxocinnoline-3-carboxylic acid"
+      }
+    ]
+  }
+}

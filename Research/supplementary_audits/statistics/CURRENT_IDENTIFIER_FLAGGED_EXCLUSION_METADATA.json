@@ -1,0 +1,29 @@
+{
+  "Status": "completed",
+  "CohortName": "current_identifier_flagged_exclusion",
+  "FlaggedN": 33,
+  "FlagInterpretation": "current CID structure-connectivity flags, not 33 confirmed historical errors",
+  "FlagSelectionRule": "Exclude from sensitivity only: current CID property InChIKey connectivity does not match frozen SMILES InChIKey connectivity, including fragment-parent-related differences. Preserve official split labels and use identical retained identities at every endpoint. No use of toxicity or model predictions to select flagged identities.",
+  "FlagFreezeUTC": "2026-10-03T14:40:40.739767+00:00",
+  "FlaggedCSV_SHA256": "344510081bd181496db1062b7e16c44a93746c6a3b15bbabb409636b30769e12",
+  "Model": "ECFP/Tanimoto SVC C=1, balanced class weights",
+  "OriginalFitChecks": 9,
+  "NewReducedFits": 9,
+  "MaxBaselineScoreDifference": 2.220446049250313e-16,
+  "BootstrapDraws": 5000,
+  "BootstrapSeedBase": 20278829,
+  "Bootstrap": "same scaffold draws on original test cohort for all endpoints and stages; reduced stages filter original draws",
+  "Intervals": "percentile intervals and centered-bootstrap simultaneous intervals for the two severe-minus-broad contrasts within split/stage",
+  "InferenceScope": "conditional and exploratory; deletion changes both membership and class weights; not causal error correction",
+  "DataPolicy": "no replacement of SMILES, label, year or use flags; fixed official membership before explicit deletion",
+  "Python": "3.12.13",
+  "Numpy": "2.5.3",
+  "Pandas": "3.0.1",
+  "ScikitLearn": "1.8.0",
+  "InputSHA256": {
+    "data/raw/apistox.csv": "de4b160a23601a44ac5ec5b23aae95973acba060135630a6df8f73d128baea9e",
+    "results/cache/kernel_ecfp.npy": "2b8aab46312d086832f403e1e1ebb3708cd8b557f8988b2c3454a69c0e0f77c5",
+    "results/cache/scaffolds.csv": "4f8f221867fa23d131e724d19f5454e1ab206c4a3a87a950d63f9213961daec5",
+    "results/primary/02_test_predictions.csv": "ceb8a3885ccc0633c5f7035a9949917a562005b931729d5218543b7afb3ee6f4"
+  }
+}
